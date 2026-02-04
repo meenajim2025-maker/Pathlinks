@@ -1,0 +1,512 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+  PathLinks Clinical Decision Support Protocol for EMIS Web
+  Version: 3.0
+  Author: PathLinks Clinical Governance
+  Last Updated: 2026-02-04
+  
+  IMPORT INSTRUCTIONS:
+  1. Save this file locally
+  2. In EMIS Web: Configuration > Resource Publisher
+  3. Select "Import" and choose this XML file
+  4. Assign to appropriate folders/users
+  
+  NOTE: This protocol triggers clinical alerts when blood test results
+  are filed that fall outside normal ranges.
+-->
+<Protocol 
+  xmlns="http://www.emishealth.com/protocol/v1" 
+  Name="PathLinks_Clinical_Decision_Support" 
+  Description="Blood Result Actioning Protocol for Primary Care" 
+  Version="3.0"
+  Guid="a1b2c3d4-e5f6-7890-abcd-ef1234567890"
+  Author="PathLinks Clinical Governance"
+  DateCreated="2026-02-04"
+  Category="Clinical Decision Support">
+
+  <Metadata>
+    <Source>PathLinks V2.0</Source>
+    <Specialty>General Practice</Specialty>
+    <ApplicableTo>All Clinicians</ApplicableTo>
+    <ReviewDate>2027-02-04</ReviewDate>
+  </Metadata>
+
+  <Trigger Type="OnResultFiling" />
+
+  <Logic>
+    <!-- ==================== CRITICAL ALERTS ==================== -->
+    
+    <!-- Hyperkalaemia Alert -->
+    <Rule Name="Hyperkalaemia_Critical" Priority="1" Category="URGENT">
+      <Condition>
+        <Match TestCode="K" TestName="Potassium" Operator="GreaterThanOrEqual" Value="6.0" Unit="mmol/L" />
+      </Condition>
+      <Action Type="DisplayAlert" Style="Critical">
+        <Title>⚠️ CRITICAL: Hyperkalaemia Alert</Title>
+        <Text><![CDATA[
+Potassium ≥ 6.0 mmol/L detected.
+
+IMMEDIATE ACTIONS:
+1. Obtain ECG immediately
+2. If K ≥ 6.5 mmol/L → Urgent hospital admission
+3. Review medications: ACEi, ARBs, Spironolactone, NSAIDs, Trimethoprim
+4. Consider IV Calcium Gluconate if ECG changes present
+
+CODING: Add Read Code 44I7. (Serum potassium raised)
+        ]]></Text>
+      </Action>
+      <SuggestedCode System="Read2" Code="44I7." Description="Serum potassium raised" />
+    </Rule>
+
+    <!-- Severe Hyponatraemia -->
+    <Rule Name="Hyponatraemia_Severe" Priority="1" Category="URGENT">
+      <Condition>
+        <Match TestCode="Na" TestName="Sodium" Operator="LessThan" Value="125" Unit="mmol/L" />
+      </Condition>
+      <Action Type="DisplayAlert" Style="Critical">
+        <Title>⚠️ CRITICAL: Severe Hyponatraemia</Title>
+        <Text><![CDATA[
+Sodium < 125 mmol/L detected.
+
+IMMEDIATE ACTIONS:
+1. Assess for symptoms (confusion, seizure, nausea)
+2. If symptomatic → Urgent hospital admission
+3. Review medications (Diuretics, SSRIs, PPIs)
+4. Check fluid status and osmolality
+
+CODING: Add Read Code 44I5. (Serum sodium low)
+        ]]></Text>
+      </Action>
+      <SuggestedCode System="Read2" Code="44I5." Description="Serum sodium low" />
+    </Rule>
+
+    <!-- Severe Triglycerides (Pancreatitis Risk) -->
+    <Rule Name="Triglycerides_Pancreatitis_Risk" Priority="1" Category="URGENT">
+      <Condition>
+        <Match TestCode="TRIG" TestName="Triglycerides" Operator="GreaterThan" Value="10.0" Unit="mmol/L" />
+      </Condition>
+      <Action Type="DisplayAlert" Style="Critical">
+        <Title>⚠️ CRITICAL: Severe Hypertriglyceridaemia</Title>
+        <Text><![CDATA[
+Triglycerides > 10 mmol/L detected.
+
+⚠️ HIGH RISK OF ACUTE PANCREATITIS
+
+IMMEDIATE ACTIONS:
+1. Urgent referral to Lipid/Metabolic Specialist
+2. Consider admission if symptomatic (abdominal pain)
+3. Stop alcohol completely
+4. Start Fibrate therapy if tolerated
+
+CODING: Add Read Code 44P.. (Serum lipids)
+        ]]></Text>
+      </Action>
+    </Rule>
+
+    <!-- ==================== HAEMATOLOGY ALERTS ==================== -->
+
+    <!-- Anaemia (Male) -->
+    <Rule Name="Anaemia_Male" Priority="2" Category="Haematology">
+      <Condition>
+        <And>
+          <Match TestCode="HB" TestName="Haemoglobin" Operator="LessThan" Value="130" Unit="g/L" />
+          <Match PatientSex="Male" />
+        </And>
+      </Condition>
+      <Action Type="DisplayPrompt" Style="Warning">
+        <Title>🩸 Anaemia Detected (Male)</Title>
+        <Text><![CDATA[
+Haemoglobin < 130 g/L in male patient.
+
+CLINICAL PATHWAY:
+1. Check MCV to classify anaemia type:
+   - Microcytic (<80): Check Ferritin, consider GI bleed
+   - Normocytic (80-100): Check reticulocytes, CKD, chronic disease
+   - Macrocytic (>100): Check B12, Folate, TFTs, alcohol history
+
+2. If age >60 or red flags (weight loss, change in bowel habit):
+   → Perform FIT test
+   → Consider 2WW referral if FIT positive
+
+3. Check Ferritin, B12, Folate, Reticulocytes
+
+EMIS CODING: 422.. (Anaemia screen done)
+        ]]></Text>
+      </Action>
+      <SuggestedCode System="Read2" Code="422.." Description="Anaemia screen done" />
+    </Rule>
+
+    <!-- Anaemia (Female) -->
+    <Rule Name="Anaemia_Female" Priority="2" Category="Haematology">
+      <Condition>
+        <And>
+          <Match TestCode="HB" TestName="Haemoglobin" Operator="LessThan" Value="115" Unit="g/L" />
+          <Match PatientSex="Female" />
+        </And>
+      </Condition>
+      <Action Type="DisplayPrompt" Style="Warning">
+        <Title>🩸 Anaemia Detected (Female)</Title>
+        <Text><![CDATA[
+Haemoglobin < 115 g/L in female patient.
+
+CLINICAL PATHWAY:
+1. Check MCV to classify anaemia type
+2. Consider menstrual history (menorrhagia?)
+3. If post-menopausal or age >60: FIT test / 2WW consideration
+4. Check Ferritin, B12, Folate
+
+EMIS CODING: 422.. (Anaemia screen done)
+        ]]></Text>
+      </Action>
+      <SuggestedCode System="Read2" Code="422.." Description="Anaemia screen done" />
+    </Rule>
+
+    <!-- Iron Deficiency (Low Ferritin) -->
+    <Rule Name="Iron_Deficiency" Priority="2" Category="Haematology">
+      <Condition>
+        <Match TestCode="FERR" TestName="Ferritin" Operator="LessThan" Value="30" Unit="ug/L" />
+      </Condition>
+      <Action Type="DisplayPrompt" Style="Warning">
+        <Title>🔬 Iron Deficiency Confirmed</Title>
+        <Text><![CDATA[
+Ferritin < 30 µg/L confirms iron deficiency.
+
+CLINICAL PATHWAY:
+1. Identify cause of iron loss:
+   - Menorrhagia (pre-menopausal women)
+   - GI blood loss (post-menopausal / males → 2WW consideration)
+   - Coeliac disease (check tTG antibodies)
+
+2. Treatment:
+   - Start oral iron (Ferrous Fumarate 210mg TDS)
+   - Recheck Hb/Ferritin in 4 weeks
+
+⚠️ RED FLAG: Low ferritin in males or post-menopausal females 
+WITHOUT clear cause requires GI investigation.
+
+EMIS CODING: D00y. (Iron deficiency anaemia)
+        ]]></Text>
+      </Action>
+      <SuggestedCode System="Read2" Code="D00y." Description="Iron deficiency anaemia" />
+    </Rule>
+
+    <!-- ==================== DIABETES & METABOLIC ==================== -->
+
+    <!-- Prediabetes -->
+    <Rule Name="Prediabetes_Detection" Priority="2" Category="Diabetes">
+      <Condition>
+        <And>
+          <Match TestCode="HBA1C" TestName="HbA1c" Operator="GreaterThanOrEqual" Value="42" Unit="mmol/mol" />
+          <Match TestCode="HBA1C" TestName="HbA1c" Operator="LessThan" Value="48" Unit="mmol/mol" />
+        </And>
+      </Condition>
+      <Action Type="DisplayPrompt" Style="Info">
+        <Title>📊 Prediabetes / High Risk Detected</Title>
+        <Text><![CDATA[
+HbA1c 42-47 mmol/mol = PREDIABETES
+
+CLINICAL PATHWAY:
+1. Refer to National Diabetes Prevention Programme (NDPP)
+2. Lifestyle advice: Diet, Exercise, Weight management
+3. Re-test HbA1c annually
+4. QRISK3 assessment if not done recently
+
+EMIS CODING: C109. (Diabetes mellitus at risk)
+        ]]></Text>
+      </Action>
+      <SuggestedCode System="Read2" Code="C109." Description="Diabetes mellitus at risk" />
+    </Rule>
+
+    <!-- New Type 2 Diabetes Diagnosis -->
+    <Rule Name="T2DM_New_Diagnosis" Priority="2" Category="Diabetes">
+      <Condition>
+        <And>
+          <Match TestCode="HBA1C" TestName="HbA1c" Operator="GreaterThanOrEqual" Value="48" Unit="mmol/mol" />
+          <Match TestCode="HBA1C" TestName="HbA1c" Operator="LessThan" Value="58" Unit="mmol/mol" />
+        </And>
+      </Condition>
+      <Action Type="DisplayPrompt" Style="Warning">
+        <Title>🩺 Type 2 Diabetes: New Diagnosis Range</Title>
+        <Text><![CDATA[
+HbA1c 48-57 mmol/mol = TYPE 2 DIABETES THRESHOLD
+
+CLINICAL PATHWAY (NG28):
+1. Confirm diagnosis (repeat HbA1c if asymptomatic)
+2. Lifestyle advice (STRUCTURED education offer)
+3. Offer Metformin 500mg OD (titrate slowly)
+4. Target HbA1c: 48 mmol/mol (or 53 if dual therapy)
+
+EARLY SGLT2 TRIGGER:
+→ If CVD risk >10%, Heart Failure, or CKD Stage 3+:
+   Consider early SGLT2i (e.g., Dapagliflozin)
+
+EMIS CODING: C10F. (Type 2 diabetes mellitus)
+        ]]></Text>
+      </Action>
+      <SuggestedCode System="Read2" Code="C10F." Description="Type 2 diabetes mellitus" />
+    </Rule>
+
+    <!-- Poor Diabetes Control -->
+    <Rule Name="T2DM_Poor_Control" Priority="2" Category="Diabetes">
+      <Condition>
+        <Match TestCode="HBA1C" TestName="HbA1c" Operator="GreaterThanOrEqual" Value="75" Unit="mmol/mol" />
+      </Condition>
+      <Action Type="DisplayPrompt" Style="Critical">
+        <Title>⚠️ Diabetes: Poor Control</Title>
+        <Text><![CDATA[
+HbA1c ≥ 75 mmol/mol = POOR GLYCAEMIC CONTROL
+
+CLINICAL PATHWAY:
+1. Review medication adherence
+2. Consider triple therapy or GLP-1 RA if BMI >35
+3. If symptomatic (Polyuria/Polydipsia): Consider Insulin initiation
+4. Discuss with Diabetes Specialist Nurse or refer
+
+⚠️ Check for diabetic complications:
+   - Retinopathy screening up to date?
+   - Foot check completed?
+   - Renal function (eGFR) and uACR checked?
+
+EMIS CODING: 66Ao. (Diabetic on maximal treatment)
+        ]]></Text>
+      </Action>
+    </Rule>
+
+    <!-- ==================== LIPIDS & CVD RISK ==================== -->
+
+    <!-- High Cholesterol QRISK Trigger -->
+    <Rule Name="Cholesterol_QRISK_Trigger" Priority="3" Category="Lipids">
+      <Condition>
+        <Match TestCode="CHOL" TestName="Total Cholesterol" Operator="GreaterThan" Value="5.0" Unit="mmol/L" />
+      </Condition>
+      <Action Type="DisplayPrompt" Style="Info">
+        <Title>💊 Cholesterol Elevated - QRISK Assessment</Title>
+        <Text><![CDATA[
+Total Cholesterol > 5.0 mmol/L
+
+CLINICAL PATHWAY:
+1. Calculate QRISK3 score (if not done in last 12 months)
+2. If QRISK3 ≥ 10%:
+   → Offer Atorvastatin 20mg
+   → Lifestyle advice
+3. If QRISK3 < 10%:
+   → Lifestyle advice only
+   → Recheck in 5 years (or annually if borderline)
+
+NON-HDL TARGET:
+- Primary prevention: < 4.0 mmol/L
+- Secondary prevention (existing CVD): < 2.5 mmol/L
+
+EMIS CODING: 38DR. (QRISK2 CVD 10-year risk)
+        ]]></Text>
+      </Action>
+      <SuggestedCode System="Read2" Code="38DR." Description="QRISK2 CVD 10-year risk" />
+    </Rule>
+
+    <!-- ==================== LIVER FUNCTION ==================== -->
+
+    <!-- ALT Elevated -->
+    <Rule Name="ALT_Elevated" Priority="3" Category="LFT">
+      <Condition>
+        <Match TestCode="ALT" TestName="ALT" Operator="GreaterThan" Value="40" Unit="IU/L" />
+      </Condition>
+      <Action Type="DisplayPrompt" Style="Info">
+        <Title>🔬 ALT Elevated</Title>
+        <Text><![CDATA[
+ALT > 40 IU/L (above upper limit)
+
+CLINICAL PATHWAY:
+1. MASLD Screen: Check BMI, HbA1c, Lipids
+2. Alcohol history (calculate units/week)
+3. If ALT > 3x ULN (>120 IU/L):
+   → Viral Hepatitis Screen (HBsAg, HCV Ab)
+   → Consider autoimmune liver screen (ANA, SMA)
+4. Review medications (Statins, Paracetamol, Methotrexate)
+
+FIB-4 SCORE: Age, AST, ALT, Platelets → Risk-stratify fibrosis
+
+EMIS CODING: 662.. (Liver function test abnormal)
+        ]]></Text>
+      </Action>
+      <SuggestedCode System="Read2" Code="662.." Description="Liver function test abnormal" />
+    </Rule>
+
+    <!-- ==================== THYROID ==================== -->
+
+    <!-- Hypothyroidism (High TSH) -->
+    <Rule Name="Hypothyroidism_Detection" Priority="3" Category="Thyroid">
+      <Condition>
+        <Match TestCode="TSH" TestName="TSH" Operator="GreaterThan" Value="10.0" Unit="mU/L" />
+      </Condition>
+      <Action Type="DisplayPrompt" Style="Warning">
+        <Title>🦋 Overt Hypothyroidism</Title>
+        <Text><![CDATA[
+TSH > 10.0 mU/L (with likely low Free T4)
+
+CLINICAL PATHWAY:
+1. Confirm diagnosis (check Free T4)
+2. Start Levothyroxine:
+   - Age <65, no cardiac history: Start 50-100mcg OD
+   - Age >65 or cardiac history: Start 25mcg OD
+3. Recheck TFTs in 6-8 weeks
+4. Target TSH: 0.4 - 2.0 mU/L
+
+EMIS CODING: C10.. (Hypothyroidism)
+        ]]></Text>
+      </Action>
+      <SuggestedCode System="Read2" Code="C10.." Description="Hypothyroidism" />
+    </Rule>
+
+    <!-- ==================== TUMOUR MARKERS ==================== -->
+
+    <!-- PSA Elevated (General) -->
+    <Rule Name="PSA_Elevated" Priority="2" Category="TumourMarkers">
+      <Condition>
+        <Match TestCode="PSA" TestName="PSA" Operator="GreaterThan" Value="4.0" Unit="ng/mL" />
+      </Condition>
+      <Action Type="DisplayPrompt" Style="Warning">
+        <Title>🔬 PSA Elevated</Title>
+        <Text><![CDATA[
+PSA > 4.0 ng/mL detected
+
+⚠️ BEFORE 2WW REFERRAL, EXCLUDE:
+1. Recent UTI (treat and wait 1 month)
+2. Recent ejaculation (wait 48 hours)
+3. Vigorous exercise / cycling
+4. Recent DRE (wait 1 week)
+
+AGE-SPECIFIC THRESHOLDS:
+- 40-49: > 2.5 ng/mL abnormal
+- 50-59: > 3.5 ng/mL abnormal
+- 60-69: > 4.5 ng/mL abnormal
+- 70-79: > 6.5 ng/mL abnormal
+
+If confirmed elevated after exclusions → 2WW Urology Referral
+
+EMIS CODING: 4K15. (Serum PSA level raised)
+        ]]></Text>
+      </Action>
+      <SuggestedCode System="Read2" Code="4K15." Description="Serum PSA level raised" />
+    </Rule>
+
+    <!-- CA125 Elevated (Ovarian) -->
+    <Rule Name="CA125_Elevated" Priority="2" Category="TumourMarkers">
+      <Condition>
+        <Match TestCode="CA125" TestName="CA125" Operator="GreaterThanOrEqual" Value="35" Unit="U/mL" />
+      </Condition>
+      <Action Type="DisplayPrompt" Style="Warning">
+        <Title>🩺 CA125 Elevated</Title>
+        <Text><![CDATA[
+CA125 ≥ 35 U/mL
+
+NICE CG122 PATHWAY:
+1. Urgent Pelvic Ultrasound (within 2 weeks)
+2. If US abnormal → 2WW Gynaecology referral
+3. Consider other causes: Endometriosis, Fibroids, Ovarian cysts
+
+RMI (Risk of Malignancy Index) calculation required.
+
+EMIS CODING: 44M5. (Serum CA125 level raised)
+        ]]></Text>
+      </Action>
+      <SuggestedCode System="Read2" Code="44M5." Description="Serum CA125 level raised" />
+    </Rule>
+
+    <!-- ==================== KIDNEY FUNCTION ==================== -->
+
+    <!-- eGFR Low (CKD Detection) -->
+    <Rule Name="eGFR_CKD_Detection" Priority="2" Category="Renal">
+      <Condition>
+        <Match TestCode="EGFR" TestName="eGFR" Operator="LessThan" Value="60" Unit="mL/min" />
+      </Condition>
+      <Action Type="DisplayPrompt" Style="Warning">
+        <Title>🩺 eGFR < 60 - Possible CKD</Title>
+        <Text><![CDATA[
+eGFR < 60 mL/min/1.73m² detected
+
+CLINICAL PATHWAY:
+1. Repeat in 2 weeks to confirm (rule out AKI)
+2. If persistent:
+   - Check uACR (albuminuria)
+   - Review medications (NSAIDs, ACEi dose)
+   - BP target < 140/90 (or < 130/80 if proteinuria)
+
+CKD STAGING:
+- Stage 3a: eGFR 45-59
+- Stage 3b: eGFR 30-44
+- Stage 4: eGFR 15-29 (Nephrology referral)
+- Stage 5: eGFR <15 (Urgent nephrology)
+
+EMIS CODING: 1Z1.. (Chronic kidney disease stage 3)
+        ]]></Text>
+      </Action>
+      <SuggestedCode System="Read2" Code="1Z1.." Description="Chronic kidney disease stage 3" />
+    </Rule>
+
+    <!-- ==================== ANTENATAL SCREENING ==================== -->
+
+    <!-- HIV Reactive -->
+    <Rule Name="HIV_Reactive" Priority="1" Category="Antenatal">
+      <Condition>
+        <Match TestCode="HIV" TestName="HIV Screening" Result="Reactive" />
+      </Condition>
+      <Action Type="DisplayAlert" Style="Critical">
+        <Title>⚠️ HIV Screening Reactive</Title>
+        <Text><![CDATA[
+HIV screening test REACTIVE
+
+IMMEDIATE ACTIONS:
+1. Urgent referral to GUM/Infectious Disease Specialist
+2. Confirmatory Western Blot test required
+3. If antenatal: Urgent HIV specialist/antenatal team involvement
+4. PREVENT vertical transmission
+
+Do NOT disclose to patient until confirmatory test complete.
+
+EMIS CODING: 65V.. (HIV positive)
+        ]]></Text>
+      </Action>
+    </Rule>
+
+    <!-- Hepatitis B Surface Antigen Positive -->
+    <Rule Name="HBsAg_Positive" Priority="1" Category="Antenatal">
+      <Condition>
+        <Match TestCode="HBSAG" TestName="Hepatitis B Surface Antigen" Result="Positive" />
+      </Condition>
+      <Action Type="DisplayAlert" Style="Critical">
+        <Title>⚠️ Hepatitis B Positive</Title>
+        <Text><![CDATA[
+Hepatitis B Surface Antigen (HBsAg) POSITIVE
+
+Indicates ACTIVE HBV infection.
+
+ACTIONS:
+1. Check: HBeAg, Anti-HBe, HBV DNA Viral Load
+2. Refer to Hepatology/GI for assessment
+3. Screen household contacts
+
+IF PREGNANT:
+→ Urgent referral to specialist antenatal team
+→ Infant requires HBIG + Vaccination at birth
+
+EMIS CODING: A707. (Hepatitis B carrier)
+        ]]></Text>
+      </Action>
+    </Rule>
+
+  </Logic>
+
+  <Documentation>
+    <ClinicalSources>
+      <Source>NICE Clinical Knowledge Summaries (CKS)</Source>
+      <Source>British Society of Haematology Guidelines</Source>
+      <Source>NICE NG28 (Type 2 Diabetes in Adults)</Source>
+      <Source>NICE CG181 (Lipid Modification)</Source>
+      <Source>NICE CG182 (CKD in Adults)</Source>
+      <Source>NHS Lab Tests Online UK</Source>
+    </ClinicalSources>
+    <LastReviewedBy>PathLinks Clinical Governance Team</LastReviewedBy>
+    <NextReviewDate>2027-02-04</NextReviewDate>
+  </Documentation>
+
+</Protocol>
