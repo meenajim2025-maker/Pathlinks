@@ -1,0 +1,878 @@
+[
+    {
+        "category": "Full Blood Count",
+        "tests": [
+            {
+                "name": "Haemoglobin (Hb)",
+                "unit": "g/L",
+                "ranges": {
+                    "male": {
+                        "min": 130,
+                        "max": 180
+                    },
+                    "female": {
+                        "min": 115,
+                        "max": 165
+                    }
+                },
+                "guidance": {
+                    "high": {
+                        "threshold": "Above max",
+                        "actions": [
+                            "Review SHS: Smoking, Hubby/Partner smoking, and Carbon Monoxide exposure.",
+                            "Check medication history: Use of steroid inhalers, oral steroids, or TRT.",
+                            "Clinical Exam: Check skin for discoloration (Plethora) or scratch marks.",
+                            "Review Trend: Compare with previous values to differentiate acute vs chronic.",
+                            "Consider repeat bloods in 4-6 weeks if mild and asymptomatic.",
+                            "Rationale: Exclude secondary polycythemia before specialist JAK2 referral."
+                        ]
+                    },
+                    "low": {
+                        "threshold": "Below min",
+                        "actions": [
+                            "Check MCV to determine type of anaemia (Microcytic, Normocytic, Macrocytic).",
+                            "Review Ferritin, B12, and Folate.",
+                            "If age >60 or red flags (weight loss, change in bowel habit), perform FIT test / 2WW referral.",
+                            "Consider coeliac serology if microcytic/normocytic."
+                        ]
+                    }
+                }
+            },
+            {
+                "name": "White Blood Cell Count (WBC)",
+                "unit": "x10^9/L",
+                "ranges": {
+                    "all": {
+                        "min": 3.6,
+                        "max": 11.0
+                    }
+                },
+                "guidance": {
+                    "high": {
+                        "actions": [
+                            "Check differential (Neutrophilia, Lymphocytosis?).",
+                            "Check for signs of infection or inflammation.",
+                            "If persistent and unexplained, consider haematology review for myeloproliferative disorders."
+                        ]
+                    }
+                }
+            },
+            {
+                "name": "Platelets",
+                "unit": "x10^9/L",
+                "ranges": {
+                    "all": {
+                        "min": 150,
+                        "max": 450
+                    }
+                }
+            }
+        ]
+    },
+    {
+        "category": "Urea & Electrolytes (U&Es)",
+        "tests": [
+            {
+                "name": "Sodium",
+                "unit": "mmol/L",
+                "ranges": {
+                    "all": {
+                        "min": 133,
+                        "max": 146
+                    }
+                },
+                "guidance": {
+                    "low": {
+                        "actions": [
+                            "Review fluid status (Hypo/Eu/Hypervolaemic).",
+                            "Check medications (Diuretics, SSRIs, PPIs - SIADH?).",
+                            "Urgent admission if symptomatic (Confusion, Seizure) or Na <125."
+                        ]
+                    }
+                }
+            },
+            {
+                "name": "Potassium",
+                "unit": "mmol/L",
+                "ranges": {
+                    "all": {
+                        "min": 3.5,
+                        "max": 5.3
+                    }
+                },
+                "guidance": {
+                    "high": {
+                        "actions": [
+                            "URGENT: If K >= 6.0, obtain ECG immediately.",
+                            "If K >= 6.5, urgent hospital admission required.",
+                            "Review medications: ACEi, ARBs, Spironolactone, NSAIDs."
+                        ]
+                    }
+                }
+            },
+            {
+                "name": "Creatinine",
+                "unit": "µmol/L",
+                "ranges": {
+                    "male": {
+                        "min": 60,
+                        "max": 105
+                    },
+                    "female": {
+                        "min": 45,
+                        "max": 85
+                    }
+                }
+            },
+            {
+                "name": "Urea",
+                "unit": "mmol/L",
+                "ranges": {
+                    "all": {
+                        "min": 2.5,
+                        "max": 7.8
+                    }
+                }
+            },
+            {
+                "name": "Chloride",
+                "unit": "mmol/L",
+                "ranges": {
+                    "all": {
+                        "min": 95,
+                        "max": 108
+                    }
+                }
+            }
+        ]
+    },
+    {
+        "category": "Liver Function (LFTs)",
+        "tests": [
+            {
+                "name": "ALT (Alanine Transferase)",
+                "unit": "IU/L",
+                "ranges": {
+                    "all": {
+                        "min": 5,
+                        "max": 40
+                    }
+                },
+                "guidance": {
+                    "high": {
+                        "actions": [
+                            "MASLD screen: Check BMI, HbA1c, Lipids.",
+                            "If >3x ULN, check Viral Hepatitis Screen (HBsAg, HCV Ab)."
+                        ]
+                    }
+                }
+            },
+            {
+                "name": "AST (Aspartate Transferase)",
+                "unit": "IU/L",
+                "ranges": {
+                    "all": {
+                        "min": 0,
+                        "max": 40
+                    }
+                }
+            },
+            {
+                "name": "Alkaline Phosphatase (ALP)",
+                "unit": "IU/L",
+                "ranges": {
+                    "all": {
+                        "min": 30,
+                        "max": 130
+                    }
+                }
+            },
+            {
+                "name": "Bilirubin",
+                "unit": "µmol/L",
+                "ranges": {
+                    "all": {
+                        "min": 0,
+                        "max": 20
+                    }
+                }
+            },
+            {
+                "name": "Hepatitis Screening",
+                "unit": "Status",
+                "ranges": {
+                    "all": {
+                        "max": 0
+                    }
+                },
+                "guidance": {
+                    "high": {
+                        "actions": [
+                            "HBsAg Positive: Chronic or Acute Hepatitis B. Refer to GI/Infectious Disease.",
+                            "HCV Ab Positive: Requires reflex HCV RNA test to confirm current infection."
+                        ]
+                    }
+                }
+            }
+        ]
+    },
+    {
+        "category": "Thyroid Function (TFTs)",
+        "tests": [
+            {
+                "name": "TSH",
+                "unit": "mU/L",
+                "ranges": {
+                    "all": {
+                        "min": 0.4,
+                        "max": 4.5
+                    }
+                }
+            },
+            {
+                "name": "Free T4",
+                "unit": "pmol/L",
+                "ranges": {
+                    "all": {
+                        "min": 9.0,
+                        "max": 25.0
+                    }
+                }
+            },
+            {
+                "name": "Free T3",
+                "unit": "pmol/L",
+                "ranges": {
+                    "all": {
+                        "min": 3.5,
+                        "max": 7.8
+                    }
+                }
+            }
+        ]
+    },
+    {
+        "category": "Inflammatory & Anaemia",
+        "tests": [
+            {
+                "name": "CRP",
+                "unit": "mg/L",
+                "ranges": {
+                    "all": {
+                        "min": 0,
+                        "max": 10
+                    }
+                }
+            },
+            {
+                "name": "ESR",
+                "unit": "mm/hr",
+                "ranges": {
+                    "all": {
+                        "min": 0,
+                        "max": 20
+                    }
+                }
+            },
+            {
+                "name": "Ferritin",
+                "unit": "µg/L",
+                "ranges": {
+                    "male": {
+                        "min": 24,
+                        "max": 340
+                    },
+                    "female": {
+                        "min": 11,
+                        "max": 310
+                    }
+                },
+                "guidance": {
+                    "low": {
+                        "actions": [
+                            "Confirms iron deficiency. Review for GI loss / Menorrhagia. If >60yrs, FIT test / 2WW."
+                        ]
+                    },
+                    "high": {
+                        "actions": [
+                            "Acute phase reactant. If CRP normal and Ferritin >1000, check Transferrin Saturation for Haemochromatosis."
+                        ]
+                    }
+                }
+            },
+            {
+                "name": "Serum Iron",
+                "unit": "µmol/L",
+                "ranges": {
+                    "all": {
+                        "min": 10,
+                        "max": 30
+                    }
+                }
+            },
+            {
+                "name": "Transferrin Saturation",
+                "unit": "%",
+                "ranges": {
+                    "all": {
+                        "min": 20,
+                        "max": 50
+                    }
+                },
+                "guidance": {
+                    "high": {
+                        "actions": [
+                            "If >50% (male) or >45% (female) WITH high ferritin: High suspicion of Hereditary Haemochromatosis. Genetic testing (HFE) required."
+                        ]
+                    },
+                    "low": {
+                        "actions": [
+                            "<20% indicates iron deficiency even if ferritin is normal (e.g. in inflammation)."
+                        ]
+                    }
+                }
+            }
+        ]
+    },
+    {
+        "category": "Antenatal & Viral Screening",
+        "tests": [
+            {
+                "name": "HIV Screening",
+                "unit": "Status",
+                "ranges": {
+                    "all": {
+                        "max": 0
+                    }
+                },
+                "guidance": {
+                    "high": {
+                        "actions": [
+                            "Reactive: Urgent referral to GUM/ID specialist. Perform confirmatory western blot."
+                        ]
+                    }
+                }
+            },
+            {
+                "name": "Syphilis (Treponemal Ab)",
+                "unit": "Status",
+                "ranges": {
+                    "all": {
+                        "max": 0
+                    }
+                },
+                "guidance": {
+                    "high": {
+                        "actions": [
+                            "Positive: Differentiate between treated and active infection. Check RPR/VDRL titre. Refer GUM."
+                        ]
+                    }
+                }
+            },
+            {
+                "name": "Hepatitis B Surface Antigen (HBsAg)",
+                "unit": "Status",
+                "ranges": {
+                    "all": {
+                        "max": 0
+                    }
+                },
+                "guidance": {
+                    "high": {
+                        "actions": [
+                            "Positive: Indicates active HBV infection. If pregnant: Urgent referral to specialist to determine infectivity (HBeAg/Viral Load). Infant requires vaccination/HBIG."
+                        ]
+                    }
+                }
+            },
+            {
+                "name": "Varicella Zoster IgG",
+                "unit": "IU/L",
+                "ranges": {
+                    "all": {
+                        "min": 100
+                    }
+                },
+                "guidance": {
+                    "low": {
+                        "actions": [
+                            "<100: Susceptible. If pregnant and exposed to chickenpox: Requires post-exposure prophylaxis (PEP) within 10 days."
+                        ]
+                    },
+                    "high": {
+                        "actions": [
+                            ">150: Sufficient immunity. No action needed after exposure."
+                        ]
+                    }
+                }
+            },
+            {
+                "name": "Rubella IgG",
+                "unit": "IU/mL",
+                "ranges": {
+                    "all": {
+                        "min": 10
+                    }
+                },
+                "guidance": {
+                    "low": {
+                        "actions": [
+                            "<10: Non-immune. Note: Routine antenatal screening ceased in UK (2016). Advise MMR postpartum."
+                        ]
+                    }
+                }
+            }
+        ]
+    },
+    {
+        "category": "Vaccination & Immunity",
+        "tests": [
+            {
+                "name": "Hepatitis B Surface Antibody (Anti-HBs)",
+                "unit": "mIU/mL",
+                "ranges": {
+                    "all": {
+                        "min": 100
+                    }
+                },
+                "guidance": {
+                    "low": {
+                        "actions": [
+                            "<10: Non-responder. Give booster and re-test in 1 month.",
+                            "10 - 100: Weak responder. Give 1 booster course. No re-test needed until 5 years."
+                        ]
+                    },
+                    "high": {
+                        "actions": [
+                            ">100: Sufficient immunity. Booster at 5 years (for high-risk groups)."
+                        ]
+                    }
+                }
+            }
+        ]
+    },
+    {
+        "category": "Vitamins & Bone",
+        "tests": [
+            {
+                "name": "Vitamin D (25-OH)",
+                "unit": "nmol/L",
+                "ranges": {
+                    "all": {
+                        "min": 50,
+                        "max": 150
+                    }
+                },
+                "guidance": {
+                    "low": {
+                        "actions": [
+                            "<25 nmol/L: Deficient. Treat with high-dose Colecalciferol (e.g., 20,000 IU weekly for 6-8 weeks).",
+                            "25-50 nmol/L: Insufficient. Advise 800-1000 IU daily maintenance."
+                        ]
+                    }
+                }
+            },
+            {
+                "name": "Serum Calcium (Corrected)",
+                "unit": "mmol/L",
+                "ranges": {
+                    "all": {
+                        "min": 2.2,
+                        "max": 2.6
+                    }
+                }
+            },
+            {
+                "name": "Magnesium",
+                "unit": "mmol/L",
+                "ranges": {
+                    "all": {
+                        "min": 0.7,
+                        "max": 1.0
+                    }
+                }
+            }
+        ]
+    },
+    {
+        "category": "Reproductive & Endocrine",
+        "tests": [
+            {
+                "name": "FSH",
+                "unit": "IU/L",
+                "ranges": {
+                    "all": {
+                        "min": 2,
+                        "max": 12
+                    }
+                },
+                "guidance": {
+                    "high": {
+                        "actions": [
+                            "In women <40: If >30 on 2 tests -> Diagnostic for POI.",
+                            "In women >45: FSH not required for menopause diagnosis."
+                        ]
+                    }
+                }
+            },
+            {
+                "name": "LH",
+                "unit": "IU/L",
+                "ranges": {
+                    "all": {
+                        "min": 2,
+                        "max": 12
+                    }
+                },
+                "guidance": {
+                    "high": {
+                        "actions": [
+                            "Raised LH with raised FSH and low Oestradiol confirms ovarian failure."
+                        ]
+                    }
+                }
+            },
+            {
+                "name": "Oestradiol",
+                "unit": "pmol/L",
+                "ranges": {
+                    "all": {
+                        "min": 100,
+                        "max": 1500
+                    }
+                }
+            },
+            {
+                "name": "Prolactin",
+                "unit": "mIU/L",
+                "ranges": {
+                    "all": {
+                        "max": 500
+                    }
+                },
+                "guidance": {
+                    "high": {
+                        "actions": [
+                            "If >700: check macroprolactin. Review for medications (SSRIs/Antipsychotics)."
+                        ]
+                    }
+                }
+            }
+        ]
+    },
+    {
+        "category": "Immunology & Autoimmune",
+        "tests": [
+            {
+                "name": "ANA (Anti-Nuclear Antibody)",
+                "unit": "Titre",
+                "ranges": {
+                    "all": {
+                        "max": 0
+                    }
+                },
+                "guidance": {
+                    "high": {
+                        "actions": [
+                            "Positive: Screen for CTD. Check ENA and dsDNA."
+                        ]
+                    }
+                }
+            },
+            {
+                "name": "ANCA",
+                "unit": "Titre",
+                "ranges": {
+                    "all": {
+                        "max": 0
+                    }
+                },
+                "guidance": {
+                    "high": {
+                        "actions": [
+                            "Positive: Associated with Vasculitis."
+                        ]
+                    }
+                }
+            },
+            {
+                "name": "HLA-B27",
+                "unit": "Status",
+                "ranges": {
+                    "all": {
+                        "max": 0
+                    }
+                },
+                "guidance": {
+                    "high": {
+                        "actions": [
+                            "Positive: Strong association with Ankylosing Spondylitis and Reactive Arthritis.",
+                            "Not diagnostic alone; requires clinical features (Inflammatory back pain >3 months)."
+                        ]
+                    }
+                }
+            },
+            {
+                "name": "Specific IgE (RAST) - Food/Resp",
+                "unit": "kUA/L",
+                "ranges": {
+                    "all": {
+                        "max": 0.35
+                    }
+                },
+                "guidance": {
+                    "high": {
+                        "actions": [
+                            "0.35 - 3.5: Weakly positive (Level 1/2).",
+                            "3.5 - 17.5: Mod-Strong positive (Level 3).",
+                            ">17.5: Very strong positive (Level 4+).",
+                            "CLINICAL NOTE: Specific IgE only indicates sensitisation, NOT clinical allergy. Interpret alongside symptom history."
+                        ]
+                    }
+                }
+            }
+        ]
+    },
+    {
+        "category": "Gastroenterology",
+        "tests": [
+            {
+                "name": "Coeliac Screen (IgA tTG)",
+                "unit": "U/mL",
+                "ranges": {
+                    "all": {
+                        "max": 10
+                    }
+                }
+            },
+            {
+                "name": "FIT (Faecal Immunochemical Test)",
+                "unit": "µg Hb/g",
+                "ranges": {
+                    "all": {
+                        "max": 10
+                    }
+                }
+            },
+            {
+                "name": "Faecal Calprotectin",
+                "unit": "µg/g",
+                "ranges": {
+                    "all": {
+                        "max": 50
+                    }
+                },
+                "guidance": {
+                    "high": {
+                        "actions": [
+                            "> 250: High risk of IBD. Refer."
+                        ]
+                    }
+                }
+            }
+        ]
+    },
+    {
+        "category": "Lipids & Cardiac",
+        "tests": [
+            {
+                "name": "Total Cholesterol",
+                "unit": "mmol/L",
+                "ranges": {
+                    "all": {
+                        "max": 5.0
+                    }
+                },
+                "guidance": {
+                    "high": {
+                        "actions": [
+                            "Calculate QRISK3 score. If >10% offer Statins."
+                        ]
+                    }
+                }
+            },
+            {
+                "name": "LDL Cholesterol",
+                "unit": "mmol/L",
+                "ranges": {
+                    "all": {
+                        "max": 3.0
+                    }
+                }
+            },
+            {
+                "name": "HDL Cholesterol",
+                "unit": "mmol/L",
+                "ranges": {
+                    "male": {
+                        "min": 1.0
+                    },
+                    "female": {
+                        "min": 1.2
+                    }
+                },
+                "guidance": {
+                    "low": {
+                        "actions": [
+                            "Low HDL is a cardiovascular risk factor. Advise lifestyle/exercise."
+                        ]
+                    }
+                }
+            },
+            {
+                "name": "Non-HDL Cholesterol",
+                "unit": "mmol/L",
+                "ranges": {
+                    "all": {
+                        "max": 4.0
+                    }
+                },
+                "guidance": {
+                    "high": {
+                        "actions": [
+                            "Better predictor of CVD risk than LDL. Target < 4.0 (primary) or < 2.6 (secondary)."
+                        ]
+                    }
+                }
+            },
+            {
+                "name": "Triglycerides",
+                "unit": "mmol/L",
+                "ranges": {
+                    "all": {
+                        "max": 1.7
+                    }
+                },
+                "guidance": {
+                    "high": {
+                        "actions": [
+                            "If >10 mmol/L: Risk of acute pancreatitis. Urgent referral.",
+                            "If 2.3 - 10: Optimise diabetes/alcohol before repeat."
+                        ]
+                    }
+                }
+            }
+        ]
+    },
+    {
+        "category": "Diabetes & HbA1c",
+        "tests": [
+            {
+                "name": "HbA1c",
+                "unit": "mmol/mol",
+                "ranges": {
+                    "all": {
+                        "min": 20,
+                        "max": 41
+                    }
+                },
+                "guidance": {
+                    "high": {
+                        "actions": [
+                            "42 - 47 mmol/mol: PREDIABETES / High Risk. ACTION: Refer to National Diabetes Prevention Programme (NDPP). Lifestyle advice (Diet/Exercise). Re-test annually.",
+                            "48 - 57 mmol/mol: TYPE 2 DIABETES diagnosed. ACTION: Lifestyle advice. Offer Metformin. Target 48 mmol/mol.",
+                            "SGLT2 Trigger: If CVD risk >10%, Heart Failure, or CKD: Add SGLT2 inhibitor (e.g. Dapagliflozin) early.",
+                            "58 - 74 mmol/mol: SUBOPTIMAL CONTROL. ACTION: Intensify to dual therapy (Metformin + SGLT2i / DPP4i / Pioglitazone / SU). Target 53 mmol/mol.",
+                            "> 75 mmol/mol: POOR CONTROL. ACTION: Review adherence. Consider triple therapy or GLP-1 RA if BMI >35. If symptomatic (Os/Us), consider Insulin referral.",
+                            "Note: Relaxation of targets may be appropriate for elderly/frail patients."
+                        ]
+                    }
+                }
+            }
+        ]
+    },
+    {
+        "category": "Tumour Markers",
+        "tests": [
+            {
+                "name": "PSA",
+                "unit": "ng/mL",
+                "ranges": {
+                    "age_40_49": {
+                        "max": 2.5
+                    },
+                    "age_50_59": {
+                        "max": 3.5
+                    },
+                    "age_60_69": {
+                        "max": 4.5
+                    },
+                    "age_70_79": {
+                        "max": 6.5
+                    }
+                },
+                "guidance": {
+                    "high": {
+                        "actions": [
+                            "Exclude UTI/Exercise. If above age-threshold, 2WW referral."
+                        ]
+                    }
+                }
+            },
+            {
+                "name": "CA125",
+                "unit": "U/mL",
+                "ranges": {
+                    "all": {
+                        "max": 35
+                    }
+                },
+                "guidance": {
+                    "high": {
+                        "actions": [
+                            "CA125 >= 35: Urgent Pelvic US for Ovarian cancer (NICE CG122)."
+                        ]
+                    }
+                }
+            },
+            {
+                "name": "CA19-9",
+                "unit": "U/mL",
+                "ranges": {
+                    "all": {
+                        "max": 37
+                    }
+                },
+                "guidance": {
+                    "high": {
+                        "actions": [
+                            "If jaundice/weight loss, 2WW Pancreatic pathway (Urgent CT)."
+                        ]
+                    }
+                }
+            },
+            {
+                "name": "CEA",
+                "unit": "µg/L",
+                "ranges": {
+                    "all": {
+                        "max": 3
+                    }
+                },
+                "guidance": {
+                    "high": {
+                        "actions": [
+                            "Not for screening. Used for monitoring post-resection colorectal cancer."
+                        ]
+                    }
+                }
+            },
+            {
+                "name": "AFP",
+                "unit": "kU/L",
+                "ranges": {
+                    "all": {
+                        "max": 10
+                    }
+                },
+                "guidance": {
+                    "high": {
+                        "actions": [
+                            "Raised in Liver (HCC) or Testicular cancer. Request Urgent US."
+                        ]
+                    }
+                }
+            }
+        ]
+    }
+]

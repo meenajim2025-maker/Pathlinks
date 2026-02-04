@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PathLinks | Clinical Decision Support</title>
+    <meta name="description"
+        content="GP Clinician guidance tool for actioning blood test results. Safe, protocol-driven support for GPs and trainees.">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Outfit:wght@400;600;800&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <div class="app-container">
+        <aside class="sidebar">
+            <div class="logo">
+                <span class="icon">🩸</span>
+                <h1>PathLinks</h1>
+            </div>
+            <nav>
+                <div class="nav-item active" id="nav-dashboard">Dashboard</div>
+                <div class="nav-item" id="nav-protocols">Protocols</div>
+                <div class="nav-item" id="nav-emis-coding">EMIS Integration</div>
+            </nav>
+            <div class="user-profile">
+                <div class="avatar">DR</div>
+                <div class="info">
+                    <p class="name">Registrar / JDO</p>
+                    <p class="role">Clinical Support Mode</p>
+                </div>
+            </div>
+        </aside>
+
+        <main class="content">
+            <header>
+                <div class="search-bar">
+                    <input type="text" id="test-search"
+                        placeholder="Search for a blood test (e.g. Hb, PSA, Ferritin)...">
+                </div>
+                <div class="header-actions">
+                    <span class="status-badge live">Live Updates</span>
+                </div>
+            </header>
+
+            <section id="dashboard-view" class="view">
+                <div class="welcome-section">
+                    <h2>Blood Result Actioning Protocol</h2>
+                    <p>Select a test or enter a value to receive guidance based on UK Clinical Standards.</p>
+                </div>
+
+                <div class="grid-container">
+                    <div class="input-card card">
+                        <h3>Test Analysis</h3>
+                        <div class="field-group">
+                            <label for="select-test">Select Test Category</label>
+                            <select id="select-test">
+                                <option value="">-- Choose Category --</option>
+                            </select>
+                        </div>
+                        <div class="field-group">
+                            <label for="select-param">Parameter</label>
+                            <select id="select-param" disabled>
+                                <option value="">-- Select Test First --</option>
+                            </select>
+                        </div>
+                        <div class="field-group">
+                            <label for="sex">Patient Sex</label>
+                            <div class="radio-group">
+                                <label><input type="radio" name="sex" value="male" checked> Male</label>
+                                <label><input type="radio" name="sex" value="female"> Female</label>
+                            </div>
+                        </div>
+                        <div class="field-group">
+                            <label for="age">Patient Age</label>
+                            <input type="number" id="age" value="50">
+                        </div>
+                        <div class="field-group">
+                            <label for="test-value">Result Value</label>
+                            <input type="number" id="test-value" step="0.1" placeholder="Enter numerical result">
+                        </div>
+                        <button id="analyse-btn" class="primary-btn">Analyse Result</button>
+                    </div>
+
+                    <div class="guidance-card card" id="guidance-output">
+                        <div class="placeholder-text">
+                            <p>Enter test details to see clinical guidance and EMIS coding flags.</p>
+                        </div>
+                    </div>
+
+                    <!-- QRISK3 Calculator Card (Hidden by default) -->
+                    <div class="qrisk-card card hidden" id="qrisk-section">
+                        <h3>QRISK3 Assessment</h3>
+                        <p class="small-text">Integrated CVD Risk Calculation (Simulated EMIS Data Capture)</p>
+                        <div class="qrisk-inputs">
+                            <div class="field-row">
+                                <div class="field-group-mini">
+                                    <label>Smoking Status</label>
+                                    <select id="smoking-status">
+                                        <option value="0">Non-smoker</option>
+                                        <option value="1">Ex-smoker</option>
+                                        <option value="2">Light (1-9/day)</option>
+                                        <option value="3">Moderate (10-19/day)</option>
+                                        <option value="4">Heavy (20+/day)</option>
+                                    </select>
+                                </div>
+                                <div class="field-group-mini">
+                                    <label>Ethnicity</label>
+                                    <select id="ethnicity">
+                                        <option value="1">White</option>
+                                        <option value="2">Indian</option>
+                                        <option value="3">Pakistani</option>
+                                        <option value="4">Bangladeshi</option>
+                                        <option value="5">Other Asian</option>
+                                        <option value="6">Black Caribbean</option>
+                                        <option value="7">Black African</option>
+                                        <option value="8">Chinese</option>
+                                        <option value="9">Other</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="field-row">
+                                <div class="field-group-mini">
+                                    <label>Systolic BP (mmHg)</label>
+                                    <input type="number" id="systolic-bp" value="120">
+                                </div>
+                                <div class="field-group-mini">
+                                    <label>BMI</label>
+                                    <input type="number" id="bmi" value="25" step="0.1">
+                                </div>
+                            </div>
+                            <div class="checkbox-grid">
+                                <label><input type="checkbox" id="diabetes"> Diabetes</label>
+                                <label><input type="checkbox" id="fh-cvd"> Family History CVD</label>
+                                <label><input type="checkbox" id="ckd"> CKD (Stage 3+)</label>
+                                <label><input type="checkbox" id="af"> Atrial Fib</label>
+                                <label><input type="checkbox" id="bp-meds"> On BP Meds</label>
+                                <label><input type="checkbox" id="ra"> Rheumatoid Arth</label>
+                            </div>
+                            <button id="calculate-qrisk-btn" class="secondary-btn" style="margin-top: 15px;">Calculate
+                                10-Yr Risk</button>
+                            <button id="simulate-emis-import-btn" class="primary-btn"
+                                style="margin-top: 10px; background: #607d8b;">⚡ Simulate EMIS Data Import</button>
+                            <div id="qrisk-result" class="qrisk-result-box hidden">
+                                <div class="score-display">
+                                    <span class="score-label">10-Year CVD Risk Score</span>
+                                    <span class="score-value" id="qrisk-score">--%</span>
+                                </div>
+                                <p id="qrisk-action" class="qrisk-action-text"></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section id="protocols-view" class="view hidden">
+                <h2>Clinical Governance Protocol</h2>
+                <div class="protocol-list" id="protocol-list-container">
+                    <!-- Dynamic list -->
+                </div>
+            </section>
+
+            <section id="emis-coding-view" class="view hidden">
+                <h2>EMIS Integration Library</h2>
+                <div class="card">
+                    <p>Copy the following codes or logic templates into EMIS Web Protocols / Templates.</p>
+                    <div class="code-preview" id="emis-code-export">
+                        <!-- Example export -->
+                    </div>
+                </div>
+            </section>
+        </main>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>

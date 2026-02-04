@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Protocol xmlns="http://www.emis-online.com/protocol" Name="PathLinks_V2" Description="Clinical Support" Version="2.0">
+  <Author Name="PathLinks" />
+  <Trigger Type="ResultFiling" />
+  <Logic>
+    <Rule Name="K_High">
+      <Condition>
+        <Match TestCode="K" Operator="GreaterThan" Value="6.0" />
+      </Condition>
+      <Action Type="DisplayPrompt">
+        <Text><![CDATA[Potassium > 6.0. Perform ECG.]]></Text>
+      </Action>
+    </Rule>
+  </Logic>
+</Protocol>

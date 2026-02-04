@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Protocol xmlns="http://www.e-mis.com/emisweb/protocol/v1.0" Name="PathLinks_V23" Description="CDS" Version="1.0" Guid="79841289-1111-2222-3333-444455556666">
+  <Author Name="PathLinks" />
+  <Trigger Type="ResultFiling" />
+</Protocol>
