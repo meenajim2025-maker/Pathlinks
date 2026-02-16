@@ -18,6 +18,7 @@ const NICE_MAP_PATH = path.join(__dirname, 'nice-guideline-map.json');
 const MANAGEMENT_PATH = path.join(__dirname, 'management-content.json');
 const EXTRA_TOOLS_PATH = path.join(__dirname, 'extra-nice-tools.json');
 const BULK_PATH = path.join(__dirname, 'extra-tools-bulk.json');
+const BULK_1000_PATH = path.join(__dirname, 'extra-tools-bulk-1000.json');
 const OUT_PATH = path.join(PROJECT_ROOT, 'data', 'decision_tools_protocol.json');
 
 function slug(s) {
@@ -274,6 +275,24 @@ function main() {
       sys.tools.push(buildToolFromBulkTitle(systemId, title, niceMap, managementContent));
     });
   }
+
+  // Additional ~1000 conditions (same pattern: template or system fallback)
+  let bulk1000 = [];
+  try {
+    const bulk1000Json = JSON.parse(fs.readFileSync(BULK_1000_PATH, 'utf8'));
+    bulk1000 = bulk1000Json.tools || [];
+  } catch (e) { /* optional file */ }
+  bulk1000.forEach(item => {
+    const systemId = item.systemId || 'other';
+    let sys = systemsById.get(systemId);
+    if (!sys) {
+      sys = { id: systemId, name: systemId.replace(/-/g, ' '), tools: [] };
+      systemsById.set(systemId, sys);
+    }
+    const name = kb.sections && kb.sections.find(s => s.id === systemId);
+    if (name) sys.name = name.name;
+    sys.tools.push(buildToolFromBulkTitle(systemId, item.title, niceMap, managementContent));
+  });
 
   const systems = Array.from(systemsById.values()).filter(s => s.tools.length > 0);
   let totalTools = 0;
