@@ -2,10 +2,17 @@
     "name": "pathlinks-clinical",
     "version": 2,
     "public": true,
-    "builds": [
+    "cleanUrls": true,
+    "trailingSlash": false,
+    "headers": [
         {
-            "src": "**/*",
-            "use": "@vercel/static"
+            "source": "/data/(.*)",
+            "headers": [
+                {
+                    "key": "Cache-Control",
+                    "value": "public, max-age=300"
+                }
+            ]
         }
     ]
 }

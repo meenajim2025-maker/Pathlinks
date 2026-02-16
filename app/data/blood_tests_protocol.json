@@ -227,6 +227,24 @@
                         "min": 0.4,
                         "max": 4.5
                     }
+                },
+                "guidance": {
+                    "high": {
+                        "actions": [
+                            "TSH > 10 mU/L: Overt Hypothyroidism. Start Levothyroxine 25-50mcg OD (lower dose if elderly/cardiac).",
+                            "TSH 4.5 - 10 mU/L (Subclinical): Check TPO antibodies. If symptomatic or TPO+, consider trial of Levothyroxine.",
+                            "Repeat TFTs in 6-8 weeks after starting treatment. Target TSH 0.4 - 2.0 mU/L.",
+                            "EMIS Code: C10.. (Hypothyroidism)"
+                        ]
+                    },
+                    "low": {
+                        "actions": [
+                            "TSH < 0.1 mU/L: Suggests Hyperthyroidism or over-replacement. Check Free T4 and Free T3.",
+                            "If on Levothyroxine: Reduce dose by 25mcg and recheck in 6-8 weeks.",
+                            "New presentation: Refer to Endocrinology. Consider Graves' disease, toxic nodule, or thyroiditis.",
+                            "RED FLAG: Thyroid storm (Fever, Tachycardia, Confusion) = Emergency admission."
+                        ]
+                    }
                 }
             },
             {
@@ -237,6 +255,22 @@
                         "min": 9.0,
                         "max": 25.0
                     }
+                },
+                "guidance": {
+                    "high": {
+                        "actions": [
+                            "High Free T4 with Low TSH: Primary Hyperthyroidism. Refer to Endocrinology.",
+                            "High Free T4 with Normal/High TSH: Consider TSH-secreting pituitary adenoma or thyroid hormone resistance.",
+                            "Check for symptoms: Weight loss, tremor, palpitations, heat intolerance."
+                        ]
+                    },
+                    "low": {
+                        "actions": [
+                            "Low Free T4 with High TSH: Primary Hypothyroidism. Start Levothyroxine.",
+                            "Low Free T4 with Low/Normal TSH: Secondary (Central) Hypothyroidism. Needs pituitary function tests.",
+                            "Consider recent illness (sick euthyroid syndrome) if acutely unwell."
+                        ]
+                    }
                 }
             },
             {
@@ -246,6 +280,22 @@
                     "all": {
                         "min": 3.5,
                         "max": 7.8
+                    }
+                },
+                "guidance": {
+                    "high": {
+                        "actions": [
+                            "High Free T3: May indicate T3 toxicosis or early hyperthyroidism.",
+                            "Check Free T4 and TSH for complete picture.",
+                            "If T3 high but T4 normal: Consider T3-predominant Graves' disease."
+                        ]
+                    },
+                    "low": {
+                        "actions": [
+                            "Low Free T3: Often seen in sick euthyroid syndrome or severe illness.",
+                            "Usually not treated in isolation. Focus on underlying condition.",
+                            "If persistent with symptoms, consider endocrine review."
+                        ]
                     }
                 }
             }

@@ -1,0 +1,1048 @@
+{
+  "source": "Parsed from USB MP3 filenames",
+  "generated": "2026-02-16T15:59:35.547Z",
+  "totalTopics": 189,
+  "sections": [
+    {
+      "id": "cardiovascular",
+      "name": "Cardiovascular & Cardiac",
+      "topics": [
+        {
+          "episode": 25,
+          "title": "Palpitations_ when to worry, and what is the interplay with mental illness_",
+          "filename": "Ep 25 – Palpitations_ when to worry, and what is the interplay with mental illness_.mp3"
+        },
+        {
+          "episode": 42,
+          "title": "The overlap between COPD and heart disease",
+          "filename": "Ep 42 – The overlap between COPD and heart disease.mp3"
+        },
+        {
+          "episode": 46,
+          "title": "Heart valve disease in adults_ an update from NICE",
+          "filename": "Ep 46 – Heart valve disease in adults_ an update from NICE.mp3"
+        },
+        {
+          "episode": 58,
+          "title": "Hypertension management",
+          "filename": "Ep 58 – Hypertension management.mp3"
+        },
+        {
+          "episode": 72,
+          "title": "Back to basics_ heart sounds and cardiac examination",
+          "filename": "Ep 72 – Back to basics_ heart sounds and cardiac examination.mp3"
+        },
+        {
+          "episode": 103,
+          "title": "Primary prevention of cardiovascular disease_ what has changed in QRISK3 and why_",
+          "filename": "Ep 103 – Primary prevention of cardiovascular disease_ what has changed in QRISK3 and why_.mp3"
+        },
+        {
+          "episode": 120,
+          "title": "Echocardiography",
+          "filename": "Ep 120 – Echocardiography.mp3"
+        },
+        {
+          "episode": 170,
+          "title": "Aortic stenosis",
+          "filename": "Ep 170 – Aortic stenosis.mp3"
+        },
+        {
+          "episode": 173,
+          "title": "Abdominal aortic aneurysm",
+          "filename": "Ep 173 – Abdominal aortic aneurysm.mp3"
+        }
+      ]
+    },
+    {
+      "id": "dermatology",
+      "name": "Dermatology & Skin",
+      "topics": [
+        {
+          "episode": 23,
+          "title": "Non-blanching rash in children",
+          "filename": "Ep 23 – Non-blanching rash in children.mp3"
+        },
+        {
+          "episode": 56,
+          "title": "Dry skin and its impact on mental health",
+          "filename": "Ep 56 – Dry skin and its impact on mental health.mp3"
+        },
+        {
+          "episode": 59,
+          "title": "Primary care dermatology_ improving care by getting back to basics",
+          "filename": "Ep 59 – Primary care dermatology_ improving care by getting back to basics.mp3"
+        },
+        {
+          "episode": 60,
+          "title": "Chronic spontaneous urticaria",
+          "filename": "Ep 60 – Chronic spontaneous urticaria.mp3"
+        },
+        {
+          "episode": 64,
+          "title": "Primary care dermatology_ skin of colour",
+          "filename": "Ep 64 – Primary care dermatology_ skin of colour.mp3"
+        },
+        {
+          "episode": 67,
+          "title": "Actinic keratosis",
+          "filename": "Ep 67 – Actinic keratosis.mp3"
+        },
+        {
+          "episode": 82,
+          "title": "Pityriasis capitis (dandruff)",
+          "filename": "Ep 82 - Pityriasis capitis (dandruff).mp3"
+        },
+        {
+          "episode": 83,
+          "title": "Management of dry skin conditions in skin of colour",
+          "filename": "Ep 83 – Management of dry skin conditions in skin of colour.mp3"
+        },
+        {
+          "episode": 89,
+          "title": "Bowen’s disease",
+          "filename": "Ep 89 – Bowen’s disease.mp3"
+        },
+        {
+          "episode": 122,
+          "title": "Emollients_ an overview",
+          "filename": "Ep 122 – Emollients_ an overview.mp3"
+        },
+        {
+          "episode": 141,
+          "title": "Hidradenitis suppurativa",
+          "filename": "Ep 141 – Hidradenitis suppurativa.mp3"
+        },
+        {
+          "episode": 147,
+          "title": "Paronychia",
+          "filename": "Ep 147 – Paronychia.mp3"
+        },
+        {
+          "episode": 172,
+          "title": "Keloid scars",
+          "filename": "Ep 172 – Keloid scars.mp3"
+        },
+        {
+          "episode": 182,
+          "title": "Melanoma",
+          "filename": "Ep 182 – Melanoma.mp3"
+        },
+        {
+          "episode": 188,
+          "title": "Pityriasis versicolor",
+          "filename": "Ep 188 – Pityriasis versicolor.mp3"
+        },
+        {
+          "episode": 191,
+          "title": "Intertrigo",
+          "filename": "Ep 191 – Intertrigo.mp3"
+        }
+      ]
+    },
+    {
+      "id": "mental-health",
+      "name": "Mental Health & Wellbeing",
+      "topics": [
+        {
+          "episode": 28,
+          "title": "Mental health implications of the COVID-19 pandemic",
+          "filename": "Ep 28 – Mental health implications of the COVID-19 pandemic.mp3"
+        },
+        {
+          "episode": 40,
+          "title": "Identifying and supporting people with binge-eating disorder",
+          "filename": "Ep 40 – Identifying and supporting people with binge-eating disorder.mp3"
+        },
+        {
+          "episode": 41,
+          "title": "Emotional wellbeing and long-term conditions",
+          "filename": "Ep 41 – Emotional wellbeing and long-term conditions.mp3"
+        },
+        {
+          "episode": 79,
+          "title": "Child mental health",
+          "filename": "Ep 79 – Child mental health.mp3"
+        },
+        {
+          "episode": 87,
+          "title": "Depression in adults",
+          "filename": "Ep 87 – Depression in adults.mp3"
+        },
+        {
+          "episode": 88,
+          "title": "Obsessive–compulsive disorder",
+          "filename": "Ep 88 – Obsessive–compulsive disorder.mp3"
+        },
+        {
+          "episode": 90,
+          "title": "Digital wellbeing for clinicians",
+          "filename": "Ep 90 – Digital wellbeing for clinicians.mp3"
+        },
+        {
+          "episode": 92,
+          "title": "Digital wellbeing for patients",
+          "filename": "Ep 92 – Digital wellbeing for patients.mp3"
+        },
+        {
+          "episode": 125,
+          "title": "Generalised anxiety disorder",
+          "filename": "Ep 125 – Generalised anxiety disorder.mp3"
+        },
+        {
+          "episode": 131,
+          "title": "Perinatal mental health_ awareness, risks and impacts",
+          "filename": "Ep 131 – Perinatal mental health_ awareness, risks and impacts.mp3"
+        },
+        {
+          "episode": 137,
+          "title": "Beyond baby blues_ supporting mental health in parents and partners",
+          "filename": "Ep 137 – Beyond baby blues_ supporting mental health in parents and partners.mp3"
+        },
+        {
+          "episode": 139,
+          "title": "Identification and treatment of perinatal mental health problems",
+          "filename": "Ep 139 – Identification and treatment of perinatal mental health problems.mp3"
+        },
+        {
+          "episode": 140,
+          "title": "Seasonal affective disorder",
+          "filename": "Ep 140 – Seasonal affective disorder.mp3"
+        },
+        {
+          "episode": 145,
+          "title": "Gambling-related harms",
+          "filename": "Ep 145 – Gambling-related harms.mp3"
+        },
+        {
+          "episode": 183,
+          "title": "Post-traumatic stress disorder",
+          "filename": "Ep 183 – Post-traumatic stress disorder.mp3"
+        }
+      ]
+    },
+    {
+      "id": "gastroenterology",
+      "name": "Gastroenterology & Liver",
+      "topics": [
+        {
+          "episode": 39,
+          "title": "Early detection of cancer in primary care_ what role for the Galleri test_",
+          "filename": "Ep 39 – Early detection of cancer in primary care_ what role for the Galleri test_.mp3"
+        },
+        {
+          "episode": 45,
+          "title": "Detecting and managing non-alcoholic fatty liver disease in type 2 diabetes",
+          "filename": "Ep 45 – Detecting and managing non-alcoholic fatty liver disease in type 2 diabetes.mp3"
+        },
+        {
+          "episode": 96,
+          "title": "Dysphagia",
+          "filename": "Ep 96 – Dysphagia.mp3"
+        },
+        {
+          "episode": 97,
+          "title": "Peptic ulcer disease",
+          "filename": "Ep 97 – Peptic ulcer disease.mp3"
+        },
+        {
+          "episode": 101,
+          "title": "Coeliac disease",
+          "filename": "Ep 101 – Coeliac disease.mp3"
+        },
+        {
+          "episode": 102,
+          "title": "Diverticular disease",
+          "filename": "Ep 102 – Diverticular disease.mp3"
+        },
+        {
+          "episode": 129,
+          "title": "Acute appendicitis",
+          "filename": "Ep 129 – Acute appendicitis.mp3"
+        },
+        {
+          "episode": 142,
+          "title": "Colorectal cancer",
+          "filename": "Ep 142 – Colorectal cancer.mp3"
+        },
+        {
+          "episode": 143,
+          "title": "Irritable bowel syndrome",
+          "filename": "Ep 143 – Irritable bowel syndrome.mp3"
+        },
+        {
+          "episode": 167,
+          "title": "Acute pancreatitis",
+          "filename": "Ep 167 – Acute pancreatitis.mp3"
+        },
+        {
+          "episode": 174,
+          "title": "Acute cholecystitis",
+          "filename": "Ep 174 – Acute cholecystitis.mp3"
+        },
+        {
+          "episode": 193,
+          "title": "Barrett’s oesophagus",
+          "filename": "Ep 193 – Barrett’s oesophagus.mp3"
+        }
+      ]
+    },
+    {
+      "id": "endocrinology",
+      "name": "Endocrinology & Diabetes",
+      "topics": [
+        {
+          "episode": 11,
+          "title": "British Society for Rheumatology guidance, DMARDs, steroid therapy and COVID-19",
+          "filename": "Ep 11 – British Society for Rheumatology guidance, DMARDs, steroid therapy and COVID-19.mp3"
+        },
+        {
+          "episode": 14,
+          "title": "Primary adrenal insufficiency, long-term steroid use and COVID-19 infection",
+          "filename": "Ep 14 – Primary adrenal insufficiency, long-term steroid use and COVID-19 infection.mp3"
+        },
+        {
+          "episode": 15,
+          "title": "Sick day guidance for diabetes drugs and the management of hypoglycaemia",
+          "filename": "Ep 15 – Sick day guidance for diabetes drugs and the management of hypoglycaemia.mp3"
+        },
+        {
+          "episode": 16,
+          "title": "Diabetes and COVID-19 related mortality in England_ an interview with Partha Kar",
+          "filename": "Ep 16 – Diabetes and COVID-19 related mortality in England_ an interview with Partha Kar.mp3"
+        },
+        {
+          "episode": 17,
+          "title": "Diabetes special_ round-up from the ADA 2020 virtual congress",
+          "filename": "Ep 17 – Diabetes special_ round-up from the ADA 2020 virtual congress.mp3"
+        },
+        {
+          "episode": 24,
+          "title": "Key considerations when prescribing steroids",
+          "filename": "Ep 24 – Key considerations when prescribing steroids.mp3"
+        },
+        {
+          "episode": 26,
+          "title": "Severe mental illness and diabetes",
+          "filename": "Ep 26 – Severe mental illness and diabetes.mp3"
+        },
+        {
+          "episode": 31,
+          "title": "Diagnosing and managing Addison’s disease in primary care",
+          "filename": "Ep 31 – Diagnosing and managing Addison’s disease in primary care.mp3"
+        },
+        {
+          "episode": 35,
+          "title": "Subclinical hyperthyroidism in primary care",
+          "filename": "Ep 35 – Subclinical hyperthyroidism in primary care.mp3"
+        },
+        {
+          "episode": 52,
+          "title": "Menopause and hormone replacement therapy (part 1)",
+          "filename": "Ep 52 – Menopause and hormone replacement therapy (part 1).mp3"
+        },
+        {
+          "episode": 76,
+          "title": "Passing the test of testosterone replacement_ menopause and hormone replacement therapy (_",
+          "filename": "Ep 76 – Passing the test of testosterone replacement_ menopause and hormone replacement therapy (_.mp3"
+        },
+        {
+          "episode": 84,
+          "title": "Testosterone deficiency",
+          "filename": "Ep 84 – Testosterone deficiency.mp3"
+        },
+        {
+          "episode": 109,
+          "title": "Hypothyroidism",
+          "filename": "Ep 109 – Hypothyroidism.mp3"
+        },
+        {
+          "episode": 117,
+          "title": "Improving early diagnosis of type 2 diabetes_ addressing the challenge of undiagnosed cases",
+          "filename": "Ep 117 – Improving early diagnosis of type 2 diabetes_ addressing the challenge of undiagnosed cases.mp3"
+        },
+        {
+          "episode": 119,
+          "title": "Goitre",
+          "filename": "Ep 119 –  Goitre.mp3"
+        }
+      ]
+    },
+    {
+      "id": "musculoskeletal",
+      "name": "Musculoskeletal & Joints",
+      "topics": [
+        {
+          "episode": 70,
+          "title": "Epicondylitis",
+          "filename": "Ep 70 – Epicondylitis.mp3"
+        },
+        {
+          "episode": 91,
+          "title": "Lateral hip pain",
+          "filename": "Ep 91 – Lateral hip pain.mp3"
+        },
+        {
+          "episode": 104,
+          "title": "Rheumatoid arthritis",
+          "filename": "Ep 104 – Rheumatoid arthritis.mp3"
+        },
+        {
+          "episode": 127,
+          "title": "Fibromyalgia",
+          "filename": "Ep 127 – Fibromyalgia.mp3"
+        },
+        {
+          "episode": 138,
+          "title": "Morton's neuroma",
+          "filename": "Ep 138 – Morton's neuroma.mp3"
+        },
+        {
+          "episode": 151,
+          "title": "Dupuytren’s disease",
+          "filename": "Ep 151 – Dupuytren’s disease.mp3"
+        },
+        {
+          "episode": 156,
+          "title": "Carpal tunnel syndrome",
+          "filename": "Ep 156 – Carpal tunnel syndrome.mp3"
+        },
+        {
+          "episode": 157,
+          "title": "Ganglion cysts",
+          "filename": "Ep 157 – Ganglion cysts.mp3"
+        },
+        {
+          "episode": 158,
+          "title": "Rotator cuff tears",
+          "filename": "Ep 158 – Rotator cuff tears.mp3"
+        },
+        {
+          "episode": 159,
+          "title": "Baker’s cyst",
+          "filename": "Ep 159 – Baker’s cyst.mp3"
+        },
+        {
+          "episode": 162,
+          "title": "Ankylosing spondylitis",
+          "filename": "Ep 162 – Ankylosing spondylitis.mp3"
+        },
+        {
+          "episode": 169,
+          "title": "Shin splints (medial tibial stress syndrome)",
+          "filename": "Ep 169 – Shin splints (medial tibial stress syndrome).mp3"
+        },
+        {
+          "episode": 186,
+          "title": "Olecranon bursitis",
+          "filename": "Ep 186 – Olecranon bursitis.mp3"
+        },
+        {
+          "episode": 189,
+          "title": "Intermittent claudication",
+          "filename": "Ep 189 – Intermittent claudication.mp3"
+        },
+        {
+          "episode": 190,
+          "title": "Chondromalacia patella",
+          "filename": "Ep 190 – Chondromalacia patella.mp3"
+        },
+        {
+          "episode": 192,
+          "title": "Adhesive capsulitis",
+          "filename": "Ep 192 – Adhesive capsulitis.mp3"
+        }
+      ]
+    },
+    {
+      "id": "respiratory",
+      "name": "Respiratory & Sleep",
+      "topics": [
+        {
+          "episode": 63,
+          "title": "Domiciliary oxygen guidance",
+          "filename": "Ep 63 – Domiciliary oxygen guidance.mp3"
+        },
+        {
+          "episode": 65,
+          "title": "Obstructive sleep apnoea",
+          "filename": "Ep 65 – Obstructive sleep apnoea.mp3"
+        },
+        {
+          "episode": 126,
+          "title": "Are we doing enough chest X-rays in primary care_",
+          "filename": "Ep 126 – Are we doing enough chest X-rays in primary care_.mp3"
+        },
+        {
+          "episode": 146,
+          "title": "Asthma diagnosis and treatment_ what's changed in the 2024 BTS, NICE and SIGN guideline_",
+          "filename": "Ep 146 – Asthma diagnosis and treatment_ what's changed in the 2024 BTS, NICE and SIGN guideline_.mp3"
+        },
+        {
+          "episode": 153,
+          "title": "Asthma treatment, monitoring and self-management_ what's changed in the 2024 BTS, NICE a_",
+          "filename": "Ep 153 – Asthma treatment, monitoring and self-management_ what's changed in the 2024 BTS, NICE a_.mp3"
+        },
+        {
+          "episode": 185,
+          "title": "Lung cancer",
+          "filename": "Ep 185 – Lung cancer.mp3"
+        }
+      ]
+    },
+    {
+      "id": "paediatrics",
+      "name": "Paediatrics & Child Health",
+      "topics": [
+        {
+          "episode": 38,
+          "title": "Undescended testes in infants",
+          "filename": "Ep 38 – Undescended testes in infants.mp3"
+        },
+        {
+          "episode": 66,
+          "title": "Childhood constipation",
+          "filename": "Ep 66 – Childhood constipation.mp3"
+        },
+        {
+          "episode": 69,
+          "title": "Postnatal care_ the maternal 6-week check",
+          "filename": "Ep 69 – Postnatal care_ the maternal 6-week check.mp3"
+        },
+        {
+          "episode": 73,
+          "title": "Sexual abuse in children",
+          "filename": "Ep 73 – Sexual abuse in children.mp3"
+        },
+        {
+          "episode": 74,
+          "title": "Paediatric dietary allergy",
+          "filename": "Ep 74 – Paediatric dietary allergy.mp3"
+        },
+        {
+          "episode": 78,
+          "title": "The 6-week baby check",
+          "filename": "Ep 78 – The 6-week baby check.mp3"
+        },
+        {
+          "episode": 121,
+          "title": "Improving consultations for children with additional needs",
+          "filename": "Ep 121 – Improving consultations for children with additional needs.mp3"
+        },
+        {
+          "episode": 123,
+          "title": "Proprioception and sleep for children with additional needs",
+          "filename": "Ep 123 – Proprioception and sleep for children with additional needs.mp3"
+        },
+        {
+          "episode": 130,
+          "title": "Croup",
+          "filename": "Ep 130 – Croup.mp3"
+        },
+        {
+          "episode": 150,
+          "title": "Roseola",
+          "filename": "Ep 150 – Roseola.mp3"
+        },
+        {
+          "episode": 154,
+          "title": "Febrile seizures",
+          "filename": "Ep 154 – Febrile seizures.mp3"
+        },
+        {
+          "episode": 184,
+          "title": "Parvovirus B19",
+          "filename": "Ep 184 – Parvovirus B19.mp3"
+        }
+      ]
+    },
+    {
+      "id": "renal-urology",
+      "name": "Renal, Urology & LUTS",
+      "topics": [
+        {
+          "episode": null,
+          "title": "Managing male LUTS_ causes, assessment and treatment in primary care",
+          "filename": "Managing male LUTS_ causes, assessment and treatment in primary care.mp3"
+        },
+        {
+          "episode": 20,
+          "title": "Management of non-visible haematuria (microscopic haematuria) in primary care",
+          "filename": "Ep 20 – Management of non-visible haematuria (microscopic haematuria) in primary care.mp3"
+        },
+        {
+          "episode": 29,
+          "title": "Investigations for chronic kidney disease in primary care",
+          "filename": "Ep 29 – Investigations for chronic kidney disease in primary care.mp3"
+        },
+        {
+          "episode": 34,
+          "title": "Urinary symptoms during pregnancy",
+          "filename": "Ep 34 – Urinary symptoms during pregnancy.mp3"
+        },
+        {
+          "episode": 44,
+          "title": "Latest thinking and evidence on chronic kidney disease",
+          "filename": "Ep 44 – Latest thinking and evidence on chronic kidney disease.mp3"
+        },
+        {
+          "episode": 61,
+          "title": "Autism",
+          "filename": "Ep 61 – Autism.mp3"
+        },
+        {
+          "episode": 77,
+          "title": "Recurrent urinary tract infection",
+          "filename": "Ep 77 – Recurrent urinary tract infection.mp3"
+        },
+        {
+          "episode": 111,
+          "title": "Testicular torsion",
+          "filename": "Ep 111 – Testicular torsion.mp3"
+        },
+        {
+          "episode": 114,
+          "title": "Erectile dysfunction",
+          "filename": "Ep 114 – Erectile dysfunction.mp3"
+        },
+        {
+          "episode": 134,
+          "title": "Prostate cancer",
+          "filename": "Ep 134 – Prostate cancer.mp3"
+        },
+        {
+          "episode": 163,
+          "title": "Chronic kidney disease among adults in primary care_ testing, diagnosis and referral",
+          "filename": "Ep 163 – Chronic kidney disease among adults in primary care_ testing, diagnosis and referral.mp3"
+        },
+        {
+          "episode": 165,
+          "title": "Chronic kidney disease among adults in primary care_ management",
+          "filename": "Ep 165 – Chronic kidney disease among adults in primary care_ management.mp3"
+        }
+      ]
+    },
+    {
+      "id": "women-health",
+      "name": "Women's & Reproductive Health",
+      "topics": [
+        {
+          "episode": 13,
+          "title": "Effective contraception provision during the COVID-19 pandemic",
+          "filename": "Ep 13 – Effective contraception provision during the COVID-19 pandemic.mp3"
+        },
+        {
+          "episode": 98,
+          "title": "Recurrent vulvovaginal candidiasis",
+          "filename": "Ep 98 – Recurrent vulvovaginal candidiasis.mp3"
+        },
+        {
+          "episode": 124,
+          "title": "Ovarian cancer",
+          "filename": "Ep 124 – Ovarian cancer.mp3"
+        },
+        {
+          "episode": 128,
+          "title": "Mastalgia (breast pain)",
+          "filename": "Ep 128 – Mastalgia (breast pain).mp3"
+        },
+        {
+          "episode": 168,
+          "title": "Ectopic pregnancy",
+          "filename": "Ep 168 – Ectopic pregnancy.mp3"
+        }
+      ]
+    },
+    {
+      "id": "infectious",
+      "name": "Infectious Disease & Screening",
+      "topics": [
+        {
+          "episode": null,
+          "title": "InnovAiT Sepsis Podcast",
+          "filename": "InnovAiT Sepsis Podcast.mp3"
+        },
+        {
+          "episode": 12,
+          "title": "Vitamin B12 supplementation during the COVID-19 pandemic",
+          "filename": "Ep 12 – Vitamin B12 supplementation during the COVID-19 pandemic.mp3"
+        },
+        {
+          "episode": 50,
+          "title": "Post-sepsis syndrome",
+          "filename": "Ep 50 – Post-sepsis syndrome.mp3"
+        },
+        {
+          "episode": 55,
+          "title": "Addressing vaccine hesitancy in primary care",
+          "filename": "Ep 55 – Addressing vaccine hesitancy in primary care.mp3"
+        },
+        {
+          "episode": 81,
+          "title": "Lyme disease",
+          "filename": "Ep 81 – Lyme disease.mp3"
+        },
+        {
+          "episode": 133,
+          "title": "Syphilis",
+          "filename": "133 – Syphilis.mp3"
+        },
+        {
+          "episode": 152,
+          "title": "Rethinking HIV_ from testing to transformation",
+          "filename": "Ep 152 – Rethinking HIV_ from testing to transformation.mp3"
+        },
+        {
+          "episode": 160,
+          "title": "Rethinking HIV_ dealing with a positive test result",
+          "filename": "Ep 160 – Rethinking HIV_ dealing with a positive test result.mp3"
+        },
+        {
+          "episode": 171,
+          "title": "Rethinking HIV_ prevention and pre-exposure prophylaxis",
+          "filename": "Ep 171 – Rethinking HIV_ prevention and pre-exposure prophylaxis.mp3"
+        },
+        {
+          "episode": 180,
+          "title": "Rethinking HIV_ reducing HIV-related stigma",
+          "filename": "Ep 180 – Rethinking HIV_ reducing HIV-related stigma.mp3"
+        }
+      ]
+    },
+    {
+      "id": "neurology",
+      "name": "Neurology & Headache",
+      "topics": [
+        {
+          "episode": 22,
+          "title": "Diagnosis and management of vertigo in primary care",
+          "filename": "Ep 22 – Diagnosis and management of vertigo in primary care.mp3"
+        },
+        {
+          "episode": 62,
+          "title": "Cluster headaches",
+          "filename": "Ep 62 – Cluster headaches.mp3"
+        },
+        {
+          "episode": 95,
+          "title": "Trigeminal neuralgia",
+          "filename": "Ep 95 – Trigeminal neuralgia.mp3"
+        },
+        {
+          "episode": 116,
+          "title": "Transient loss of consciousness",
+          "filename": "Ep 116 – Transient loss of consciousness.mp3"
+        },
+        {
+          "episode": 135,
+          "title": "Tinnitus",
+          "filename": "Ep 135 – Tinnitus.mp3"
+        },
+        {
+          "episode": 161,
+          "title": "Post-herpetic neuralgia",
+          "filename": "Ep 161– Post-herpetic neuralgia.mp3"
+        },
+        {
+          "episode": 164,
+          "title": "Cauda equina syndrome",
+          "filename": "Ep 164 – Cauda equina syndrome.mp3"
+        },
+        {
+          "episode": 178,
+          "title": "Tremor",
+          "filename": "Ep 178 – Tremor.mp3"
+        },
+        {
+          "episode": 179,
+          "title": "Paraesthesia",
+          "filename": "Ep 179 – Paraesthesia.mp3"
+        }
+      ]
+    },
+    {
+      "id": "haematology",
+      "name": "Haematology & Anaemia",
+      "topics": [
+        {
+          "episode": 19,
+          "title": "Investigating vitamin B12 deficiency and pernicious anaemia in primary care",
+          "filename": "Ep 19 – Investigating vitamin B12 deficiency and pernicious anaemia in primary care.mp3"
+        },
+        {
+          "episode": 21,
+          "title": "Managing unexplained high platelet counts in primary care",
+          "filename": "Ep 21 – Managing unexplained high platelet counts in primary care.mp3"
+        },
+        {
+          "episode": 148,
+          "title": "Sickle cell disease",
+          "filename": "Ep 148 – Sickle cell disease.mp3"
+        }
+      ]
+    },
+    {
+      "id": "ent",
+      "name": "ENT & Allergy",
+      "topics": [
+        {
+          "episode": null,
+          "title": "Cows' Milk Protein Allergy_ The diagnostic challenge for GPs",
+          "filename": "Cows' Milk Protein Allergy_ The diagnostic challenge for GPs.mp3"
+        },
+        {
+          "episode": 48,
+          "title": "Hay fever management",
+          "filename": "Ep 48 – Hay fever management.mp3"
+        },
+        {
+          "episode": 100,
+          "title": "Alcohol and health_ a review of the latest research",
+          "filename": "Ep 100 – Alcohol and health_ a review of the latest research.mp3"
+        },
+        {
+          "episode": 136,
+          "title": "Quiz of the year 2024",
+          "filename": "Ep 136 – Quiz of the year 2024.mp3"
+        },
+        {
+          "episode": 144,
+          "title": "Osteoporosis_ key learnings from the NOGG 2024 clinical guideline",
+          "filename": "Ep 144 – Osteoporosis_ key learnings from the NOGG 2024 clinical guideline.mp3"
+        },
+        {
+          "episode": 177,
+          "title": "Postnasal drip",
+          "filename": "Ep 177 – Postnasal drip.mp3"
+        }
+      ]
+    },
+    {
+      "id": "procedures-general",
+      "name": "Procedures & General Practice",
+      "topics": [
+        {
+          "episode": null,
+          "title": "Interpretation of ECGs in Primary Care – Part 2",
+          "filename": "Interpretation of ECGs in Primary Care – Part 2.mp3"
+        },
+        {
+          "episode": null,
+          "title": "RCA (Recorded Consultation Assessement) Q&A",
+          "filename": "RCA (Recorded Consultation Assessement) Q&A.mp3"
+        },
+        {
+          "episode": null,
+          "title": "RCGP InnovAiT summer podcast 2022",
+          "filename": "RCGP InnovAiT summer podcast 2022.mp3"
+        },
+        {
+          "episode": null,
+          "title": "The Big GP Consultation for AiTs",
+          "filename": "The Big GP Consultation for AiTs.mp3"
+        },
+        {
+          "episode": 54,
+          "title": "Ten practical tips for sustainability in primary care",
+          "filename": "Ep 54 – Ten practical tips for sustainability in primary care.mp3"
+        },
+        {
+          "episode": 71,
+          "title": "Expedition medicine (part 1)",
+          "filename": "Ep 71 – Expedition medicine (part 1).mp3"
+        },
+        {
+          "episode": 75,
+          "title": "Expedition medicine (part 2)",
+          "filename": "Ep 75 – Expedition medicine (part 2).mp3"
+        },
+        {
+          "episode": 80,
+          "title": "Altitude medicine_ heightening understanding of “travel consultations”",
+          "filename": "Ep 80 – Altitude medicine_ heightening understanding of “travel consultations”.mp3"
+        },
+        {
+          "episode": 118,
+          "title": "Altitude medicine_ the role of the expedition doctor",
+          "filename": "Ep 118 –  Altitude medicine_ the role of the expedition doctor.mp3"
+        }
+      ]
+    },
+    {
+      "id": "other",
+      "name": "Other clinical topics",
+      "topics": [
+        {
+          "episode": null,
+          "title": "Sleep Disorders",
+          "filename": "Sleep Disorders.mp3"
+        },
+        {
+          "episode": null,
+          "title": "Womens Health for Primary Care with Dr Anne Connolly",
+          "filename": "Womens Health for Primary Care with Dr Anne Connolly.mp3"
+        },
+        {
+          "episode": 18,
+          "title": "Managing the risk of drug-induced QT prolongation in primary care",
+          "filename": "Ep 18 – Managing the risk of drug-induced QT prolongation in primary care.mp3"
+        },
+        {
+          "episode": 27,
+          "title": "Managing cancer in the primary care setting",
+          "filename": "Ep 27 – Managing cancer in the primary care setting.mp3"
+        },
+        {
+          "episode": 30,
+          "title": "Opioids and musculoskeletal pain",
+          "filename": "Ep 30 – Opioids and musculoskeletal pain.mp3"
+        },
+        {
+          "episode": 32,
+          "title": "Gynaecomastia_ investigation and management in primary care",
+          "filename": "Ep 32 – Gynaecomastia_ investigation and management in primary care.mp3"
+        },
+        {
+          "episode": 33,
+          "title": "Superficial venous thrombosis in primary care",
+          "filename": "Ep 33 – Superficial venous thrombosis in primary care.mp3"
+        },
+        {
+          "episode": 36,
+          "title": "Postoperative follow-up of people who have undergone bariatric surgery",
+          "filename": "Ep 36 – Postoperative follow-up of people who have undergone bariatric surgery.mp3"
+        },
+        {
+          "episode": 37,
+          "title": "Identifying and managing familial hypercholesterolaemia",
+          "filename": "Ep 37 – Identifying and managing familial hypercholesterolaemia.mp3"
+        },
+        {
+          "episode": 43,
+          "title": "Addressing health inequalities in cancer_ the role of primary care",
+          "filename": "Ep 43 – Addressing health inequalities in cancer_ the role of primary care.mp3"
+        },
+        {
+          "episode": 47,
+          "title": "Prescribing medicines associated with dependence_ how can NICE guideline NG215 support ou_",
+          "filename": "Ep 47 – Prescribing medicines associated with dependence_ how can NICE guideline NG215 support ou_.mp3"
+        },
+        {
+          "episode": 49,
+          "title": "Heat exhaustion and heatstroke",
+          "filename": "Ep 49 – Heat exhaustion and heatstroke.mp3"
+        },
+        {
+          "episode": 51,
+          "title": "E-cigarettes and vaping",
+          "filename": "Ep 51 – E-cigarettes and vaping.mp3"
+        },
+        {
+          "episode": 53,
+          "title": "Management of insomnia",
+          "filename": "Ep 53 – Management of insomnia.mp3"
+        },
+        {
+          "episode": 57,
+          "title": "Malnutrition in people with chronic obstructive pulmonary disease",
+          "filename": "Ep 57 – Malnutrition in people with chronic obstructive pulmonary disease.mp3"
+        },
+        {
+          "episode": 68,
+          "title": "Vitamin D deficiency in adults",
+          "filename": "Ep 68 – Vitamin D deficiency in adults.mp3"
+        },
+        {
+          "episode": 85,
+          "title": "Hyperhidrosis",
+          "filename": "Ep 85 – Hyperhidrosis.mp3"
+        },
+        {
+          "episode": 86,
+          "title": "Inflammatory marker testing",
+          "filename": "Ep 86 – Inflammatory marker testing.mp3"
+        },
+        {
+          "episode": 93,
+          "title": "Haemorrhoids",
+          "filename": "Ep 93 – Haemorrhoids.mp3"
+        },
+        {
+          "episode": 94,
+          "title": "Anal fissures",
+          "filename": "Ep 94 – Anal fissures.mp3"
+        },
+        {
+          "episode": 99,
+          "title": "Assessment and management of obesity",
+          "filename": "Ep 99 – Assessment and management of obesity.mp3"
+        },
+        {
+          "episode": 105,
+          "title": "Empathy_ who cares_ Exploring empathy in health care",
+          "filename": "Ep 105 – Empathy_ who cares_ Exploring empathy in health care.mp3"
+        },
+        {
+          "episode": 106,
+          "title": "Sexual violence (part 1)",
+          "filename": "Ep 106 – Sexual violence (part 1).mp3"
+        },
+        {
+          "episode": 107,
+          "title": "Benign prostatic hyperplasia",
+          "filename": "Ep 107 – Benign prostatic hyperplasia.mp3"
+        },
+        {
+          "episode": 108,
+          "title": "Restless leg syndrome",
+          "filename": "Ep 108 – Restless leg syndrome.mp3"
+        },
+        {
+          "episode": 110,
+          "title": "Sexual violence (part 2)",
+          "filename": "Ep 110 – Sexual violence (part 2).mp3"
+        },
+        {
+          "episode": 112,
+          "title": "Acne_ getting the management spot on",
+          "filename": "Ep 112 – Acne_ getting the management spot on.mp3"
+        },
+        {
+          "episode": 113,
+          "title": "Vaping_ an update",
+          "filename": "Ep 113 – Vaping_ an update.mp3"
+        },
+        {
+          "episode": 115,
+          "title": "Polycystic ovary syndrome",
+          "filename": "Ep 115 – Polycystic ovary syndrome.mp3"
+        },
+        {
+          "episode": 132,
+          "title": "Young people and alcohol",
+          "filename": "Ep 132 – Young people and alcohol.mp3"
+        },
+        {
+          "episode": 149,
+          "title": "Raynaud’s phenomenon",
+          "filename": "Ep 149 – Raynaud’s phenomenon.mp3"
+        },
+        {
+          "episode": 155,
+          "title": "Temporal arteritis",
+          "filename": "Ep 155 – Temporal arteritis.mp3"
+        },
+        {
+          "episode": 166,
+          "title": "Hand–arm vibration syndrome",
+          "filename": "Ep 166 – Hand–arm vibration syndrome.mp3"
+        },
+        {
+          "episode": 181,
+          "title": "Management of hyperkalaemia in primary care",
+          "filename": "Ep 181 – Management of hyperkalaemia in primary care.mp3"
+        }
+      ]
+    }
+  ]
+}

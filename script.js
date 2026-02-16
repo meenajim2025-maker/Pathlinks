@@ -9,7 +9,7 @@ async function init() {
         testData = await response.json();
 
         // Load learning data in background so we can show related snippets in the clinical tool
-        fetch('./data/knowledge_base.json').then(r => r.ok ? r.json() : fetch('./data/clinical_topics_learning.json').then(r2 => r2.ok ? r2.json() : null)).then(data => { learningData = data; }).catch(() => {});
+        fetch('./data/knowledge_base.json').then(r => r.ok ? r.json() : fetch('./data/clinical_topics_learning.json').then(r2 => r2.ok ? r2.json() : null)).then(data => { learningData = data; }).catch(() => { });
 
         const categorySelect = document.getElementById('select-test');
         testData.forEach((cat, index) => {
@@ -220,13 +220,21 @@ function analyseResult() {
         range = test.ranges[sex] || test.ranges.all;
     }
 
+    if (!range) {
+        output.innerHTML = '<div class="placeholder-text"><p>No reference range available for this test/sex/age combination.</p></div>';
+        return;
+    }
+
     let status = "normal";
     let guidanceKey = null;
 
-    if (value < range.min) {
+    const hasMin = range.min !== undefined && range.min !== null;
+    const hasMax = range.max !== undefined && range.max !== null;
+
+    if (hasMin && value < range.min) {
         status = "abnormal";
         guidanceKey = "low";
-    } else if (value > range.max) {
+    } else if (hasMax && value > range.max) {
         status = (value > range.max * 1.5) ? "pathological" : "abnormal";
         guidanceKey = "high";
     }
@@ -235,7 +243,7 @@ function analyseResult() {
         <div class="guidance-result">
             <div class="status-box ${status}">
                 <span>${status.toUpperCase()}: ${test.name} = ${value} ${test.unit}</span>
-                <span class="range-info">(Ref: ${range.min || 0} - ${range.max})</span>
+                <span class="range-info">(Ref: ${hasMin ? range.min : '—'} – ${hasMax ? range.max : '—'} ${test.unit})</span>
             </div>
             <h3>Clinical Guidance</h3>
             <div class="action-list">
