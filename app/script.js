@@ -450,15 +450,51 @@ async function renderDecisionTools() {
                 div.setAttribute('role', 'option');
                 div.innerHTML = '<span>' + escapeHtml(title) + '</span> <span class="system-name">(' + escapeHtml(sysName) + ')</span>';
                 div.addEventListener('click', function () {
-                    systemSelect.value = String(sysIdx);
-                    systemSelect.dispatchEvent(new Event('change'));
                     if (filterInput) filterInput.value = '';
-                    populateTopicDropdown(systems[sysIdx], '');
-                    toolSelect.value = String(toolIdx);
-                    toolSelect.dispatchEvent(new Event('change'));
                     searchAllInput.value = '';
                     searchResultsEl.classList.add('hidden');
                     searchResultsEl.innerHTML = '';
+                    systemSelect.value = String(sysIdx);
+                    toolSelect.disabled = false;
+                    populateTopicDropdown(systems[sysIdx], '');
+                    toolSelect.value = String(toolIdx);
+                    var sys = systems[sysIdx];
+                    var tool = (sys.tools || [])[parseInt(toolIdx, 10)];
+                    if (!tool) return;
+                    titleEl.textContent = tool.title;
+                    niceEl.textContent = (tool.niceRefs || []).join(', ') || 'NICE CKS';
+                    evidenceEl.textContent = tool.evidence || 'See NICE CKS and local policy.';
+                    guidanceBox.classList.add('hidden');
+                    stepsContainer.innerHTML = '';
+                    (tool.steps || []).forEach(function (step, stepIdx) {
+                        if (step.type !== 'dropdown' || !step.options || !step.options.length) return;
+                        var divStep = document.createElement('div');
+                        divStep.className = 'field-group';
+                        divStep.style.marginBottom = '1rem';
+                        var label = document.createElement('label');
+                        label.textContent = step.question;
+                        var select = document.createElement('select');
+                        select.dataset.stepIndex = stepIdx;
+                        select.innerHTML = '<option value="">-- Select --</option>';
+                        step.options.forEach(function (opt, oIdx) {
+                            var o = document.createElement('option');
+                            o.value = oIdx;
+                            o.textContent = opt.label;
+                            o.dataset.guidance = (opt.guidance || '').replace(/"/g, '&quot;');
+                            select.appendChild(o);
+                        });
+                        select.addEventListener('change', function () {
+                            var chosen = this.options[this.selectedIndex];
+                            if (!chosen || chosen.value === '') { guidanceBox.classList.add('hidden'); return; }
+                            var g = (chosen.dataset.guidance || '').replace(/&quot;/g, '"');
+                            guidanceText.textContent = g;
+                            guidanceBox.classList.remove('hidden');
+                        });
+                        divStep.appendChild(label);
+                        divStep.appendChild(select);
+                        stepsContainer.appendChild(divStep);
+                    });
+                    panel.classList.remove('hidden');
                 });
                 searchResultsEl.appendChild(div);
             });
