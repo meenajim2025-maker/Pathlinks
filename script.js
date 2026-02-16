@@ -383,22 +383,97 @@ async function renderDecisionTools() {
     toolSelect.disabled = true;
     panel.classList.add('hidden');
 
-    systemSelect.onchange = function () {
-        const sysIdx = this.value;
+    const filterInput = document.getElementById('decision-tool-filter');
+    const countEl = document.getElementById('decision-tool-count');
+
+    function populateTopicDropdown(sys, filterStr) {
+        const tools = sys.tools || [];
+        const q = (filterStr || '').trim().toLowerCase();
+        const filtered = q ? tools.filter(t => (t.title || '').toLowerCase().includes(q)) : tools;
         toolSelect.innerHTML = '<option value="">-- Choose topic --</option>';
-        toolSelect.disabled = sysIdx === '';
-        if (sysIdx === '') {
-            panel.classList.add('hidden');
-            return;
-        }
-        const sys = systems[parseInt(sysIdx, 10)];
-        (sys.tools || []).forEach((tool, tIdx) => {
+        filtered.forEach(tool => {
+            const tIdx = tools.indexOf(tool);
             const opt = document.createElement('option');
             opt.value = tIdx;
             opt.textContent = tool.title;
             toolSelect.appendChild(opt);
         });
+        if (countEl) countEl.textContent = filtered.length === tools.length ? tools.length + ' topics' : 'Showing ' + filtered.length + ' of ' + tools.length + ' topics';
+    }
+
+    systemSelect.onchange = function () {
+        const sysIdx = this.value;
+        toolSelect.disabled = sysIdx === '';
+        if (sysIdx === '') {
+            toolSelect.innerHTML = '<option value="">-- Choose topic --</option>';
+            if (countEl) countEl.textContent = '';
+            if (filterInput) filterInput.value = '';
+            panel.classList.add('hidden');
+            return;
+        }
+        const sys = systems[parseInt(sysIdx, 10)];
+        const filterStr = filterInput ? filterInput.value : '';
+        populateTopicDropdown(sys, filterStr);
     };
+
+    if (filterInput) {
+        filterInput.addEventListener('input', function () {
+            const sysIdx = systemSelect.value;
+            if (sysIdx === '') return;
+            const sys = systems[parseInt(sysIdx, 10)];
+            populateTopicDropdown(sys, this.value);
+        });
+    }
+
+    const searchAllInput = document.getElementById('decision-search-all');
+    const searchResultsEl = document.getElementById('decision-search-results');
+    if (searchAllInput && searchResultsEl) {
+        const maxSearchHits = 25;
+        searchAllInput.addEventListener('input', function () {
+            const q = (this.value || '').trim().toLowerCase();
+            searchResultsEl.classList.add('hidden');
+            searchResultsEl.innerHTML = '';
+            if (q.length < 2) return;
+            const hits = [];
+            systems.forEach((sys, sysIdx) => {
+                (sys.tools || []).forEach((tool, toolIdx) => {
+                    const title = (tool.title || '').toLowerCase();
+                    const sysName = (sys.name || '').toLowerCase();
+                    if (title.includes(q) || sysName.includes(q)) hits.push({ sysIdx, toolIdx, sysName: sys.name, title: tool.title });
+                });
+            });
+            hits.sort((a, b) => (a.title || '').localeCompare(b.title || '', 'en', { sensitivity: 'base' }));
+            const show = hits.slice(0, maxSearchHits);
+            show.forEach(({ sysIdx, toolIdx, sysName, title }) => {
+                const div = document.createElement('div');
+                div.className = 'search-hit';
+                div.setAttribute('role', 'option');
+                div.innerHTML = '<span>' + escapeHtml(title) + '</span> <span class="system-name">(' + escapeHtml(sysName) + ')</span>';
+                div.addEventListener('click', function () {
+                    systemSelect.value = String(sysIdx);
+                    systemSelect.dispatchEvent(new Event('change'));
+                    if (filterInput) filterInput.value = '';
+                    populateTopicDropdown(systems[sysIdx], '');
+                    toolSelect.value = String(toolIdx);
+                    toolSelect.dispatchEvent(new Event('change'));
+                    searchAllInput.value = '';
+                    searchResultsEl.classList.add('hidden');
+                    searchResultsEl.innerHTML = '';
+                });
+                searchResultsEl.appendChild(div);
+            });
+            if (show.length) searchResultsEl.classList.remove('hidden');
+        });
+        searchAllInput.addEventListener('blur', function () {
+            setTimeout(() => { searchResultsEl.classList.add('hidden'); }, 150);
+        });
+        document.addEventListener('keydown', function (e) {
+            if (e.key === 'Escape') {
+                searchAllInput.blur();
+                searchResultsEl.classList.add('hidden');
+            }
+        });
+    }
 
     toolSelect.onchange = function () {
         const sysIdx = systemSelect.value;

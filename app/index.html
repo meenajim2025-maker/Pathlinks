@@ -161,16 +161,26 @@
 
             <section id="decision-tools-view" class="view hidden">
                 <h2>Decision tools by system</h2>
-                <p class="welcome-section" style="margin-bottom: 1rem;">~900 tools with NICE-based management (drug choices, targets, referral). Choose a system and topic, then use the dropdowns for guideline-backed decisions.</p>
+                <p class="welcome-section" style="margin-bottom: 1rem;">~900 tools with NICE-based management (drug choices, targets, referral). Search all systems or choose a system and topic, then use the dropdowns for guideline-backed decisions.</p>
                 <div class="card" style="margin-bottom: 1.5rem;">
+                    <div class="field-group" style="margin-bottom: 1rem; position: relative;">
+                        <label for="decision-search-all">Search all systems</label>
+                        <input type="text" id="decision-search-all" placeholder="e.g. sore throat, hypertension, restless legs..." style="max-width: 400px;" autocomplete="off">
+                        <div id="decision-search-results" class="decision-search-results hidden" role="listbox"></div>
+                    </div>
                     <div class="field-group" style="margin-bottom: 1rem;">
                         <label for="decision-system">System / specialty</label>
                         <select id="decision-system">
                             <option value="">-- Choose system --</option>
                         </select>
                     </div>
+                    <div class="field-group" style="margin-bottom: 0.5rem;">
+                        <label for="decision-tool-filter">Filter topics (type to narrow)</label>
+                        <input type="text" id="decision-tool-filter" placeholder="e.g. sore throat, hypertension, referral..." style="max-width: 400px;" autocomplete="off">
+                    </div>
                     <div class="field-group" style="margin-bottom: 1rem;">
                         <label for="decision-tool">Topic / decision tool</label>
+                        <span id="decision-tool-count" class="small-text" style="display: block; margin-bottom: 4px;"></span>
                         <select id="decision-tool">
                             <option value="">-- Choose topic --</option>
                         </select>

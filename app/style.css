@@ -218,6 +218,36 @@ header {
     background: #f8fbfe;
 }
 
+.decision-search-results {
+    position: absolute;
+    z-index: 100;
+    max-height: 280px;
+    overflow-y: auto;
+    background: var(--card-bg);
+    border: 1px solid #e1e8ed;
+    border-radius: var(--border-radius);
+    box-shadow: var(--shadow);
+    margin-top: 4px;
+    width: 100%;
+    max-width: 400px;
+}
+.decision-search-results.hidden {
+    display: none;
+}
+.decision-search-results .search-hit {
+    padding: 10px 12px;
+    cursor: pointer;
+    border-bottom: 1px solid #f0f4f8;
+    font-size: 14px;
+}
+.decision-search-results .search-hit:hover {
+    background: #f0f4f8;
+}
+.decision-search-results .search-hit .system-name {
+    font-size: 12px;
+    color: var(--text-muted);
+}
+
 .field-group {
     margin-bottom: 16px;
 }

@@ -295,6 +295,10 @@ function main() {
   });
 
   const systems = Array.from(systemsById.values()).filter(s => s.tools.length > 0);
+  // Sort tools alphabetically by title within each system for predictable, findable order
+  systems.forEach(s => {
+    (s.tools || []).sort((a, b) => (a.title || '').localeCompare(b.title || '', 'en', { sensitivity: 'base' }));
+  });
   let totalTools = 0;
   systems.forEach(s => { totalTools += s.tools.length; });
 
