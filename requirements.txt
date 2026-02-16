@@ -1,0 +1,3 @@
+# PathLinks: MP3 → text knowledge extraction
+openai-whisper>=20231117
+# ffmpeg required by whisper (install separately: brew install ffmpeg)

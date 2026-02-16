@@ -23,9 +23,11 @@
                 <h1>PathLinks</h1>
             </div>
             <nav>
-                <div class="nav-item active" id="nav-dashboard">Dashboard</div>
+                <div class="nav-item active" id="nav-dashboard">Clinical decision tool</div>
+                <div class="nav-item" id="nav-decision-tools">Decision tools</div>
                 <div class="nav-item" id="nav-protocols">Protocols</div>
                 <div class="nav-item" id="nav-emis-coding">EMIS Integration</div>
+                <div class="nav-item" id="nav-learning">Learning library</div>
             </nav>
             <div class="user-profile">
                 <div class="avatar">DR</div>
@@ -49,8 +51,8 @@
 
             <section id="dashboard-view" class="view">
                 <div class="welcome-section">
-                    <h2>Blood Result Actioning Protocol</h2>
-                    <p>Select a test or enter a value to receive guidance based on UK Clinical Standards.</p>
+                    <h2>Clinical Decision Making Tool</h2>
+                    <p>Blood result actioning: select a test, enter the value, and get NICE-aligned guidance and related learning below.</p>
                 </div>
 
                 <div class="grid-container">
@@ -157,10 +159,55 @@
                 </div>
             </section>
 
+            <section id="decision-tools-view" class="view hidden">
+                <h2>Decision tools by system</h2>
+                <p class="welcome-section" style="margin-bottom: 1rem;">~900 tools with NICE-based management (drug choices, targets, referral). Choose a system and topic, then use the dropdowns for guideline-backed decisions.</p>
+                <div class="card" style="margin-bottom: 1.5rem;">
+                    <div class="field-group" style="margin-bottom: 1rem;">
+                        <label for="decision-system">System / specialty</label>
+                        <select id="decision-system">
+                            <option value="">-- Choose system --</option>
+                        </select>
+                    </div>
+                    <div class="field-group" style="margin-bottom: 1rem;">
+                        <label for="decision-tool">Topic / decision tool</label>
+                        <select id="decision-tool">
+                            <option value="">-- Choose topic --</option>
+                        </select>
+                    </div>
+                </div>
+                <div id="decision-tool-panel" class="hidden">
+                    <div class="card" style="margin-bottom: 1rem;">
+                        <h3 id="decision-tool-title" style="margin: 0 0 8px 0;"></h3>
+                        <p class="small-text" style="margin: 0 0 12px 0;"><strong>NICE / evidence:</strong> <span id="decision-tool-nice"></span></p>
+                        <p class="small-text" style="margin: 0 0 16px 0; line-height: 1.5;" id="decision-tool-evidence"></p>
+                    </div>
+                    <div id="decision-steps-container" class="card">
+                        <!-- Steps (dropdowns) rendered here -->
+                    </div>
+                    <div id="decision-guidance-box" class="card guidance-card hidden" style="margin-top: 1rem;">
+                        <h4 style="margin: 0 0 8px 0;">Guidance</h4>
+                        <p id="decision-guidance-text" style="margin: 0; line-height: 1.5;"></p>
+                    </div>
+                </div>
+            </section>
+
             <section id="protocols-view" class="view hidden">
                 <h2>Clinical Governance Protocol</h2>
                 <div class="protocol-list" id="protocol-list-container">
                     <!-- Dynamic list -->
+                </div>
+            </section>
+
+            <section id="learning-view" class="view hidden">
+                <h2>Clinical learning topics</h2>
+                <p class="welcome-section" style="margin-bottom: 1rem;">Knowledge extracted from USB podcast episodes. Search and read transcripts below.</p>
+                <div class="field-group" style="margin-bottom: 1rem;">
+                    <label for="knowledge-search">Search topics and transcript text</label>
+                    <input type="text" id="knowledge-search" placeholder="e.g. hypertension, NICE, referral..." style="max-width: 400px;">
+                </div>
+                <div class="learning-container" id="learning-container">
+                    <!-- Dynamic sections -->
                 </div>
             </section>
 
@@ -174,6 +221,15 @@
                 </div>
             </section>
         </main>
+    </div>
+    <div id="protocol-modal" class="modal-overlay hidden" aria-hidden="true">
+        <div class="modal-card">
+            <div class="modal-header">
+                <h3 id="protocol-modal-title">Protocol guidance</h3>
+                <button type="button" class="modal-close" id="protocol-modal-close" aria-label="Close">&times;</button>
+            </div>
+            <div id="protocol-modal-body" class="modal-body"></div>
+        </div>
     </div>
     <script src="script.js"></script>
 </body>

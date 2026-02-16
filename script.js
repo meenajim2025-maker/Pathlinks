@@ -1,10 +1,15 @@
 let testData = [];
+let learningData = null;
+let decisionToolsData = null;
 
 // Load data and initialize selects
 async function init() {
     try {
         const response = await fetch('./data/blood_tests_protocol.json');
         testData = await response.json();
+
+        // Load learning data in background so we can show related snippets in the clinical tool
+        fetch('./data/knowledge_base.json').then(r => r.ok ? r.json() : fetch('./data/clinical_topics_learning.json').then(r2 => r2.ok ? r2.json() : null)).then(data => { learningData = data; }).catch(() => {});
 
         const categorySelect = document.getElementById('select-test');
         testData.forEach((cat, index) => {
@@ -35,6 +40,8 @@ async function init() {
                 });
 
                 if (item.id === 'nav-protocols') renderProtocols();
+                if (item.id === 'nav-learning') renderLearningTopics();
+                if (item.id === 'nav-decision-tools') renderDecisionTools();
                 if (item.id === 'nav-emis-coding') renderEmisIntegrations();
             });
         });
@@ -57,6 +64,9 @@ async function init() {
 
     } catch (e) {
         console.error("Error loading test data:", e);
+        document.getElementById('select-test').innerHTML = '<option value="">Failed to load protocols</option>';
+        const out = document.getElementById('guidance-output');
+        if (out) out.innerHTML = '<div class="placeholder-text"><p>Could not load blood test data. Check the console or try refreshing.</p></div>';
     }
 }
 
@@ -159,6 +169,26 @@ function simulateEmisImport() {
     }, 800);
 }
 
+function getRelatedLearning(testName, categoryName) {
+    if (!learningData || !learningData.sections) return [];
+    const words = (testName + ' ' + categoryName).toLowerCase().replace(/[^a-z0-9\s]/g, ' ').split(/\s+/).filter(w => w.length > 2);
+    const out = [];
+    learningData.sections.forEach(section => {
+        (section.topics || []).forEach(t => {
+            const title = (t.title || '').toLowerCase();
+            const transcript = (t.transcript || '').toLowerCase();
+            const match = words.some(w => title.includes(w) || transcript.includes(w));
+            const tr = t.transcript || '';
+            if (match && tr.length > 80) {
+                const skip = Math.min(220, Math.floor(tr.length * 0.15));
+                const clinical = tr.slice(skip);
+                out.push({ title: t.title, transcript: clinical.slice(0, 380) + (clinical.length > 380 ? '…' : ''), episode: t.episode });
+            }
+        });
+    });
+    return out.slice(0, 2);
+}
+
 function analyseResult() {
     const catIdx = document.getElementById('select-test').value;
     const paramIdx = document.getElementById('select-param').value;
@@ -167,12 +197,17 @@ function analyseResult() {
     const age = parseInt(document.getElementById('age').value);
     const output = document.getElementById('guidance-output');
 
+    if (catIdx === '' || paramIdx === '') {
+        output.innerHTML = '<div class="placeholder-text"><p>Select a test category and parameter first.</p></div>';
+        return;
+    }
     if (isNaN(value)) {
         output.innerHTML = '<div class="placeholder-text"><p>Please enter a numerical result value.</p></div>';
         return;
     }
 
     const test = testData[catIdx].tests[paramIdx];
+    const categoryName = testData[catIdx].category;
     let range;
 
     // Check if test has age-specific ranges (like PSA)
@@ -227,10 +262,249 @@ function analyseResult() {
                     Clinician: Actioned via PathLinks Protocol
                 </div>
             </div>
-        </div>
     `;
 
+    const related = getRelatedLearning(test.name, categoryName);
+    if (related.length > 0) {
+        html += `<div class="related-learning-box" style="margin-top: 16px; padding: 14px; background: #f0f7ff; border-left: 4px solid var(--primary); border-radius: 8px;"><h4 style="font-size: 13px; color: var(--primary); margin: 0 0 8px 0;">Related learning from library</h4>`;
+        related.forEach(r => {
+            html += `<p style="margin: 0 0 6px 0; font-size: 12px; font-weight: 600;">${(r.title || '').replace(/_/g, ' ')}${r.episode != null ? ' (Ep ' + r.episode + ')' : ''}</p><p style="margin: 0 0 10px 0; font-size: 12px; line-height: 1.4; color: #444;">${escapeHtml(r.transcript)}</p>`;
+        });
+        html += `</div>`;
+    }
+    html += `</div>`;
+
     output.innerHTML = html;
+}
+
+async function renderLearningTopics() {
+    const container = document.getElementById('learning-container');
+    if (!container) return;
+
+    if (!learningData) {
+        try {
+            let res = await fetch('./data/knowledge_base.json');
+            if (!res.ok) res = await fetch('./data/clinical_topics_learning.json');
+            learningData = await res.json();
+        } catch (e) {
+            container.innerHTML = '<div class="card" style="padding: 24px;"><p>Learning data not found. Run <code>node scripts/parse-mp3-topics.js "/Volumes/NO NAME"</code> then <code>python scripts/transcribe_mp3_to_knowledge.py "/Volumes/NO NAME"</code> to extract knowledge from USB MP3s.</p></div>';
+            return;
+        }
+    }
+
+    const searchEl = document.getElementById('knowledge-search');
+    const query = (searchEl && searchEl.value) ? searchEl.value.trim().toLowerCase() : '';
+    const hasTranscripts = learningData.sections && learningData.sections.some(s => (s.topics || []).some(t => t.transcript));
+
+    let html = '';
+    if (learningData.sections && learningData.sections.length) {
+        const subLabel = hasTranscripts ? 'Search runs over titles and transcript text.' : 'Titles only; run the transcription script to add full text.';
+        html += `<p class="small-text" style="margin-bottom: 16px;">${learningData.totalTopics} topics across ${learningData.sections.length} sections. ${subLabel}</p>`;
+        learningData.sections.forEach(section => {
+            if (!section.topics || section.topics.length === 0) return;
+            const filtered = query
+                ? section.topics.filter(t => {
+                    const title = (t.title || '').toLowerCase().replace(/_/g, ' ');
+                    const transcript = (t.transcript || '').toLowerCase();
+                    return title.includes(query) || transcript.includes(query);
+                })
+                : section.topics;
+            if (filtered.length === 0) return;
+            html += `<div class="card learning-section-card" style="margin-bottom: 20px;"><h3 style="margin: 0 0 12px 0; font-size: 1.1rem; color: var(--primary);">${section.name}</h3><ul class="learning-topic-list">`;
+            filtered.forEach(t => {
+                const epLabel = t.episode != null ? `Ep ${t.episode} – ` : '';
+                const titleDisplay = (t.title || '').replace(/_/g, ' ');
+                const hasT = t.transcript && t.transcript.length > 0;
+                const tid = `topic-${section.id}-${(t.episode || t.filename || '').toString().replace(/\W/g, '-')}`;
+                html += `<li class="learning-topic-item" data-topic-id="${tid}">
+                    <span class="episode-tag">${epLabel}</span>
+                    <span class="learning-topic-title">${titleDisplay}</span>
+                    ${hasT ? `<button type="button" class="link-btn show-transcript-btn" data-topic-id="${tid}" aria-label="Show transcript">Read transcript</button>` : ''}
+                    <div id="${tid}" class="topic-transcript hidden">${escapeHtml((t.transcript || '').slice(0, 50000))}</div>
+                </li>`;
+            });
+            html += '</ul></div>';
+        });
+        container.innerHTML = html;
+        container.querySelectorAll('.show-transcript-btn').forEach(btn => {
+            btn.addEventListener('click', function () {
+                const id = this.getAttribute('data-topic-id');
+                const el = document.getElementById(id);
+                if (!el) return;
+                const isHidden = el.classList.contains('hidden');
+                el.classList.toggle('hidden', !isHidden);
+                this.textContent = isHidden ? 'Hide transcript' : 'Read transcript';
+            });
+        });
+        if (searchEl && !searchEl.dataset.bound) {
+            searchEl.dataset.bound = '1';
+            searchEl.addEventListener('input', () => renderLearningTopics());
+        }
+    } else {
+        html = '<div class="card" style="padding: 24px;"><p>No learning sections available.</p></div>';
+        container.innerHTML = html;
+    }
+}
+
+async function renderDecisionTools() {
+    const systemSelect = document.getElementById('decision-system');
+    const toolSelect = document.getElementById('decision-tool');
+    const panel = document.getElementById('decision-tool-panel');
+    const titleEl = document.getElementById('decision-tool-title');
+    const niceEl = document.getElementById('decision-tool-nice');
+    const evidenceEl = document.getElementById('decision-tool-evidence');
+    const stepsContainer = document.getElementById('decision-steps-container');
+    const guidanceBox = document.getElementById('decision-guidance-box');
+    const guidanceText = document.getElementById('decision-guidance-text');
+    if (!systemSelect || !toolSelect || !panel) return;
+
+    if (!decisionToolsData) {
+        try {
+            const res = await fetch('./data/decision_tools_protocol.json');
+            if (!res.ok) throw new Error('Not found');
+            decisionToolsData = await res.json();
+        } catch (e) {
+            panel.classList.add('hidden');
+            stepsContainer.innerHTML = '<p class="placeholder-text">Decision tools data not found. Run <code>node scripts/build-decision-tools.js</code> to generate.</p>';
+            return;
+        }
+    }
+
+    const systems = decisionToolsData.systems || [];
+    systemSelect.innerHTML = '<option value="">-- Choose system --</option>';
+    systems.forEach((sys, idx) => {
+        const opt = document.createElement('option');
+        opt.value = idx;
+        opt.textContent = sys.name + ' (' + (sys.tools || []).length + ')';
+        systemSelect.appendChild(opt);
+    });
+
+    toolSelect.innerHTML = '<option value="">-- Choose topic --</option>';
+    toolSelect.disabled = true;
+    panel.classList.add('hidden');
+
+    systemSelect.onchange = function () {
+        const sysIdx = this.value;
+        toolSelect.innerHTML = '<option value="">-- Choose topic --</option>';
+        toolSelect.disabled = sysIdx === '';
+        if (sysIdx === '') {
+            panel.classList.add('hidden');
+            return;
+        }
+        const sys = systems[parseInt(sysIdx, 10)];
+        (sys.tools || []).forEach((tool, tIdx) => {
+            const opt = document.createElement('option');
+            opt.value = tIdx;
+            opt.textContent = tool.title;
+            toolSelect.appendChild(opt);
+        });
+    };
+
+    toolSelect.onchange = function () {
+        const sysIdx = systemSelect.value;
+        const toolIdx = this.value;
+        if (sysIdx === '' || toolIdx === '') {
+            panel.classList.add('hidden');
+            return;
+        }
+        const sys = systems[parseInt(sysIdx, 10)];
+        const tool = (sys.tools || [])[parseInt(toolIdx, 10)];
+        if (!tool) {
+            panel.classList.add('hidden');
+            return;
+        }
+        titleEl.textContent = tool.title;
+        niceEl.textContent = (tool.niceRefs || []).join(', ') || 'NICE CKS';
+        evidenceEl.textContent = tool.evidence || 'See NICE CKS and local policy.';
+        guidanceBox.classList.add('hidden');
+
+        stepsContainer.innerHTML = '';
+        (tool.steps || []).forEach((step, stepIdx) => {
+            if (step.type !== 'dropdown' || !step.options || !step.options.length) return;
+            const div = document.createElement('div');
+            div.className = 'field-group';
+            div.style.marginBottom = '1rem';
+            const label = document.createElement('label');
+            label.textContent = step.question;
+            const select = document.createElement('select');
+            select.dataset.stepIndex = stepIdx;
+            select.innerHTML = '<option value="">-- Select --</option>';
+            step.options.forEach((opt, oIdx) => {
+                const o = document.createElement('option');
+                o.value = oIdx;
+                o.textContent = opt.label;
+                o.dataset.guidance = (opt.guidance || '').replace(/"/g, '&quot;');
+                select.appendChild(o);
+            });
+            select.addEventListener('change', function () {
+                const chosen = this.options[this.selectedIndex];
+                if (!chosen || chosen.value === '') {
+                    guidanceBox.classList.add('hidden');
+                    return;
+                }
+                const g = (chosen.dataset.guidance || '').replace(/&quot;/g, '"');
+                guidanceText.textContent = g;
+                guidanceBox.classList.remove('hidden');
+            });
+            div.appendChild(label);
+            div.appendChild(select);
+            stepsContainer.appendChild(div);
+        });
+        panel.classList.remove('hidden');
+    };
+}
+
+function escapeHtml(s) {
+    const div = document.createElement('div');
+    div.textContent = s;
+    return div.innerHTML;
+}
+
+function viewFullProtocol(testName) {
+    let found = null;
+    let categoryName = '';
+    for (const cat of testData) {
+        const t = cat.tests.find(x => x.name === testName);
+        if (t) {
+            found = t;
+            categoryName = cat.category;
+            break;
+        }
+    }
+    if (!found) return;
+    let rangeStr;
+    if (found.ranges.all) {
+        rangeStr = `${found.ranges.all.min ?? 0} – ${found.ranges.all.max} ${found.unit}`;
+    } else if (found.ranges.male && found.ranges.female) {
+        rangeStr = `M: ${found.ranges.male.min}–${found.ranges.male.max} / F: ${found.ranges.female.min}–${found.ranges.female.max} ${found.unit}`;
+    } else if (found.ranges.age_40_49 || found.ranges.age_50_59) {
+        const parts = [];
+        if (found.ranges.age_40_49) parts.push('40–49: ≤' + found.ranges.age_40_49.max);
+        if (found.ranges.age_50_59) parts.push('50–59: ≤' + found.ranges.age_50_59.max);
+        if (found.ranges.age_60_69) parts.push('60–69: ≤' + found.ranges.age_60_69.max);
+        if (found.ranges.age_70_79) parts.push('70–79: ≤' + found.ranges.age_70_79.max);
+        rangeStr = (parts.length ? parts.join(' | ') + ' ' : '') + found.unit;
+    } else {
+        rangeStr = found.unit;
+    }
+    let body = `<p><strong>Reference range:</strong> ${rangeStr}</p>`;
+    if (found.guidance) {
+        if (found.guidance.high && found.guidance.high.actions) {
+            body += `<h4 style="margin-top: 12px;">If high</h4><ul class="action-list">`;
+            found.guidance.high.actions.forEach(a => { body += `<li class="action-item">${a}</li>`; });
+            body += '</ul>';
+        }
+        if (found.guidance.low && found.guidance.low.actions) {
+            body += `<h4 style="margin-top: 12px;">If low</h4><ul class="action-list">`;
+            found.guidance.low.actions.forEach(a => { body += `<li class="action-item">${a}</li>`; });
+            body += '</ul>';
+        }
+    }
+    document.getElementById('protocol-modal-title').textContent = `${found.name} (${categoryName})`;
+    document.getElementById('protocol-modal-body').innerHTML = body;
+    const modal = document.getElementById('protocol-modal');
+    modal.classList.remove('hidden');
+    modal.setAttribute('aria-hidden', 'false');
 }
 
 function renderProtocols() {
@@ -240,16 +514,27 @@ function renderProtocols() {
         cat.tests.forEach(test => {
             const div = document.createElement('div');
             div.className = "protocol-item";
+            const safeName = test.name.replace(/'/g, "\\'");
             div.innerHTML = `
                 <div>
                     <span class="cat-label">${cat.category}</span>
                     <strong style="margin-left: 10px;">${test.name}</strong>
                 </div>
-                <button class="primary-btn" style="width: auto; padding: 8px 16px; font-size: 12px;" onclick="viewFullProtocol('${test.name}')">View Guidance</button>
+                <button class="primary-btn" style="width: auto; padding: 8px 16px; font-size: 12px;" onclick="viewFullProtocol('${safeName}')">View Guidance</button>
             `;
             container.appendChild(div);
         });
     });
+    document.getElementById('protocol-modal-close').onclick = () => {
+        document.getElementById('protocol-modal').classList.add('hidden');
+        document.getElementById('protocol-modal').setAttribute('aria-hidden', 'true');
+    };
+    document.getElementById('protocol-modal').onclick = (e) => {
+        if (e.target.id === 'protocol-modal') {
+            e.target.classList.add('hidden');
+            e.target.setAttribute('aria-hidden', 'true');
+        }
+    };
 }
 
 function renderEmisIntegrations() {

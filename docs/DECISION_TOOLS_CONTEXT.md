@@ -39,3 +39,14 @@
 - **Total: ~1902**
 
 To add another batch of 1000: add ~1000 items to `extra-tools-bulk-1000.json` (or create `extra-tools-bulk-2000.json` and load it in the build script the same way).
+
+---
+
+## Resume next time
+
+- **Live app:** https://pathlinks-clinical.vercel.app  
+- **Repo:** PathLinks Clinical – blood test protocol, clinical decision tool (dashboard), **Decision tools** (~1900 by system with NICE management), Protocols, EMIS Integration, Learning library (USB MP3 transcripts, anonymized).
+- **Data:** `data/blood_tests_protocol.json` (tracked), `data/knowledge_base.json` and `data/clinical_topics_learning.json` (from USB/scripts; may be untracked). `data/decision_tools_protocol.json` is **generated** by `node scripts/build-decision-tools.js` and copied to `app/data/`.
+- **Deploy:** `npx vercel --prod --yes` from project root (serves root `index.html` and `data/`).
+- **Anonymization:** Before deploy, run `python3 scripts/anonymize_transcripts.py` if transcripts changed; then `cp data/knowledge_base.json app/data/` if needed.
+- To continue: read this file and `docs/FORENSIC_AUDIT.md` for layout; then add conditions or management content as above and rebuild/deploy.

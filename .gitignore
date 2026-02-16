@@ -1,1 +1,7 @@
 .vercel
+.venv
+__pycache__
+*.pyc
+data/transcripts/
+data/*.bak
+node_modules/
