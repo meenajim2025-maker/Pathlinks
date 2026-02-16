@@ -210,13 +210,21 @@ function analyseResult() {
     const categoryName = testData[catIdx].category;
     let range;
 
-    // Check if test has age-specific ranges (like PSA)
-    if (test.name === "PSA") {
-        if (age < 50) range = test.ranges.age_40_49;
-        else if (age < 60) range = test.ranges.age_50_59;
-        else if (age < 70) range = test.ranges.age_60_69;
-        else range = test.ranges.age_70_79;
-    } else {
+    const findAgeRange = (ranges, currentAge) => {
+        // Look for keys like age_40_49
+        for (const key in ranges) {
+            if (key.startsWith('age_')) {
+                const parts = key.split('_'); // ['age', '40', '49']
+                const minA = parseInt(parts[1], 10);
+                const maxA = parseInt(parts[2], 10);
+                if (currentAge >= minA && currentAge <= maxA) return ranges[key];
+            }
+        }
+        return null;
+    };
+
+    range = findAgeRange(test.ranges, age);
+    if (!range) {
         range = test.ranges[sex] || test.ranges.all;
     }
 
@@ -265,8 +273,8 @@ function analyseResult() {
             <div class="emis-coding-box" style="margin-top: 20px; padding: 15px; background: #fdfdfd; border: 1px dashed #ccc; border-radius: 8px;">
                 <h4 style="font-size: 13px; color: var(--text-muted); margin-bottom: 10px;">PROPOSED EMIS CODES</h4>
                 <div style="font-family: monospace; font-size: 12px; background: #eee; padding: 10px; border-radius: 4px;">
-                    Read Code: ${test.name === 'Hb' ? '422..' : '66Y..'} <br>
-                    Status: ${status === 'normal' ? 'Normal result' : 'Abnormal result'} <br>
+                    Read Code: ${test.emisCode || '66Y..'} <br>
+                    Status: ${status.charAt(0).toUpperCase() + status.slice(1)} result <br>
                     Clinician: Actioned via PathLinks Protocol
                 </div>
             </div>
@@ -462,47 +470,16 @@ async function renderDecisionTools() {
                     searchAllInput.value = '';
                     searchResultsEl.classList.add('hidden');
                     searchResultsEl.innerHTML = '';
+
+                    // Update selects so UI stays in sync if possible
                     systemSelect.value = String(sysIdx);
                     toolSelect.disabled = false;
                     populateTopicDropdown(systems[sysIdx], '');
                     toolSelect.value = String(toolIdx);
-                    var sys = systems[sysIdx];
-                    var tool = (sys.tools || [])[parseInt(toolIdx, 10)];
-                    if (!tool) return;
-                    titleEl.textContent = tool.title;
-                    niceEl.textContent = (tool.niceRefs || []).join(', ') || 'NICE CKS';
-                    evidenceEl.textContent = tool.evidence || 'See NICE CKS and local policy.';
-                    guidanceBox.classList.add('hidden');
-                    stepsContainer.innerHTML = '';
-                    (tool.steps || []).forEach(function (step, stepIdx) {
-                        if (step.type !== 'dropdown' || !step.options || !step.options.length) return;
-                        var divStep = document.createElement('div');
-                        divStep.className = 'field-group';
-                        divStep.style.marginBottom = '1rem';
-                        var label = document.createElement('label');
-                        label.textContent = step.question;
-                        var select = document.createElement('select');
-                        select.dataset.stepIndex = stepIdx;
-                        select.innerHTML = '<option value="">-- Select --</option>';
-                        step.options.forEach(function (opt, oIdx) {
-                            var o = document.createElement('option');
-                            o.value = oIdx;
-                            o.textContent = opt.label;
-                            o.dataset.guidance = (opt.guidance || '').replace(/"/g, '&quot;');
-                            select.appendChild(o);
-                        });
-                        select.addEventListener('change', function () {
-                            var chosen = this.options[this.selectedIndex];
-                            if (!chosen || chosen.value === '') { guidanceBox.classList.add('hidden'); return; }
-                            var g = (chosen.dataset.guidance || '').replace(/&quot;/g, '"');
-                            guidanceText.textContent = g;
-                            guidanceBox.classList.remove('hidden');
-                        });
-                        divStep.appendChild(label);
-                        divStep.appendChild(select);
-                        stepsContainer.appendChild(divStep);
-                    });
-                    panel.classList.remove('hidden');
+
+                    const sys = systems[sysIdx];
+                    const tool = (sys.tools || [])[parseInt(toolIdx, 10)];
+                    if (tool) renderToolUI(tool);
                 });
                 searchResultsEl.appendChild(div);
             });
@@ -528,16 +505,24 @@ async function renderDecisionTools() {
         }
         const sys = systems[parseInt(sysIdx, 10)];
         const tool = (sys.tools || [])[parseInt(toolIdx, 10)];
-        if (!tool) {
-            panel.classList.add('hidden');
-            return;
-        }
-        titleEl.textContent = tool.title;
+        if (tool) renderToolUI(tool);
+    };
+
+    function renderToolUI(tool) {
+        // UI elements from parent scope
+        titleEl.innerHTML = escapeHtml(tool.title);
+
+        // Safety badge
+        const isGeneric = tool.steps && tool.steps[0] && tool.steps[0].id === 'guidance';
+        const badgeClass = isGeneric ? 'badge-warning' : 'badge-success';
+        const badgeText = isGeneric ? 'Generic Pathway' : 'Specific Pathway';
+        titleEl.innerHTML += ` <span class="badge ${badgeClass}" style="font-size: 11px; vertical-align: middle; margin-left: 8px;">${badgeText}</span>`;
+
         niceEl.textContent = (tool.niceRefs || []).join(', ') || 'NICE CKS';
         evidenceEl.textContent = tool.evidence || 'See NICE CKS and local policy.';
         guidanceBox.classList.add('hidden');
-
         stepsContainer.innerHTML = '';
+
         (tool.steps || []).forEach((step, stepIdx) => {
             if (step.type !== 'dropdown' || !step.options || !step.options.length) return;
             const div = document.createElement('div');
@@ -564,13 +549,22 @@ async function renderDecisionTools() {
                 const g = (chosen.dataset.guidance || '').replace(/&quot;/g, '"');
                 guidanceText.textContent = g;
                 guidanceBox.classList.remove('hidden');
+
+                // Visual feedback for generic vs specific
+                if (isGeneric) {
+                    guidanceBox.style.borderLeft = '4px solid #f39c12';
+                    guidanceBox.style.background = '#fffaf0';
+                } else {
+                    guidanceBox.style.borderLeft = '4px solid #3498db';
+                    guidanceBox.style.background = '#f0f7ff';
+                }
             });
             div.appendChild(label);
             div.appendChild(select);
             stepsContainer.appendChild(div);
         });
         panel.classList.remove('hidden');
-    };
+    }
 }
 
 function escapeHtml(s) {

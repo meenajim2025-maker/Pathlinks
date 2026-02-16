@@ -2,16 +2,30 @@
   "comment": "Topic-specific management steps (NICE-based). Key = lowercase keyword match in tool title. First match wins.",
   "templates": [
     {
-      "keywords": ["hypertension"],
+      "keywords": [
+        "hypertension"
+      ],
       "steps": [
         {
           "id": "bp-stage",
           "question": "Blood pressure level (clinic)",
           "type": "dropdown",
           "options": [
-            { "value": "140-160", "label": "140–160/90–100 mmHg", "guidance": "Lifestyle advice; offer antihypertensive if CVD risk ≥10% (QRISK3) or end-organ damage. First-line: ACE-i or ARB (or CCB if >55 or Afro-Caribbean). Target <140/90 (diabetes/CKD: <130/80). NICE NG136." },
-            { "value": "over-160", "label": "≥160/100 mmHg", "guidance": "Start drug treatment; two agents if >160/100. First-line: ACE-i + CCB (or thiazide if CCB not tolerated). A/B blockers not first-line. Confirm with ABPM/HBPM. NICE NG136." },
-            { "value": "resistant", "label": "Resistant (3 drugs at best dose)", "guidance": "Add spironolactone 25 mg if K+ ≤4.5. Exclude non-adherence, white-coat, secondary causes (renal, endocrine). Consider specialist. NICE NG136." }
+            {
+              "value": "140-160",
+              "label": "140–160/90–100 mmHg",
+              "guidance": "Lifestyle advice; confirm with HBPM/ABPM (target <135/85). Offer drug if CVD risk ≥10%, end-organ damage, or renal disease. First-line <55: ACEi/ARB. First-line >55 or Black African/Caribbean: CCB. NICE NG136."
+            },
+            {
+              "value": "over-160",
+              "label": "≥160/100 mmHg",
+              "guidance": "Start drug treatment immediately if target-organ damage or CVD. Aim target <140/90 clinic (<135/85 home). If >80 years: target <150/90. NICE NG136."
+            },
+            {
+              "value": "resistant",
+              "label": "Resistant (3 drugs at best dose)",
+              "guidance": "Check adherence and white-coat effect. Add Spironolactone 25mg if K+ ≤4.5. Add Alpha/Beta blocker if K+ >4.5. NICE NG136."
+            }
           ]
         },
         {
@@ -19,613 +33,1355 @@
           "question": "Monitoring",
           "type": "dropdown",
           "options": [
-            { "value": "new", "label": "New treatment", "guidance": "Review in 4–6 weeks; titrate to target. Then 6-monthly then annual. Check U&E before and after ACE-i/ARB; K+ before spironolactone. NICE NG136." },
-            { "value": "stable", "label": "Stable on treatment", "guidance": "Annual BP, creatinine, K+, lipids; CVD risk every 5 years. Reinforce lifestyle. NICE NG136." }
+            {
+              "value": "new",
+              "label": "New treatment",
+              "guidance": "Review in 4–6 weeks; titrate to target. Then 6-monthly then annual. Check U&E before and after ACE-i/ARB; K+ before spironolactone. NICE NG136."
+            },
+            {
+              "value": "stable",
+              "label": "Stable on treatment",
+              "guidance": "Annual BP, creatinine, K+, lipids; CVD risk every 5 years. Reinforce lifestyle. NICE NG136."
+            }
           ]
         }
       ]
     },
     {
-      "keywords": ["palpitation", "palpitations"],
+      "keywords": [
+        "palpitation",
+        "palpitations"
+      ],
       "steps": [
         {
           "id": "rhythm",
           "question": "Rhythm and red flags",
           "type": "dropdown",
           "options": [
-            { "value": "regular", "label": "Regular, no red flags", "guidance": "History: triggers, duration. Check FBC, U&E, TFT. Consider 24h tape if intermittent. Reassure if benign; treat anxiety if relevant. NICE NG196." },
-            { "value": "irregular", "label": "Irregular or suspected AF", "guidance": "ECG (or rhythm strip). If AF: assess stroke risk (CHA2DS2-Vasc), bleeding (HAS-BLED), rate/rhythm control. Anticoagulate per NICE NG196. Refer if haemodynamically unstable or first confirmed AF for consideration of rhythm control." },
-            { "value": "red", "label": "Red flags (syncope, chest pain, SOB)", "guidance": "ECG urgently. Consider same-day referral or ambulance if syncope, chest pain, or severe SOB. Exclude VT, heart block, PE. NICE NG196." }
+            {
+              "value": "regular",
+              "label": "Regular, no red flags",
+              "guidance": "History: triggers, duration. Check FBC, U&E, TFT. Consider 24h tape if intermittent. Reassure if benign; treat anxiety if relevant. NICE NG196."
+            },
+            {
+              "value": "irregular",
+              "label": "Irregular or suspected AF",
+              "guidance": "ECG (or rhythm strip). If AF: assess stroke risk (CHA2DS2-Vasc), bleeding (HAS-BLED), rate/rhythm control. Anticoagulate per NICE NG196. Refer if haemodynamically unstable or first confirmed AF for consideration of rhythm control."
+            },
+            {
+              "value": "red",
+              "label": "Red flags (syncope, chest pain, SOB)",
+              "guidance": "ECG urgently. Consider same-day referral or ambulance if syncope, chest pain, or severe SOB. Exclude VT, heart block, PE. NICE NG196."
+            }
           ]
         }
       ]
     },
     {
-      "keywords": ["copd", "heart disease overlap"],
+      "keywords": [
+        "copd",
+        "heart disease overlap"
+      ],
       "steps": [
         {
           "id": "copd-action",
           "question": "Presentation",
           "type": "dropdown",
           "options": [
-            { "value": "diagnosis", "label": "Suspected COPD", "guidance": "Spirometry (post-bronchodilator FEV1/FVC <0.7). Staging by FEV1%. Assess breathlessness (MRC), exacerbations. Exclude asthma. NICE NG115." },
-            { "value": "stable", "label": "Stable COPD – step-up", "guidance": "Step 1: SABA prn. Step 2: add LABA or LAMA. Step 3: LABA+LAMA. Step 4: add ICS if eosinophils ≥0.3 or ≥2 exacerbations/year. Offer pulmonary rehab. NICE NG115." },
-            { "value": "exacerbation", "label": "Acute exacerbation", "guidance": "Prednisolone 30 mg 7–14 days. Antibiotic if purulent sputum: doxycycline or amoxicillin (or clarithromycin). Increase bronchodilators. Consider hospital if severe. NICE NG115." }
+            {
+              "value": "diagnosis",
+              "label": "Suspected COPD",
+              "guidance": "Spirometry (post-bronchodilator FEV1/FVC <0.7). Staging by FEV1%. Assess breathlessness (MRC), exacerbations. Exclude asthma. NICE NG115."
+            },
+            {
+              "value": "stable",
+              "label": "Stable COPD – step-up",
+              "guidance": "Step 1: SABA prn. Step 2: add LABA or LAMA. Step 3: LABA+LAMA. Step 4: add ICS if eosinophils ≥0.3 or ≥2 exacerbations/year. Offer pulmonary rehab. NICE NG115."
+            },
+            {
+              "value": "exacerbation",
+              "label": "Acute exacerbation",
+              "guidance": "Prednisolone 30 mg 7–14 days. Antibiotic if purulent sputum: doxycycline or amoxicillin (or clarithromycin). Increase bronchodilators. Consider hospital if severe. NICE NG115."
+            }
           ]
         }
       ]
     },
     {
-      "keywords": ["asthma"],
+      "keywords": [
+        "asthma"
+      ],
       "steps": [
         {
           "id": "asthma-step",
           "question": "Control and step",
           "type": "dropdown",
           "options": [
-            { "value": "step1", "label": "Step 1 – SABA only", "guidance": "Intermittent asthma: SABA prn. If using SABA ≥3/week or symptoms ≥3/week or night waking: add low-dose ICS (step 2). NICE NG80." },
-            { "value": "step2-3", "label": "Step 2–3 – ICS ± LABA", "guidance": "Step 2: low-dose ICS. Step 3: add LABA (continue ICS). If good control on low ICS+LABA, consider trial of LABA withdrawal. NICE NG80." },
-            { "value": "step4-5", "label": "Step 4–5 – add-on", "guidance": "Step 4: increase ICS to MART or add LTRA/ LAMA. Step 5: add prednisolone or refer. Check technique, adherence, consider occupational. NICE NG80." }
+            {
+              "value": "step1",
+              "label": "Step 1 – SABA only",
+              "guidance": "Intermittent asthma: SABA prn. If using SABA ≥3/week or symptoms ≥3/week or night waking: add low-dose ICS (step 2). NICE NG80."
+            },
+            {
+              "value": "step2-3",
+              "label": "Step 2–3 – ICS ± LABA",
+              "guidance": "Step 2: low-dose ICS. Step 3: add LABA (continue ICS). If good control on low ICS+LABA, consider trial of LABA withdrawal. NICE NG80."
+            },
+            {
+              "value": "step4-5",
+              "label": "Step 4–5 – add-on",
+              "guidance": "Step 4: increase ICS to MART or add LTRA/ LAMA. Step 5: add prednisolone or refer. Check technique, adherence, consider occupational. NICE NG80."
+            }
           ]
         }
       ]
     },
     {
-      "keywords": ["type 2 diabetes", "diabetes", "hba1c"],
+      "keywords": [
+        "type 2 diabetes",
+        "diabetes",
+        "hba1c"
+      ],
       "steps": [
         {
           "id": "diabetes-management",
           "question": "Glycaemic management",
           "type": "dropdown",
           "options": [
-            { "value": "new", "label": "New T2DM", "guidance": "HbA1c target 48 mmol/mol (6.5%) or individualise. First-line: metformin. Add SGLT2i if CVD/HF/CKD; otherwise add DPP-4i, SU, or GLP-1 (if BMI ≥35 or need weight). NICE NG28." },
-            { "value": "intensify", "label": "Intensification", "guidance": "Dual therapy: metformin + SGLT2i (if CVD/HF/CKD/weight) or DPP-4i/SU/GLP-1. Triple therapy as per NG28. Consider GLP-1 if BMI ≥35 and need weight loss. NICE NG28." },
-            { "value": "monitoring", "label": "Monitoring", "guidance": "HbA1c 3–6 monthly until stable then 6-monthly. Annual: lipids, U&E, eGFR, BP, weight, feet, eyes (retinopathy). NICE NG28." }
+            {
+              "value": "new",
+              "label": "New T2DM",
+              "guidance": "HbA1c target 48 mmol/mol (6.5%) or individualise. First-line: metformin. Add SGLT2i if CVD/HF/CKD; otherwise add DPP-4i, SU, or GLP-1 (if BMI ≥35 or need weight). NICE NG28."
+            },
+            {
+              "value": "intensify",
+              "label": "Intensification",
+              "guidance": "Dual therapy: metformin + SGLT2i (if CVD/HF/CKD/weight) or DPP-4i/SU/GLP-1. Triple therapy as per NG28. Consider GLP-1 if BMI ≥35 and need weight loss. NICE NG28."
+            },
+            {
+              "value": "monitoring",
+              "label": "Monitoring",
+              "guidance": "HbA1c 3–6 monthly until stable then 6-monthly. Annual: lipids, U&E, eGFR, BP, weight, feet, eyes (retinopathy). NICE NG28."
+            }
           ]
         }
       ]
     },
     {
-      "keywords": ["depression"],
+      "keywords": [
+        "depression"
+      ],
       "steps": [
         {
           "id": "depression-severity",
           "question": "Severity and treatment",
           "type": "dropdown",
           "options": [
-            { "value": "mild", "label": "Mild", "guidance": "Watchful waiting, active monitoring, or psychological intervention (CBT, exercise). Do not offer antidepressant as first-line. NICE NG222." },
-            { "value": "moderate", "label": "Moderate", "guidance": "SSRI (e.g. sertraline) or psychological intervention. Review at 2 weeks; continue 6 months after remission. NICE NG222." },
-            { "value": "severe", "label": "Severe or treatment-resistant", "guidance": "Combination antidepressant + high-intensity psychological therapy. Consider referral. Risk assess; consider crisis if suicidal. NICE NG222." }
+            {
+              "value": "mild",
+              "label": "Mild",
+              "guidance": "Watchful waiting, active monitoring, or psychological intervention (CBT, exercise). Do not offer antidepressant as first-line. NICE NG222."
+            },
+            {
+              "value": "moderate",
+              "label": "Moderate",
+              "guidance": "SSRI (e.g. sertraline) or psychological intervention. Review at 2 weeks; continue 6 months after remission. NICE NG222."
+            },
+            {
+              "value": "severe",
+              "label": "Severe or treatment-resistant",
+              "guidance": "Combination antidepressant + high-intensity psychological therapy. Consider referral. Risk assess; consider crisis if suicidal. NICE NG222."
+            }
           ]
         }
       ]
     },
     {
-      "keywords": ["anxiety", "gad", "generalised anxiety"],
+      "keywords": [
+        "anxiety",
+        "gad",
+        "generalised anxiety"
+      ],
       "steps": [
         {
           "id": "anxiety-option",
           "question": "Management",
           "type": "dropdown",
           "options": [
-            { "value": "mild", "label": "Mild", "guidance": "Psychological intervention (CBT) or self-help. Consider SSRI if declining or not improving. NICE NG226." },
-            { "value": "moderate-severe", "label": "Moderate or severe", "guidance": "SSRI (sertraline first-line) or psychological therapy. Review at 2 weeks. Continue 6–12 months after remission. NICE NG226." }
+            {
+              "value": "mild",
+              "label": "Mild",
+              "guidance": "Psychological intervention (CBT) or self-help. Consider SSRI if declining or not improving. NICE NG226."
+            },
+            {
+              "value": "moderate-severe",
+              "label": "Moderate or severe",
+              "guidance": "SSRI (sertraline first-line) or psychological therapy. Review at 2 weeks. Continue 6–12 months after remission. NICE NG226."
+            }
           ]
         }
       ]
     },
     {
-      "keywords": ["uti", "urinary tract", "cystitis"],
+      "keywords": [
+        "uti",
+        "urinary tract",
+        "cystitis"
+      ],
       "steps": [
         {
           "id": "uti-management",
           "question": "UTI – woman (non-pregnant)",
           "type": "dropdown",
           "options": [
-            { "value": "uncomplicated", "label": "Uncomplicated lower UTI", "guidance": "Nitrofurantoin 100 mg MR bd 3 days (avoid if eGFR <45), or trimethoprim 200 mg bd 3 days (check resistance), or pivmecillinam. Send MSU if recurrent or pyelonephritis. NICE NG109." },
-            { "value": "pyelonephritis", "label": "Pyelonephritis", "guidance": "Send MSU. Oral: cefalexin or co-amoxiclav 7–10 days. Admit if systemically unwell, pregnant, or not improving. NICE NG109." },
-            { "value": "recurrent", "label": "Recurrent UTI", "guidance": "Consider prophylaxis (nitrofurantoin or trimethoprim at night) or post-coital. Exclude structural cause. NICE NG109." }
+            {
+              "value": "uncomplicated",
+              "label": "Uncomplicated lower UTI",
+              "guidance": "Nitrofurantoin 100 mg MR bd 3 days (avoid if eGFR <45), or trimethoprim 200 mg bd 3 days (check resistance), or pivmecillinam. Send MSU if recurrent or pyelonephritis. NICE NG109."
+            },
+            {
+              "value": "pyelonephritis",
+              "label": "Pyelonephritis",
+              "guidance": "Send MSU. Oral: cefalexin or co-amoxiclav 7–10 days. Admit if systemically unwell, pregnant, or not improving. NICE NG109."
+            },
+            {
+              "value": "recurrent",
+              "label": "Recurrent UTI",
+              "guidance": "Consider prophylaxis (nitrofurantoin or trimethoprim at night) or post-coital. Exclude structural cause. NICE NG109."
+            }
           ]
         }
       ]
     },
     {
-      "keywords": ["back pain", "low back pain"],
+      "keywords": [
+        "back pain",
+        "low back pain"
+      ],
       "steps": [
         {
           "id": "back-red",
           "question": "Assessment",
           "type": "dropdown",
           "options": [
-            { "value": "no-red", "label": "No red flags", "guidance": "Advise stay active; paracetamol + NSAID short-term. Consider manual therapy. Do not offer imaging. Review at 6 weeks. NICE NG59." },
-            { "value": "red", "label": "Red flags (cauda equina, fracture, infection)", "guidance": "Cauda equina: emergency referral. Consider fracture if trauma/steroids; infection if fever. MRI if nerve root compression suspected for surgical option. NICE NG59." }
+            {
+              "value": "no-red",
+              "label": "No red flags",
+              "guidance": "Advise stay active; paracetamol + NSAID short-term. Consider manual therapy. Do not offer imaging. Review at 6 weeks. NICE NG59."
+            },
+            {
+              "value": "red",
+              "label": "Red flags (cauda equina, fracture, infection)",
+              "guidance": "Cauda equina: emergency referral. Consider fracture if trauma/steroids; infection if fever. MRI if nerve root compression suspected for surgical option. NICE NG59."
+            }
           ]
         }
       ]
     },
     {
-      "keywords": ["gout"],
+      "keywords": [
+        "gout"
+      ],
       "steps": [
         {
           "id": "gout-management",
           "question": "Acute vs long-term",
           "type": "dropdown",
           "options": [
-            { "value": "acute", "label": "Acute attack", "guidance": "NSAID (e.g. naproxen) + PPI, or colchicine 500 mcg bd–qd (max 6 mg per attack), or prednisolone 30 mg 3–5 days. Start within 24 h. NICE NG219." },
-            { "value": "urate-lowering", "label": "Urate-lowering (recurrent or tophi)", "guidance": "Allopurinol 100 mg daily, titrate to target sUA <300 µmol/L. Prophylaxis: colchicine or NSAID for first 6 months. NICE NG219." }
+            {
+              "value": "acute",
+              "label": "Acute attack",
+              "guidance": "NSAID (e.g. naproxen) + PPI, or colchicine 500 mcg bd–qd (max 6 mg per attack), or prednisolone 30 mg 3–5 days. Start within 24 h. NICE NG219."
+            },
+            {
+              "value": "urate-lowering",
+              "label": "Urate-lowering (recurrent or tophi)",
+              "guidance": "Allopurinol 100 mg daily, titrate to target sUA <300 µmol/L. Prophylaxis: colchicine or NSAID for first 6 months. NICE NG219."
+            }
           ]
         }
       ]
     },
     {
-      "keywords": ["heart failure"],
+      "keywords": [
+        "heart failure"
+      ],
       "steps": [
         {
           "id": "hf-management",
           "question": "Suspected or confirmed HF",
           "type": "dropdown",
           "options": [
-            { "value": "suspected", "label": "Suspected HF", "guidance": "BNP or NT-proBNP. If raised: echo. Refer for echo if very high or urgent. NICE NG106." },
-            { "value": "hfref", "label": "HFrEF (LVEF ≤40%)", "guidance": "ACE-i (or ARNI) + beta-blocker + MRA. Add SGLT2i (dapagliflozin/empagliflozin). Titrate to target. NICE NG106." },
-            { "value": "hfpef", "label": "HFpEF", "guidance": "Treat comorbidities (BP, AF, diabetes). Diuretics for congestion. No routine ACE-i for HFpEF alone. NICE NG106." }
+            {
+              "value": "suspected",
+              "label": "Suspected HF",
+              "guidance": "BNP or NT-proBNP. If raised: echo. Refer for echo if very high or urgent. NICE NG106."
+            },
+            {
+              "value": "hfref",
+              "label": "HFrEF (LVEF ≤40%)",
+              "guidance": "ACE-i (or ARNI) + beta-blocker + MRA. Add SGLT2i (dapagliflozin/empagliflozin). Titrate to target. NICE NG106."
+            },
+            {
+              "value": "hfpef",
+              "label": "HFpEF",
+              "guidance": "Treat comorbidities (BP, AF, diabetes). Diuretics for congestion. No routine ACE-i for HFpEF alone. NICE NG106."
+            }
           ]
         }
       ]
     },
     {
-      "keywords": ["thyroid", "hypothyroidism", "tsh", "tft"],
+      "keywords": [
+        "thyroid",
+        "hypothyroidism",
+        "tsh",
+        "tft"
+      ],
       "steps": [
         {
           "id": "thyroid-action",
           "question": "TFT result",
           "type": "dropdown",
           "options": [
-            { "value": "raised-tsh", "label": "TSH >10", "guidance": "Overt hypothyroidism. Start levothyroxine 25–50 mcg OD (lower if elderly/cardiac). Recheck TSH in 6–8 weeks; titrate to TSH 0.4–2.0. NICE NG145." },
-            { "value": "subclinical", "label": "TSH 4.5–10, normal T4", "guidance": "Check TPO antibodies. Consider trial of levothyroxine if symptomatic or TPO+ or TSH >10. NICE NG145." },
-            { "value": "low-tsh", "label": "TSH <0.1 / hyperthyroid", "guidance": "Check T4/T3. Refer endocrinology (Graves, nodule, thyroiditis). If on levothyroxine: reduce dose. NICE NG145." }
+            {
+              "value": "raised-tsh",
+              "label": "TSH >10",
+              "guidance": "Overt hypothyroidism. Start levothyroxine 25–50 mcg OD (lower if elderly/cardiac). Recheck TSH in 6–8 weeks; titrate to TSH 0.4–2.0. NICE NG145."
+            },
+            {
+              "value": "subclinical",
+              "label": "TSH 4.5–10, normal T4",
+              "guidance": "Check TPO antibodies. Consider trial of levothyroxine if symptomatic or TPO+ or TSH >10. NICE NG145."
+            },
+            {
+              "value": "low-tsh",
+              "label": "TSH <0.1 / hyperthyroid",
+              "guidance": "Check T4/T3. Refer endocrinology (Graves, nodule, thyroiditis). If on levothyroxine: reduce dose. NICE NG145."
+            }
           ]
         }
       ]
     },
     {
-      "keywords": ["eczema", "atopic"],
+      "keywords": [
+        "eczema",
+        "atopic"
+      ],
       "steps": [
         {
           "id": "eczema-step",
           "question": "Severity and step",
           "type": "dropdown",
           "options": [
-            { "value": "mild", "label": "Mild", "guidance": "Emollients liberally. Mild topical steroid (e.g. hydrocortisone 1%) for flares short-term. Avoid triggers. NICE NG80 (CKS Eczema)." },
-            { "value": "moderate", "label": "Moderate", "guidance": "Moderate potency topical steroid (e.g. betamethasone 0.025%) for flares. Consider bandaging. Step down when controlled. NICE NG80." },
-            { "value": "severe", "label": "Severe or not controlled", "guidance": "Potent topical steroid or referral for phototherapy/ systemic. Exclude infection. Consider patch testing. NICE NG80." }
+            {
+              "value": "mild",
+              "label": "Mild",
+              "guidance": "Emollients liberally. Mild topical steroid (e.g. hydrocortisone 1%) for flares short-term. Avoid triggers. NICE NG80 (CKS Eczema)."
+            },
+            {
+              "value": "moderate",
+              "label": "Moderate",
+              "guidance": "Moderate potency topical steroid (e.g. betamethasone 0.025%) for flares. Consider bandaging. Step down when controlled. NICE NG80."
+            },
+            {
+              "value": "severe",
+              "label": "Severe or not controlled",
+              "guidance": "Potent topical steroid or referral for phototherapy/ systemic. Exclude infection. Consider patch testing. NICE NG80."
+            }
           ]
         }
       ]
     },
     {
-      "keywords": ["lipid", "statin", "qrisk", "cvd risk"],
+      "keywords": [
+        "lipid",
+        "statin",
+        "qrisk",
+        "cvd risk"
+      ],
       "steps": [
         {
           "id": "statin-decision",
           "question": "CVD risk and statin",
           "type": "dropdown",
           "options": [
-            { "value": "primary-10", "label": "Primary prevention, QRISK3 ≥10%", "guidance": "Offer atorvastatin 20 mg (or simvastatin 40 mg if atorvastatin not tolerated). Discuss lifestyle. Recheck lipids in 3 months. NICE NG238." },
-            { "value": "primary-high", "label": "Primary prevention, high risk", "guidance": "Consider higher intensity (atorvastatin 80 mg) if QRISK3 ≥10% and lifestyle addressed. NICE NG238." },
-            { "value": "secondary", "label": "Secondary prevention", "guidance": "High-intensity statin (atorvastatin 80 mg). Aim LDL reduction >40%. Add ezetimibe if not at target. NICE NG238." }
+            {
+              "value": "primary-10",
+              "label": "Primary prevention, QRISK3 ≥10%",
+              "guidance": "Offer atorvastatin 20 mg (or simvastatin 40 mg if atorvastatin not tolerated). Discuss lifestyle. Recheck lipids in 3 months. NICE NG238."
+            },
+            {
+              "value": "primary-high",
+              "label": "Primary prevention, high risk",
+              "guidance": "Consider higher intensity (atorvastatin 80 mg) if QRISK3 ≥10% and lifestyle addressed. NICE NG238."
+            },
+            {
+              "value": "secondary",
+              "label": "Secondary prevention",
+              "guidance": "High-intensity statin (atorvastatin 80 mg). Aim LDL reduction >40%. Add ezetimibe if not at target. NICE NG238."
+            }
           ]
         }
       ]
     },
     {
-      "keywords": ["sore throat", "pharyngitis"],
+      "keywords": [
+        "sore throat",
+        "pharyngitis"
+      ],
       "steps": [
         {
           "id": "throat",
           "question": "Centor / FeverPAIN",
           "type": "dropdown",
           "options": [
-            { "value": "low", "label": "Score 0–1 (no antibiotic)", "guidance": "Paracetamol/NSAID. No antibiotic. Safety-net: if worsening or no improvement in 1 week, re-assess. NICE NG84." },
-            { "value": "medium", "label": "Score 2–3", "guidance": "Back-up or immediate antibiotic: phenoxymethylpenicillin 500 mg qds 5–10 days (or clarithromycin if penicillin allergic). NICE NG84." },
-            { "value": "high", "label": "Score 4–5", "guidance": "Immediate antibiotic. Consider throat swab. Penicillin 10 days. NICE NG84." }
+            {
+              "value": "low",
+              "label": "Score 0–1 (no antibiotic)",
+              "guidance": "Paracetamol/NSAID. No antibiotic. Safety-net: if worsening or no improvement in 1 week, re-assess. NICE NG84."
+            },
+            {
+              "value": "medium",
+              "label": "Score 2–3",
+              "guidance": "Back-up or immediate antibiotic: phenoxymethylpenicillin 500 mg qds 5–10 days (or clarithromycin if penicillin allergic). NICE NG84."
+            },
+            {
+              "value": "high",
+              "label": "Score 4–5",
+              "guidance": "Immediate antibiotic. Consider throat swab. Penicillin 10 days. NICE NG84."
+            }
           ]
         }
       ]
     },
     {
-      "keywords": ["otitis media", "ear infection", "acute otitis"],
+      "keywords": [
+        "otitis media",
+        "ear infection",
+        "acute otitis"
+      ],
       "steps": [
         {
           "id": "aom",
           "question": "Acute otitis media",
           "type": "dropdown",
           "options": [
-            { "value": "watch", "label": "Mild, no systemic illness", "guidance": "Safety-netting; paracetamol/ibuprofen. Most resolve in 3 days. No antibiotic first-line. NICE NG91." },
-            { "value": "antibiotic", "label": "Systemically unwell or high risk", "guidance": "Amoxicillin 5–7 days (or erythromycin if penicillin allergic). Consider if <2 years bilateral, or otorrhoea. NICE NG91." }
+            {
+              "value": "watch",
+              "label": "Mild, no systemic illness",
+              "guidance": "Safety-netting; paracetamol/ibuprofen. Most resolve in 3 days. No antibiotic first-line. NICE NG91."
+            },
+            {
+              "value": "antibiotic",
+              "label": "Systemically unwell or high risk",
+              "guidance": "Amoxicillin 5–7 days (or erythromycin if penicillin allergic). Consider if <2 years bilateral, or otorrhoea. NICE NG91."
+            }
           ]
         }
       ]
     },
     {
-      "keywords": ["sinusitis"],
+      "keywords": [
+        "sinusitis"
+      ],
       "steps": [
         {
           "id": "sinus",
           "question": "Acute sinusitis",
           "type": "dropdown",
           "options": [
-            { "value": "viral", "label": "Likely viral (<10 days)", "guidance": "Paracetamol/NSAID. No antibiotic. Advise if no improvement by 10 days or worsening, re-assess. NICE NG79." },
-            { "value": "bacterial", "label": "Persistent or severe", "guidance": "Consider phenoxymethylpenicillin or co-amoxiclav 7 days if no improvement after 10 days or severe. NICE NG79." }
+            {
+              "value": "viral",
+              "label": "Likely viral (<10 days)",
+              "guidance": "Paracetamol/NSAID. No antibiotic. Advise if no improvement by 10 days or worsening, re-assess. NICE NG79."
+            },
+            {
+              "value": "bacterial",
+              "label": "Persistent or severe",
+              "guidance": "Consider phenoxymethylpenicillin or co-amoxiclav 7 days if no improvement after 10 days or severe. NICE NG79."
+            }
           ]
         }
       ]
     },
     {
-      "keywords": ["constipation"],
+      "keywords": [
+        "constipation"
+      ],
       "steps": [
         {
           "id": "constipation",
           "question": "Adults",
           "type": "dropdown",
           "options": [
-            { "value": "lifestyle", "label": "First-line", "guidance": "Increase fibre, fluids, activity. Consider bulk-forming (e.g. ispaghula). NICE NG99." },
-            { "value": "laxative", "label": "Osmotic / stimulant", "guidance": "Osmotic: macrogol. Stimulant: senna or bisacodyl short-term. Avoid long-term stimulant. NICE NG99." }
+            {
+              "value": "lifestyle",
+              "label": "First-line",
+              "guidance": "Increase fibre, fluids, activity. Consider bulk-forming (e.g. ispaghula). NICE NG99."
+            },
+            {
+              "value": "laxative",
+              "label": "Osmotic / stimulant",
+              "guidance": "Osmotic: macrogol. Stimulant: senna or bisacodyl short-term. Avoid long-term stimulant. NICE NG99."
+            }
           ]
         }
       ]
     },
     {
-      "keywords": ["gord", "reflux", "dyspepsia"],
+      "keywords": [
+        "gord",
+        "reflux",
+        "dyspepsia"
+      ],
       "steps": [
         {
           "id": "gord",
           "question": "Management",
           "type": "dropdown",
           "options": [
-            { "value": "lifestyle", "label": "Lifestyle and antacid", "guidance": "Weight loss, smaller meals, avoid triggers. Alginate or antacid prn. NICE NG1." },
-            { "value": "ppi", "label": "PPI", "guidance": "Full-dose PPI 4–8 weeks (e.g. omeprazole 20 mg OD). Step down to lowest dose that controls. NICE NG1." },
-            { "value": "red-flags", "label": "Dysphagia / alarm", "guidance": "Refer for endoscopy: dysphagia, weight loss, haematemesis, >55 with new dyspepsia. NICE NG1." }
+            {
+              "value": "lifestyle",
+              "label": "Lifestyle and antacid",
+              "guidance": "Weight loss, smaller meals, avoid triggers. Alginate or antacid prn. NICE NG1."
+            },
+            {
+              "value": "ppi",
+              "label": "PPI",
+              "guidance": "Full-dose PPI 4–8 weeks (e.g. omeprazole 20 mg OD). Step down to lowest dose that controls. NICE NG1."
+            },
+            {
+              "value": "red-flags",
+              "label": "Dysphagia / alarm",
+              "guidance": "Refer for endoscopy: dysphagia, weight loss, haematemesis, >55 with new dyspepsia. NICE NG1."
+            }
           ]
         }
       ]
     },
     {
-      "keywords": ["migraine", "headache"],
+      "keywords": [
+        "migraine",
+        "headache"
+      ],
       "steps": [
         {
           "id": "headache",
           "question": "Type and action",
           "type": "dropdown",
           "options": [
-            { "value": "migraine-acute", "label": "Acute migraine", "guidance": "Triptan + NSAID (or paracetamol). Anti-emetic if nausea. Avoid opiates. NICE NG150." },
-            { "value": "migraine-prophylaxis", "label": "Prophylaxis (≥8 days/month)", "guidance": "Propranolol or topiramate. Consider referral if not controlled. NICE NG150." },
-            { "value": "tension", "label": "Tension-type", "guidance": "Paracetamol or NSAID. Address stress, posture. Avoid frequent analgesia (medication-overuse). NICE NG150." }
+            {
+              "value": "migraine-acute",
+              "label": "Acute migraine",
+              "guidance": "Triptan + NSAID (or paracetamol). Anti-emetic if nausea. Avoid opiates. NICE NG150."
+            },
+            {
+              "value": "migraine-prophylaxis",
+              "label": "Prophylaxis (≥8 days/month)",
+              "guidance": "Propranolol or topiramate. Consider referral if not controlled. NICE NG150."
+            },
+            {
+              "value": "tension",
+              "label": "Tension-type",
+              "guidance": "Paracetamol or NSAID. Address stress, posture. Avoid frequent analgesia (medication-overuse). NICE NG150."
+            }
           ]
         }
       ]
     },
     {
-      "keywords": ["menopause", "hrt"],
+      "keywords": [
+        "menopause",
+        "hrt"
+      ],
       "steps": [
         {
           "id": "hrt",
           "question": "HRT choice",
           "type": "dropdown",
           "options": [
-            { "value": "oestrogen-only", "label": "No uterus – oestrogen only", "guidance": "Oestrogen only (patch/gel preferred for VTE risk). Review annually. NICE NG23." },
-            { "value": "combined", "label": "With uterus – combined", "guidance": "Oestrogen + cyclical or continuous progestogen. Sequential if perimenopausal; continuous if postmenopausal. NICE NG23." },
-            { "value": "contraindications", "label": "Contraindications / alternatives", "guidance": "Contraindications: breast cancer, VTE, stroke. Consider non-hormonal (clonidine, CBT) or topical oestrogen for urogenital. NICE NG23." }
+            {
+              "value": "oestrogen-only",
+              "label": "No uterus – oestrogen only",
+              "guidance": "Oestrogen only (patch/gel preferred for VTE risk). Review annually. NICE NG23."
+            },
+            {
+              "value": "combined",
+              "label": "With uterus – combined",
+              "guidance": "Oestrogen + cyclical or continuous progestogen. Sequential if perimenopausal; continuous if postmenopausal. NICE NG23."
+            },
+            {
+              "value": "contraindications",
+              "label": "Contraindications / alternatives",
+              "guidance": "Contraindications: breast cancer, VTE, stroke. Consider non-hormonal (clonidine, CBT) or topical oestrogen for urogenital. NICE NG23."
+            }
           ]
         }
       ]
     },
     {
-      "keywords": ["ckd", "chronic kidney", "kidney disease"],
+      "keywords": [
+        "ckd",
+        "chronic kidney",
+        "kidney disease"
+      ],
       "steps": [
         {
           "id": "ckd",
           "question": "CKD stage and action",
           "type": "dropdown",
           "options": [
-            { "value": "g3a", "label": "G3a (eGFR 45–59)", "guidance": "Confirm with repeat; address CV risk, BP (target <130/80 if diabetic/proteinuric). Avoid nephrotoxics. NICE NG203." },
-            { "value": "g3b-4", "label": "G3b–4 (eGFR 15–44)", "guidance": "Monitor 6–12 monthly. Anaemia, bone, K+. Refer if eGFR <30 or rapid decline. Consider SGLT2i if T2DM. NICE NG203." },
-            { "value": "g5", "label": "G5 (eGFR <15)", "guidance": "Refer nephrology. Plan for RRT. Manage complications. NICE NG203." }
+            {
+              "value": "g3a",
+              "label": "G3a (eGFR 45–59)",
+              "guidance": "Confirm with repeat; address CV risk, BP (target <130/80 if diabetic/proteinuric). Avoid nephrotoxics. NICE NG203."
+            },
+            {
+              "value": "g3b-4",
+              "label": "G3b–4 (eGFR 15–44)",
+              "guidance": "Monitor 6–12 monthly. Anaemia, bone, K+. Refer if eGFR <30 or rapid decline. Consider SGLT2i if T2DM. NICE NG203."
+            },
+            {
+              "value": "g5",
+              "label": "G5 (eGFR <15)",
+              "guidance": "Refer nephrology. Plan for RRT. Manage complications. NICE NG203."
+            }
           ]
         }
       ]
     },
     {
-      "keywords": ["acne"],
+      "keywords": [
+        "acne"
+      ],
       "steps": [
         {
           "id": "acne",
           "question": "Acne severity",
           "type": "dropdown",
           "options": [
-            { "value": "mild", "label": "Mild (comedones)", "guidance": "Topical: adapalene 0.1% or benzoyl peroxide 5% OD. If inadequate after 12 weeks add topical antibiotic (e.g. clindamycin). NICE NG198." },
-            { "value": "moderate", "label": "Moderate (inflammatory)", "guidance": "Fixed combination: adapalene + benzoyl peroxide, or topical abx + benzoyl peroxide. If inadequate: oral doxycycline 100 mg OD 12 weeks (or lymecycline). NICE NG198." },
-            { "value": "severe", "label": "Severe or scarring", "guidance": "Refer dermatology for oral isotretinoin. Exclude pregnancy; contraception. Do not offer oral antibiotic long-term as monotherapy. NICE NG198." }
+            {
+              "value": "mild",
+              "label": "Mild (comedones)",
+              "guidance": "Topical: adapalene 0.1% or benzoyl peroxide 5% OD. If inadequate after 12 weeks add topical antibiotic (e.g. clindamycin). NICE NG198."
+            },
+            {
+              "value": "moderate",
+              "label": "Moderate (inflammatory)",
+              "guidance": "Fixed combination: adapalene + benzoyl peroxide, or topical abx + benzoyl peroxide. If inadequate: oral doxycycline 100 mg OD 12 weeks (or lymecycline). NICE NG198."
+            },
+            {
+              "value": "severe",
+              "label": "Severe or scarring",
+              "guidance": "Refer dermatology for oral isotretinoin. Exclude pregnancy; contraception. Do not offer oral antibiotic long-term as monotherapy. NICE NG198."
+            }
           ]
         }
       ]
     },
     {
-      "keywords": ["cellulitis"],
+      "keywords": [
+        "cellulitis"
+      ],
       "steps": [
         {
           "id": "cellulitis",
           "question": "Severity",
           "type": "dropdown",
           "options": [
-            { "value": "mild", "label": "Mild (no systemic features)", "guidance": "Oral flucloxacillin 500 mg qds 7 days (or clarithromycin 500 mg bd if penicillin allergic). Elevate limb. Review at 48 h. NICE NG141." },
-            { "value": "moderate", "label": "Moderate (fever, spreading)", "guidance": "Oral co-amoxiclav 500/125 mg tds 7 days, or flucloxacillin + phenoxymethylpenicillin. Consider IV if not improving. NICE NG141." },
-            { "value": "severe", "label": "Severe / orbital / facial", "guidance": "Admit for IV benzylpenicillin or flucloxacillin. 2WW not appropriate; emergency assessment. NICE NG141." }
+            {
+              "value": "mild",
+              "label": "Mild (no systemic features)",
+              "guidance": "Oral flucloxacillin 500 mg qds 7 days (or clarithromycin 500 mg bd if penicillin allergic). Elevate limb. Review at 48 h. NICE NG141."
+            },
+            {
+              "value": "moderate",
+              "label": "Moderate (fever, spreading)",
+              "guidance": "Oral co-amoxiclav 500/125 mg tds 7 days, or flucloxacillin + phenoxymethylpenicillin. Consider IV if not improving. NICE NG141."
+            },
+            {
+              "value": "severe",
+              "label": "Severe / orbital / facial",
+              "guidance": "Admit for IV benzylpenicillin or flucloxacillin. 2WW not appropriate; emergency assessment. NICE NG141."
+            }
           ]
         }
       ]
     },
     {
-      "keywords": ["af", "atrial fibrillation"],
+      "keywords": [
+        "af",
+        "atrial fibrillation"
+      ],
       "steps": [
         {
           "id": "af",
           "question": "AF management",
           "type": "dropdown",
           "options": [
-            { "value": "anticoagulate", "label": "Stroke prevention", "guidance": "CHA2DS2-VASc ≥2 (men) or ≥3 (women): offer anticoagulation. DOAC preferred (apixaban 5 mg bd, rivaroxaban 20 mg OD, edoxaban, dabigatran). Warfarin if DOAC unsuitable. HAS-BLED for bleeding risk. NICE NG196." },
-            { "value": "rate", "label": "Rate control", "guidance": "Beta-blocker (bisoprolol) or rate-limiting CCB (diltiazem). Digoxin if sedentary. Target resting HR <110 (or <80 if symptomatic). NICE NG196." },
-            { "value": "refer", "label": "Referral", "guidance": "Refer cardiology: first confirmed AF, for rhythm control or ablation; young; haemodynamically unstable. Emergency if severe haemodynamic compromise. NICE NG196." }
+            {
+              "value": "anticoagulate",
+              "label": "Stroke prevention",
+              "guidance": "CHA2DS2-VASc ≥2 (men) or ≥3 (women): offer anticoagulation. DOAC preferred (apixaban 5 mg bd, rivaroxaban 20 mg OD, edoxaban, dabigatran). Warfarin if DOAC unsuitable. HAS-BLED for bleeding risk. NICE NG196."
+            },
+            {
+              "value": "rate",
+              "label": "Rate control",
+              "guidance": "Beta-blocker (bisoprolol) or rate-limiting CCB (diltiazem). Digoxin if sedentary. Target resting HR <110 (or <80 if symptomatic). NICE NG196."
+            },
+            {
+              "value": "refer",
+              "label": "Referral",
+              "guidance": "Refer cardiology: first confirmed AF, for rhythm control or ablation; young; haemodynamically unstable. Emergency if severe haemodynamic compromise. NICE NG196."
+            }
           ]
         }
       ]
     },
     {
-      "keywords": ["dvt", "deep vein", "venous thromboembolism"],
+      "keywords": [
+        "dvt",
+        "deep vein",
+        "venous thromboembolism"
+      ],
       "steps": [
         {
           "id": "dvt",
           "question": "DVT – diagnosis and treatment",
           "type": "dropdown",
           "options": [
-            { "value": "wells", "label": "Wells score – likely DVT", "guidance": "D-dimer if Wells 1–2; if positive or Wells ≥3 do proximal leg USS. If DVT confirmed: anticoagulate. NICE NG158." },
-            { "value": "treat", "label": "Confirmed DVT – anticoagulation", "guidance": "DOAC (apixaban, rivaroxaban, edoxaban) or warfarin. Apixaban 10 mg bd 7 days then 5 mg bd. Minimum 3 months; extend if unprovoked or ongoing risk. NICE NG158." },
-            { "value": "pe", "label": "Suspected PE", "guidance": "Wells PE; D-dimer (if low clinical probability); if positive CTPA. Treat as per NG158. Admit if haemodynamically unstable." }
+            {
+              "value": "wells",
+              "label": "Wells score – likely DVT",
+              "guidance": "D-dimer if Wells 1–2; if positive or Wells ≥3 do proximal leg USS. If DVT confirmed: anticoagulate. NICE NG158."
+            },
+            {
+              "value": "treat",
+              "label": "Confirmed DVT – anticoagulation",
+              "guidance": "DOAC (apixaban, rivaroxaban, edoxaban) or warfarin. Apixaban 10 mg bd 7 days then 5 mg bd. Minimum 3 months; extend if unprovoked or ongoing risk. NICE NG158."
+            },
+            {
+              "value": "pe",
+              "label": "Suspected PE",
+              "guidance": "Wells PE; D-dimer (if low clinical probability); if positive CTPA. Treat as per NG158. Admit if haemodynamically unstable."
+            }
           ]
         }
       ]
     },
     {
-      "keywords": ["pneumonia", "community-acquired"],
+      "keywords": [
+        "pneumonia",
+        "community-acquired"
+      ],
       "steps": [
         {
           "id": "cap",
           "question": "CURB65 and treatment",
           "type": "dropdown",
           "options": [
-            { "value": "0-1", "label": "CURB65 0–1 (home)", "guidance": "Oral amoxicillin 500 mg tds 5 days (or doxycycline 200 mg stat then 100 mg OD if penicillin allergic). Safety-net. NICE NG138." },
-            { "value": "2", "label": "CURB65 2", "guidance": "Consider hospital; if home: oral amoxicillin 1 g tds or co-amoxiclav. Consider co-amoxiclav if atypical suspected. NICE NG138." },
-            { "value": "3-plus", "label": "CURB65 ≥3", "guidance": "Admit. IV co-amoxiclav or benzylpenicillin + clarithromycin. NICE NG138." }
+            {
+              "value": "0-1",
+              "label": "CURB65 0–1 (home)",
+              "guidance": "Oral amoxicillin 500 mg tds 5 days (or doxycycline 200 mg stat then 100 mg OD if penicillin allergic). Safety-net. NICE NG138."
+            },
+            {
+              "value": "2",
+              "label": "CURB65 2",
+              "guidance": "Consider hospital; if home: oral amoxicillin 1 g tds or co-amoxiclav. Consider co-amoxiclav if atypical suspected. NICE NG138."
+            },
+            {
+              "value": "3-plus",
+              "label": "CURB65 ≥3",
+              "guidance": "Admit. IV co-amoxiclav or benzylpenicillin + clarithromycin. NICE NG138."
+            }
           ]
         }
       ]
     },
     {
-      "keywords": ["anaemia", "iron deficiency", "ferritin"],
+      "keywords": [
+        "anaemia",
+        "iron deficiency",
+        "ferritin"
+      ],
       "steps": [
         {
           "id": "anaemia",
           "question": "Anaemia type and treatment",
           "type": "dropdown",
           "options": [
-            { "value": "iron", "label": "Iron deficiency", "guidance": "Ferrous sulfate 200 mg OD or bd (or ferrous fumarate). Recheck Hb in 2–4 weeks. Continue 3 months after normal. If not responding: check compliance, consider malabsorption, 2WW if red flags. NICE NG24." },
-            { "value": "b12", "label": "B12 deficiency", "guidance": "Hydroxocobalamin 1 mg IM 3× per week 2 weeks then 1 mg every 3 months (or oral if mild and compliant). Check folate. NICE NG241." },
-            { "value": "macrocytic", "label": "Macrocytic (B12/folate)", "guidance": "Check B12 and folate. Treat as above. If both normal consider alcohol, hypothyroid, MDS – consider referral. NICE NG24." }
+            {
+              "value": "iron",
+              "label": "Iron deficiency",
+              "guidance": "Ferrous sulfate 200 mg OD or bd (or ferrous fumarate). Recheck Hb in 2–4 weeks. Continue 3 months after normal. If not responding: check compliance, consider malabsorption, 2WW if red flags. NICE NG24."
+            },
+            {
+              "value": "b12",
+              "label": "B12 deficiency",
+              "guidance": "Hydroxocobalamin 1 mg IM 3× per week 2 weeks then 1 mg every 3 months (or oral if mild and compliant). Check folate. NICE NG241."
+            },
+            {
+              "value": "macrocytic",
+              "label": "Macrocytic (B12/folate)",
+              "guidance": "Check B12 and folate. Treat as above. If both normal consider alcohol, hypothyroid, MDS – consider referral. NICE NG24."
+            }
           ]
         }
       ]
     },
     {
-      "keywords": ["rheumatoid", "ra ", "dmard"],
+      "keywords": [
+        "rheumatoid",
+        "ra ",
+        "dmard"
+      ],
       "steps": [
         {
           "id": "ra",
           "question": "Rheumatoid arthritis",
           "type": "dropdown",
           "options": [
-            { "value": "new", "label": "Suspected new RA", "guidance": "2WW rheumatology if persistent synovitis. Check RF, anti-CCP, CRP, FBC, U&E, LFT. Start DMARD within 3 months. NICE NG100." },
-            { "value": "dmard", "label": "DMARD choice", "guidance": "First-line: methotrexate 15 mg weekly (folic acid 5 mg weekly). Add sulfasalazine or hydroxychloroquine if MTX incomplete. Monitor FBC, LFT, creatinine. NICE NG100." },
-            { "value": "flare", "label": "Acute flare", "guidance": "Short-term prednisolone (e.g. 15 mg OD reducing over 3 weeks). Do not use long-term steroid without DMARD. NICE NG100." }
+            {
+              "value": "new",
+              "label": "Suspected new RA",
+              "guidance": "2WW rheumatology if persistent synovitis. Check RF, anti-CCP, CRP, FBC, U&E, LFT. Start DMARD within 3 months. NICE NG100."
+            },
+            {
+              "value": "dmard",
+              "label": "DMARD choice",
+              "guidance": "First-line: methotrexate 15 mg weekly (folic acid 5 mg weekly). Add sulfasalazine or hydroxychloroquine if MTX incomplete. Monitor FBC, LFT, creatinine. NICE NG100."
+            },
+            {
+              "value": "flare",
+              "label": "Acute flare",
+              "guidance": "Short-term prednisolone (e.g. 15 mg OD reducing over 3 weeks). Do not use long-term steroid without DMARD. NICE NG100."
+            }
           ]
         }
       ]
     },
     {
-      "keywords": ["osteoarthritis", "oa ", "knee pain", "hip pain"],
+      "keywords": [
+        "osteoarthritis",
+        "oa ",
+        "knee pain",
+        "hip pain"
+      ],
       "steps": [
         {
           "id": "oa",
           "question": "Osteoarthritis management",
           "type": "dropdown",
           "options": [
-            { "value": "core", "label": "Core treatment", "guidance": "Exercise, weight loss if overweight. Paracetamol prn. Topical NSAID (e.g. ibuprofen gel) for knee/hand. NICE NG226." },
-            { "value": "oral-nsaid", "label": "Oral NSAID", "guidance": "Oral NSAID at lowest dose (e.g. ibuprofen 400 mg tds) + PPI. Use short-term. Avoid if CKD, high CV risk. Consider topical first for knee. NICE NG226." },
-            { "value": "refer", "label": "Referral", "guidance": "Consider referral for joint replacement if severe impact despite non-surgical treatment. NICE NG226." }
+            {
+              "value": "core",
+              "label": "Core treatment",
+              "guidance": "Exercise, weight loss if overweight. Paracetamol prn. Topical NSAID (e.g. ibuprofen gel) for knee/hand. NICE NG226."
+            },
+            {
+              "value": "oral-nsaid",
+              "label": "Oral NSAID",
+              "guidance": "Oral NSAID at lowest dose (e.g. ibuprofen 400 mg tds) + PPI. Use short-term. Avoid if CKD, high CV risk. Consider topical first for knee. NICE NG226."
+            },
+            {
+              "value": "refer",
+              "label": "Referral",
+              "guidance": "Consider referral for joint replacement if severe impact despite non-surgical treatment. NICE NG226."
+            }
           ]
         }
       ]
     },
     {
-      "keywords": ["ibs", "irritable bowel"],
+      "keywords": [
+        "ibs",
+        "irritable bowel"
+      ],
       "steps": [
         {
           "id": "ibs",
           "question": "IBS management",
           "type": "dropdown",
           "options": [
-            { "value": "diet", "label": "First-line", "guidance": "Diet: fibre, low FODMAP trial. Avoid trigger foods. Antispasmodic (e.g. mebeverine 135 mg tds or hyoscine). NICE NG61." },
-            { "value": "diarrhoea", "label": "IBS-D", "guidance": "Loperamide prn. Consider trial of low-dose amitriptyline (10 mg) if refractory. NICE NG61." },
-            { "value": "constipation", "label": "IBS-C", "guidance": "Linaclotide 290 mcg OD if inadequate response to laxatives. NICE NG61." }
+            {
+              "value": "diet",
+              "label": "First-line",
+              "guidance": "Diet: fibre, low FODMAP trial. Avoid trigger foods. Antispasmodic (e.g. mebeverine 135 mg tds or hyoscine). NICE NG61."
+            },
+            {
+              "value": "diarrhoea",
+              "label": "IBS-D",
+              "guidance": "Loperamide prn. Consider trial of low-dose amitriptyline (10 mg) if refractory. NICE NG61."
+            },
+            {
+              "value": "constipation",
+              "label": "IBS-C",
+              "guidance": "Linaclotide 290 mcg OD if inadequate response to laxatives. NICE NG61."
+            }
           ]
         }
       ]
     },
     {
-      "keywords": ["coeliac", "coeliac disease"],
+      "keywords": [
+        "coeliac",
+        "coeliac disease"
+      ],
       "steps": [
         {
           "id": "coeliac",
           "question": "Coeliac disease",
           "type": "dropdown",
           "options": [
-            { "value": "diagnosis", "label": "Diagnosis", "guidance": "IgA TTG + total IgA. If positive refer for duodenal biopsy. Do not start gluten-free diet before biopsy. NICE NG20." },
-            { "value": "management", "label": "Management", "guidance": "Lifelong gluten-free diet. Dietitian referral. Annual review: Hb, B12, folate, ferritin, TFT, bone. NICE NG20." },
-            { "value": "refractory", "label": "Refractory", "guidance": "Refer gastroenterology if symptoms persist despite strict GFD. Exclude lymphoma. NICE NG20." }
+            {
+              "value": "diagnosis",
+              "label": "Diagnosis",
+              "guidance": "IgA TTG + total IgA. If positive refer for duodenal biopsy. Do not start gluten-free diet before biopsy. NICE NG20."
+            },
+            {
+              "value": "management",
+              "label": "Management",
+              "guidance": "Lifelong gluten-free diet. Dietitian referral. Annual review: Hb, B12, folate, ferritin, TFT, bone. NICE NG20."
+            },
+            {
+              "value": "refractory",
+              "label": "Refractory",
+              "guidance": "Refer gastroenterology if symptoms persist despite strict GFD. Exclude lymphoma. NICE NG20."
+            }
           ]
         }
       ]
     },
     {
-      "keywords": ["diverticular", "diverticul"],
+      "keywords": [
+        "diverticular",
+        "diverticul"
+      ],
       "steps": [
         {
           "id": "diverticular",
           "question": "Diverticular disease",
           "type": "dropdown",
           "options": [
-            { "value": "uncomplicated", "label": "Uncomplicated", "guidance": "High-fibre diet. Avoid routine antibiotics. Bulk-forming laxative if constipation. NICE NG147." },
-            { "value": "acute", "label": "Acute diverticulitis", "guidance": "Mild: oral co-amoxiclav or ciprofloxacin + metronidazole 5–7 days. Clear fluids if severe. Admit if systemically unwell, peritonism, or not improving. NICE NG147." },
-            { "value": "refer", "label": "Referral", "guidance": "Refer if recurrent attacks, complications (abscess, fistula, stricture), or diagnostic uncertainty. NICE NG147." }
+            {
+              "value": "uncomplicated",
+              "label": "Uncomplicated",
+              "guidance": "High-fibre diet. Avoid routine antibiotics. Bulk-forming laxative if constipation. NICE NG147."
+            },
+            {
+              "value": "acute",
+              "label": "Acute diverticulitis",
+              "guidance": "Mild: oral co-amoxiclav or ciprofloxacin + metronidazole 5–7 days. Clear fluids if severe. Admit if systemically unwell, peritonism, or not improving. NICE NG147."
+            },
+            {
+              "value": "refer",
+              "label": "Referral",
+              "guidance": "Refer if recurrent attacks, complications (abscess, fistula, stricture), or diagnostic uncertainty. NICE NG147."
+            }
           ]
         }
       ]
     },
     {
-      "keywords": ["non-blanching", "meningitis", "rash child"],
+      "keywords": [
+        "non-blanching",
+        "meningitis",
+        "rash child"
+      ],
       "steps": [
         {
           "id": "rash-child",
           "question": "Non-blanching rash in child",
           "type": "dropdown",
           "options": [
-            { "value": "fever", "label": "Fever + non-blanching rash", "guidance": "Treat as meningococcal disease until proved otherwise. Immediate parenteral antibiotic (ceftriaxone or benzylpenicillin). Emergency admission. NICE NG51." },
-            { "value": "no-fever", "label": "No fever, well child", "guidance": "Consider ITP, HSP. FBC, clotting. Refer paediatrics if unwell or platelets <20. NICE CKS." }
+            {
+              "value": "fever",
+              "label": "Fever + non-blanching rash",
+              "guidance": "Treat as meningococcal disease until proved otherwise. Immediate parenteral antibiotic (ceftriaxone or benzylpenicillin). Emergency admission. NICE NG51."
+            },
+            {
+              "value": "no-fever",
+              "label": "No fever, well child",
+              "guidance": "Consider ITP, HSP. FBC, clotting. Refer paediatrics if unwell or platelets <20. NICE CKS."
+            }
           ]
         }
       ]
     },
     {
-      "keywords": ["melanoma", "suspected melanoma"],
+      "keywords": [
+        "melanoma",
+        "suspected melanoma"
+      ],
       "steps": [
         {
           "id": "melanoma",
           "question": "Suspected melanoma",
           "type": "dropdown",
           "options": [
-            { "value": "refer", "label": "Suspected melanoma", "guidance": "2WW dermatology. Do not excise in primary care. ABCDE criteria; any changing mole or ulcerated lesion. NICE NG14." },
-            { "value": "bcc", "label": "Suspected BCC", "guidance": "Routine referral or minor surgery if appropriate. NICE NG12." },
-            { "value": "scc", "label": "Suspected SCC", "guidance": "2WW. Urgent if high risk (size, site, immunosuppression). NICE NG12." }
+            {
+              "value": "refer",
+              "label": "Suspected melanoma",
+              "guidance": "2WW dermatology. Do not excise in primary care. ABCDE criteria; any changing mole or ulcerated lesion. NICE NG14."
+            },
+            {
+              "value": "bcc",
+              "label": "Suspected BCC",
+              "guidance": "Routine referral or minor surgery if appropriate. NICE NG12."
+            },
+            {
+              "value": "scc",
+              "label": "Suspected SCC",
+              "guidance": "2WW. Urgent if high risk (size, site, immunosuppression). NICE NG12."
+            }
           ]
         }
       ]
     },
     {
-      "keywords": ["scabies"],
+      "keywords": [
+        "scabies"
+      ],
       "steps": [
         {
           "id": "scabies",
           "question": "Scabies treatment",
           "type": "dropdown",
           "options": [
-            { "value": "standard", "label": "Standard", "guidance": "Permethrin 5% cream: apply to whole body (neck down), leave 8–12 h, repeat after 7 days. Treat all household contacts. Wash bedding. CKS Scabies." },
-            { "value": "crusted", "label": "Crusted", "guidance": "Refer dermatology. Ivermectin (unlicensed) or permethrin under supervision. CKS Scabies." }
+            {
+              "value": "standard",
+              "label": "Standard",
+              "guidance": "Permethrin 5% cream: apply to whole body (neck down), leave 8–12 h, repeat after 7 days. Treat all household contacts. Wash bedding. CKS Scabies."
+            },
+            {
+              "value": "crusted",
+              "label": "Crusted",
+              "guidance": "Refer dermatology. Ivermectin (unlicensed) or permethrin under supervision. CKS Scabies."
+            }
           ]
         }
       ]
     },
     {
-      "keywords": ["tia", "transient ischaemic", "stroke"],
+      "keywords": [
+        "tia",
+        "transient ischaemic",
+        "stroke"
+      ],
       "steps": [
         {
           "id": "tia",
           "question": "TIA / minor stroke",
           "type": "dropdown",
           "options": [
-            { "value": "acute", "label": "Acute TIA (ABCD2 ≥4 or crescendo)", "guidance": "Same-day specialist assessment. Aspirin 300 mg immediately then 75 mg OD. NICE NG128." },
-            { "value": "secondary", "label": "Secondary prevention", "guidance": "Antiplatelet: clopidogrel 75 mg OD (or aspirin + dipyridamole). BP and lipid targets. Consider anticoagulation if AF. NICE NG128." },
-            { "value": "refer", "label": "Referral", "guidance": "All TIAs: urgent referral for investigation (imaging, carotid). NICE NG128." }
+            {
+              "value": "acute",
+              "label": "Acute TIA (ABCD2 ≥4 or crescendo)",
+              "guidance": "Same-day specialist assessment. Aspirin 300 mg immediately then 75 mg OD. NICE NG128."
+            },
+            {
+              "value": "secondary",
+              "label": "Secondary prevention",
+              "guidance": "Antiplatelet: clopidogrel 75 mg OD (or aspirin + dipyridamole). BP and lipid targets. Consider anticoagulation if AF. NICE NG128."
+            },
+            {
+              "value": "refer",
+              "label": "Referral",
+              "guidance": "All TIAs: urgent referral for investigation (imaging, carotid). NICE NG128."
+            }
           ]
         }
       ]
     },
     {
-      "keywords": ["epilepsy"],
+      "keywords": [
+        "epilepsy"
+      ],
       "steps": [
         {
           "id": "epilepsy",
           "question": "Epilepsy",
           "type": "dropdown",
           "options": [
-            { "value": "new", "label": "First seizure", "guidance": "Refer neurologist (2WW). Do not drive until assessed. EEG and MRI. NICE NG217." },
-            { "value": "drug", "label": "Drug choice", "guidance": "First-line: levetiracetam, lamotrigine, or carbamazepine (depending on seizure type). Monotherapy; titrate. NICE NG217." },
-            { "value": "pregnancy", "label": "Pregnancy", "guidance": "High-dose folic acid 5 mg. Review drugs (valproate avoid). Specialist advice. NICE NG217." }
+            {
+              "value": "new",
+              "label": "First seizure",
+              "guidance": "Refer neurologist (2WW). Do not drive until assessed. EEG and MRI. NICE NG217."
+            },
+            {
+              "value": "drug",
+              "label": "Drug choice",
+              "guidance": "First-line: levetiracetam, lamotrigine, or carbamazepine (depending on seizure type). Monotherapy; titrate. NICE NG217."
+            },
+            {
+              "value": "pregnancy",
+              "label": "Pregnancy",
+              "guidance": "High-dose folic acid 5 mg. Review drugs (valproate avoid). Specialist advice. NICE NG217."
+            }
           ]
         }
       ]
     },
     {
-      "keywords": ["haematuria"],
+      "keywords": [
+        "haematuria"
+      ],
       "steps": [
         {
           "id": "haematuria",
           "question": "Haematuria",
           "type": "dropdown",
           "options": [
-            { "value": "visible", "label": "Visible haematuria (any age)", "guidance": "Refer urology 2WW. Exclude UTI; if UTI treat and repeat urine. NICE NG12." },
-            { "value": "non-visible", "label": "Non-visible (≥45)", "guidance": "FBC, U&E, eGFR. Refer 2WW if eGFR <60 or other concern. Otherwise routine referral for cystoscopy/imaging. NICE NG12." }
+            {
+              "value": "visible",
+              "label": "Visible haematuria (any age)",
+              "guidance": "Refer urology 2WW. Exclude UTI; if UTI treat and repeat urine. NICE NG12."
+            },
+            {
+              "value": "non-visible",
+              "label": "Non-visible (≥45)",
+              "guidance": "FBC, U&E, eGFR. Refer 2WW if eGFR <60 or other concern. Otherwise routine referral for cystoscopy/imaging. NICE NG12."
+            }
           ]
         }
       ]
     },
     {
-      "keywords": ["bph", "luts", "lower urinary", "benign prostate"],
+      "keywords": [
+        "bph",
+        "luts",
+        "lower urinary",
+        "benign prostate"
+      ],
       "steps": [
         {
           "id": "bph",
           "question": "BPH / LUTS",
           "type": "dropdown",
           "options": [
-            { "value": "medical", "label": "Medical management", "guidance": "Alpha-blocker (tamsulosin 400 mcg OD) for flow. 5-alpha reductase inhibitor (finasteride 5 mg) if enlarged prostate. Combination if both. NICE NG97." },
-            { "value": "refer", "label": "Referral", "guidance": "Refer urology: retention, recurrent UTI, stones, renal impairment, failed medical treatment, or suspected cancer. NICE NG97." }
+            {
+              "value": "medical",
+              "label": "Medical management",
+              "guidance": "Alpha-blocker (tamsulosin 400 mcg OD) for flow. 5-alpha reductase inhibitor (finasteride 5 mg) if enlarged prostate. Combination if both. NICE NG97."
+            },
+            {
+              "value": "refer",
+              "label": "Referral",
+              "guidance": "Refer urology: retention, recurrent UTI, stones, renal impairment, failed medical treatment, or suspected cancer. NICE NG97."
+            }
           ]
         }
       ]
     },
     {
-      "keywords": ["smoking", "cessation"],
+      "keywords": [
+        "smoking",
+        "cessation"
+      ],
       "steps": [
         {
           "id": "smoking",
           "question": "Smoking cessation",
           "type": "dropdown",
           "options": [
-            { "value": "nrt", "label": "NRT", "guidance": "Nicotine patch + short-acting (gum/lozenge) for cravings. 8–12 weeks. Adjust dose by smoking level. NICE NG92." },
-            { "value": "varenicline", "label": "Varenicline", "guidance": "Varenicline 500 mcg OD 3 days, then 1 mg bd 12 weeks. Start 1–2 weeks before quit date. NICE NG92." },
-            { "value": "bupropion", "label": "Bupropion", "guidance": "Bupropion 150 mg OD 6 days then 150 mg bd 7–9 weeks. Contraindicated in seizure, eating disorder. NICE NG92." }
+            {
+              "value": "nrt",
+              "label": "NRT",
+              "guidance": "Nicotine patch + short-acting (gum/lozenge) for cravings. 8–12 weeks. Adjust dose by smoking level. NICE NG92."
+            },
+            {
+              "value": "varenicline",
+              "label": "Varenicline",
+              "guidance": "Varenicline 500 mcg OD 3 days, then 1 mg bd 12 weeks. Start 1–2 weeks before quit date. NICE NG92."
+            },
+            {
+              "value": "bupropion",
+              "label": "Bupropion",
+              "guidance": "Bupropion 150 mg OD 6 days then 150 mg bd 7–9 weeks. Contraindicated in seizure, eating disorder. NICE NG92."
+            }
           ]
         }
       ]
     },
     {
-      "keywords": ["fever", "child", "under 5", "traffic light"],
+      "keywords": [
+        "adhd",
+        "attention deficit"
+      ],
+      "steps": [
+        {
+          "id": "adhd-management",
+          "question": "Management plan",
+          "type": "dropdown",
+          "options": [
+            {
+              "value": "non-drug",
+              "label": "Non-drug (Child/Adult)",
+              "guidance": "Psychoeducation for patient/parents. Environmental tweaks (school/work). Support groups. Consider CBT for adults. NICE NG87."
+            },
+            {
+              "value": "child-drug",
+              "label": "Drug treatment – Child (5+)",
+              "guidance": "First-line: Methylphenidate (titrate carefully, monitor height/weight/pulse/BP). Second-line: Lisdexamfetamine. Third-line: Atomoxetine or Guanfacine. Specialist initiation and shared care only. NICE NG87."
+            },
+            {
+              "value": "adult-drug",
+              "label": "Drug treatment – Adult",
+              "guidance": "First-line: Methylphenidate or Lisdexamfetamine. Second-line: Atomoxetine. Monitor BP/pulse. Specialist review required for initiation. NICE NG87."
+            }
+          ]
+        },
+        {
+          "id": "adhd-monitoring",
+          "question": "Monitoring requirements",
+          "type": "dropdown",
+          "options": [
+            {
+              "value": "physical",
+              "label": "Physical monitoring",
+              "guidance": "Pulse and BP (pre-titration then 6-monthly). Weight/height (6-monthly). Monitor for side effects (sleep, appetite, mood). NICE NG87."
+            },
+            {
+              "value": "review",
+              "label": "Annual review",
+              "guidance": "Review effectiveness and need for continuing medication once a year. Assess for comorbidities (anxiety, depression). NICE NG87."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "keywords": [
+        "alcohol",
+        "drinking"
+      ],
+      "steps": [
+        {
+          "id": "alcohol-severity",
+          "question": "Drinking level",
+          "type": "dropdown",
+          "options": [
+            {
+              "value": "hazardous",
+              "label": "Hazardous / Harmful",
+              "guidance": "Brief intervention (FRAMES). Provide information on health risks. Set goals. NICE CG115."
+            },
+            {
+              "value": "dependent",
+              "label": "Dependent (Mild/Moderate)",
+              "guidance": "Assisted withdrawal (detox). Chlordiazepoxide or diazepam reducing regimen (fixed or symptom-triggered). Vitamin B1 (thiamine) 200–300 mg daily. NICE CG115."
+            },
+            {
+              "value": "severe",
+              "label": "Severe dependence / Wernicke's",
+              "guidance": "High-risk of withdrawal seizure/delirium tremens. Admission for IV Pabrinex and clinical detox. Risk assess for suicide/self-neglect. NICE CG115."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "keywords": [
+        "fever",
+        "child",
+        "under 5",
+        "traffic light"
+      ],
       "steps": [
         {
           "id": "fever-child",
           "question": "Fever in under-5s",
           "type": "dropdown",
           "options": [
-            { "value": "green", "label": "Green (low risk)", "guidance": "Paracetamol/ibuprofen for distress. Safety-net: red/amber features, no improvement 48 h. NICE NG143." },
-            { "value": "amber", "label": "Amber (intermediate)", "guidance": "Clinical assessment. Consider urine dip, FBC, CRP. Refer if no focus or concern. NICE NG143." },
-            { "value": "red", "label": "Red (high risk)", "guidance": "Emergency admission. Meningococcal, sepsis, or dehydrated. NICE NG143." }
+            {
+              "value": "green",
+              "label": "Green (low risk)",
+              "guidance": "Paracetamol/ibuprofen for distress. Safety-net: red/amber features, no improvement 48 h. NICE NG143."
+            },
+            {
+              "value": "amber",
+              "label": "Amber (intermediate)",
+              "guidance": "Clinical assessment. Consider urine dip, FBC, CRP. Refer if no focus or concern. NICE NG143."
+            },
+            {
+              "value": "red",
+              "label": "Red (high risk)",
+              "guidance": "Emergency admission. Meningococcal, sepsis, or dehydrated. NICE NG143."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "keywords": [
+        "sepsis",
+        "news2",
+        "qsofa"
+      ],
+      "steps": [
+        {
+          "id": "sepsis-risk",
+          "question": "Sepsis Risk Stratification",
+          "type": "dropdown",
+          "options": [
+            {
+              "value": "low",
+              "label": "Low Risk (Green)",
+              "guidance": "Safety-netting and follow-up. Provide written instructions on when to seek help. NICE NG51."
+            },
+            {
+              "value": "high",
+              "label": "High Risk (Amber/Red)",
+              "guidance": "999 Ambulance. NEWS2 score calculation. ABCDE assessment. O2 to target 94-98%. IV access. Pre-hospital antibiotics if >1h from hospital. NICE NG51."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "keywords": [
+        "anaphylaxis",
+        "adrenaline"
+      ],
+      "steps": [
+        {
+          "id": "anaphylaxis-action",
+          "question": "Emergency Action",
+          "type": "dropdown",
+          "options": [
+            {
+              "value": "im-adrenaline",
+              "label": "IM Adrenaline (999)",
+              "guidance": "Adrenaline 1:1000 IM (anterolateral mid-thigh). Adult: 500mcg (0.5ml). Child 6-12: 300mcg. Child <6: 150mcg. Repeat every 5 mins if no improvement. High-flow O2. NICE NG193."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "keywords": [
+        "autism",
+        "asd",
+        "neurodevelopmental"
+      ],
+      "steps": [
+        {
+          "id": "autism-assessment",
+          "question": "Assessment level",
+          "type": "dropdown",
+          "options": [
+            {
+              "value": "child",
+              "label": "Child/Young Person",
+              "guidance": "Refer to local multi-agency ASD pathway (Paediatrics/CAMHS). Review for co-occurring ADHD/LD. NICE CG128."
+            },
+            {
+              "value": "adult",
+              "label": "Adult suspected ASD",
+              "guidance": "Refer for specialist diagnostic assessment if significant impact on social/working life. Use AQ-10 screening tool. NICE CG142."
+            }
           ]
         }
       ]

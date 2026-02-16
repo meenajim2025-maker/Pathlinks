@@ -15,6 +15,7 @@
                         "max": 165
                     }
                 },
+                "emisCode": "422..",
                 "guidance": {
                     "high": {
                         "threshold": "Above max",
@@ -47,6 +48,7 @@
                         "max": 11.0
                     }
                 },
+                "emisCode": "42N..",
                 "guidance": {
                     "high": {
                         "actions": [
@@ -64,6 +66,22 @@
                     "all": {
                         "min": 150,
                         "max": 450
+                    }
+                },
+                "emisCode": "42P..",
+                "guidance": {
+                    "low": {
+                        "actions": [
+                            "If <100: Check for bruising/bleeding. Review medications (NSAIDs, Carbamazepine). Repeat in 1 week.",
+                            "If <50: Urgent referral to Haematology.",
+                            "Consider Pseudothrombocytopenia (EDTA clumping); repeat in Citrate tube."
+                        ]
+                    },
+                    "high": {
+                        "actions": [
+                            "Reactive: Check CRP/Ferritin (Iron deficiency or inflammation can raise platelets).",
+                            "If persistent >600: Consider essential thrombocythaemia; check JAK2."
+                        ]
                     }
                 }
             }
@@ -122,6 +140,16 @@
                         "min": 45,
                         "max": 85
                     }
+                },
+                "emisCode": "444..",
+                "guidance": {
+                    "high": {
+                        "actions": [
+                            "Acute Kidney Injury (AKI)?: Compare with baseline. If >1.5x baseline, confirm AKI stage.",
+                            "Check hydration and medications (NSAIDs, ACEi, ARBs).",
+                            "Calculate eGFR. If <30, urgent review."
+                        ]
+                    }
                 }
             },
             {
@@ -158,6 +186,7 @@
                         "max": 40
                     }
                 },
+                "emisCode": "44G..",
                 "guidance": {
                     "high": {
                         "actions": [
