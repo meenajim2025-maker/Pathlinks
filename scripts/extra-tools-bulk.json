@@ -1,0 +1,54 @@
+{
+  "comment": "Bulk topics by system to reach ~900 total. niceRefs derived from title keyword match in build.",
+  "bySystem": {
+    "cardiovascular": [
+      "Hypertension – first-line drug choice", "Hypertension – resistant", "Hypertension – in diabetes", "Hypertension – in CKD", "AF – anticoagulation choice", "AF – rate control", "AF – rhythm control", "Chest pain – stable", "Chest pain – acute", "Heart failure – diagnosis", "Heart failure – HFrEF drug titration", "Heart failure – fluid overload", "Angina – stable management", "Angina – when to refer", "Palpitations – no red flags", "Palpitations – with syncope", "Aortic stenosis – severity", "Mitral regurgitation", "Valve disease – when to refer", "DVT – diagnosis Wells", "DVT – anticoagulation duration", "PE – Wells and treatment", "PAD – diagnosis", "PAD – secondary prevention", "Syncope – vasovagal", "Syncope – cardiac", "CVD risk – QRISK3", "Statin – primary prevention", "Statin – secondary prevention", "Lipids – target LDL", "ECG – interpretation basics", "BNP – when to request", "Cardiomyopathy – referral"
+    ],
+    "dermatology": [
+      "Acne – topical", "Acne – oral antibiotic", "Acne – isotretinoin referral", "Eczema – emollients", "Eczema – topical steroid potency", "Eczema – infected", "Psoriasis – topical", "Psoriasis – systemic referral", "Cellulitis – oral antibiotic", "Cellulitis – IV referral", "Fungal nail", "Tinea corporis", "Tinea pedis", "Scabies – treatment", "Scabies – contacts", "Impetigo", "Warts – topical", "Warts – cryotherapy", "Actinic keratosis", "BCC – referral", "SCC – referral", "Melanoma – referral", "Urticaria – acute", "Urticaria – chronic", "Rosacea", "Seborrhoeic dermatitis", "Lichen planus", "Pruritus – causes", "Leg ulcer – venous", "Leg ulcer – arterial", "Pressure ulcer – prevention", "Paronychia", "Ingrowing toenail"
+    ],
+    "mental-health": [
+      "Depression – mild", "Depression – moderate", "Depression – severe", "Depression – treatment-resistant", "GAD – first-line", "GAD – step-up", "Panic disorder", "PTSD – assessment", "PTSD – treatment", "OCD – when to refer", "Social anxiety", "Phobia – specific", "Insomnia – CBT", "Insomnia – medication", "Bipolar – acute", "Bipolar – maintenance", "Self-harm – risk", "Self-harm – follow-up", "Eating disorder – referral", "ADHD – adults", "Dementia – diagnosis", "Dementia – medication", "Delirium – causes", "Alcohol – dependence", "Alcohol – harmful use", "Substance misuse", "Bereavement", "Medically unexplained symptoms"
+    ],
+    "gastroenterology": [
+      "GORD – lifestyle", "GORD – PPI", "GORD – refractory", "Dyspepsia – uninvestigated", "Dyspepsia – red flags", "Peptic ulcer – treatment", "Peptic ulcer – H. pylori", "Constipation – osmotic", "Constipation – stimulant", "Diarrhoea – acute", "Diarrhoea – chronic", "IBS – first-line", "IBS – refractory", "Coeliac – follow-up", "IBD – flare", "IBD – maintenance", "Diverticular – uncomplicated", "Diverticular – acute", "NAFLD – assessment", "NAFLD – in diabetes", "Gallstones – asymptomatic", "Gallstones – symptomatic", "Pancreatitis – acute", "Dysphagia – referral", "Barrett's – surveillance", "Colorectal cancer – 2WW", "FIT – positive", "Haemorrhoids", "Anal fissure", "Rectal bleeding"
+    ],
+    "endocrinology": [
+      "Type 2 diabetes – new", "Type 2 diabetes – intensification", "Type 2 diabetes – SGLT2i", "Type 2 diabetes – GLP-1", "Hypothyroidism – starting", "Hypothyroidism – dose change", "Hyperthyroidism – referral", "Subclinical thyroid", "Obesity – assessment", "Obesity – drug treatment", "Obesity – referral", "Calcium – raised", "Calcium – low", "Vitamin D – deficiency", "Osteoporosis – bisphosphonate", "Osteoporosis – DEXA", "Adrenal insufficiency", "Cushing's – suspect", "Prolactin – raised", "Hypoglycaemia – diabetic", "Hypoglycaemia – non-diabetic", "Thyroid nodule", "Addison's – emergency"
+    ],
+    "musculoskeletal": [
+      "Low back pain – acute", "Low back pain – red flags", "Neck pain", "Shoulder pain", "Knee pain – OA", "Knee pain – ligament", "Hip pain – OA", "Gout – acute", "Gout – urate-lowering", "Osteoarthritis – general", "Rheumatoid – new", "Rheumatoid – DMARD monitoring", "Polymyalgia – diagnosis", "Polymyalgia – steroid", "Fibromyalgia", "Carpal tunnel", "Plantar fasciitis", "Tennis elbow", "Frozen shoulder", "Ankle sprain", "Osteoporosis – fracture risk", "Soft tissue infection", "Septic arthritis – referral"
+    ],
+    "respiratory": [
+      "COPD – diagnosis", "COPD – stable step-up", "COPD – exacerbation", "COPD – oxygen", "Asthma – step 1–2", "Asthma – step 3–4", "Asthma – acute", "Asthma – MART", "Pneumonia – CURB65", "Pneumonia – antibiotic", "Bronchitis – antibiotic", "Cough – chronic", "Pleural effusion", "Lung cancer – 2WW", "Sleep apnoea – referral", "PE – diagnosis", "PE – anticoagulation"
+    ],
+    "paediatrics": [
+      "Fever – under 5", "Fever – traffic light", "Bronchiolitis", "Croup", "Acute otitis media", "Otitis media – recurrent", "Sore throat – child", "UTI – child", "Constipation – child", "Enuresis", "Eczema – child", "Asthma – child", "Allergy – food", "Anaphylaxis", "Developmental delay", "Safeguarding – concerns", "Immunisation – catch-up", "Head lice", "Threadworm", "Chickenpox", "Slapped cheek", "Hand foot mouth"
+    ],
+    "renal-urology": [
+      "UTI – woman", "UTI – man", "UTI – recurrent", "CKD – stage 3", "CKD – stage 4", "CKD – anaemia", "CKD – bone", "Haematuria – visible", "Haematuria – non-visible", "BPH – medical", "BPH – referral", "Renal colic", "Prostatitis", "Erectile dysfunction", "Testicular pain", "Scrotal swelling", "Incontinence – stress", "Incontinence – urge", "Nocturia"
+    ],
+    "women-health": [
+      "Heavy menstrual bleeding", "Amenorrhoea", "PCOS", "Contraception – combined", "Contraception – progesterone", "Contraception – LARC", "Menopause – symptoms", "Menopause – HRT", "Vaginal discharge", "Candidiasis", "BV", "PID", "Endometriosis", "Pelvic pain", "Pregnancy – booking", "Pregnancy – nausea", "Antenatal – routine"
+    ],
+    "infectious": [
+      "Influenza – antiviral", "COVID – treatment", "HIV – testing", "HIV – PrEP", "TB – suspect", "TB – contact", "Lyme", "Shingles", "Malaria – prophylaxis", "Conjunctivitis", "Meningitis – suspect", "Sepsis – recognition", "Cellulitis", "Abscess – incision"
+    ],
+    "neurology": [
+      "Headache – tension", "Migraine – acute", "Migraine – prophylaxis", "TIA – ABCD2", "TIA – antiplatelet", "Stroke – acute", "Epilepsy – new", "Epilepsy – drug choice", "Parkinson's – referral", "MS – referral", "Peripheral neuropathy", "Trigeminal neuralgia", "Bell's palsy", "Vertigo – BPPV", "Vertigo – central", "Dizziness"
+    ],
+    "haematology": [
+      "Anaemia – microcytic", "Anaemia – macrocytic", "Iron deficiency", "B12 deficiency", "Folate deficiency", "Anticoagulation – warfarin", "Anticoagulation – DOAC", "Thrombosis – unprovoked", "Neutropenia", "Thrombocytopenia"
+    ],
+    "ent": [
+      "Sore throat", "Otitis media", "Otitis externa", "Sinusitis", "Allergic rhinitis", "Epistaxis", "Tinnitus", "Hearing loss", "Vertigo", "Hoarse voice", "Glue ear"
+    ],
+    "procedures-general": [
+      "Minor surgery – consent", "Wound closure", "Cervical smear", "ECG", "Spirometry", "Injection – joint", "Palliative – pain", "Palliative – breathlessness", "DNAR", "Advance care planning", "Safeguarding – adult", "Capacity assessment", "Fitness to drive"
+    ],
+    "other": [
+      "Smoking cessation", "Alcohol – brief advice", "Weight management", "Vitamin D", "Chronic pain", "Polypharmacy", "Falls – risk", "Falls – intervention", "Frail elderly", "Lifestyle – diet", "Travel – advice",
+      "Smoking – NRT", "Smoking – varenicline", "Obesity – orlistat", "Vitamin B12 – replacement", "Chronic fatigue", "Medicines review", "Deprescribing", "Sarcopenia", "Malnutrition", "Hydration", "Safeguarding – child", "Mental capacity", "Lasting power of attorney", "DNAR discussion", "Bereavement support"
+    ]
+  }
+}
