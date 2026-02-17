@@ -62,6 +62,9 @@ async function init() {
             }
         });
 
+        // Initialize NEWS2 Calculator
+        initNEWS2();
+
     } catch (e) {
         console.error("Error loading test data:", e);
         document.getElementById('select-test').innerHTML = '<option value="">Failed to load protocols</option>';
@@ -374,16 +377,26 @@ async function renderDecisionTools() {
     const guidanceText = document.getElementById('decision-guidance-text');
     if (!systemSelect || !toolSelect || !panel) return;
 
+    if (systemSelect.dataset.loading === 'true') return;
+    if (systemSelect.dataset.initialized) return;
+
     if (!decisionToolsData) {
+        systemSelect.dataset.loading = 'true';
         try {
             const res = await fetch('./data/decision_tools_protocol.json');
             if (!res.ok) throw new Error('Not found');
             decisionToolsData = await res.json();
+            systemSelect.dataset.loading = 'false';
+            systemSelect.dataset.initialized = 'true';
         } catch (e) {
+            console.error("[DecisionTools] Load failed:", e);
+            systemSelect.dataset.loading = 'false';
             panel.classList.add('hidden');
-            stepsContainer.innerHTML = '<p class="placeholder-text">Decision tools data not found. Run <code>node scripts/build-decision-tools.js</code> to generate.</p>';
+            stepsContainer.innerHTML = '<p class="placeholder-text">Decision tools data not found. Run <code>node scripts/build-decision-tools.js</code> to generate or check network connectivity.</p>';
             return;
         }
+    } else {
+        systemSelect.dataset.initialized = 'true';
     }
 
     const systems = decisionToolsData.systems || [];
@@ -455,31 +468,64 @@ async function renderDecisionTools() {
                 (sys.tools || []).forEach((tool, toolIdx) => {
                     const title = (tool.title || '').toLowerCase();
                     const sysName = (sys.name || '').toLowerCase();
-                    if (title.includes(q) || sysName.includes(q)) hits.push({ sysIdx, toolIdx, sysName: sys.name, title: tool.title });
+                    if (title.includes(q) || sysName.includes(q)) hits.push({ sysIdx, toolIdx, sysName: sys.name, title: tool.title, tool });
                 });
             });
-            hits.sort((a, b) => (a.title || '').localeCompare(b.title || '', 'en', { sensitivity: 'base' }));
+
+            // Task 3: Prioritize Specific Pathways over Generic Pathways
+            hits.sort((a, b) => {
+                const aIsGeneric = a.tool.steps && a.tool.steps[0] && a.tool.steps[0].id === 'guidance';
+                const bIsGeneric = b.tool.steps && b.tool.steps[0] && b.tool.steps[0].id === 'guidance';
+                if (aIsGeneric && !bIsGeneric) return 1;
+                if (!aIsGeneric && bIsGeneric) return -1;
+                return (a.title || '').localeCompare(b.title || '', 'en', { sensitivity: 'base' });
+            });
+
             const show = hits.slice(0, maxSearchHits);
             show.forEach(({ sysIdx, toolIdx, sysName, title }) => {
                 const div = document.createElement('div');
                 div.className = 'search-hit';
                 div.setAttribute('role', 'option');
-                div.innerHTML = '<span>' + escapeHtml(title) + '</span> <span class="system-name">(' + escapeHtml(sysName) + ')</span>';
+
+                // Visual indicator for specific pathway in search hits
+                const toolHit = hits.find(h => h.title === title && h.sysName === sysName).tool;
+                const isGeneric = toolHit.steps && toolHit.steps[0] && toolHit.steps[0].id === 'guidance';
+                const badge = isGeneric ? '<span style="color: #f39c12; font-size: 10px;">[Generic]</span>' : '<span style="color: #27ae60; font-size: 10px;">[Specific]</span>';
+
+                div.innerHTML = badge + ' <span>' + escapeHtml(title) + '</span> <span class="system-name">(' + escapeHtml(sysName) + ')</span>';
                 div.addEventListener('click', function () {
+                    console.log(`[Search] Selected: ${title} (sysIdx: ${sysIdx}, toolIdx: ${toolIdx})`);
                     if (filterInput) filterInput.value = '';
                     searchAllInput.value = '';
                     searchResultsEl.classList.add('hidden');
                     searchResultsEl.innerHTML = '';
 
-                    // Update selects so UI stays in sync if possible
+                    // Step 1: Sync System Dropdown
                     systemSelect.value = String(sysIdx);
                     toolSelect.disabled = false;
+
+                    // Step 2: Populate Tool Dropdown for this system
                     populateTopicDropdown(systems[sysIdx], '');
+
+                    // Step 3: Explicitly set the value and ensure it's selected in the DOM
                     toolSelect.value = String(toolIdx);
 
+                    // Step 4: Verification & Rendering
                     const sys = systems[sysIdx];
                     const tool = (sys.tools || [])[parseInt(toolIdx, 10)];
-                    if (tool) renderToolUI(tool);
+
+                    if (tool) {
+                        console.log(`[Search] Found tool: ${tool.title}. Rendering UI.`);
+                        renderToolUI(tool);
+                    } else {
+                        console.warn(`[Search] Tool index mismatch. Searching by title fallback...`);
+                        const fallbackTool = (sys.tools || []).find(t => t.title === title);
+                        if (fallbackTool) {
+                            const actualIdx = sys.tools.indexOf(fallbackTool);
+                            toolSelect.value = String(actualIdx);
+                            renderToolUI(fallbackTool);
+                        }
+                    }
                 });
                 searchResultsEl.appendChild(div);
             });
@@ -878,6 +924,115 @@ C10.. - Hypothyroidism
             }, 2000);
         });
     });
+}
+
+function initNEWS2() {
+    const inputs = ['news-rr', 'news-spo2', 'news-oxygen', 'news-sbp', 'news-hr', 'news-consciousness', 'news-temp'];
+    inputs.forEach(id => {
+        const el = document.getElementById(id);
+        if (el) {
+            el.addEventListener('input', calculateNEWS2);
+            el.addEventListener('change', calculateNEWS2);
+        }
+    });
+}
+
+function calculateNEWS2() {
+    const rr = parseInt(document.getElementById('news-rr').value) || 0;
+    const spo2 = parseInt(document.getElementById('news-spo2').value) || 0;
+    const oxygen = parseInt(document.getElementById('news-oxygen').value) || 0;
+    const sbp = parseInt(document.getElementById('news-sbp').value) || 0;
+    const hr = parseInt(document.getElementById('news-hr').value) || 0;
+    const consciousness = parseInt(document.getElementById('news-consciousness').value) || 0;
+    const temp = parseFloat(document.getElementById('news-temp').value) || 0;
+
+    let news = 0;
+    let qsofa = 0;
+
+    // qSOFA: RR >= 22 (1), SBP <= 100 (1), GCS < 15 (1)
+    if (rr >= 22) qsofa++;
+    if (sbp <= 100 && sbp > 0) qsofa++;
+    if (consciousness > 0) qsofa++;
+
+    // NEWS2 Calculation
+    // RR
+    if (rr > 0) {
+        if (rr <= 8) news += 3;
+        else if (rr <= 11) news += 1;
+        else if (rr >= 25) news += 3;
+        else if (rr >= 21) news += 2;
+    }
+
+    // SpO2
+    if (spo2 > 0) {
+        if (spo2 <= 91) news += 3;
+        else if (spo2 <= 93) news += 2;
+        else if (spo2 <= 95) news += 1;
+    }
+
+    // Oxygen
+    news += parseInt(oxygen);
+
+    // SBP
+    if (sbp > 0) {
+        if (sbp <= 90) news += 3;
+        else if (sbp <= 100) news += 2;
+        else if (sbp <= 110) news += 1;
+        else if (sbp >= 220) news += 3;
+    }
+
+    // HR
+    if (hr > 0) {
+        if (hr <= 40) news += 3;
+        else if (hr <= 50) news += 1;
+        else if (hr >= 131) news += 3;
+        else if (hr >= 111) news += 2;
+        else if (hr >= 91) news += 1;
+    }
+
+    // Consciousness
+    news += parseInt(consciousness);
+
+    // Temp
+    if (temp > 0) {
+        if (temp <= 35.0) news += 3;
+        else if (temp <= 36.0) news += 1;
+        else if (temp >= 39.1) news += 2;
+        else if (temp >= 38.1) news += 1;
+    }
+
+    document.getElementById('qsofa-score-display').textContent = qsofa;
+    document.getElementById('news2-score-display').textContent = news;
+
+    const result = document.getElementById('sepsis-risk-result');
+    if (rr === 0 && spo2 === 0 && sbp === 0 && hr === 0) {
+        result.classList.add('hidden');
+        return;
+    }
+
+    result.classList.remove('hidden');
+
+    if (news >= 7 || qsofa >= 2) {
+        result.style.background = '#ffebee';
+        result.style.color = '#c62828';
+        result.style.border = '1px solid #ef9a9a';
+        result.innerHTML = '<strong>RED FLAG - High Risk:</strong> Urgent clinical review and consider hospital admission. Start Sepsis 6 (IV fluids, antibiotics, lactate).';
+    } else if (news >= 5) {
+        result.style.background = '#fff3e0';
+        result.style.color = '#ef6c00';
+        result.style.border = '1px solid #ffcc80';
+        result.innerHTML = '<strong>AMBER FLAG - Medium Risk:</strong> Urgent clinical review by senior clinician. Increase observation frequency.';
+    } else if (news >= 1) {
+        result.style.background = '#fffde7';
+        result.style.color = '#f57f17';
+        result.style.border = '1px solid #fff59d';
+        result.innerHTML = '<strong>Low Risk (Low Score):</strong> Escalate to ward clinician for review if scores 1-4.';
+    } else {
+        result.style.background = '#e8f5e9';
+        result.style.color = '#2e7d32';
+        result.style.border = '1px solid #a5d6a7';
+        result.innerHTML = '<strong>GREEN - Stable:</strong> Continue routine observation and clinical review.';
+    }
 }
 
 init();

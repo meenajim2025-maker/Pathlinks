@@ -52,7 +52,8 @@
             <section id="dashboard-view" class="view">
                 <div class="welcome-section">
                     <h2>Clinical Decision Making Tool</h2>
-                    <p>Blood result actioning: select a test, enter the value, and get NICE-aligned guidance and related learning below.</p>
+                    <p>Blood result actioning: select a test, enter the value, and get NICE-aligned guidance and related
+                        learning below.</p>
                 </div>
 
                 <div class="grid-container">
@@ -161,11 +162,15 @@
 
             <section id="decision-tools-view" class="view hidden">
                 <h2>Decision tools by system</h2>
-                <p class="welcome-section" style="margin-bottom: 1rem;">~900 tools with NICE-based management (drug choices, targets, referral). Search all systems or choose a system and topic, then use the dropdowns for guideline-backed decisions.</p>
+                <p class="welcome-section" style="margin-bottom: 1rem;">~900 tools with NICE-based management (drug
+                    choices, targets, referral). Search all systems or choose a system and topic, then use the dropdowns
+                    for guideline-backed decisions.</p>
                 <div class="card" style="margin-bottom: 1.5rem;">
                     <div class="field-group" style="margin-bottom: 1rem; position: relative;">
                         <label for="decision-search-all">Search all systems</label>
-                        <input type="text" id="decision-search-all" placeholder="e.g. sore throat, hypertension, restless legs..." style="max-width: 400px;" autocomplete="off">
+                        <input type="text" id="decision-search-all"
+                            placeholder="e.g. sore throat, hypertension, restless legs..." style="max-width: 400px;"
+                            autocomplete="off">
                         <div id="decision-search-results" class="decision-search-results hidden" role="listbox"></div>
                     </div>
                     <div class="field-group" style="margin-bottom: 1rem;">
@@ -176,11 +181,14 @@
                     </div>
                     <div class="field-group" style="margin-bottom: 0.5rem;">
                         <label for="decision-tool-filter">Filter topics (type to narrow)</label>
-                        <input type="text" id="decision-tool-filter" placeholder="e.g. sore throat, hypertension, referral..." style="max-width: 400px;" autocomplete="off">
+                        <input type="text" id="decision-tool-filter"
+                            placeholder="e.g. sore throat, hypertension, referral..." style="max-width: 400px;"
+                            autocomplete="off">
                     </div>
                     <div class="field-group" style="margin-bottom: 1rem;">
                         <label for="decision-tool">Topic / decision tool</label>
-                        <span id="decision-tool-count" class="small-text" style="display: block; margin-bottom: 4px;"></span>
+                        <span id="decision-tool-count" class="small-text"
+                            style="display: block; margin-bottom: 4px;"></span>
                         <select id="decision-tool">
                             <option value="">-- Choose topic --</option>
                         </select>
@@ -189,8 +197,10 @@
                 <div id="decision-tool-panel" class="hidden">
                     <div class="card" style="margin-bottom: 1rem;">
                         <h3 id="decision-tool-title" style="margin: 0 0 8px 0;"></h3>
-                        <p class="small-text" style="margin: 0 0 12px 0;"><strong>NICE / evidence:</strong> <span id="decision-tool-nice"></span></p>
-                        <p class="small-text" style="margin: 0 0 16px 0; line-height: 1.5;" id="decision-tool-evidence"></p>
+                        <p class="small-text" style="margin: 0 0 12px 0;"><strong>NICE / evidence:</strong> <span
+                                id="decision-tool-nice"></span></p>
+                        <p class="small-text" style="margin: 0 0 16px 0; line-height: 1.5;" id="decision-tool-evidence">
+                        </p>
                     </div>
                     <div id="decision-steps-container" class="card">
                         <!-- Steps (dropdowns) rendered here -->
@@ -198,6 +208,70 @@
                     <div id="decision-guidance-box" class="card guidance-card hidden" style="margin-top: 1rem;">
                         <h4 style="margin: 0 0 8px 0;">Guidance</h4>
                         <p id="decision-guidance-text" style="margin: 0; line-height: 1.5;"></p>
+                    </div>
+                </div>
+
+                <!-- NEWS2 & qSOFA Calculator -->
+                <div class="card" id="news2-calculator" style="margin-top: 2rem;">
+                    <h3>NEWS2 & qSOFA Calculator</h3>
+                    <p class="small-text" style="margin-bottom: 1rem;">Rapid Sepsis Risk Assessment</p>
+                    <div class="calculator-grid"
+                        style="display: grid; grid-template-columns: repeat(auto-fit, minmax(180px, 1fr)); gap: 1rem;">
+                        <div class="field-group">
+                            <label>Resp Rate</label>
+                            <input type="number" id="news-rr" placeholder="e.g. 18" min="0">
+                        </div>
+                        <div class="field-group">
+                            <label>SpO2 (%)</label>
+                            <input type="number" id="news-spo2" placeholder="e.g. 98" min="0" max="100">
+                        </div>
+                        <div class="field-group">
+                            <label>Oxygen / Air?</label>
+                            <select id="news-oxygen">
+                                <option value="0">Air</option>
+                                <option value="2">Oxygen</option>
+                            </select>
+                        </div>
+                        <div class="field-group">
+                            <label>Systolic BP</label>
+                            <input type="number" id="news-sbp" placeholder="e.g. 120" min="0">
+                        </div>
+                        <div class="field-group">
+                            <label>Heart Rate</label>
+                            <input type="number" id="news-hr" placeholder="e.g. 80" min="0">
+                        </div>
+                        <div class="field-group">
+                            <label>ACVPU State</label>
+                            <select id="news-consciousness">
+                                <option value="0">Alert</option>
+                                <option value="3">New Confusion/Voice/Pain/Unresponsive</option>
+                            </select>
+                        </div>
+                        <div class="field-group">
+                            <label>Temp (°C)</label>
+                            <input type="number" id="news-temp" placeholder="e.g. 37.0" step="0.1">
+                        </div>
+                    </div>
+                    <div
+                        style="margin-top: 1.5rem; padding: 1.2rem; background: #fdfdfd; border-radius: 8px; border: 1px dashed #ccc; display: flex; justify-content: space-around; align-items: center;">
+                        <div style="text-align: center;">
+                            <p
+                                style="font-size: 11px; color: var(--text-muted); text-transform: uppercase; letter-spacing: 0.5px;">
+                                qSOFA Score</p>
+                            <span id="qsofa-score-display"
+                                style="font-size: 24px; font-weight: 700; color: var(--text-main);">0</span>
+                        </div>
+                        <div style="text-align: center;">
+                            <p
+                                style="font-size: 11px; color: var(--text-muted); text-transform: uppercase; letter-spacing: 0.5px;">
+                                NEWS2 Score</p>
+                            <span id="news2-score-display"
+                                style="font-size: 24px; font-weight: 700; color: var(--primary);">0</span>
+                        </div>
+                    </div>
+                    <div id="sepsis-risk-result" class="status-box hidden"
+                        style="margin-top: 1rem; padding: 1rem; border-radius: 8px; font-size: 14px; line-height: 1.4;">
+                        <!-- Risk Guidance -->
                     </div>
                 </div>
             </section>
@@ -211,10 +285,12 @@
 
             <section id="learning-view" class="view hidden">
                 <h2>Clinical learning topics</h2>
-                <p class="welcome-section" style="margin-bottom: 1rem;">Knowledge extracted from USB podcast episodes. Search and read transcripts below.</p>
+                <p class="welcome-section" style="margin-bottom: 1rem;">Knowledge extracted from USB podcast episodes.
+                    Search and read transcripts below.</p>
                 <div class="field-group" style="margin-bottom: 1rem;">
                     <label for="knowledge-search">Search topics and transcript text</label>
-                    <input type="text" id="knowledge-search" placeholder="e.g. hypertension, NICE, referral..." style="max-width: 400px;">
+                    <input type="text" id="knowledge-search" placeholder="e.g. hypertension, NICE, referral..."
+                        style="max-width: 400px;">
                 </div>
                 <div class="learning-container" id="learning-container">
                     <!-- Dynamic sections -->

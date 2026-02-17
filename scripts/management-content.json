@@ -1385,6 +1385,436 @@
           ]
         }
       ]
+    },
+    {
+      "keywords": [
+        "dry eyes",
+        "blepharitis"
+      ],
+      "steps": [
+        {
+          "id": "dry-eye-mgmt",
+          "question": "Severity and Management",
+          "type": "dropdown",
+          "options": [
+            {
+              "value": "mild",
+              "label": "Mild/Moderate",
+              "guidance": "Lid hygiene (warm compresses). Preservative-free lubricants (e.g. Hylo-Forte, Viscotears). Ointment at night (e.g. Lacri-Lube). NICE CKS Dry Eye."
+            },
+            {
+              "value": "severe",
+              "label": "Severe or refractory",
+              "guidance": "Refer to Ophthalmology. Consider punctal plugs or ciclosporin drops. Exclude Sjogren's syndrome (check ANA, Ro/La)."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "keywords": [
+        "glaucoma",
+        "open-angle"
+      ],
+      "steps": [
+        {
+          "id": "glaucoma-mgmt",
+          "question": "Management Level",
+          "type": "dropdown",
+          "options": [
+            {
+              "value": "new",
+              "label": "Newly diagnosed/Suspected",
+              "guidance": "Refer to secondary care for diagnosis and treatment initiation. First-line usually Prostaglandin analogue (e.g. Latanoprost). NICE NG81."
+            },
+            {
+              "value": "monitoring",
+              "label": "Community Monitoring",
+              "guidance": "Check IOP, visual fields, and adherence. Beta-blockers (e.g. Timolol) used as adjunctive; check for contraindications (Asthma/Heart Block)."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "keywords": [
+        "conjunctivitis",
+        "red eye",
+        "scleritis"
+      ],
+      "steps": [
+        {
+          "id": "red-eye-mgmt",
+          "question": "Clinical Presentation",
+          "type": "dropdown",
+          "options": [
+            {
+              "value": "bacterial",
+              "label": "Bacterial Conjunctivitis",
+              "guidance": "Chloramphenicol 0.5% drops 2-hourly for 2 days then qds. Fusidic acid if pregnant. Safety-net for pain/vision loss. NICE CKS."
+            },
+            {
+              "value": "corneal-ulcers",
+              "label": "Suspected Corneal Ulcer/Keratitis",
+              "guidance": "Contact lens wearer? Painful? Fluorescein staining positive? Emergency Ophthalmology referral (same day). Avoid steroids."
+            },
+            {
+              "value": "scleritis",
+              "label": "Scleritis (Deep pain)",
+              "guidance": "Deep, boring eye pain. Systemic associations (rheumatoid). Urgent Ophthalmology referral (within 24-48h). NICE CKS."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "keywords": [
+        "ophthalmological emergencies",
+        "acute vision loss"
+      ],
+      "steps": [
+        {
+          "id": "eye-emerg",
+          "question": "Emergency presentation",
+          "type": "dropdown",
+          "options": [
+            {
+              "value": "raao",
+              "label": "Sudden painless loss of vision (RAO)",
+              "guidance": "Suspected Retinal Artery Occlusion. Emergency (999 or Eye Casualty). Stroke symptoms? TIA workup needed."
+            },
+            {
+              "value": "acute-glaucoma",
+              "label": "Painful red eye + nausea (Acute Glaucoma)",
+              "guidance": "Emergency referral. Fixed semi-dilated pupil. Give Acetazolamide 500mg IV/PO if remote from hospital (per local policy)."
+            },
+            {
+              "value": "detachment",
+              "label": "Floaters and flashes (Detachment)",
+              "guidance": "Retinal detachment until proven otherwise. Urgent (same day) Ophthalmology review."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "keywords": [
+        "wax",
+        "ear wax"
+      ],
+      "steps": [
+        {
+          "id": "wax-mgmt",
+          "question": "Management",
+          "type": "dropdown",
+          "options": [
+            {
+              "value": "drops",
+              "label": "First-line (Drops)",
+              "guidance": "Olive oil drops 2-3 times daily for 2 weeks. Avoid cotton buds. Sodium bicarbonate drops if oil fails. NICE CKS."
+            },
+            {
+              "value": "irrigation",
+              "label": "Mechanical removal",
+              "guidance": "Electronic irrigation or microsuction if drops fail and no perforation/recent surgery. Check for history of ear infections."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "keywords": [
+        "mastoiditis",
+        "mastoid tenderness"
+      ],
+      "steps": [
+        {
+          "id": "mastoid-mgmt",
+          "question": "Assessment",
+          "type": "dropdown",
+          "options": [
+            {
+              "value": "emergency",
+              "label": "Acute Mastoiditis suspected",
+              "guidance": "Emergency admission (Paediatrics/ENT). Post-auricular swelling/fluctuance, displaced pinna. IV antibiotics + imaging. NICE CKS."
+            },
+            {
+              "value": "tenderness",
+              "label": "Tenderness only (no swelling)",
+              "guidance": "Careful review for media/externa. Urgent ENT opinion if clinical concern despite lack of classic signs. Safety-net strictly."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "keywords": [
+        "hearing loss",
+        "tinnitus",
+        "eustachian tube"
+      ],
+      "steps": [
+        {
+          "id": "hearing-mgmt",
+          "question": "Investigation and Management",
+          "type": "dropdown",
+          "options": [
+            {
+              "value": "sudden",
+              "label": "Sudden Sensorineural Hearing Loss",
+              "guidance": "Emergency (ENT same day). High-dose oral Prednisolone (e.g. 60mg OD for 7 days) started immediately. Urgent Audiogram. NICE NG98."
+            },
+            {
+              "value": "tinnitus-unilat",
+              "label": "Unilateral Pulsatile Tinnitus",
+              "guidance": "Urgent ENT referral for imaging (exclude glomus tumour/vascular malformation). Routine referral if non-pulsatile but persistent/distressing. NICE NG155."
+            },
+            {
+              "value": "etd",
+              "label": "Eustachian Tube Dysfunction",
+              "guidance": "Valsalva manoeuvre. Nasal steroid spray (e.g. Fluticasone) for 4-6 weeks if obstructive. Decongestants (short-term only). NICE CKS."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "keywords": [
+        "pain management",
+        "chronic pain",
+        "acute pain"
+      ],
+      "steps": [
+        {
+          "id": "pain-type",
+          "question": "Pain Type",
+          "type": "dropdown",
+          "options": [
+            {
+              "value": "acute",
+              "label": "Acute Pain",
+              "guidance": "Follow WHO pain ladder: Step 1 Paracetamol/NSAIDs; Step 2 Weak opioids (Codeine); Step 3 Strong opioids (Morphine). Non-drug: RICE for trauma. NICE CKS."
+            },
+            {
+              "value": "chronic",
+              "label": "Chronic Pain (Primary)",
+              "guidance": "Focus on function and quality of life. Offer supervised exercise, CBT, or acupuncture. Antidepressants (Duloxetine/Amitriptyline) for chronic primary pain. Avoid opioids. NICE NG193."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "keywords": [
+        "orthopaedic examination",
+        "examination",
+        "orthopaedics"
+      ],
+      "steps": [
+        {
+          "id": "joint-exam",
+          "question": "Joint for Examination",
+          "type": "dropdown",
+          "options": [
+            {
+              "value": "shoulder",
+              "label": "Shoulder",
+              "guidance": "Look (asymmetry, wasting); Feel (ACJ, SCJ, humerus); Move (Active/Passive: Abd, Flex, Rot). Tests: Hawkins-Kennedy (impingement), Empty Can (Supraspinatus)."
+            },
+            {
+              "value": "knee",
+              "label": "Knee",
+              "guidance": "Look (effusion, alignment); Feel (joint line tenderness, temperature); Move (Active/Passive Flex/Ext). Tests: Lachman (ACL), McMurray (Meniscus), Patellar Tap (effusion)."
+            },
+            {
+              "value": "hip",
+              "label": "Hip",
+              "guidance": "Look (gait, Trendelenburg); Feel (greater trochanter); Move (Flex, Int/Ext Rotation). Special: Thomas test (flexion contracture)."
+            },
+            {
+              "value": "spine",
+              "label": "Spine (Back/Neck)",
+              "guidance": "Look (curvature, scoliosis); Feel (spinous processes, paravertebral muscles); Move (Flex, Ext, Lat Flex). Neurology: SLR (Root stretch), Dermatomes, Myotomes, Reflexes."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "keywords": [
+        "arthritis",
+        "osteoarthritis",
+        "rheumatoid"
+      ],
+      "steps": [
+        {
+          "id": "arthritis-type",
+          "question": "Suspected Type",
+          "type": "dropdown",
+          "options": [
+            {
+              "value": "oa",
+              "label": "Osteoarthritis",
+              "guidance": "Diagnosis: Age ≥45, activity-related joint pain, no/brief morning stiffness (<30m). Management: Exercise, weight loss, topical NSAIDs, education. NICE NG226."
+            },
+            {
+              "value": "ra",
+              "label": "Rheumatoid Arthritis (Suspected)",
+              "guidance": "Suspect if persistent joint synovitis (swelling). Urgent referral (within 3 weeks). Baseline: FBC, CRP, ESR, RF, Anti-CCP, X-rays. Start DMARD only after specialist review. NICE NG100."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "keywords": [
+        "back pain",
+        "neck pain",
+        "spondylosis"
+      ],
+      "steps": [
+        {
+          "id": "spine-mgmt",
+          "question": "Severity and Red Flags",
+          "type": "dropdown",
+          "options": [
+            {
+              "value": "red-flags",
+              "label": "Red Flags (Cauda Equina / Malignancy)",
+              "guidance": "Saddle anaesthesia, bladder/bowel dysfunction, bilateral sciatica, night pain, weight loss, history of cancer. Urgent same-day referral/A&E. NICE NG59."
+            },
+            {
+              "value": "conservative",
+              "label": "Stable / Spondylosis",
+              "guidance": "Keep active. NSAIDs (regular) for flare. Physiotherapy referral. Avoid imaging in non-specific low back pain. Reassure if no neurology. NICE NG59."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "keywords": [
+        "carpal tunnel"
+      ],
+      "steps": [
+        {
+          "id": "cts-mgmt",
+          "question": "Clinical Features",
+          "type": "dropdown",
+          "options": [
+            {
+              "value": "mild",
+              "label": "Mild (Sensory only)",
+              "guidance": "Nocturnal splints (6 weeks). Steroid injection if no response. Nerve conduction studies if diagnosis uncertain. NICE CKS."
+            },
+            {
+              "value": "severe",
+              "label": "Severe (Motor / Wasting)",
+              "guidance": "Thenar wasting or weakness → Urgent referral for surgical decompression. Review for systemic causes (Thyroid, Diabetes, Pregnancy)."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "keywords": [
+        "tired all the time",
+        "fatigue",
+        "tatt"
+      ],
+      "steps": [
+        {
+          "id": "fatigue-workup",
+          "question": "Workup Phase",
+          "type": "dropdown",
+          "options": [
+            {
+              "value": "screen",
+              "label": "Initial Screening",
+              "guidance": "History: Sleep, stress, diet, drugs. Bloods: FBC, Ferritin, U&E, TFT, HbA1c, Vit D, Bone, LFT, Coeliac screen. NICE CKS."
+            },
+            {
+              "value": "me-cfs",
+              "label": "Suspected ME/CFS",
+              "guidance": "Persistent fatigue >3 months. Check NICE NG206 for diagnostic criteria. Do not offer LET or GET. Focus on energy management (pacing)."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "keywords": [
+        "menopause",
+        "hrt"
+      ],
+      "steps": [
+        {
+          "id": "menopause-mgmt",
+          "question": "Assessment and HRT choice",
+          "type": "dropdown",
+          "options": [
+            {
+              "value": "diagnosis",
+              "label": "Diagnosis (Age >45)",
+              "guidance": "Perimenopause based on vasomotor symptoms and irregular periods. Menopause based on no periods for 1 year. No FSH needed. NICE NG23."
+            },
+            {
+              "value": "hrt-choice",
+              "label": "HRT Choice",
+              "guidance": "Uterus present? Combined HRT (Cyclical if <1yr amenorrhoea, Continuous if >1yr). No Uterus? Oestrogen only. Start low dose. Review at 3m. NICE NG23."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "keywords": [
+        "contraception"
+      ],
+      "steps": [
+        {
+          "id": "contraception-choice",
+          "question": "Method Selection",
+          "type": "dropdown",
+          "options": [
+            {
+              "value": "chc",
+              "label": "Combined (CHC)",
+              "guidance": "Check UKMEC: BP, BMI, Migraine with aura, VTE risk, Smoking (>35). 7-day rule for missed pills. FSRH Guideline."
+            },
+            {
+              "value": "larc",
+              "label": "LARC (Implant/IUS/IUD)",
+              "guidance": "Most effective methods. Discuss Nexplanon (3y), Mirena (8y/HRT), Copper IUD. Follow FSRH LARC standards."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "keywords": [
+        "obesity",
+        "weight loss"
+      ],
+      "steps": [
+        {
+          "id": "obesity-mgmt",
+          "question": "Management Level",
+          "type": "dropdown",
+          "options": [
+            {
+              "value": "lifestyle",
+              "label": "Lifestyle & BMI assessment",
+              "guidance": "Calculate BMI and waist circumference. Set 5-10% weight loss goal. Tier 2 weight management referral. NICE CG189."
+            },
+            {
+              "value": "medication",
+              "label": "Pharmacotherapy (Orlistat/GLP-1)",
+              "guidance": "Orlistat if BMI ≥30 (or ≥28 with comorbidities). GLP-1 (e.g. Semaglutide) via Tier 3/4 specialist clinics if BMI ≥35 (or ≥30 with comorb in some cases). NICE TA664."
+            }
+          ]
+        }
+      ]
     }
   ]
 }

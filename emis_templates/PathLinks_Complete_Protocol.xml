@@ -103,6 +103,113 @@ CODING: Add Read Code 44P.. (Serum lipids)
       </Action>
     </Rule>
 
+    <!-- ==================== ACUTE & EMERGENCY ALERTS ==================== -->
+
+    <!-- Sepsis Risk (Triggered by high inflammatory markers) -->
+    <Rule Name="Sepsis_Risk_Alert" Priority="1" Category="URGENT">
+      <Condition>
+        <Or>
+          <Match TestCode="WBC" TestName="White Blood Cell Count" Operator="GreaterThan" Value="20.0" Unit="x10^9/L" />
+          <Match TestCode="CRP" TestName="CRP" Operator="GreaterThan" Value="100" Unit="mg/L" />
+        </Or>
+      </Condition>
+      <Action Type="DisplayAlert" Style="Critical">
+        <Title>⚠️ URGENT: Potential Sepsis Risk</Title>
+        <Text><![CDATA[
+High inflammatory markers (WBC >20 or CRP >100) detected. 
+CONSIDER SEPSIS RISK STRATIFICATION.
+
+RED FLAGS (Emergency Admission):
+- Systolic BP ≤ 90 mmHg
+- Heart Rate > 130 bpm
+- Respiratory Rate ≥ 25 per min
+- Mottled or ashen skin / Non-blanching rash
+- New onset confusion / GCS < 15
+
+AMBER FLAGS (Consult Senior/Early Review):
+- Systolic BP 91–100 mmHg
+- Heart Rate 111–130 bpm
+- Respiratory Rate 21–24 per min
+- Temperature < 36°C
+
+MANAGEMENT: Sepsis 6 (Oxygen, Blood Cultures, IV Antibiotics, Fluids, Lactate, Urine Output).
+
+EMIS CODING: 42N.. (WBC) or 66Y.. (Result actioned via protocol)
+        ]]></Text>
+      </Action>
+    </Rule>
+
+    <!-- Anaphylaxis Action (IM Adrenaline Doses) -->
+    <Rule Name="Anaphylaxis_Emergency_Action" Priority="1" Category="EMERGENCY">
+      <Condition>
+        <Match TestCode="RAST" TestName="Specific IgE" Operator="GreaterThan" Value="17.5" Unit="kUA/L" />
+      </Condition>
+      <Action Type="DisplayAlert" Style="Critical">
+        <Title>⚡ EMERGENCY: Anaphylaxis Alert</Title>
+        <Text><![CDATA[
+Very high allergen sensitivity detected. In the event of ANAPHYLAXIS, use IM ADRENALINE 1:1000.
+
+DOSES (IM injection into anterolateral thigh):
+- Adults and children >12 years: 500 mcg (0.5 mL)
+- Children 6–12 years: 300 mcg (0.3 mL)
+- Children <6 years: 150 mcg (0.15 mL)
+
+Repeat every 5 minutes if no improvement. Call 999 immediately.
+
+Follow NICE Guideline [NG143].
+        ]]></Text>
+      </Action>
+    </Rule>
+
+    <!-- Platelets (Severe Thrombocytopenia) -->
+    <Rule Name="Thrombocytopenia_Urgent" Priority="1" Category="URGENT">
+      <Condition>
+        <Match TestCode="PLT" TestName="Platelets" Operator="LessThan" Value="50" Unit="x10^9/L" />
+      </Condition>
+      <Action Type="DisplayAlert" Style="Critical">
+        <Title>⚠️ URGENT: Severe Thrombocytopenia</Title>
+        <Text><![CDATA[
+Platelets < 50 x10^9/L detected.
+
+IMMEDIATE ACTIONS:
+1. URGENT referral to Haematology.
+2. Check for signs of active bleeding or petechiae.
+3. Review medications (NSAIDs, Carbamazepine, Quinine).
+4. Repeat in Citrate tube if pseudothrombocytopenia suspected.
+
+EMIS CODING: 42P.. (Platelet count)
+        ]]></Text>
+      </Action>
+      <SuggestedCode System="Read2" Code="42P.." Description="Platelet count" />
+    </Rule>
+
+    <!-- Acute Kidney Injury (Creatinine) -->
+    <Rule Name="AKI_Detection_Creatinine" Priority="1" Category="URGENT">
+      <Condition>
+        <Match TestCode="CREA" TestName="Creatinine" Operator="GreaterThan" Value="150" Unit="umol/L" />
+      </Condition>
+      <Action Type="DisplayAlert" Style="Critical">
+        <Title>⚠️ URGENT: Potential Acute Kidney Injury (AKI)</Title>
+        <Text><![CDATA[
+Creatinine significantly elevated (>150 µmol/L).
+
+AKI STRATIFICATION:
+- Stage 1: 1.5–1.9x baseline creatinine
+- Stage 2: 2.0–2.9x baseline creatinine
+- Stage 3: >3.0x baseline creatinine or >354 µmol/L
+
+ACTIONS:
+1. Compare with baseline.
+2. Review for nephrotoxic drugs (NSAIDs, ACEi, ARBs).
+3. Assess hydration status.
+4. If eGFR <30 or Stage 2/3 AKI → Urgent hospital review.
+
+EMIS CODING: 444.. (Serum creatinine level)
+        ]]></Text>
+      </Action>
+      <SuggestedCode System="Read2" Code="444.." Description="Serum creatinine level" />
+    </Rule>
+
     <!-- ==================== HAEMATOLOGY ALERTS ==================== -->
 
     <!-- Anaemia (Male) -->
@@ -492,6 +599,81 @@ IF PREGNANT:
 EMIS CODING: A707. (Hepatitis B carrier)
         ]]></Text>
       </Action>
+    <!-- NT-proBNP (Heart Failure) -->
+    <Rule Name="HF_Screening_BNP" Priority="1" Category="Cardiology">
+      <Condition>
+        <Match TestCode="BNP" TestName="NT-proBNP" Operator="GreaterThanOrEqual" Value="400" Unit="pg/mL" />
+      </Condition>
+      <Action Type="DisplayPrompt" Style="Warning">
+        <Title>❤️ NT-proBNP Elevated: Heart Failure Suspected</Title>
+        <Text><![CDATA[
+NT-proBNP ≥ 400 pg/mL detected.
+
+CLINICAL PATHWAY (NG106):
+1. NT-proBNP 400–2000 pg/mL:
+   → Urgent Transthoracic Echocardiogram (within 6 weeks)
+   → Consider specialist review
+
+2. NT-proBNP > 2000 pg/mL:
+   → EMERGENCY referral for Echo/Specialist review (within 2 weeks)
+
+ACTIONS:
+- Perform ECG (look for AF, Q-waves, LVH)
+- Check renal function and thyroid
+- Do NOT delay referral if clinically unstable
+
+EMIS CODING: 43S1. (B-type natriuretic peptide)
+        ]]></Text>
+      </Action>
+      <SuggestedCode System="Read2" Code="43S1." Description="B-type natriuretic peptide" />
+    </Rule>
+
+    <!-- D-Dimer (VTE Risk) -->
+    <Rule Name="VTE_Risk_DDimer" Priority="1" Category="Cardiology">
+      <Condition>
+        <Match TestCode="DDIM" TestName="D-Dimer" Operator="GreaterThan" Value="500" Unit="ng/mL" />
+      </Condition>
+      <Action Type="DisplayPrompt" Style="Critical">
+        <Title>⚠️ D-Dimer Elevated: Possible VTE</Title>
+        <Text><![CDATA[
+D-Dimer > 500 ng/mL detected.
+
+CLINICAL PATHWAY:
+1. Use Wells Score (DVT or PE) to determine pre-test probability.
+2. If Wells Score indicates VTE likely:
+   → Arrange urgent imaging (US Doppler / CTPA)
+   → Start interim anticoagulation (e.g. DOAC) if no delay possible.
+3. Consider age-adjusted threshold (Age x 10 if >50 years).
+
+⚠️ D-Dimer can be elevated in inflammation, pregnancy, and malignancy.
+
+EMIS CODING: 43Y3. (D-dimer level)
+        ]]></Text>
+      </Action>
+      <SuggestedCode System="Read2" Code="43Y3." Description="D-dimer level" />
+    </Rule>
+
+    <!-- FIT Test (GI Malignancy) -->
+    <Rule Name="FIT_Positive_GI" Priority="1" Category="Gastro">
+      <Condition>
+        <Match TestCode="FIT" TestName="Faecal Immunochemical Test" Operator="GreaterThanOrEqual" Value="10" Unit="ug/g" />
+      </Condition>
+      <Action Type="DisplayPrompt" Style="Critical">
+        <Title>🚨 FIT Positive: GI Malignancy Risk</Title>
+        <Text><![CDATA[
+FIT ≥ 10 µg/g detected.
+
+ACTION (NG12):
+1. **EMERGENCY (2WW) REFERRAL** to Lower GI / Colorectal.
+2. Check Hb and Ferritin if not done.
+3. Review patient for "red flag" symptoms (change in bowel habit, weight loss).
+
+⚠️ 1 in 10 patients with FIT ≥10 will be diagnosed with colorectal cancer.
+
+EMIS CODING: 479.. (Faecal occult blood test)
+        ]]></Text>
+      </Action>
+      <SuggestedCode System="Read2" Code="479.." Description="Faecal occult blood test" />
     </Rule>
 
   </Logic>

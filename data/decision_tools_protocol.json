@@ -1,7 +1,7 @@
 {
   "source": "Learning library + NICE CKS/NG; management steps from guidelines",
-  "generated": "2026-02-16T20:16:22.726Z",
-  "totalTools": 1902,
+  "generated": "2026-02-17T05:28:23.066Z",
+  "totalTools": 1920,
   "systems": [
     {
       "id": "cardiovascular",
@@ -632,19 +632,29 @@
           "evidence": "And this includes a whole string of interactive and informative webinars designed to address the primary care challenges of diagnosing and managing chronic conditions across a range of therapeutic areas. Today in this podcast we're going to be discussing an important part of the …",
           "steps": [
             {
-              "id": "guidance",
-              "question": "Clinical Guidance",
+              "id": "joint-exam",
+              "question": "Joint for Examination",
               "type": "dropdown",
               "options": [
                 {
-                  "value": "standard",
-                  "label": "Management Guidance",
-                  "guidance": "Specific clinical management steps are not yet available for this localized tool version. Please refer to the NICE References listed above and your local clinical formulary for treatment pathways. Always ensure a full clinical assessment and risk assessment is performed."
+                  "value": "shoulder",
+                  "label": "Shoulder",
+                  "guidance": "Look (asymmetry, wasting); Feel (ACJ, SCJ, humerus); Move (Active/Passive: Abd, Flex, Rot). Tests: Hawkins-Kennedy (impingement), Empty Can (Supraspinatus)."
                 },
                 {
-                  "value": "referral",
-                  "label": "Referral & Safety-netting",
-                  "guidance": "Consult NICE CKS for specific referral criteria. Always provide safety-netting advice (e.g. worsened symptoms, red flags) and document your clinical rationale. Use the 'Learning library' to find related educational materials."
+                  "value": "knee",
+                  "label": "Knee",
+                  "guidance": "Look (effusion, alignment); Feel (joint line tenderness, temperature); Move (Active/Passive Flex/Ext). Tests: Lachman (ACL), McMurray (Meniscus), Patellar Tap (effusion)."
+                },
+                {
+                  "value": "hip",
+                  "label": "Hip",
+                  "guidance": "Look (gait, Trendelenburg); Feel (greater trochanter); Move (Flex, Int/Ext Rotation). Special: Thomas test (flexion contracture)."
+                },
+                {
+                  "value": "spine",
+                  "label": "Spine (Back/Neck)",
+                  "guidance": "Look (curvature, scoliosis); Feel (spinous processes, paravertebral muscles); Move (Flex, Ext, Lat Flex). Neurology: SLR (Root stretch), Dermatomes, Myotomes, Reflexes."
                 }
               ]
             }
@@ -661,19 +671,29 @@
           "evidence": "And this includes a whole string of interactive and informative webinars designed to address the primary care challenges of diagnosing and managing chronic conditions across a range of therapeutic areas. Today in this podcast we're going to be discussing an important part of the …",
           "steps": [
             {
-              "id": "guidance",
-              "question": "Clinical Guidance",
+              "id": "joint-exam",
+              "question": "Joint for Examination",
               "type": "dropdown",
               "options": [
                 {
-                  "value": "standard",
-                  "label": "Management Guidance",
-                  "guidance": "Specific clinical management steps are not yet available for this localized tool version. Please refer to the NICE References listed above and your local clinical formulary for treatment pathways. Always ensure a full clinical assessment and risk assessment is performed."
+                  "value": "shoulder",
+                  "label": "Shoulder",
+                  "guidance": "Look (asymmetry, wasting); Feel (ACJ, SCJ, humerus); Move (Active/Passive: Abd, Flex, Rot). Tests: Hawkins-Kennedy (impingement), Empty Can (Supraspinatus)."
                 },
                 {
-                  "value": "referral",
-                  "label": "Referral & Safety-netting",
-                  "guidance": "Consult NICE CKS for specific referral criteria. Always provide safety-netting advice (e.g. worsened symptoms, red flags) and document your clinical rationale. Use the 'Learning library' to find related educational materials."
+                  "value": "knee",
+                  "label": "Knee",
+                  "guidance": "Look (effusion, alignment); Feel (joint line tenderness, temperature); Move (Active/Passive Flex/Ext). Tests: Lachman (ACL), McMurray (Meniscus), Patellar Tap (effusion)."
+                },
+                {
+                  "value": "hip",
+                  "label": "Hip",
+                  "guidance": "Look (gait, Trendelenburg); Feel (greater trochanter); Move (Flex, Int/Ext Rotation). Special: Thomas test (flexion contracture)."
+                },
+                {
+                  "value": "spine",
+                  "label": "Spine (Back/Neck)",
+                  "guidance": "Look (curvature, scoliosis); Feel (spinous processes, paravertebral muscles); Move (Flex, Ext, Lat Flex). Neurology: SLR (Root stretch), Dermatomes, Myotomes, Reflexes."
                 }
               ]
             }
@@ -690,19 +710,29 @@
           "evidence": "And this includes a whole string of interactive and informative webinars designed to address the primary care challenges of diagnosing and managing chronic conditions across a range of therapeutic areas. Today in this podcast we're going to be discussing an important part of the …",
           "steps": [
             {
-              "id": "guidance",
-              "question": "Clinical Guidance",
+              "id": "joint-exam",
+              "question": "Joint for Examination",
               "type": "dropdown",
               "options": [
                 {
-                  "value": "standard",
-                  "label": "Management Guidance",
-                  "guidance": "Specific clinical management steps are not yet available for this localized tool version. Please refer to the NICE References listed above and your local clinical formulary for treatment pathways. Always ensure a full clinical assessment and risk assessment is performed."
+                  "value": "shoulder",
+                  "label": "Shoulder",
+                  "guidance": "Look (asymmetry, wasting); Feel (ACJ, SCJ, humerus); Move (Active/Passive: Abd, Flex, Rot). Tests: Hawkins-Kennedy (impingement), Empty Can (Supraspinatus)."
                 },
                 {
-                  "value": "referral",
-                  "label": "Referral & Safety-netting",
-                  "guidance": "Consult NICE CKS for specific referral criteria. Always provide safety-netting advice (e.g. worsened symptoms, red flags) and document your clinical rationale. Use the 'Learning library' to find related educational materials."
+                  "value": "knee",
+                  "label": "Knee",
+                  "guidance": "Look (effusion, alignment); Feel (joint line tenderness, temperature); Move (Active/Passive Flex/Ext). Tests: Lachman (ACL), McMurray (Meniscus), Patellar Tap (effusion)."
+                },
+                {
+                  "value": "hip",
+                  "label": "Hip",
+                  "guidance": "Look (gait, Trendelenburg); Feel (greater trochanter); Move (Flex, Int/Ext Rotation). Special: Thomas test (flexion contracture)."
+                },
+                {
+                  "value": "spine",
+                  "label": "Spine (Back/Neck)",
+                  "guidance": "Look (curvature, scoliosis); Feel (spinous processes, paravertebral muscles); Move (Flex, Ext, Lat Flex). Neurology: SLR (Root stretch), Dermatomes, Myotomes, Reflexes."
                 }
               ]
             }
@@ -7046,19 +7076,19 @@
           "evidence": "Management per NICE CKS and Local formulary.",
           "steps": [
             {
-              "id": "guidance",
-              "question": "Clinical Guidance",
+              "id": "arthritis-type",
+              "question": "Suspected Type",
               "type": "dropdown",
               "options": [
                 {
-                  "value": "standard",
-                  "label": "Management Guidance",
-                  "guidance": "Specific clinical management steps are not yet available for this localized tool version. Please refer to the NICE References listed above and your local clinical formulary for treatment pathways. Always ensure a full clinical assessment and risk assessment is performed."
+                  "value": "oa",
+                  "label": "Osteoarthritis",
+                  "guidance": "Diagnosis: Age ≥45, activity-related joint pain, no/brief morning stiffness (<30m). Management: Exercise, weight loss, topical NSAIDs, education. NICE NG226."
                 },
                 {
-                  "value": "referral",
-                  "label": "Referral & Safety-netting",
-                  "guidance": "Consult NICE CKS for specific referral criteria. Always provide safety-netting advice (e.g. worsened symptoms, red flags) and document your clinical rationale. Use the 'Learning library' to find related educational materials."
+                  "value": "ra",
+                  "label": "Rheumatoid Arthritis (Suspected)",
+                  "guidance": "Suspect if persistent joint synovitis (swelling). Urgent referral (within 3 weeks). Baseline: FBC, CRP, ESR, RF, Anti-CCP, X-rays. Start DMARD only after specialist review. NICE NG100."
                 }
               ]
             }
@@ -8728,19 +8758,19 @@
           "evidence": "Management per NICE CKS and Local formulary.",
           "steps": [
             {
-              "id": "guidance",
-              "question": "Clinical Guidance",
+              "id": "fatigue-workup",
+              "question": "Workup Phase",
               "type": "dropdown",
               "options": [
                 {
-                  "value": "standard",
-                  "label": "Management Guidance",
-                  "guidance": "Specific clinical management steps are not yet available for this localized tool version. Please refer to the NICE References listed above and your local clinical formulary for treatment pathways. Always ensure a full clinical assessment and risk assessment is performed."
+                  "value": "screen",
+                  "label": "Initial Screening",
+                  "guidance": "History: Sleep, stress, diet, drugs. Bloods: FBC, Ferritin, U&E, TFT, HbA1c, Vit D, Bone, LFT, Coeliac screen. NICE CKS."
                 },
                 {
-                  "value": "referral",
-                  "label": "Referral & Safety-netting",
-                  "guidance": "Consult NICE CKS for specific referral criteria. Always provide safety-netting advice (e.g. worsened symptoms, red flags) and document your clinical rationale. Use the 'Learning library' to find related educational materials."
+                  "value": "me-cfs",
+                  "label": "Suspected ME/CFS",
+                  "guidance": "Persistent fatigue >3 months. Check NICE NG206 for diagnostic criteria. Do not offer LET or GET. Focus on energy management (pacing)."
                 }
               ]
             }
@@ -18154,19 +18184,19 @@
           "evidence": "Management per NICE CKS and Local formulary.",
           "steps": [
             {
-              "id": "guidance",
-              "question": "Clinical Guidance",
+              "id": "obesity-mgmt",
+              "question": "Management Level",
               "type": "dropdown",
               "options": [
                 {
-                  "value": "standard",
-                  "label": "Management Guidance",
-                  "guidance": "Specific clinical management steps are not yet available for this localized tool version. Please refer to the NICE References listed above and your local clinical formulary for treatment pathways. Always ensure a full clinical assessment and risk assessment is performed."
+                  "value": "lifestyle",
+                  "label": "Lifestyle & BMI assessment",
+                  "guidance": "Calculate BMI and waist circumference. Set 5-10% weight loss goal. Tier 2 weight management referral. NICE CG189."
                 },
                 {
-                  "value": "referral",
-                  "label": "Referral & Safety-netting",
-                  "guidance": "Consult NICE CKS for specific referral criteria. Always provide safety-netting advice (e.g. worsened symptoms, red flags) and document your clinical rationale. Use the 'Learning library' to find related educational materials."
+                  "value": "medication",
+                  "label": "Pharmacotherapy (Orlistat/GLP-1)",
+                  "guidance": "Orlistat if BMI ≥30 (or ≥28 with comorbidities). GLP-1 (e.g. Semaglutide) via Tier 3/4 specialist clinics if BMI ≥35 (or ≥30 with comorb in some cases). NICE TA664."
                 }
               ]
             }
@@ -18182,19 +18212,19 @@
           "evidence": "Management per NICE CKS and Local formulary.",
           "steps": [
             {
-              "id": "guidance",
-              "question": "Clinical Guidance",
+              "id": "obesity-mgmt",
+              "question": "Management Level",
               "type": "dropdown",
               "options": [
                 {
-                  "value": "standard",
-                  "label": "Management Guidance",
-                  "guidance": "Specific clinical management steps are not yet available for this localized tool version. Please refer to the NICE References listed above and your local clinical formulary for treatment pathways. Always ensure a full clinical assessment and risk assessment is performed."
+                  "value": "lifestyle",
+                  "label": "Lifestyle & BMI assessment",
+                  "guidance": "Calculate BMI and waist circumference. Set 5-10% weight loss goal. Tier 2 weight management referral. NICE CG189."
                 },
                 {
-                  "value": "referral",
-                  "label": "Referral & Safety-netting",
-                  "guidance": "Consult NICE CKS for specific referral criteria. Always provide safety-netting advice (e.g. worsened symptoms, red flags) and document your clinical rationale. Use the 'Learning library' to find related educational materials."
+                  "value": "medication",
+                  "label": "Pharmacotherapy (Orlistat/GLP-1)",
+                  "guidance": "Orlistat if BMI ≥30 (or ≥28 with comorbidities). GLP-1 (e.g. Semaglutide) via Tier 3/4 specialist clinics if BMI ≥35 (or ≥30 with comorb in some cases). NICE TA664."
                 }
               ]
             }
@@ -18210,19 +18240,19 @@
           "evidence": "Management per NICE CKS and Local formulary.",
           "steps": [
             {
-              "id": "guidance",
-              "question": "Clinical Guidance",
+              "id": "obesity-mgmt",
+              "question": "Management Level",
               "type": "dropdown",
               "options": [
                 {
-                  "value": "standard",
-                  "label": "Management Guidance",
-                  "guidance": "Specific clinical management steps are not yet available for this localized tool version. Please refer to the NICE References listed above and your local clinical formulary for treatment pathways. Always ensure a full clinical assessment and risk assessment is performed."
+                  "value": "lifestyle",
+                  "label": "Lifestyle & BMI assessment",
+                  "guidance": "Calculate BMI and waist circumference. Set 5-10% weight loss goal. Tier 2 weight management referral. NICE CG189."
                 },
                 {
-                  "value": "referral",
-                  "label": "Referral & Safety-netting",
-                  "guidance": "Consult NICE CKS for specific referral criteria. Always provide safety-netting advice (e.g. worsened symptoms, red flags) and document your clinical rationale. Use the 'Learning library' to find related educational materials."
+                  "value": "medication",
+                  "label": "Pharmacotherapy (Orlistat/GLP-1)",
+                  "guidance": "Orlistat if BMI ≥30 (or ≥28 with comorbidities). GLP-1 (e.g. Semaglutide) via Tier 3/4 specialist clinics if BMI ≥35 (or ≥30 with comorb in some cases). NICE TA664."
                 }
               ]
             }
@@ -18238,19 +18268,19 @@
           "evidence": "Management per NICE CKS and Local formulary.",
           "steps": [
             {
-              "id": "guidance",
-              "question": "Clinical Guidance",
+              "id": "obesity-mgmt",
+              "question": "Management Level",
               "type": "dropdown",
               "options": [
                 {
-                  "value": "standard",
-                  "label": "Management Guidance",
-                  "guidance": "Specific clinical management steps are not yet available for this localized tool version. Please refer to the NICE References listed above and your local clinical formulary for treatment pathways. Always ensure a full clinical assessment and risk assessment is performed."
+                  "value": "lifestyle",
+                  "label": "Lifestyle & BMI assessment",
+                  "guidance": "Calculate BMI and waist circumference. Set 5-10% weight loss goal. Tier 2 weight management referral. NICE CG189."
                 },
                 {
-                  "value": "referral",
-                  "label": "Referral & Safety-netting",
-                  "guidance": "Consult NICE CKS for specific referral criteria. Always provide safety-netting advice (e.g. worsened symptoms, red flags) and document your clinical rationale. Use the 'Learning library' to find related educational materials."
+                  "value": "medication",
+                  "label": "Pharmacotherapy (Orlistat/GLP-1)",
+                  "guidance": "Orlistat if BMI ≥30 (or ≥28 with comorbidities). GLP-1 (e.g. Semaglutide) via Tier 3/4 specialist clinics if BMI ≥35 (or ≥30 with comorb in some cases). NICE TA664."
                 }
               ]
             }
@@ -18266,19 +18296,19 @@
           "evidence": "Management per NICE CKS and Local formulary.",
           "steps": [
             {
-              "id": "guidance",
-              "question": "Clinical Guidance",
+              "id": "obesity-mgmt",
+              "question": "Management Level",
               "type": "dropdown",
               "options": [
                 {
-                  "value": "standard",
-                  "label": "Management Guidance",
-                  "guidance": "Specific clinical management steps are not yet available for this localized tool version. Please refer to the NICE References listed above and your local clinical formulary for treatment pathways. Always ensure a full clinical assessment and risk assessment is performed."
+                  "value": "lifestyle",
+                  "label": "Lifestyle & BMI assessment",
+                  "guidance": "Calculate BMI and waist circumference. Set 5-10% weight loss goal. Tier 2 weight management referral. NICE CG189."
                 },
                 {
-                  "value": "referral",
-                  "label": "Referral & Safety-netting",
-                  "guidance": "Consult NICE CKS for specific referral criteria. Always provide safety-netting advice (e.g. worsened symptoms, red flags) and document your clinical rationale. Use the 'Learning library' to find related educational materials."
+                  "value": "medication",
+                  "label": "Pharmacotherapy (Orlistat/GLP-1)",
+                  "guidance": "Orlistat if BMI ≥30 (or ≥28 with comorbidities). GLP-1 (e.g. Semaglutide) via Tier 3/4 specialist clinics if BMI ≥35 (or ≥30 with comorb in some cases). NICE TA664."
                 }
               ]
             }
@@ -18294,19 +18324,19 @@
           "evidence": "Management per NG189 and CKS Obesity.",
           "steps": [
             {
-              "id": "guidance",
-              "question": "Clinical Guidance",
+              "id": "obesity-mgmt",
+              "question": "Management Level",
               "type": "dropdown",
               "options": [
                 {
-                  "value": "standard",
-                  "label": "Management Guidance",
-                  "guidance": "Specific clinical management steps are not yet available for this localized tool version. Please refer to the NICE References listed above and your local clinical formulary for treatment pathways. Always ensure a full clinical assessment and risk assessment is performed."
+                  "value": "lifestyle",
+                  "label": "Lifestyle & BMI assessment",
+                  "guidance": "Calculate BMI and waist circumference. Set 5-10% weight loss goal. Tier 2 weight management referral. NICE CG189."
                 },
                 {
-                  "value": "referral",
-                  "label": "Referral & Safety-netting",
-                  "guidance": "Consult NICE CKS for specific referral criteria. Always provide safety-netting advice (e.g. worsened symptoms, red flags) and document your clinical rationale. Use the 'Learning library' to find related educational materials."
+                  "value": "medication",
+                  "label": "Pharmacotherapy (Orlistat/GLP-1)",
+                  "guidance": "Orlistat if BMI ≥30 (or ≥28 with comorbidities). GLP-1 (e.g. Semaglutide) via Tier 3/4 specialist clinics if BMI ≥35 (or ≥30 with comorb in some cases). NICE TA664."
                 }
               ]
             }
@@ -20073,19 +20103,19 @@
           "evidence": "Management per NICE CKS and Local formulary.",
           "steps": [
             {
-              "id": "guidance",
-              "question": "Clinical Guidance",
+              "id": "arthritis-type",
+              "question": "Suspected Type",
               "type": "dropdown",
               "options": [
                 {
-                  "value": "standard",
-                  "label": "Management Guidance",
-                  "guidance": "Specific clinical management steps are not yet available for this localized tool version. Please refer to the NICE References listed above and your local clinical formulary for treatment pathways. Always ensure a full clinical assessment and risk assessment is performed."
+                  "value": "oa",
+                  "label": "Osteoarthritis",
+                  "guidance": "Diagnosis: Age ≥45, activity-related joint pain, no/brief morning stiffness (<30m). Management: Exercise, weight loss, topical NSAIDs, education. NICE NG226."
                 },
                 {
-                  "value": "referral",
-                  "label": "Referral & Safety-netting",
-                  "guidance": "Consult NICE CKS for specific referral criteria. Always provide safety-netting advice (e.g. worsened symptoms, red flags) and document your clinical rationale. Use the 'Learning library' to find related educational materials."
+                  "value": "ra",
+                  "label": "Rheumatoid Arthritis (Suspected)",
+                  "guidance": "Suspect if persistent joint synovitis (swelling). Urgent referral (within 3 weeks). Baseline: FBC, CRP, ESR, RF, Anti-CCP, X-rays. Start DMARD only after specialist review. NICE NG100."
                 }
               ]
             }
@@ -20625,19 +20655,19 @@
           "evidence": "Management per NICE CKS and Local formulary.",
           "steps": [
             {
-              "id": "guidance",
-              "question": "Clinical Guidance",
+              "id": "cts-mgmt",
+              "question": "Clinical Features",
               "type": "dropdown",
               "options": [
                 {
-                  "value": "standard",
-                  "label": "Management Guidance",
-                  "guidance": "Specific clinical management steps are not yet available for this localized tool version. Please refer to the NICE References listed above and your local clinical formulary for treatment pathways. Always ensure a full clinical assessment and risk assessment is performed."
+                  "value": "mild",
+                  "label": "Mild (Sensory only)",
+                  "guidance": "Nocturnal splints (6 weeks). Steroid injection if no response. Nerve conduction studies if diagnosis uncertain. NICE CKS."
                 },
                 {
-                  "value": "referral",
-                  "label": "Referral & Safety-netting",
-                  "guidance": "Consult NICE CKS for specific referral criteria. Always provide safety-netting advice (e.g. worsened symptoms, red flags) and document your clinical rationale. Use the 'Learning library' to find related educational materials."
+                  "value": "severe",
+                  "label": "Severe (Motor / Wasting)",
+                  "guidance": "Thenar wasting or weakness → Urgent referral for surgical decompression. Review for systemic causes (Thyroid, Diabetes, Pregnancy)."
                 }
               ]
             }
@@ -20652,19 +20682,19 @@
           "evidence": "Management per CKS Carpal tunnel.",
           "steps": [
             {
-              "id": "guidance",
-              "question": "Clinical Guidance",
+              "id": "cts-mgmt",
+              "question": "Clinical Features",
               "type": "dropdown",
               "options": [
                 {
-                  "value": "standard",
-                  "label": "Management Guidance",
-                  "guidance": "Specific clinical management steps are not yet available for this localized tool version. Please refer to the NICE References listed above and your local clinical formulary for treatment pathways. Always ensure a full clinical assessment and risk assessment is performed."
+                  "value": "mild",
+                  "label": "Mild (Sensory only)",
+                  "guidance": "Nocturnal splints (6 weeks). Steroid injection if no response. Nerve conduction studies if diagnosis uncertain. NICE CKS."
                 },
                 {
-                  "value": "referral",
-                  "label": "Referral & Safety-netting",
-                  "guidance": "Consult NICE CKS for specific referral criteria. Always provide safety-netting advice (e.g. worsened symptoms, red flags) and document your clinical rationale. Use the 'Learning library' to find related educational materials."
+                  "value": "severe",
+                  "label": "Severe (Motor / Wasting)",
+                  "guidance": "Thenar wasting or weakness → Urgent referral for surgical decompression. Review for systemic causes (Thyroid, Diabetes, Pregnancy)."
                 }
               ]
             }
@@ -20680,19 +20710,19 @@
           "evidence": "Management per NICE CKS and Local formulary.",
           "steps": [
             {
-              "id": "guidance",
-              "question": "Clinical Guidance",
+              "id": "cts-mgmt",
+              "question": "Clinical Features",
               "type": "dropdown",
               "options": [
                 {
-                  "value": "standard",
-                  "label": "Management Guidance",
-                  "guidance": "Specific clinical management steps are not yet available for this localized tool version. Please refer to the NICE References listed above and your local clinical formulary for treatment pathways. Always ensure a full clinical assessment and risk assessment is performed."
+                  "value": "mild",
+                  "label": "Mild (Sensory only)",
+                  "guidance": "Nocturnal splints (6 weeks). Steroid injection if no response. Nerve conduction studies if diagnosis uncertain. NICE CKS."
                 },
                 {
-                  "value": "referral",
-                  "label": "Referral & Safety-netting",
-                  "guidance": "Consult NICE CKS for specific referral criteria. Always provide safety-netting advice (e.g. worsened symptoms, red flags) and document your clinical rationale. Use the 'Learning library' to find related educational materials."
+                  "value": "severe",
+                  "label": "Severe (Motor / Wasting)",
+                  "guidance": "Thenar wasting or weakness → Urgent referral for surgical decompression. Review for systemic causes (Thyroid, Diabetes, Pregnancy)."
                 }
               ]
             }
@@ -20709,19 +20739,19 @@
           "evidence": "Management per NICE CKS and Local formulary.",
           "steps": [
             {
-              "id": "guidance",
-              "question": "Clinical Guidance",
+              "id": "cts-mgmt",
+              "question": "Clinical Features",
               "type": "dropdown",
               "options": [
                 {
-                  "value": "standard",
-                  "label": "Management Guidance",
-                  "guidance": "Specific clinical management steps are not yet available for this localized tool version. Please refer to the NICE References listed above and your local clinical formulary for treatment pathways. Always ensure a full clinical assessment and risk assessment is performed."
+                  "value": "mild",
+                  "label": "Mild (Sensory only)",
+                  "guidance": "Nocturnal splints (6 weeks). Steroid injection if no response. Nerve conduction studies if diagnosis uncertain. NICE CKS."
                 },
                 {
-                  "value": "referral",
-                  "label": "Referral & Safety-netting",
-                  "guidance": "Consult NICE CKS for specific referral criteria. Always provide safety-netting advice (e.g. worsened symptoms, red flags) and document your clinical rationale. Use the 'Learning library' to find related educational materials."
+                  "value": "severe",
+                  "label": "Severe (Motor / Wasting)",
+                  "guidance": "Thenar wasting or weakness → Urgent referral for surgical decompression. Review for systemic causes (Thyroid, Diabetes, Pregnancy)."
                 }
               ]
             }
@@ -20738,19 +20768,19 @@
           "evidence": "Management per NICE CKS and Local formulary.",
           "steps": [
             {
-              "id": "guidance",
-              "question": "Clinical Guidance",
+              "id": "cts-mgmt",
+              "question": "Clinical Features",
               "type": "dropdown",
               "options": [
                 {
-                  "value": "standard",
-                  "label": "Management Guidance",
-                  "guidance": "Specific clinical management steps are not yet available for this localized tool version. Please refer to the NICE References listed above and your local clinical formulary for treatment pathways. Always ensure a full clinical assessment and risk assessment is performed."
+                  "value": "mild",
+                  "label": "Mild (Sensory only)",
+                  "guidance": "Nocturnal splints (6 weeks). Steroid injection if no response. Nerve conduction studies if diagnosis uncertain. NICE CKS."
                 },
                 {
-                  "value": "referral",
-                  "label": "Referral & Safety-netting",
-                  "guidance": "Consult NICE CKS for specific referral criteria. Always provide safety-netting advice (e.g. worsened symptoms, red flags) and document your clinical rationale. Use the 'Learning library' to find related educational materials."
+                  "value": "severe",
+                  "label": "Severe (Motor / Wasting)",
+                  "guidance": "Thenar wasting or weakness → Urgent referral for surgical decompression. Review for systemic causes (Thyroid, Diabetes, Pregnancy)."
                 }
               ]
             }
@@ -20882,19 +20912,19 @@
           "evidence": "Management per NICE CKS and Local formulary.",
           "steps": [
             {
-              "id": "guidance",
-              "question": "Clinical Guidance",
+              "id": "fatigue-workup",
+              "question": "Workup Phase",
               "type": "dropdown",
               "options": [
                 {
-                  "value": "standard",
-                  "label": "Management Guidance",
-                  "guidance": "Specific clinical management steps are not yet available for this localized tool version. Please refer to the NICE References listed above and your local clinical formulary for treatment pathways. Always ensure a full clinical assessment and risk assessment is performed."
+                  "value": "screen",
+                  "label": "Initial Screening",
+                  "guidance": "History: Sleep, stress, diet, drugs. Bloods: FBC, Ferritin, U&E, TFT, HbA1c, Vit D, Bone, LFT, Coeliac screen. NICE CKS."
                 },
                 {
-                  "value": "referral",
-                  "label": "Referral & Safety-netting",
-                  "guidance": "Consult NICE CKS for specific referral criteria. Always provide safety-netting advice (e.g. worsened symptoms, red flags) and document your clinical rationale. Use the 'Learning library' to find related educational materials."
+                  "value": "me-cfs",
+                  "label": "Suspected ME/CFS",
+                  "guidance": "Persistent fatigue >3 months. Check NICE NG206 for diagnostic criteria. Do not offer LET or GET. Focus on energy management (pacing)."
                 }
               ]
             }
@@ -22668,19 +22698,19 @@
           "evidence": "Management per NG130 and CKS Neck pain.",
           "steps": [
             {
-              "id": "guidance",
-              "question": "Clinical Guidance",
+              "id": "spine-mgmt",
+              "question": "Severity and Red Flags",
               "type": "dropdown",
               "options": [
                 {
-                  "value": "standard",
-                  "label": "Management Guidance",
-                  "guidance": "Specific clinical management steps are not yet available for this localized tool version. Please refer to the NICE References listed above and your local clinical formulary for treatment pathways. Always ensure a full clinical assessment and risk assessment is performed."
+                  "value": "red-flags",
+                  "label": "Red Flags (Cauda Equina / Malignancy)",
+                  "guidance": "Saddle anaesthesia, bladder/bowel dysfunction, bilateral sciatica, night pain, weight loss, history of cancer. Urgent same-day referral/A&E. NICE NG59."
                 },
                 {
-                  "value": "referral",
-                  "label": "Referral & Safety-netting",
-                  "guidance": "Consult NICE CKS for specific referral criteria. Always provide safety-netting advice (e.g. worsened symptoms, red flags) and document your clinical rationale. Use the 'Learning library' to find related educational materials."
+                  "value": "conservative",
+                  "label": "Stable / Spondylosis",
+                  "guidance": "Keep active. NSAIDs (regular) for flare. Physiotherapy referral. Avoid imaging in non-specific low back pain. Reassure if no neurology. NICE NG59."
                 }
               ]
             }
@@ -22696,19 +22726,19 @@
           "evidence": "Management per NICE CKS and Local formulary.",
           "steps": [
             {
-              "id": "guidance",
-              "question": "Clinical Guidance",
+              "id": "spine-mgmt",
+              "question": "Severity and Red Flags",
               "type": "dropdown",
               "options": [
                 {
-                  "value": "standard",
-                  "label": "Management Guidance",
-                  "guidance": "Specific clinical management steps are not yet available for this localized tool version. Please refer to the NICE References listed above and your local clinical formulary for treatment pathways. Always ensure a full clinical assessment and risk assessment is performed."
+                  "value": "red-flags",
+                  "label": "Red Flags (Cauda Equina / Malignancy)",
+                  "guidance": "Saddle anaesthesia, bladder/bowel dysfunction, bilateral sciatica, night pain, weight loss, history of cancer. Urgent same-day referral/A&E. NICE NG59."
                 },
                 {
-                  "value": "referral",
-                  "label": "Referral & Safety-netting",
-                  "guidance": "Consult NICE CKS for specific referral criteria. Always provide safety-netting advice (e.g. worsened symptoms, red flags) and document your clinical rationale. Use the 'Learning library' to find related educational materials."
+                  "value": "conservative",
+                  "label": "Stable / Spondylosis",
+                  "guidance": "Keep active. NSAIDs (regular) for flare. Physiotherapy referral. Avoid imaging in non-specific low back pain. Reassure if no neurology. NICE NG59."
                 }
               ]
             }
@@ -22724,19 +22754,19 @@
           "evidence": "Management per NICE CKS and Local formulary.",
           "steps": [
             {
-              "id": "guidance",
-              "question": "Clinical Guidance",
+              "id": "spine-mgmt",
+              "question": "Severity and Red Flags",
               "type": "dropdown",
               "options": [
                 {
-                  "value": "standard",
-                  "label": "Management Guidance",
-                  "guidance": "Specific clinical management steps are not yet available for this localized tool version. Please refer to the NICE References listed above and your local clinical formulary for treatment pathways. Always ensure a full clinical assessment and risk assessment is performed."
+                  "value": "red-flags",
+                  "label": "Red Flags (Cauda Equina / Malignancy)",
+                  "guidance": "Saddle anaesthesia, bladder/bowel dysfunction, bilateral sciatica, night pain, weight loss, history of cancer. Urgent same-day referral/A&E. NICE NG59."
                 },
                 {
-                  "value": "referral",
-                  "label": "Referral & Safety-netting",
-                  "guidance": "Consult NICE CKS for specific referral criteria. Always provide safety-netting advice (e.g. worsened symptoms, red flags) and document your clinical rationale. Use the 'Learning library' to find related educational materials."
+                  "value": "conservative",
+                  "label": "Stable / Spondylosis",
+                  "guidance": "Keep active. NSAIDs (regular) for flare. Physiotherapy referral. Avoid imaging in non-specific low back pain. Reassure if no neurology. NICE NG59."
                 }
               ]
             }
@@ -22752,19 +22782,19 @@
           "evidence": "Management per NICE CKS and Local formulary.",
           "steps": [
             {
-              "id": "guidance",
-              "question": "Clinical Guidance",
+              "id": "spine-mgmt",
+              "question": "Severity and Red Flags",
               "type": "dropdown",
               "options": [
                 {
-                  "value": "standard",
-                  "label": "Management Guidance",
-                  "guidance": "Specific clinical management steps are not yet available for this localized tool version. Please refer to the NICE References listed above and your local clinical formulary for treatment pathways. Always ensure a full clinical assessment and risk assessment is performed."
+                  "value": "red-flags",
+                  "label": "Red Flags (Cauda Equina / Malignancy)",
+                  "guidance": "Saddle anaesthesia, bladder/bowel dysfunction, bilateral sciatica, night pain, weight loss, history of cancer. Urgent same-day referral/A&E. NICE NG59."
                 },
                 {
-                  "value": "referral",
-                  "label": "Referral & Safety-netting",
-                  "guidance": "Consult NICE CKS for specific referral criteria. Always provide safety-netting advice (e.g. worsened symptoms, red flags) and document your clinical rationale. Use the 'Learning library' to find related educational materials."
+                  "value": "conservative",
+                  "label": "Stable / Spondylosis",
+                  "guidance": "Keep active. NSAIDs (regular) for flare. Physiotherapy referral. Avoid imaging in non-specific low back pain. Reassure if no neurology. NICE NG59."
                 }
               ]
             }
@@ -22856,6 +22886,158 @@
             }
           ],
           "episode": 186
+        },
+        {
+          "id": "orthopaedic-examination-hip",
+          "title": "Orthopaedic Examination - Hip",
+          "niceRefs": [
+            "NICE CKS",
+            "Local formulary"
+          ],
+          "evidence": "Management per NICE CKS and Local formulary.",
+          "steps": [
+            {
+              "id": "joint-exam",
+              "question": "Joint for Examination",
+              "type": "dropdown",
+              "options": [
+                {
+                  "value": "shoulder",
+                  "label": "Shoulder",
+                  "guidance": "Look (asymmetry, wasting); Feel (ACJ, SCJ, humerus); Move (Active/Passive: Abd, Flex, Rot). Tests: Hawkins-Kennedy (impingement), Empty Can (Supraspinatus)."
+                },
+                {
+                  "value": "knee",
+                  "label": "Knee",
+                  "guidance": "Look (effusion, alignment); Feel (joint line tenderness, temperature); Move (Active/Passive Flex/Ext). Tests: Lachman (ACL), McMurray (Meniscus), Patellar Tap (effusion)."
+                },
+                {
+                  "value": "hip",
+                  "label": "Hip",
+                  "guidance": "Look (gait, Trendelenburg); Feel (greater trochanter); Move (Flex, Int/Ext Rotation). Special: Thomas test (flexion contracture)."
+                },
+                {
+                  "value": "spine",
+                  "label": "Spine (Back/Neck)",
+                  "guidance": "Look (curvature, scoliosis); Feel (spinous processes, paravertebral muscles); Move (Flex, Ext, Lat Flex). Neurology: SLR (Root stretch), Dermatomes, Myotomes, Reflexes."
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "orthopaedic-examination-knee",
+          "title": "Orthopaedic Examination - Knee",
+          "niceRefs": [
+            "NICE CKS",
+            "Local formulary"
+          ],
+          "evidence": "Management per NICE CKS and Local formulary.",
+          "steps": [
+            {
+              "id": "joint-exam",
+              "question": "Joint for Examination",
+              "type": "dropdown",
+              "options": [
+                {
+                  "value": "shoulder",
+                  "label": "Shoulder",
+                  "guidance": "Look (asymmetry, wasting); Feel (ACJ, SCJ, humerus); Move (Active/Passive: Abd, Flex, Rot). Tests: Hawkins-Kennedy (impingement), Empty Can (Supraspinatus)."
+                },
+                {
+                  "value": "knee",
+                  "label": "Knee",
+                  "guidance": "Look (effusion, alignment); Feel (joint line tenderness, temperature); Move (Active/Passive Flex/Ext). Tests: Lachman (ACL), McMurray (Meniscus), Patellar Tap (effusion)."
+                },
+                {
+                  "value": "hip",
+                  "label": "Hip",
+                  "guidance": "Look (gait, Trendelenburg); Feel (greater trochanter); Move (Flex, Int/Ext Rotation). Special: Thomas test (flexion contracture)."
+                },
+                {
+                  "value": "spine",
+                  "label": "Spine (Back/Neck)",
+                  "guidance": "Look (curvature, scoliosis); Feel (spinous processes, paravertebral muscles); Move (Flex, Ext, Lat Flex). Neurology: SLR (Root stretch), Dermatomes, Myotomes, Reflexes."
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "orthopaedic-examination-shoulder",
+          "title": "Orthopaedic Examination - Shoulder",
+          "niceRefs": [
+            "NICE CKS",
+            "Local formulary"
+          ],
+          "evidence": "Management per NICE CKS and Local formulary.",
+          "steps": [
+            {
+              "id": "joint-exam",
+              "question": "Joint for Examination",
+              "type": "dropdown",
+              "options": [
+                {
+                  "value": "shoulder",
+                  "label": "Shoulder",
+                  "guidance": "Look (asymmetry, wasting); Feel (ACJ, SCJ, humerus); Move (Active/Passive: Abd, Flex, Rot). Tests: Hawkins-Kennedy (impingement), Empty Can (Supraspinatus)."
+                },
+                {
+                  "value": "knee",
+                  "label": "Knee",
+                  "guidance": "Look (effusion, alignment); Feel (joint line tenderness, temperature); Move (Active/Passive Flex/Ext). Tests: Lachman (ACL), McMurray (Meniscus), Patellar Tap (effusion)."
+                },
+                {
+                  "value": "hip",
+                  "label": "Hip",
+                  "guidance": "Look (gait, Trendelenburg); Feel (greater trochanter); Move (Flex, Int/Ext Rotation). Special: Thomas test (flexion contracture)."
+                },
+                {
+                  "value": "spine",
+                  "label": "Spine (Back/Neck)",
+                  "guidance": "Look (curvature, scoliosis); Feel (spinous processes, paravertebral muscles); Move (Flex, Ext, Lat Flex). Neurology: SLR (Root stretch), Dermatomes, Myotomes, Reflexes."
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "orthopaedic-examination-spine",
+          "title": "Orthopaedic Examination - Spine",
+          "niceRefs": [
+            "NICE CKS",
+            "Local formulary"
+          ],
+          "evidence": "Management per NICE CKS and Local formulary.",
+          "steps": [
+            {
+              "id": "joint-exam",
+              "question": "Joint for Examination",
+              "type": "dropdown",
+              "options": [
+                {
+                  "value": "shoulder",
+                  "label": "Shoulder",
+                  "guidance": "Look (asymmetry, wasting); Feel (ACJ, SCJ, humerus); Move (Active/Passive: Abd, Flex, Rot). Tests: Hawkins-Kennedy (impingement), Empty Can (Supraspinatus)."
+                },
+                {
+                  "value": "knee",
+                  "label": "Knee",
+                  "guidance": "Look (effusion, alignment); Feel (joint line tenderness, temperature); Move (Active/Passive Flex/Ext). Tests: Lachman (ACL), McMurray (Meniscus), Patellar Tap (effusion)."
+                },
+                {
+                  "value": "hip",
+                  "label": "Hip",
+                  "guidance": "Look (gait, Trendelenburg); Feel (greater trochanter); Move (Flex, Int/Ext Rotation). Special: Thomas test (flexion contracture)."
+                },
+                {
+                  "value": "spine",
+                  "label": "Spine (Back/Neck)",
+                  "guidance": "Look (curvature, scoliosis); Feel (spinous processes, paravertebral muscles); Move (Flex, Ext, Lat Flex). Neurology: SLR (Root stretch), Dermatomes, Myotomes, Reflexes."
+                }
+              ]
+            }
+          ]
         },
         {
           "id": "osteoarthritis-general",
@@ -23215,19 +23397,19 @@
           "evidence": "Management per NICE CKS and Local formulary.",
           "steps": [
             {
-              "id": "guidance",
-              "question": "Clinical Guidance",
+              "id": "arthritis-type",
+              "question": "Suspected Type",
               "type": "dropdown",
               "options": [
                 {
-                  "value": "standard",
-                  "label": "Management Guidance",
-                  "guidance": "Specific clinical management steps are not yet available for this localized tool version. Please refer to the NICE References listed above and your local clinical formulary for treatment pathways. Always ensure a full clinical assessment and risk assessment is performed."
+                  "value": "oa",
+                  "label": "Osteoarthritis",
+                  "guidance": "Diagnosis: Age ≥45, activity-related joint pain, no/brief morning stiffness (<30m). Management: Exercise, weight loss, topical NSAIDs, education. NICE NG226."
                 },
                 {
-                  "value": "referral",
-                  "label": "Referral & Safety-netting",
-                  "guidance": "Consult NICE CKS for specific referral criteria. Always provide safety-netting advice (e.g. worsened symptoms, red flags) and document your clinical rationale. Use the 'Learning library' to find related educational materials."
+                  "value": "ra",
+                  "label": "Rheumatoid Arthritis (Suspected)",
+                  "guidance": "Suspect if persistent joint synovitis (swelling). Urgent referral (within 3 weeks). Baseline: FBC, CRP, ESR, RF, Anti-CCP, X-rays. Start DMARD only after specialist review. NICE NG100."
                 }
               ]
             }
@@ -23664,19 +23846,19 @@
           "evidence": "Management per NICE CKS and Local formulary.",
           "steps": [
             {
-              "id": "guidance",
-              "question": "Clinical Guidance",
+              "id": "arthritis-type",
+              "question": "Suspected Type",
               "type": "dropdown",
               "options": [
                 {
-                  "value": "standard",
-                  "label": "Management Guidance",
-                  "guidance": "Specific clinical management steps are not yet available for this localized tool version. Please refer to the NICE References listed above and your local clinical formulary for treatment pathways. Always ensure a full clinical assessment and risk assessment is performed."
+                  "value": "oa",
+                  "label": "Osteoarthritis",
+                  "guidance": "Diagnosis: Age ≥45, activity-related joint pain, no/brief morning stiffness (<30m). Management: Exercise, weight loss, topical NSAIDs, education. NICE NG226."
                 },
                 {
-                  "value": "referral",
-                  "label": "Referral & Safety-netting",
-                  "guidance": "Consult NICE CKS for specific referral criteria. Always provide safety-netting advice (e.g. worsened symptoms, red flags) and document your clinical rationale. Use the 'Learning library' to find related educational materials."
+                  "value": "ra",
+                  "label": "Rheumatoid Arthritis (Suspected)",
+                  "guidance": "Suspect if persistent joint synovitis (swelling). Urgent referral (within 3 weeks). Baseline: FBC, CRP, ESR, RF, Anti-CCP, X-rays. Start DMARD only after specialist review. NICE NG100."
                 }
               ]
             }
@@ -23692,19 +23874,19 @@
           "evidence": "Management per NICE CKS and Local formulary.",
           "steps": [
             {
-              "id": "guidance",
-              "question": "Clinical Guidance",
+              "id": "arthritis-type",
+              "question": "Suspected Type",
               "type": "dropdown",
               "options": [
                 {
-                  "value": "standard",
-                  "label": "Management Guidance",
-                  "guidance": "Specific clinical management steps are not yet available for this localized tool version. Please refer to the NICE References listed above and your local clinical formulary for treatment pathways. Always ensure a full clinical assessment and risk assessment is performed."
+                  "value": "oa",
+                  "label": "Osteoarthritis",
+                  "guidance": "Diagnosis: Age ≥45, activity-related joint pain, no/brief morning stiffness (<30m). Management: Exercise, weight loss, topical NSAIDs, education. NICE NG226."
                 },
                 {
-                  "value": "referral",
-                  "label": "Referral & Safety-netting",
-                  "guidance": "Consult NICE CKS for specific referral criteria. Always provide safety-netting advice (e.g. worsened symptoms, red flags) and document your clinical rationale. Use the 'Learning library' to find related educational materials."
+                  "value": "ra",
+                  "label": "Rheumatoid Arthritis (Suspected)",
+                  "guidance": "Suspect if persistent joint synovitis (swelling). Urgent referral (within 3 weeks). Baseline: FBC, CRP, ESR, RF, Anti-CCP, X-rays. Start DMARD only after specialist review. NICE NG100."
                 }
               ]
             }
@@ -24004,19 +24186,47 @@
           "evidence": "Management per NICE CKS and Local formulary.",
           "steps": [
             {
-              "id": "guidance",
-              "question": "Clinical Guidance",
+              "id": "arthritis-type",
+              "question": "Suspected Type",
               "type": "dropdown",
               "options": [
                 {
-                  "value": "standard",
-                  "label": "Management Guidance",
-                  "guidance": "Specific clinical management steps are not yet available for this localized tool version. Please refer to the NICE References listed above and your local clinical formulary for treatment pathways. Always ensure a full clinical assessment and risk assessment is performed."
+                  "value": "oa",
+                  "label": "Osteoarthritis",
+                  "guidance": "Diagnosis: Age ≥45, activity-related joint pain, no/brief morning stiffness (<30m). Management: Exercise, weight loss, topical NSAIDs, education. NICE NG226."
                 },
                 {
-                  "value": "referral",
-                  "label": "Referral & Safety-netting",
-                  "guidance": "Consult NICE CKS for specific referral criteria. Always provide safety-netting advice (e.g. worsened symptoms, red flags) and document your clinical rationale. Use the 'Learning library' to find related educational materials."
+                  "value": "ra",
+                  "label": "Rheumatoid Arthritis (Suspected)",
+                  "guidance": "Suspect if persistent joint synovitis (swelling). Urgent referral (within 3 weeks). Baseline: FBC, CRP, ESR, RF, Anti-CCP, X-rays. Start DMARD only after specialist review. NICE NG100."
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "spondylosis",
+          "title": "Spondylosis",
+          "niceRefs": [
+            "NICE CKS",
+            "Local formulary"
+          ],
+          "evidence": "Management per NICE CKS and Local formulary.",
+          "steps": [
+            {
+              "id": "spine-mgmt",
+              "question": "Severity and Red Flags",
+              "type": "dropdown",
+              "options": [
+                {
+                  "value": "red-flags",
+                  "label": "Red Flags (Cauda Equina / Malignancy)",
+                  "guidance": "Saddle anaesthesia, bladder/bowel dysfunction, bilateral sciatica, night pain, weight loss, history of cancer. Urgent same-day referral/A&E. NICE NG59."
+                },
+                {
+                  "value": "conservative",
+                  "label": "Stable / Spondylosis",
+                  "guidance": "Keep active. NSAIDs (regular) for flare. Physiotherapy referral. Avoid imaging in non-specific low back pain. Reassure if no neurology. NICE NG59."
                 }
               ]
             }
@@ -24200,19 +24410,19 @@
           "evidence": "Management per NICE CKS and Local formulary.",
           "steps": [
             {
-              "id": "guidance",
-              "question": "Clinical Guidance",
+              "id": "cts-mgmt",
+              "question": "Clinical Features",
               "type": "dropdown",
               "options": [
                 {
-                  "value": "standard",
-                  "label": "Management Guidance",
-                  "guidance": "Specific clinical management steps are not yet available for this localized tool version. Please refer to the NICE References listed above and your local clinical formulary for treatment pathways. Always ensure a full clinical assessment and risk assessment is performed."
+                  "value": "mild",
+                  "label": "Mild (Sensory only)",
+                  "guidance": "Nocturnal splints (6 weeks). Steroid injection if no response. Nerve conduction studies if diagnosis uncertain. NICE CKS."
                 },
                 {
-                  "value": "referral",
-                  "label": "Referral & Safety-netting",
-                  "guidance": "Consult NICE CKS for specific referral criteria. Always provide safety-netting advice (e.g. worsened symptoms, red flags) and document your clinical rationale. Use the 'Learning library' to find related educational materials."
+                  "value": "severe",
+                  "label": "Severe (Motor / Wasting)",
+                  "guidance": "Thenar wasting or weakness → Urgent referral for surgical decompression. Review for systemic causes (Thyroid, Diabetes, Pregnancy)."
                 }
               ]
             }
@@ -26043,19 +26253,19 @@
           "evidence": "Management per NICE CKS and Local formulary.",
           "steps": [
             {
-              "id": "guidance",
-              "question": "Clinical Guidance",
+              "id": "obesity-mgmt",
+              "question": "Management Level",
               "type": "dropdown",
               "options": [
                 {
-                  "value": "standard",
-                  "label": "Management Guidance",
-                  "guidance": "Specific clinical management steps are not yet available for this localized tool version. Please refer to the NICE References listed above and your local clinical formulary for treatment pathways. Always ensure a full clinical assessment and risk assessment is performed."
+                  "value": "lifestyle",
+                  "label": "Lifestyle & BMI assessment",
+                  "guidance": "Calculate BMI and waist circumference. Set 5-10% weight loss goal. Tier 2 weight management referral. NICE CG189."
                 },
                 {
-                  "value": "referral",
-                  "label": "Referral & Safety-netting",
-                  "guidance": "Consult NICE CKS for specific referral criteria. Always provide safety-netting advice (e.g. worsened symptoms, red flags) and document your clinical rationale. Use the 'Learning library' to find related educational materials."
+                  "value": "medication",
+                  "label": "Pharmacotherapy (Orlistat/GLP-1)",
+                  "guidance": "Orlistat if BMI ≥30 (or ≥28 with comorbidities). GLP-1 (e.g. Semaglutide) via Tier 3/4 specialist clinics if BMI ≥35 (or ≥30 with comorb in some cases). NICE TA664."
                 }
               ]
             }
@@ -29315,19 +29525,19 @@
           "evidence": "Management per NICE CKS and Local formulary.",
           "steps": [
             {
-              "id": "guidance",
-              "question": "Clinical Guidance",
+              "id": "arthritis-type",
+              "question": "Suspected Type",
               "type": "dropdown",
               "options": [
                 {
-                  "value": "standard",
-                  "label": "Management Guidance",
-                  "guidance": "Specific clinical management steps are not yet available for this localized tool version. Please refer to the NICE References listed above and your local clinical formulary for treatment pathways. Always ensure a full clinical assessment and risk assessment is performed."
+                  "value": "oa",
+                  "label": "Osteoarthritis",
+                  "guidance": "Diagnosis: Age ≥45, activity-related joint pain, no/brief morning stiffness (<30m). Management: Exercise, weight loss, topical NSAIDs, education. NICE NG226."
                 },
                 {
-                  "value": "referral",
-                  "label": "Referral & Safety-netting",
-                  "guidance": "Consult NICE CKS for specific referral criteria. Always provide safety-netting advice (e.g. worsened symptoms, red flags) and document your clinical rationale. Use the 'Learning library' to find related educational materials."
+                  "value": "ra",
+                  "label": "Rheumatoid Arthritis (Suspected)",
+                  "guidance": "Suspect if persistent joint synovitis (swelling). Urgent referral (within 3 weeks). Baseline: FBC, CRP, ESR, RF, Anti-CCP, X-rays. Start DMARD only after specialist review. NICE NG100."
                 }
               ]
             }
@@ -35423,19 +35633,19 @@
           "evidence": "Management per NICE CKS and Local formulary.",
           "steps": [
             {
-              "id": "guidance",
-              "question": "Clinical Guidance",
+              "id": "contraception-choice",
+              "question": "Method Selection",
               "type": "dropdown",
               "options": [
                 {
-                  "value": "standard",
-                  "label": "Management Guidance",
-                  "guidance": "Specific clinical management steps are not yet available for this localized tool version. Please refer to the NICE References listed above and your local clinical formulary for treatment pathways. Always ensure a full clinical assessment and risk assessment is performed."
+                  "value": "chc",
+                  "label": "Combined (CHC)",
+                  "guidance": "Check UKMEC: BP, BMI, Migraine with aura, VTE risk, Smoking (>35). 7-day rule for missed pills. FSRH Guideline."
                 },
                 {
-                  "value": "referral",
-                  "label": "Referral & Safety-netting",
-                  "guidance": "Consult NICE CKS for specific referral criteria. Always provide safety-netting advice (e.g. worsened symptoms, red flags) and document your clinical rationale. Use the 'Learning library' to find related educational materials."
+                  "value": "larc",
+                  "label": "LARC (Implant/IUS/IUD)",
+                  "guidance": "Most effective methods. Discuss Nexplanon (3y), Mirena (8y/HRT), Copper IUD. Follow FSRH LARC standards."
                 }
               ]
             }
@@ -35453,19 +35663,19 @@
           "evidence": "Management per NICE CKS and Local formulary.",
           "steps": [
             {
-              "id": "guidance",
-              "question": "Clinical Guidance",
+              "id": "contraception-choice",
+              "question": "Method Selection",
               "type": "dropdown",
               "options": [
                 {
-                  "value": "standard",
-                  "label": "Management Guidance",
-                  "guidance": "Specific clinical management steps are not yet available for this localized tool version. Please refer to the NICE References listed above and your local clinical formulary for treatment pathways. Always ensure a full clinical assessment and risk assessment is performed."
+                  "value": "chc",
+                  "label": "Combined (CHC)",
+                  "guidance": "Check UKMEC: BP, BMI, Migraine with aura, VTE risk, Smoking (>35). 7-day rule for missed pills. FSRH Guideline."
                 },
                 {
-                  "value": "referral",
-                  "label": "Referral & Safety-netting",
-                  "guidance": "Consult NICE CKS for specific referral criteria. Always provide safety-netting advice (e.g. worsened symptoms, red flags) and document your clinical rationale. Use the 'Learning library' to find related educational materials."
+                  "value": "larc",
+                  "label": "LARC (Implant/IUS/IUD)",
+                  "guidance": "Most effective methods. Discuss Nexplanon (3y), Mirena (8y/HRT), Copper IUD. Follow FSRH LARC standards."
                 }
               ]
             }
@@ -35483,19 +35693,19 @@
           "evidence": "Management per NICE CKS and Local formulary.",
           "steps": [
             {
-              "id": "guidance",
-              "question": "Clinical Guidance",
+              "id": "contraception-choice",
+              "question": "Method Selection",
               "type": "dropdown",
               "options": [
                 {
-                  "value": "standard",
-                  "label": "Management Guidance",
-                  "guidance": "Specific clinical management steps are not yet available for this localized tool version. Please refer to the NICE References listed above and your local clinical formulary for treatment pathways. Always ensure a full clinical assessment and risk assessment is performed."
+                  "value": "chc",
+                  "label": "Combined (CHC)",
+                  "guidance": "Check UKMEC: BP, BMI, Migraine with aura, VTE risk, Smoking (>35). 7-day rule for missed pills. FSRH Guideline."
                 },
                 {
-                  "value": "referral",
-                  "label": "Referral & Safety-netting",
-                  "guidance": "Consult NICE CKS for specific referral criteria. Always provide safety-netting advice (e.g. worsened symptoms, red flags) and document your clinical rationale. Use the 'Learning library' to find related educational materials."
+                  "value": "larc",
+                  "label": "LARC (Implant/IUS/IUD)",
+                  "guidance": "Most effective methods. Discuss Nexplanon (3y), Mirena (8y/HRT), Copper IUD. Follow FSRH LARC standards."
                 }
               ]
             }
@@ -35513,19 +35723,19 @@
           "evidence": "Management per NICE CKS and Local formulary.",
           "steps": [
             {
-              "id": "guidance",
-              "question": "Clinical Guidance",
+              "id": "contraception-choice",
+              "question": "Method Selection",
               "type": "dropdown",
               "options": [
                 {
-                  "value": "standard",
-                  "label": "Management Guidance",
-                  "guidance": "Specific clinical management steps are not yet available for this localized tool version. Please refer to the NICE References listed above and your local clinical formulary for treatment pathways. Always ensure a full clinical assessment and risk assessment is performed."
+                  "value": "chc",
+                  "label": "Combined (CHC)",
+                  "guidance": "Check UKMEC: BP, BMI, Migraine with aura, VTE risk, Smoking (>35). 7-day rule for missed pills. FSRH Guideline."
                 },
                 {
-                  "value": "referral",
-                  "label": "Referral & Safety-netting",
-                  "guidance": "Consult NICE CKS for specific referral criteria. Always provide safety-netting advice (e.g. worsened symptoms, red flags) and document your clinical rationale. Use the 'Learning library' to find related educational materials."
+                  "value": "larc",
+                  "label": "LARC (Implant/IUS/IUD)",
+                  "guidance": "Most effective methods. Discuss Nexplanon (3y), Mirena (8y/HRT), Copper IUD. Follow FSRH LARC standards."
                 }
               ]
             }
@@ -35617,19 +35827,19 @@
           "evidence": "Management per NICE CKS and Local formulary.",
           "steps": [
             {
-              "id": "guidance",
-              "question": "Clinical Guidance",
+              "id": "contraception-choice",
+              "question": "Method Selection",
               "type": "dropdown",
               "options": [
                 {
-                  "value": "standard",
-                  "label": "Management Guidance",
-                  "guidance": "Specific clinical management steps are not yet available for this localized tool version. Please refer to the NICE References listed above and your local clinical formulary for treatment pathways. Always ensure a full clinical assessment and risk assessment is performed."
+                  "value": "chc",
+                  "label": "Combined (CHC)",
+                  "guidance": "Check UKMEC: BP, BMI, Migraine with aura, VTE risk, Smoking (>35). 7-day rule for missed pills. FSRH Guideline."
                 },
                 {
-                  "value": "referral",
-                  "label": "Referral & Safety-netting",
-                  "guidance": "Consult NICE CKS for specific referral criteria. Always provide safety-netting advice (e.g. worsened symptoms, red flags) and document your clinical rationale. Use the 'Learning library' to find related educational materials."
+                  "value": "larc",
+                  "label": "LARC (Implant/IUS/IUD)",
+                  "guidance": "Most effective methods. Discuss Nexplanon (3y), Mirena (8y/HRT), Copper IUD. Follow FSRH LARC standards."
                 }
               ]
             }
@@ -35647,19 +35857,19 @@
           "evidence": "Management per NICE CKS and Local formulary.",
           "steps": [
             {
-              "id": "guidance",
-              "question": "Clinical Guidance",
+              "id": "contraception-choice",
+              "question": "Method Selection",
               "type": "dropdown",
               "options": [
                 {
-                  "value": "standard",
-                  "label": "Management Guidance",
-                  "guidance": "Specific clinical management steps are not yet available for this localized tool version. Please refer to the NICE References listed above and your local clinical formulary for treatment pathways. Always ensure a full clinical assessment and risk assessment is performed."
+                  "value": "chc",
+                  "label": "Combined (CHC)",
+                  "guidance": "Check UKMEC: BP, BMI, Migraine with aura, VTE risk, Smoking (>35). 7-day rule for missed pills. FSRH Guideline."
                 },
                 {
-                  "value": "referral",
-                  "label": "Referral & Safety-netting",
-                  "guidance": "Consult NICE CKS for specific referral criteria. Always provide safety-netting advice (e.g. worsened symptoms, red flags) and document your clinical rationale. Use the 'Learning library' to find related educational materials."
+                  "value": "larc",
+                  "label": "LARC (Implant/IUS/IUD)",
+                  "guidance": "Most effective methods. Discuss Nexplanon (3y), Mirena (8y/HRT), Copper IUD. Follow FSRH LARC standards."
                 }
               ]
             }
@@ -35677,19 +35887,19 @@
           "evidence": "Management per NICE CKS and Local formulary.",
           "steps": [
             {
-              "id": "guidance",
-              "question": "Clinical Guidance",
+              "id": "contraception-choice",
+              "question": "Method Selection",
               "type": "dropdown",
               "options": [
                 {
-                  "value": "standard",
-                  "label": "Management Guidance",
-                  "guidance": "Specific clinical management steps are not yet available for this localized tool version. Please refer to the NICE References listed above and your local clinical formulary for treatment pathways. Always ensure a full clinical assessment and risk assessment is performed."
+                  "value": "chc",
+                  "label": "Combined (CHC)",
+                  "guidance": "Check UKMEC: BP, BMI, Migraine with aura, VTE risk, Smoking (>35). 7-day rule for missed pills. FSRH Guideline."
                 },
                 {
-                  "value": "referral",
-                  "label": "Referral & Safety-netting",
-                  "guidance": "Consult NICE CKS for specific referral criteria. Always provide safety-netting advice (e.g. worsened symptoms, red flags) and document your clinical rationale. Use the 'Learning library' to find related educational materials."
+                  "value": "larc",
+                  "label": "LARC (Implant/IUS/IUD)",
+                  "guidance": "Most effective methods. Discuss Nexplanon (3y), Mirena (8y/HRT), Copper IUD. Follow FSRH LARC standards."
                 }
               ]
             }
@@ -35858,19 +36068,19 @@
           "evidence": "Now the Faculty of Sexual and Reproductive Healthcare, FSRH has produced some useful and pragmatic recommendations to help us in primary care support women of all ages with contraceptive requirements during this COVID-19 pandemic as we cut back on non-essential face-to-face conta…",
           "steps": [
             {
-              "id": "guidance",
-              "question": "Clinical Guidance",
+              "id": "contraception-choice",
+              "question": "Method Selection",
               "type": "dropdown",
               "options": [
                 {
-                  "value": "standard",
-                  "label": "Management Guidance",
-                  "guidance": "Specific clinical management steps are not yet available for this localized tool version. Please refer to the NICE References listed above and your local clinical formulary for treatment pathways. Always ensure a full clinical assessment and risk assessment is performed."
+                  "value": "chc",
+                  "label": "Combined (CHC)",
+                  "guidance": "Check UKMEC: BP, BMI, Migraine with aura, VTE risk, Smoking (>35). 7-day rule for missed pills. FSRH Guideline."
                 },
                 {
-                  "value": "referral",
-                  "label": "Referral & Safety-netting",
-                  "guidance": "Consult NICE CKS for specific referral criteria. Always provide safety-netting advice (e.g. worsened symptoms, red flags) and document your clinical rationale. Use the 'Learning library' to find related educational materials."
+                  "value": "larc",
+                  "label": "LARC (Implant/IUS/IUD)",
+                  "guidance": "Most effective methods. Discuss Nexplanon (3y), Mirena (8y/HRT), Copper IUD. Follow FSRH LARC standards."
                 }
               ]
             }
@@ -35889,19 +36099,19 @@
           "evidence": "Now the Faculty of Sexual and Reproductive Healthcare, FSRH has produced some useful and pragmatic recommendations to help us in primary care support women of all ages with contraceptive requirements during this COVID-19 pandemic as we cut back on non-essential face-to-face conta…",
           "steps": [
             {
-              "id": "guidance",
-              "question": "Clinical Guidance",
+              "id": "contraception-choice",
+              "question": "Method Selection",
               "type": "dropdown",
               "options": [
                 {
-                  "value": "standard",
-                  "label": "Management Guidance",
-                  "guidance": "Specific clinical management steps are not yet available for this localized tool version. Please refer to the NICE References listed above and your local clinical formulary for treatment pathways. Always ensure a full clinical assessment and risk assessment is performed."
+                  "value": "chc",
+                  "label": "Combined (CHC)",
+                  "guidance": "Check UKMEC: BP, BMI, Migraine with aura, VTE risk, Smoking (>35). 7-day rule for missed pills. FSRH Guideline."
                 },
                 {
-                  "value": "referral",
-                  "label": "Referral & Safety-netting",
-                  "guidance": "Consult NICE CKS for specific referral criteria. Always provide safety-netting advice (e.g. worsened symptoms, red flags) and document your clinical rationale. Use the 'Learning library' to find related educational materials."
+                  "value": "larc",
+                  "label": "LARC (Implant/IUS/IUD)",
+                  "guidance": "Most effective methods. Discuss Nexplanon (3y), Mirena (8y/HRT), Copper IUD. Follow FSRH LARC standards."
                 }
               ]
             }
@@ -35920,19 +36130,19 @@
           "evidence": "Now the Faculty of Sexual and Reproductive Healthcare, FSRH has produced some useful and pragmatic recommendations to help us in primary care support women of all ages with contraceptive requirements during this COVID-19 pandemic as we cut back on non-essential face-to-face conta…",
           "steps": [
             {
-              "id": "guidance",
-              "question": "Clinical Guidance",
+              "id": "contraception-choice",
+              "question": "Method Selection",
               "type": "dropdown",
               "options": [
                 {
-                  "value": "standard",
-                  "label": "Management Guidance",
-                  "guidance": "Specific clinical management steps are not yet available for this localized tool version. Please refer to the NICE References listed above and your local clinical formulary for treatment pathways. Always ensure a full clinical assessment and risk assessment is performed."
+                  "value": "chc",
+                  "label": "Combined (CHC)",
+                  "guidance": "Check UKMEC: BP, BMI, Migraine with aura, VTE risk, Smoking (>35). 7-day rule for missed pills. FSRH Guideline."
                 },
                 {
-                  "value": "referral",
-                  "label": "Referral & Safety-netting",
-                  "guidance": "Consult NICE CKS for specific referral criteria. Always provide safety-netting advice (e.g. worsened symptoms, red flags) and document your clinical rationale. Use the 'Learning library' to find related educational materials."
+                  "value": "larc",
+                  "label": "LARC (Implant/IUS/IUD)",
+                  "guidance": "Most effective methods. Discuss Nexplanon (3y), Mirena (8y/HRT), Copper IUD. Follow FSRH LARC standards."
                 }
               ]
             }
@@ -38366,19 +38576,24 @@
           "evidence": "Management per CKS Conjunctivitis.",
           "steps": [
             {
-              "id": "guidance",
-              "question": "Clinical Guidance",
+              "id": "red-eye-mgmt",
+              "question": "Clinical Presentation",
               "type": "dropdown",
               "options": [
                 {
-                  "value": "standard",
-                  "label": "Management Guidance",
-                  "guidance": "Specific clinical management steps are not yet available for this localized tool version. Please refer to the NICE References listed above and your local clinical formulary for treatment pathways. Always ensure a full clinical assessment and risk assessment is performed."
+                  "value": "bacterial",
+                  "label": "Bacterial Conjunctivitis",
+                  "guidance": "Chloramphenicol 0.5% drops 2-hourly for 2 days then qds. Fusidic acid if pregnant. Safety-net for pain/vision loss. NICE CKS."
                 },
                 {
-                  "value": "referral",
-                  "label": "Referral & Safety-netting",
-                  "guidance": "Consult NICE CKS for specific referral criteria. Always provide safety-netting advice (e.g. worsened symptoms, red flags) and document your clinical rationale. Use the 'Learning library' to find related educational materials."
+                  "value": "corneal-ulcers",
+                  "label": "Suspected Corneal Ulcer/Keratitis",
+                  "guidance": "Contact lens wearer? Painful? Fluorescein staining positive? Emergency Ophthalmology referral (same day). Avoid steroids."
+                },
+                {
+                  "value": "scleritis",
+                  "label": "Scleritis (Deep pain)",
+                  "guidance": "Deep, boring eye pain. Systemic associations (rheumatoid). Urgent Ophthalmology referral (within 24-48h). NICE CKS."
                 }
               ]
             }
@@ -38394,19 +38609,24 @@
           "evidence": "Management per NICE CKS and Local formulary.",
           "steps": [
             {
-              "id": "guidance",
-              "question": "Clinical Guidance",
+              "id": "red-eye-mgmt",
+              "question": "Clinical Presentation",
               "type": "dropdown",
               "options": [
                 {
-                  "value": "standard",
-                  "label": "Management Guidance",
-                  "guidance": "Specific clinical management steps are not yet available for this localized tool version. Please refer to the NICE References listed above and your local clinical formulary for treatment pathways. Always ensure a full clinical assessment and risk assessment is performed."
+                  "value": "bacterial",
+                  "label": "Bacterial Conjunctivitis",
+                  "guidance": "Chloramphenicol 0.5% drops 2-hourly for 2 days then qds. Fusidic acid if pregnant. Safety-net for pain/vision loss. NICE CKS."
                 },
                 {
-                  "value": "referral",
-                  "label": "Referral & Safety-netting",
-                  "guidance": "Consult NICE CKS for specific referral criteria. Always provide safety-netting advice (e.g. worsened symptoms, red flags) and document your clinical rationale. Use the 'Learning library' to find related educational materials."
+                  "value": "corneal-ulcers",
+                  "label": "Suspected Corneal Ulcer/Keratitis",
+                  "guidance": "Contact lens wearer? Painful? Fluorescein staining positive? Emergency Ophthalmology referral (same day). Avoid steroids."
+                },
+                {
+                  "value": "scleritis",
+                  "label": "Scleritis (Deep pain)",
+                  "guidance": "Deep, boring eye pain. Systemic associations (rheumatoid). Urgent Ophthalmology referral (within 24-48h). NICE CKS."
                 }
               ]
             }
@@ -38422,19 +38642,24 @@
           "evidence": "Management per NICE CKS and Local formulary.",
           "steps": [
             {
-              "id": "guidance",
-              "question": "Clinical Guidance",
+              "id": "red-eye-mgmt",
+              "question": "Clinical Presentation",
               "type": "dropdown",
               "options": [
                 {
-                  "value": "standard",
-                  "label": "Management Guidance",
-                  "guidance": "Specific clinical management steps are not yet available for this localized tool version. Please refer to the NICE References listed above and your local clinical formulary for treatment pathways. Always ensure a full clinical assessment and risk assessment is performed."
+                  "value": "bacterial",
+                  "label": "Bacterial Conjunctivitis",
+                  "guidance": "Chloramphenicol 0.5% drops 2-hourly for 2 days then qds. Fusidic acid if pregnant. Safety-net for pain/vision loss. NICE CKS."
                 },
                 {
-                  "value": "referral",
-                  "label": "Referral & Safety-netting",
-                  "guidance": "Consult NICE CKS for specific referral criteria. Always provide safety-netting advice (e.g. worsened symptoms, red flags) and document your clinical rationale. Use the 'Learning library' to find related educational materials."
+                  "value": "corneal-ulcers",
+                  "label": "Suspected Corneal Ulcer/Keratitis",
+                  "guidance": "Contact lens wearer? Painful? Fluorescein staining positive? Emergency Ophthalmology referral (same day). Avoid steroids."
+                },
+                {
+                  "value": "scleritis",
+                  "label": "Scleritis (Deep pain)",
+                  "guidance": "Deep, boring eye pain. Systemic associations (rheumatoid). Urgent Ophthalmology referral (within 24-48h). NICE CKS."
                 }
               ]
             }
@@ -38450,19 +38675,24 @@
           "evidence": "Management per NICE CKS and Local formulary.",
           "steps": [
             {
-              "id": "guidance",
-              "question": "Clinical Guidance",
+              "id": "red-eye-mgmt",
+              "question": "Clinical Presentation",
               "type": "dropdown",
               "options": [
                 {
-                  "value": "standard",
-                  "label": "Management Guidance",
-                  "guidance": "Specific clinical management steps are not yet available for this localized tool version. Please refer to the NICE References listed above and your local clinical formulary for treatment pathways. Always ensure a full clinical assessment and risk assessment is performed."
+                  "value": "bacterial",
+                  "label": "Bacterial Conjunctivitis",
+                  "guidance": "Chloramphenicol 0.5% drops 2-hourly for 2 days then qds. Fusidic acid if pregnant. Safety-net for pain/vision loss. NICE CKS."
                 },
                 {
-                  "value": "referral",
-                  "label": "Referral & Safety-netting",
-                  "guidance": "Consult NICE CKS for specific referral criteria. Always provide safety-netting advice (e.g. worsened symptoms, red flags) and document your clinical rationale. Use the 'Learning library' to find related educational materials."
+                  "value": "corneal-ulcers",
+                  "label": "Suspected Corneal Ulcer/Keratitis",
+                  "guidance": "Contact lens wearer? Painful? Fluorescein staining positive? Emergency Ophthalmology referral (same day). Avoid steroids."
+                },
+                {
+                  "value": "scleritis",
+                  "label": "Scleritis (Deep pain)",
+                  "guidance": "Deep, boring eye pain. Systemic associations (rheumatoid). Urgent Ophthalmology referral (within 24-48h). NICE CKS."
                 }
               ]
             }
@@ -38478,19 +38708,24 @@
           "evidence": "Management per NICE CKS and Local formulary.",
           "steps": [
             {
-              "id": "guidance",
-              "question": "Clinical Guidance",
+              "id": "red-eye-mgmt",
+              "question": "Clinical Presentation",
               "type": "dropdown",
               "options": [
                 {
-                  "value": "standard",
-                  "label": "Management Guidance",
-                  "guidance": "Specific clinical management steps are not yet available for this localized tool version. Please refer to the NICE References listed above and your local clinical formulary for treatment pathways. Always ensure a full clinical assessment and risk assessment is performed."
+                  "value": "bacterial",
+                  "label": "Bacterial Conjunctivitis",
+                  "guidance": "Chloramphenicol 0.5% drops 2-hourly for 2 days then qds. Fusidic acid if pregnant. Safety-net for pain/vision loss. NICE CKS."
                 },
                 {
-                  "value": "referral",
-                  "label": "Referral & Safety-netting",
-                  "guidance": "Consult NICE CKS for specific referral criteria. Always provide safety-netting advice (e.g. worsened symptoms, red flags) and document your clinical rationale. Use the 'Learning library' to find related educational materials."
+                  "value": "corneal-ulcers",
+                  "label": "Suspected Corneal Ulcer/Keratitis",
+                  "guidance": "Contact lens wearer? Painful? Fluorescein staining positive? Emergency Ophthalmology referral (same day). Avoid steroids."
+                },
+                {
+                  "value": "scleritis",
+                  "label": "Scleritis (Deep pain)",
+                  "guidance": "Deep, boring eye pain. Systemic associations (rheumatoid). Urgent Ophthalmology referral (within 24-48h). NICE CKS."
                 }
               ]
             }
@@ -41179,19 +41414,19 @@
           "evidence": "Management per NICE CKS and Local formulary.",
           "steps": [
             {
-              "id": "guidance",
-              "question": "Clinical Guidance",
+              "id": "cts-mgmt",
+              "question": "Clinical Features",
               "type": "dropdown",
               "options": [
                 {
-                  "value": "standard",
-                  "label": "Management Guidance",
-                  "guidance": "Specific clinical management steps are not yet available for this localized tool version. Please refer to the NICE References listed above and your local clinical formulary for treatment pathways. Always ensure a full clinical assessment and risk assessment is performed."
+                  "value": "mild",
+                  "label": "Mild (Sensory only)",
+                  "guidance": "Nocturnal splints (6 weeks). Steroid injection if no response. Nerve conduction studies if diagnosis uncertain. NICE CKS."
                 },
                 {
-                  "value": "referral",
-                  "label": "Referral & Safety-netting",
-                  "guidance": "Consult NICE CKS for specific referral criteria. Always provide safety-netting advice (e.g. worsened symptoms, red flags) and document your clinical rationale. Use the 'Learning library' to find related educational materials."
+                  "value": "severe",
+                  "label": "Severe (Motor / Wasting)",
+                  "guidance": "Thenar wasting or weakness → Urgent referral for surgical decompression. Review for systemic causes (Thyroid, Diabetes, Pregnancy)."
                 }
               ]
             }
@@ -43878,19 +44113,24 @@
           "evidence": "(Intro removed; no clinical content in this segment.)",
           "steps": [
             {
-              "id": "guidance",
-              "question": "Clinical Guidance",
+              "id": "hearing-mgmt",
+              "question": "Investigation and Management",
               "type": "dropdown",
               "options": [
                 {
-                  "value": "standard",
-                  "label": "Management Guidance",
-                  "guidance": "Specific clinical management steps are not yet available for this localized tool version. Please refer to the NICE References listed above and your local clinical formulary for treatment pathways. Always ensure a full clinical assessment and risk assessment is performed."
+                  "value": "sudden",
+                  "label": "Sudden Sensorineural Hearing Loss",
+                  "guidance": "Emergency (ENT same day). High-dose oral Prednisolone (e.g. 60mg OD for 7 days) started immediately. Urgent Audiogram. NICE NG98."
                 },
                 {
-                  "value": "referral",
-                  "label": "Referral & Safety-netting",
-                  "guidance": "Consult NICE CKS for specific referral criteria. Always provide safety-netting advice (e.g. worsened symptoms, red flags) and document your clinical rationale. Use the 'Learning library' to find related educational materials."
+                  "value": "tinnitus-unilat",
+                  "label": "Unilateral Pulsatile Tinnitus",
+                  "guidance": "Urgent ENT referral for imaging (exclude glomus tumour/vascular malformation). Routine referral if non-pulsatile but persistent/distressing. NICE NG155."
+                },
+                {
+                  "value": "etd",
+                  "label": "Eustachian Tube Dysfunction",
+                  "guidance": "Valsalva manoeuvre. Nasal steroid spray (e.g. Fluticasone) for 4-6 weeks if obstructive. Decongestants (short-term only). NICE CKS."
                 }
               ]
             }
@@ -43907,19 +44147,24 @@
           "evidence": "(Intro removed; no clinical content in this segment.)",
           "steps": [
             {
-              "id": "guidance",
-              "question": "Clinical Guidance",
+              "id": "hearing-mgmt",
+              "question": "Investigation and Management",
               "type": "dropdown",
               "options": [
                 {
-                  "value": "standard",
-                  "label": "Management Guidance",
-                  "guidance": "Specific clinical management steps are not yet available for this localized tool version. Please refer to the NICE References listed above and your local clinical formulary for treatment pathways. Always ensure a full clinical assessment and risk assessment is performed."
+                  "value": "sudden",
+                  "label": "Sudden Sensorineural Hearing Loss",
+                  "guidance": "Emergency (ENT same day). High-dose oral Prednisolone (e.g. 60mg OD for 7 days) started immediately. Urgent Audiogram. NICE NG98."
                 },
                 {
-                  "value": "referral",
-                  "label": "Referral & Safety-netting",
-                  "guidance": "Consult NICE CKS for specific referral criteria. Always provide safety-netting advice (e.g. worsened symptoms, red flags) and document your clinical rationale. Use the 'Learning library' to find related educational materials."
+                  "value": "tinnitus-unilat",
+                  "label": "Unilateral Pulsatile Tinnitus",
+                  "guidance": "Urgent ENT referral for imaging (exclude glomus tumour/vascular malformation). Routine referral if non-pulsatile but persistent/distressing. NICE NG155."
+                },
+                {
+                  "value": "etd",
+                  "label": "Eustachian Tube Dysfunction",
+                  "guidance": "Valsalva manoeuvre. Nasal steroid spray (e.g. Fluticasone) for 4-6 weeks if obstructive. Decongestants (short-term only). NICE CKS."
                 }
               ]
             }
@@ -43936,19 +44181,24 @@
           "evidence": "(Intro removed; no clinical content in this segment.)",
           "steps": [
             {
-              "id": "guidance",
-              "question": "Clinical Guidance",
+              "id": "hearing-mgmt",
+              "question": "Investigation and Management",
               "type": "dropdown",
               "options": [
                 {
-                  "value": "standard",
-                  "label": "Management Guidance",
-                  "guidance": "Specific clinical management steps are not yet available for this localized tool version. Please refer to the NICE References listed above and your local clinical formulary for treatment pathways. Always ensure a full clinical assessment and risk assessment is performed."
+                  "value": "sudden",
+                  "label": "Sudden Sensorineural Hearing Loss",
+                  "guidance": "Emergency (ENT same day). High-dose oral Prednisolone (e.g. 60mg OD for 7 days) started immediately. Urgent Audiogram. NICE NG98."
                 },
                 {
-                  "value": "referral",
-                  "label": "Referral & Safety-netting",
-                  "guidance": "Consult NICE CKS for specific referral criteria. Always provide safety-netting advice (e.g. worsened symptoms, red flags) and document your clinical rationale. Use the 'Learning library' to find related educational materials."
+                  "value": "tinnitus-unilat",
+                  "label": "Unilateral Pulsatile Tinnitus",
+                  "guidance": "Urgent ENT referral for imaging (exclude glomus tumour/vascular malformation). Routine referral if non-pulsatile but persistent/distressing. NICE NG155."
+                },
+                {
+                  "value": "etd",
+                  "label": "Eustachian Tube Dysfunction",
+                  "guidance": "Valsalva manoeuvre. Nasal steroid spray (e.g. Fluticasone) for 4-6 weeks if obstructive. Decongestants (short-term only). NICE CKS."
                 }
               ]
             }
@@ -47126,19 +47376,24 @@
           "evidence": "Management per NICE CKS and Local formulary.",
           "steps": [
             {
-              "id": "guidance",
-              "question": "Clinical Guidance",
+              "id": "hearing-mgmt",
+              "question": "Investigation and Management",
               "type": "dropdown",
               "options": [
                 {
-                  "value": "standard",
-                  "label": "Management Guidance",
-                  "guidance": "Specific clinical management steps are not yet available for this localized tool version. Please refer to the NICE References listed above and your local clinical formulary for treatment pathways. Always ensure a full clinical assessment and risk assessment is performed."
+                  "value": "sudden",
+                  "label": "Sudden Sensorineural Hearing Loss",
+                  "guidance": "Emergency (ENT same day). High-dose oral Prednisolone (e.g. 60mg OD for 7 days) started immediately. Urgent Audiogram. NICE NG98."
                 },
                 {
-                  "value": "referral",
-                  "label": "Referral & Safety-netting",
-                  "guidance": "Consult NICE CKS for specific referral criteria. Always provide safety-netting advice (e.g. worsened symptoms, red flags) and document your clinical rationale. Use the 'Learning library' to find related educational materials."
+                  "value": "tinnitus-unilat",
+                  "label": "Unilateral Pulsatile Tinnitus",
+                  "guidance": "Urgent ENT referral for imaging (exclude glomus tumour/vascular malformation). Routine referral if non-pulsatile but persistent/distressing. NICE NG155."
+                },
+                {
+                  "value": "etd",
+                  "label": "Eustachian Tube Dysfunction",
+                  "guidance": "Valsalva manoeuvre. Nasal steroid spray (e.g. Fluticasone) for 4-6 weeks if obstructive. Decongestants (short-term only). NICE CKS."
                 }
               ]
             }
@@ -47342,19 +47597,24 @@
           "evidence": "Management per NICE CKS and Local formulary.",
           "steps": [
             {
-              "id": "guidance",
-              "question": "Clinical Guidance",
+              "id": "hearing-mgmt",
+              "question": "Investigation and Management",
               "type": "dropdown",
               "options": [
                 {
-                  "value": "standard",
-                  "label": "Management Guidance",
-                  "guidance": "Specific clinical management steps are not yet available for this localized tool version. Please refer to the NICE References listed above and your local clinical formulary for treatment pathways. Always ensure a full clinical assessment and risk assessment is performed."
+                  "value": "sudden",
+                  "label": "Sudden Sensorineural Hearing Loss",
+                  "guidance": "Emergency (ENT same day). High-dose oral Prednisolone (e.g. 60mg OD for 7 days) started immediately. Urgent Audiogram. NICE NG98."
                 },
                 {
-                  "value": "referral",
-                  "label": "Referral & Safety-netting",
-                  "guidance": "Consult NICE CKS for specific referral criteria. Always provide safety-netting advice (e.g. worsened symptoms, red flags) and document your clinical rationale. Use the 'Learning library' to find related educational materials."
+                  "value": "tinnitus-unilat",
+                  "label": "Unilateral Pulsatile Tinnitus",
+                  "guidance": "Urgent ENT referral for imaging (exclude glomus tumour/vascular malformation). Routine referral if non-pulsatile but persistent/distressing. NICE NG155."
+                },
+                {
+                  "value": "etd",
+                  "label": "Eustachian Tube Dysfunction",
+                  "guidance": "Valsalva manoeuvre. Nasal steroid spray (e.g. Fluticasone) for 4-6 weeks if obstructive. Decongestants (short-term only). NICE CKS."
                 }
               ]
             }
@@ -47370,19 +47630,24 @@
           "evidence": "Management per NG98 and CKS Hearing loss.",
           "steps": [
             {
-              "id": "guidance",
-              "question": "Clinical Guidance",
+              "id": "hearing-mgmt",
+              "question": "Investigation and Management",
               "type": "dropdown",
               "options": [
                 {
-                  "value": "standard",
-                  "label": "Management Guidance",
-                  "guidance": "Specific clinical management steps are not yet available for this localized tool version. Please refer to the NICE References listed above and your local clinical formulary for treatment pathways. Always ensure a full clinical assessment and risk assessment is performed."
+                  "value": "sudden",
+                  "label": "Sudden Sensorineural Hearing Loss",
+                  "guidance": "Emergency (ENT same day). High-dose oral Prednisolone (e.g. 60mg OD for 7 days) started immediately. Urgent Audiogram. NICE NG98."
                 },
                 {
-                  "value": "referral",
-                  "label": "Referral & Safety-netting",
-                  "guidance": "Consult NICE CKS for specific referral criteria. Always provide safety-netting advice (e.g. worsened symptoms, red flags) and document your clinical rationale. Use the 'Learning library' to find related educational materials."
+                  "value": "tinnitus-unilat",
+                  "label": "Unilateral Pulsatile Tinnitus",
+                  "guidance": "Urgent ENT referral for imaging (exclude glomus tumour/vascular malformation). Routine referral if non-pulsatile but persistent/distressing. NICE NG155."
+                },
+                {
+                  "value": "etd",
+                  "label": "Eustachian Tube Dysfunction",
+                  "guidance": "Valsalva manoeuvre. Nasal steroid spray (e.g. Fluticasone) for 4-6 weeks if obstructive. Decongestants (short-term only). NICE CKS."
                 }
               ]
             }
@@ -47501,6 +47766,34 @@
           ]
         },
         {
+          "id": "mastoid-tenderness",
+          "title": "Mastoid Tenderness",
+          "niceRefs": [
+            "NICE CKS",
+            "Local formulary"
+          ],
+          "evidence": "Management per NICE CKS and Local formulary.",
+          "steps": [
+            {
+              "id": "mastoid-mgmt",
+              "question": "Assessment",
+              "type": "dropdown",
+              "options": [
+                {
+                  "value": "emergency",
+                  "label": "Acute Mastoiditis suspected",
+                  "guidance": "Emergency admission (Paediatrics/ENT). Post-auricular swelling/fluctuance, displaced pinna. IV antibiotics + imaging. NICE CKS."
+                },
+                {
+                  "value": "tenderness",
+                  "label": "Tenderness only (no swelling)",
+                  "guidance": "Careful review for media/externa. Urgent ENT opinion if clinical concern despite lack of classic signs. Safety-net strictly."
+                }
+              ]
+            }
+          ]
+        },
+        {
           "id": "mastoiditis",
           "title": "Mastoiditis",
           "niceRefs": [
@@ -47510,19 +47803,19 @@
           "evidence": "Management per NICE CKS and Local formulary.",
           "steps": [
             {
-              "id": "guidance",
-              "question": "Clinical Guidance",
+              "id": "mastoid-mgmt",
+              "question": "Assessment",
               "type": "dropdown",
               "options": [
                 {
-                  "value": "standard",
-                  "label": "Management Guidance",
-                  "guidance": "Specific clinical management steps are not yet available for this localized tool version. Please refer to the NICE References listed above and your local clinical formulary for treatment pathways. Always ensure a full clinical assessment and risk assessment is performed."
+                  "value": "emergency",
+                  "label": "Acute Mastoiditis suspected",
+                  "guidance": "Emergency admission (Paediatrics/ENT). Post-auricular swelling/fluctuance, displaced pinna. IV antibiotics + imaging. NICE CKS."
                 },
                 {
-                  "value": "referral",
-                  "label": "Referral & Safety-netting",
-                  "guidance": "Consult NICE CKS for specific referral criteria. Always provide safety-netting advice (e.g. worsened symptoms, red flags) and document your clinical rationale. Use the 'Learning library' to find related educational materials."
+                  "value": "tenderness",
+                  "label": "Tenderness only (no swelling)",
+                  "guidance": "Careful review for media/externa. Urgent ENT opinion if clinical concern despite lack of classic signs. Safety-net strictly."
                 }
               ]
             }
@@ -48588,19 +48881,24 @@
           "evidence": "Management per NICE CKS and Local formulary.",
           "steps": [
             {
-              "id": "guidance",
-              "question": "Clinical Guidance",
+              "id": "hearing-mgmt",
+              "question": "Investigation and Management",
               "type": "dropdown",
               "options": [
                 {
-                  "value": "standard",
-                  "label": "Management Guidance",
-                  "guidance": "Specific clinical management steps are not yet available for this localized tool version. Please refer to the NICE References listed above and your local clinical formulary for treatment pathways. Always ensure a full clinical assessment and risk assessment is performed."
+                  "value": "sudden",
+                  "label": "Sudden Sensorineural Hearing Loss",
+                  "guidance": "Emergency (ENT same day). High-dose oral Prednisolone (e.g. 60mg OD for 7 days) started immediately. Urgent Audiogram. NICE NG98."
                 },
                 {
-                  "value": "referral",
-                  "label": "Referral & Safety-netting",
-                  "guidance": "Consult NICE CKS for specific referral criteria. Always provide safety-netting advice (e.g. worsened symptoms, red flags) and document your clinical rationale. Use the 'Learning library' to find related educational materials."
+                  "value": "tinnitus-unilat",
+                  "label": "Unilateral Pulsatile Tinnitus",
+                  "guidance": "Urgent ENT referral for imaging (exclude glomus tumour/vascular malformation). Routine referral if non-pulsatile but persistent/distressing. NICE NG155."
+                },
+                {
+                  "value": "etd",
+                  "label": "Eustachian Tube Dysfunction",
+                  "guidance": "Valsalva manoeuvre. Nasal steroid spray (e.g. Fluticasone) for 4-6 weeks if obstructive. Decongestants (short-term only). NICE CKS."
                 }
               ]
             }
@@ -48721,19 +49019,24 @@
           "evidence": "Management per NG155 and CKS Tinnitus.",
           "steps": [
             {
-              "id": "guidance",
-              "question": "Clinical Guidance",
+              "id": "hearing-mgmt",
+              "question": "Investigation and Management",
               "type": "dropdown",
               "options": [
                 {
-                  "value": "standard",
-                  "label": "Management Guidance",
-                  "guidance": "Specific clinical management steps are not yet available for this localized tool version. Please refer to the NICE References listed above and your local clinical formulary for treatment pathways. Always ensure a full clinical assessment and risk assessment is performed."
+                  "value": "sudden",
+                  "label": "Sudden Sensorineural Hearing Loss",
+                  "guidance": "Emergency (ENT same day). High-dose oral Prednisolone (e.g. 60mg OD for 7 days) started immediately. Urgent Audiogram. NICE NG98."
                 },
                 {
-                  "value": "referral",
-                  "label": "Referral & Safety-netting",
-                  "guidance": "Consult NICE CKS for specific referral criteria. Always provide safety-netting advice (e.g. worsened symptoms, red flags) and document your clinical rationale. Use the 'Learning library' to find related educational materials."
+                  "value": "tinnitus-unilat",
+                  "label": "Unilateral Pulsatile Tinnitus",
+                  "guidance": "Urgent ENT referral for imaging (exclude glomus tumour/vascular malformation). Routine referral if non-pulsatile but persistent/distressing. NICE NG155."
+                },
+                {
+                  "value": "etd",
+                  "label": "Eustachian Tube Dysfunction",
+                  "guidance": "Valsalva manoeuvre. Nasal steroid spray (e.g. Fluticasone) for 4-6 weeks if obstructive. Decongestants (short-term only). NICE CKS."
                 }
               ]
             }
@@ -48749,19 +49052,24 @@
           "evidence": "Management per NICE CKS and Local formulary.",
           "steps": [
             {
-              "id": "guidance",
-              "question": "Clinical Guidance",
+              "id": "hearing-mgmt",
+              "question": "Investigation and Management",
               "type": "dropdown",
               "options": [
                 {
-                  "value": "standard",
-                  "label": "Management Guidance",
-                  "guidance": "Specific clinical management steps are not yet available for this localized tool version. Please refer to the NICE References listed above and your local clinical formulary for treatment pathways. Always ensure a full clinical assessment and risk assessment is performed."
+                  "value": "sudden",
+                  "label": "Sudden Sensorineural Hearing Loss",
+                  "guidance": "Emergency (ENT same day). High-dose oral Prednisolone (e.g. 60mg OD for 7 days) started immediately. Urgent Audiogram. NICE NG98."
                 },
                 {
-                  "value": "referral",
-                  "label": "Referral & Safety-netting",
-                  "guidance": "Consult NICE CKS for specific referral criteria. Always provide safety-netting advice (e.g. worsened symptoms, red flags) and document your clinical rationale. Use the 'Learning library' to find related educational materials."
+                  "value": "tinnitus-unilat",
+                  "label": "Unilateral Pulsatile Tinnitus",
+                  "guidance": "Urgent ENT referral for imaging (exclude glomus tumour/vascular malformation). Routine referral if non-pulsatile but persistent/distressing. NICE NG155."
+                },
+                {
+                  "value": "etd",
+                  "label": "Eustachian Tube Dysfunction",
+                  "guidance": "Valsalva manoeuvre. Nasal steroid spray (e.g. Fluticasone) for 4-6 weeks if obstructive. Decongestants (short-term only). NICE CKS."
                 }
               ]
             }
@@ -48777,19 +49085,24 @@
           "evidence": "Management per NICE CKS and Local formulary.",
           "steps": [
             {
-              "id": "guidance",
-              "question": "Clinical Guidance",
+              "id": "hearing-mgmt",
+              "question": "Investigation and Management",
               "type": "dropdown",
               "options": [
                 {
-                  "value": "standard",
-                  "label": "Management Guidance",
-                  "guidance": "Specific clinical management steps are not yet available for this localized tool version. Please refer to the NICE References listed above and your local clinical formulary for treatment pathways. Always ensure a full clinical assessment and risk assessment is performed."
+                  "value": "sudden",
+                  "label": "Sudden Sensorineural Hearing Loss",
+                  "guidance": "Emergency (ENT same day). High-dose oral Prednisolone (e.g. 60mg OD for 7 days) started immediately. Urgent Audiogram. NICE NG98."
                 },
                 {
-                  "value": "referral",
-                  "label": "Referral & Safety-netting",
-                  "guidance": "Consult NICE CKS for specific referral criteria. Always provide safety-netting advice (e.g. worsened symptoms, red flags) and document your clinical rationale. Use the 'Learning library' to find related educational materials."
+                  "value": "tinnitus-unilat",
+                  "label": "Unilateral Pulsatile Tinnitus",
+                  "guidance": "Urgent ENT referral for imaging (exclude glomus tumour/vascular malformation). Routine referral if non-pulsatile but persistent/distressing. NICE NG155."
+                },
+                {
+                  "value": "etd",
+                  "label": "Eustachian Tube Dysfunction",
+                  "guidance": "Valsalva manoeuvre. Nasal steroid spray (e.g. Fluticasone) for 4-6 weeks if obstructive. Decongestants (short-term only). NICE CKS."
                 }
               ]
             }
@@ -48986,6 +49299,34 @@
                   "value": "referral",
                   "label": "Referral & Safety-netting",
                   "guidance": "Consult NICE CKS for specific referral criteria. Always provide safety-netting advice (e.g. worsened symptoms, red flags) and document your clinical rationale. Use the 'Learning library' to find related educational materials."
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "wax-in-the-ear",
+          "title": "Wax in the Ear",
+          "niceRefs": [
+            "NICE CKS",
+            "Local formulary"
+          ],
+          "evidence": "Management per NICE CKS and Local formulary.",
+          "steps": [
+            {
+              "id": "wax-mgmt",
+              "question": "Management",
+              "type": "dropdown",
+              "options": [
+                {
+                  "value": "drops",
+                  "label": "First-line (Drops)",
+                  "guidance": "Olive oil drops 2-3 times daily for 2 weeks. Avoid cotton buds. Sodium bicarbonate drops if oil fails. NICE CKS."
+                },
+                {
+                  "value": "irrigation",
+                  "label": "Mechanical removal",
+                  "guidance": "Electronic irrigation or microsuction if drops fail and no perforation/recent surgery. Check for history of ear infections."
                 }
               ]
             }
@@ -50749,19 +51090,29 @@
           "evidence": "Management per NICE CKS and Local formulary.",
           "steps": [
             {
-              "id": "guidance",
-              "question": "Clinical Guidance",
+              "id": "joint-exam",
+              "question": "Joint for Examination",
               "type": "dropdown",
               "options": [
                 {
-                  "value": "standard",
-                  "label": "Management Guidance",
-                  "guidance": "Specific clinical management steps are not yet available for this localized tool version. Please refer to the NICE References listed above and your local clinical formulary for treatment pathways. Always ensure a full clinical assessment and risk assessment is performed."
+                  "value": "shoulder",
+                  "label": "Shoulder",
+                  "guidance": "Look (asymmetry, wasting); Feel (ACJ, SCJ, humerus); Move (Active/Passive: Abd, Flex, Rot). Tests: Hawkins-Kennedy (impingement), Empty Can (Supraspinatus)."
                 },
                 {
-                  "value": "referral",
-                  "label": "Referral & Safety-netting",
-                  "guidance": "Consult NICE CKS for specific referral criteria. Always provide safety-netting advice (e.g. worsened symptoms, red flags) and document your clinical rationale. Use the 'Learning library' to find related educational materials."
+                  "value": "knee",
+                  "label": "Knee",
+                  "guidance": "Look (effusion, alignment); Feel (joint line tenderness, temperature); Move (Active/Passive Flex/Ext). Tests: Lachman (ACL), McMurray (Meniscus), Patellar Tap (effusion)."
+                },
+                {
+                  "value": "hip",
+                  "label": "Hip",
+                  "guidance": "Look (gait, Trendelenburg); Feel (greater trochanter); Move (Flex, Int/Ext Rotation). Special: Thomas test (flexion contracture)."
+                },
+                {
+                  "value": "spine",
+                  "label": "Spine (Back/Neck)",
+                  "guidance": "Look (curvature, scoliosis); Feel (spinous processes, paravertebral muscles); Move (Flex, Ext, Lat Flex). Neurology: SLR (Root stretch), Dermatomes, Myotomes, Reflexes."
                 }
               ]
             }
@@ -52020,19 +52371,19 @@
           "evidence": "(Intro removed; no clinical content in this segment.)",
           "steps": [
             {
-              "id": "guidance",
-              "question": "Clinical Guidance",
+              "id": "obesity-mgmt",
+              "question": "Management Level",
               "type": "dropdown",
               "options": [
                 {
-                  "value": "standard",
-                  "label": "Management Guidance",
-                  "guidance": "Specific clinical management steps are not yet available for this localized tool version. Please refer to the NICE References listed above and your local clinical formulary for treatment pathways. Always ensure a full clinical assessment and risk assessment is performed."
+                  "value": "lifestyle",
+                  "label": "Lifestyle & BMI assessment",
+                  "guidance": "Calculate BMI and waist circumference. Set 5-10% weight loss goal. Tier 2 weight management referral. NICE CG189."
                 },
                 {
-                  "value": "referral",
-                  "label": "Referral & Safety-netting",
-                  "guidance": "Consult NICE CKS for specific referral criteria. Always provide safety-netting advice (e.g. worsened symptoms, red flags) and document your clinical rationale. Use the 'Learning library' to find related educational materials."
+                  "value": "medication",
+                  "label": "Pharmacotherapy (Orlistat/GLP-1)",
+                  "guidance": "Orlistat if BMI ≥30 (or ≥28 with comorbidities). GLP-1 (e.g. Semaglutide) via Tier 3/4 specialist clinics if BMI ≥35 (or ≥30 with comorb in some cases). NICE TA664."
                 }
               ]
             }
@@ -52049,19 +52400,19 @@
           "evidence": "(Intro removed; no clinical content in this segment.)",
           "steps": [
             {
-              "id": "guidance",
-              "question": "Clinical Guidance",
+              "id": "obesity-mgmt",
+              "question": "Management Level",
               "type": "dropdown",
               "options": [
                 {
-                  "value": "standard",
-                  "label": "Management Guidance",
-                  "guidance": "Specific clinical management steps are not yet available for this localized tool version. Please refer to the NICE References listed above and your local clinical formulary for treatment pathways. Always ensure a full clinical assessment and risk assessment is performed."
+                  "value": "lifestyle",
+                  "label": "Lifestyle & BMI assessment",
+                  "guidance": "Calculate BMI and waist circumference. Set 5-10% weight loss goal. Tier 2 weight management referral. NICE CG189."
                 },
                 {
-                  "value": "referral",
-                  "label": "Referral & Safety-netting",
-                  "guidance": "Consult NICE CKS for specific referral criteria. Always provide safety-netting advice (e.g. worsened symptoms, red flags) and document your clinical rationale. Use the 'Learning library' to find related educational materials."
+                  "value": "medication",
+                  "label": "Pharmacotherapy (Orlistat/GLP-1)",
+                  "guidance": "Orlistat if BMI ≥30 (or ≥28 with comorbidities). GLP-1 (e.g. Semaglutide) via Tier 3/4 specialist clinics if BMI ≥35 (or ≥30 with comorb in some cases). NICE TA664."
                 }
               ]
             }
@@ -52078,19 +52429,19 @@
           "evidence": "(Intro removed; no clinical content in this segment.)",
           "steps": [
             {
-              "id": "guidance",
-              "question": "Clinical Guidance",
+              "id": "obesity-mgmt",
+              "question": "Management Level",
               "type": "dropdown",
               "options": [
                 {
-                  "value": "standard",
-                  "label": "Management Guidance",
-                  "guidance": "Specific clinical management steps are not yet available for this localized tool version. Please refer to the NICE References listed above and your local clinical formulary for treatment pathways. Always ensure a full clinical assessment and risk assessment is performed."
+                  "value": "lifestyle",
+                  "label": "Lifestyle & BMI assessment",
+                  "guidance": "Calculate BMI and waist circumference. Set 5-10% weight loss goal. Tier 2 weight management referral. NICE CG189."
                 },
                 {
-                  "value": "referral",
-                  "label": "Referral & Safety-netting",
-                  "guidance": "Consult NICE CKS for specific referral criteria. Always provide safety-netting advice (e.g. worsened symptoms, red flags) and document your clinical rationale. Use the 'Learning library' to find related educational materials."
+                  "value": "medication",
+                  "label": "Pharmacotherapy (Orlistat/GLP-1)",
+                  "guidance": "Orlistat if BMI ≥30 (or ≥28 with comorbidities). GLP-1 (e.g. Semaglutide) via Tier 3/4 specialist clinics if BMI ≥35 (or ≥30 with comorb in some cases). NICE TA664."
                 }
               ]
             }
@@ -52366,19 +52717,19 @@
           "evidence": "Management per NICE CKS and Local formulary.",
           "steps": [
             {
-              "id": "guidance",
-              "question": "Clinical Guidance",
+              "id": "fatigue-workup",
+              "question": "Workup Phase",
               "type": "dropdown",
               "options": [
                 {
-                  "value": "standard",
-                  "label": "Management Guidance",
-                  "guidance": "Specific clinical management steps are not yet available for this localized tool version. Please refer to the NICE References listed above and your local clinical formulary for treatment pathways. Always ensure a full clinical assessment and risk assessment is performed."
+                  "value": "screen",
+                  "label": "Initial Screening",
+                  "guidance": "History: Sleep, stress, diet, drugs. Bloods: FBC, Ferritin, U&E, TFT, HbA1c, Vit D, Bone, LFT, Coeliac screen. NICE CKS."
                 },
                 {
-                  "value": "referral",
-                  "label": "Referral & Safety-netting",
-                  "guidance": "Consult NICE CKS for specific referral criteria. Always provide safety-netting advice (e.g. worsened symptoms, red flags) and document your clinical rationale. Use the 'Learning library' to find related educational materials."
+                  "value": "me-cfs",
+                  "label": "Suspected ME/CFS",
+                  "guidance": "Persistent fatigue >3 months. Check NICE NG206 for diagnostic criteria. Do not offer LET or GET. Focus on energy management (pacing)."
                 }
               ]
             }
@@ -52394,19 +52745,19 @@
           "evidence": "Management per NICE CKS and Local formulary.",
           "steps": [
             {
-              "id": "guidance",
-              "question": "Clinical Guidance",
+              "id": "pain-type",
+              "question": "Pain Type",
               "type": "dropdown",
               "options": [
                 {
-                  "value": "standard",
-                  "label": "Management Guidance",
-                  "guidance": "Specific clinical management steps are not yet available for this localized tool version. Please refer to the NICE References listed above and your local clinical formulary for treatment pathways. Always ensure a full clinical assessment and risk assessment is performed."
+                  "value": "acute",
+                  "label": "Acute Pain",
+                  "guidance": "Follow WHO pain ladder: Step 1 Paracetamol/NSAIDs; Step 2 Weak opioids (Codeine); Step 3 Strong opioids (Morphine). Non-drug: RICE for trauma. NICE CKS."
                 },
                 {
-                  "value": "referral",
-                  "label": "Referral & Safety-netting",
-                  "guidance": "Consult NICE CKS for specific referral criteria. Always provide safety-netting advice (e.g. worsened symptoms, red flags) and document your clinical rationale. Use the 'Learning library' to find related educational materials."
+                  "value": "chronic",
+                  "label": "Chronic Pain (Primary)",
+                  "guidance": "Focus on function and quality of life. Offer supervised exercise, CBT, or acupuncture. Antidepressants (Duloxetine/Amitriptyline) for chronic primary pain. Avoid opioids. NICE NG193."
                 }
               ]
             }
@@ -52422,19 +52773,19 @@
           "evidence": "Management per NICE CKS and Local formulary.",
           "steps": [
             {
-              "id": "guidance",
-              "question": "Clinical Guidance",
+              "id": "pain-type",
+              "question": "Pain Type",
               "type": "dropdown",
               "options": [
                 {
-                  "value": "standard",
-                  "label": "Management Guidance",
-                  "guidance": "Specific clinical management steps are not yet available for this localized tool version. Please refer to the NICE References listed above and your local clinical formulary for treatment pathways. Always ensure a full clinical assessment and risk assessment is performed."
+                  "value": "acute",
+                  "label": "Acute Pain",
+                  "guidance": "Follow WHO pain ladder: Step 1 Paracetamol/NSAIDs; Step 2 Weak opioids (Codeine); Step 3 Strong opioids (Morphine). Non-drug: RICE for trauma. NICE CKS."
                 },
                 {
-                  "value": "referral",
-                  "label": "Referral & Safety-netting",
-                  "guidance": "Consult NICE CKS for specific referral criteria. Always provide safety-netting advice (e.g. worsened symptoms, red flags) and document your clinical rationale. Use the 'Learning library' to find related educational materials."
+                  "value": "chronic",
+                  "label": "Chronic Pain (Primary)",
+                  "guidance": "Focus on function and quality of life. Offer supervised exercise, CBT, or acupuncture. Antidepressants (Duloxetine/Amitriptyline) for chronic primary pain. Avoid opioids. NICE NG193."
                 }
               ]
             }
@@ -52452,19 +52803,19 @@
           "evidence": "Management per NICE CKS and Local formulary.",
           "steps": [
             {
-              "id": "guidance",
-              "question": "Clinical Guidance",
+              "id": "pain-type",
+              "question": "Pain Type",
               "type": "dropdown",
               "options": [
                 {
-                  "value": "standard",
-                  "label": "Management Guidance",
-                  "guidance": "Specific clinical management steps are not yet available for this localized tool version. Please refer to the NICE References listed above and your local clinical formulary for treatment pathways. Always ensure a full clinical assessment and risk assessment is performed."
+                  "value": "acute",
+                  "label": "Acute Pain",
+                  "guidance": "Follow WHO pain ladder: Step 1 Paracetamol/NSAIDs; Step 2 Weak opioids (Codeine); Step 3 Strong opioids (Morphine). Non-drug: RICE for trauma. NICE CKS."
                 },
                 {
-                  "value": "referral",
-                  "label": "Referral & Safety-netting",
-                  "guidance": "Consult NICE CKS for specific referral criteria. Always provide safety-netting advice (e.g. worsened symptoms, red flags) and document your clinical rationale. Use the 'Learning library' to find related educational materials."
+                  "value": "chronic",
+                  "label": "Chronic Pain (Primary)",
+                  "guidance": "Focus on function and quality of life. Offer supervised exercise, CBT, or acupuncture. Antidepressants (Duloxetine/Amitriptyline) for chronic primary pain. Avoid opioids. NICE NG193."
                 }
               ]
             }
@@ -52480,19 +52831,19 @@
           "evidence": "Management per NICE CKS and Local formulary.",
           "steps": [
             {
-              "id": "guidance",
-              "question": "Clinical Guidance",
+              "id": "pain-type",
+              "question": "Pain Type",
               "type": "dropdown",
               "options": [
                 {
-                  "value": "standard",
-                  "label": "Management Guidance",
-                  "guidance": "Specific clinical management steps are not yet available for this localized tool version. Please refer to the NICE References listed above and your local clinical formulary for treatment pathways. Always ensure a full clinical assessment and risk assessment is performed."
+                  "value": "acute",
+                  "label": "Acute Pain",
+                  "guidance": "Follow WHO pain ladder: Step 1 Paracetamol/NSAIDs; Step 2 Weak opioids (Codeine); Step 3 Strong opioids (Morphine). Non-drug: RICE for trauma. NICE CKS."
                 },
                 {
-                  "value": "referral",
-                  "label": "Referral & Safety-netting",
-                  "guidance": "Consult NICE CKS for specific referral criteria. Always provide safety-netting advice (e.g. worsened symptoms, red flags) and document your clinical rationale. Use the 'Learning library' to find related educational materials."
+                  "value": "chronic",
+                  "label": "Chronic Pain (Primary)",
+                  "guidance": "Focus on function and quality of life. Offer supervised exercise, CBT, or acupuncture. Antidepressants (Duloxetine/Amitriptyline) for chronic primary pain. Avoid opioids. NICE NG193."
                 }
               ]
             }
@@ -52508,19 +52859,19 @@
           "evidence": "Management per NICE CKS and Local formulary.",
           "steps": [
             {
-              "id": "guidance",
-              "question": "Clinical Guidance",
+              "id": "pain-type",
+              "question": "Pain Type",
               "type": "dropdown",
               "options": [
                 {
-                  "value": "standard",
-                  "label": "Management Guidance",
-                  "guidance": "Specific clinical management steps are not yet available for this localized tool version. Please refer to the NICE References listed above and your local clinical formulary for treatment pathways. Always ensure a full clinical assessment and risk assessment is performed."
+                  "value": "acute",
+                  "label": "Acute Pain",
+                  "guidance": "Follow WHO pain ladder: Step 1 Paracetamol/NSAIDs; Step 2 Weak opioids (Codeine); Step 3 Strong opioids (Morphine). Non-drug: RICE for trauma. NICE CKS."
                 },
                 {
-                  "value": "referral",
-                  "label": "Referral & Safety-netting",
-                  "guidance": "Consult NICE CKS for specific referral criteria. Always provide safety-netting advice (e.g. worsened symptoms, red flags) and document your clinical rationale. Use the 'Learning library' to find related educational materials."
+                  "value": "chronic",
+                  "label": "Chronic Pain (Primary)",
+                  "guidance": "Focus on function and quality of life. Offer supervised exercise, CBT, or acupuncture. Antidepressants (Duloxetine/Amitriptyline) for chronic primary pain. Avoid opioids. NICE NG193."
                 }
               ]
             }
@@ -52536,19 +52887,19 @@
           "evidence": "Management per NG193 and CKS Chronic pain.",
           "steps": [
             {
-              "id": "guidance",
-              "question": "Clinical Guidance",
+              "id": "pain-type",
+              "question": "Pain Type",
               "type": "dropdown",
               "options": [
                 {
-                  "value": "standard",
-                  "label": "Management Guidance",
-                  "guidance": "Specific clinical management steps are not yet available for this localized tool version. Please refer to the NICE References listed above and your local clinical formulary for treatment pathways. Always ensure a full clinical assessment and risk assessment is performed."
+                  "value": "acute",
+                  "label": "Acute Pain",
+                  "guidance": "Follow WHO pain ladder: Step 1 Paracetamol/NSAIDs; Step 2 Weak opioids (Codeine); Step 3 Strong opioids (Morphine). Non-drug: RICE for trauma. NICE CKS."
                 },
                 {
-                  "value": "referral",
-                  "label": "Referral & Safety-netting",
-                  "guidance": "Consult NICE CKS for specific referral criteria. Always provide safety-netting advice (e.g. worsened symptoms, red flags) and document your clinical rationale. Use the 'Learning library' to find related educational materials."
+                  "value": "chronic",
+                  "label": "Chronic Pain (Primary)",
+                  "guidance": "Focus on function and quality of life. Offer supervised exercise, CBT, or acupuncture. Antidepressants (Duloxetine/Amitriptyline) for chronic primary pain. Avoid opioids. NICE NG193."
                 }
               ]
             }
@@ -55097,19 +55448,19 @@
           "evidence": "Management per NICE CKS and Local formulary.",
           "steps": [
             {
-              "id": "guidance",
-              "question": "Clinical Guidance",
+              "id": "obesity-mgmt",
+              "question": "Management Level",
               "type": "dropdown",
               "options": [
                 {
-                  "value": "standard",
-                  "label": "Management Guidance",
-                  "guidance": "Specific clinical management steps are not yet available for this localized tool version. Please refer to the NICE References listed above and your local clinical formulary for treatment pathways. Always ensure a full clinical assessment and risk assessment is performed."
+                  "value": "lifestyle",
+                  "label": "Lifestyle & BMI assessment",
+                  "guidance": "Calculate BMI and waist circumference. Set 5-10% weight loss goal. Tier 2 weight management referral. NICE CG189."
                 },
                 {
-                  "value": "referral",
-                  "label": "Referral & Safety-netting",
-                  "guidance": "Consult NICE CKS for specific referral criteria. Always provide safety-netting advice (e.g. worsened symptoms, red flags) and document your clinical rationale. Use the 'Learning library' to find related educational materials."
+                  "value": "medication",
+                  "label": "Pharmacotherapy (Orlistat/GLP-1)",
+                  "guidance": "Orlistat if BMI ≥30 (or ≥28 with comorbidities). GLP-1 (e.g. Semaglutide) via Tier 3/4 specialist clinics if BMI ≥35 (or ≥30 with comorb in some cases). NICE TA664."
                 }
               ]
             }
@@ -55161,19 +55512,19 @@
           "evidence": "Management per NICE CKS and Local formulary.",
           "steps": [
             {
-              "id": "guidance",
-              "question": "Clinical Guidance",
+              "id": "obesity-mgmt",
+              "question": "Management Level",
               "type": "dropdown",
               "options": [
                 {
-                  "value": "standard",
-                  "label": "Management Guidance",
-                  "guidance": "Specific clinical management steps are not yet available for this localized tool version. Please refer to the NICE References listed above and your local clinical formulary for treatment pathways. Always ensure a full clinical assessment and risk assessment is performed."
+                  "value": "lifestyle",
+                  "label": "Lifestyle & BMI assessment",
+                  "guidance": "Calculate BMI and waist circumference. Set 5-10% weight loss goal. Tier 2 weight management referral. NICE CG189."
                 },
                 {
-                  "value": "referral",
-                  "label": "Referral & Safety-netting",
-                  "guidance": "Consult NICE CKS for specific referral criteria. Always provide safety-netting advice (e.g. worsened symptoms, red flags) and document your clinical rationale. Use the 'Learning library' to find related educational materials."
+                  "value": "medication",
+                  "label": "Pharmacotherapy (Orlistat/GLP-1)",
+                  "guidance": "Orlistat if BMI ≥30 (or ≥28 with comorbidities). GLP-1 (e.g. Semaglutide) via Tier 3/4 specialist clinics if BMI ≥35 (or ≥30 with comorb in some cases). NICE TA664."
                 }
               ]
             }
@@ -55189,19 +55540,19 @@
           "evidence": "Management per NICE CKS and Local formulary.",
           "steps": [
             {
-              "id": "guidance",
-              "question": "Clinical Guidance",
+              "id": "obesity-mgmt",
+              "question": "Management Level",
               "type": "dropdown",
               "options": [
                 {
-                  "value": "standard",
-                  "label": "Management Guidance",
-                  "guidance": "Specific clinical management steps are not yet available for this localized tool version. Please refer to the NICE References listed above and your local clinical formulary for treatment pathways. Always ensure a full clinical assessment and risk assessment is performed."
+                  "value": "lifestyle",
+                  "label": "Lifestyle & BMI assessment",
+                  "guidance": "Calculate BMI and waist circumference. Set 5-10% weight loss goal. Tier 2 weight management referral. NICE CG189."
                 },
                 {
-                  "value": "referral",
-                  "label": "Referral & Safety-netting",
-                  "guidance": "Consult NICE CKS for specific referral criteria. Always provide safety-netting advice (e.g. worsened symptoms, red flags) and document your clinical rationale. Use the 'Learning library' to find related educational materials."
+                  "value": "medication",
+                  "label": "Pharmacotherapy (Orlistat/GLP-1)",
+                  "guidance": "Orlistat if BMI ≥30 (or ≥28 with comorbidities). GLP-1 (e.g. Semaglutide) via Tier 3/4 specialist clinics if BMI ≥35 (or ≥30 with comorb in some cases). NICE TA664."
                 }
               ]
             }
@@ -55349,6 +55700,62 @@
             }
           ],
           "episode": 30
+        },
+        {
+          "id": "pain-management-acute",
+          "title": "Pain management – acute",
+          "niceRefs": [
+            "NICE CKS",
+            "Local formulary"
+          ],
+          "evidence": "Management per NICE CKS and Local formulary.",
+          "steps": [
+            {
+              "id": "pain-type",
+              "question": "Pain Type",
+              "type": "dropdown",
+              "options": [
+                {
+                  "value": "acute",
+                  "label": "Acute Pain",
+                  "guidance": "Follow WHO pain ladder: Step 1 Paracetamol/NSAIDs; Step 2 Weak opioids (Codeine); Step 3 Strong opioids (Morphine). Non-drug: RICE for trauma. NICE CKS."
+                },
+                {
+                  "value": "chronic",
+                  "label": "Chronic Pain (Primary)",
+                  "guidance": "Focus on function and quality of life. Offer supervised exercise, CBT, or acupuncture. Antidepressants (Duloxetine/Amitriptyline) for chronic primary pain. Avoid opioids. NICE NG193."
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "pain-management-chronic",
+          "title": "Pain management – chronic",
+          "niceRefs": [
+            "NICE CKS",
+            "Local formulary"
+          ],
+          "evidence": "Management per NICE CKS and Local formulary.",
+          "steps": [
+            {
+              "id": "pain-type",
+              "question": "Pain Type",
+              "type": "dropdown",
+              "options": [
+                {
+                  "value": "acute",
+                  "label": "Acute Pain",
+                  "guidance": "Follow WHO pain ladder: Step 1 Paracetamol/NSAIDs; Step 2 Weak opioids (Codeine); Step 3 Strong opioids (Morphine). Non-drug: RICE for trauma. NICE CKS."
+                },
+                {
+                  "value": "chronic",
+                  "label": "Chronic Pain (Primary)",
+                  "guidance": "Focus on function and quality of life. Offer supervised exercise, CBT, or acupuncture. Antidepressants (Duloxetine/Amitriptyline) for chronic primary pain. Avoid opioids. NICE NG193."
+                }
+              ]
+            }
+          ]
         },
         {
           "id": "polycystic-ovary-syndrome-assessment-and-diagnosis",
@@ -56758,6 +57165,34 @@
           "episode": 155
         },
         {
+          "id": "tired-all-the-time-tatt",
+          "title": "Tired all the time (TATT)",
+          "niceRefs": [
+            "NICE CKS",
+            "Local formulary"
+          ],
+          "evidence": "Management per NICE CKS and Local formulary.",
+          "steps": [
+            {
+              "id": "fatigue-workup",
+              "question": "Workup Phase",
+              "type": "dropdown",
+              "options": [
+                {
+                  "value": "screen",
+                  "label": "Initial Screening",
+                  "guidance": "History: Sleep, stress, diet, drugs. Bloods: FBC, Ferritin, U&E, TFT, HbA1c, Vit D, Bone, LFT, Coeliac screen. NICE CKS."
+                },
+                {
+                  "value": "me-cfs",
+                  "label": "Suspected ME/CFS",
+                  "guidance": "Persistent fatigue >3 months. Check NICE NG206 for diagnostic criteria. Do not offer LET or GET. Focus on energy management (pacing)."
+                }
+              ]
+            }
+          ]
+        },
+        {
           "id": "travel-advice",
           "title": "Travel – advice",
           "niceRefs": [
@@ -57540,6 +57975,251 @@
                   "value": "referral",
                   "label": "Referral & Safety-netting",
                   "guidance": "Consult NICE CKS for specific referral criteria. Always provide safety-netting advice (e.g. worsened symptoms, red flags) and document your clinical rationale. Use the 'Learning library' to find related educational materials."
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "ophthalmology",
+      "name": "ophthalmology",
+      "tools": [
+        {
+          "id": "blepharitis",
+          "title": "Blepharitis",
+          "niceRefs": [
+            "NICE CKS",
+            "Local formulary"
+          ],
+          "evidence": "Management per NICE CKS and Local formulary.",
+          "steps": [
+            {
+              "id": "dry-eye-mgmt",
+              "question": "Severity and Management",
+              "type": "dropdown",
+              "options": [
+                {
+                  "value": "mild",
+                  "label": "Mild/Moderate",
+                  "guidance": "Lid hygiene (warm compresses). Preservative-free lubricants (e.g. Hylo-Forte, Viscotears). Ointment at night (e.g. Lacri-Lube). NICE CKS Dry Eye."
+                },
+                {
+                  "value": "severe",
+                  "label": "Severe or refractory",
+                  "guidance": "Refer to Ophthalmology. Consider punctal plugs or ciclosporin drops. Exclude Sjogren's syndrome (check ANA, Ro/La)."
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "conjunctivitis",
+          "title": "Conjunctivitis",
+          "niceRefs": [
+            "NICE CKS",
+            "Local formulary"
+          ],
+          "evidence": "Management per NICE CKS and Local formulary.",
+          "steps": [
+            {
+              "id": "red-eye-mgmt",
+              "question": "Clinical Presentation",
+              "type": "dropdown",
+              "options": [
+                {
+                  "value": "bacterial",
+                  "label": "Bacterial Conjunctivitis",
+                  "guidance": "Chloramphenicol 0.5% drops 2-hourly for 2 days then qds. Fusidic acid if pregnant. Safety-net for pain/vision loss. NICE CKS."
+                },
+                {
+                  "value": "corneal-ulcers",
+                  "label": "Suspected Corneal Ulcer/Keratitis",
+                  "guidance": "Contact lens wearer? Painful? Fluorescein staining positive? Emergency Ophthalmology referral (same day). Avoid steroids."
+                },
+                {
+                  "value": "scleritis",
+                  "label": "Scleritis (Deep pain)",
+                  "guidance": "Deep, boring eye pain. Systemic associations (rheumatoid). Urgent Ophthalmology referral (within 24-48h). NICE CKS."
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "corneal-ulcers",
+          "title": "Corneal Ulcers",
+          "niceRefs": [
+            "NICE CKS",
+            "Local formulary"
+          ],
+          "evidence": "Management per NICE CKS and Local formulary.",
+          "steps": [
+            {
+              "id": "guidance",
+              "question": "Clinical Guidance",
+              "type": "dropdown",
+              "options": [
+                {
+                  "value": "standard",
+                  "label": "Management Guidance",
+                  "guidance": "Specific clinical management steps are not yet available for this localized tool version. Please refer to the NICE References listed above and your local clinical formulary for treatment pathways. Always ensure a full clinical assessment and risk assessment is performed."
+                },
+                {
+                  "value": "referral",
+                  "label": "Referral & Safety-netting",
+                  "guidance": "Consult NICE CKS for specific referral criteria. Always provide safety-netting advice (e.g. worsened symptoms, red flags) and document your clinical rationale. Use the 'Learning library' to find related educational materials."
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "dry-eyes",
+          "title": "Dry Eyes",
+          "niceRefs": [
+            "NICE CKS",
+            "Local formulary"
+          ],
+          "evidence": "Management per NICE CKS and Local formulary.",
+          "steps": [
+            {
+              "id": "dry-eye-mgmt",
+              "question": "Severity and Management",
+              "type": "dropdown",
+              "options": [
+                {
+                  "value": "mild",
+                  "label": "Mild/Moderate",
+                  "guidance": "Lid hygiene (warm compresses). Preservative-free lubricants (e.g. Hylo-Forte, Viscotears). Ointment at night (e.g. Lacri-Lube). NICE CKS Dry Eye."
+                },
+                {
+                  "value": "severe",
+                  "label": "Severe or refractory",
+                  "guidance": "Refer to Ophthalmology. Consider punctal plugs or ciclosporin drops. Exclude Sjogren's syndrome (check ANA, Ro/La)."
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "eye-drops-management",
+          "title": "Eye Drops management",
+          "niceRefs": [
+            "NICE CKS",
+            "Local formulary"
+          ],
+          "evidence": "Management per NICE CKS and Local formulary.",
+          "steps": [
+            {
+              "id": "guidance",
+              "question": "Clinical Guidance",
+              "type": "dropdown",
+              "options": [
+                {
+                  "value": "standard",
+                  "label": "Management Guidance",
+                  "guidance": "Specific clinical management steps are not yet available for this localized tool version. Please refer to the NICE References listed above and your local clinical formulary for treatment pathways. Always ensure a full clinical assessment and risk assessment is performed."
+                },
+                {
+                  "value": "referral",
+                  "label": "Referral & Safety-netting",
+                  "guidance": "Consult NICE CKS for specific referral criteria. Always provide safety-netting advice (e.g. worsened symptoms, red flags) and document your clinical rationale. Use the 'Learning library' to find related educational materials."
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "open-angle-glaucoma",
+          "title": "Open-Angle Glaucoma",
+          "niceRefs": [
+            "NICE CKS",
+            "Local formulary"
+          ],
+          "evidence": "Management per NICE CKS and Local formulary.",
+          "steps": [
+            {
+              "id": "glaucoma-mgmt",
+              "question": "Management Level",
+              "type": "dropdown",
+              "options": [
+                {
+                  "value": "new",
+                  "label": "Newly diagnosed/Suspected",
+                  "guidance": "Refer to secondary care for diagnosis and treatment initiation. First-line usually Prostaglandin analogue (e.g. Latanoprost). NICE NG81."
+                },
+                {
+                  "value": "monitoring",
+                  "label": "Community Monitoring",
+                  "guidance": "Check IOP, visual fields, and adherence. Beta-blockers (e.g. Timolol) used as adjunctive; check for contraindications (Asthma/Heart Block)."
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "ophthalmological-emergencies",
+          "title": "Ophthalmological Emergencies",
+          "niceRefs": [
+            "NICE CKS",
+            "Local formulary"
+          ],
+          "evidence": "Management per NICE CKS and Local formulary.",
+          "steps": [
+            {
+              "id": "eye-emerg",
+              "question": "Emergency presentation",
+              "type": "dropdown",
+              "options": [
+                {
+                  "value": "raao",
+                  "label": "Sudden painless loss of vision (RAO)",
+                  "guidance": "Suspected Retinal Artery Occlusion. Emergency (999 or Eye Casualty). Stroke symptoms? TIA workup needed."
+                },
+                {
+                  "value": "acute-glaucoma",
+                  "label": "Painful red eye + nausea (Acute Glaucoma)",
+                  "guidance": "Emergency referral. Fixed semi-dilated pupil. Give Acetazolamide 500mg IV/PO if remote from hospital (per local policy)."
+                },
+                {
+                  "value": "detachment",
+                  "label": "Floaters and flashes (Detachment)",
+                  "guidance": "Retinal detachment until proven otherwise. Urgent (same day) Ophthalmology review."
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "scleritis",
+          "title": "Scleritis",
+          "niceRefs": [
+            "NICE CKS",
+            "Local formulary"
+          ],
+          "evidence": "Management per NICE CKS and Local formulary.",
+          "steps": [
+            {
+              "id": "red-eye-mgmt",
+              "question": "Clinical Presentation",
+              "type": "dropdown",
+              "options": [
+                {
+                  "value": "bacterial",
+                  "label": "Bacterial Conjunctivitis",
+                  "guidance": "Chloramphenicol 0.5% drops 2-hourly for 2 days then qds. Fusidic acid if pregnant. Safety-net for pain/vision loss. NICE CKS."
+                },
+                {
+                  "value": "corneal-ulcers",
+                  "label": "Suspected Corneal Ulcer/Keratitis",
+                  "guidance": "Contact lens wearer? Painful? Fluorescein staining positive? Emergency Ophthalmology referral (same day). Avoid steroids."
+                },
+                {
+                  "value": "scleritis",
+                  "label": "Scleritis (Deep pain)",
+                  "guidance": "Deep, boring eye pain. Systemic associations (rheumatoid). Urgent Ophthalmology referral (within 24-48h). NICE CKS."
                 }
               ]
             }

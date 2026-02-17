@@ -62,6 +62,9 @@ async function init() {
             }
         });
 
+        // Initialize NEWS2 Calculator
+        initNEWS2();
+
     } catch (e) {
         console.error("Error loading test data:", e);
         document.getElementById('select-test').innerHTML = '<option value="">Failed to load protocols</option>';
@@ -210,13 +213,21 @@ function analyseResult() {
     const categoryName = testData[catIdx].category;
     let range;
 
-    // Check if test has age-specific ranges (like PSA)
-    if (test.name === "PSA") {
-        if (age < 50) range = test.ranges.age_40_49;
-        else if (age < 60) range = test.ranges.age_50_59;
-        else if (age < 70) range = test.ranges.age_60_69;
-        else range = test.ranges.age_70_79;
-    } else {
+    const findAgeRange = (ranges, currentAge) => {
+        // Look for keys like age_40_49
+        for (const key in ranges) {
+            if (key.startsWith('age_')) {
+                const parts = key.split('_'); // ['age', '40', '49']
+                const minA = parseInt(parts[1], 10);
+                const maxA = parseInt(parts[2], 10);
+                if (currentAge >= minA && currentAge <= maxA) return ranges[key];
+            }
+        }
+        return null;
+    };
+
+    range = findAgeRange(test.ranges, age);
+    if (!range) {
         range = test.ranges[sex] || test.ranges.all;
     }
 
@@ -265,8 +276,8 @@ function analyseResult() {
             <div class="emis-coding-box" style="margin-top: 20px; padding: 15px; background: #fdfdfd; border: 1px dashed #ccc; border-radius: 8px;">
                 <h4 style="font-size: 13px; color: var(--text-muted); margin-bottom: 10px;">PROPOSED EMIS CODES</h4>
                 <div style="font-family: monospace; font-size: 12px; background: #eee; padding: 10px; border-radius: 4px;">
-                    Read Code: ${test.name === 'Hb' ? '422..' : '66Y..'} <br>
-                    Status: ${status === 'normal' ? 'Normal result' : 'Abnormal result'} <br>
+                    Read Code: ${test.emisCode || '66Y..'} <br>
+                    Status: ${status.charAt(0).toUpperCase() + status.slice(1)} result <br>
                     Clinician: Actioned via PathLinks Protocol
                 </div>
             </div>
@@ -366,16 +377,26 @@ async function renderDecisionTools() {
     const guidanceText = document.getElementById('decision-guidance-text');
     if (!systemSelect || !toolSelect || !panel) return;
 
+    if (systemSelect.dataset.loading === 'true') return;
+    if (systemSelect.dataset.initialized) return;
+
     if (!decisionToolsData) {
+        systemSelect.dataset.loading = 'true';
         try {
             const res = await fetch('./data/decision_tools_protocol.json');
             if (!res.ok) throw new Error('Not found');
             decisionToolsData = await res.json();
+            systemSelect.dataset.loading = 'false';
+            systemSelect.dataset.initialized = 'true';
         } catch (e) {
+            console.error("[DecisionTools] Load failed:", e);
+            systemSelect.dataset.loading = 'false';
             panel.classList.add('hidden');
-            stepsContainer.innerHTML = '<p class="placeholder-text">Decision tools data not found. Run <code>node scripts/build-decision-tools.js</code> to generate.</p>';
+            stepsContainer.innerHTML = '<p class="placeholder-text">Decision tools data not found. Run <code>node scripts/build-decision-tools.js</code> to generate or check network connectivity.</p>';
             return;
         }
+    } else {
+        systemSelect.dataset.initialized = 'true';
     }
 
     const systems = decisionToolsData.systems || [];
@@ -447,62 +468,64 @@ async function renderDecisionTools() {
                 (sys.tools || []).forEach((tool, toolIdx) => {
                     const title = (tool.title || '').toLowerCase();
                     const sysName = (sys.name || '').toLowerCase();
-                    if (title.includes(q) || sysName.includes(q)) hits.push({ sysIdx, toolIdx, sysName: sys.name, title: tool.title });
+                    if (title.includes(q) || sysName.includes(q)) hits.push({ sysIdx, toolIdx, sysName: sys.name, title: tool.title, tool });
                 });
             });
-            hits.sort((a, b) => (a.title || '').localeCompare(b.title || '', 'en', { sensitivity: 'base' }));
+
+            // Task 3: Prioritize Specific Pathways over Generic Pathways
+            hits.sort((a, b) => {
+                const aIsGeneric = a.tool.steps && a.tool.steps[0] && a.tool.steps[0].id === 'guidance';
+                const bIsGeneric = b.tool.steps && b.tool.steps[0] && b.tool.steps[0].id === 'guidance';
+                if (aIsGeneric && !bIsGeneric) return 1;
+                if (!aIsGeneric && bIsGeneric) return -1;
+                return (a.title || '').localeCompare(b.title || '', 'en', { sensitivity: 'base' });
+            });
+
             const show = hits.slice(0, maxSearchHits);
             show.forEach(({ sysIdx, toolIdx, sysName, title }) => {
                 const div = document.createElement('div');
                 div.className = 'search-hit';
                 div.setAttribute('role', 'option');
-                div.innerHTML = '<span>' + escapeHtml(title) + '</span> <span class="system-name">(' + escapeHtml(sysName) + ')</span>';
+
+                // Visual indicator for specific pathway in search hits
+                const toolHit = hits.find(h => h.title === title && h.sysName === sysName).tool;
+                const isGeneric = toolHit.steps && toolHit.steps[0] && toolHit.steps[0].id === 'guidance';
+                const badge = isGeneric ? '<span style="color: #f39c12; font-size: 10px;">[Generic]</span>' : '<span style="color: #27ae60; font-size: 10px;">[Specific]</span>';
+
+                div.innerHTML = badge + ' <span>' + escapeHtml(title) + '</span> <span class="system-name">(' + escapeHtml(sysName) + ')</span>';
                 div.addEventListener('click', function () {
+                    console.log(`[Search] Selected: ${title} (sysIdx: ${sysIdx}, toolIdx: ${toolIdx})`);
                     if (filterInput) filterInput.value = '';
                     searchAllInput.value = '';
                     searchResultsEl.classList.add('hidden');
                     searchResultsEl.innerHTML = '';
+
+                    // Step 1: Sync System Dropdown
                     systemSelect.value = String(sysIdx);
                     toolSelect.disabled = false;
+
+                    // Step 2: Populate Tool Dropdown for this system
                     populateTopicDropdown(systems[sysIdx], '');
+
+                    // Step 3: Explicitly set the value and ensure it's selected in the DOM
                     toolSelect.value = String(toolIdx);
-                    var sys = systems[sysIdx];
-                    var tool = (sys.tools || [])[parseInt(toolIdx, 10)];
-                    if (!tool) return;
-                    titleEl.textContent = tool.title;
-                    niceEl.textContent = (tool.niceRefs || []).join(', ') || 'NICE CKS';
-                    evidenceEl.textContent = tool.evidence || 'See NICE CKS and local policy.';
-                    guidanceBox.classList.add('hidden');
-                    stepsContainer.innerHTML = '';
-                    (tool.steps || []).forEach(function (step, stepIdx) {
-                        if (step.type !== 'dropdown' || !step.options || !step.options.length) return;
-                        var divStep = document.createElement('div');
-                        divStep.className = 'field-group';
-                        divStep.style.marginBottom = '1rem';
-                        var label = document.createElement('label');
-                        label.textContent = step.question;
-                        var select = document.createElement('select');
-                        select.dataset.stepIndex = stepIdx;
-                        select.innerHTML = '<option value="">-- Select --</option>';
-                        step.options.forEach(function (opt, oIdx) {
-                            var o = document.createElement('option');
-                            o.value = oIdx;
-                            o.textContent = opt.label;
-                            o.dataset.guidance = (opt.guidance || '').replace(/"/g, '&quot;');
-                            select.appendChild(o);
-                        });
-                        select.addEventListener('change', function () {
-                            var chosen = this.options[this.selectedIndex];
-                            if (!chosen || chosen.value === '') { guidanceBox.classList.add('hidden'); return; }
-                            var g = (chosen.dataset.guidance || '').replace(/&quot;/g, '"');
-                            guidanceText.textContent = g;
-                            guidanceBox.classList.remove('hidden');
-                        });
-                        divStep.appendChild(label);
-                        divStep.appendChild(select);
-                        stepsContainer.appendChild(divStep);
-                    });
-                    panel.classList.remove('hidden');
+
+                    // Step 4: Verification & Rendering
+                    const sys = systems[sysIdx];
+                    const tool = (sys.tools || [])[parseInt(toolIdx, 10)];
+
+                    if (tool) {
+                        console.log(`[Search] Found tool: ${tool.title}. Rendering UI.`);
+                        renderToolUI(tool);
+                    } else {
+                        console.warn(`[Search] Tool index mismatch. Searching by title fallback...`);
+                        const fallbackTool = (sys.tools || []).find(t => t.title === title);
+                        if (fallbackTool) {
+                            const actualIdx = sys.tools.indexOf(fallbackTool);
+                            toolSelect.value = String(actualIdx);
+                            renderToolUI(fallbackTool);
+                        }
+                    }
                 });
                 searchResultsEl.appendChild(div);
             });
@@ -528,16 +551,24 @@ async function renderDecisionTools() {
         }
         const sys = systems[parseInt(sysIdx, 10)];
         const tool = (sys.tools || [])[parseInt(toolIdx, 10)];
-        if (!tool) {
-            panel.classList.add('hidden');
-            return;
-        }
-        titleEl.textContent = tool.title;
+        if (tool) renderToolUI(tool);
+    };
+
+    function renderToolUI(tool) {
+        // UI elements from parent scope
+        titleEl.innerHTML = escapeHtml(tool.title);
+
+        // Safety badge
+        const isGeneric = tool.steps && tool.steps[0] && tool.steps[0].id === 'guidance';
+        const badgeClass = isGeneric ? 'badge-warning' : 'badge-success';
+        const badgeText = isGeneric ? 'Generic Pathway' : 'Specific Pathway';
+        titleEl.innerHTML += ` <span class="badge ${badgeClass}" style="font-size: 11px; vertical-align: middle; margin-left: 8px;">${badgeText}</span>`;
+
         niceEl.textContent = (tool.niceRefs || []).join(', ') || 'NICE CKS';
         evidenceEl.textContent = tool.evidence || 'See NICE CKS and local policy.';
         guidanceBox.classList.add('hidden');
-
         stepsContainer.innerHTML = '';
+
         (tool.steps || []).forEach((step, stepIdx) => {
             if (step.type !== 'dropdown' || !step.options || !step.options.length) return;
             const div = document.createElement('div');
@@ -564,13 +595,22 @@ async function renderDecisionTools() {
                 const g = (chosen.dataset.guidance || '').replace(/&quot;/g, '"');
                 guidanceText.textContent = g;
                 guidanceBox.classList.remove('hidden');
+
+                // Visual feedback for generic vs specific
+                if (isGeneric) {
+                    guidanceBox.style.borderLeft = '4px solid #f39c12';
+                    guidanceBox.style.background = '#fffaf0';
+                } else {
+                    guidanceBox.style.borderLeft = '4px solid #3498db';
+                    guidanceBox.style.background = '#f0f7ff';
+                }
             });
             div.appendChild(label);
             div.appendChild(select);
             stepsContainer.appendChild(div);
         });
         panel.classList.remove('hidden');
-    };
+    }
 }
 
 function escapeHtml(s) {
@@ -884,6 +924,115 @@ C10.. - Hypothyroidism
             }, 2000);
         });
     });
+}
+
+function initNEWS2() {
+    const inputs = ['news-rr', 'news-spo2', 'news-oxygen', 'news-sbp', 'news-hr', 'news-consciousness', 'news-temp'];
+    inputs.forEach(id => {
+        const el = document.getElementById(id);
+        if (el) {
+            el.addEventListener('input', calculateNEWS2);
+            el.addEventListener('change', calculateNEWS2);
+        }
+    });
+}
+
+function calculateNEWS2() {
+    const rr = parseInt(document.getElementById('news-rr').value) || 0;
+    const spo2 = parseInt(document.getElementById('news-spo2').value) || 0;
+    const oxygen = parseInt(document.getElementById('news-oxygen').value) || 0;
+    const sbp = parseInt(document.getElementById('news-sbp').value) || 0;
+    const hr = parseInt(document.getElementById('news-hr').value) || 0;
+    const consciousness = parseInt(document.getElementById('news-consciousness').value) || 0;
+    const temp = parseFloat(document.getElementById('news-temp').value) || 0;
+
+    let news = 0;
+    let qsofa = 0;
+
+    // qSOFA: RR >= 22 (1), SBP <= 100 (1), GCS < 15 (1)
+    if (rr >= 22) qsofa++;
+    if (sbp <= 100 && sbp > 0) qsofa++;
+    if (consciousness > 0) qsofa++;
+
+    // NEWS2 Calculation
+    // RR
+    if (rr > 0) {
+        if (rr <= 8) news += 3;
+        else if (rr <= 11) news += 1;
+        else if (rr >= 25) news += 3;
+        else if (rr >= 21) news += 2;
+    }
+
+    // SpO2
+    if (spo2 > 0) {
+        if (spo2 <= 91) news += 3;
+        else if (spo2 <= 93) news += 2;
+        else if (spo2 <= 95) news += 1;
+    }
+
+    // Oxygen
+    news += parseInt(oxygen);
+
+    // SBP
+    if (sbp > 0) {
+        if (sbp <= 90) news += 3;
+        else if (sbp <= 100) news += 2;
+        else if (sbp <= 110) news += 1;
+        else if (sbp >= 220) news += 3;
+    }
+
+    // HR
+    if (hr > 0) {
+        if (hr <= 40) news += 3;
+        else if (hr <= 50) news += 1;
+        else if (hr >= 131) news += 3;
+        else if (hr >= 111) news += 2;
+        else if (hr >= 91) news += 1;
+    }
+
+    // Consciousness
+    news += parseInt(consciousness);
+
+    // Temp
+    if (temp > 0) {
+        if (temp <= 35.0) news += 3;
+        else if (temp <= 36.0) news += 1;
+        else if (temp >= 39.1) news += 2;
+        else if (temp >= 38.1) news += 1;
+    }
+
+    document.getElementById('qsofa-score-display').textContent = qsofa;
+    document.getElementById('news2-score-display').textContent = news;
+
+    const result = document.getElementById('sepsis-risk-result');
+    if (rr === 0 && spo2 === 0 && sbp === 0 && hr === 0) {
+        result.classList.add('hidden');
+        return;
+    }
+
+    result.classList.remove('hidden');
+
+    if (news >= 7 || qsofa >= 2) {
+        result.style.background = '#ffebee';
+        result.style.color = '#c62828';
+        result.style.border = '1px solid #ef9a9a';
+        result.innerHTML = '<strong>RED FLAG - High Risk:</strong> Urgent clinical review and consider hospital admission. Start Sepsis 6 (IV fluids, antibiotics, lactate).';
+    } else if (news >= 5) {
+        result.style.background = '#fff3e0';
+        result.style.color = '#ef6c00';
+        result.style.border = '1px solid #ffcc80';
+        result.innerHTML = '<strong>AMBER FLAG - Medium Risk:</strong> Urgent clinical review by senior clinician. Increase observation frequency.';
+    } else if (news >= 1) {
+        result.style.background = '#fffde7';
+        result.style.color = '#f57f17';
+        result.style.border = '1px solid #fff59d';
+        result.innerHTML = '<strong>Low Risk (Low Score):</strong> Escalate to ward clinician for review if scores 1-4.';
+    } else {
+        result.style.background = '#e8f5e9';
+        result.style.color = '#2e7d32';
+        result.style.border = '1px solid #a5d6a7';
+        result.innerHTML = '<strong>GREEN - Stable:</strong> Continue routine observation and clinical review.';
+    }
 }
 
 init();
