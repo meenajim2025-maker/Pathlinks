@@ -38,7 +38,7 @@ For a younger clinician "actioning" a batch of results, you can create an EMIS T
 
 ## 3. QRISK Coding
 For Cholesterol results:
-- **Code:** `38DR.` QRISK2 cardiovascular disease 10 year risk score
+- **Code:** `38DR.` QRISK3 cardiovascular disease 10 year risk score
 - **Logic:** If Cholesterol/HDL ratio > 6, prompt for QRISK assessment.
 
 ## 4. TSH / LFT Coding

@@ -20,21 +20,34 @@
                     "high": {
                         "threshold": "Above max",
                         "actions": [
-                            "Review SHS: Smoking, Hubby/Partner smoking, and Carbon Monoxide exposure.",
-                            "Check medication history: Use of steroid inhalers, oral steroids, or TRT.",
-                            "Clinical Exam: Check skin for discoloration (Plethora) or scratch marks.",
-                            "Review Trend: Compare with previous values to differentiate acute vs chronic.",
-                            "Consider repeat bloods in 4-6 weeks if mild and asymptomatic.",
-                            "Rationale: Exclude secondary polycythemia before specialist JAK2 referral."
+                            "MANAGEMENT PLAN:",
+                            "1. Checks: Review SHS (Smoking/Carbon Monoxide) and medication history (Steroids/TRT).",
+                            "2. Exam: Check for Plethora or scratch marks.",
+                            "3. Action: Compare with trend. Exclude secondary polycythaemia.",
+                            "4. Repeat: Recheck in 4-6 weeks if mild/asymptomatic."
                         ]
                     },
                     "low": {
                         "threshold": "Below min",
+                        "triage": [
+                            "Assess: Is there chest pain, shortness of breath, or dizziness at rest?",
+                            "Assess: Are there signs of active GI bleed (melaena, haematemesis)?",
+                            "Disposition: If any Red Flags present or Hb < 70 g/L → Urgent Clinical Assessment / A&E."
+                        ],
                         "actions": [
-                            "Check MCV to determine type of anaemia (Microcytic, Normocytic, Macrocytic).",
-                            "Review Ferritin, B12, and Folate.",
-                            "If age >60 or red flags (weight loss, change in bowel habit), perform FIT test / 2WW referral.",
-                            "Consider coeliac serology if microcytic/normocytic."
+                            "MANAGEMENT PLAN:",
+                            "1. Check MCV: Microcytic (Iron def?), Normocytic (Chronic disease?), Macrocytic (B12/Folate?).",
+                            "2. Investigations: ferritin, B12, folate, coeliac serology.",
+                            "3. Malignancy: If >60 or red flags, perform FIT test / 2WW referral.",
+                            "4. Repeat: Recheck in 2-4 weeks after starting treatment (Iron/B12)."
+                        ]
+                    },
+                    "normal": {
+                        "actions": [
+                            "MANAGEMENT PLAN:",
+                            "1. Checks: Ensure no symptoms of anaemia (fatigue, SOB) or occult bleeding.",
+                            "2. Action: No active management required if clinically well.",
+                            "3. Repeat: Annual check if on monitoring list, otherwise as clinically indicated."
                         ]
                     }
                 }
@@ -51,10 +64,32 @@
                 "emisCode": "42N..",
                 "guidance": {
                     "high": {
+                        "triage": [
+                            "Assess: Is there a non-blanching rash or mottled/ashen skin?",
+                            "Assess: Is there new confusion, lethargy, or slurred speech?",
+                            "Assess: Is the patient shivering, muscle pain, or unable to pass urine?",
+                            "Disposition: If any Sepsis Red Flags present or patient looks acutely unwell → Emergency Admission (Sepsis 6)."
+                        ],
                         "actions": [
-                            "Check differential (Neutrophilia, Lymphocytosis?).",
-                            "Check for signs of infection or inflammation.",
-                            "If persistent and unexplained, consider haematology review for myeloproliferative disorders."
+                            "MANAGEMENT PLAN:",
+                            "1. Checks: Review differential (Neutrophilia vs Lymphocytosis).",
+                            "2. Action: Check for infection or inflammation. If persistent/unexplained, consider Haematology review.",
+                            "3. Repeat: Recheck in 1-2 weeks after acute infection resolves."
+                        ]
+                    },
+                    "low": {
+                        "actions": [
+                            "MANAGEMENT PLAN:",
+                            "1. Checks: Review medications (MTX, Chemotherapy, Clozapine). Check for signs of infection.",
+                            "2. Action: If < 2.0 or symptomatic, urgent Clinical Assessment. If < 1.0, urgent A&E.",
+                            "3. Repeat: Within 24-48h."
+                        ]
+                    },
+                    "normal": {
+                        "actions": [
+                            "MANAGEMENT PLAN:",
+                            "1. Action: Normal range.",
+                            "2. Repeat: Routine."
                         ]
                     }
                 }
@@ -72,15 +107,25 @@
                 "guidance": {
                     "low": {
                         "actions": [
-                            "If <100: Check for bruising/bleeding. Review medications (NSAIDs, Carbamazepine). Repeat in 1 week.",
-                            "If <50: Urgent referral to Haematology.",
-                            "Consider Pseudothrombocytopenia (EDTA clumping); repeat in Citrate tube."
+                            "MANAGEMENT PLAN:",
+                            "1. Checks: Check for bruising/bleeding. Review medications (NSAIDs, Carbamazepine).",
+                            "2. Action: If <100, repeat in 1 week. If <50, urgent Haematology referral. Consider Citrate tube to rule out EDTA clumping.",
+                            "3. Repeat: Short interval repeat (1 week)."
                         ]
                     },
                     "high": {
                         "actions": [
-                            "Reactive: Check CRP/Ferritin (Iron deficiency or inflammation can raise platelets).",
-                            "If persistent >600: Consider essential thrombocythaemia; check JAK2."
+                            "MANAGEMENT PLAN:",
+                            "1. Checks: Reactive check (CRP/Ferritin - Iron deficiency or inflammation).",
+                            "2. Action: If persistent >600, consider referral for JAK2 screening.",
+                            "3. Repeat: 4-6 weeks."
+                        ]
+                    },
+                    "normal": {
+                        "actions": [
+                            "MANAGEMENT PLAN:",
+                            "1. Action: Normal range.",
+                            "2. Repeat: Routine."
                         ]
                     }
                 }
@@ -101,10 +146,25 @@
                 },
                 "guidance": {
                     "low": {
+                        "triage": [
+                            "Assess: Is there new confusion, seizures, or decreased consciousness?",
+                            "Assess: Is there severe headache, nausea, or vomiting?",
+                            "Disposition: If any Red Flags present or Na < 125 mmol/L → Immediate Emergency Admission."
+                        ],
                         "actions": [
-                            "Review fluid status (Hypo/Eu/Hypervolaemic).",
-                            "Check medications (Diuretics, SSRIs, PPIs - SIADH?).",
-                            "Urgent admission if symptomatic (Confusion, Seizure) or Na <125."
+                            "MANAGEMENT PLAN:",
+                            "1. Fluid Status: Assess if Hypo/Eu/Hypervolaemic.",
+                            "2. Meds Review: Check Diuretics, SSRIs, PPIs (Consider SIADH).",
+                            "3. Malignancy: Screen for underlying causes if SIADH suspected.",
+                            "4. Repeat: Within 48h if 130-132; Urgent Review/Repeat today if <130."
+                        ]
+                    },
+                    "normal": {
+                        "actions": [
+                            "MANAGEMENT PLAN:",
+                            "1. Checks: Review for symptoms of polydipsia if borderline low.",
+                            "2. Action: No action required.",
+                            "3. Repeat: Routine monitoring as indicated by comorbidities."
                         ]
                     }
                 }
@@ -120,10 +180,39 @@
                 },
                 "guidance": {
                     "high": {
+                        "triage": [
+                            "Assess: Is the patient experiencing chest pain or palpitations?",
+                            "Assess: Is there any new muscle weakness or paralysis?",
+                            "Disposition: If any Red Flags present or K >= 6.5 mmol/L → Immediate Emergency Admission."
+                        ],
                         "actions": [
-                            "URGENT: If K >= 6.0, obtain ECG immediately.",
-                            "If K >= 6.5, urgent hospital admission required.",
-                            "Review medications: ACEi, ARBs, Spironolactone, NSAIDs."
+                            "MANAGEMENT PLAN:",
+                            "1. URGENT: If K >= 6.0, obtain ECG immediately.",
+                            "2. Sample Check: Review collection vs reporting time (Rule out Pseudohyperkalaemia).",
+                            "3. Meds Review: Stop/Review ACEi, ARBs, Spironolactone, NSAIDs.",
+                            "4. Repeat: Within 24-48h if 6.0-6.4; Urgent Repeat today if ≥6.5."
+                        ]
+                    },
+                    "low": {
+                        "triage": [
+                            "Assess: Is there severe muscle weakness or palpitations?",
+                            "Assess: Is the patient on Digoxin? (Increased toxicity risk).",
+                            "Disposition: If K < 2.5 mmol/L or symptomatic → Immediate Emergency Admission."
+                        ],
+                        "actions": [
+                            "MANAGEMENT PLAN:",
+                            "1. Meds Check: Rule out Diuretics, Laxatives, or Insulin use.",
+                            "2. Magnesium Check: Measure Magnesium (low Mg prevents K+ correction).",
+                            "3. Supplementation: If 2.5-3.4 and asymptomatic, consider oral supplementation (Sando-K) or dietary increase.",
+                            "4. Repeat: Recheck in 2-3 days if 3.0-3.4; Repeat today if 2.5-2.9."
+                        ]
+                    },
+                    "normal": {
+                        "actions": [
+                            "MANAGEMENT PLAN:",
+                            "1. Checks: Ensure patient is not on high-dose supplements or potassium-sparing diuretics.",
+                            "2. Action: Continue current management.",
+                            "3. Repeat: As per routine monitoring (6-12 months for ACEi/Diuretics)."
                         ]
                     }
                 }
@@ -144,10 +233,25 @@
                 "emisCode": "444..",
                 "guidance": {
                     "high": {
+                        "triage": [
+                            "Assess: Is there significantly decreased urine output (<0.5ml/kg/hr)?",
+                            "Assess: Is the patient vomiting or unable to tolerate oral fluids?",
+                            "Disposition: If AKI Stage 3 or acutely unwell → Urgent Hospital Admission."
+                        ],
                         "actions": [
-                            "Acute Kidney Injury (AKI)?: Compare with baseline. If >1.5x baseline, confirm AKI stage.",
-                            "Check hydration and medications (NSAIDs, ACEi, ARBs).",
-                            "Calculate eGFR. If <30, urgent review."
+                            "MANAGEMENT PLAN:",
+                            "1. Meds Review: URGENTLY stop NSAIDs, ACEi, ARBs, Diuretics (Sick Day Rules).",
+                            "2. Examination: Assess fluid status (Dehydration?) and bladder (Obstruction?).",
+                            "3. Calculations: Check eGFR and compare to baseline (AKI criteria).",
+                            "4. Repeat: Within 24-48h to monitor trend/resolution."
+                        ]
+                    },
+                    "normal": {
+                        "actions": [
+                            "MANAGEMENT PLAN:",
+                            "1. Checks: Ensure monitoring is up to date if patient has CKD or on high-risk meds.",
+                            "2. Action: No action required.",
+                            "3. Repeat: Routine monitoring as per local CKD/Medication policy."
                         ]
                     }
                 }
@@ -160,6 +264,23 @@
                         "min": 2.5,
                         "max": 7.8
                     }
+                },
+                "guidance": {
+                    "high": {
+                        "actions": [
+                            "MANAGEMENT PLAN:",
+                            "1. Checks: Assess for dehydration or high-protein diet.",
+                            "2. Action: Review together with Creatinine. If isolated high urea, consider GI bleed (upper).",
+                            "3. Repeat: Routine or short interval if AKI suspected."
+                        ]
+                    },
+                    "normal": {
+                        "actions": [
+                            "MANAGEMENT PLAN:",
+                            "1. Action: Normal range.",
+                            "2. Repeat: Routine."
+                        ]
+                    }
                 }
             },
             {
@@ -169,6 +290,15 @@
                     "all": {
                         "min": 95,
                         "max": 108
+                    }
+                },
+                "guidance": {
+                    "normal": {
+                        "actions": [
+                            "MANAGEMENT PLAN:",
+                            "1. Action: Normal range.",
+                            "2. Repeat: Routine."
+                        ]
                     }
                 }
             }
@@ -190,8 +320,17 @@
                 "guidance": {
                     "high": {
                         "actions": [
-                            "MASLD screen: Check BMI, HbA1c, Lipids.",
-                            "If >3x ULN, check Viral Hepatitis Screen (HBsAg, HCV Ab)."
+                            "MANAGEMENT PLAN:",
+                            "1. Checks: MASLD screen (BMI, HbA1c, Lipids). Review alcohol and medications (Statins?).",
+                            "2. Action: If >3x ULN, check Viral Hepatitis Screen (HBsAg, HCV Ab). If persistent, request Liver US.",
+                            "3. Repeat: Recheck in 4-6 weeks."
+                        ]
+                    },
+                    "normal": {
+                        "actions": [
+                            "MANAGEMENT PLAN:",
+                            "1. Action: Normal range.",
+                            "2. Repeat: Routine."
                         ]
                     }
                 }
@@ -204,6 +343,23 @@
                         "min": 0,
                         "max": 40
                     }
+                },
+                "guidance": {
+                    "high": {
+                        "actions": [
+                            "MANAGEMENT PLAN:",
+                            "1. Checks: Similar to ALT. Differentiate Hepatic vs Muscular cause (check CK if unsure).",
+                            "2. Action: Review medications and lifestyle.",
+                            "3. Repeat: Recheck with ALT in 4 weeks."
+                        ]
+                    },
+                    "normal": {
+                        "actions": [
+                            "MANAGEMENT PLAN:",
+                            "1. Action: Normal range.",
+                            "2. Repeat: Routine."
+                        ]
+                    }
                 }
             },
             {
@@ -214,6 +370,23 @@
                         "min": 30,
                         "max": 130
                     }
+                },
+                "guidance": {
+                    "high": {
+                        "actions": [
+                            "MANAGEMENT PLAN:",
+                            "1. Checks: Check GGT to differentiate Liver vs Bone source.",
+                            "2. Action: If GGT high: biliary cause (US Liver). If GGT normal: Bone cause (Vit D/Calcium).",
+                            "3. Repeat: Recheck in 4 weeks."
+                        ]
+                    },
+                    "normal": {
+                        "actions": [
+                            "MANAGEMENT PLAN:",
+                            "1. Action: Normal range.",
+                            "2. Repeat: Routine."
+                        ]
+                    }
                 }
             },
             {
@@ -223,6 +396,23 @@
                     "all": {
                         "min": 0,
                         "max": 20
+                    }
+                },
+                "guidance": {
+                    "high": {
+                        "actions": [
+                            "MANAGEMENT PLAN:",
+                            "1. Checks: Assess if conjugated or unconjugated. Rule out Gilbert's syndrome (common cause of isolated high bilirubin).",
+                            "2. Action: If ALT/ALP also high, request Liver US. If jaundiced, urgent referral.",
+                            "3. Repeat: Recheck in 2-4 weeks."
+                        ]
+                    },
+                    "normal": {
+                        "actions": [
+                            "MANAGEMENT PLAN:",
+                            "1. Action: Normal range.",
+                            "2. Repeat: Routine."
+                        ]
                     }
                 }
             },
@@ -237,8 +427,35 @@
                 "guidance": {
                     "high": {
                         "actions": [
-                            "HBsAg Positive: Chronic or Acute Hepatitis B. Refer to GI/Infectious Disease.",
-                            "HCV Ab Positive: Requires reflex HCV RNA test to confirm current infection."
+                            "MANAGEMENT PLAN:",
+                            "1. Action: HBsAg Positive indicates Hepatitis B; HCV Ab Positive indicates Hepatitis C exposure.",
+                            "2. Referral: Refer to Hepatology or Infectious Diseases for evaluation and viral load testing.",
+                            "3. Repeat: Confirm with HCV RNA for Hep C."
+                        ]
+                    },
+                    "normal": {
+                        "actions": [
+                            "MANAGEMENT PLAN:",
+                            "1. Action: Screening negative.",
+                            "2. Repeat: Only if new exposure/risk."
+                        ]
+                    }
+                }
+            },
+            {
+                "name": "Liver Profile (Normal Result)",
+                "unit": "Grade",
+                "ranges": {
+                    "all": {
+                        "max": 0
+                    }
+                },
+                "guidance": {
+                    "normal": {
+                        "actions": [
+                            "MANAGEMENT PLAN:",
+                            "1. Action: All components within normal range.",
+                            "2. Repeat: Routine annual screen if on medication monitoring."
                         ]
                     }
                 }
@@ -260,18 +477,26 @@
                 "guidance": {
                     "high": {
                         "actions": [
-                            "TSH > 10 mU/L: Overt Hypothyroidism. Start Levothyroxine 25-50mcg OD (lower dose if elderly/cardiac).",
-                            "TSH 4.5 - 10 mU/L (Subclinical): Check TPO antibodies. If symptomatic or TPO+, consider trial of Levothyroxine.",
-                            "Repeat TFTs in 6-8 weeks after starting treatment. Target TSH 0.4 - 2.0 mU/L.",
-                            "EMIS Code: C10.. (Hypothyroidism)"
+                            "MANAGEMENT PLAN:",
+                            "1. Treatment: If TSH > 10 mU/L, start Levothyroxine 25-50mcg OD (lower dose if elderly/cardiac).",
+                            "2. Subclinical: If TSH 4.5-10, check TPO antibodies. Consider trial if symptomatic or TPO positive.",
+                            "3. Repeat: Recheck TFTs in 6-8 weeks. Target TSH 0.4-2.0 mU/L."
                         ]
                     },
                     "low": {
                         "actions": [
-                            "TSH < 0.1 mU/L: Suggests Hyperthyroidism or over-replacement. Check Free T4 and Free T3.",
-                            "If on Levothyroxine: Reduce dose by 25mcg and recheck in 6-8 weeks.",
-                            "New presentation: Refer to Endocrinology. Consider Graves' disease, toxic nodule, or thyroiditis.",
-                            "RED FLAG: Thyroid storm (Fever, Tachycardia, Confusion) = Emergency admission."
+                            "MANAGEMENT PLAN:",
+                            "1. Action: Suppressed TSH. Request Free T4 and Free T3 to differentiate Hyperthyroidism.",
+                            "2. Checks: If on Levothyroxine, consider dose reduction (25mcg).",
+                            "3. Referral: Refer to Endocrinology for further assessment (Graves/Toxic nodule).",
+                            "4. Repeat: 4-6 weeks."
+                        ]
+                    },
+                    "normal": {
+                        "actions": [
+                            "MANAGEMENT PLAN:",
+                            "1. Action: Euthyroid.",
+                            "2. Repeat: Annual if on thyroid meds, otherwise routine."
                         ]
                     }
                 }
@@ -288,16 +513,25 @@
                 "guidance": {
                     "high": {
                         "actions": [
-                            "High Free T4 with Low TSH: Primary Hyperthyroidism. Refer to Endocrinology.",
-                            "High Free T4 with Normal/High TSH: Consider TSH-secreting pituitary adenoma or thyroid hormone resistance.",
-                            "Check for symptoms: Weight loss, tremor, palpitations, heat intolerance."
+                            "MANAGEMENT PLAN:",
+                            "1. Checks: High Free T4 with Low TSH confirms Primary Hyperthyroidism.",
+                            "2. Action: Refer to Endocrinology for consideration of Carbimazole or radioactive iodine.",
+                            "3. Repeat: 2-4 weeks for monitoring during initiation of treatment."
                         ]
                     },
                     "low": {
                         "actions": [
-                            "Low Free T4 with High TSH: Primary Hypothyroidism. Start Levothyroxine.",
-                            "Low Free T4 with Low/Normal TSH: Secondary (Central) Hypothyroidism. Needs pituitary function tests.",
-                            "Consider recent illness (sick euthyroid syndrome) if acutely unwell."
+                            "MANAGEMENT PLAN:",
+                            "1. Checks: Low Free T4 with High TSH confirms Primary Hypothyroidism.",
+                            "2. Action: Start/Increase Levothyroxine.",
+                            "3. Repeat: 6-8 weeks."
+                        ]
+                    },
+                    "normal": {
+                        "actions": [
+                            "MANAGEMENT PLAN:",
+                            "1. Action: Normal range.",
+                            "2. Repeat: Routine."
                         ]
                     }
                 }
@@ -314,16 +548,25 @@
                 "guidance": {
                     "high": {
                         "actions": [
-                            "High Free T3: May indicate T3 toxicosis or early hyperthyroidism.",
-                            "Check Free T4 and TSH for complete picture.",
-                            "If T3 high but T4 normal: Consider T3-predominant Graves' disease."
+                            "MANAGEMENT PLAN:",
+                            "1. Checks: High Free T3 with suppressed TSH suggests T3-toxicosis.",
+                            "2. Action: Refer to Endocrinology.",
+                            "3. Repeat: Per specialist guidance."
                         ]
                     },
                     "low": {
                         "actions": [
-                            "Low Free T3: Often seen in sick euthyroid syndrome or severe illness.",
-                            "Usually not treated in isolation. Focus on underlying condition.",
-                            "If persistent with symptoms, consider endocrine review."
+                            "MANAGEMENT PLAN:",
+                            "1. Note: Often seen in 'sick euthyroid' syndrome (non-thyroidal illness).",
+                            "2. Action: No specific treatment; treat underlying illness.",
+                            "3. Repeat: Recheck once patient is clinically well."
+                        ]
+                    },
+                    "normal": {
+                        "actions": [
+                            "MANAGEMENT PLAN:",
+                            "1. Action: Normal range.",
+                            "2. Repeat: Routine."
                         ]
                     }
                 }
@@ -341,6 +584,16 @@
                         "min": 0,
                         "max": 10
                     }
+                },
+                "guidance": {
+                    "normal": {
+                        "actions": [
+                            "MANAGEMENT PLAN:",
+                            "1. Checks: Confirm no clinical signs of acute infection or chronic inflammation.",
+                            "2. Action: Reassure patient. Normal CRP suggests no significant active inflammation.",
+                            "3. Repeat: Only if symptoms persist or new clinical concern arises."
+                        ]
+                    }
                 }
             },
             {
@@ -350,6 +603,71 @@
                     "all": {
                         "min": 0,
                         "max": 20
+                    }
+                },
+                "guidance": {
+                    "normal": {
+                        "actions": [
+                            "MANAGEMENT PLAN:",
+                            "1. Checks: Ensure no symptoms of PMR/GCA if aged >50.",
+                            "2. Action: Normal ESR reduces likelihood of systemic inflammatory condition.",
+                            "3. Repeat: Routine as indicated."
+                        ]
+                    }
+                }
+            },
+            {
+                "name": "B12 (Cobalamin)",
+                "unit": "ng/L",
+                "ranges": {
+                    "all": {
+                        "min": 190,
+                        "max": 900
+                    }
+                },
+                "guidance": {
+                    "low": {
+                        "actions": [
+                            "MANAGEMENT PLAN:",
+                            "1. Checks: Rule out Pernicious Anaemia (check IFAB) and dietary causes (Vegan/Veg).",
+                            "2. Action: Start Loading doses of Hydroxocobalamin (6 injections over 2 weeks) then 3-monthly.",
+                            "3. Repeat: Check FBC in 2-4 weeks to observe reticulocyte response."
+                        ]
+                    },
+                    "normal": {
+                        "actions": [
+                            "MANAGEMENT PLAN:",
+                            "1. Checks: Ensure no neurological symptoms of deficiency (paraesthesia).",
+                            "2. Action: Continue current diet/supplementation.",
+                            "3. Repeat: Annual if on history of deficiency, otherwise routine."
+                        ]
+                    }
+                }
+            },
+            {
+                "name": "Folate",
+                "unit": "µg/L",
+                "ranges": {
+                    "all": {
+                        "min": 3.0,
+                        "max": 20.0
+                    }
+                },
+                "guidance": {
+                    "low": {
+                        "actions": [
+                            "MANAGEMENT PLAN:",
+                            "1. Action: Start Folic Acid 5mg OD for 4 months.",
+                            "2. Advice: Increase dietary intake (Spinach, broccoli, chickpeas).",
+                            "3. Repeat: Recheck in 4 months."
+                        ]
+                    },
+                    "normal": {
+                        "actions": [
+                            "MANAGEMENT PLAN:",
+                            "1. Action: No active management required.",
+                            "2. Repeat: Routine."
+                        ]
                     }
                 }
             },
@@ -369,12 +687,26 @@
                 "guidance": {
                     "low": {
                         "actions": [
-                            "Confirms iron deficiency. Review for GI loss / Menorrhagia. If >60yrs, FIT test / 2WW."
+                            "MANAGEMENT PLAN:",
+                            "1. Checks: Review for GI loss / Menorrhagia. Rule out malabsorption.",
+                            "2. Action: Confirm iron deficiency. Start oral iron if asymptomatic; urgent specialty referral if symptomatic/low Hb.",
+                            "3. Repeat: Recheck Hb/Ferritin in 2-4 weeks."
                         ]
                     },
                     "high": {
                         "actions": [
-                            "Acute phase reactant. If CRP normal and Ferritin >1000, check Transferrin Saturation for Haemochromatosis."
+                            "MANAGEMENT PLAN:",
+                            "1. Checks: Review CRP to exclude acute phase response.",
+                            "2. Action: If CRP normal and Ferritin >1000, check Transferrin Saturation for Haemochromatosis.",
+                            "3. Repeat: Re-test with CRP in 4 weeks if acute infection suspected."
+                        ]
+                    },
+                    "normal": {
+                        "actions": [
+                            "MANAGEMENT PLAN:",
+                            "1. Checks: Ensure no signs of iron overload if high-normal.",
+                            "2. Action: No action needed.",
+                            "3. Repeat: Routine."
                         ]
                     }
                 }
@@ -386,6 +718,15 @@
                     "all": {
                         "min": 10,
                         "max": 30
+                    }
+                },
+                "guidance": {
+                    "normal": {
+                        "actions": [
+                            "MANAGEMENT PLAN:",
+                            "1. Action: Normal serum iron.",
+                            "2. Repeat: Routine."
+                        ]
                     }
                 }
             },
@@ -401,12 +742,25 @@
                 "guidance": {
                     "high": {
                         "actions": [
-                            "If >50% (male) or >45% (female) WITH high ferritin: High suspicion of Hereditary Haemochromatosis. Genetic testing (HFE) required."
+                            "MANAGEMENT PLAN:",
+                            "1. Checks: If >50% (male) or >45% (female) WITH high ferritin, suggests Hereditary Haemochromatosis.",
+                            "2. Action: Request HFE genetic testing if criteria met.",
+                            "3. Repeat: specialist review."
                         ]
                     },
                     "low": {
                         "actions": [
-                            "<20% indicates iron deficiency even if ferritin is normal (e.g. in inflammation)."
+                            "MANAGEMENT PLAN:",
+                            "1. Checks: Result <20% indicates iron deficiency, even if ferritin is normal (inflammatory context).",
+                            "2. Action: Consider iron supplementation.",
+                            "3. Repeat: 2-4 weeks after starting iron."
+                        ]
+                    },
+                    "normal": {
+                        "actions": [
+                            "MANAGEMENT PLAN:",
+                            "1. Action: Normal iron stores likely.",
+                            "2. Repeat: Routine."
                         ]
                     }
                 }
@@ -427,7 +781,18 @@
                 "guidance": {
                     "high": {
                         "actions": [
-                            "Reactive: Urgent referral to GUM/ID specialist. Perform confirmatory western blot."
+                            "MANAGEMENT PLAN:",
+                            "1. Action: Reactive result. URGENT same-day referral to GUM/ID specialist for confirmatory testing.",
+                            "2. Checks: Ensure patient support is available. Rule out false positives.",
+                            "3. Repeat: specialist only."
+                        ]
+                    },
+                    "normal": {
+                        "actions": [
+                            "MANAGEMENT PLAN:",
+                            "1. Action: HIV Negative.",
+                            "2. Note: Normal result makes HIV infection unlikely (window period notwithstanding).",
+                            "3. Repeat: If high risk exposure within 3 months, repeat in 4-8 weeks."
                         ]
                     }
                 }
@@ -443,7 +808,18 @@
                 "guidance": {
                     "high": {
                         "actions": [
-                            "Positive: Differentiate between treated and active infection. Check RPR/VDRL titre. Refer GUM."
+                            "MANAGEMENT PLAN:",
+                            "1. Action: Positive result. Requires differentiation between treated past infection and active infection.",
+                            "2. Checks: Request RPR/VDRL titre and clinical history of previous treatment.",
+                            "3. Referral: GUM specialty review.",
+                            "4. Repeat: specialist directed."
+                        ]
+                    },
+                    "normal": {
+                        "actions": [
+                            "MANAGEMENT PLAN:",
+                            "1. Action: Negative result.",
+                            "2. Repeat: Only if new exposure."
                         ]
                     }
                 }
@@ -459,7 +835,18 @@
                 "guidance": {
                     "high": {
                         "actions": [
-                            "Positive: Indicates active HBV infection. If pregnant: Urgent referral to specialist to determine infectivity (HBeAg/Viral Load). Infant requires vaccination/HBIG."
+                            "MANAGEMENT PLAN:",
+                            "1. Action: Positive (indicates active HBV infection).",
+                            "2. Pregnancy: If pregnant, URGENT referral to determine infectivity (HBeAg/Viral Load). Infant may require vaccination/HBIG.",
+                            "3. Referral: Hepatology/Infectious Diseases.",
+                            "4. Repeat: specialist only."
+                        ]
+                    },
+                    "normal": {
+                        "actions": [
+                            "MANAGEMENT PLAN:",
+                            "1. Action: Negative result (non-infected/non-carrier).",
+                            "2. Repeat: Only if high-risk exposure."
                         ]
                     }
                 }
@@ -475,12 +862,26 @@
                 "guidance": {
                     "low": {
                         "actions": [
-                            "<100: Susceptible. If pregnant and exposed to chickenpox: Requires post-exposure prophylaxis (PEP) within 10 days."
+                            "MANAGEMENT PLAN:",
+                            "1. Action: Susceptible (Result < 100).",
+                            "2. Pregnancy: If pregnant and exposed to chickenpox/shingles, requires post-exposure prophylaxis (VZIG/Aciclovir) within 10 days of exposure.",
+                            "3. Advice: Avoid exposure to known cases.",
+                            "4. Repeat: After exposure event."
                         ]
                     },
                     "high": {
                         "actions": [
-                            ">150: Sufficient immunity. No action needed after exposure."
+                            "MANAGEMENT PLAN:",
+                            "1. Action: Immune (Result > 150).",
+                            "2. Note: No action needed after exposure.",
+                            "3. Repeat: Not required."
+                        ]
+                    },
+                    "normal": {
+                        "actions": [
+                            "MANAGEMENT PLAN:",
+                            "1. Action: Sufficient immunity.",
+                            "2. Repeat: Not required."
                         ]
                     }
                 }
@@ -496,7 +897,69 @@
                 "guidance": {
                     "low": {
                         "actions": [
-                            "<10: Non-immune. Note: Routine antenatal screening ceased in UK (2016). Advise MMR postpartum."
+                            "MANAGEMENT PLAN:",
+                            "1. Checks: Result < 10 IU/mL indicates non-immunity.",
+                            "2. Note: Routine antenatal screening ceased in UK (2016) as Rubella is now rare.",
+                            "3. Action: Advise MMR vaccination postpartum or preconception (avoid pregnancy for 1 month after MMR).",
+                            "4. Repeat: Post-vaccination if high-risk."
+                        ]
+                    },
+                    "normal": {
+                        "actions": [
+                            "MANAGEMENT PLAN:",
+                            "1. Action: Immune (Result >= 10).",
+                            "2. Repeat: Not required."
+                        ]
+                    }
+                }
+            },
+            {
+                "name": "Chlamydia & Gonorrhoea (Combined)",
+                "unit": "Status",
+                "ranges": {
+                    "all": {
+                        "max": 0
+                    }
+                },
+                "guidance": {
+                    "normal": {
+                        "actions": [
+                            "MANAGEMENT PLAN:",
+                            "1. Action: Negative result. No further action if asymptomatic.",
+                            "2. Repeat: Per sexual health screening frequency based on risk."
+                        ]
+                    },
+                    "high": {
+                        "actions": [
+                            "MANAGEMENT PLAN:",
+                            "1. Action: Positive result. URGENT partner notification and treatment.",
+                            "2. Referral: GUM clinic for contact tracing."
+                        ]
+                    }
+                }
+            },
+            {
+                "name": "COVID-19 (PCR/LFD Result)",
+                "unit": "Status",
+                "ranges": {
+                    "all": {
+                        "max": 0
+                    }
+                },
+                "guidance": {
+                    "high": {
+                        "actions": [
+                            "MANAGEMENT PLAN:",
+                            "1. Action: POSITIVE. Self-care advice (Fluids, Paracetamol).",
+                            "2. Advice: Visit https://www.nhs.uk/covid-19-advice-and-services/ if symptoms worsen.",
+                            "3. Repeat: Not required."
+                        ]
+                    },
+                    "normal": {
+                        "actions": [
+                            "MANAGEMENT PLAN:",
+                            "1. Action: Negative result.",
+                            "2. Repeat: Only if symptoms persist/worsen."
                         ]
                     }
                 }
@@ -517,13 +980,23 @@
                 "guidance": {
                     "low": {
                         "actions": [
-                            "<10: Non-responder. Give booster and re-test in 1 month.",
-                            "10 - 100: Weak responder. Give 1 booster course. No re-test needed until 5 years."
+                            "MANAGEMENT PLAN:",
+                            "1. Action: <10: Non-responder. Give booster and re-test in 1 month. 10-100: Weak responder. Give 1 booster course.",
+                            "2. Repeat: 1 month if <10; not required for 5 years if 10-100."
                         ]
                     },
                     "high": {
                         "actions": [
-                            ">100: Sufficient immunity. Booster at 5 years (for high-risk groups)."
+                            "MANAGEMENT PLAN:",
+                            "1. Action: Sufficient immunity (Result > 100 mIU/mL).",
+                            "2. Repeat: Booster at 5 years (only for high-risk workers/groups)."
+                        ]
+                    },
+                    "normal": {
+                        "actions": [
+                            "MANAGEMENT PLAN:",
+                            "1. Action: Normal immunity.",
+                            "2. Repeat: Per risk group policy."
                         ]
                     }
                 }
@@ -545,8 +1018,17 @@
                 "guidance": {
                     "low": {
                         "actions": [
-                            "<25 nmol/L: Deficient. Treat with high-dose Colecalciferol (e.g., 20,000 IU weekly for 6-8 weeks).",
-                            "25-50 nmol/L: Insufficient. Advise 800-1000 IU daily maintenance."
+                            "MANAGEMENT PLAN:",
+                            "1. Action: <25 nmol/L (Deficient) -> Treat with high-dose Colecalciferol (e.g. 50,000 IU weekly for 6 weeks).",
+                            "2. Action: 25-50 nmol/L (Insufficient) -> Advise 800-1000 IU daily maintenance.",
+                            "3. Repeat: Recheck in 3-6 months (ensure Calcium is checked beforehand)."
+                        ]
+                    },
+                    "normal": {
+                        "actions": [
+                            "MANAGEMENT PLAN:",
+                            "1. Action: Normal range (>50). Ensure adequate dietary intake.",
+                            "2. Repeat: Annual maintenance check if high risk."
                         ]
                     }
                 }
@@ -554,10 +1036,35 @@
             {
                 "name": "Serum Calcium (Corrected)",
                 "unit": "mmol/L",
+                "emisCode": "44J1.",
                 "ranges": {
                     "all": {
                         "min": 2.2,
                         "max": 2.6
+                    }
+                },
+                "guidance": {
+                    "high": {
+                        "triage": [
+                            "Assess: Is there new confusion, severe abdominal pain, or vomiting?",
+                            "Assess: Is the patient lethargic or experiencing polyuria/polydipsia?",
+                            "Disposition: If any Red Flags present or Calcium > 3.0 mmol/L → Immediate Emergency Admission."
+                        ],
+                        "actions": [
+                            "MANAGEMENT PLAN:",
+                            "1. Tablet Check: Rule out Calcium/Vit D, Thiazides, Lithium.",
+                            "2. Malignancy: Screen for myeloma (PV/ESR) and solid tumours.",
+                            "3. Bone Health: Check ALP for Paget's or mets; Check PTH.",
+                            "4. Repeat: Within 1-2 weeks if stable/asymptomatic."
+                        ]
+                    },
+                    "normal": {
+                        "actions": [
+                            "MANAGEMENT PLAN:",
+                            "1. Checks: Ensure no symptoms of 'stones, moans, groans'.",
+                            "2. Action: No management required.",
+                            "3. Repeat: Annual if on history of hyperparathyroidism, otherwise routine."
+                        ]
                     }
                 }
             },
@@ -568,6 +1075,23 @@
                     "all": {
                         "min": 0.7,
                         "max": 1.0
+                    }
+                },
+                "guidance": {
+                    "normal": {
+                        "actions": [
+                            "MANAGEMENT PLAN:",
+                            "1. Action: Normal magnesium level.",
+                            "2. Repeat: Routine med review monitoring."
+                        ]
+                    },
+                    "low": {
+                        "actions": [
+                            "MANAGEMENT PLAN:",
+                            "1. Action: If symptomatic or <0.5, treat with oral magnesium (e.g. Magnaspartate).",
+                            "2. Note: Essential for correction of low Potassium/Calcium.",
+                            "3. Repeat: 2-4 weeks after treatment."
+                        ]
                     }
                 }
             }
@@ -588,8 +1112,17 @@
                 "guidance": {
                     "high": {
                         "actions": [
-                            "In women <40: If >30 on 2 tests -> Diagnostic for POI.",
-                            "In women >45: FSH not required for menopause diagnosis."
+                            "MANAGEMENT PLAN:",
+                            "1. Checks: In women <40, if >30 on 2 separate tests, diagnostic for POI (Premature Ovarian Insufficiency).",
+                            "2. Note: Not required for diagnosis of menopause if aged >45 and symptomatic.",
+                            "3. Repeat: If aged <40, repeat in 4-6 weeks."
+                        ]
+                    },
+                    "normal": {
+                        "actions": [
+                            "MANAGEMENT PLAN:",
+                            "1. Action: Normal range.",
+                            "2. Repeat: Routine."
                         ]
                     }
                 }
@@ -606,7 +1139,17 @@
                 "guidance": {
                     "high": {
                         "actions": [
-                            "Raised LH with raised FSH and low Oestradiol confirms ovarian failure."
+                            "MANAGEMENT PLAN:",
+                            "1. Checks: View together with FSH/Oestradiol. Raised LH/FSH with low Oestradiol suggests primary ovarian failure.",
+                            "2. Action: Consider specialty referral if clinical picture is ambiguous.",
+                            "3. Repeat: As indicated by specialist."
+                        ]
+                    },
+                    "normal": {
+                        "actions": [
+                            "MANAGEMENT PLAN:",
+                            "1. Action: Normal range.",
+                            "2. Repeat: Routine."
                         ]
                     }
                 }
@@ -618,6 +1161,23 @@
                     "all": {
                         "min": 100,
                         "max": 1500
+                    }
+                },
+                "guidance": {
+                    "low": {
+                        "actions": [
+                            "MANAGEMENT PLAN:",
+                            "1. Checks: If low in presence of raised FSH/LH, confirms menopause/menopause entry.",
+                            "2. Action: Discuss HRT options if symptomatic.",
+                            "3. Repeat: Per clinical need."
+                        ]
+                    },
+                    "normal": {
+                        "actions": [
+                            "MANAGEMENT PLAN:",
+                            "1. Action: Normal range for follicular/luteal phase.",
+                            "2. Repeat: Routine."
+                        ]
                     }
                 }
             },
@@ -632,7 +1192,49 @@
                 "guidance": {
                     "high": {
                         "actions": [
-                            "If >700: check macroprolactin. Review for medications (SSRIs/Antipsychotics)."
+                            "MANAGEMENT PLAN:",
+                            "1. Action: If >700, request macroprolactin to exclude inactive complexes.",
+                            "2. Review: Medication history (SSRIs, antipsychotics, metoclopramide).",
+                            "3. Referral: If persistent >1000 or symptomatic (galactorrhoea, amenorrhoea), refer to Endocrinology.",
+                            "4. Repeat: fasting morning sample if borderline."
+                        ]
+                    },
+                    "normal": {
+                        "actions": [
+                            "MANAGEMENT PLAN:",
+                            "1. Action: Normal range.",
+                            "2. Repeat: Routine."
+                        ]
+                    }
+                }
+            },
+            {
+                "name": "Testosterone",
+                "unit": "nmol/L",
+                "ranges": {
+                    "male": {
+                        "min": 8.0,
+                        "max": 30.0
+                    },
+                    "female": {
+                        "min": 0.5,
+                        "max": 2.5
+                    }
+                },
+                "guidance": {
+                    "low": {
+                        "actions": [
+                            "MANAGEMENT PLAN:",
+                            "1. Checks: Repeat with early morning (fasting) sample. Check LH/FSH to differentiate primary vs secondary.",
+                            "2. Action: If persistent <8 in males with symptoms, consider TRT trial/Endocrine review.",
+                            "3. Repeat: 4-6 weeks."
+                        ]
+                    },
+                    "normal": {
+                        "actions": [
+                            "MANAGEMENT PLAN:",
+                            "1. Action: Normal range.",
+                            "2. Repeat: Routine."
                         ]
                     }
                 }
@@ -653,7 +1255,18 @@
                 "guidance": {
                     "high": {
                         "actions": [
-                            "Positive: Screen for CTD. Check ENA and dsDNA."
+                            "MANAGEMENT PLAN:",
+                            "1. Action: Positive result. Request ENA screen and dsDNA to further differentiate.",
+                            "2. Checks: Rule out other causes (infection, certain medications).",
+                            "3. Referral: Rheumatology if clinical features of CTD present.",
+                            "4. Repeat: Not required if ENA negative and clinically well."
+                        ]
+                    },
+                    "normal": {
+                        "actions": [
+                            "MANAGEMENT PLAN:",
+                            "1. Action: Negative result. SLE/Scleroderma highly unlikely.",
+                            "2. Repeat: Only if clinical picture changes significantly."
                         ]
                     }
                 }
@@ -669,7 +1282,17 @@
                 "guidance": {
                     "high": {
                         "actions": [
-                            "Positive: Associated with Vasculitis."
+                            "MANAGEMENT PLAN:",
+                            "1. Action: Positive result. Check MPO and PR3 antibodies.",
+                            "2. Referral: Urgent Rheumatology/Renal review if systemic symptoms or hematuria/proteinuria present.",
+                            "3. Repeat: As directed by secondary care."
+                        ]
+                    },
+                    "normal": {
+                        "actions": [
+                            "MANAGEMENT PLAN:",
+                            "1. Action: Negative result.",
+                            "2. Repeat: Routine."
                         ]
                     }
                 }
@@ -685,8 +1308,18 @@
                 "guidance": {
                     "high": {
                         "actions": [
-                            "Positive: Strong association with Ankylosing Spondylitis and Reactive Arthritis.",
-                            "Not diagnostic alone; requires clinical features (Inflammatory back pain >3 months)."
+                            "MANAGEMENT PLAN:",
+                            "1. Action: Positive result. Strong association with Ankylosing Spondylitis.",
+                            "2. Checks: Assess for inflammatory back pain (>3 months, worse at night/rest, better with exercise).",
+                            "3. Note: Not diagnostic alone; positive in 8% of the healthy UK population.",
+                            "4. Repeat: Not required."
+                        ]
+                    },
+                    "normal": {
+                        "actions": [
+                            "MANAGEMENT PLAN:",
+                            "1. Action: Negative result.",
+                            "2. Repeat: Not required."
                         ]
                     }
                 }
@@ -702,10 +1335,18 @@
                 "guidance": {
                     "high": {
                         "actions": [
-                            "0.35 - 3.5: Weakly positive (Level 1/2).",
-                            "3.5 - 17.5: Mod-Strong positive (Level 3).",
-                            ">17.5: Very strong positive (Level 4+).",
-                            "CLINICAL NOTE: Specific IgE only indicates sensitisation, NOT clinical allergy. Interpret alongside symptom history."
+                            "MANAGEMENT PLAN:",
+                            "1. Checks: Interpret ONLY alongside clinical history (urticaria, angioedema, anaphylaxis).",
+                            "2. Action: Sensitisation detected (Levels 1-4+). This does NOT necessarily mean clinical allergy.",
+                            "3. Referral: Refer to Allergy clinic if severe symptoms or diagnostic uncertainty.",
+                            "4. Repeat: Not required."
+                        ]
+                    },
+                    "normal": {
+                        "actions": [
+                            "MANAGEMENT PLAN:",
+                            "1. Action: Negative. Clinical allergy to this allergen is unlikely.",
+                            "2. Repeat: Not required."
                         ]
                     }
                 }
@@ -722,6 +1363,43 @@
                     "all": {
                         "max": 10
                     }
+                },
+                "guidance": {
+                    "normal": {
+                        "actions": [
+                            "MANAGEMENT PLAN:",
+                            "1. Checks: Confirm if patient followed a gluten-containing diet (req 6 weeks).",
+                            "2. Action: Suggests either coeliac disease is absent or well-managed by gluten-free diet.",
+                            "3. Note: False negatives possible if IgA deficient or on GFD.",
+                            "4. Repeat: Only if significant clinical suspicion persists."
+                        ]
+                    }
+                }
+            },
+            {
+                "name": "H Pylori (Fecal Antigen)",
+                "unit": "Status",
+                "ranges": {
+                    "all": {
+                        "max": 0
+                    }
+                },
+                "guidance": {
+                    "high": {
+                        "actions": [
+                            "MANAGEMENT PLAN:",
+                            "1. Action: Eradication therapy (Triple Therapy: PPI + 2 Antibiotics: Clarithromycin/Amoxicillin/Metronidazole).",
+                            "2. Repeat: Not usually required unless symptoms persist."
+                        ]
+                    },
+                    "normal": {
+                        "actions": [
+                            "MANAGEMENT PLAN:",
+                            "1. Checks: Ensure patient wasn't on PPI/Antibiotics for 2 weeks prior (false negative risk).",
+                            "2. Action: Negative result. Consider other causes of dyspepsia.",
+                            "3. Repeat: If symptoms fail to resolve after trial of conservative management."
+                        ]
+                    }
                 }
             },
             {
@@ -730,6 +1408,25 @@
                 "ranges": {
                     "all": {
                         "max": 10
+                    }
+                },
+                "guidance": {
+                    "high": {
+                        "actions": [
+                            "MANAGEMENT PLAN:",
+                            "1. Referral: Result >= 10 µg Hb/g. Arrange Urgent 2WW Colorectal referral (NICE NG12).",
+                            "2. Checks: Rule out menstruation or known haemorrhoids (though 2WW still indicated if criteria met).",
+                            "3. Action: Provide patient with bowel cancer screening information.",
+                            "4. Repeat: Not required; proceed to referral."
+                        ]
+                    },
+                    "normal": {
+                        "actions": [
+                            "MANAGEMENT PLAN:",
+                            "1. Action: Normal result (<10). Risk of colorectal cancer is low.",
+                            "2. Advice: If symptoms (rectal bleeding, change in bowel habit) persist or worsen, consider clinical review.",
+                            "3. Repeat: Only if clinical picture changes significantly."
+                        ]
                     }
                 }
             },
@@ -744,7 +1441,17 @@
                 "guidance": {
                     "high": {
                         "actions": [
-                            "> 250: High risk of IBD. Refer."
+                            "MANAGEMENT PLAN:",
+                            "1. Referral: If > 250 µg/g, urgent referral for suspected IBD.",
+                            "2. Review: If 50-250, repeat in 4 weeks or review for infectious cause.",
+                            "3. Repeat: Short interval repeat (4-6 weeks) if borderline."
+                        ]
+                    },
+                    "normal": {
+                        "actions": [
+                            "MANAGEMENT PLAN:",
+                            "1. Action: Result <50 suggests IBD is unlikely.",
+                            "2. Repeat: Only if symptoms flare."
                         ]
                     }
                 }
@@ -765,7 +1472,17 @@
                 "guidance": {
                     "high": {
                         "actions": [
-                            "Calculate QRISK3 score. If >10% offer Statins."
+                            "MANAGEMENT PLAN:",
+                            "1. Risk Check: Calculate QRISK3 score.",
+                            "2. Action: If QRISK3 > 10% (or evidence of CVD/CKD), offer Atorvastatin 20mg.",
+                            "3. Repeat: Re-test in 3 months after starting statins."
+                        ]
+                    },
+                    "normal": {
+                        "actions": [
+                            "MANAGEMENT PLAN:",
+                            "1. Action: No action required.",
+                            "2. Repeat: 5-yearly as per NHS Health Check if low risk."
                         ]
                     }
                 }
@@ -776,6 +1493,23 @@
                 "ranges": {
                     "all": {
                         "max": 3.0
+                    }
+                },
+                "guidance": {
+                    "high": {
+                        "actions": [
+                            "MANAGEMENT PLAN:",
+                            "1. Action: High LDL. Calculate QRISK3 score.",
+                            "2. Note: Secondary prevention target is usually <1.8 or <2.0 depending on local policy.",
+                            "3. Repeat: Re-test in 3 months after lifestyle changes or statin initiation."
+                        ]
+                    },
+                    "normal": {
+                        "actions": [
+                            "MANAGEMENT PLAN:",
+                            "1. Action: Normal range.",
+                            "2. Repeat: Per routine CVD screen."
+                        ]
                     }
                 }
             },
@@ -793,7 +1527,17 @@
                 "guidance": {
                     "low": {
                         "actions": [
-                            "Low HDL is a cardiovascular risk factor. Advise lifestyle/exercise."
+                            "MANAGEMENT PLAN:",
+                            "1. Action: Low HDL is an independent cardiovascular risk factor.",
+                            "2. Advice: Emphasize smoking cessation, weight management, and physical activity.",
+                            "3. Repeat: Routine screen."
+                        ]
+                    },
+                    "normal": {
+                        "actions": [
+                            "MANAGEMENT PLAN:",
+                            "1. Action: Normal range.",
+                            "2. Repeat: Routine screen."
                         ]
                     }
                 }
@@ -809,7 +1553,17 @@
                 "guidance": {
                     "high": {
                         "actions": [
-                            "Better predictor of CVD risk than LDL. Target < 4.0 (primary) or < 2.6 (secondary)."
+                            "MANAGEMENT PLAN:",
+                            "1. Note: Better predictor of CVD risk than LDL. ",
+                            "2. Target: Aim for < 4.0 as primary prevention target (or 40% reduction if on statins).",
+                            "3. Repeat: Re-test in 3 months if treatment initiated."
+                        ]
+                    },
+                    "normal": {
+                        "actions": [
+                            "MANAGEMENT PLAN:",
+                            "1. Action: Normal range.",
+                            "2. Repeat: Routine screen."
                         ]
                     }
                 }
@@ -825,8 +1579,44 @@
                 "guidance": {
                     "high": {
                         "actions": [
-                            "If >10 mmol/L: Risk of acute pancreatitis. Urgent referral.",
-                            "If 2.3 - 10: Optimise diabetes/alcohol before repeat."
+                            "MANAGEMENT PLAN:",
+                            "1. Critical Check: If >10 mmol/L, risk of Acute Pancreatitis. Urgent specialist referral.",
+                            "2. Review: Alcohol intake and glycaemic control if 2.3-10.",
+                            "3. Action: Offer Fibrate if >10 in absence of other causes.",
+                            "4. Repeat: Re-test in 4 weeks."
+                        ]
+                    },
+                    "normal": {
+                        "actions": [
+                            "MANAGEMENT PLAN:",
+                            "1. Action: Normal range.",
+                            "2. Repeat: Routine CVD screen."
+                        ]
+                    }
+                }
+            },
+            {
+                "name": "B-Type Natriuretic Peptide (BNP)",
+                "unit": "ng/L",
+                "ranges": {
+                    "all": {
+                        "max": 400
+                    }
+                },
+                "guidance": {
+                    "high": {
+                        "actions": [
+                            "MANAGEMENT PLAN:",
+                            "1. High Risk (>400): Suspected Heart Failure. ACTION: Urgent NT-proBNP referral / Echo within 2 weeks.",
+                            "2. Note: Consider obesity, ACEi, and Diuretics which can lower BNP.",
+                            "3. Repeat: Re-test only if clinical condition changes."
+                        ]
+                    },
+                    "normal": {
+                        "actions": [
+                            "MANAGEMENT PLAN:",
+                            "1. Action: Normal result makes heart failure unlikely.",
+                            "2. Repeat: Not required unless new symptoms."
                         ]
                     }
                 }
@@ -848,12 +1638,20 @@
                 "guidance": {
                     "high": {
                         "actions": [
-                            "42 - 47 mmol/mol: PREDIABETES / High Risk. ACTION: Refer to National Diabetes Prevention Programme (NDPP). Lifestyle advice (Diet/Exercise). Re-test annually.",
-                            "48 - 57 mmol/mol: TYPE 2 DIABETES diagnosed. ACTION: Lifestyle advice. Offer Metformin. Target 48 mmol/mol.",
-                            "SGLT2 Trigger: If CVD risk >10%, Heart Failure, or CKD: Add SGLT2 inhibitor (e.g. Dapagliflozin) early.",
-                            "58 - 74 mmol/mol: SUBOPTIMAL CONTROL. ACTION: Intensify to dual therapy (Metformin + SGLT2i / DPP4i / Pioglitazone / SU). Target 53 mmol/mol.",
-                            "> 75 mmol/mol: POOR CONTROL. ACTION: Review adherence. Consider triple therapy or GLP-1 RA if BMI >35. If symptomatic (Os/Us), consider Insulin referral.",
-                            "Note: Relaxation of targets may be appropriate for elderly/frail patients."
+                            "MANAGEMENT PLAN:",
+                            "1. Pre-diabetes (42-47): Refer to National Diabetes Prevention Programme (NDPP). Offer lifestyle weight management. Re-test annually.",
+                            "2. New Diabetes (>=48): Confirm with 2nd test if asymptomatic. Offer Metformin 500mg OD. Target 48 mmol/mol.",
+                            "3. Existing Diabetes (>53): Suboptimal. Intensify therapy (add SGLT2i if CVD/HF/CKD).",
+                            "4. Note: If <18 yrs, pre-diabetes results require specialist paediatric review.",
+                            "5. Repeat: Re-test in 3 months if treatment changed; otherwise annual."
+                        ]
+                    },
+                    "normal": {
+                        "actions": [
+                            "MANAGEMENT PLAN:",
+                            "1. Body Check: Ensure BMI and BP are recorded.",
+                            "2. Action: Reassure patient. Normal Glycaemic control.",
+                            "3. Repeat: Annual if pre-diabetic in remission, otherwise as indicated."
                         ]
                     }
                 }
@@ -883,7 +1681,18 @@
                 "guidance": {
                     "high": {
                         "actions": [
-                            "Exclude UTI/Exercise. If above age-threshold, 2WW referral."
+                            "MANAGEMENT PLAN:",
+                            "1. Action: PSA >= threshold. Rule out UTI (repeat in 4 weeks if UTI suspected).",
+                            "2. Referral: 2WW Prostate pathway if persistent.",
+                            "3. Note: Prostatitis or exercise can raise PSA.",
+                            "4. Repeat: Re-test in 4 weeks with urine dip."
+                        ]
+                    },
+                    "normal": {
+                        "actions": [
+                            "MANAGEMENT PLAN:",
+                            "1. Action: Normal range. Reassure patient.",
+                            "2. Repeat: Annual if on surveillance, otherwise per patient choice/policy."
                         ]
                     }
                 }
@@ -899,7 +1708,17 @@
                 "guidance": {
                     "high": {
                         "actions": [
-                            "CA125 >= 35: Urgent Pelvic US for Ovarian cancer (NICE CG122)."
+                            "MANAGEMENT PLAN:",
+                            "1. Referral: CA125 >= 35 requires urgent pelvic ultrasound (NICE CG122).",
+                            "2. Checks: Rule out menstruation, pregnancy, or pelvic infection (can raise CA125).",
+                            "3. Repeat: After specialist review."
+                        ]
+                    },
+                    "normal": {
+                        "actions": [
+                            "MANAGEMENT PLAN:",
+                            "1. Action: Normal result makes ovarian cancer less likely.",
+                            "2. Repeat: Only if symptoms proceed or change."
                         ]
                     }
                 }
@@ -915,7 +1734,17 @@
                 "guidance": {
                     "high": {
                         "actions": [
-                            "If jaundice/weight loss, 2WW Pancreatic pathway (Urgent CT)."
+                            "MANAGEMENT PLAN:",
+                            "1. Action: If jaundice or significant weight loss -> Urgent 2WW Pancreatic pathway (Urgent CT).",
+                            "2. Checks: Review for benign causes (pancreatitis, biliary obstruction).",
+                            "3. Repeat: As directed by secondary care."
+                        ]
+                    },
+                    "normal": {
+                        "actions": [
+                            "MANAGEMENT PLAN:",
+                            "1. Action: Normal range.",
+                            "2. Repeat: Routine."
                         ]
                     }
                 }
@@ -931,7 +1760,17 @@
                 "guidance": {
                     "high": {
                         "actions": [
-                            "Not for screening. Used for monitoring post-resection colorectal cancer."
+                            "MANAGEMENT PLAN:",
+                            "1. Note: Not for primary screening. Used for monitoring post-resection colorectal cancer.",
+                            "2. Action: If rising trend post-surgery, investigate for recurrence.",
+                            "3. Repeat: 3-6 monthly for 3 years post-surgery."
+                        ]
+                    },
+                    "normal": {
+                        "actions": [
+                            "MANAGEMENT PLAN:",
+                            "1. Action: Normal range.",
+                            "2. Repeat: Baseline/Surveillance."
                         ]
                     }
                 }
@@ -947,7 +1786,191 @@
                 "guidance": {
                     "high": {
                         "actions": [
-                            "Raised in Liver (HCC) or Testicular cancer. Request Urgent US."
+                            "MANAGEMENT PLAN:",
+                            "1. Action: Raised AFP. Request Urgent Upper Abdominal US (HCC screen) or Testicular US.",
+                            "2. Checks: Check LFTs and risk factors for chronic liver disease.",
+                            "3. Repeat: Urgent US."
+                        ]
+                    },
+                    "normal": {
+                        "actions": [
+                            "MANAGEMENT PLAN:",
+                            "1. Action: Normal range.",
+                            "2. Repeat: Routine."
+                        ]
+                    }
+                }
+            }
+        ]
+    },
+    {
+        "category": "Cervical Cytology (Smears)",
+        "tests": [
+            {
+                "name": "Cervical Smear Result",
+                "unit": "Grade",
+                "ranges": {
+                    "all": {
+                        "max": 0
+                    }
+                },
+                "guidance": {
+                    "normal": {
+                        "actions": [
+                            "MANAGEMENT PLAN:",
+                            "1. Routine Recall: Result is HPV Negative/Cytology Normal.",
+                            "2. Action: Routine recall in 3-5 years (age-dependent).",
+                            "3. Repeat: National screening programme will notify."
+                        ]
+                    },
+                    "high": {
+                        "actions": [
+                            "MANAGEMENT PLAN:",
+                            "1. Referred: HPV Positive / Cytology Abnormal (mild/mod/severe/borderline).",
+                            "2. Action: Urgent referral to Colposcopy (arranged automatically by programme).",
+                            "3. Repeat: Follow specialist colposcopy advice."
+                        ]
+                    }
+                }
+            }
+        ]
+    },
+    {
+        "category": "Enzymes & Other Chemistry",
+        "tests": [
+            {
+                "name": "Amylase",
+                "unit": "U/L",
+                "ranges": {
+                    "all": {
+                        "min": 25,
+                        "max": 125
+                    }
+                },
+                "guidance": {
+                    "high": {
+                        "actions": [
+                            "MANAGEMENT PLAN:",
+                            "1. Action: If >3x ULN, suggestive of Acute Pancreatitis. Urgent A&E referral.",
+                            "2. Review: Consider non-pancreatic causes (mumps, renal failure, gallbladder).",
+                            "3. Repeat: Daily for trend monitoring if acute."
+                        ]
+                    },
+                    "normal": {
+                        "actions": [
+                            "MANAGEMENT PLAN:",
+                            "1. Action: Normal range. Acute pancreatitis unlikely.",
+                            "2. Repeat: Routine."
+                        ]
+                    }
+                }
+            }
+        ]
+    },
+    {
+        "category": "Bowel, Renal & Misc Screening",
+        "tests": [
+            {
+                "name": "Faecal Occult Blood (Bowel Screening)",
+                "unit": "Status",
+                "ranges": {
+                    "all": {
+                        "max": 0
+                    }
+                },
+                "guidance": {
+                    "high": {
+                        "actions": [
+                            "MANAGEMENT PLAN:",
+                            "1. Action: Abnormal/Positive. Requires further investigation.",
+                            "2. Referral: Patient will be contacted by national screening programme. If no contact in 3 weeks, call 0800 7076060.",
+                            "3. Note: Normal results are informed by the programme."
+                        ]
+                    },
+                    "normal": {
+                        "actions": [
+                            "MANAGEMENT PLAN:",
+                            "1. Action: Normal/Negative result.",
+                            "2. Note: Patient is informed of normal results directly by the national screening programme.",
+                            "3. Repeat: Routine screening as per national programme."
+                        ]
+                    }
+                }
+            },
+            {
+                "name": "uACR (Urine Albumin/Creatinine)",
+                "unit": "mg/mmol",
+                "ranges": {
+                    "all": {
+                        "max": 3.0
+                    }
+                },
+                "guidance": {
+                    "high": {
+                        "actions": [
+                            "MANAGEMENT PLAN:",
+                            "1. Microalbuminuria (3-30): Early kidney damage. Action: Start ACEi/ARB. Target BP <130/80. Consider SGLT2i.",
+                            "2. Macroalbuminuria (>30): High risk CKD progression. Urgent specialist review.",
+                            "3. Repeat: Confirm with early morning sample."
+                        ]
+                    },
+                    "normal": {
+                        "actions": [
+                            "MANAGEMENT PLAN:",
+                            "1. Action: Normal. No albuminuria.",
+                            "2. Repeat: Annual screen for high-risk patients."
+                        ]
+                    }
+                }
+            },
+            {
+                "name": "Glucose (Random)",
+                "unit": "mmol/L",
+                "ranges": {
+                    "all": {
+                        "min": 4.0,
+                        "max": 7.8
+                    }
+                },
+                "guidance": {
+                    "high": {
+                        "actions": [
+                            "MANAGEMENT PLAN:",
+                            "1. Action: If >11.1, request fasting glucose or HbA1c to screen for Diabetes.",
+                            "2. Repeat: Fasting test requested."
+                        ]
+                    },
+                    "normal": {
+                        "actions": [
+                            "MANAGEMENT PLAN:",
+                            "1. Action: Normal range.",
+                            "2. Repeat: Per routine screen."
+                        ]
+                    }
+                }
+            },
+            {
+                "name": "Rheumatoid Factor",
+                "unit": "IU/mL",
+                "ranges": {
+                    "all": {
+                        "max": 14
+                    }
+                },
+                "guidance": {
+                    "high": {
+                        "actions": [
+                            "MANAGEMENT PLAN:",
+                            "1. Action: Positive. Check Anti-CCP for better specificity.",
+                            "2. Referral: Refer to Rheumatology if clinical joint swelling present.",
+                            "3. Repeat: Only if clinical picture changes."
+                        ]
+                    },
+                    "normal": {
+                        "actions": [
+                            "MANAGEMENT PLAN:",
+                            "1. Action: Normal Rheumatoid Factor.",
+                            "2. Repeat: Routine."
                         ]
                     }
                 }

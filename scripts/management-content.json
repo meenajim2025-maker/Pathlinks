@@ -96,7 +96,7 @@
             {
               "value": "stable",
               "label": "Stable COPD – step-up",
-              "guidance": "Step 1: SABA prn. Step 2: add LABA or LAMA. Step 3: LABA+LAMA. Step 4: add ICS if eosinophils ≥0.3 or ≥2 exacerbations/year. Offer pulmonary rehab. NICE NG115."
+              "guidance": "Step 1: SABA reliever as needed (e.g. Salbutamol / Ventolin). Step 2: add a LAMA (e.g. Tiotropium / Spiriva) or a LABA (e.g. Salmeterol / Serevent). Step 3: Dual therapy (LAMA+LABA e.g. Anoro / Spiolto). Step 4: Triple therapy (LABA+LAMA+ICS e.g. Trelegy / Trimbow) if eosinophils ≥0.3 or ≥2 exacerbations/year. Offer pulmonary rehab. NICE NG115."
             },
             {
               "value": "exacerbation",
@@ -120,17 +120,17 @@
             {
               "value": "step1",
               "label": "Step 1 – SABA only",
-              "guidance": "Intermittent asthma: SABA prn. If using SABA ≥3/week or symptoms ≥3/week or night waking: add low-dose ICS (step 2). NICE NG80."
+              "guidance": "Intermittent asthma: SABA reliever as needed (e.g. Salbutamol / Ventolin). If using SABA ≥3/week or symptoms ≥3/week: add a low-dose ICS preventer (e.g. Clenil / Beclometasone) (step 2). NICE NG80."
             },
             {
               "value": "step2-3",
               "label": "Step 2–3 – ICS ± LABA",
-              "guidance": "Step 2: low-dose ICS. Step 3: add LABA (continue ICS). If good control on low ICS+LABA, consider trial of LABA withdrawal. NICE NG80."
+              "guidance": "Step 2: low-dose ICS (e.g. Clenil). Step 3: add a LABA (e.g. Salmeterol) alongside ICS (e.g. Seretide combination). If good control on low ICS+LABA, consider trial of LABA withdrawal. NICE NG80."
             },
             {
               "value": "step4-5",
               "label": "Step 4–5 – add-on",
-              "guidance": "Step 4: increase ICS to MART or add LTRA/ LAMA. Step 5: add prednisolone or refer. Check technique, adherence, consider occupational. NICE NG80."
+              "guidance": "Step 4: increase ICS dose or change to MART (Maintenance and Reliever Therapy e.g. Fostair / Symbicort) or add LTRA (Montelukast). Step 5: add prednisolone or refer for biologicals. Check technique and adherence. NICE NG80."
             }
           ]
         }
@@ -1811,6 +1811,105 @@
               "value": "medication",
               "label": "Pharmacotherapy (Orlistat/GLP-1)",
               "guidance": "Orlistat if BMI ≥30 (or ≥28 with comorbidities). GLP-1 (e.g. Semaglutide) via Tier 3/4 specialist clinics if BMI ≥35 (or ≥30 with comorb in some cases). NICE TA664."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "keywords": [
+        "ophthalmology",
+        "eye",
+        "dry eyes",
+        "glaucoma",
+        "blepharitis",
+        "conjunctivitis"
+      ],
+      "steps": [
+        {
+          "id": "eye-mgmt",
+          "question": "Ophthalmology Management",
+          "type": "dropdown",
+          "options": [
+            {
+              "value": "dry-eyes",
+              "label": "Dry Eyes / Blepharitis",
+              "guidance": "Lid hygiene (warm compresses, massage). Preservative-free artificial tears (e.g. Hypromellose, Carmellose). Review work environment / screen use. NICE CKS."
+            },
+            {
+              "value": "conjunctivitis",
+              "label": "Conjunctivitis",
+              "guidance": "Viral/Allergic: cool compresses, lubricants. Bacterial: Topical antibiotic (Chloramphenicol 0.5%) if severe/persistent. Safety-net for 'red eye' warning signs. NICE CKS."
+            },
+            {
+              "value": "glaucoma",
+              "label": "Glaucoma (Chronic)",
+              "guidance": "Prostaglandin analogues (e.g. Latanoprost) first-line. Monitor IOP and visual fields annually. Urgent referral if Acute Angle Closure suspected. NICE NG81."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "keywords": [
+        "ent",
+        "ear",
+        "nose",
+        "throat",
+        "sinusitis",
+        "tinnitus"
+      ],
+      "steps": [
+        {
+          "id": "ent-mgmt",
+          "question": "ENT Management",
+          "type": "dropdown",
+          "options": [
+            {
+              "value": "sinusitis",
+              "label": "Acute Sinusitis",
+              "guidance": "Analgesia + Nasal saline irrigation. Intranasal steroids if >10 days. Antibiotics (Penicillin V) only if systemically unwell or high risk. NICE NG79."
+            },
+            {
+              "value": "otitis-externa",
+              "label": "Otitis Externa",
+              "guidance": "Thorough cleaning of ear canal. Topical antibiotic/steroid drops (e.g. Otomize, Sofradex) for 7-14 days. Keep ear dry. NICE CKS."
+            },
+            {
+              "value": "tinnitus",
+              "label": "Tinnitus",
+              "guidance": "Audiology assessment. Reassurance / Sound therapy. Psychology (CBT) for distressing tinnitus. Red flag: Unilateral / Pulsatile. NICE NG155."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "keywords": [
+        "general practice",
+        "best practice",
+        "routine management"
+      ],
+      "steps": [
+        {
+          "id": "gen-mgmt",
+          "question": "Best Practice Management",
+          "type": "dropdown",
+          "options": [
+            {
+              "value": "assessment",
+              "label": "Clinical Assessment",
+              "guidance": "Vitals (NEWS2 if unwell), targeted history, and examination. Exclude red flags. Review trend vs previous presentations. Use shared decision making."
+            },
+            {
+              "value": "safetynet",
+              "label": "Safety-netting",
+              "guidance": "Provide clear 'When to contact' triggers: worsening pain, fever >38.5C, respiratory distress, or new neurological signs. Document patient understanding."
+            },
+            {
+              "value": "next-steps",
+              "label": "Follow-up Plan",
+              "guidance": "Review in 1-4 weeks depending on severity. Consider baseline bloods (FBC/CRP) if symptoms persist. Patient information leaflet/link provided."
             }
           ]
         }

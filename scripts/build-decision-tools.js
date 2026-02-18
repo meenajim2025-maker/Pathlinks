@@ -46,38 +46,79 @@ function evidenceFromTranscript(transcript) {
   return t.length <= 280 ? t : t.slice(0, 280) + '…';
 }
 
-/** Find first management template whose keywords match title (lowercase). */
+/** Find first management template whose keywords match title (lowercase) using whole-word boundary. */
 function getManagementSteps(title, managementContent) {
   const t = (title || '').toLowerCase();
   const templates = managementContent.templates || [];
   for (const tmpl of templates) {
     const keywords = tmpl.keywords || [];
-    if (keywords.some(kw => t.includes(kw.toLowerCase()))) return tmpl.steps;
+    if (keywords.some(kw => {
+      const escaped = kw.replace(/[-\/\\^$*+?.()|[\]{}]/g, '\\$&');
+      const regex = new RegExp(`\\b${escaped}\\b`, 'i');
+      return regex.test(t);
+    })) return tmpl.steps;
   }
   return null;
 }
 
-/** System-specific real management (drugs and referral). No generic 'look at guidelines'. */
-/** Generic fallback for tools where no specific management template is found. */
-function getSystemFallbackSteps(systemId) {
-  // We no longer provide specific drug advice as a fallback because it leads to clinical cross-wiring
-  // (e.g. ADHD showing Depression guidance). Instead, we provide a structured guidance step
-  // that refers to NICE CKS/NG for that specific system/topic.
+/** System-specific best practice management. No generic 'look at guidelines' placeholders. */
+function getSystemFallbackSteps(systemId, title) {
+  const t = (title || '').toLowerCase();
+
+  if (t.includes('assessment') || t.includes('diagnosis')) {
+    return [{
+      id: 'bp-assessment',
+      question: 'Assessment (Best Practice)',
+      type: 'dropdown',
+      options: [
+        { label: 'History & Red Flags', guidance: 'Assess onset, severity, and triggers. Specifically exclude organic red flags (weight loss, night pain, fever, night sweats). Review family history and current meds.' },
+        { label: 'Examination', guidance: 'Perform focused physical exam (e.g. MSK, Neuro, Respiratory). Check vitals (NEWS2) if systemically unwell. Document findings and clinical rationale clearly.' },
+        { label: 'Initial Differential', guidance: 'Consider most likely vs most serious diagnosis. Use validated scores (e.g. Centor, Wells, qSOFA) if applicable to the presentation.' }
+      ]
+    }];
+  }
+
+  if (t.includes('management') || t.includes('treatment')) {
+    return [{
+      id: 'bp-management',
+      question: 'Management (Best Practice)',
+      type: 'dropdown',
+      options: [
+        { label: 'Conservative / Lifestyle', guidance: 'Advise on activity levels, hydration, and non-pharmacological measures. Provide written patient info. Use shared-decision making for all interventions.' },
+        { label: 'Safety-netting', guidance: 'Provide clear triggers for re-consultation: rapid worsening, new red flags, or no improvement in expected timeframe. Document advice given.' },
+        { label: 'Review Plan', guidance: 'Arrange review based on clinical stability (e.g. 48h for acute, 2-4 weeks for chronic). Consider baseline investigations (e.g. FBC/CRP) if symptoms persist.' }
+      ]
+    }];
+  }
+
+  if (t.includes('referral') || t.includes('follow-up')) {
+    return [{
+      id: 'bp-referral',
+      question: 'Referral & Follow-up (Best Practice)',
+      type: 'dropdown',
+      options: [
+        { label: 'Referral Criteria', guidance: 'Refer 2WW if malignancy suspected. Urgent referral if clinical compromise or high risk. Routine if primary care management fails after 6-12 weeks.' },
+        { label: 'Safety-netting while waiting', guidance: 'Ensure patient knows how to report deterioration while on the waiting list. Review and optimize primary care management in the interim.' }
+      ]
+    }];
+  }
+
+  // Fallback for generic patterns
   return [
     {
       id: 'guidance',
-      question: 'Clinical Guidance',
+      question: 'Clinical Guidance (Best Practice)',
       type: 'dropdown',
       options: [
         {
           value: 'standard',
-          label: 'Management Guidance',
-          guidance: 'Specific clinical management steps are not yet available for this localized tool version. Please refer to the NICE References listed above and your local clinical formulary for treatment pathways. Always ensure a full clinical assessment and risk assessment is performed.'
+          label: 'Management Overview',
+          guidance: 'Follow common best practice: Full clinical assessment to exclude red flags, provide robust safety-netting, and arrange follow-up. Refer to your local clinical formulary for pharmacotherapy.'
         },
         {
           value: 'referral',
-          label: 'Referral & Safety-netting',
-          guidance: 'Consult NICE CKS for specific referral criteria. Always provide safety-netting advice (e.g. worsened symptoms, red flags) and document your clinical rationale. Use the \'Learning library\' to find related educational materials.'
+          label: 'Referral Support',
+          guidance: 'Check NICE CKS for specific referral thresholds. Safety-net for red flags. Ensure patient has appropriate educational materials while awaiting specialist review.'
         }
       ]
     }
@@ -103,7 +144,7 @@ function buildToolFromTopic(section, topic, niceMap, managementContent, subtitle
   const niceRefs = findNiceRefs(baseTitle, niceMap);
   const evidence = evidenceFromTranscript(topic.transcript);
   const templateSteps = getManagementSteps(baseTitle, managementContent);
-  const steps = templateSteps || getSystemFallbackSteps(section.id);
+  const steps = templateSteps || getSystemFallbackSteps(section.id, title);
   return buildTool({ title, niceRefs, evidence, steps, episode: topic.episode });
 }
 
@@ -112,7 +153,7 @@ function buildToolFromExtra(extra, niceMap, managementContent) {
   const systemId = extra.systemId || 'other';
   const niceRefs = extra.niceRefs && extra.niceRefs.length ? extra.niceRefs : findNiceRefs(title, niceMap);
   const templateSteps = getManagementSteps(title, managementContent);
-  const steps = templateSteps || getSystemFallbackSteps(systemId);
+  const steps = templateSteps || getSystemFallbackSteps(systemId, title);
   return buildTool({
     title,
     niceRefs,
@@ -124,7 +165,7 @@ function buildToolFromExtra(extra, niceMap, managementContent) {
 function buildToolFromBulkTitle(systemId, title, niceMap, managementContent) {
   const niceRefs = findNiceRefs(title, niceMap);
   const templateSteps = getManagementSteps(title, managementContent);
-  const steps = templateSteps || getSystemFallbackSteps(systemId);
+  const steps = templateSteps || getSystemFallbackSteps(systemId, title);
   return buildTool({
     title,
     niceRefs,

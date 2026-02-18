@@ -27,7 +27,6 @@
                 <div class="nav-item" id="nav-decision-tools">Decision tools</div>
                 <div class="nav-item" id="nav-protocols">Protocols</div>
                 <div class="nav-item" id="nav-emis-coding">EMIS Integration</div>
-                <div class="nav-item" id="nav-learning">Learning library</div>
             </nav>
             <div class="user-profile">
                 <div class="avatar">DR</div>
@@ -52,8 +51,8 @@
             <section id="dashboard-view" class="view">
                 <div class="welcome-section">
                     <h2>Clinical Decision Making Tool</h2>
-                    <p>Blood result actioning: select a test, enter the value, and get NICE-aligned guidance and related
-                        learning below.</p>
+                    <p>Blood result actioning: select a test, enter the value, and get NICE-aligned Management Plans and
+                        clinical checks below.</p>
                 </div>
 
                 <div class="grid-container">
@@ -84,7 +83,7 @@
                         </div>
                         <div class="field-group">
                             <label for="test-value">Result Value</label>
-                            <input type="number" id="test-value" step="0.1" placeholder="Enter numerical result">
+                            <input type="text" id="test-value" placeholder="Result (e.g. 132 or 'Normal')">
                         </div>
                         <button id="analyse-btn" class="primary-btn">Analyse Result</button>
                     </div>
@@ -270,53 +269,65 @@
                         </div>
                     </div>
                     <div id="sepsis-risk-result" class="status-box hidden"
-                        style="margin-top: 1rem; padding: 1rem; border-radius: 8px; font-size: 14px; line-height: 1.4;">
-                        <!-- Risk Guidance -->
+                        style="margin-top: 1.2rem; padding: 1rem; border-radius: 8px;">
+                        <p id="sepsis-risk-text" style="margin: 0; font-weight: 600; line-height: 1.4;"></p>
+                    </div>
+                </div>
+
+                <!-- Wells Score (DVT) -->
+                <div class="card" id="wells-calculator" style="margin-top: 1rem;">
+                    <h3>Wells Score (DVT)</h3>
+                    <div id="wells-inputs" style="margin-top: 10px;">
+                        <!-- Options injected by JS -->
+                    </div>
+                    <div
+                        style="margin-top: 1rem; padding: 1rem; background: #f9f9f9; border-radius: 8px; border: 1px solid #ddd;">
+                        <p style="font-size: 14px; font-weight: 600;">Score: <span id="wells-score">0</span></p>
+                        <p id="wells-risk" style="margin: 4px 0 0 0; font-size: 13px;"></p>
+                    </div>
+                </div>
+
+                <!-- CURB-65 Score -->
+                <div class="card" id="curb-calculator" style="margin-top: 1rem;">
+                    <h3>CURB-65 Score (Pneumonia)</h3>
+                    <div id="curb-inputs" style="margin-top: 10px;">
+                        <!-- Options injected by JS -->
+                    </div>
+                    <div
+                        style="margin-top: 1rem; padding: 1rem; background: #f9f9f9; border-radius: 8px; border: 1px solid #ddd;">
+                        <p style="font-size: 14px; font-weight: 600;">Score: <span id="curb-score">0</span></p>
+                        <p id="curb-risk" style="margin: 4px 0 0 0; font-size: 13px;"></p>
                     </div>
                 </div>
             </section>
 
             <section id="protocols-view" class="view hidden">
-                <h2>Clinical Governance Protocol</h2>
-                <div class="protocol-list" id="protocol-list-container">
-                    <!-- Dynamic list -->
-                </div>
-            </section>
-
-            <section id="learning-view" class="view hidden">
-                <h2>Clinical learning topics</h2>
-                <p class="welcome-section" style="margin-bottom: 1rem;">Knowledge extracted from USB podcast episodes.
-                    Search and read transcripts below.</p>
-                <div class="field-group" style="margin-bottom: 1rem;">
-                    <label for="knowledge-search">Search topics and transcript text</label>
-                    <input type="text" id="knowledge-search" placeholder="e.g. hypertension, NICE, referral..."
-                        style="max-width: 400px;">
-                </div>
-                <div class="learning-container" id="learning-container">
-                    <!-- Dynamic sections -->
+                <h2>Clinical Protocols Library</h2>
+                <div id="protocols-list" class="grid-container">
+                    <!-- Protocol cards injected by JS -->
                 </div>
             </section>
 
             <section id="emis-coding-view" class="view hidden">
-                <h2>EMIS Integration Library</h2>
-                <div class="card">
-                    <p>Copy the following codes or logic templates into EMIS Web Protocols / Templates.</p>
-                    <div class="code-preview" id="emis-code-export">
-                        <!-- Example export -->
-                    </div>
+                <h2>EMIS Integration & Coding</h2>
+                <div id="emis-integration-panel" class="grid-container">
+                    <!-- EMIS components injected by JS -->
                 </div>
             </section>
         </main>
     </div>
-    <div id="protocol-modal" class="modal-overlay hidden" aria-hidden="true">
-        <div class="modal-card">
-            <div class="modal-header">
-                <h3 id="protocol-modal-title">Protocol guidance</h3>
-                <button type="button" class="modal-close" id="protocol-modal-close" aria-label="Close">&times;</button>
-            </div>
-            <div id="protocol-modal-body" class="modal-body"></div>
+
+    <!-- Modals -->
+    <div id="protocol-modal" class="modal-overlay hidden">
+        <div class="modal-content">
+            <header class="modal-header">
+                <h2 id="modal-title">Protocol Details</h2>
+                <button class="close-modal">&times;</button>
+            </header>
+            <div id="modal-body" class="modal-body"></div>
         </div>
     </div>
+
     <script src="script.js"></script>
 </body>
 

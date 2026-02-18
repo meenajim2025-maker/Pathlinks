@@ -8,8 +8,7 @@ async function init() {
         const response = await fetch('./data/blood_tests_protocol.json');
         testData = await response.json();
 
-        // Load learning data in background so we can show related snippets in the clinical tool
-        fetch('./data/knowledge_base.json').then(r => r.ok ? r.json() : fetch('./data/clinical_topics_learning.json').then(r2 => r2.ok ? r2.json() : null)).then(data => { learningData = data; }).catch(() => { });
+
 
         const categorySelect = document.getElementById('select-test');
         testData.forEach((cat, index) => {
@@ -40,7 +39,6 @@ async function init() {
                 });
 
                 if (item.id === 'nav-protocols') renderProtocols();
-                if (item.id === 'nav-learning') renderLearningTopics();
                 if (item.id === 'nav-decision-tools') renderDecisionTools();
                 if (item.id === 'nav-emis-coding') renderEmisIntegrations();
             });
@@ -62,8 +60,10 @@ async function init() {
             }
         });
 
-        // Initialize NEWS2 Calculator
+        // Initialize Calculators
         initNEWS2();
+        initWells();
+        initCURB();
 
     } catch (e) {
         console.error("Error loading test data:", e);
@@ -172,25 +172,6 @@ function simulateEmisImport() {
     }, 800);
 }
 
-function getRelatedLearning(testName, categoryName) {
-    if (!learningData || !learningData.sections) return [];
-    const words = (testName + ' ' + categoryName).toLowerCase().replace(/[^a-z0-9\s]/g, ' ').split(/\s+/).filter(w => w.length > 2);
-    const out = [];
-    learningData.sections.forEach(section => {
-        (section.topics || []).forEach(t => {
-            const title = (t.title || '').toLowerCase();
-            const transcript = (t.transcript || '').toLowerCase();
-            const match = words.some(w => title.includes(w) || transcript.includes(w));
-            const tr = t.transcript || '';
-            if (match && tr.length > 80) {
-                const skip = Math.min(220, Math.floor(tr.length * 0.15));
-                const clinical = tr.slice(skip);
-                out.push({ title: t.title, transcript: clinical.slice(0, 380) + (clinical.length > 380 ? '…' : ''), episode: t.episode });
-            }
-        });
-    });
-    return out.slice(0, 2);
-}
 
 function analyseResult() {
     const catIdx = document.getElementById('select-test').value;
@@ -204,20 +185,20 @@ function analyseResult() {
         output.innerHTML = '<div class="placeholder-text"><p>Select a test category and parameter first.</p></div>';
         return;
     }
-    if (isNaN(value)) {
-        output.innerHTML = '<div class="placeholder-text"><p>Please enter a numerical result value.</p></div>';
+    const test = testData[catIdx].tests[paramIdx];
+    const categoryName = testData[catIdx].category;
+    const isNumericalTest = !['Grade', 'Status', 'Titre'].includes(test.unit);
+
+    if (isNaN(value) && isNumericalTest) {
+        output.innerHTML = '<div class="placeholder-text"><p>Please enter a numerical result value for this test.</p></div>';
         return;
     }
 
-    const test = testData[catIdx].tests[paramIdx];
-    const categoryName = testData[catIdx].category;
     let range;
-
     const findAgeRange = (ranges, currentAge) => {
-        // Look for keys like age_40_49
         for (const key in ranges) {
             if (key.startsWith('age_')) {
-                const parts = key.split('_'); // ['age', '40', '49']
+                const parts = key.split('_');
                 const minA = parseInt(parts[1], 10);
                 const maxA = parseInt(parts[2], 10);
                 if (currentAge >= minA && currentAge <= maxA) return ranges[key];
@@ -231,36 +212,73 @@ function analyseResult() {
         range = test.ranges[sex] || test.ranges.all;
     }
 
-    if (!range) {
-        output.innerHTML = '<div class="placeholder-text"><p>No reference range available for this test/sex/age combination.</p></div>';
-        return;
-    }
-
     let status = "normal";
-    let guidanceKey = null;
+    let guidanceKey = "normal";
+    let displayValue = value;
 
-    const hasMin = range.min !== undefined && range.min !== null;
-    const hasMax = range.max !== undefined && range.max !== null;
+    if (isNumericalTest) {
+        const hasMin = range.min !== undefined && range.min !== null;
+        const hasMax = range.max !== undefined && range.max !== null;
 
-    if (hasMin && value < range.min) {
-        status = "abnormal";
-        guidanceKey = "low";
-    } else if (hasMax && value > range.max) {
-        status = (value > range.max * 1.5) ? "pathological" : "abnormal";
-        guidanceKey = "high";
+        if (hasMin && value < range.min) {
+            status = "abnormal";
+            guidanceKey = "low";
+        } else if (hasMax && value > range.max) {
+            status = (value > range.max * 1.5) ? "pathological" : "abnormal";
+            guidanceKey = "high";
+        }
+    } else {
+        // Non-numerical logic (Smears, Viral Status, titires)
+        const valStr = String(document.getElementById('test-value').value).toLowerCase().trim();
+        displayValue = document.getElementById('test-value').value; // Keep original for display
+
+        const abnormalTerms = ['positive', 'abnormal', 'reactive', 'mild', 'moderate', 'severe', 'borderline', 'detected'];
+        const normalTerms = ['negative', 'normal', 'non-reactive', 'not detected'];
+
+        if (abnormalTerms.some(term => valStr.includes(term))) {
+            status = "pathological";
+            guidanceKey = "high";
+        } else if (normalTerms.some(term => valStr.includes(term))) {
+            status = "normal";
+            guidanceKey = "normal";
+        } else {
+            // Default to abnormal if unrecognized text is entered in a status field
+            status = "abnormal";
+            guidanceKey = "high";
+        }
     }
+
+    const hasMin = range && range.min !== undefined && range.min !== null;
+    const hasMax = range && range.max !== undefined && range.max !== null;
 
     let html = `
         <div class="guidance-result">
             <div class="status-box ${status}">
-                <span>${status.toUpperCase()}: ${test.name} = ${value} ${test.unit}</span>
-                <span class="range-info">(Ref: ${hasMin ? range.min : '—'} – ${hasMax ? range.max : '—'} ${test.unit})</span>
+                <span>${status.toUpperCase()}: ${test.name} = ${displayValue} ${test.unit || ''}</span>
+                <span class="range-info">(${isNumericalTest ? `Ref: ${hasMin ? range.min : '—'} – ${hasMax ? range.max : '—'} ${test.unit}` : 'Standard: Negative/Normal'})</span>
             </div>
-            <h3>Clinical Guidance</h3>
+            <h3 style="color: var(--primary); border-bottom: 2px solid #eee; padding-bottom: 8px;">📋 PathLinks Management Plan</h3>
             <div class="action-list">
     `;
 
     if (guidanceKey && test.guidance && test.guidance[guidanceKey]) {
+        // NHS Pathways Triage Layer
+        if (test.guidance[guidanceKey].triage) {
+            html += `
+                <div class="triage-box" style="margin-bottom: 24px; padding: 16px; background: #fff5f5; border: 2px solid #e53935; border-radius: 12px; box-shadow: 0 4px 6px rgba(0,0,0,0.05);">
+                    <h4 style="color: #c62828; margin: 0 0 12px 0; font-size: 13px; font-weight: 800; text-transform: uppercase; letter-spacing: 0.5px; display: flex; align-items: center; gap: 8px;">
+                        <span style="font-size: 20px;">🚑</span> Emergency Triage Assessment
+                    </h4>
+                    <div style="display: flex; flex-direction: column; gap: 8px;">
+            `;
+            test.guidance[guidanceKey].triage.forEach(item => {
+                const isDisposition = item.startsWith('Disposition:');
+                const style = isDisposition ? 'background: #ffebee; padding: 8px; border-radius: 6px; font-weight: 700; color: #b71c1c; border-left: 4px solid #c62828;' : 'color: #333; font-weight: 500; padding-left: 4px;';
+                html += `<div class="triage-item" style="font-size: 12px; ${style}">${item.replace('Disposition:', '<strong>Disposition:</strong>')}</div>`;
+            });
+            html += `</div></div>`;
+        }
+
         test.guidance[guidanceKey].actions.forEach(action => {
             html += `<div class="action-item">${action}</div>`;
         });
@@ -281,89 +299,12 @@ function analyseResult() {
                     Clinician: Actioned via PathLinks Protocol
                 </div>
             </div>
+        </div>
     `;
-
-    const related = getRelatedLearning(test.name, categoryName);
-    if (related.length > 0) {
-        html += `<div class="related-learning-box" style="margin-top: 16px; padding: 14px; background: #f0f7ff; border-left: 4px solid var(--primary); border-radius: 8px;"><h4 style="font-size: 13px; color: var(--primary); margin: 0 0 8px 0;">Related learning from library</h4>`;
-        related.forEach(r => {
-            html += `<p style="margin: 0 0 6px 0; font-size: 12px; font-weight: 600;">${(r.title || '').replace(/_/g, ' ')}${r.episode != null ? ' (Ep ' + r.episode + ')' : ''}</p><p style="margin: 0 0 10px 0; font-size: 12px; line-height: 1.4; color: #444;">${escapeHtml(r.transcript)}</p>`;
-        });
-        html += `</div>`;
-    }
-    html += `</div>`;
 
     output.innerHTML = html;
 }
 
-async function renderLearningTopics() {
-    const container = document.getElementById('learning-container');
-    if (!container) return;
-
-    if (!learningData) {
-        try {
-            let res = await fetch('./data/knowledge_base.json');
-            if (!res.ok) res = await fetch('./data/clinical_topics_learning.json');
-            learningData = await res.json();
-        } catch (e) {
-            container.innerHTML = '<div class="card" style="padding: 24px;"><p>Learning data not found. Run <code>node scripts/parse-mp3-topics.js "/Volumes/NO NAME"</code> then <code>python scripts/transcribe_mp3_to_knowledge.py "/Volumes/NO NAME"</code> to extract knowledge from USB MP3s.</p></div>';
-            return;
-        }
-    }
-
-    const searchEl = document.getElementById('knowledge-search');
-    const query = (searchEl && searchEl.value) ? searchEl.value.trim().toLowerCase() : '';
-    const hasTranscripts = learningData.sections && learningData.sections.some(s => (s.topics || []).some(t => t.transcript));
-
-    let html = '';
-    if (learningData.sections && learningData.sections.length) {
-        const subLabel = hasTranscripts ? 'Search runs over titles and transcript text.' : 'Titles only; run the transcription script to add full text.';
-        html += `<p class="small-text" style="margin-bottom: 16px;">${learningData.totalTopics} topics across ${learningData.sections.length} sections. ${subLabel}</p>`;
-        learningData.sections.forEach(section => {
-            if (!section.topics || section.topics.length === 0) return;
-            const filtered = query
-                ? section.topics.filter(t => {
-                    const title = (t.title || '').toLowerCase().replace(/_/g, ' ');
-                    const transcript = (t.transcript || '').toLowerCase();
-                    return title.includes(query) || transcript.includes(query);
-                })
-                : section.topics;
-            if (filtered.length === 0) return;
-            html += `<div class="card learning-section-card" style="margin-bottom: 20px;"><h3 style="margin: 0 0 12px 0; font-size: 1.1rem; color: var(--primary);">${section.name}</h3><ul class="learning-topic-list">`;
-            filtered.forEach(t => {
-                const epLabel = t.episode != null ? `Ep ${t.episode} – ` : '';
-                const titleDisplay = (t.title || '').replace(/_/g, ' ');
-                const hasT = t.transcript && t.transcript.length > 0;
-                const tid = `topic-${section.id}-${(t.episode || t.filename || '').toString().replace(/\W/g, '-')}`;
-                html += `<li class="learning-topic-item" data-topic-id="${tid}">
-                    <span class="episode-tag">${epLabel}</span>
-                    <span class="learning-topic-title">${titleDisplay}</span>
-                    ${hasT ? `<button type="button" class="link-btn show-transcript-btn" data-topic-id="${tid}" aria-label="Show transcript">Read transcript</button>` : ''}
-                    <div id="${tid}" class="topic-transcript hidden">${escapeHtml((t.transcript || '').slice(0, 50000))}</div>
-                </li>`;
-            });
-            html += '</ul></div>';
-        });
-        container.innerHTML = html;
-        container.querySelectorAll('.show-transcript-btn').forEach(btn => {
-            btn.addEventListener('click', function () {
-                const id = this.getAttribute('data-topic-id');
-                const el = document.getElementById(id);
-                if (!el) return;
-                const isHidden = el.classList.contains('hidden');
-                el.classList.toggle('hidden', !isHidden);
-                this.textContent = isHidden ? 'Hide transcript' : 'Read transcript';
-            });
-        });
-        if (searchEl && !searchEl.dataset.bound) {
-            searchEl.dataset.bound = '1';
-            searchEl.addEventListener('input', () => renderLearningTopics());
-        }
-    } else {
-        html = '<div class="card" style="padding: 24px;"><p>No learning sections available.</p></div>';
-        container.innerHTML = html;
-    }
-}
 
 async function renderDecisionTools() {
     const systemSelect = document.getElementById('decision-system');
@@ -493,7 +434,8 @@ async function renderDecisionTools() {
                 const badge = isGeneric ? '<span style="color: #f39c12; font-size: 10px;">[Generic]</span>' : '<span style="color: #27ae60; font-size: 10px;">[Specific]</span>';
 
                 div.innerHTML = badge + ' <span>' + escapeHtml(title) + '</span> <span class="system-name">(' + escapeHtml(sysName) + ')</span>';
-                div.addEventListener('click', function () {
+                div.addEventListener('mousedown', function (e) {
+                    e.preventDefault(); // Prevent input blur from hiding results before click processed
                     console.log(`[Search] Selected: ${title} (sysIdx: ${sysIdx}, toolIdx: ${toolIdx})`);
                     if (filterInput) filterInput.value = '';
                     searchAllInput.value = '';
@@ -517,6 +459,9 @@ async function renderDecisionTools() {
                     if (tool) {
                         console.log(`[Search] Found tool: ${tool.title}. Rendering UI.`);
                         renderToolUI(tool);
+
+                        // UX: Scroll to tool panel
+                        panel.scrollIntoView({ behavior: 'smooth', block: 'start' });
                     } else {
                         console.warn(`[Search] Tool index mismatch. Searching by title fallback...`);
                         const fallbackTool = (sys.tools || []).find(t => t.title === title);
@@ -524,6 +469,7 @@ async function renderDecisionTools() {
                             const actualIdx = sys.tools.indexOf(fallbackTool);
                             toolSelect.value = String(actualIdx);
                             renderToolUI(fallbackTool);
+                            panel.scrollIntoView({ behavior: 'smooth', block: 'start' });
                         }
                     }
                 });
@@ -869,8 +815,9 @@ function renderEmisIntegrations() {
                 <h2>🚨 CRITICAL ALERTS (Immediate Action)</h2>
                 <table>
                     <tr><th>Test</th><th>Critical Value</th><th>Action</th><th>Read Code</th></tr>
-                    <tr class="alert"><td>Potassium</td><td>≥ 6.0 mmol/L</td><td>ECG immediately. If ≥6.5: Hospital admission</td><td class="code">44I7.</td></tr>
-                    <tr class="alert"><td>Sodium</td><td>&lt; 125 mmol/L</td><td>Assess urgently. Risk of seizures</td><td class="code">44I5.</td></tr>
+                    <tr class="alert"><td>Potassium</td><td>≥ 6.0 mmol/L</td><td>ECG immediately. Check sample/report time gap. If ≥6.5: Hospital admission</td><td class="code">44I7.</td></tr>
+                    <tr class="alert"><td>Sodium</td><td>&lt; 125 mmol/L</td><td>Assess urgently (Seizures). Consider Drugs/Malignancy.</td><td class="code">44I5.</td></tr>
+                    <tr class="alert"><td>Calcium</td><td>&gt; 3.0 mmol/L</td><td>Urgent hospital admission. Exclude Malignancy.</td><td class="code">44J1.</td></tr>
                 </table>
                 
                 <h2>📊 Common Abnormalities</h2>
@@ -1032,6 +979,64 @@ function calculateNEWS2() {
         result.style.color = '#2e7d32';
         result.style.border = '1px solid #a5d6a7';
         result.innerHTML = '<strong>GREEN - Stable:</strong> Continue routine observation and clinical review.';
+    }
+}
+
+function initWells() {
+    const inputs = document.querySelectorAll('.wells-input');
+    inputs.forEach(input => {
+        input.addEventListener('change', calculateWells);
+    });
+}
+
+function calculateWells() {
+    let score = 0;
+    const inputs = document.querySelectorAll('.wells-input');
+    inputs.forEach(input => {
+        if (input.checked) {
+            score += parseInt(input.dataset.points);
+        }
+    });
+
+    const display = document.getElementById('wells-score-display');
+    const resultText = document.getElementById('wells-result-text');
+    display.textContent = score;
+
+    if (score >= 2) {
+        resultText.innerHTML = '<span style="color: #c62828;">DVT LIKELY (Clinical probability 46%)</span><br><span style="font-size: 11px; font-weight: normal;">Action: Arrange urgent Proximal Vein Ultrasound within 4h. If delay >4h, give interim DOAC (e.g. Apixaban).</span>';
+    } else {
+        resultText.innerHTML = '<span style="color: #27ae60;">DVT UNLIKELY (Clinical probability 3%)</span><br><span style="font-size: 11px; font-weight: normal;">Action: Arrange D-Dimer. If D-Dimer negative: DVT excluded. If D-Dimer positive: Arrange Ultrasound.</span>';
+    }
+}
+
+function initCURB() {
+    const inputs = document.querySelectorAll('.curb-input');
+    inputs.forEach(input => {
+        input.addEventListener('change', calculateCURB);
+    });
+}
+
+function calculateCURB() {
+    let score = 0;
+    const inputs = document.querySelectorAll('.curb-input');
+    inputs.forEach(input => {
+        if (input.checked) {
+            score += parseInt(input.dataset.points);
+        }
+    });
+
+    const display = document.getElementById('curb-score-display');
+    const resultText = document.getElementById('curb-result-text');
+    display.textContent = score;
+
+    if (score >= 3) {
+        resultText.innerHTML = '<span style="color: #c62828;">SEVERE (Score 3–5): HIGH MORTALITY (15–40%)</span><br><span style="font-size: 11px; font-weight: normal;">Action: URGENT hospital admission. Consider ICU if score 4–5. Dual IV antibiotics.</span>';
+    } else if (score >= 2) {
+        resultText.innerHTML = '<span style="color: #f39c12;">MODERATE (Score 2): MODERATE MORTALITY (9%)</span><br><span style="font-size: 11px; font-weight: normal;">Action: Consider hospital admission or supervised outpatient care. Dual therapy antibiotics.</span>';
+    } else if (score >= 1) {
+        resultText.innerHTML = '<span style="color: #2e7d32;">LOW (Score 1): LOW MORTALITY (1.5%)</span><br><span style="font-size: 11px; font-weight: normal;">Action: Consider home treatment. Oral monotherapy. Clinical follow-up.</span>';
+    } else {
+        resultText.innerHTML = '<span style="color: #27ae60;">LOW (Score 0): VERY LOW MORTALITY (0.6%)</span><br><span style="font-size: 11px; font-weight: normal;">Action: Home treatment usually suitable. Clinical follow-up.</span>';
     }
 }
 

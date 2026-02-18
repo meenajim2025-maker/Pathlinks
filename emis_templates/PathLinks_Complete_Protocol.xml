@@ -404,10 +404,10 @@ NON-HDL TARGET:
 - Primary prevention: < 4.0 mmol/L
 - Secondary prevention (existing CVD): < 2.5 mmol/L
 
-EMIS CODING: 38DR. (QRISK2 CVD 10-year risk)
+EMIS CODING: 38DR. (QRISK3 CVD 10-year risk)
         ]]></Text>
       </Action>
-      <SuggestedCode System="Read2" Code="38DR." Description="QRISK2 CVD 10-year risk" />
+      <SuggestedCode System="Read2" Code="38DR." Description="QRISK3 CVD 10-year risk" />
     </Rule>
 
     <!-- ==================== LIVER FUNCTION ==================== -->
