@@ -12,7 +12,9 @@ A comprehensive clinical decision support tool for UK General Practice, designed
 - **Tumour Markers**: Age-specific PSA thresholds and NICE 2WW referral prompts for CA125, CA19-9, etc.
 - **EMIS Integration**: Downloadable XML protocols for automated clinical alerts within EMIS Web.
 - **Learning Topics**: Searchable clinical knowledge extracted from USB podcast MP3s (transcripts); read full text in-app.
-- **Decision Tools**: ~900 clinical decision tools by system with **NICE-based management** (drug choices, targets, referral criteria); dropdowns give concrete guidance from guidelines, not generic “see NICE”.
+- **Decision Tools**: ~1,900 clinical decision tools by system with **NICE-based management** (drug choices, targets, referral criteria); dropdowns give concrete guidance from guidelines, not generic “see NICE”.
+- **Clinical Calculators**: Dedicated section for **QRISK3**, **NEWS2**, **Wells Score (DVT)**, and **CURB-65**, with contextual links from the clinical dashboard.
+- **Dermatology Refinement**: Highly specific management plans for **Psoriasis**, **Scalp conditions**, **Acne**, **Fungal infections**, and **Actinic Keratosis**, aligned with NICE CKS and PCDS.
 
 ## 📁 Project Structure
 
