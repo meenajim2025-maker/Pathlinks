@@ -13,6 +13,17 @@
     --border-radius: 12px;
 }
 
+body.dark-mode {
+    --bg-main: #1a1a2e;
+    --bg-sidebar: #16213e;
+    --card-bg: #1f4068;
+    --text-main: #e1e8ed;
+    --text-muted: #a0a0a0;
+    --shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
+    --primary: #4cc9f0;
+    --primary-dark: #4895ef;
+}
+
 * {
     box-sizing: border-box;
     margin: 0;
@@ -85,12 +96,85 @@ nav {
     color: white;
 }
 
+.theme-toggle {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    padding: 12px 16px;
+    margin-bottom: 20px;
+    font-size: 14px;
+    color: var(--text-muted);
+}
+
+.switch {
+    position: relative;
+    display: inline-block;
+    width: 40px;
+    height: 20px;
+}
+
+.switch input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+}
+
+.slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #ccc;
+    transition: .4s;
+}
+
+.slider:before {
+    position: absolute;
+    content: "";
+    height: 14px;
+    width: 14px;
+    left: 3px;
+    bottom: 3px;
+    background-color: white;
+    transition: .4s;
+}
+
+input:checked+.slider {
+    background-color: var(--primary);
+}
+
+input:checked+.slider:before {
+    transform: translateX(20px);
+}
+
+.slider.round {
+    border-radius: 20px;
+}
+
+.slider.round:before {
+    border-radius: 50%;
+}
+
+.sidebar-spacer {
+    flex-grow: 1;
+}
+
 .user-profile {
     display: flex;
     align-items: center;
     gap: 12px;
     padding-top: 20px;
-    border-top: 1px solid #eee;
+    border-top: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+body.dark-mode .user-profile {
+    border-top-color: rgba(255, 255, 255, 0.1);
+}
+
+body.dark-mode .nav-item:hover {
+    background: rgba(255, 255, 255, 0.05);
 }
 
 .avatar {

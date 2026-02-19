@@ -29,6 +29,14 @@
                 <div class="nav-item" id="nav-protocols">Protocols</div>
                 <div class="nav-item" id="nav-emis-coding">EMIS Integration</div>
             </nav>
+            <div class="sidebar-spacer"></div>
+            <div class="theme-toggle">
+                <label class="switch">
+                    <input type="checkbox" id="dark-mode-toggle">
+                    <span class="slider round"></span>
+                </label>
+                <span>Dark Mode</span>
+            </div>
             <div class="user-profile">
                 <div class="avatar">DR</div>
                 <div class="info">
@@ -261,6 +269,55 @@
                             <p id="curb-risk" style="margin: 0; font-size: 12px;"></p>
                         </div>
                     </div>
+
+                    <!-- CHA2DS2-VASc Score (New) -->
+                    <div class="card" id="cha2ds2-calculator-standalone">
+                        <h3>CHA2DS2-VASc Score</h3>
+                        <p class="small-text">Stroke Risk in Atrial Fibrillation</p>
+                        <div id="cha2ds2-inputs" style="margin-top: 10px;"></div>
+                        <div style="margin-top: 1rem; padding: 10px; background: #f0f7ff; border-radius: 8px;">
+                            <p style="font-size: 14px; font-weight: 600;">Score: <span id="cha2ds2-score">0</span></p>
+                            <p id="cha2ds2-risk" style="margin: 0; font-size: 12px;"></p>
+                        </div>
+                    </div>
+
+                    <!-- GFR Calculator (New) -->
+                    <div class="card" id="gfr-calculator-standalone">
+                        <h3>eGFR (MDRD)</h3>
+                        <p class="small-text">Renal Function Estimation</p>
+                        <div class="calculator-grid"
+                            style="display: grid; grid-template-columns: 1fr; gap: 10px; margin-top: 10px;">
+                            <div class="field-group">
+                                <label>Serum Creatinine (µmol/L)</label>
+                                <input type="number" id="gfr-creatinine" placeholder="e.g. 100">
+                            </div>
+                            <div class="field-group">
+                                <label>Age</label>
+                                <input type="number" id="gfr-age" value="65">
+                            </div>
+                            <div class="field-group">
+                                <label>Sex</label>
+                                <select id="gfr-sex">
+                                    <option value="male">Male</option>
+                                    <option value="female">Female</option>
+                                </select>
+                            </div>
+                            <div class="field-group">
+                                <label>Ethnicity (Black?)</label>
+                                <select id="gfr-ethnicity">
+                                    <option value="1">No</option>
+                                    <option value="1.212">Yes</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div
+                            style="margin-top: 1rem; padding: 15px; background: #f9f9f9; border-radius: 8px; text-align: center;">
+                            <p style="font-size: 12px; color: var(--text-muted); margin-bottom: 5px;">Estimated GFR</p>
+                            <span id="gfr-score"
+                                style="font-size: 24px; font-weight: 800; color: var(--primary);">--</span>
+                            <span style="font-size: 14px; color: var(--text-muted);"> mL/min/1.73m²</span>
+                        </div>
+                    </div>
                 </div>
             </section>
 
@@ -320,7 +377,14 @@
 
     <section id="protocols-view" class="view hidden">
         <h2>Clinical Protocols Library</h2>
-        <div id="protocols-list" class="grid-container">
+        <div class="card" style="margin-bottom: 2rem;">
+            <div class="field-group">
+                <label for="protocol-filter">Filter protocols (e.g. Ferritin, Sodium, HIV...)</label>
+                <input type="text" id="protocol-filter" placeholder="Type to filter protocols..."
+                    style="max-width: 400px;">
+            </div>
+        </div>
+        <div id="protocol-list-container" class="protocol-grid">
             <!-- Protocol cards injected by JS -->
         </div>
     </section>

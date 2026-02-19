@@ -65,21 +65,7 @@ function getManagementSteps(title, managementContent) {
 function getSystemFallbackSteps(systemId, title) {
   const t = (title || '').toLowerCase();
 
-  // Specific fallback for Dermatology to avoid generic "activity levels/hydration" nonsense
-  if (systemId === 'dermatology') {
-    if (t.includes('management') || t.includes('treatment')) {
-      return [{
-        id: 'derm-mgmt',
-        question: 'Dermatology Management (Best Practice)',
-        type: 'dropdown',
-        options: [{
-          label: 'General Skin Care & Emollients',
-          guidance: 'MANAGEMENT PLAN:\n1. Skincare: Use soap substitutes (emollients) for washing. Avoid harsh soaps and detergents.\n2. Emollients: Apply liberal amounts of emollient cream/ointment frequently to maintain skin barrier.\n3. Triggers: Identify and avoid potential irritants or allergens.\n4. Scalp: If scalp involved, use medicinal shampoo (tar or ketoconazole).\n5. Safety-net: Return if signs of infection (weeping, crusting, fever) or no improvement in 2 weeks.'
-        }]
-      }];
-    }
-  }
-
+  // 1. ASSESSMENT & DIAGNOSIS FALLBACKS
   if (t.includes('assessment') || t.includes('diagnosis')) {
     return [{
       id: 'bp-assessment',
@@ -98,7 +84,81 @@ function getSystemFallbackSteps(systemId, title) {
     }];
   }
 
+  // 2. MANAGEMENT & TREATMENT FALLBACKS
   if (t.includes('management') || t.includes('treatment')) {
+    if (systemId === 'dermatology') {
+      return [{
+        id: 'derm-mgmt',
+        question: 'Dermatology Management (Best Practice)',
+        type: 'dropdown',
+        options: [{
+          label: 'General Skin Care & Emollients',
+          guidance: 'MANAGEMENT PLAN:\n1. Skincare: Use soap substitutes (emollients) for washing. Avoid harsh soaps and detergents.\n2. Emollients: Apply liberal amounts of emollient cream/ointment frequently to maintain skin barrier.\n3. Triggers: Identify and avoid potential irritants or allergens.\n4. Scalp: If scalp involved, use medicinal shampoo (tar or ketoconazole).\n5. Safety-net: Return if signs of infection (weeping, crusting, fever) or no improvement in 2 weeks.'
+        }]
+      }];
+    }
+
+    if (systemId === 'cardiovascular') {
+      return [{
+        id: 'cvd-mgmt',
+        question: 'Cardiovascular Management (Best Practice)',
+        type: 'dropdown',
+        options: [{
+          label: 'CVD Risk & Lifestyle',
+          guidance: 'MANAGEMENT PLAN:\n1. Lifestyle: Advise on low-salt/low-saturated fat diet (Mediterranean-style).\n2. Smoking: Refer to smoking cessation services if applicable.\n3. Exercise: Aim for 150 mins moderate activity/week.\n4. Weight: Target BMI 18.5-24.9.\n5. Audit: Periodically review blood pressure and lipid profile (QRISK3).'
+        }]
+      }];
+    }
+
+    if (systemId === 'mental-health') {
+      return [{
+        id: 'mh-mgmt',
+        question: 'Mental Health Support (Best Practice)',
+        type: 'dropdown',
+        options: [{
+          label: 'Immediate Support & Signposting',
+          guidance: 'MANAGEMENT PLAN:\n1. Crisis: Provide emergency contact numbers (NHS 111, Samaritans 116 123, or local crisis team).\n2. Self-help: Recommend digital CBT resources or self-help books.\n3. Social: Encourage engagement with family/friends and maintaining routine.\n4. Review: Arrange follow-up (usually 1-2 weeks) to monitor risk and symptom progression.\n5. Safety-net: Advise patient to contact GP or A&E if suicidal ideation increases.'
+        }]
+      }];
+    }
+
+    if (systemId === 'women-health') {
+      return [{
+        id: 'women-mgmt',
+        question: 'Women\'s Health Advice (Best Practice)',
+        type: 'dropdown',
+        options: [{
+          label: 'General Guidance & Red Flags',
+          guidance: 'MANAGEMENT PLAN:\n1. History: Confirm LMP and pregnancy status if relevant.\n2. Red Flags: Urgent referral if post-menopausal bleeding, persistent intermenstrual bleeding, or unexplained pelvic mass.\n3. Symptom Diary: Encourage tracking of menstrual cycle and symptoms for next review.\n4. Review: Review in 12 weeks to assess treatment efficacy (e.g. for HMB or HRT).'
+        }]
+      }];
+    }
+
+    if (systemId === 'gastroenterology') {
+      return [{
+        id: 'gastro-mgmt',
+        question: 'Gastroenterology Advice (Best Practice)',
+        type: 'dropdown',
+        options: [{
+          label: 'Symptom Control & Red Flags',
+          guidance: 'MANAGEMENT PLAN:\n1. Diet: Advise food diary to identify triggers; trial low-FODMAP if IBS suspected.\n2. Meds: Trial OTC treatments (antacids, loperamide, or laxatives) as appropriate.\n3. Red Flags: Urgently review if unintended weight loss, nocturnal symptoms, or family history of GI cancer.\n4. Review: Assess response to initial management in 4 weeks.'
+        }]
+      }];
+    }
+
+    if (systemId === 'paediatrics') {
+      return [{
+        id: 'paeds-mgmt',
+        question: 'Paediatric Safety-Netting (Best Practice)',
+        type: 'dropdown',
+        options: [{
+          label: 'Traffic Light Safety-Netting',
+          guidance: 'MANAGEMENT PLAN:\n1. Hydration: Ensure adequate fluid intake (check wet nappies/urine output).\n2. Vitals: Monitor temperature and work of breathing.\n3. Red Flags: Advise immediate review (A&E) for non-blanching rash, seizures, bulging fontanelle, or severe lethargy.\n4. Triage: Use NICE NG143 Traffic Light system for assessment.'
+        }]
+      }];
+    }
+
+    // Default generic management
     return [{
       id: 'bp-management',
       question: 'Management (Best Practice)',
@@ -112,6 +172,7 @@ function getSystemFallbackSteps(systemId, title) {
     }];
   }
 
+  // 3. REFERRAL & FOLLOW-UP FALLBACKS
   if (t.includes('referral') || t.includes('follow-up')) {
     return [{
       id: 'bp-referral',

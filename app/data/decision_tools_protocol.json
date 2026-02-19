@@ -1,6 +1,6 @@
 {
   "source": "Learning library + NICE CKS/NG; management steps from guidelines",
-  "generated": "2026-02-19T06:09:22.205Z",
+  "generated": "2026-02-19T20:16:15.289Z",
   "totalTools": 1920,
   "systems": [
     {
@@ -48,13 +48,13 @@
           "evidence": "It really does help. Now in this episode I'm [Name] a topic that's been requested by one of our listeners and many thanks for this great suggestion. So an aneurysm is essentially a permanent irreversible dilatation of a blood vessel by at least 50% of its normal expected.",
           "steps": [
             {
-              "id": "bp-management",
-              "question": "Management (Best Practice)",
+              "id": "cvd-mgmt",
+              "question": "Cardiovascular Management (Best Practice)",
               "type": "dropdown",
               "options": [
                 {
-                  "label": "Initial Management Plan",
-                  "guidance": "MANAGEMENT PLAN:\n1. Advice: Advise on activity levels, hydration, and non-pharmacological measures.\n2. Information: Provide written patient info and use shared-decision making.\n3. Safety-netting: Provide clear triggers for re-consultation (rapid worsening, new red flags).\n4. Review: Arrange review based on clinical stability (e.g. 48h for acute, 2-4 weeks for chronic)."
+                  "label": "CVD Risk & Lifestyle",
+                  "guidance": "MANAGEMENT PLAN:\n1. Lifestyle: Advise on low-salt/low-saturated fat diet (Mediterranean-style).\n2. Smoking: Refer to smoking cessation services if applicable.\n3. Exercise: Aim for 150 mins moderate activity/week.\n4. Weight: Target BMI 18.5-24.9.\n5. Audit: Periodically review blood pressure and lipid profile (QRISK3)."
                 }
               ]
             }
@@ -307,13 +307,13 @@
           "evidence": "Management per NICE CKS and Local formulary.",
           "steps": [
             {
-              "id": "bp-management",
-              "question": "Management (Best Practice)",
+              "id": "cvd-mgmt",
+              "question": "Cardiovascular Management (Best Practice)",
               "type": "dropdown",
               "options": [
                 {
-                  "label": "Initial Management Plan",
-                  "guidance": "MANAGEMENT PLAN:\n1. Advice: Advise on activity levels, hydration, and non-pharmacological measures.\n2. Information: Provide written patient info and use shared-decision making.\n3. Safety-netting: Provide clear triggers for re-consultation (rapid worsening, new red flags).\n4. Review: Arrange review based on clinical stability (e.g. 48h for acute, 2-4 weeks for chronic)."
+                  "label": "CVD Risk & Lifestyle",
+                  "guidance": "MANAGEMENT PLAN:\n1. Lifestyle: Advise on low-salt/low-saturated fat diet (Mediterranean-style).\n2. Smoking: Refer to smoking cessation services if applicable.\n3. Exercise: Aim for 150 mins moderate activity/week.\n4. Weight: Target BMI 18.5-24.9.\n5. Audit: Periodically review blood pressure and lipid profile (QRISK3)."
                 }
               ]
             }
@@ -462,13 +462,13 @@
           "evidence": "Now in this episode I'm [Name] a large topic and I'd like to try and praise see it as best I can because it's a",
           "steps": [
             {
-              "id": "bp-management",
-              "question": "Management (Best Practice)",
+              "id": "cvd-mgmt",
+              "question": "Cardiovascular Management (Best Practice)",
               "type": "dropdown",
               "options": [
                 {
-                  "label": "Initial Management Plan",
-                  "guidance": "MANAGEMENT PLAN:\n1. Advice: Advise on activity levels, hydration, and non-pharmacological measures.\n2. Information: Provide written patient info and use shared-decision making.\n3. Safety-netting: Provide clear triggers for re-consultation (rapid worsening, new red flags).\n4. Review: Arrange review based on clinical stability (e.g. 48h for acute, 2-4 weeks for chronic)."
+                  "label": "CVD Risk & Lifestyle",
+                  "guidance": "MANAGEMENT PLAN:\n1. Lifestyle: Advise on low-salt/low-saturated fat diet (Mediterranean-style).\n2. Smoking: Refer to smoking cessation services if applicable.\n3. Exercise: Aim for 150 mins moderate activity/week.\n4. Weight: Target BMI 18.5-24.9.\n5. Audit: Periodically review blood pressure and lipid profile (QRISK3)."
                 }
               ]
             }
@@ -1211,13 +1211,13 @@
           "evidence": "(Intro removed; no clinical content in this segment.)",
           "steps": [
             {
-              "id": "bp-management",
-              "question": "Management (Best Practice)",
+              "id": "cvd-mgmt",
+              "question": "Cardiovascular Management (Best Practice)",
               "type": "dropdown",
               "options": [
                 {
-                  "label": "Initial Management Plan",
-                  "guidance": "MANAGEMENT PLAN:\n1. Advice: Advise on activity levels, hydration, and non-pharmacological measures.\n2. Information: Provide written patient info and use shared-decision making.\n3. Safety-netting: Provide clear triggers for re-consultation (rapid worsening, new red flags).\n4. Review: Arrange review based on clinical stability (e.g. 48h for acute, 2-4 weeks for chronic)."
+                  "label": "CVD Risk & Lifestyle",
+                  "guidance": "MANAGEMENT PLAN:\n1. Lifestyle: Advise on low-salt/low-saturated fat diet (Mediterranean-style).\n2. Smoking: Refer to smoking cessation services if applicable.\n3. Exercise: Aim for 150 mins moderate activity/week.\n4. Weight: Target BMI 18.5-24.9.\n5. Audit: Periodically review blood pressure and lipid profile (QRISK3)."
                 }
               ]
             }
@@ -1556,13 +1556,13 @@
           "evidence": "Now for the next few episodes of the podcast, we've got something a little different for you. The webinars, which are being run in association with [Organisation], are",
           "steps": [
             {
-              "id": "bp-management",
-              "question": "Management (Best Practice)",
+              "id": "cvd-mgmt",
+              "question": "Cardiovascular Management (Best Practice)",
               "type": "dropdown",
               "options": [
                 {
-                  "label": "Initial Management Plan",
-                  "guidance": "MANAGEMENT PLAN:\n1. Advice: Advise on activity levels, hydration, and non-pharmacological measures.\n2. Information: Provide written patient info and use shared-decision making.\n3. Safety-netting: Provide clear triggers for re-consultation (rapid worsening, new red flags).\n4. Review: Arrange review based on clinical stability (e.g. 48h for acute, 2-4 weeks for chronic)."
+                  "label": "CVD Risk & Lifestyle",
+                  "guidance": "MANAGEMENT PLAN:\n1. Lifestyle: Advise on low-salt/low-saturated fat diet (Mediterranean-style).\n2. Smoking: Refer to smoking cessation services if applicable.\n3. Exercise: Aim for 150 mins moderate activity/week.\n4. Weight: Target BMI 18.5-24.9.\n5. Audit: Periodically review blood pressure and lipid profile (QRISK3)."
                 }
               ]
             }
@@ -2626,13 +2626,13 @@
           "evidence": "Management per NICE CKS and Local formulary.",
           "steps": [
             {
-              "id": "bp-management",
-              "question": "Management (Best Practice)",
+              "id": "cvd-mgmt",
+              "question": "Cardiovascular Management (Best Practice)",
               "type": "dropdown",
               "options": [
                 {
-                  "label": "Initial Management Plan",
-                  "guidance": "MANAGEMENT PLAN:\n1. Advice: Advise on activity levels, hydration, and non-pharmacological measures.\n2. Information: Provide written patient info and use shared-decision making.\n3. Safety-netting: Provide clear triggers for re-consultation (rapid worsening, new red flags).\n4. Review: Arrange review based on clinical stability (e.g. 48h for acute, 2-4 weeks for chronic)."
+                  "label": "CVD Risk & Lifestyle",
+                  "guidance": "MANAGEMENT PLAN:\n1. Lifestyle: Advise on low-salt/low-saturated fat diet (Mediterranean-style).\n2. Smoking: Refer to smoking cessation services if applicable.\n3. Exercise: Aim for 150 mins moderate activity/week.\n4. Weight: Target BMI 18.5-24.9.\n5. Audit: Periodically review blood pressure and lipid profile (QRISK3)."
                 }
               ]
             }
@@ -2785,13 +2785,13 @@
           "evidence": "In other words, in patients with no evidence of established cardiovascular disease, no history of heart attack, stroke, TIA and JINAR or peripheral vasodosies. But of course, patients with these comorbidities are automatically at high cardiovascular risk. And we'll also highlight…",
           "steps": [
             {
-              "id": "bp-management",
-              "question": "Management (Best Practice)",
+              "id": "cvd-mgmt",
+              "question": "Cardiovascular Management (Best Practice)",
               "type": "dropdown",
               "options": [
                 {
-                  "label": "Initial Management Plan",
-                  "guidance": "MANAGEMENT PLAN:\n1. Advice: Advise on activity levels, hydration, and non-pharmacological measures.\n2. Information: Provide written patient info and use shared-decision making.\n3. Safety-netting: Provide clear triggers for re-consultation (rapid worsening, new red flags).\n4. Review: Arrange review based on clinical stability (e.g. 48h for acute, 2-4 weeks for chronic)."
+                  "label": "CVD Risk & Lifestyle",
+                  "guidance": "MANAGEMENT PLAN:\n1. Lifestyle: Advise on low-salt/low-saturated fat diet (Mediterranean-style).\n2. Smoking: Refer to smoking cessation services if applicable.\n3. Exercise: Aim for 150 mins moderate activity/week.\n4. Weight: Target BMI 18.5-24.9.\n5. Audit: Periodically review blood pressure and lipid profile (QRISK3)."
                 }
               ]
             }
@@ -2857,13 +2857,13 @@
           "evidence": "Management per NG126 and CKS Angina.",
           "steps": [
             {
-              "id": "bp-management",
-              "question": "Management (Best Practice)",
+              "id": "cvd-mgmt",
+              "question": "Cardiovascular Management (Best Practice)",
               "type": "dropdown",
               "options": [
                 {
-                  "label": "Initial Management Plan",
-                  "guidance": "MANAGEMENT PLAN:\n1. Advice: Advise on activity levels, hydration, and non-pharmacological measures.\n2. Information: Provide written patient info and use shared-decision making.\n3. Safety-netting: Provide clear triggers for re-consultation (rapid worsening, new red flags).\n4. Review: Arrange review based on clinical stability (e.g. 48h for acute, 2-4 weeks for chronic)."
+                  "label": "CVD Risk & Lifestyle",
+                  "guidance": "MANAGEMENT PLAN:\n1. Lifestyle: Advise on low-salt/low-saturated fat diet (Mediterranean-style).\n2. Smoking: Refer to smoking cessation services if applicable.\n3. Exercise: Aim for 150 mins moderate activity/week.\n4. Weight: Target BMI 18.5-24.9.\n5. Audit: Periodically review blood pressure and lipid profile (QRISK3)."
                 }
               ]
             }
@@ -5359,13 +5359,17 @@
           "evidence": "(Intro removed; no clinical content in this segment.)",
           "steps": [
             {
-              "id": "derm-mgmt",
-              "question": "Dermatology Management (Best Practice)",
+              "id": "bp-assessment",
+              "question": "Assessment (Best Practice)",
               "type": "dropdown",
               "options": [
                 {
-                  "label": "General Skin Care & Emollients",
-                  "guidance": "MANAGEMENT PLAN:\n1. Skincare: Use soap substitutes (emollients) for washing. Avoid harsh soaps and detergents.\n2. Emollients: Apply liberal amounts of emollient cream/ointment frequently to maintain skin barrier.\n3. Triggers: Identify and avoid potential irritants or allergens.\n4. Scalp: If scalp involved, use medicinal shampoo (tar or ketoconazole).\n5. Safety-net: Return if signs of infection (weeping, crusting, fever) or no improvement in 2 weeks."
+                  "label": "Standard Assessment",
+                  "guidance": "MANAGEMENT PLAN:\n1. History: Assess onset, severity, and triggers. Specifically exclude organic red flags (weight loss, night pain, fever, night sweats).\n2. Review: Family history and current medications.\n3. Differential: Consider most likely vs most serious diagnosis. Use validated scores (e.g. Centor, Wells, qSOFA) if applicable."
+                },
+                {
+                  "label": "Examination & Vitals",
+                  "guidance": "MANAGEMENT PLAN:\n1. Physical Exam: Perform focused physical exam (e.g. MSK, Neuro, Respiratory).\n2. Vitals: Check NEWS2 if systemically unwell.\n3. Documentation: Document findings and clinical rationale clearly."
                 }
               ]
             }
@@ -7575,13 +7579,13 @@
           "evidence": "So welcome back everybody to the podcast. It gives me really great pleasure to welcome back Jenny Barnes who's going to be talking to us about perinatal mental health again. We had a really wonderful first podcast where we talked all about the impact of perinatal mental health, j…",
           "steps": [
             {
-              "id": "bp-management",
-              "question": "Management (Best Practice)",
+              "id": "mh-mgmt",
+              "question": "Mental Health Support (Best Practice)",
               "type": "dropdown",
               "options": [
                 {
-                  "label": "Initial Management Plan",
-                  "guidance": "MANAGEMENT PLAN:\n1. Advice: Advise on activity levels, hydration, and non-pharmacological measures.\n2. Information: Provide written patient info and use shared-decision making.\n3. Safety-netting: Provide clear triggers for re-consultation (rapid worsening, new red flags).\n4. Review: Arrange review based on clinical stability (e.g. 48h for acute, 2-4 weeks for chronic)."
+                  "label": "Immediate Support & Signposting",
+                  "guidance": "MANAGEMENT PLAN:\n1. Crisis: Provide emergency contact numbers (NHS 111, Samaritans 116 123, or local crisis team).\n2. Self-help: Recommend digital CBT resources or self-help books.\n3. Social: Encourage engagement with family/friends and maintaining routine.\n4. Review: Arrange follow-up (usually 1-2 weeks) to monitor risk and symptom progression.\n5. Safety-net: Advise patient to contact GP or A&E if suicidal ideation increases."
                 }
               ]
             }
@@ -7985,13 +7989,13 @@
           "evidence": "Management per NICE CKS and Local formulary.",
           "steps": [
             {
-              "id": "bp-management",
-              "question": "Management (Best Practice)",
+              "id": "mh-mgmt",
+              "question": "Mental Health Support (Best Practice)",
               "type": "dropdown",
               "options": [
                 {
-                  "label": "Initial Management Plan",
-                  "guidance": "MANAGEMENT PLAN:\n1. Advice: Advise on activity levels, hydration, and non-pharmacological measures.\n2. Information: Provide written patient info and use shared-decision making.\n3. Safety-netting: Provide clear triggers for re-consultation (rapid worsening, new red flags).\n4. Review: Arrange review based on clinical stability (e.g. 48h for acute, 2-4 weeks for chronic)."
+                  "label": "Immediate Support & Signposting",
+                  "guidance": "MANAGEMENT PLAN:\n1. Crisis: Provide emergency contact numbers (NHS 111, Samaritans 116 123, or local crisis team).\n2. Self-help: Recommend digital CBT resources or self-help books.\n3. Social: Encourage engagement with family/friends and maintaining routine.\n4. Review: Arrange follow-up (usually 1-2 weeks) to monitor risk and symptom progression.\n5. Safety-net: Advise patient to contact GP or A&E if suicidal ideation increases."
                 }
               ]
             }
@@ -8771,13 +8775,13 @@
           "evidence": "Here you will find a whole range of bites, heistopics aimed at all of those working in primary care. Perfect way to update and entertain you on the morning commute or in fact anywhere. You can also on [social media] Dodgers. Finally, check out the show notes and have a look aroun…",
           "steps": [
             {
-              "id": "bp-management",
-              "question": "Management (Best Practice)",
+              "id": "mh-mgmt",
+              "question": "Mental Health Support (Best Practice)",
               "type": "dropdown",
               "options": [
                 {
-                  "label": "Initial Management Plan",
-                  "guidance": "MANAGEMENT PLAN:\n1. Advice: Advise on activity levels, hydration, and non-pharmacological measures.\n2. Information: Provide written patient info and use shared-decision making.\n3. Safety-netting: Provide clear triggers for re-consultation (rapid worsening, new red flags).\n4. Review: Arrange review based on clinical stability (e.g. 48h for acute, 2-4 weeks for chronic)."
+                  "label": "Immediate Support & Signposting",
+                  "guidance": "MANAGEMENT PLAN:\n1. Crisis: Provide emergency contact numbers (NHS 111, Samaritans 116 123, or local crisis team).\n2. Self-help: Recommend digital CBT resources or self-help books.\n3. Social: Encourage engagement with family/friends and maintaining routine.\n4. Review: Arrange follow-up (usually 1-2 weeks) to monitor risk and symptom progression.\n5. Safety-net: Advise patient to contact GP or A&E if suicidal ideation increases."
                 }
               ]
             }
@@ -8844,13 +8848,13 @@
           "evidence": "Thank you for joining us. Finally, check out the show notes and have a look around at our brand new [Organisation] website. In this episode we are rejoining [Name] of the work, well doctors, to discuss digital wellbeing this time for patients and about conducting the consultation…",
           "steps": [
             {
-              "id": "bp-management",
-              "question": "Management (Best Practice)",
+              "id": "mh-mgmt",
+              "question": "Mental Health Support (Best Practice)",
               "type": "dropdown",
               "options": [
                 {
-                  "label": "Initial Management Plan",
-                  "guidance": "MANAGEMENT PLAN:\n1. Advice: Advise on activity levels, hydration, and non-pharmacological measures.\n2. Information: Provide written patient info and use shared-decision making.\n3. Safety-netting: Provide clear triggers for re-consultation (rapid worsening, new red flags).\n4. Review: Arrange review based on clinical stability (e.g. 48h for acute, 2-4 weeks for chronic)."
+                  "label": "Immediate Support & Signposting",
+                  "guidance": "MANAGEMENT PLAN:\n1. Crisis: Provide emergency contact numbers (NHS 111, Samaritans 116 123, or local crisis team).\n2. Self-help: Recommend digital CBT resources or self-help books.\n3. Social: Encourage engagement with family/friends and maintaining routine.\n4. Review: Arrange follow-up (usually 1-2 weeks) to monitor risk and symptom progression.\n5. Safety-net: Advise patient to contact GP or A&E if suicidal ideation increases."
                 }
               ]
             }
@@ -8985,13 +8989,13 @@
           "evidence": "Now for the next few episodes of the podcast, we've got something a little different for you. The webinars, which are being run in association with [Organisation], are",
           "steps": [
             {
-              "id": "bp-management",
-              "question": "Management (Best Practice)",
+              "id": "mh-mgmt",
+              "question": "Mental Health Support (Best Practice)",
               "type": "dropdown",
               "options": [
                 {
-                  "label": "Initial Management Plan",
-                  "guidance": "MANAGEMENT PLAN:\n1. Advice: Advise on activity levels, hydration, and non-pharmacological measures.\n2. Information: Provide written patient info and use shared-decision making.\n3. Safety-netting: Provide clear triggers for re-consultation (rapid worsening, new red flags).\n4. Review: Arrange review based on clinical stability (e.g. 48h for acute, 2-4 weeks for chronic)."
+                  "label": "Immediate Support & Signposting",
+                  "guidance": "MANAGEMENT PLAN:\n1. Crisis: Provide emergency contact numbers (NHS 111, Samaritans 116 123, or local crisis team).\n2. Self-help: Recommend digital CBT resources or self-help books.\n3. Social: Encourage engagement with family/friends and maintaining routine.\n4. Review: Arrange follow-up (usually 1-2 weeks) to monitor risk and symptom progression.\n5. Safety-net: Advise patient to contact GP or A&E if suicidal ideation increases."
                 }
               ]
             }
@@ -9188,13 +9192,13 @@
           "evidence": "(Intro removed; no clinical content in this segment.)",
           "steps": [
             {
-              "id": "bp-management",
-              "question": "Management (Best Practice)",
+              "id": "mh-mgmt",
+              "question": "Mental Health Support (Best Practice)",
               "type": "dropdown",
               "options": [
                 {
-                  "label": "Initial Management Plan",
-                  "guidance": "MANAGEMENT PLAN:\n1. Advice: Advise on activity levels, hydration, and non-pharmacological measures.\n2. Information: Provide written patient info and use shared-decision making.\n3. Safety-netting: Provide clear triggers for re-consultation (rapid worsening, new red flags).\n4. Review: Arrange review based on clinical stability (e.g. 48h for acute, 2-4 weeks for chronic)."
+                  "label": "Immediate Support & Signposting",
+                  "guidance": "MANAGEMENT PLAN:\n1. Crisis: Provide emergency contact numbers (NHS 111, Samaritans 116 123, or local crisis team).\n2. Self-help: Recommend digital CBT resources or self-help books.\n3. Social: Encourage engagement with family/friends and maintaining routine.\n4. Review: Arrange follow-up (usually 1-2 weeks) to monitor risk and symptom progression.\n5. Safety-net: Advise patient to contact GP or A&E if suicidal ideation increases."
                 }
               ]
             }
@@ -9437,13 +9441,13 @@
           "evidence": "So welcome back everybody to the third part of our series on Perry Natal Mental Health. It gives me great pleasure to welcome back [Name], who is a Perry Natal Mental Health champion in Warwick. And we've had two really wonderful podcasts before this, looking at opening the conve…",
           "steps": [
             {
-              "id": "bp-management",
-              "question": "Management (Best Practice)",
+              "id": "mh-mgmt",
+              "question": "Mental Health Support (Best Practice)",
               "type": "dropdown",
               "options": [
                 {
-                  "label": "Initial Management Plan",
-                  "guidance": "MANAGEMENT PLAN:\n1. Advice: Advise on activity levels, hydration, and non-pharmacological measures.\n2. Information: Provide written patient info and use shared-decision making.\n3. Safety-netting: Provide clear triggers for re-consultation (rapid worsening, new red flags).\n4. Review: Arrange review based on clinical stability (e.g. 48h for acute, 2-4 weeks for chronic)."
+                  "label": "Immediate Support & Signposting",
+                  "guidance": "MANAGEMENT PLAN:\n1. Crisis: Provide emergency contact numbers (NHS 111, Samaritans 116 123, or local crisis team).\n2. Self-help: Recommend digital CBT resources or self-help books.\n3. Social: Encourage engagement with family/friends and maintaining routine.\n4. Review: Arrange follow-up (usually 1-2 weeks) to monitor risk and symptom progression.\n5. Safety-net: Advise patient to contact GP or A&E if suicidal ideation increases."
                 }
               ]
             }
@@ -9461,13 +9465,13 @@
           "evidence": "So welcome back everybody to the third part of our series on Perry Natal Mental Health. It gives me great pleasure to welcome back [Name], who is a Perry Natal Mental Health champion in Warwick. And we've had two really wonderful podcasts before this, looking at opening the conve…",
           "steps": [
             {
-              "id": "bp-management",
-              "question": "Management (Best Practice)",
+              "id": "mh-mgmt",
+              "question": "Mental Health Support (Best Practice)",
               "type": "dropdown",
               "options": [
                 {
-                  "label": "Initial Management Plan",
-                  "guidance": "MANAGEMENT PLAN:\n1. Advice: Advise on activity levels, hydration, and non-pharmacological measures.\n2. Information: Provide written patient info and use shared-decision making.\n3. Safety-netting: Provide clear triggers for re-consultation (rapid worsening, new red flags).\n4. Review: Arrange review based on clinical stability (e.g. 48h for acute, 2-4 weeks for chronic)."
+                  "label": "Immediate Support & Signposting",
+                  "guidance": "MANAGEMENT PLAN:\n1. Crisis: Provide emergency contact numbers (NHS 111, Samaritans 116 123, or local crisis team).\n2. Self-help: Recommend digital CBT resources or self-help books.\n3. Social: Encourage engagement with family/friends and maintaining routine.\n4. Review: Arrange follow-up (usually 1-2 weeks) to monitor risk and symptom progression.\n5. Safety-net: Advise patient to contact GP or A&E if suicidal ideation increases."
                 }
               ]
             }
@@ -9511,13 +9515,13 @@
           "evidence": "You can follow me on [social media] Kate for more information about our new podcasts as they become available. So let's start as we usually do.",
           "steps": [
             {
-              "id": "bp-management",
-              "question": "Management (Best Practice)",
+              "id": "mh-mgmt",
+              "question": "Mental Health Support (Best Practice)",
               "type": "dropdown",
               "options": [
                 {
-                  "label": "Initial Management Plan",
-                  "guidance": "MANAGEMENT PLAN:\n1. Advice: Advise on activity levels, hydration, and non-pharmacological measures.\n2. Information: Provide written patient info and use shared-decision making.\n3. Safety-netting: Provide clear triggers for re-consultation (rapid worsening, new red flags).\n4. Review: Arrange review based on clinical stability (e.g. 48h for acute, 2-4 weeks for chronic)."
+                  "label": "Immediate Support & Signposting",
+                  "guidance": "MANAGEMENT PLAN:\n1. Crisis: Provide emergency contact numbers (NHS 111, Samaritans 116 123, or local crisis team).\n2. Self-help: Recommend digital CBT resources or self-help books.\n3. Social: Encourage engagement with family/friends and maintaining routine.\n4. Review: Arrange follow-up (usually 1-2 weeks) to monitor risk and symptom progression.\n5. Safety-net: Advise patient to contact GP or A&E if suicidal ideation increases."
                 }
               ]
             }
@@ -9770,13 +9774,13 @@
           "evidence": "Podcast will cover clinical tips and hacks, as well as hot topics to help make our lives a wee bit easier, but ultimately to help improve the lives of our patients in primary care. The webcasts, which are being run in association with [Organisation], are designed to help all of u…",
           "steps": [
             {
-              "id": "bp-management",
-              "question": "Management (Best Practice)",
+              "id": "mh-mgmt",
+              "question": "Mental Health Support (Best Practice)",
               "type": "dropdown",
               "options": [
                 {
-                  "label": "Initial Management Plan",
-                  "guidance": "MANAGEMENT PLAN:\n1. Advice: Advise on activity levels, hydration, and non-pharmacological measures.\n2. Information: Provide written patient info and use shared-decision making.\n3. Safety-netting: Provide clear triggers for re-consultation (rapid worsening, new red flags).\n4. Review: Arrange review based on clinical stability (e.g. 48h for acute, 2-4 weeks for chronic)."
+                  "label": "Immediate Support & Signposting",
+                  "guidance": "MANAGEMENT PLAN:\n1. Crisis: Provide emergency contact numbers (NHS 111, Samaritans 116 123, or local crisis team).\n2. Self-help: Recommend digital CBT resources or self-help books.\n3. Social: Encourage engagement with family/friends and maintaining routine.\n4. Review: Arrange follow-up (usually 1-2 weeks) to monitor risk and symptom progression.\n5. Safety-net: Advise patient to contact GP or A&E if suicidal ideation increases."
                 }
               ]
             }
@@ -9927,13 +9931,13 @@
           "evidence": "(Intro removed; no clinical content in this segment.)",
           "steps": [
             {
-              "id": "bp-management",
-              "question": "Management (Best Practice)",
+              "id": "mh-mgmt",
+              "question": "Mental Health Support (Best Practice)",
               "type": "dropdown",
               "options": [
                 {
-                  "label": "Initial Management Plan",
-                  "guidance": "MANAGEMENT PLAN:\n1. Advice: Advise on activity levels, hydration, and non-pharmacological measures.\n2. Information: Provide written patient info and use shared-decision making.\n3. Safety-netting: Provide clear triggers for re-consultation (rapid worsening, new red flags).\n4. Review: Arrange review based on clinical stability (e.g. 48h for acute, 2-4 weeks for chronic)."
+                  "label": "Immediate Support & Signposting",
+                  "guidance": "MANAGEMENT PLAN:\n1. Crisis: Provide emergency contact numbers (NHS 111, Samaritans 116 123, or local crisis team).\n2. Self-help: Recommend digital CBT resources or self-help books.\n3. Social: Encourage engagement with family/friends and maintaining routine.\n4. Review: Arrange follow-up (usually 1-2 weeks) to monitor risk and symptom progression.\n5. Safety-net: Advise patient to contact GP or A&E if suicidal ideation increases."
                 }
               ]
             }
@@ -10121,13 +10125,13 @@
           "evidence": "It gives me great pleasure to introduce you to [Name] who is a GP and Warwickshire and a perinatal mental health GP champion and today we're talking all about perinatal mental health. Welcome Jenny. Thanks very much James and thanks for having me on the podcast today. It's great …",
           "steps": [
             {
-              "id": "bp-management",
-              "question": "Management (Best Practice)",
+              "id": "mh-mgmt",
+              "question": "Mental Health Support (Best Practice)",
               "type": "dropdown",
               "options": [
                 {
-                  "label": "Initial Management Plan",
-                  "guidance": "MANAGEMENT PLAN:\n1. Advice: Advise on activity levels, hydration, and non-pharmacological measures.\n2. Information: Provide written patient info and use shared-decision making.\n3. Safety-netting: Provide clear triggers for re-consultation (rapid worsening, new red flags).\n4. Review: Arrange review based on clinical stability (e.g. 48h for acute, 2-4 weeks for chronic)."
+                  "label": "Immediate Support & Signposting",
+                  "guidance": "MANAGEMENT PLAN:\n1. Crisis: Provide emergency contact numbers (NHS 111, Samaritans 116 123, or local crisis team).\n2. Self-help: Recommend digital CBT resources or self-help books.\n3. Social: Encourage engagement with family/friends and maintaining routine.\n4. Review: Arrange follow-up (usually 1-2 weeks) to monitor risk and symptom progression.\n5. Safety-net: Advise patient to contact GP or A&E if suicidal ideation increases."
                 }
               ]
             }
@@ -10264,13 +10268,13 @@
           "evidence": "Now in this episode we're going to be discussing post traumatic stress disorder PTSD which is a debilitating mental health condition that arises following exposure to trauma and in this sense trauma refers to actual or threatened death, serious injury or sexual violence. Now whil…",
           "steps": [
             {
-              "id": "bp-management",
-              "question": "Management (Best Practice)",
+              "id": "mh-mgmt",
+              "question": "Mental Health Support (Best Practice)",
               "type": "dropdown",
               "options": [
                 {
-                  "label": "Initial Management Plan",
-                  "guidance": "MANAGEMENT PLAN:\n1. Advice: Advise on activity levels, hydration, and non-pharmacological measures.\n2. Information: Provide written patient info and use shared-decision making.\n3. Safety-netting: Provide clear triggers for re-consultation (rapid worsening, new red flags).\n4. Review: Arrange review based on clinical stability (e.g. 48h for acute, 2-4 weeks for chronic)."
+                  "label": "Immediate Support & Signposting",
+                  "guidance": "MANAGEMENT PLAN:\n1. Crisis: Provide emergency contact numbers (NHS 111, Samaritans 116 123, or local crisis team).\n2. Self-help: Recommend digital CBT resources or self-help books.\n3. Social: Encourage engagement with family/friends and maintaining routine.\n4. Review: Arrange follow-up (usually 1-2 weeks) to monitor risk and symptom progression.\n5. Safety-net: Advise patient to contact GP or A&E if suicidal ideation increases."
                 }
               ]
             }
@@ -10381,13 +10385,13 @@
           "evidence": "Management per NICE CKS and Local formulary.",
           "steps": [
             {
-              "id": "bp-management",
-              "question": "Management (Best Practice)",
+              "id": "mh-mgmt",
+              "question": "Mental Health Support (Best Practice)",
               "type": "dropdown",
               "options": [
                 {
-                  "label": "Initial Management Plan",
-                  "guidance": "MANAGEMENT PLAN:\n1. Advice: Advise on activity levels, hydration, and non-pharmacological measures.\n2. Information: Provide written patient info and use shared-decision making.\n3. Safety-netting: Provide clear triggers for re-consultation (rapid worsening, new red flags).\n4. Review: Arrange review based on clinical stability (e.g. 48h for acute, 2-4 weeks for chronic)."
+                  "label": "Immediate Support & Signposting",
+                  "guidance": "MANAGEMENT PLAN:\n1. Crisis: Provide emergency contact numbers (NHS 111, Samaritans 116 123, or local crisis team).\n2. Self-help: Recommend digital CBT resources or self-help books.\n3. Social: Encourage engagement with family/friends and maintaining routine.\n4. Review: Arrange follow-up (usually 1-2 weeks) to monitor risk and symptom progression.\n5. Safety-net: Advise patient to contact GP or A&E if suicidal ideation increases."
                 }
               ]
             }
@@ -10479,13 +10483,13 @@
           "evidence": "Now in this episode I'll be discussing seasonal effective disorder. A condition that was recorded as far back as 4.",
           "steps": [
             {
-              "id": "bp-management",
-              "question": "Management (Best Practice)",
+              "id": "mh-mgmt",
+              "question": "Mental Health Support (Best Practice)",
               "type": "dropdown",
               "options": [
                 {
-                  "label": "Initial Management Plan",
-                  "guidance": "MANAGEMENT PLAN:\n1. Advice: Advise on activity levels, hydration, and non-pharmacological measures.\n2. Information: Provide written patient info and use shared-decision making.\n3. Safety-netting: Provide clear triggers for re-consultation (rapid worsening, new red flags).\n4. Review: Arrange review based on clinical stability (e.g. 48h for acute, 2-4 weeks for chronic)."
+                  "label": "Immediate Support & Signposting",
+                  "guidance": "MANAGEMENT PLAN:\n1. Crisis: Provide emergency contact numbers (NHS 111, Samaritans 116 123, or local crisis team).\n2. Self-help: Recommend digital CBT resources or self-help books.\n3. Social: Encourage engagement with family/friends and maintaining routine.\n4. Review: Arrange follow-up (usually 1-2 weeks) to monitor risk and symptom progression.\n5. Safety-net: Advise patient to contact GP or A&E if suicidal ideation increases."
                 }
               ]
             }
@@ -10798,13 +10802,13 @@
           "evidence": "(Intro removed; no clinical content in this segment.)",
           "steps": [
             {
-              "id": "bp-management",
-              "question": "Management (Best Practice)",
+              "id": "gastro-mgmt",
+              "question": "Gastroenterology Advice (Best Practice)",
               "type": "dropdown",
               "options": [
                 {
-                  "label": "Initial Management Plan",
-                  "guidance": "MANAGEMENT PLAN:\n1. Advice: Advise on activity levels, hydration, and non-pharmacological measures.\n2. Information: Provide written patient info and use shared-decision making.\n3. Safety-netting: Provide clear triggers for re-consultation (rapid worsening, new red flags).\n4. Review: Arrange review based on clinical stability (e.g. 48h for acute, 2-4 weeks for chronic)."
+                  "label": "Symptom Control & Red Flags",
+                  "guidance": "MANAGEMENT PLAN:\n1. Diet: Advise food diary to identify triggers; trial low-FODMAP if IBS suspected.\n2. Meds: Trial OTC treatments (antacids, loperamide, or laxatives) as appropriate.\n3. Red Flags: Urgently review if unintended weight loss, nocturnal symptoms, or family history of GI cancer.\n4. Review: Assess response to initial management in 4 weeks."
                 }
               ]
             }
@@ -10872,13 +10876,13 @@
           "evidence": "In this episode I'd like to talk about acute colosestitis or acute gallbladder inflammation, which is one of the major complications of cololythiasis or gallstones. It develops in about 10% of patients who have symptomatic gallstones with the gallstones obstructing the cystic duc…",
           "steps": [
             {
-              "id": "bp-management",
-              "question": "Management (Best Practice)",
+              "id": "gastro-mgmt",
+              "question": "Gastroenterology Advice (Best Practice)",
               "type": "dropdown",
               "options": [
                 {
-                  "label": "Initial Management Plan",
-                  "guidance": "MANAGEMENT PLAN:\n1. Advice: Advise on activity levels, hydration, and non-pharmacological measures.\n2. Information: Provide written patient info and use shared-decision making.\n3. Safety-netting: Provide clear triggers for re-consultation (rapid worsening, new red flags).\n4. Review: Arrange review based on clinical stability (e.g. 48h for acute, 2-4 weeks for chronic)."
+                  "label": "Symptom Control & Red Flags",
+                  "guidance": "MANAGEMENT PLAN:\n1. Diet: Advise food diary to identify triggers; trial low-FODMAP if IBS suspected.\n2. Meds: Trial OTC treatments (antacids, loperamide, or laxatives) as appropriate.\n3. Red Flags: Urgently review if unintended weight loss, nocturnal symptoms, or family history of GI cancer.\n4. Review: Assess response to initial management in 4 weeks."
                 }
               ]
             }
@@ -10971,13 +10975,13 @@
           "evidence": "It really does help. Now in this episode we'll be discussing acute pancreatitis and inflammatory disorder of the pancreas.",
           "steps": [
             {
-              "id": "bp-management",
-              "question": "Management (Best Practice)",
+              "id": "gastro-mgmt",
+              "question": "Gastroenterology Advice (Best Practice)",
               "type": "dropdown",
               "options": [
                 {
-                  "label": "Initial Management Plan",
-                  "guidance": "MANAGEMENT PLAN:\n1. Advice: Advise on activity levels, hydration, and non-pharmacological measures.\n2. Information: Provide written patient info and use shared-decision making.\n3. Safety-netting: Provide clear triggers for re-consultation (rapid worsening, new red flags).\n4. Review: Arrange review based on clinical stability (e.g. 48h for acute, 2-4 weeks for chronic)."
+                  "label": "Symptom Control & Red Flags",
+                  "guidance": "MANAGEMENT PLAN:\n1. Diet: Advise food diary to identify triggers; trial low-FODMAP if IBS suspected.\n2. Meds: Trial OTC treatments (antacids, loperamide, or laxatives) as appropriate.\n3. Red Flags: Urgently review if unintended weight loss, nocturnal symptoms, or family history of GI cancer.\n4. Review: Assess response to initial management in 4 weeks."
                 }
               ]
             }
@@ -11168,13 +11172,13 @@
           "evidence": "Now in this episode I'll be discussing Barrett's Asophagus, what it is, why it matters, and how evolving evidence is changing the way we diagnose, monitor and manage this condition. And this is a topic that most of us encounter frequently in practice, and yet it continues to evol…",
           "steps": [
             {
-              "id": "bp-management",
-              "question": "Management (Best Practice)",
+              "id": "gastro-mgmt",
+              "question": "Gastroenterology Advice (Best Practice)",
               "type": "dropdown",
               "options": [
                 {
-                  "label": "Initial Management Plan",
-                  "guidance": "MANAGEMENT PLAN:\n1. Advice: Advise on activity levels, hydration, and non-pharmacological measures.\n2. Information: Provide written patient info and use shared-decision making.\n3. Safety-netting: Provide clear triggers for re-consultation (rapid worsening, new red flags).\n4. Review: Arrange review based on clinical stability (e.g. 48h for acute, 2-4 weeks for chronic)."
+                  "label": "Symptom Control & Red Flags",
+                  "guidance": "MANAGEMENT PLAN:\n1. Diet: Advise food diary to identify triggers; trial low-FODMAP if IBS suspected.\n2. Meds: Trial OTC treatments (antacids, loperamide, or laxatives) as appropriate.\n3. Red Flags: Urgently review if unintended weight loss, nocturnal symptoms, or family history of GI cancer.\n4. Review: Assess response to initial management in 4 weeks."
                 }
               ]
             }
@@ -11572,13 +11576,13 @@
           "evidence": "It really does help. Now in this episode, I'm...",
           "steps": [
             {
-              "id": "bp-management",
-              "question": "Management (Best Practice)",
+              "id": "gastro-mgmt",
+              "question": "Gastroenterology Advice (Best Practice)",
               "type": "dropdown",
               "options": [
                 {
-                  "label": "Initial Management Plan",
-                  "guidance": "MANAGEMENT PLAN:\n1. Advice: Advise on activity levels, hydration, and non-pharmacological measures.\n2. Information: Provide written patient info and use shared-decision making.\n3. Safety-netting: Provide clear triggers for re-consultation (rapid worsening, new red flags).\n4. Review: Arrange review based on clinical stability (e.g. 48h for acute, 2-4 weeks for chronic)."
+                  "label": "Symptom Control & Red Flags",
+                  "guidance": "MANAGEMENT PLAN:\n1. Diet: Advise food diary to identify triggers; trial low-FODMAP if IBS suspected.\n2. Meds: Trial OTC treatments (antacids, loperamide, or laxatives) as appropriate.\n3. Red Flags: Urgently review if unintended weight loss, nocturnal symptoms, or family history of GI cancer.\n4. Review: Assess response to initial management in 4 weeks."
                 }
               ]
             }
@@ -12316,13 +12320,13 @@
           "evidence": "(Intro removed; no clinical content in this segment.)",
           "steps": [
             {
-              "id": "bp-management",
-              "question": "Management (Best Practice)",
+              "id": "gastro-mgmt",
+              "question": "Gastroenterology Advice (Best Practice)",
               "type": "dropdown",
               "options": [
                 {
-                  "label": "Initial Management Plan",
-                  "guidance": "MANAGEMENT PLAN:\n1. Advice: Advise on activity levels, hydration, and non-pharmacological measures.\n2. Information: Provide written patient info and use shared-decision making.\n3. Safety-netting: Provide clear triggers for re-consultation (rapid worsening, new red flags).\n4. Review: Arrange review based on clinical stability (e.g. 48h for acute, 2-4 weeks for chronic)."
+                  "label": "Symptom Control & Red Flags",
+                  "guidance": "MANAGEMENT PLAN:\n1. Diet: Advise food diary to identify triggers; trial low-FODMAP if IBS suspected.\n2. Meds: Trial OTC treatments (antacids, loperamide, or laxatives) as appropriate.\n3. Red Flags: Urgently review if unintended weight loss, nocturnal symptoms, or family history of GI cancer.\n4. Review: Assess response to initial management in 4 weeks."
                 }
               ]
             }
@@ -12437,13 +12441,13 @@
           "evidence": "Welcome to our new [Organisation] podcast, a bite-sized regular chat for all of us working in primary care. Podcasts will cover clinical tips and hacks, as well as hot topics to help make our lives a wee bit easier, but ultimately to help improve the lives of our patients in prim…",
           "steps": [
             {
-              "id": "bp-management",
-              "question": "Management (Best Practice)",
+              "id": "gastro-mgmt",
+              "question": "Gastroenterology Advice (Best Practice)",
               "type": "dropdown",
               "options": [
                 {
-                  "label": "Initial Management Plan",
-                  "guidance": "MANAGEMENT PLAN:\n1. Advice: Advise on activity levels, hydration, and non-pharmacological measures.\n2. Information: Provide written patient info and use shared-decision making.\n3. Safety-netting: Provide clear triggers for re-consultation (rapid worsening, new red flags).\n4. Review: Arrange review based on clinical stability (e.g. 48h for acute, 2-4 weeks for chronic)."
+                  "label": "Symptom Control & Red Flags",
+                  "guidance": "MANAGEMENT PLAN:\n1. Diet: Advise food diary to identify triggers; trial low-FODMAP if IBS suspected.\n2. Meds: Trial OTC treatments (antacids, loperamide, or laxatives) as appropriate.\n3. Red Flags: Urgently review if unintended weight loss, nocturnal symptoms, or family history of GI cancer.\n4. Review: Assess response to initial management in 4 weeks."
                 }
               ]
             }
@@ -13890,13 +13894,13 @@
           "evidence": "Management per NICE CKS and Local formulary.",
           "steps": [
             {
-              "id": "bp-management",
-              "question": "Management (Best Practice)",
+              "id": "gastro-mgmt",
+              "question": "Gastroenterology Advice (Best Practice)",
               "type": "dropdown",
               "options": [
                 {
-                  "label": "Initial Management Plan",
-                  "guidance": "MANAGEMENT PLAN:\n1. Advice: Advise on activity levels, hydration, and non-pharmacological measures.\n2. Information: Provide written patient info and use shared-decision making.\n3. Safety-netting: Provide clear triggers for re-consultation (rapid worsening, new red flags).\n4. Review: Arrange review based on clinical stability (e.g. 48h for acute, 2-4 weeks for chronic)."
+                  "label": "Symptom Control & Red Flags",
+                  "guidance": "MANAGEMENT PLAN:\n1. Diet: Advise food diary to identify triggers; trial low-FODMAP if IBS suspected.\n2. Meds: Trial OTC treatments (antacids, loperamide, or laxatives) as appropriate.\n3. Red Flags: Urgently review if unintended weight loss, nocturnal symptoms, or family history of GI cancer.\n4. Review: Assess response to initial management in 4 weeks."
                 }
               ]
             }
@@ -13941,13 +13945,13 @@
           "evidence": "(Intro removed; no clinical content in this segment.)",
           "steps": [
             {
-              "id": "bp-management",
-              "question": "Management (Best Practice)",
+              "id": "gastro-mgmt",
+              "question": "Gastroenterology Advice (Best Practice)",
               "type": "dropdown",
               "options": [
                 {
-                  "label": "Initial Management Plan",
-                  "guidance": "MANAGEMENT PLAN:\n1. Advice: Advise on activity levels, hydration, and non-pharmacological measures.\n2. Information: Provide written patient info and use shared-decision making.\n3. Safety-netting: Provide clear triggers for re-consultation (rapid worsening, new red flags).\n4. Review: Arrange review based on clinical stability (e.g. 48h for acute, 2-4 weeks for chronic)."
+                  "label": "Symptom Control & Red Flags",
+                  "guidance": "MANAGEMENT PLAN:\n1. Diet: Advise food diary to identify triggers; trial low-FODMAP if IBS suspected.\n2. Meds: Trial OTC treatments (antacids, loperamide, or laxatives) as appropriate.\n3. Red Flags: Urgently review if unintended weight loss, nocturnal symptoms, or family history of GI cancer.\n4. Review: Assess response to initial management in 4 weeks."
                 }
               ]
             }
@@ -25023,13 +25027,13 @@
           "evidence": "(Intro removed; no clinical content in this segment.)",
           "steps": [
             {
-              "id": "bp-management",
-              "question": "Management (Best Practice)",
+              "id": "paeds-mgmt",
+              "question": "Paediatric Safety-Netting (Best Practice)",
               "type": "dropdown",
               "options": [
                 {
-                  "label": "Initial Management Plan",
-                  "guidance": "MANAGEMENT PLAN:\n1. Advice: Advise on activity levels, hydration, and non-pharmacological measures.\n2. Information: Provide written patient info and use shared-decision making.\n3. Safety-netting: Provide clear triggers for re-consultation (rapid worsening, new red flags).\n4. Review: Arrange review based on clinical stability (e.g. 48h for acute, 2-4 weeks for chronic)."
+                  "label": "Traffic Light Safety-Netting",
+                  "guidance": "MANAGEMENT PLAN:\n1. Hydration: Ensure adequate fluid intake (check wet nappies/urine output).\n2. Vitals: Monitor temperature and work of breathing.\n3. Red Flags: Advise immediate review (A&E) for non-blanching rash, seizures, bulging fontanelle, or severe lethargy.\n4. Triage: Use NICE NG143 Traffic Light system for assessment."
                 }
               ]
             }
@@ -25603,13 +25607,13 @@
           "evidence": "Now you can find us wherever you get your podcasts, including Spotify, Apple Podcasts and Google Podcasts.",
           "steps": [
             {
-              "id": "bp-management",
-              "question": "Management (Best Practice)",
+              "id": "paeds-mgmt",
+              "question": "Paediatric Safety-Netting (Best Practice)",
               "type": "dropdown",
               "options": [
                 {
-                  "label": "Initial Management Plan",
-                  "guidance": "MANAGEMENT PLAN:\n1. Advice: Advise on activity levels, hydration, and non-pharmacological measures.\n2. Information: Provide written patient info and use shared-decision making.\n3. Safety-netting: Provide clear triggers for re-consultation (rapid worsening, new red flags).\n4. Review: Arrange review based on clinical stability (e.g. 48h for acute, 2-4 weeks for chronic)."
+                  "label": "Traffic Light Safety-Netting",
+                  "guidance": "MANAGEMENT PLAN:\n1. Hydration: Ensure adequate fluid intake (check wet nappies/urine output).\n2. Vitals: Monitor temperature and work of breathing.\n3. Red Flags: Advise immediate review (A&E) for non-blanching rash, seizures, bulging fontanelle, or severe lethargy.\n4. Triage: Use NICE NG143 Traffic Light system for assessment."
                 }
               ]
             }
@@ -26221,13 +26225,13 @@
           "evidence": "I'm [Name] [Name], a portfolio GP based in [Name]. Join us for a whole range of bite-sized topics tailored for those in primary care, perfect for your morning commute or anytime and anywhere. You can tune into us on all leading podcast platforms and don't forget to like and subsc…",
           "steps": [
             {
-              "id": "bp-management",
-              "question": "Management (Best Practice)",
+              "id": "paeds-mgmt",
+              "question": "Paediatric Safety-Netting (Best Practice)",
               "type": "dropdown",
               "options": [
                 {
-                  "label": "Initial Management Plan",
-                  "guidance": "MANAGEMENT PLAN:\n1. Advice: Advise on activity levels, hydration, and non-pharmacological measures.\n2. Information: Provide written patient info and use shared-decision making.\n3. Safety-netting: Provide clear triggers for re-consultation (rapid worsening, new red flags).\n4. Review: Arrange review based on clinical stability (e.g. 48h for acute, 2-4 weeks for chronic)."
+                  "label": "Traffic Light Safety-Netting",
+                  "guidance": "MANAGEMENT PLAN:\n1. Hydration: Ensure adequate fluid intake (check wet nappies/urine output).\n2. Vitals: Monitor temperature and work of breathing.\n3. Red Flags: Advise immediate review (A&E) for non-blanching rash, seizures, bulging fontanelle, or severe lethargy.\n4. Triage: Use NICE NG143 Traffic Light system for assessment."
                 }
               ]
             }
@@ -26374,13 +26378,13 @@
           "evidence": "Management per NICE CKS and Local formulary.",
           "steps": [
             {
-              "id": "bp-management",
-              "question": "Management (Best Practice)",
+              "id": "paeds-mgmt",
+              "question": "Paediatric Safety-Netting (Best Practice)",
               "type": "dropdown",
               "options": [
                 {
-                  "label": "Initial Management Plan",
-                  "guidance": "MANAGEMENT PLAN:\n1. Advice: Advise on activity levels, hydration, and non-pharmacological measures.\n2. Information: Provide written patient info and use shared-decision making.\n3. Safety-netting: Provide clear triggers for re-consultation (rapid worsening, new red flags).\n4. Review: Arrange review based on clinical stability (e.g. 48h for acute, 2-4 weeks for chronic)."
+                  "label": "Traffic Light Safety-Netting",
+                  "guidance": "MANAGEMENT PLAN:\n1. Hydration: Ensure adequate fluid intake (check wet nappies/urine output).\n2. Vitals: Monitor temperature and work of breathing.\n3. Red Flags: Advise immediate review (A&E) for non-blanching rash, seizures, bulging fontanelle, or severe lethargy.\n4. Triage: Use NICE NG143 Traffic Light system for assessment."
                 }
               ]
             }
@@ -26865,13 +26869,13 @@
           "evidence": "Management per NICE CKS and Local formulary.",
           "steps": [
             {
-              "id": "bp-management",
-              "question": "Management (Best Practice)",
+              "id": "paeds-mgmt",
+              "question": "Paediatric Safety-Netting (Best Practice)",
               "type": "dropdown",
               "options": [
                 {
-                  "label": "Initial Management Plan",
-                  "guidance": "MANAGEMENT PLAN:\n1. Advice: Advise on activity levels, hydration, and non-pharmacological measures.\n2. Information: Provide written patient info and use shared-decision making.\n3. Safety-netting: Provide clear triggers for re-consultation (rapid worsening, new red flags).\n4. Review: Arrange review based on clinical stability (e.g. 48h for acute, 2-4 weeks for chronic)."
+                  "label": "Traffic Light Safety-Netting",
+                  "guidance": "MANAGEMENT PLAN:\n1. Hydration: Ensure adequate fluid intake (check wet nappies/urine output).\n2. Vitals: Monitor temperature and work of breathing.\n3. Red Flags: Advise immediate review (A&E) for non-blanching rash, seizures, bulging fontanelle, or severe lethargy.\n4. Triage: Use NICE NG143 Traffic Light system for assessment."
                 }
               ]
             }
@@ -26963,13 +26967,13 @@
           "evidence": "Today I'm [Name]'s B19 infection, also known as fifth disease or slapped cheek. Let's start with a case study. Evelyn has been brought by her father, who is concerned that she has a temperature and is now developed to rat.",
           "steps": [
             {
-              "id": "bp-management",
-              "question": "Management (Best Practice)",
+              "id": "paeds-mgmt",
+              "question": "Paediatric Safety-Netting (Best Practice)",
               "type": "dropdown",
               "options": [
                 {
-                  "label": "Initial Management Plan",
-                  "guidance": "MANAGEMENT PLAN:\n1. Advice: Advise on activity levels, hydration, and non-pharmacological measures.\n2. Information: Provide written patient info and use shared-decision making.\n3. Safety-netting: Provide clear triggers for re-consultation (rapid worsening, new red flags).\n4. Review: Arrange review based on clinical stability (e.g. 48h for acute, 2-4 weeks for chronic)."
+                  "label": "Traffic Light Safety-Netting",
+                  "guidance": "MANAGEMENT PLAN:\n1. Hydration: Ensure adequate fluid intake (check wet nappies/urine output).\n2. Vitals: Monitor temperature and work of breathing.\n3. Red Flags: Advise immediate review (A&E) for non-blanching rash, seizures, bulging fontanelle, or severe lethargy.\n4. Triage: Use NICE NG143 Traffic Light system for assessment."
                 }
               ]
             }
@@ -27115,13 +27119,13 @@
           "evidence": "(Intro removed; no clinical content in this segment.)",
           "steps": [
             {
-              "id": "bp-management",
-              "question": "Management (Best Practice)",
+              "id": "paeds-mgmt",
+              "question": "Paediatric Safety-Netting (Best Practice)",
               "type": "dropdown",
               "options": [
                 {
-                  "label": "Initial Management Plan",
-                  "guidance": "MANAGEMENT PLAN:\n1. Advice: Advise on activity levels, hydration, and non-pharmacological measures.\n2. Information: Provide written patient info and use shared-decision making.\n3. Safety-netting: Provide clear triggers for re-consultation (rapid worsening, new red flags).\n4. Review: Arrange review based on clinical stability (e.g. 48h for acute, 2-4 weeks for chronic)."
+                  "label": "Traffic Light Safety-Netting",
+                  "guidance": "MANAGEMENT PLAN:\n1. Hydration: Ensure adequate fluid intake (check wet nappies/urine output).\n2. Vitals: Monitor temperature and work of breathing.\n3. Red Flags: Advise immediate review (A&E) for non-blanching rash, seizures, bulging fontanelle, or severe lethargy.\n4. Triage: Use NICE NG143 Traffic Light system for assessment."
                 }
               ]
             }
@@ -27211,13 +27215,13 @@
           "evidence": "These weekly casts are full of bite-sized topics tailored for those in primary care, perfect for your morning commute or anytime and anywhere. You can tune into us on all leading podcast platforms and don't forget to like and subscribe so you don't miss an episode. You can stay c…",
           "steps": [
             {
-              "id": "bp-management",
-              "question": "Management (Best Practice)",
+              "id": "paeds-mgmt",
+              "question": "Paediatric Safety-Netting (Best Practice)",
               "type": "dropdown",
               "options": [
                 {
-                  "label": "Initial Management Plan",
-                  "guidance": "MANAGEMENT PLAN:\n1. Advice: Advise on activity levels, hydration, and non-pharmacological measures.\n2. Information: Provide written patient info and use shared-decision making.\n3. Safety-netting: Provide clear triggers for re-consultation (rapid worsening, new red flags).\n4. Review: Arrange review based on clinical stability (e.g. 48h for acute, 2-4 weeks for chronic)."
+                  "label": "Traffic Light Safety-Netting",
+                  "guidance": "MANAGEMENT PLAN:\n1. Hydration: Ensure adequate fluid intake (check wet nappies/urine output).\n2. Vitals: Monitor temperature and work of breathing.\n3. Red Flags: Advise immediate review (A&E) for non-blanching rash, seizures, bulging fontanelle, or severe lethargy.\n4. Triage: Use NICE NG143 Traffic Light system for assessment."
                 }
               ]
             }
@@ -27307,13 +27311,13 @@
           "evidence": "(Intro removed; no clinical content in this segment.)",
           "steps": [
             {
-              "id": "bp-management",
-              "question": "Management (Best Practice)",
+              "id": "paeds-mgmt",
+              "question": "Paediatric Safety-Netting (Best Practice)",
               "type": "dropdown",
               "options": [
                 {
-                  "label": "Initial Management Plan",
-                  "guidance": "MANAGEMENT PLAN:\n1. Advice: Advise on activity levels, hydration, and non-pharmacological measures.\n2. Information: Provide written patient info and use shared-decision making.\n3. Safety-netting: Provide clear triggers for re-consultation (rapid worsening, new red flags).\n4. Review: Arrange review based on clinical stability (e.g. 48h for acute, 2-4 weeks for chronic)."
+                  "label": "Traffic Light Safety-Netting",
+                  "guidance": "MANAGEMENT PLAN:\n1. Hydration: Ensure adequate fluid intake (check wet nappies/urine output).\n2. Vitals: Monitor temperature and work of breathing.\n3. Red Flags: Advise immediate review (A&E) for non-blanching rash, seizures, bulging fontanelle, or severe lethargy.\n4. Triage: Use NICE NG143 Traffic Light system for assessment."
                 }
               ]
             }
@@ -27528,13 +27532,13 @@
           "evidence": "(Intro removed; no clinical content in this segment.)",
           "steps": [
             {
-              "id": "bp-management",
-              "question": "Management (Best Practice)",
+              "id": "paeds-mgmt",
+              "question": "Paediatric Safety-Netting (Best Practice)",
               "type": "dropdown",
               "options": [
                 {
-                  "label": "Initial Management Plan",
-                  "guidance": "MANAGEMENT PLAN:\n1. Advice: Advise on activity levels, hydration, and non-pharmacological measures.\n2. Information: Provide written patient info and use shared-decision making.\n3. Safety-netting: Provide clear triggers for re-consultation (rapid worsening, new red flags).\n4. Review: Arrange review based on clinical stability (e.g. 48h for acute, 2-4 weeks for chronic)."
+                  "label": "Traffic Light Safety-Netting",
+                  "guidance": "MANAGEMENT PLAN:\n1. Hydration: Ensure adequate fluid intake (check wet nappies/urine output).\n2. Vitals: Monitor temperature and work of breathing.\n3. Red Flags: Advise immediate review (A&E) for non-blanching rash, seizures, bulging fontanelle, or severe lethargy.\n4. Triage: Use NICE NG143 Traffic Light system for assessment."
                 }
               ]
             }
@@ -27728,13 +27732,13 @@
           "evidence": "(Intro removed; no clinical content in this segment.)",
           "steps": [
             {
-              "id": "bp-management",
-              "question": "Management (Best Practice)",
+              "id": "paeds-mgmt",
+              "question": "Paediatric Safety-Netting (Best Practice)",
               "type": "dropdown",
               "options": [
                 {
-                  "label": "Initial Management Plan",
-                  "guidance": "MANAGEMENT PLAN:\n1. Advice: Advise on activity levels, hydration, and non-pharmacological measures.\n2. Information: Provide written patient info and use shared-decision making.\n3. Safety-netting: Provide clear triggers for re-consultation (rapid worsening, new red flags).\n4. Review: Arrange review based on clinical stability (e.g. 48h for acute, 2-4 weeks for chronic)."
+                  "label": "Traffic Light Safety-Netting",
+                  "guidance": "MANAGEMENT PLAN:\n1. Hydration: Ensure adequate fluid intake (check wet nappies/urine output).\n2. Vitals: Monitor temperature and work of breathing.\n3. Red Flags: Advise immediate review (A&E) for non-blanching rash, seizures, bulging fontanelle, or severe lethargy.\n4. Triage: Use NICE NG143 Traffic Light system for assessment."
                 }
               ]
             }
@@ -27892,13 +27896,13 @@
           "evidence": "And you could also download free resources such as our series of shortcuts. So let's think about how this scenario might present.",
           "steps": [
             {
-              "id": "bp-management",
-              "question": "Management (Best Practice)",
+              "id": "paeds-mgmt",
+              "question": "Paediatric Safety-Netting (Best Practice)",
               "type": "dropdown",
               "options": [
                 {
-                  "label": "Initial Management Plan",
-                  "guidance": "MANAGEMENT PLAN:\n1. Advice: Advise on activity levels, hydration, and non-pharmacological measures.\n2. Information: Provide written patient info and use shared-decision making.\n3. Safety-netting: Provide clear triggers for re-consultation (rapid worsening, new red flags).\n4. Review: Arrange review based on clinical stability (e.g. 48h for acute, 2-4 weeks for chronic)."
+                  "label": "Traffic Light Safety-Netting",
+                  "guidance": "MANAGEMENT PLAN:\n1. Hydration: Ensure adequate fluid intake (check wet nappies/urine output).\n2. Vitals: Monitor temperature and work of breathing.\n3. Red Flags: Advise immediate review (A&E) for non-blanching rash, seizures, bulging fontanelle, or severe lethargy.\n4. Triage: Use NICE NG143 Traffic Light system for assessment."
                 }
               ]
             }
@@ -32073,13 +32077,13 @@
           "evidence": "It really does help. Now in this episode",
           "steps": [
             {
-              "id": "bp-management",
-              "question": "Management (Best Practice)",
+              "id": "women-mgmt",
+              "question": "Women's Health Advice (Best Practice)",
               "type": "dropdown",
               "options": [
                 {
-                  "label": "Initial Management Plan",
-                  "guidance": "MANAGEMENT PLAN:\n1. Advice: Advise on activity levels, hydration, and non-pharmacological measures.\n2. Information: Provide written patient info and use shared-decision making.\n3. Safety-netting: Provide clear triggers for re-consultation (rapid worsening, new red flags).\n4. Review: Arrange review based on clinical stability (e.g. 48h for acute, 2-4 weeks for chronic)."
+                  "label": "General Guidance & Red Flags",
+                  "guidance": "MANAGEMENT PLAN:\n1. History: Confirm LMP and pregnancy status if relevant.\n2. Red Flags: Urgent referral if post-menopausal bleeding, persistent intermenstrual bleeding, or unexplained pelvic mass.\n3. Symptom Diary: Encourage tracking of menstrual cycle and symptoms for next review.\n4. Review: Review in 12 weeks to assess treatment efficacy (e.g. for HMB or HRT)."
                 }
               ]
             }
@@ -32743,13 +32747,13 @@
           "evidence": "(Intro removed; no clinical content in this segment.)",
           "steps": [
             {
-              "id": "bp-management",
-              "question": "Management (Best Practice)",
+              "id": "women-mgmt",
+              "question": "Women's Health Advice (Best Practice)",
               "type": "dropdown",
               "options": [
                 {
-                  "label": "Initial Management Plan",
-                  "guidance": "MANAGEMENT PLAN:\n1. Advice: Advise on activity levels, hydration, and non-pharmacological measures.\n2. Information: Provide written patient info and use shared-decision making.\n3. Safety-netting: Provide clear triggers for re-consultation (rapid worsening, new red flags).\n4. Review: Arrange review based on clinical stability (e.g. 48h for acute, 2-4 weeks for chronic)."
+                  "label": "General Guidance & Red Flags",
+                  "guidance": "MANAGEMENT PLAN:\n1. History: Confirm LMP and pregnancy status if relevant.\n2. Red Flags: Urgent referral if post-menopausal bleeding, persistent intermenstrual bleeding, or unexplained pelvic mass.\n3. Symptom Diary: Encourage tracking of menstrual cycle and symptoms for next review.\n4. Review: Review in 12 weeks to assess treatment efficacy (e.g. for HMB or HRT)."
                 }
               ]
             }
@@ -33035,13 +33039,13 @@
           "evidence": "(Intro removed; no clinical content in this segment.)",
           "steps": [
             {
-              "id": "bp-management",
-              "question": "Management (Best Practice)",
+              "id": "women-mgmt",
+              "question": "Women's Health Advice (Best Practice)",
               "type": "dropdown",
               "options": [
                 {
-                  "label": "Initial Management Plan",
-                  "guidance": "MANAGEMENT PLAN:\n1. Advice: Advise on activity levels, hydration, and non-pharmacological measures.\n2. Information: Provide written patient info and use shared-decision making.\n3. Safety-netting: Provide clear triggers for re-consultation (rapid worsening, new red flags).\n4. Review: Arrange review based on clinical stability (e.g. 48h for acute, 2-4 weeks for chronic)."
+                  "label": "General Guidance & Red Flags",
+                  "guidance": "MANAGEMENT PLAN:\n1. History: Confirm LMP and pregnancy status if relevant.\n2. Red Flags: Urgent referral if post-menopausal bleeding, persistent intermenstrual bleeding, or unexplained pelvic mass.\n3. Symptom Diary: Encourage tracking of menstrual cycle and symptoms for next review.\n4. Review: Review in 12 weeks to assess treatment efficacy (e.g. for HMB or HRT)."
                 }
               ]
             }
@@ -33735,13 +33739,13 @@
           "evidence": "(Intro removed; no clinical content in this segment.)",
           "steps": [
             {
-              "id": "bp-management",
-              "question": "Management (Best Practice)",
+              "id": "women-mgmt",
+              "question": "Women's Health Advice (Best Practice)",
               "type": "dropdown",
               "options": [
                 {
-                  "label": "Initial Management Plan",
-                  "guidance": "MANAGEMENT PLAN:\n1. Advice: Advise on activity levels, hydration, and non-pharmacological measures.\n2. Information: Provide written patient info and use shared-decision making.\n3. Safety-netting: Provide clear triggers for re-consultation (rapid worsening, new red flags).\n4. Review: Arrange review based on clinical stability (e.g. 48h for acute, 2-4 weeks for chronic)."
+                  "label": "General Guidance & Red Flags",
+                  "guidance": "MANAGEMENT PLAN:\n1. History: Confirm LMP and pregnancy status if relevant.\n2. Red Flags: Urgent referral if post-menopausal bleeding, persistent intermenstrual bleeding, or unexplained pelvic mass.\n3. Symptom Diary: Encourage tracking of menstrual cycle and symptoms for next review.\n4. Review: Review in 12 weeks to assess treatment efficacy (e.g. for HMB or HRT)."
                 }
               ]
             }

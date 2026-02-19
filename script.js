@@ -44,22 +44,32 @@ async function init() {
 
                 if (item.id === 'nav-protocols') renderProtocols();
                 if (item.id === 'nav-decision-tools') renderDecisionTools();
-                if (item.id === 'nav-calculators') initQRISK();
+                if (item.id === 'nav-calculators') {
+                    initQRISK();
+                    initNEWS2();
+                    initWells();
+                    initCURB();
+                    initCHA2DS2();
+                    initGFR();
+                }
                 if (item.id === 'nav-emis-coding') renderEmisIntegrations();
             });
         });
+
+        initTheme();
 
         // Search logic
         document.getElementById('test-search').addEventListener('input', (e) => {
             const term = e.target.value.toLowerCase();
 
             // Special cases for calculators
-            const calcTerms = ['qrisk', 'news', 'sepsis', 'wells', 'curb', 'dvt', 'pneumonia'];
+            const calcTerms = ['qrisk', 'news', 'sepsis', 'wells', 'curb', 'dvt', 'pneumonia', 'stroke', 'af', 'gfr', 'renal'];
             if (calcTerms.some(kw => term.includes(kw))) {
-                // Show a hint or just navigate?
-                // For now, let's just make the calculators tab flash or be the first hit
-                // But this search doesn't have a results dropdown, it just updates the dropdowns.
-                // Instead, let's add a small 'Search for calculators' helper
+                // If specific calculator keyword found, highlight the calculators tab
+                document.getElementById('nav-calculators').style.boxShadow = '0 0 10px rgba(52, 152, 219, 0.5)';
+                setTimeout(() => {
+                    document.getElementById('nav-calculators').style.boxShadow = 'none';
+                }, 2000);
             }
 
             if (term.length > 1) {
@@ -636,11 +646,15 @@ function viewFullProtocol(testName) {
     modal.setAttribute('aria-hidden', 'false');
 }
 
-function renderProtocols() {
+function renderProtocols(filter = "") {
     const container = document.getElementById('protocol-list-container');
     container.innerHTML = "";
+    const term = filter.toLowerCase();
+
     testData.forEach(cat => {
         cat.tests.forEach(test => {
+            if (term && !test.name.toLowerCase().includes(term) && !cat.category.toLowerCase().includes(term)) return;
+
             const div = document.createElement('div');
             div.className = "protocol-item";
             const safeName = test.name.replace(/'/g, "\\'");
@@ -654,6 +668,13 @@ function renderProtocols() {
             container.appendChild(div);
         });
     });
+
+    const filterInput = document.getElementById('protocol-filter');
+    if (filterInput && !filterInput.dataset.listener) {
+        filterInput.addEventListener('input', (e) => renderProtocols(e.target.value));
+        filterInput.dataset.listener = "true";
+    }
+
     document.getElementById('protocol-modal-close').onclick = () => {
         document.getElementById('protocol-modal').classList.add('hidden');
         document.getElementById('protocol-modal').setAttribute('aria-hidden', 'true');
@@ -1062,6 +1083,100 @@ function calculateCURB() {
     } else {
         resultText.innerHTML = '<span style="color: #27ae60;">LOW (Score 0): VERY LOW MORTALITY (0.6%)</span><br><span style="font-size: 11px; font-weight: normal;">Action: Home treatment usually suitable. Clinical follow-up.</span>';
     }
+}
+
+function initCHA2DS2() {
+    const inputs = [
+        { id: 'c-age-75', label: 'Age ≥ 75 years', points: 2 },
+        { id: 'c-age-65', label: 'Age 65–74 years', points: 1 },
+        { id: 'c-chf', label: 'Congestive Heart Failure', points: 1 },
+        { id: 'c-htn', label: 'Hypertension', points: 1 },
+        { id: 'c-dm', label: 'Diabetes Mellitus', points: 1 },
+        { id: 'c-stroke', label: 'Stroke / TIA / Thromboembolism', points: 2 },
+        { id: 'c-vascular', label: 'Vascular Disease (e.g. MI, PAD)', points: 1 },
+        { id: 'c-female', label: 'Female Sex', points: 1 }
+    ];
+
+    const container = document.getElementById('cha2ds2-inputs');
+    if (container && container.innerHTML === '') {
+        inputs.forEach(input => {
+            const label = document.createElement('label');
+            label.style.display = 'block';
+            label.style.marginBottom = '8px';
+            label.style.fontSize = '13px';
+            label.innerHTML = `<input type="checkbox" id="${input.id}" class="cha-input" data-points="${input.points}"> ${input.label}`;
+            container.appendChild(label);
+        });
+
+        document.querySelectorAll('.cha-input').forEach(el => {
+            el.addEventListener('change', calculateCHA2DS2);
+        });
+    }
+}
+
+function calculateCHA2DS2() {
+    let score = 0;
+    document.querySelectorAll('.cha-input').forEach(el => {
+        if (el.checked) score += parseInt(el.dataset.points);
+    });
+
+    document.getElementById('cha2ds2-score').textContent = score;
+    const riskEl = document.getElementById('cha2ds2-risk');
+
+    if (score === 0) {
+        riskEl.innerHTML = '<strong>No anticoagulation</strong> required (Low risk).';
+        riskEl.style.color = '#2e7d32';
+    } else if (score === 1) {
+        riskEl.innerHTML = '<strong>Consider anticoagulation</strong> (Moderate risk). Clinically indicated in men.';
+        riskEl.style.color = '#f57f17';
+    } else {
+        riskEl.innerHTML = '<strong>Anticoagulation recommended</strong> (High risk). Trial DOAC unless contraindicated.';
+        riskEl.style.color = '#c62828';
+    }
+}
+
+function initGFR() {
+    const inputs = ['gfr-creatinine', 'gfr-age', 'gfr-sex', 'gfr-ethnicity'];
+    inputs.forEach(id => {
+        const el = document.getElementById(id);
+        if (el) {
+            el.addEventListener('input', calculateGFR);
+            el.addEventListener('change', calculateGFR);
+        }
+    });
+}
+
+function calculateGFR() {
+    const creat = parseFloat(document.getElementById('gfr-creatinine').value);
+    const age = parseInt(document.getElementById('gfr-age').value);
+    const sex = document.getElementById('gfr-sex').value;
+    const eth = parseFloat(document.getElementById('gfr-ethnicity').value);
+
+    if (!creat || !age) return;
+
+    // MDRD Formula: GFR = 175 x (SCr / 88.4)^-1.154 x (Age)^-0.203 x (0.742 if female) x (1.212 if Black)
+    let gfr = 175 * Math.pow(creat / 88.4, -1.154) * Math.pow(age, -0.203);
+    if (sex === 'female') gfr *= 0.742;
+    gfr *= eth;
+
+    document.getElementById('gfr-score').textContent = Math.round(gfr);
+}
+
+function initTheme() {
+    const toggle = document.getElementById('dark-mode-toggle');
+    if (localStorage.getItem('theme') === 'dark') {
+        document.body.classList.add('dark-mode');
+        toggle.checked = true;
+    }
+    toggle.addEventListener('change', () => {
+        if (toggle.checked) {
+            document.body.classList.add('dark-mode');
+            localStorage.setItem('theme', 'dark');
+        } else {
+            document.body.classList.remove('dark-mode');
+            localStorage.setItem('theme', 'light');
+        }
+    });
 }
 
 init();
