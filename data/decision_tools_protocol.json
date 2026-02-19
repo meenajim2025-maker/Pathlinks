@@ -1,6 +1,6 @@
 {
   "source": "Learning library + NICE CKS/NG; management steps from guidelines",
-  "generated": "2026-02-19T20:26:30.040Z",
+  "generated": "2026-02-19T20:30:15.037Z",
   "totalTools": 1920,
   "systems": [
     {
@@ -32116,17 +32116,17 @@
           "evidence": "And I thought we would start with a typical case that we might inc-",
           "steps": [
             {
-              "id": "bp-assessment",
-              "question": "Assessment (Best Practice)",
+              "id": "preg-care",
+              "question": "1. Antenatal / Early Pregnancy",
               "type": "dropdown",
               "options": [
                 {
-                  "label": "Standard Assessment",
-                  "guidance": "MANAGEMENT PLAN:\n1. History: Assess onset, severity, and triggers. Specifically exclude organic red flags (weight loss, night pain, fever, night sweats).\n2. Review: Family history and current medications.\n3. Differential: Consider most likely vs most serious diagnosis. Use validated scores (e.g. Centor, Wells, qSOFA) if applicable."
+                  "label": "Early Pregnancy Complications (<13w)",
+                  "guidance": "MANAGEMENT PLAN (RCOG Greentop):\n1. Presentation: Pain and/or bleeding. Referral: EPAU (Early Pregnancy Assessment Unit).\n2. Ectopic Risk: If pain/bleeding + tenderness/adnexal mass → Immediate hospital referral.\n3. Recurrent Miscarriage (≥3 consecutive): Refer for specialist workup (Antiphospholipid, genetics). RCOG GTG 17."
                 },
                 {
-                  "label": "Examination & Vitals",
-                  "guidance": "MANAGEMENT PLAN:\n1. Physical Exam: Perform focused physical exam (e.g. MSK, Neuro, Respiratory).\n2. Vitals: Check NEWS2 if systemically unwell.\n3. Documentation: Document findings and clinical rationale clearly."
+                  "label": "Routine Antenatal Care",
+                  "guidance": "MANAGEMENT PLAN:\n1. Supplements: Folic Acid 400mcg (5mg if high risk/BMI>30) + Vit D 10mcg.\n2. Screening: Book by 10w. Offer 12w (dating/NT) and 20w (anomaly) scans.\n3. Aspirin: 75-150mg OD from 12w if ≥1 high risk (HTN, CKD, SLE) or ≥2 moderate risks (BMI, Multi-preg, Age>40). NICE NG201."
                 }
               ]
             }
@@ -32145,13 +32145,17 @@
           "evidence": "And I thought we would start with a typical case that we might inc-",
           "steps": [
             {
-              "id": "bp-management",
-              "question": "Management (Best Practice)",
+              "id": "preg-care",
+              "question": "1. Antenatal / Early Pregnancy",
               "type": "dropdown",
               "options": [
                 {
-                  "label": "Initial Management Plan",
-                  "guidance": "MANAGEMENT PLAN:\n1. Advice: Advise on activity levels, hydration, and non-pharmacological measures.\n2. Information: Provide written patient info and use shared-decision making.\n3. Safety-netting: Provide clear triggers for re-consultation (rapid worsening, new red flags).\n4. Review: Arrange review based on clinical stability (e.g. 48h for acute, 2-4 weeks for chronic)."
+                  "label": "Early Pregnancy Complications (<13w)",
+                  "guidance": "MANAGEMENT PLAN (RCOG Greentop):\n1. Presentation: Pain and/or bleeding. Referral: EPAU (Early Pregnancy Assessment Unit).\n2. Ectopic Risk: If pain/bleeding + tenderness/adnexal mass → Immediate hospital referral.\n3. Recurrent Miscarriage (≥3 consecutive): Refer for specialist workup (Antiphospholipid, genetics). RCOG GTG 17."
+                },
+                {
+                  "label": "Routine Antenatal Care",
+                  "guidance": "MANAGEMENT PLAN:\n1. Supplements: Folic Acid 400mcg (5mg if high risk/BMI>30) + Vit D 10mcg.\n2. Screening: Book by 10w. Offer 12w (dating/NT) and 20w (anomaly) scans.\n3. Aspirin: 75-150mg OD from 12w if ≥1 high risk (HTN, CKD, SLE) or ≥2 moderate risks (BMI, Multi-preg, Age>40). NICE NG201."
                 }
               ]
             }
@@ -32170,13 +32174,17 @@
           "evidence": "And I thought we would start with a typical case that we might inc-",
           "steps": [
             {
-              "id": "bp-referral",
-              "question": "Referral & Follow-up (Best Practice)",
+              "id": "preg-care",
+              "question": "1. Antenatal / Early Pregnancy",
               "type": "dropdown",
               "options": [
                 {
-                  "label": "Referral & Safety-netting",
-                  "guidance": "MANAGEMENT PLAN:\n1. Referral: Refer 2WW if malignancy suspected. Urgent referral if clinical compromise. Routine if primary care management fails.\n2. Waiting List: Ensure patient knows how to report deterioration while waiting.\n3. Review: Review and optimize primary care management in the interim."
+                  "label": "Early Pregnancy Complications (<13w)",
+                  "guidance": "MANAGEMENT PLAN (RCOG Greentop):\n1. Presentation: Pain and/or bleeding. Referral: EPAU (Early Pregnancy Assessment Unit).\n2. Ectopic Risk: If pain/bleeding + tenderness/adnexal mass → Immediate hospital referral.\n3. Recurrent Miscarriage (≥3 consecutive): Refer for specialist workup (Antiphospholipid, genetics). RCOG GTG 17."
+                },
+                {
+                  "label": "Routine Antenatal Care",
+                  "guidance": "MANAGEMENT PLAN:\n1. Supplements: Folic Acid 400mcg (5mg if high risk/BMI>30) + Vit D 10mcg.\n2. Screening: Book by 10w. Offer 12w (dating/NT) and 20w (anomaly) scans.\n3. Aspirin: 75-150mg OD from 12w if ≥1 high risk (HTN, CKD, SLE) or ≥2 moderate risks (BMI, Multi-preg, Age>40). NICE NG201."
                 }
               ]
             }
@@ -32608,14 +32616,17 @@
           "evidence": "Management per NICE CKS and Local formulary.",
           "steps": [
             {
-              "id": "guidance",
-              "question": "Clinical Guidance (Best Practice)",
+              "id": "preg-care",
+              "question": "1. Antenatal / Early Pregnancy",
               "type": "dropdown",
               "options": [
                 {
-                  "value": "standard",
-                  "label": "Management Overview",
-                  "guidance": "MANAGEMENT PLAN:\n1. Assessment: Full clinical assessment to exclude red flags.\n2. Action: Refer to local clinical formulary for specific pharmacotherapy.\n3. Safety-net: Provide robust safety-netting advice.\n4. Follow-up: Arrange review based on clinical findings."
+                  "label": "Early Pregnancy Complications (<13w)",
+                  "guidance": "MANAGEMENT PLAN (RCOG Greentop):\n1. Presentation: Pain and/or bleeding. Referral: EPAU (Early Pregnancy Assessment Unit).\n2. Ectopic Risk: If pain/bleeding + tenderness/adnexal mass → Immediate hospital referral.\n3. Recurrent Miscarriage (≥3 consecutive): Refer for specialist workup (Antiphospholipid, genetics). RCOG GTG 17."
+                },
+                {
+                  "label": "Routine Antenatal Care",
+                  "guidance": "MANAGEMENT PLAN:\n1. Supplements: Folic Acid 400mcg (5mg if high risk/BMI>30) + Vit D 10mcg.\n2. Screening: Book by 10w. Offer 12w (dating/NT) and 20w (anomaly) scans.\n3. Aspirin: 75-150mg OD from 12w if ≥1 high risk (HTN, CKD, SLE) or ≥2 moderate risks (BMI, Multi-preg, Age>40). NICE NG201."
                 }
               ]
             }
@@ -32635,14 +32646,17 @@
           "evidence": "Management per NICE CKS and Local formulary.",
           "steps": [
             {
-              "id": "guidance",
-              "question": "Clinical Guidance (Best Practice)",
+              "id": "preg-care",
+              "question": "1. Antenatal / Early Pregnancy",
               "type": "dropdown",
               "options": [
                 {
-                  "value": "standard",
-                  "label": "Management Overview",
-                  "guidance": "MANAGEMENT PLAN:\n1. Assessment: Full clinical assessment to exclude red flags.\n2. Action: Refer to local clinical formulary for specific pharmacotherapy.\n3. Safety-net: Provide robust safety-netting advice.\n4. Follow-up: Arrange review based on clinical findings."
+                  "label": "Early Pregnancy Complications (<13w)",
+                  "guidance": "MANAGEMENT PLAN (RCOG Greentop):\n1. Presentation: Pain and/or bleeding. Referral: EPAU (Early Pregnancy Assessment Unit).\n2. Ectopic Risk: If pain/bleeding + tenderness/adnexal mass → Immediate hospital referral.\n3. Recurrent Miscarriage (≥3 consecutive): Refer for specialist workup (Antiphospholipid, genetics). RCOG GTG 17."
+                },
+                {
+                  "label": "Routine Antenatal Care",
+                  "guidance": "MANAGEMENT PLAN:\n1. Supplements: Folic Acid 400mcg (5mg if high risk/BMI>30) + Vit D 10mcg.\n2. Screening: Book by 10w. Offer 12w (dating/NT) and 20w (anomaly) scans.\n3. Aspirin: 75-150mg OD from 12w if ≥1 high risk (HTN, CKD, SLE) or ≥2 moderate risks (BMI, Multi-preg, Age>40). NICE NG201."
                 }
               ]
             }
@@ -32913,19 +32927,21 @@
           "evidence": "Management per NICE CKS and Local formulary.",
           "steps": [
             {
-              "id": "contraception-choice",
-              "question": "Method Selection",
+              "id": "contraception-mgmt",
+              "question": "1. Method Selection & Safety",
               "type": "dropdown",
               "options": [
                 {
-                  "value": "chc",
-                  "label": "Combined (CHC)",
-                  "guidance": "MANAGEMENT PLAN:\nCheck UKMEC: BP, BMI, Migraine with aura, VTE risk, Smoking (>35). 7-day rule for missed pills. FSRH Guideline."
+                  "label": "Combined Hormonal (CHC) - UKMEC",
+                  "guidance": "MANAGEMENT PLAN (FSRH):\n1. Screening: BP, BMI, Migraine with aura (MEC 4), Smoking >35y (MEC 4), VTE history (MEC 4).\n2. Missed Pill: 24h+ late? Check FSRH missed pill tool. Usually, 1 pill missed = take ASAP and no extra care. 2+ pills = extra care for 7 days.\n3. Breakout Bleeding: Exclude STI. If persist, increase oestrogen dose or change progestogen type."
                 },
                 {
-                  "value": "larc",
-                  "label": "LARC (Implant/IUS/IUD)",
-                  "guidance": "MANAGEMENT PLAN:\nMost effective methods. Discuss Nexplanon (3y), Mirena (8y/HRT), Copper IUD. Follow FSRH LARC standards."
+                  "label": "Long-Acting (LARC)",
+                  "guidance": "MANAGEMENT PLAN (FSRH):\n1. Mirena/Levosert: Now licensed for 8 years for contraception (if fitted age ≥25).\n2. Nexplanon: Effective for 3 years. Inform about irregular bleeding pattern.\n3. Copper IUD: Non-hormonal. Gold standard for emergency contraception (within 5 days)."
+                },
+                {
+                  "label": "Emergency Contraception",
+                  "guidance": "MANAGEMENT PLAN (FSRH):\n1. Copper IUD: Most effective (MEC 1 in majority). Up to 5 days after UPSI.\n2. Ulipristal (ellaOne): Up to 5 days (120h). Avoid progestogens for 5 days after ellaOne.\n3. Levonorgestrel: Up to 3 days (72h). Double dose (3mg) if BMI >30 or on enzyme-inducers."
                 }
               ]
             }
@@ -32943,19 +32959,21 @@
           "evidence": "Management per NICE CKS and Local formulary.",
           "steps": [
             {
-              "id": "contraception-choice",
-              "question": "Method Selection",
+              "id": "contraception-mgmt",
+              "question": "1. Method Selection & Safety",
               "type": "dropdown",
               "options": [
                 {
-                  "value": "chc",
-                  "label": "Combined (CHC)",
-                  "guidance": "MANAGEMENT PLAN:\nCheck UKMEC: BP, BMI, Migraine with aura, VTE risk, Smoking (>35). 7-day rule for missed pills. FSRH Guideline."
+                  "label": "Combined Hormonal (CHC) - UKMEC",
+                  "guidance": "MANAGEMENT PLAN (FSRH):\n1. Screening: BP, BMI, Migraine with aura (MEC 4), Smoking >35y (MEC 4), VTE history (MEC 4).\n2. Missed Pill: 24h+ late? Check FSRH missed pill tool. Usually, 1 pill missed = take ASAP and no extra care. 2+ pills = extra care for 7 days.\n3. Breakout Bleeding: Exclude STI. If persist, increase oestrogen dose or change progestogen type."
                 },
                 {
-                  "value": "larc",
-                  "label": "LARC (Implant/IUS/IUD)",
-                  "guidance": "MANAGEMENT PLAN:\nMost effective methods. Discuss Nexplanon (3y), Mirena (8y/HRT), Copper IUD. Follow FSRH LARC standards."
+                  "label": "Long-Acting (LARC)",
+                  "guidance": "MANAGEMENT PLAN (FSRH):\n1. Mirena/Levosert: Now licensed for 8 years for contraception (if fitted age ≥25).\n2. Nexplanon: Effective for 3 years. Inform about irregular bleeding pattern.\n3. Copper IUD: Non-hormonal. Gold standard for emergency contraception (within 5 days)."
+                },
+                {
+                  "label": "Emergency Contraception",
+                  "guidance": "MANAGEMENT PLAN (FSRH):\n1. Copper IUD: Most effective (MEC 1 in majority). Up to 5 days after UPSI.\n2. Ulipristal (ellaOne): Up to 5 days (120h). Avoid progestogens for 5 days after ellaOne.\n3. Levonorgestrel: Up to 3 days (72h). Double dose (3mg) if BMI >30 or on enzyme-inducers."
                 }
               ]
             }
@@ -32973,19 +32991,21 @@
           "evidence": "Management per NICE CKS and Local formulary.",
           "steps": [
             {
-              "id": "contraception-choice",
-              "question": "Method Selection",
+              "id": "contraception-mgmt",
+              "question": "1. Method Selection & Safety",
               "type": "dropdown",
               "options": [
                 {
-                  "value": "chc",
-                  "label": "Combined (CHC)",
-                  "guidance": "MANAGEMENT PLAN:\nCheck UKMEC: BP, BMI, Migraine with aura, VTE risk, Smoking (>35). 7-day rule for missed pills. FSRH Guideline."
+                  "label": "Combined Hormonal (CHC) - UKMEC",
+                  "guidance": "MANAGEMENT PLAN (FSRH):\n1. Screening: BP, BMI, Migraine with aura (MEC 4), Smoking >35y (MEC 4), VTE history (MEC 4).\n2. Missed Pill: 24h+ late? Check FSRH missed pill tool. Usually, 1 pill missed = take ASAP and no extra care. 2+ pills = extra care for 7 days.\n3. Breakout Bleeding: Exclude STI. If persist, increase oestrogen dose or change progestogen type."
                 },
                 {
-                  "value": "larc",
-                  "label": "LARC (Implant/IUS/IUD)",
-                  "guidance": "MANAGEMENT PLAN:\nMost effective methods. Discuss Nexplanon (3y), Mirena (8y/HRT), Copper IUD. Follow FSRH LARC standards."
+                  "label": "Long-Acting (LARC)",
+                  "guidance": "MANAGEMENT PLAN (FSRH):\n1. Mirena/Levosert: Now licensed for 8 years for contraception (if fitted age ≥25).\n2. Nexplanon: Effective for 3 years. Inform about irregular bleeding pattern.\n3. Copper IUD: Non-hormonal. Gold standard for emergency contraception (within 5 days)."
+                },
+                {
+                  "label": "Emergency Contraception",
+                  "guidance": "MANAGEMENT PLAN (FSRH):\n1. Copper IUD: Most effective (MEC 1 in majority). Up to 5 days after UPSI.\n2. Ulipristal (ellaOne): Up to 5 days (120h). Avoid progestogens for 5 days after ellaOne.\n3. Levonorgestrel: Up to 3 days (72h). Double dose (3mg) if BMI >30 or on enzyme-inducers."
                 }
               ]
             }
@@ -33003,19 +33023,21 @@
           "evidence": "Management per NICE CKS and Local formulary.",
           "steps": [
             {
-              "id": "contraception-choice",
-              "question": "Method Selection",
+              "id": "contraception-mgmt",
+              "question": "1. Method Selection & Safety",
               "type": "dropdown",
               "options": [
                 {
-                  "value": "chc",
-                  "label": "Combined (CHC)",
-                  "guidance": "MANAGEMENT PLAN:\nCheck UKMEC: BP, BMI, Migraine with aura, VTE risk, Smoking (>35). 7-day rule for missed pills. FSRH Guideline."
+                  "label": "Combined Hormonal (CHC) - UKMEC",
+                  "guidance": "MANAGEMENT PLAN (FSRH):\n1. Screening: BP, BMI, Migraine with aura (MEC 4), Smoking >35y (MEC 4), VTE history (MEC 4).\n2. Missed Pill: 24h+ late? Check FSRH missed pill tool. Usually, 1 pill missed = take ASAP and no extra care. 2+ pills = extra care for 7 days.\n3. Breakout Bleeding: Exclude STI. If persist, increase oestrogen dose or change progestogen type."
                 },
                 {
-                  "value": "larc",
-                  "label": "LARC (Implant/IUS/IUD)",
-                  "guidance": "MANAGEMENT PLAN:\nMost effective methods. Discuss Nexplanon (3y), Mirena (8y/HRT), Copper IUD. Follow FSRH LARC standards."
+                  "label": "Long-Acting (LARC)",
+                  "guidance": "MANAGEMENT PLAN (FSRH):\n1. Mirena/Levosert: Now licensed for 8 years for contraception (if fitted age ≥25).\n2. Nexplanon: Effective for 3 years. Inform about irregular bleeding pattern.\n3. Copper IUD: Non-hormonal. Gold standard for emergency contraception (within 5 days)."
+                },
+                {
+                  "label": "Emergency Contraception",
+                  "guidance": "MANAGEMENT PLAN (FSRH):\n1. Copper IUD: Most effective (MEC 1 in majority). Up to 5 days after UPSI.\n2. Ulipristal (ellaOne): Up to 5 days (120h). Avoid progestogens for 5 days after ellaOne.\n3. Levonorgestrel: Up to 3 days (72h). Double dose (3mg) if BMI >30 or on enzyme-inducers."
                 }
               ]
             }
@@ -33072,19 +33094,21 @@
           "evidence": "Management per NICE CKS and Local formulary.",
           "steps": [
             {
-              "id": "contraception-choice",
-              "question": "Method Selection",
+              "id": "menopause-mgmt",
+              "question": "1. Diagnosis & Initial Choice",
               "type": "dropdown",
               "options": [
                 {
-                  "value": "chc",
-                  "label": "Combined (CHC)",
-                  "guidance": "MANAGEMENT PLAN:\nCheck UKMEC: BP, BMI, Migraine with aura, VTE risk, Smoking (>35). 7-day rule for missed pills. FSRH Guideline."
+                  "label": "Diagnosis (BMS Toolkit)",
+                  "guidance": "MANAGEMENT PLAN:\n1. Clinical: >45y with vasomotor symptoms and irregular periods (perimenopause) or no period ≥1y (menopause).\n2. FSH: Only if <40 (premature) or 40-45 with atypia. Do not use FSH if on hormonal contraception.\n3. Discussion: Review benefits vs risks (low risk in <60y/within 10y of onset). NICE NG23 / BMS."
                 },
                 {
-                  "value": "larc",
-                  "label": "LARC (Implant/IUS/IUD)",
-                  "guidance": "MANAGEMENT PLAN:\nMost effective methods. Discuss Nexplanon (3y), Mirena (8y/HRT), Copper IUD. Follow FSRH LARC standards."
+                  "label": "HRT: Systemic Treatment",
+                  "guidance": "MANAGEMENT PLAN (BMS Gold Standard):\n1. Choice: Transdermal (Gel/Patch) preferred if BMI >30, Migraine, or high VTE risk.\n2. Progesterone: Micronised Progesterone (Utrogestan) 100mg nocte (continuous) or 200mg (cyclical days 15-26) is the metabolic gold standard.\n3. Mirena IUS: Excellent for endometrial protection and contraception.\n4. Testosterone: Trial if low libido despite adequate oestrogen (specialist initiation). BMS."
+                },
+                {
+                  "label": "Atrophic Vaginitis (GSM)",
+                  "guidance": "MANAGEMENT PLAN:\n1. Topicals: Vaginal Oestriol (Ovestin) or Estradiol (Vagifem/Imvaggis). Use daily for 2w then twice weekly indefinitely.\n2. Note: Safe to use long-term even if systemic HRT contraindicated (discuss with oncology if breast cancer). NICE NG23."
                 }
               ]
             }
@@ -33102,19 +33126,21 @@
           "evidence": "Management per NICE CKS and Local formulary.",
           "steps": [
             {
-              "id": "contraception-choice",
-              "question": "Method Selection",
+              "id": "contraception-mgmt",
+              "question": "1. Method Selection & Safety",
               "type": "dropdown",
               "options": [
                 {
-                  "value": "chc",
-                  "label": "Combined (CHC)",
-                  "guidance": "MANAGEMENT PLAN:\nCheck UKMEC: BP, BMI, Migraine with aura, VTE risk, Smoking (>35). 7-day rule for missed pills. FSRH Guideline."
+                  "label": "Combined Hormonal (CHC) - UKMEC",
+                  "guidance": "MANAGEMENT PLAN (FSRH):\n1. Screening: BP, BMI, Migraine with aura (MEC 4), Smoking >35y (MEC 4), VTE history (MEC 4).\n2. Missed Pill: 24h+ late? Check FSRH missed pill tool. Usually, 1 pill missed = take ASAP and no extra care. 2+ pills = extra care for 7 days.\n3. Breakout Bleeding: Exclude STI. If persist, increase oestrogen dose or change progestogen type."
                 },
                 {
-                  "value": "larc",
-                  "label": "LARC (Implant/IUS/IUD)",
-                  "guidance": "MANAGEMENT PLAN:\nMost effective methods. Discuss Nexplanon (3y), Mirena (8y/HRT), Copper IUD. Follow FSRH LARC standards."
+                  "label": "Long-Acting (LARC)",
+                  "guidance": "MANAGEMENT PLAN (FSRH):\n1. Mirena/Levosert: Now licensed for 8 years for contraception (if fitted age ≥25).\n2. Nexplanon: Effective for 3 years. Inform about irregular bleeding pattern.\n3. Copper IUD: Non-hormonal. Gold standard for emergency contraception (within 5 days)."
+                },
+                {
+                  "label": "Emergency Contraception",
+                  "guidance": "MANAGEMENT PLAN (FSRH):\n1. Copper IUD: Most effective (MEC 1 in majority). Up to 5 days after UPSI.\n2. Ulipristal (ellaOne): Up to 5 days (120h). Avoid progestogens for 5 days after ellaOne.\n3. Levonorgestrel: Up to 3 days (72h). Double dose (3mg) if BMI >30 or on enzyme-inducers."
                 }
               ]
             }
@@ -33132,19 +33158,21 @@
           "evidence": "Management per NICE CKS and Local formulary.",
           "steps": [
             {
-              "id": "contraception-choice",
-              "question": "Method Selection",
+              "id": "contraception-mgmt",
+              "question": "1. Method Selection & Safety",
               "type": "dropdown",
               "options": [
                 {
-                  "value": "chc",
-                  "label": "Combined (CHC)",
-                  "guidance": "MANAGEMENT PLAN:\nCheck UKMEC: BP, BMI, Migraine with aura, VTE risk, Smoking (>35). 7-day rule for missed pills. FSRH Guideline."
+                  "label": "Combined Hormonal (CHC) - UKMEC",
+                  "guidance": "MANAGEMENT PLAN (FSRH):\n1. Screening: BP, BMI, Migraine with aura (MEC 4), Smoking >35y (MEC 4), VTE history (MEC 4).\n2. Missed Pill: 24h+ late? Check FSRH missed pill tool. Usually, 1 pill missed = take ASAP and no extra care. 2+ pills = extra care for 7 days.\n3. Breakout Bleeding: Exclude STI. If persist, increase oestrogen dose or change progestogen type."
                 },
                 {
-                  "value": "larc",
-                  "label": "LARC (Implant/IUS/IUD)",
-                  "guidance": "MANAGEMENT PLAN:\nMost effective methods. Discuss Nexplanon (3y), Mirena (8y/HRT), Copper IUD. Follow FSRH LARC standards."
+                  "label": "Long-Acting (LARC)",
+                  "guidance": "MANAGEMENT PLAN (FSRH):\n1. Mirena/Levosert: Now licensed for 8 years for contraception (if fitted age ≥25).\n2. Nexplanon: Effective for 3 years. Inform about irregular bleeding pattern.\n3. Copper IUD: Non-hormonal. Gold standard for emergency contraception (within 5 days)."
+                },
+                {
+                  "label": "Emergency Contraception",
+                  "guidance": "MANAGEMENT PLAN (FSRH):\n1. Copper IUD: Most effective (MEC 1 in majority). Up to 5 days after UPSI.\n2. Ulipristal (ellaOne): Up to 5 days (120h). Avoid progestogens for 5 days after ellaOne.\n3. Levonorgestrel: Up to 3 days (72h). Double dose (3mg) if BMI >30 or on enzyme-inducers."
                 }
               ]
             }
@@ -33162,19 +33190,21 @@
           "evidence": "Management per NICE CKS and Local formulary.",
           "steps": [
             {
-              "id": "contraception-choice",
-              "question": "Method Selection",
+              "id": "contraception-mgmt",
+              "question": "1. Method Selection & Safety",
               "type": "dropdown",
               "options": [
                 {
-                  "value": "chc",
-                  "label": "Combined (CHC)",
-                  "guidance": "MANAGEMENT PLAN:\nCheck UKMEC: BP, BMI, Migraine with aura, VTE risk, Smoking (>35). 7-day rule for missed pills. FSRH Guideline."
+                  "label": "Combined Hormonal (CHC) - UKMEC",
+                  "guidance": "MANAGEMENT PLAN (FSRH):\n1. Screening: BP, BMI, Migraine with aura (MEC 4), Smoking >35y (MEC 4), VTE history (MEC 4).\n2. Missed Pill: 24h+ late? Check FSRH missed pill tool. Usually, 1 pill missed = take ASAP and no extra care. 2+ pills = extra care for 7 days.\n3. Breakout Bleeding: Exclude STI. If persist, increase oestrogen dose or change progestogen type."
                 },
                 {
-                  "value": "larc",
-                  "label": "LARC (Implant/IUS/IUD)",
-                  "guidance": "MANAGEMENT PLAN:\nMost effective methods. Discuss Nexplanon (3y), Mirena (8y/HRT), Copper IUD. Follow FSRH LARC standards."
+                  "label": "Long-Acting (LARC)",
+                  "guidance": "MANAGEMENT PLAN (FSRH):\n1. Mirena/Levosert: Now licensed for 8 years for contraception (if fitted age ≥25).\n2. Nexplanon: Effective for 3 years. Inform about irregular bleeding pattern.\n3. Copper IUD: Non-hormonal. Gold standard for emergency contraception (within 5 days)."
+                },
+                {
+                  "label": "Emergency Contraception",
+                  "guidance": "MANAGEMENT PLAN (FSRH):\n1. Copper IUD: Most effective (MEC 1 in majority). Up to 5 days after UPSI.\n2. Ulipristal (ellaOne): Up to 5 days (120h). Avoid progestogens for 5 days after ellaOne.\n3. Levonorgestrel: Up to 3 days (72h). Double dose (3mg) if BMI >30 or on enzyme-inducers."
                 }
               ]
             }
@@ -33215,14 +33245,17 @@
           "evidence": "Management per NICE CKS and Local formulary.",
           "steps": [
             {
-              "id": "guidance",
-              "question": "Clinical Guidance (Best Practice)",
+              "id": "preg-care",
+              "question": "1. Antenatal / Early Pregnancy",
               "type": "dropdown",
               "options": [
                 {
-                  "value": "standard",
-                  "label": "Management Overview",
-                  "guidance": "MANAGEMENT PLAN:\n1. Assessment: Full clinical assessment to exclude red flags.\n2. Action: Refer to local clinical formulary for specific pharmacotherapy.\n3. Safety-net: Provide robust safety-netting advice.\n4. Follow-up: Arrange review based on clinical findings."
+                  "label": "Early Pregnancy Complications (<13w)",
+                  "guidance": "MANAGEMENT PLAN (RCOG Greentop):\n1. Presentation: Pain and/or bleeding. Referral: EPAU (Early Pregnancy Assessment Unit).\n2. Ectopic Risk: If pain/bleeding + tenderness/adnexal mass → Immediate hospital referral.\n3. Recurrent Miscarriage (≥3 consecutive): Refer for specialist workup (Antiphospholipid, genetics). RCOG GTG 17."
+                },
+                {
+                  "label": "Routine Antenatal Care",
+                  "guidance": "MANAGEMENT PLAN:\n1. Supplements: Folic Acid 400mcg (5mg if high risk/BMI>30) + Vit D 10mcg.\n2. Screening: Book by 10w. Offer 12w (dating/NT) and 20w (anomaly) scans.\n3. Aspirin: 75-150mg OD from 12w if ≥1 high risk (HTN, CKD, SLE) or ≥2 moderate risks (BMI, Multi-preg, Age>40). NICE NG201."
                 }
               ]
             }
@@ -33240,17 +33273,17 @@
           "evidence": "It really does help. Now in this episode",
           "steps": [
             {
-              "id": "bp-assessment",
-              "question": "Assessment (Best Practice)",
+              "id": "preg-care",
+              "question": "1. Antenatal / Early Pregnancy",
               "type": "dropdown",
               "options": [
                 {
-                  "label": "Standard Assessment",
-                  "guidance": "MANAGEMENT PLAN:\n1. History: Assess onset, severity, and triggers. Specifically exclude organic red flags (weight loss, night pain, fever, night sweats).\n2. Review: Family history and current medications.\n3. Differential: Consider most likely vs most serious diagnosis. Use validated scores (e.g. Centor, Wells, qSOFA) if applicable."
+                  "label": "Early Pregnancy Complications (<13w)",
+                  "guidance": "MANAGEMENT PLAN (RCOG Greentop):\n1. Presentation: Pain and/or bleeding. Referral: EPAU (Early Pregnancy Assessment Unit).\n2. Ectopic Risk: If pain/bleeding + tenderness/adnexal mass → Immediate hospital referral.\n3. Recurrent Miscarriage (≥3 consecutive): Refer for specialist workup (Antiphospholipid, genetics). RCOG GTG 17."
                 },
                 {
-                  "label": "Examination & Vitals",
-                  "guidance": "MANAGEMENT PLAN:\n1. Physical Exam: Perform focused physical exam (e.g. MSK, Neuro, Respiratory).\n2. Vitals: Check NEWS2 if systemically unwell.\n3. Documentation: Document findings and clinical rationale clearly."
+                  "label": "Routine Antenatal Care",
+                  "guidance": "MANAGEMENT PLAN:\n1. Supplements: Folic Acid 400mcg (5mg if high risk/BMI>30) + Vit D 10mcg.\n2. Screening: Book by 10w. Offer 12w (dating/NT) and 20w (anomaly) scans.\n3. Aspirin: 75-150mg OD from 12w if ≥1 high risk (HTN, CKD, SLE) or ≥2 moderate risks (BMI, Multi-preg, Age>40). NICE NG201."
                 }
               ]
             }
@@ -33269,13 +33302,17 @@
           "evidence": "It really does help. Now in this episode",
           "steps": [
             {
-              "id": "women-mgmt",
-              "question": "Women's Health Advice (Best Practice)",
+              "id": "preg-care",
+              "question": "1. Antenatal / Early Pregnancy",
               "type": "dropdown",
               "options": [
                 {
-                  "label": "General Guidance & Red Flags",
-                  "guidance": "MANAGEMENT PLAN:\n1. History: Confirm LMP and pregnancy status if relevant.\n2. Red Flags: Urgent referral if post-menopausal bleeding, persistent intermenstrual bleeding, or unexplained pelvic mass.\n3. Symptom Diary: Encourage tracking of menstrual cycle and symptoms for next review.\n4. Review: Review in 12 weeks to assess treatment efficacy (e.g. for HMB or HRT)."
+                  "label": "Early Pregnancy Complications (<13w)",
+                  "guidance": "MANAGEMENT PLAN (RCOG Greentop):\n1. Presentation: Pain and/or bleeding. Referral: EPAU (Early Pregnancy Assessment Unit).\n2. Ectopic Risk: If pain/bleeding + tenderness/adnexal mass → Immediate hospital referral.\n3. Recurrent Miscarriage (≥3 consecutive): Refer for specialist workup (Antiphospholipid, genetics). RCOG GTG 17."
+                },
+                {
+                  "label": "Routine Antenatal Care",
+                  "guidance": "MANAGEMENT PLAN:\n1. Supplements: Folic Acid 400mcg (5mg if high risk/BMI>30) + Vit D 10mcg.\n2. Screening: Book by 10w. Offer 12w (dating/NT) and 20w (anomaly) scans.\n3. Aspirin: 75-150mg OD from 12w if ≥1 high risk (HTN, CKD, SLE) or ≥2 moderate risks (BMI, Multi-preg, Age>40). NICE NG201."
                 }
               ]
             }
@@ -33294,13 +33331,17 @@
           "evidence": "It really does help. Now in this episode",
           "steps": [
             {
-              "id": "bp-referral",
-              "question": "Referral & Follow-up (Best Practice)",
+              "id": "preg-care",
+              "question": "1. Antenatal / Early Pregnancy",
               "type": "dropdown",
               "options": [
                 {
-                  "label": "Referral & Safety-netting",
-                  "guidance": "MANAGEMENT PLAN:\n1. Referral: Refer 2WW if malignancy suspected. Urgent referral if clinical compromise. Routine if primary care management fails.\n2. Waiting List: Ensure patient knows how to report deterioration while waiting.\n3. Review: Review and optimize primary care management in the interim."
+                  "label": "Early Pregnancy Complications (<13w)",
+                  "guidance": "MANAGEMENT PLAN (RCOG Greentop):\n1. Presentation: Pain and/or bleeding. Referral: EPAU (Early Pregnancy Assessment Unit).\n2. Ectopic Risk: If pain/bleeding + tenderness/adnexal mass → Immediate hospital referral.\n3. Recurrent Miscarriage (≥3 consecutive): Refer for specialist workup (Antiphospholipid, genetics). RCOG GTG 17."
+                },
+                {
+                  "label": "Routine Antenatal Care",
+                  "guidance": "MANAGEMENT PLAN:\n1. Supplements: Folic Acid 400mcg (5mg if high risk/BMI>30) + Vit D 10mcg.\n2. Screening: Book by 10w. Offer 12w (dating/NT) and 20w (anomaly) scans.\n3. Aspirin: 75-150mg OD from 12w if ≥1 high risk (HTN, CKD, SLE) or ≥2 moderate risks (BMI, Multi-preg, Age>40). NICE NG201."
                 }
               ]
             }
@@ -33319,19 +33360,21 @@
           "evidence": "Now the Faculty of Sexual and Reproductive Healthcare, FSRH has produced some useful and pragmatic recommendations to help us in primary care support women of all ages with contraceptive requirements during this COVID-19 pandemic as we cut back on non-essential face-to-face conta…",
           "steps": [
             {
-              "id": "contraception-choice",
-              "question": "Method Selection",
+              "id": "contraception-mgmt",
+              "question": "1. Method Selection & Safety",
               "type": "dropdown",
               "options": [
                 {
-                  "value": "chc",
-                  "label": "Combined (CHC)",
-                  "guidance": "MANAGEMENT PLAN:\nCheck UKMEC: BP, BMI, Migraine with aura, VTE risk, Smoking (>35). 7-day rule for missed pills. FSRH Guideline."
+                  "label": "Combined Hormonal (CHC) - UKMEC",
+                  "guidance": "MANAGEMENT PLAN (FSRH):\n1. Screening: BP, BMI, Migraine with aura (MEC 4), Smoking >35y (MEC 4), VTE history (MEC 4).\n2. Missed Pill: 24h+ late? Check FSRH missed pill tool. Usually, 1 pill missed = take ASAP and no extra care. 2+ pills = extra care for 7 days.\n3. Breakout Bleeding: Exclude STI. If persist, increase oestrogen dose or change progestogen type."
                 },
                 {
-                  "value": "larc",
-                  "label": "LARC (Implant/IUS/IUD)",
-                  "guidance": "MANAGEMENT PLAN:\nMost effective methods. Discuss Nexplanon (3y), Mirena (8y/HRT), Copper IUD. Follow FSRH LARC standards."
+                  "label": "Long-Acting (LARC)",
+                  "guidance": "MANAGEMENT PLAN (FSRH):\n1. Mirena/Levosert: Now licensed for 8 years for contraception (if fitted age ≥25).\n2. Nexplanon: Effective for 3 years. Inform about irregular bleeding pattern.\n3. Copper IUD: Non-hormonal. Gold standard for emergency contraception (within 5 days)."
+                },
+                {
+                  "label": "Emergency Contraception",
+                  "guidance": "MANAGEMENT PLAN (FSRH):\n1. Copper IUD: Most effective (MEC 1 in majority). Up to 5 days after UPSI.\n2. Ulipristal (ellaOne): Up to 5 days (120h). Avoid progestogens for 5 days after ellaOne.\n3. Levonorgestrel: Up to 3 days (72h). Double dose (3mg) if BMI >30 or on enzyme-inducers."
                 }
               ]
             }
@@ -33350,19 +33393,21 @@
           "evidence": "Now the Faculty of Sexual and Reproductive Healthcare, FSRH has produced some useful and pragmatic recommendations to help us in primary care support women of all ages with contraceptive requirements during this COVID-19 pandemic as we cut back on non-essential face-to-face conta…",
           "steps": [
             {
-              "id": "contraception-choice",
-              "question": "Method Selection",
+              "id": "contraception-mgmt",
+              "question": "1. Method Selection & Safety",
               "type": "dropdown",
               "options": [
                 {
-                  "value": "chc",
-                  "label": "Combined (CHC)",
-                  "guidance": "MANAGEMENT PLAN:\nCheck UKMEC: BP, BMI, Migraine with aura, VTE risk, Smoking (>35). 7-day rule for missed pills. FSRH Guideline."
+                  "label": "Combined Hormonal (CHC) - UKMEC",
+                  "guidance": "MANAGEMENT PLAN (FSRH):\n1. Screening: BP, BMI, Migraine with aura (MEC 4), Smoking >35y (MEC 4), VTE history (MEC 4).\n2. Missed Pill: 24h+ late? Check FSRH missed pill tool. Usually, 1 pill missed = take ASAP and no extra care. 2+ pills = extra care for 7 days.\n3. Breakout Bleeding: Exclude STI. If persist, increase oestrogen dose or change progestogen type."
                 },
                 {
-                  "value": "larc",
-                  "label": "LARC (Implant/IUS/IUD)",
-                  "guidance": "MANAGEMENT PLAN:\nMost effective methods. Discuss Nexplanon (3y), Mirena (8y/HRT), Copper IUD. Follow FSRH LARC standards."
+                  "label": "Long-Acting (LARC)",
+                  "guidance": "MANAGEMENT PLAN (FSRH):\n1. Mirena/Levosert: Now licensed for 8 years for contraception (if fitted age ≥25).\n2. Nexplanon: Effective for 3 years. Inform about irregular bleeding pattern.\n3. Copper IUD: Non-hormonal. Gold standard for emergency contraception (within 5 days)."
+                },
+                {
+                  "label": "Emergency Contraception",
+                  "guidance": "MANAGEMENT PLAN (FSRH):\n1. Copper IUD: Most effective (MEC 1 in majority). Up to 5 days after UPSI.\n2. Ulipristal (ellaOne): Up to 5 days (120h). Avoid progestogens for 5 days after ellaOne.\n3. Levonorgestrel: Up to 3 days (72h). Double dose (3mg) if BMI >30 or on enzyme-inducers."
                 }
               ]
             }
@@ -33381,19 +33426,21 @@
           "evidence": "Now the Faculty of Sexual and Reproductive Healthcare, FSRH has produced some useful and pragmatic recommendations to help us in primary care support women of all ages with contraceptive requirements during this COVID-19 pandemic as we cut back on non-essential face-to-face conta…",
           "steps": [
             {
-              "id": "contraception-choice",
-              "question": "Method Selection",
+              "id": "contraception-mgmt",
+              "question": "1. Method Selection & Safety",
               "type": "dropdown",
               "options": [
                 {
-                  "value": "chc",
-                  "label": "Combined (CHC)",
-                  "guidance": "MANAGEMENT PLAN:\nCheck UKMEC: BP, BMI, Migraine with aura, VTE risk, Smoking (>35). 7-day rule for missed pills. FSRH Guideline."
+                  "label": "Combined Hormonal (CHC) - UKMEC",
+                  "guidance": "MANAGEMENT PLAN (FSRH):\n1. Screening: BP, BMI, Migraine with aura (MEC 4), Smoking >35y (MEC 4), VTE history (MEC 4).\n2. Missed Pill: 24h+ late? Check FSRH missed pill tool. Usually, 1 pill missed = take ASAP and no extra care. 2+ pills = extra care for 7 days.\n3. Breakout Bleeding: Exclude STI. If persist, increase oestrogen dose or change progestogen type."
                 },
                 {
-                  "value": "larc",
-                  "label": "LARC (Implant/IUS/IUD)",
-                  "guidance": "MANAGEMENT PLAN:\nMost effective methods. Discuss Nexplanon (3y), Mirena (8y/HRT), Copper IUD. Follow FSRH LARC standards."
+                  "label": "Long-Acting (LARC)",
+                  "guidance": "MANAGEMENT PLAN (FSRH):\n1. Mirena/Levosert: Now licensed for 8 years for contraception (if fitted age ≥25).\n2. Nexplanon: Effective for 3 years. Inform about irregular bleeding pattern.\n3. Copper IUD: Non-hormonal. Gold standard for emergency contraception (within 5 days)."
+                },
+                {
+                  "label": "Emergency Contraception",
+                  "guidance": "MANAGEMENT PLAN (FSRH):\n1. Copper IUD: Most effective (MEC 1 in majority). Up to 5 days after UPSI.\n2. Ulipristal (ellaOne): Up to 5 days (120h). Avoid progestogens for 5 days after ellaOne.\n3. Levonorgestrel: Up to 3 days (72h). Double dose (3mg) if BMI >30 or on enzyme-inducers."
                 }
               ]
             }
@@ -33433,14 +33480,32 @@
           "evidence": "Management per NG73 and CKS Endometriosis.",
           "steps": [
             {
-              "id": "guidance",
-              "question": "Clinical Guidance (Best Practice)",
+              "id": "gynae-symptoms",
+              "question": "1. Clinical Presentation",
               "type": "dropdown",
               "options": [
                 {
-                  "value": "standard",
-                  "label": "Management Overview",
-                  "guidance": "MANAGEMENT PLAN:\n1. Assessment: Full clinical assessment to exclude red flags.\n2. Action: Refer to local clinical formulary for specific pharmacotherapy.\n3. Safety-net: Provide robust safety-netting advice.\n4. Follow-up: Arrange review based on clinical findings."
+                  "label": "Heavy Menstrual Bleeding (HMB)",
+                  "guidance": "MANAGEMENT PLAN (NICE NG88):\n1. 1st-line: Mirena IUS (if acceptable).\n2. 2nd-line: Tranexamic Acid (1g tds during period) +/- Mefenamic Acid (500mg tds).\n3. Hormonal: COCP or High-dose Progestogens (Medroxyprogesterone).\n4. Investigation: Pelvic US if uterus large/fibroids, or fail medical tx."
+                },
+                {
+                  "label": "PCOS",
+                  "guidance": "MANAGEMENT PLAN (BMS/RCOG):\n1. Diagnosis: Rotterdam criteria (2 of 3: Anovulation, Hyperandrogenism, Polycystic ovaries).\n2. Protection: Prevent endometrial hyperplasia via IUS or COCP (ensure ≥4 bleeds/year).\n3. Metabolic: Screen for T2DM (HbA1c) and CVD risk. Metformin if insulin resistant."
+                },
+                {
+                  "label": "Endometriosis",
+                  "guidance": "MANAGEMENT PLAN (NICE NG73):\n1. Trial: 3-6 months COCP or POP. NSAIDs for pain.\n2. Imaging: Pelvic US (specialist endometriosis scan if deep involvement suspected).\n3. Referral: To BSGE Endometriosis centre if severe/refractory or bowel/bladder involvement."
+                }
+              ]
+            },
+            {
+              "id": "pmb-triage",
+              "question": "2. Red Flags (PMB)",
+              "type": "dropdown",
+              "options": [
+                {
+                  "label": "Post-Menopausal Bleeding (PMB)",
+                  "guidance": "MANAGEMENT PLAN (RCOG/NICE):\n1. Triage: Any vaginal bleeding in a post-menopausal woman not on HRT, or unexpected bleeding on HRT.\n2. Action: Urgent 2WW Referral for Ultrasound +/- Hysteroscopy/Biopsy.\n3. Cut-off: Endometrial thickness > 4mm in PMB requires biopsy. NICE NG12."
                 }
               ]
             }
@@ -33456,14 +33521,32 @@
           "evidence": "Management per NICE CKS and Local formulary.",
           "steps": [
             {
-              "id": "guidance",
-              "question": "Clinical Guidance (Best Practice)",
+              "id": "gynae-symptoms",
+              "question": "1. Clinical Presentation",
               "type": "dropdown",
               "options": [
                 {
-                  "value": "standard",
-                  "label": "Management Overview",
-                  "guidance": "MANAGEMENT PLAN:\n1. Assessment: Full clinical assessment to exclude red flags.\n2. Action: Refer to local clinical formulary for specific pharmacotherapy.\n3. Safety-net: Provide robust safety-netting advice.\n4. Follow-up: Arrange review based on clinical findings."
+                  "label": "Heavy Menstrual Bleeding (HMB)",
+                  "guidance": "MANAGEMENT PLAN (NICE NG88):\n1. 1st-line: Mirena IUS (if acceptable).\n2. 2nd-line: Tranexamic Acid (1g tds during period) +/- Mefenamic Acid (500mg tds).\n3. Hormonal: COCP or High-dose Progestogens (Medroxyprogesterone).\n4. Investigation: Pelvic US if uterus large/fibroids, or fail medical tx."
+                },
+                {
+                  "label": "PCOS",
+                  "guidance": "MANAGEMENT PLAN (BMS/RCOG):\n1. Diagnosis: Rotterdam criteria (2 of 3: Anovulation, Hyperandrogenism, Polycystic ovaries).\n2. Protection: Prevent endometrial hyperplasia via IUS or COCP (ensure ≥4 bleeds/year).\n3. Metabolic: Screen for T2DM (HbA1c) and CVD risk. Metformin if insulin resistant."
+                },
+                {
+                  "label": "Endometriosis",
+                  "guidance": "MANAGEMENT PLAN (NICE NG73):\n1. Trial: 3-6 months COCP or POP. NSAIDs for pain.\n2. Imaging: Pelvic US (specialist endometriosis scan if deep involvement suspected).\n3. Referral: To BSGE Endometriosis centre if severe/refractory or bowel/bladder involvement."
+                }
+              ]
+            },
+            {
+              "id": "pmb-triage",
+              "question": "2. Red Flags (PMB)",
+              "type": "dropdown",
+              "options": [
+                {
+                  "label": "Post-Menopausal Bleeding (PMB)",
+                  "guidance": "MANAGEMENT PLAN (RCOG/NICE):\n1. Triage: Any vaginal bleeding in a post-menopausal woman not on HRT, or unexpected bleeding on HRT.\n2. Action: Urgent 2WW Referral for Ultrasound +/- Hysteroscopy/Biopsy.\n3. Cut-off: Endometrial thickness > 4mm in PMB requires biopsy. NICE NG12."
                 }
               ]
             }
@@ -33604,14 +33687,32 @@
           "evidence": "Management per NG88 and CKS HMB.",
           "steps": [
             {
-              "id": "guidance",
-              "question": "Clinical Guidance (Best Practice)",
+              "id": "gynae-symptoms",
+              "question": "1. Clinical Presentation",
               "type": "dropdown",
               "options": [
                 {
-                  "value": "standard",
-                  "label": "Management Overview",
-                  "guidance": "MANAGEMENT PLAN:\n1. Assessment: Full clinical assessment to exclude red flags.\n2. Action: Refer to local clinical formulary for specific pharmacotherapy.\n3. Safety-net: Provide robust safety-netting advice.\n4. Follow-up: Arrange review based on clinical findings."
+                  "label": "Heavy Menstrual Bleeding (HMB)",
+                  "guidance": "MANAGEMENT PLAN (NICE NG88):\n1. 1st-line: Mirena IUS (if acceptable).\n2. 2nd-line: Tranexamic Acid (1g tds during period) +/- Mefenamic Acid (500mg tds).\n3. Hormonal: COCP or High-dose Progestogens (Medroxyprogesterone).\n4. Investigation: Pelvic US if uterus large/fibroids, or fail medical tx."
+                },
+                {
+                  "label": "PCOS",
+                  "guidance": "MANAGEMENT PLAN (BMS/RCOG):\n1. Diagnosis: Rotterdam criteria (2 of 3: Anovulation, Hyperandrogenism, Polycystic ovaries).\n2. Protection: Prevent endometrial hyperplasia via IUS or COCP (ensure ≥4 bleeds/year).\n3. Metabolic: Screen for T2DM (HbA1c) and CVD risk. Metformin if insulin resistant."
+                },
+                {
+                  "label": "Endometriosis",
+                  "guidance": "MANAGEMENT PLAN (NICE NG73):\n1. Trial: 3-6 months COCP or POP. NSAIDs for pain.\n2. Imaging: Pelvic US (specialist endometriosis scan if deep involvement suspected).\n3. Referral: To BSGE Endometriosis centre if severe/refractory or bowel/bladder involvement."
+                }
+              ]
+            },
+            {
+              "id": "pmb-triage",
+              "question": "2. Red Flags (PMB)",
+              "type": "dropdown",
+              "options": [
+                {
+                  "label": "Post-Menopausal Bleeding (PMB)",
+                  "guidance": "MANAGEMENT PLAN (RCOG/NICE):\n1. Triage: Any vaginal bleeding in a post-menopausal woman not on HRT, or unexpected bleeding on HRT.\n2. Action: Urgent 2WW Referral for Ultrasound +/- Hysteroscopy/Biopsy.\n3. Cut-off: Endometrial thickness > 4mm in PMB requires biopsy. NICE NG12."
                 }
               ]
             }
@@ -33627,14 +33728,32 @@
           "evidence": "Management per NICE CKS and Local formulary.",
           "steps": [
             {
-              "id": "guidance",
-              "question": "Clinical Guidance (Best Practice)",
+              "id": "gynae-symptoms",
+              "question": "1. Clinical Presentation",
               "type": "dropdown",
               "options": [
                 {
-                  "value": "standard",
-                  "label": "Management Overview",
-                  "guidance": "MANAGEMENT PLAN:\n1. Assessment: Full clinical assessment to exclude red flags.\n2. Action: Refer to local clinical formulary for specific pharmacotherapy.\n3. Safety-net: Provide robust safety-netting advice.\n4. Follow-up: Arrange review based on clinical findings."
+                  "label": "Heavy Menstrual Bleeding (HMB)",
+                  "guidance": "MANAGEMENT PLAN (NICE NG88):\n1. 1st-line: Mirena IUS (if acceptable).\n2. 2nd-line: Tranexamic Acid (1g tds during period) +/- Mefenamic Acid (500mg tds).\n3. Hormonal: COCP or High-dose Progestogens (Medroxyprogesterone).\n4. Investigation: Pelvic US if uterus large/fibroids, or fail medical tx."
+                },
+                {
+                  "label": "PCOS",
+                  "guidance": "MANAGEMENT PLAN (BMS/RCOG):\n1. Diagnosis: Rotterdam criteria (2 of 3: Anovulation, Hyperandrogenism, Polycystic ovaries).\n2. Protection: Prevent endometrial hyperplasia via IUS or COCP (ensure ≥4 bleeds/year).\n3. Metabolic: Screen for T2DM (HbA1c) and CVD risk. Metformin if insulin resistant."
+                },
+                {
+                  "label": "Endometriosis",
+                  "guidance": "MANAGEMENT PLAN (NICE NG73):\n1. Trial: 3-6 months COCP or POP. NSAIDs for pain.\n2. Imaging: Pelvic US (specialist endometriosis scan if deep involvement suspected).\n3. Referral: To BSGE Endometriosis centre if severe/refractory or bowel/bladder involvement."
+                }
+              ]
+            },
+            {
+              "id": "pmb-triage",
+              "question": "2. Red Flags (PMB)",
+              "type": "dropdown",
+              "options": [
+                {
+                  "label": "Post-Menopausal Bleeding (PMB)",
+                  "guidance": "MANAGEMENT PLAN (RCOG/NICE):\n1. Triage: Any vaginal bleeding in a post-menopausal woman not on HRT, or unexpected bleeding on HRT.\n2. Action: Urgent 2WW Referral for Ultrasound +/- Hysteroscopy/Biopsy.\n3. Cut-off: Endometrial thickness > 4mm in PMB requires biopsy. NICE NG12."
                 }
               ]
             }
@@ -33650,14 +33769,32 @@
           "evidence": "Management per NICE CKS and Local formulary.",
           "steps": [
             {
-              "id": "guidance",
-              "question": "Clinical Guidance (Best Practice)",
+              "id": "gynae-symptoms",
+              "question": "1. Clinical Presentation",
               "type": "dropdown",
               "options": [
                 {
-                  "value": "standard",
-                  "label": "Management Overview",
-                  "guidance": "MANAGEMENT PLAN:\n1. Assessment: Full clinical assessment to exclude red flags.\n2. Action: Refer to local clinical formulary for specific pharmacotherapy.\n3. Safety-net: Provide robust safety-netting advice.\n4. Follow-up: Arrange review based on clinical findings."
+                  "label": "Heavy Menstrual Bleeding (HMB)",
+                  "guidance": "MANAGEMENT PLAN (NICE NG88):\n1. 1st-line: Mirena IUS (if acceptable).\n2. 2nd-line: Tranexamic Acid (1g tds during period) +/- Mefenamic Acid (500mg tds).\n3. Hormonal: COCP or High-dose Progestogens (Medroxyprogesterone).\n4. Investigation: Pelvic US if uterus large/fibroids, or fail medical tx."
+                },
+                {
+                  "label": "PCOS",
+                  "guidance": "MANAGEMENT PLAN (BMS/RCOG):\n1. Diagnosis: Rotterdam criteria (2 of 3: Anovulation, Hyperandrogenism, Polycystic ovaries).\n2. Protection: Prevent endometrial hyperplasia via IUS or COCP (ensure ≥4 bleeds/year).\n3. Metabolic: Screen for T2DM (HbA1c) and CVD risk. Metformin if insulin resistant."
+                },
+                {
+                  "label": "Endometriosis",
+                  "guidance": "MANAGEMENT PLAN (NICE NG73):\n1. Trial: 3-6 months COCP or POP. NSAIDs for pain.\n2. Imaging: Pelvic US (specialist endometriosis scan if deep involvement suspected).\n3. Referral: To BSGE Endometriosis centre if severe/refractory or bowel/bladder involvement."
+                }
+              ]
+            },
+            {
+              "id": "pmb-triage",
+              "question": "2. Red Flags (PMB)",
+              "type": "dropdown",
+              "options": [
+                {
+                  "label": "Post-Menopausal Bleeding (PMB)",
+                  "guidance": "MANAGEMENT PLAN (RCOG/NICE):\n1. Triage: Any vaginal bleeding in a post-menopausal woman not on HRT, or unexpected bleeding on HRT.\n2. Action: Urgent 2WW Referral for Ultrasound +/- Hysteroscopy/Biopsy.\n3. Cut-off: Endometrial thickness > 4mm in PMB requires biopsy. NICE NG12."
                 }
               ]
             }
@@ -33673,14 +33810,32 @@
           "evidence": "Management per NICE CKS and Local formulary.",
           "steps": [
             {
-              "id": "guidance",
-              "question": "Clinical Guidance (Best Practice)",
+              "id": "gynae-symptoms",
+              "question": "1. Clinical Presentation",
               "type": "dropdown",
               "options": [
                 {
-                  "value": "standard",
-                  "label": "Management Overview",
-                  "guidance": "MANAGEMENT PLAN:\n1. Assessment: Full clinical assessment to exclude red flags.\n2. Action: Refer to local clinical formulary for specific pharmacotherapy.\n3. Safety-net: Provide robust safety-netting advice.\n4. Follow-up: Arrange review based on clinical findings."
+                  "label": "Heavy Menstrual Bleeding (HMB)",
+                  "guidance": "MANAGEMENT PLAN (NICE NG88):\n1. 1st-line: Mirena IUS (if acceptable).\n2. 2nd-line: Tranexamic Acid (1g tds during period) +/- Mefenamic Acid (500mg tds).\n3. Hormonal: COCP or High-dose Progestogens (Medroxyprogesterone).\n4. Investigation: Pelvic US if uterus large/fibroids, or fail medical tx."
+                },
+                {
+                  "label": "PCOS",
+                  "guidance": "MANAGEMENT PLAN (BMS/RCOG):\n1. Diagnosis: Rotterdam criteria (2 of 3: Anovulation, Hyperandrogenism, Polycystic ovaries).\n2. Protection: Prevent endometrial hyperplasia via IUS or COCP (ensure ≥4 bleeds/year).\n3. Metabolic: Screen for T2DM (HbA1c) and CVD risk. Metformin if insulin resistant."
+                },
+                {
+                  "label": "Endometriosis",
+                  "guidance": "MANAGEMENT PLAN (NICE NG73):\n1. Trial: 3-6 months COCP or POP. NSAIDs for pain.\n2. Imaging: Pelvic US (specialist endometriosis scan if deep involvement suspected).\n3. Referral: To BSGE Endometriosis centre if severe/refractory or bowel/bladder involvement."
+                }
+              ]
+            },
+            {
+              "id": "pmb-triage",
+              "question": "2. Red Flags (PMB)",
+              "type": "dropdown",
+              "options": [
+                {
+                  "label": "Post-Menopausal Bleeding (PMB)",
+                  "guidance": "MANAGEMENT PLAN (RCOG/NICE):\n1. Triage: Any vaginal bleeding in a post-menopausal woman not on HRT, or unexpected bleeding on HRT.\n2. Action: Urgent 2WW Referral for Ultrasound +/- Hysteroscopy/Biopsy.\n3. Cut-off: Endometrial thickness > 4mm in PMB requires biopsy. NICE NG12."
                 }
               ]
             }
@@ -33696,13 +33851,32 @@
           "evidence": "Management per NICE CKS and Local formulary.",
           "steps": [
             {
-              "id": "bp-referral",
-              "question": "Referral & Follow-up (Best Practice)",
+              "id": "gynae-symptoms",
+              "question": "1. Clinical Presentation",
               "type": "dropdown",
               "options": [
                 {
-                  "label": "Referral & Safety-netting",
-                  "guidance": "MANAGEMENT PLAN:\n1. Referral: Refer 2WW if malignancy suspected. Urgent referral if clinical compromise. Routine if primary care management fails.\n2. Waiting List: Ensure patient knows how to report deterioration while waiting.\n3. Review: Review and optimize primary care management in the interim."
+                  "label": "Heavy Menstrual Bleeding (HMB)",
+                  "guidance": "MANAGEMENT PLAN (NICE NG88):\n1. 1st-line: Mirena IUS (if acceptable).\n2. 2nd-line: Tranexamic Acid (1g tds during period) +/- Mefenamic Acid (500mg tds).\n3. Hormonal: COCP or High-dose Progestogens (Medroxyprogesterone).\n4. Investigation: Pelvic US if uterus large/fibroids, or fail medical tx."
+                },
+                {
+                  "label": "PCOS",
+                  "guidance": "MANAGEMENT PLAN (BMS/RCOG):\n1. Diagnosis: Rotterdam criteria (2 of 3: Anovulation, Hyperandrogenism, Polycystic ovaries).\n2. Protection: Prevent endometrial hyperplasia via IUS or COCP (ensure ≥4 bleeds/year).\n3. Metabolic: Screen for T2DM (HbA1c) and CVD risk. Metformin if insulin resistant."
+                },
+                {
+                  "label": "Endometriosis",
+                  "guidance": "MANAGEMENT PLAN (NICE NG73):\n1. Trial: 3-6 months COCP or POP. NSAIDs for pain.\n2. Imaging: Pelvic US (specialist endometriosis scan if deep involvement suspected).\n3. Referral: To BSGE Endometriosis centre if severe/refractory or bowel/bladder involvement."
+                }
+              ]
+            },
+            {
+              "id": "pmb-triage",
+              "question": "2. Red Flags (PMB)",
+              "type": "dropdown",
+              "options": [
+                {
+                  "label": "Post-Menopausal Bleeding (PMB)",
+                  "guidance": "MANAGEMENT PLAN (RCOG/NICE):\n1. Triage: Any vaginal bleeding in a post-menopausal woman not on HRT, or unexpected bleeding on HRT.\n2. Action: Urgent 2WW Referral for Ultrasound +/- Hysteroscopy/Biopsy.\n3. Cut-off: Endometrial thickness > 4mm in PMB requires biopsy. NICE NG12."
                 }
               ]
             }
@@ -34320,14 +34494,32 @@
           "evidence": "Management per NICE CKS and Local formulary.",
           "steps": [
             {
-              "id": "guidance",
-              "question": "Clinical Guidance (Best Practice)",
+              "id": "gynae-symptoms",
+              "question": "1. Clinical Presentation",
               "type": "dropdown",
               "options": [
                 {
-                  "value": "standard",
-                  "label": "Management Overview",
-                  "guidance": "MANAGEMENT PLAN:\n1. Assessment: Full clinical assessment to exclude red flags.\n2. Action: Refer to local clinical formulary for specific pharmacotherapy.\n3. Safety-net: Provide robust safety-netting advice.\n4. Follow-up: Arrange review based on clinical findings."
+                  "label": "Heavy Menstrual Bleeding (HMB)",
+                  "guidance": "MANAGEMENT PLAN (NICE NG88):\n1. 1st-line: Mirena IUS (if acceptable).\n2. 2nd-line: Tranexamic Acid (1g tds during period) +/- Mefenamic Acid (500mg tds).\n3. Hormonal: COCP or High-dose Progestogens (Medroxyprogesterone).\n4. Investigation: Pelvic US if uterus large/fibroids, or fail medical tx."
+                },
+                {
+                  "label": "PCOS",
+                  "guidance": "MANAGEMENT PLAN (BMS/RCOG):\n1. Diagnosis: Rotterdam criteria (2 of 3: Anovulation, Hyperandrogenism, Polycystic ovaries).\n2. Protection: Prevent endometrial hyperplasia via IUS or COCP (ensure ≥4 bleeds/year).\n3. Metabolic: Screen for T2DM (HbA1c) and CVD risk. Metformin if insulin resistant."
+                },
+                {
+                  "label": "Endometriosis",
+                  "guidance": "MANAGEMENT PLAN (NICE NG73):\n1. Trial: 3-6 months COCP or POP. NSAIDs for pain.\n2. Imaging: Pelvic US (specialist endometriosis scan if deep involvement suspected).\n3. Referral: To BSGE Endometriosis centre if severe/refractory or bowel/bladder involvement."
+                }
+              ]
+            },
+            {
+              "id": "pmb-triage",
+              "question": "2. Red Flags (PMB)",
+              "type": "dropdown",
+              "options": [
+                {
+                  "label": "Post-Menopausal Bleeding (PMB)",
+                  "guidance": "MANAGEMENT PLAN (RCOG/NICE):\n1. Triage: Any vaginal bleeding in a post-menopausal woman not on HRT, or unexpected bleeding on HRT.\n2. Action: Urgent 2WW Referral for Ultrasound +/- Hysteroscopy/Biopsy.\n3. Cut-off: Endometrial thickness > 4mm in PMB requires biopsy. NICE NG12."
                 }
               ]
             }
@@ -34343,14 +34535,32 @@
           "evidence": "Management per NICE CKS and Local formulary.",
           "steps": [
             {
-              "id": "guidance",
-              "question": "Clinical Guidance (Best Practice)",
+              "id": "gynae-symptoms",
+              "question": "1. Clinical Presentation",
               "type": "dropdown",
               "options": [
                 {
-                  "value": "standard",
-                  "label": "Management Overview",
-                  "guidance": "MANAGEMENT PLAN:\n1. Assessment: Full clinical assessment to exclude red flags.\n2. Action: Refer to local clinical formulary for specific pharmacotherapy.\n3. Safety-net: Provide robust safety-netting advice.\n4. Follow-up: Arrange review based on clinical findings."
+                  "label": "Heavy Menstrual Bleeding (HMB)",
+                  "guidance": "MANAGEMENT PLAN (NICE NG88):\n1. 1st-line: Mirena IUS (if acceptable).\n2. 2nd-line: Tranexamic Acid (1g tds during period) +/- Mefenamic Acid (500mg tds).\n3. Hormonal: COCP or High-dose Progestogens (Medroxyprogesterone).\n4. Investigation: Pelvic US if uterus large/fibroids, or fail medical tx."
+                },
+                {
+                  "label": "PCOS",
+                  "guidance": "MANAGEMENT PLAN (BMS/RCOG):\n1. Diagnosis: Rotterdam criteria (2 of 3: Anovulation, Hyperandrogenism, Polycystic ovaries).\n2. Protection: Prevent endometrial hyperplasia via IUS or COCP (ensure ≥4 bleeds/year).\n3. Metabolic: Screen for T2DM (HbA1c) and CVD risk. Metformin if insulin resistant."
+                },
+                {
+                  "label": "Endometriosis",
+                  "guidance": "MANAGEMENT PLAN (NICE NG73):\n1. Trial: 3-6 months COCP or POP. NSAIDs for pain.\n2. Imaging: Pelvic US (specialist endometriosis scan if deep involvement suspected).\n3. Referral: To BSGE Endometriosis centre if severe/refractory or bowel/bladder involvement."
+                }
+              ]
+            },
+            {
+              "id": "pmb-triage",
+              "question": "2. Red Flags (PMB)",
+              "type": "dropdown",
+              "options": [
+                {
+                  "label": "Post-Menopausal Bleeding (PMB)",
+                  "guidance": "MANAGEMENT PLAN (RCOG/NICE):\n1. Triage: Any vaginal bleeding in a post-menopausal woman not on HRT, or unexpected bleeding on HRT.\n2. Action: Urgent 2WW Referral for Ultrasound +/- Hysteroscopy/Biopsy.\n3. Cut-off: Endometrial thickness > 4mm in PMB requires biopsy. NICE NG12."
                 }
               ]
             }
@@ -34366,14 +34576,32 @@
           "evidence": "Management per NICE CKS and Local formulary.",
           "steps": [
             {
-              "id": "guidance",
-              "question": "Clinical Guidance (Best Practice)",
+              "id": "gynae-symptoms",
+              "question": "1. Clinical Presentation",
               "type": "dropdown",
               "options": [
                 {
-                  "value": "standard",
-                  "label": "Management Overview",
-                  "guidance": "MANAGEMENT PLAN:\n1. Assessment: Full clinical assessment to exclude red flags.\n2. Action: Refer to local clinical formulary for specific pharmacotherapy.\n3. Safety-net: Provide robust safety-netting advice.\n4. Follow-up: Arrange review based on clinical findings."
+                  "label": "Heavy Menstrual Bleeding (HMB)",
+                  "guidance": "MANAGEMENT PLAN (NICE NG88):\n1. 1st-line: Mirena IUS (if acceptable).\n2. 2nd-line: Tranexamic Acid (1g tds during period) +/- Mefenamic Acid (500mg tds).\n3. Hormonal: COCP or High-dose Progestogens (Medroxyprogesterone).\n4. Investigation: Pelvic US if uterus large/fibroids, or fail medical tx."
+                },
+                {
+                  "label": "PCOS",
+                  "guidance": "MANAGEMENT PLAN (BMS/RCOG):\n1. Diagnosis: Rotterdam criteria (2 of 3: Anovulation, Hyperandrogenism, Polycystic ovaries).\n2. Protection: Prevent endometrial hyperplasia via IUS or COCP (ensure ≥4 bleeds/year).\n3. Metabolic: Screen for T2DM (HbA1c) and CVD risk. Metformin if insulin resistant."
+                },
+                {
+                  "label": "Endometriosis",
+                  "guidance": "MANAGEMENT PLAN (NICE NG73):\n1. Trial: 3-6 months COCP or POP. NSAIDs for pain.\n2. Imaging: Pelvic US (specialist endometriosis scan if deep involvement suspected).\n3. Referral: To BSGE Endometriosis centre if severe/refractory or bowel/bladder involvement."
+                }
+              ]
+            },
+            {
+              "id": "pmb-triage",
+              "question": "2. Red Flags (PMB)",
+              "type": "dropdown",
+              "options": [
+                {
+                  "label": "Post-Menopausal Bleeding (PMB)",
+                  "guidance": "MANAGEMENT PLAN (RCOG/NICE):\n1. Triage: Any vaginal bleeding in a post-menopausal woman not on HRT, or unexpected bleeding on HRT.\n2. Action: Urgent 2WW Referral for Ultrasound +/- Hysteroscopy/Biopsy.\n3. Cut-off: Endometrial thickness > 4mm in PMB requires biopsy. NICE NG12."
                 }
               ]
             }
@@ -34610,14 +34838,17 @@
           "evidence": "Management per NICE CKS and Local formulary.",
           "steps": [
             {
-              "id": "guidance",
-              "question": "Clinical Guidance (Best Practice)",
+              "id": "preg-care",
+              "question": "1. Antenatal / Early Pregnancy",
               "type": "dropdown",
               "options": [
                 {
-                  "value": "standard",
-                  "label": "Management Overview",
-                  "guidance": "MANAGEMENT PLAN:\n1. Assessment: Full clinical assessment to exclude red flags.\n2. Action: Refer to local clinical formulary for specific pharmacotherapy.\n3. Safety-net: Provide robust safety-netting advice.\n4. Follow-up: Arrange review based on clinical findings."
+                  "label": "Early Pregnancy Complications (<13w)",
+                  "guidance": "MANAGEMENT PLAN (RCOG Greentop):\n1. Presentation: Pain and/or bleeding. Referral: EPAU (Early Pregnancy Assessment Unit).\n2. Ectopic Risk: If pain/bleeding + tenderness/adnexal mass → Immediate hospital referral.\n3. Recurrent Miscarriage (≥3 consecutive): Refer for specialist workup (Antiphospholipid, genetics). RCOG GTG 17."
+                },
+                {
+                  "label": "Routine Antenatal Care",
+                  "guidance": "MANAGEMENT PLAN:\n1. Supplements: Folic Acid 400mcg (5mg if high risk/BMI>30) + Vit D 10mcg.\n2. Screening: Book by 10w. Offer 12w (dating/NT) and 20w (anomaly) scans.\n3. Aspirin: 75-150mg OD from 12w if ≥1 high risk (HTN, CKD, SLE) or ≥2 moderate risks (BMI, Multi-preg, Age>40). NICE NG201."
                 }
               ]
             }
@@ -34803,14 +35034,17 @@
           "evidence": "Management per NICE CKS and Local formulary.",
           "steps": [
             {
-              "id": "guidance",
-              "question": "Clinical Guidance (Best Practice)",
+              "id": "preg-care",
+              "question": "1. Antenatal / Early Pregnancy",
               "type": "dropdown",
               "options": [
                 {
-                  "value": "standard",
-                  "label": "Management Overview",
-                  "guidance": "MANAGEMENT PLAN:\n1. Assessment: Full clinical assessment to exclude red flags.\n2. Action: Refer to local clinical formulary for specific pharmacotherapy.\n3. Safety-net: Provide robust safety-netting advice.\n4. Follow-up: Arrange review based on clinical findings."
+                  "label": "Early Pregnancy Complications (<13w)",
+                  "guidance": "MANAGEMENT PLAN (RCOG Greentop):\n1. Presentation: Pain and/or bleeding. Referral: EPAU (Early Pregnancy Assessment Unit).\n2. Ectopic Risk: If pain/bleeding + tenderness/adnexal mass → Immediate hospital referral.\n3. Recurrent Miscarriage (≥3 consecutive): Refer for specialist workup (Antiphospholipid, genetics). RCOG GTG 17."
+                },
+                {
+                  "label": "Routine Antenatal Care",
+                  "guidance": "MANAGEMENT PLAN:\n1. Supplements: Folic Acid 400mcg (5mg if high risk/BMI>30) + Vit D 10mcg.\n2. Screening: Book by 10w. Offer 12w (dating/NT) and 20w (anomaly) scans.\n3. Aspirin: 75-150mg OD from 12w if ≥1 high risk (HTN, CKD, SLE) or ≥2 moderate risks (BMI, Multi-preg, Age>40). NICE NG201."
                 }
               ]
             }
@@ -34828,14 +35062,17 @@
           "evidence": "Management per NICE CKS and Local formulary.",
           "steps": [
             {
-              "id": "guidance",
-              "question": "Clinical Guidance (Best Practice)",
+              "id": "preg-care",
+              "question": "1. Antenatal / Early Pregnancy",
               "type": "dropdown",
               "options": [
                 {
-                  "value": "standard",
-                  "label": "Management Overview",
-                  "guidance": "MANAGEMENT PLAN:\n1. Assessment: Full clinical assessment to exclude red flags.\n2. Action: Refer to local clinical formulary for specific pharmacotherapy.\n3. Safety-net: Provide robust safety-netting advice.\n4. Follow-up: Arrange review based on clinical findings."
+                  "label": "Early Pregnancy Complications (<13w)",
+                  "guidance": "MANAGEMENT PLAN (RCOG Greentop):\n1. Presentation: Pain and/or bleeding. Referral: EPAU (Early Pregnancy Assessment Unit).\n2. Ectopic Risk: If pain/bleeding + tenderness/adnexal mass → Immediate hospital referral.\n3. Recurrent Miscarriage (≥3 consecutive): Refer for specialist workup (Antiphospholipid, genetics). RCOG GTG 17."
+                },
+                {
+                  "label": "Routine Antenatal Care",
+                  "guidance": "MANAGEMENT PLAN:\n1. Supplements: Folic Acid 400mcg (5mg if high risk/BMI>30) + Vit D 10mcg.\n2. Screening: Book by 10w. Offer 12w (dating/NT) and 20w (anomaly) scans.\n3. Aspirin: 75-150mg OD from 12w if ≥1 high risk (HTN, CKD, SLE) or ≥2 moderate risks (BMI, Multi-preg, Age>40). NICE NG201."
                 }
               ]
             }
@@ -35037,14 +35274,17 @@
           "evidence": "Management per NICE CKS and Local formulary.",
           "steps": [
             {
-              "id": "guidance",
-              "question": "Clinical Guidance (Best Practice)",
+              "id": "preg-care",
+              "question": "1. Antenatal / Early Pregnancy",
               "type": "dropdown",
               "options": [
                 {
-                  "value": "standard",
-                  "label": "Management Overview",
-                  "guidance": "MANAGEMENT PLAN:\n1. Assessment: Full clinical assessment to exclude red flags.\n2. Action: Refer to local clinical formulary for specific pharmacotherapy.\n3. Safety-net: Provide robust safety-netting advice.\n4. Follow-up: Arrange review based on clinical findings."
+                  "label": "Early Pregnancy Complications (<13w)",
+                  "guidance": "MANAGEMENT PLAN (RCOG Greentop):\n1. Presentation: Pain and/or bleeding. Referral: EPAU (Early Pregnancy Assessment Unit).\n2. Ectopic Risk: If pain/bleeding + tenderness/adnexal mass → Immediate hospital referral.\n3. Recurrent Miscarriage (≥3 consecutive): Refer for specialist workup (Antiphospholipid, genetics). RCOG GTG 17."
+                },
+                {
+                  "label": "Routine Antenatal Care",
+                  "guidance": "MANAGEMENT PLAN:\n1. Supplements: Folic Acid 400mcg (5mg if high risk/BMI>30) + Vit D 10mcg.\n2. Screening: Book by 10w. Offer 12w (dating/NT) and 20w (anomaly) scans.\n3. Aspirin: 75-150mg OD from 12w if ≥1 high risk (HTN, CKD, SLE) or ≥2 moderate risks (BMI, Multi-preg, Age>40). NICE NG201."
                 }
               ]
             }
@@ -35541,14 +35781,17 @@
           "evidence": "Management per NICE CKS and Local formulary.",
           "steps": [
             {
-              "id": "guidance",
-              "question": "Clinical Guidance (Best Practice)",
+              "id": "preg-care",
+              "question": "1. Antenatal / Early Pregnancy",
               "type": "dropdown",
               "options": [
                 {
-                  "value": "standard",
-                  "label": "Management Overview",
-                  "guidance": "MANAGEMENT PLAN:\n1. Assessment: Full clinical assessment to exclude red flags.\n2. Action: Refer to local clinical formulary for specific pharmacotherapy.\n3. Safety-net: Provide robust safety-netting advice.\n4. Follow-up: Arrange review based on clinical findings."
+                  "label": "Early Pregnancy Complications (<13w)",
+                  "guidance": "MANAGEMENT PLAN (RCOG Greentop):\n1. Presentation: Pain and/or bleeding. Referral: EPAU (Early Pregnancy Assessment Unit).\n2. Ectopic Risk: If pain/bleeding + tenderness/adnexal mass → Immediate hospital referral.\n3. Recurrent Miscarriage (≥3 consecutive): Refer for specialist workup (Antiphospholipid, genetics). RCOG GTG 17."
+                },
+                {
+                  "label": "Routine Antenatal Care",
+                  "guidance": "MANAGEMENT PLAN:\n1. Supplements: Folic Acid 400mcg (5mg if high risk/BMI>30) + Vit D 10mcg.\n2. Screening: Book by 10w. Offer 12w (dating/NT) and 20w (anomaly) scans.\n3. Aspirin: 75-150mg OD from 12w if ≥1 high risk (HTN, CKD, SLE) or ≥2 moderate risks (BMI, Multi-preg, Age>40). NICE NG201."
                 }
               ]
             }
@@ -37764,14 +38007,17 @@
           "evidence": "Management per NICE CKS and Local formulary.",
           "steps": [
             {
-              "id": "guidance",
-              "question": "Clinical Guidance (Best Practice)",
+              "id": "preg-care",
+              "question": "1. Antenatal / Early Pregnancy",
               "type": "dropdown",
               "options": [
                 {
-                  "value": "standard",
-                  "label": "Management Overview",
-                  "guidance": "MANAGEMENT PLAN:\n1. Assessment: Full clinical assessment to exclude red flags.\n2. Action: Refer to local clinical formulary for specific pharmacotherapy.\n3. Safety-net: Provide robust safety-netting advice.\n4. Follow-up: Arrange review based on clinical findings."
+                  "label": "Early Pregnancy Complications (<13w)",
+                  "guidance": "MANAGEMENT PLAN (RCOG Greentop):\n1. Presentation: Pain and/or bleeding. Referral: EPAU (Early Pregnancy Assessment Unit).\n2. Ectopic Risk: If pain/bleeding + tenderness/adnexal mass → Immediate hospital referral.\n3. Recurrent Miscarriage (≥3 consecutive): Refer for specialist workup (Antiphospholipid, genetics). RCOG GTG 17."
+                },
+                {
+                  "label": "Routine Antenatal Care",
+                  "guidance": "MANAGEMENT PLAN:\n1. Supplements: Folic Acid 400mcg (5mg if high risk/BMI>30) + Vit D 10mcg.\n2. Screening: Book by 10w. Offer 12w (dating/NT) and 20w (anomaly) scans.\n3. Aspirin: 75-150mg OD from 12w if ≥1 high risk (HTN, CKD, SLE) or ≥2 moderate risks (BMI, Multi-preg, Age>40). NICE NG201."
                 }
               ]
             }
@@ -39336,14 +39582,17 @@
           "evidence": "Management per NICE CKS and Local formulary.",
           "steps": [
             {
-              "id": "guidance",
-              "question": "Clinical Guidance (Best Practice)",
+              "id": "preg-care",
+              "question": "1. Antenatal / Early Pregnancy",
               "type": "dropdown",
               "options": [
                 {
-                  "value": "standard",
-                  "label": "Management Overview",
-                  "guidance": "MANAGEMENT PLAN:\n1. Assessment: Full clinical assessment to exclude red flags.\n2. Action: Refer to local clinical formulary for specific pharmacotherapy.\n3. Safety-net: Provide robust safety-netting advice.\n4. Follow-up: Arrange review based on clinical findings."
+                  "label": "Early Pregnancy Complications (<13w)",
+                  "guidance": "MANAGEMENT PLAN (RCOG Greentop):\n1. Presentation: Pain and/or bleeding. Referral: EPAU (Early Pregnancy Assessment Unit).\n2. Ectopic Risk: If pain/bleeding + tenderness/adnexal mass → Immediate hospital referral.\n3. Recurrent Miscarriage (≥3 consecutive): Refer for specialist workup (Antiphospholipid, genetics). RCOG GTG 17."
+                },
+                {
+                  "label": "Routine Antenatal Care",
+                  "guidance": "MANAGEMENT PLAN:\n1. Supplements: Folic Acid 400mcg (5mg if high risk/BMI>30) + Vit D 10mcg.\n2. Screening: Book by 10w. Offer 12w (dating/NT) and 20w (anomaly) scans.\n3. Aspirin: 75-150mg OD from 12w if ≥1 high risk (HTN, CKD, SLE) or ≥2 moderate risks (BMI, Multi-preg, Age>40). NICE NG201."
                 }
               ]
             }
