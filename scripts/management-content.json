@@ -419,29 +419,54 @@
     },
     {
       "keywords": [
-        "palpitation",
-        "palpitations"
+        "atrial fibrillation",
+        "af",
+        "irregular pulse"
       ],
       "steps": [
         {
-          "id": "rhythm",
-          "question": "Rhythm and red flags",
+          "id": "af-management",
+          "question": "1. Stroke Risk & Anticoagulation",
           "type": "dropdown",
           "options": [
             {
-              "value": "regular",
-              "label": "Regular, no red flags",
-              "guidance": "MANAGEMENT PLAN:\nHistory: triggers, duration. Check FBC, U&E, TFT. Consider 24h tape if intermittent. Reassure if benign; treat anxiety if relevant. NICE NG196."
+              "label": "Assess Risk (CHA2DS2-VASc)",
+              "guidance": "MANAGEMENT PLAN (Consultant Grade):\n1. Anticoagulation: Offer if CHA2DS2-VASc \u2265 2 (Consider if 1 in men). 1st-line: DOAC (e.g. Apixaban 5mg bd or Edoxaban 60mg OD).\n2. Note: Do not offer Aspirin for stroke prevention in AF.\n3. Bleeding Risk: Assess using ORBIT (preferred) or HAS-BLED. Address reversible risks (HTN, alcohol, NSAIDs). NICE NG196."
+            }
+          ]
+        },
+        {
+          "id": "af-control",
+          "question": "2. Rate vs Rhythm Control",
+          "type": "dropdown",
+          "options": [
+            {
+              "label": "Rate Control (Standard)",
+              "guidance": "MANAGEMENT PLAN:\n1. 1st-line: Beta-blocker (e.g. Bisoprolol 2.5-10mg) or CCB (e.g. Diltiazem). Target HR < 90bpm at rest (or < 110bpm if sedentary).\n2. Digoxin: Only as add-on if HR not controlled or in sedentary elderly."
             },
             {
-              "value": "irregular",
-              "label": "Irregular or suspected AF",
-              "guidance": "MANAGEMENT PLAN:\nECG (or rhythm strip). If AF: assess stroke risk (CHA2DS2-Vasc), bleeding (HAS-BLED), rate/rhythm control. Anticoagulate per NICE NG196. Refer if haemodynamically unstable or first confirmed AF for consideration of rhythm control."
-            },
+              "label": "Rhythm Control (Specialist)",
+              "guidance": "MANAGEMENT PLAN:\n1. Refer for Cardioversion or Ablation if: Symptomatic despite rate control, young, first-onset AF, or HF suspected/caused by AF.\n2. Meds: Flecainide (if no structural heart disease) or Amiodarone."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "keywords": [
+        "angina",
+        "stable chest pain",
+        "ischaemic heart"
+      ],
+      "steps": [
+        {
+          "id": "angina-mgt",
+          "question": "1. Medical Management",
+          "type": "dropdown",
+          "options": [
             {
-              "value": "red",
-              "label": "Red flags (syncope, chest pain, SOB)",
-              "guidance": "MANAGEMENT PLAN:\nECG urgently. Consider same-day referral or ambulance if syncope, chest pain, or severe SOB. Exclude VT, heart block, PE. NICE NG196."
+              "label": "Anti-anginal Therapy",
+              "guidance": "MANAGEMENT PLAN (RCP/BCS):\n1. Acute: GTN Spray (1-2 puffs prn).\n2. Preventative: First-line Beta-blocker (Bisoprolol) or CCB (Amlodipine). Titrate to maximum tolerated dose.\n3. Secondary Prevention: Aspirin 75mg + Atorvastatin 80mg + ACEi (if diabetic/HTN).\n4. Referral: Urgent referral to Rapid Access Chest Pain Clinic (RACPC) for CTCA (CT Coronary Angiography). NICE NG72."
             }
           ]
         }
@@ -477,28 +502,45 @@
     },
     {
       "keywords": [
-        "asthma"
+        "asthma",
+        "wheeze"
       ],
       "steps": [
         {
-          "id": "asthma-step",
-          "question": "Control and step",
+          "id": "asthma-steps",
+          "question": "1. Maintenance Therapy (BTS/SIGN)",
           "type": "dropdown",
           "options": [
             {
-              "value": "step1",
-              "label": "Step 1 \u2013 SABA only",
-              "guidance": "MANAGEMENT PLAN:\nIntermittent asthma: SABA reliever as needed (e.g. Salbutamol / Ventolin). If using SABA \u22653/week or symptoms \u22653/week: add a low-dose ICS preventer (e.g. Clenil / Beclometasone) (step 2). NICE NG80."
+              "label": "Step 1: SABA prn",
+              "guidance": "MANAGEMENT PLAN:\n1. Indication: Symptoms < 3 times/week and no night-waking.\n2. Warning: If using SABA \u22653 times/week, move to Step 2. BTS/SIGN Guidelines."
             },
             {
-              "value": "step2-3",
-              "label": "Step 2\u20133 \u2013 ICS \u00b1 LABA",
-              "guidance": "MANAGEMENT PLAN:\nStep 2: low-dose ICS (e.g. Clenil). Step 3: add a LABA (e.g. Salmeterol) alongside ICS (e.g. Seretide combination). If good control on low ICS+LABA, consider trial of LABA withdrawal. NICE NG80."
+              "label": "Step 2: Low-dose ICS",
+              "guidance": "MANAGEMENT PLAN:\n1. 1st-line: Beclometasone (e.g. Clenil 100mcg bd). Prevents airway remodelling and reduces exacerbation risk."
             },
             {
-              "value": "step4-5",
-              "label": "Step 4\u20135 \u2013 add-on",
-              "guidance": "MANAGEMENT PLAN:\nStep 4: increase ICS dose or change to MART (Maintenance and Reliever Therapy e.g. Fostair / Symbicort) or add LTRA (Montelukast). Step 5: add prednisolone or refer for biologicals. Check technique and adherence. NICE NG80."
+              "label": "Step 3: Add LABA (Combined Inhaler)",
+              "guidance": "MANAGEMENT PLAN:\n1. 1st-line: ICS + LABA (e.g. Fostair or Symbicort). MART (Maintenance and Reliever Therapy) is the specialist preference for improved adherence.\n2. Review: If still poorly controlled on moderate-dose ICS+LABA, consider LTRA (Montelukast)."
+            }
+          ]
+        },
+        {
+          "id": "asthma-acute",
+          "question": "2. Acute Attack (Severity)",
+          "type": "dropdown",
+          "options": [
+            {
+              "label": "Moderate (PEFR 50-75% best)",
+              "guidance": "MANAGEMENT PLAN:\n1. Treatment: SABA 2-5 puffs via spacer every 10-20 mins. Oral Prednisolone 40-50mg for 5 days. BTS/SIGN."
+            },
+            {
+              "label": "Severe (PEFR 33-50% / RR \u2265 25 / HR \u2265 110)",
+              "guidance": "MANAGEMENT PLAN:\n1. Triage: Immediate hospital admission (999). High-flow Oxygen. Nebulised SABA + Ipratropium."
+            },
+            {
+              "label": "Life-Threatening (PEFR <33% / SpO2 <92% / Silent Chest)",
+              "guidance": "MANAGEMENT PLAN:\n1. Emergency: 999. Do not delay. Life-threatening features (33-92-CHEST)."
             }
           ]
         }
@@ -822,19 +864,74 @@
               "guidance": "MANAGEMENT PLAN:\n1. Specialist referral to Nephrology.\n2. Prepare for renal replacement therapy discussions. NICE NG203."
             }
           ]
-        },
+        }
+      ]
+    },
+    {
+      "keywords": [
+        "ibd",
+        "crohn",
+        "ulcerative colitis"
+      ],
+      "steps": [
         {
-          "id": "ckd-drug",
-          "question": "2. Drug Therapy (NICE 2024)",
+          "id": "ibd-flare",
+          "question": "1. Flare Assessment",
           "type": "dropdown",
           "options": [
             {
-              "label": "Albuminuria (ACR \u2265 3)",
-              "guidance": "MANAGEMENT PLAN:\n1. SGLT2 inhibitor (e.g. Dapagliflozin 10mg) is indicated to reduce progression risk. NICE NG203."
+              "label": "Suspected Flare (Consultant Plan)",
+              "guidance": "MANAGEMENT PLAN (BSG Guidelines):\n1. Diagnostics: Urgent FBC, CRP, U&E, and Faecal Calprotectin.\n2. Severity: Stool frequency > 6/day + systemic symptoms (fever/tachycardia) \u2192 Immediate hospital admission (Truelove & Witts criteria).\n3. Medical: Start Oral Prednisolone 40mg (tapering course) or high-dose 5-ASA. If no response in 7 days, specialist review for rescue therapy (Infliximab/Ciclosporin)."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "keywords": [
+        "coeliac",
+        "gluten"
+      ],
+      "steps": [
+        {
+          "id": "coeliac-mgt",
+          "question": "1. Diagnosis & Triage",
+          "type": "dropdown",
+          "options": [
+            {
+              "label": "Workup (BSG Guidelines)",
+              "guidance": "MANAGEMENT PLAN:\n1. Bloods: IgA-TtG (Tissue Transglutaminase) AND Total IgA level (to exclude IgA deficiency). Must be on gluten-containing diet (1 meal/day for 6 weeks).\n2. Referral: Refer to GI if TtG positive.\n3. Non-Biopsy Pathway: In select cases (TtG > 10x normal), a second sample (EMA) may allow diagnosis without biopsy in adults (specialist decision)."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "keywords": [
+        "ckd",
+        "chronic kidney",
+        "kidney disease"
+      ],
+      "steps": [
+        {
+          "id": "ckd",
+          "question": "CKD stage and action",
+          "type": "dropdown",
+          "options": [
+            {
+              "value": "g3a",
+              "label": "G3a (eGFR 45\u201359)",
+              "guidance": "MANAGEMENT PLAN:\nConfirm with repeat; address CV risk, BP (target <130/80 if diabetic/proteinuric). Avoid nephrotoxics. NICE NG203."
             },
             {
-              "label": "Proteinuria (ACR \u2265 30)",
-              "guidance": "MANAGEMENT PLAN:\n1. ACE inhibitor or ARB (titrate to maximum tolerated dose). NICE NG203."
+              "value": "g3b-4",
+              "label": "G3b\u20134 (eGFR 15\u201344)",
+              "guidance": "MANAGEMENT PLAN:\nMonitor 6\u201312 monthly. Anaemia, bone, K+. Refer if eGFR <30 or rapid decline. Consider SGLT2i if T2DM. NICE NG203."
+            },
+            {
+              "value": "g5",
+              "label": "G5 (eGFR <15)",
+              "guidance": "MANAGEMENT PLAN:\nRefer nephrology. Plan for RRT. Manage complications. NICE NG203."
             }
           ]
         }
@@ -1068,20 +1165,40 @@
       ],
       "steps": [
         {
-          "id": "headache",
-          "question": "Type and action",
+          "id": "migraine-acute",
+          "question": "1. Acute Treatment",
           "type": "dropdown",
           "options": [
             {
-              "value": "migraine-acute",
-              "label": "Acute migraine",
-              "guidance": "MANAGEMENT PLAN:\nTriptan + NSAID (or paracetamol). Anti-emetic if nausea. Avoid opiates. NICE NG150."
+              "label": "First-line: Stratified Care",
+              "guidance": "MANAGEMENT PLAN (BASH Guidelines):\n1. Combined Approach: Soluble Aspirin (900mg) or Naproxen (500mg) + Triptan (e.g. Sumatriptan 50-100mg) + Prokinetic Anti-emetic (Metoclopramide 10mg).\n2. Note: Treat early at onset of headache, not aura. Avoid opioids (risk of Medication Overuse Headache)."
             },
             {
-              "value": "migraine-prophylaxis",
-              "label": "Prophylaxis (\u22658 days/month)",
-              "guidance": "MANAGEMENT PLAN:\nPropranolol or topiramate. Consider referral if not controlled. NICE NG150."
+              "label": "Triptan Failure",
+              "guidance": "MANAGEMENT PLAN:\n1. Switch: Trial different triptan or different formulation (e.g. Sumatriptan Nasal Spray or SC).\n2. MOH: Review for Medication Overuse Headache if using triptans \u2265 10 days/month."
+            }
+          ]
+        },
+        {
+          "id": "migraine-prophylaxis",
+          "question": "2. Prophylaxis (Preventative)",
+          "type": "dropdown",
+          "options": [
+            {
+              "label": "Initial Choice (Indicated if \u22652 attacks/month)",
+              "guidance": "MANAGEMENT PLAN (BASH/RCP):\n1. First-line choices: Propranolol (80-160mg), Amitriptyline (10-50mg nocte), or Topiramate (titrate to 50mg-100mg - warn about teratogenicity/birth control).\n2. Second-line: Candesartan (8-16mg) - widely used by neurologists off-label but supported by evidence."
             },
+            {
+              "label": "Specialist Interventions (Consultant Care)",
+              "guidance": "MANAGEMENT PLAN:\n1. CGRP Monoclonals (e.g. Erenumab, Fremanezumab): Indicated if \u22654 migraine days/month and failure of 3 oral preventatives. NICE TA.\n2. Botox: Protocolized 31-site injection (PREEMPT) if chronic migraine (\u226515 headache days/month, 8 being migraine)."
+            }
+          ]
+        },
+        {
+          "id": "tension",
+          "question": "3. Other Headaches",
+          "type": "dropdown",
+          "options": [
             {
               "value": "tension",
               "label": "Tension-type",
@@ -1123,30 +1240,27 @@
     },
     {
       "keywords": [
-        "ckd",
-        "chronic kidney",
-        "kidney disease"
+        "red eye",
+        "eye pain",
+        "vision loss"
       ],
       "steps": [
         {
-          "id": "ckd",
-          "question": "CKD stage and action",
+          "id": "eye-triage",
+          "question": "1. Urgent Triage (RCOphth)",
           "type": "dropdown",
           "options": [
             {
-              "value": "g3a",
-              "label": "G3a (eGFR 45\u201359)",
-              "guidance": "MANAGEMENT PLAN:\nConfirm with repeat; address CV risk, BP (target <130/80 if diabetic/proteinuric). Avoid nephrotoxics. NICE NG203."
+              "label": "Corneal Ulcer / Keratitis",
+              "guidance": "MANAGEMENT PLAN:\n1. Symptoms: Pain, photophobia, reduced vision, white spot on cornea.\n2. Action: Urgent same-day referral. Stop contact lens use immediately.\n3. Note: High risk of permanent scarring/perforation."
             },
             {
-              "value": "g3b-4",
-              "label": "G3b\u20134 (eGFR 15\u201344)",
-              "guidance": "MANAGEMENT PLAN:\nMonitor 6\u201312 monthly. Anaemia, bone, K+. Refer if eGFR <30 or rapid decline. Consider SGLT2i if T2DM. NICE NG203."
+              "label": "Acute Iritis / Uveitis",
+              "guidance": "MANAGEMENT PLAN:\n1. Symptoms: Deep ache, small or irregular pupil, circumcorneal injection (ciliary flush).\n2. Action: Urgent referral (within 24h). Requires intensive topical steroids + dilating drops (specialist initiation)."
             },
             {
-              "value": "g5",
-              "label": "G5 (eGFR <15)",
-              "guidance": "MANAGEMENT PLAN:\nRefer nephrology. Plan for RRT. Manage complications. NICE NG203."
+              "label": "Non-Urgent (Conjunctivitis)",
+              "guidance": "MANAGEMENT PLAN:\n1. Viral/Allergic: Supportive care; cold compresses.\n2. Bacterial: Topical Chloramphenicol 0.5% drops 2-hourly for 2 days, then qds. Follow local antibiotic guidelines."
             }
           ]
         }
@@ -1642,7 +1756,7 @@
             },
             {
               "value": "non-visible",
-              "label": "Non-visible (\u226545)",
+              "label": "Non-visible (\u226545 or risk factors)",
               "guidance": "MANAGEMENT PLAN:\nFBC, U&E, eGFR. Refer 2WW if eGFR <60 or other concern. Otherwise routine referral for cystoscopy/imaging. NICE NG12."
             }
           ]
@@ -1652,25 +1766,38 @@
     {
       "keywords": [
         "bph",
+        "prostate",
         "luts",
-        "lower urinary",
         "benign prostate"
       ],
       "steps": [
         {
-          "id": "bph",
-          "question": "BPH / LUTS",
+          "id": "bph-mgt",
+          "question": "1. Management Ladder (BAUS Guidelines)",
           "type": "dropdown",
           "options": [
             {
-              "value": "medical",
-              "label": "Medical management",
-              "guidance": "MANAGEMENT PLAN:\nAlpha-blocker (tamsulosin 400 mcg OD) for flow. 5-alpha reductase inhibitor (finasteride 5 mg) if enlarged prostate. Combination if both. NICE NG97."
+              "label": "LUTS: Medical 1st-line",
+              "guidance": "MANAGEMENT PLAN:\n1. Alpha-blocker: Tamsulosin 400mcg OD (for rapid flow relief).\n2. 5-ARI: Finasteride 5mg OD (if prostate > 30g). Warn: takes 6 months for effect and reduces PSA by 50%.\n3. Anticholinergic: Add e.g. Solifenacin if storage symptoms (urgency) persist despite alpha-blocker. BAUS."
             },
             {
-              "value": "refer",
-              "label": "Referral",
-              "guidance": "MANAGEMENT PLAN:\nRefer urology: retention, recurrent UTI, stones, renal impairment, failed medical treatment, or suspected cancer. NICE NG97."
+              "label": "Surgical Triggers (Consultant Referral)",
+              "guidance": "MANAGEMENT PLAN:\n1. Criteria: Recurrent urinary retention, bladder stones, haematuria (prostate origin), or renal impairment due to obstruction.\n2. Note: Refer for consideration of TURP, Greenlight Laser, or UroLift. BAUS."
+            }
+          ]
+        },
+        {
+          "id": "scrotal-pain",
+          "question": "2. Acute Scrotal Pain (Triage)",
+          "type": "dropdown",
+          "options": [
+            {
+              "label": "Suspected Torsion (Emergency)",
+              "guidance": "MANAGEMENT PLAN (BAUS):\n1. Presentation: Sudden onset pain, high-riding testis, absent cremasteric reflex.\n2. Action: Immediate Urology referral for exploration (window < 6h). Do not wait for ultrasound if clinical torsion suspected."
+            },
+            {
+              "label": "Epididymo-orchitis (Infection)",
+              "guidance": "MANAGEMENT PLAN:\n1. Treatment: Ceftriaxone 1g IM + Doxycycline 100mg bd for 14 days (if STI risk) OR Ofloxacin 200mg bd for 14 days (UTI association).\n2. Note: Always use STI-base cover in men < 35y."
             }
           ]
         }
@@ -1815,21 +1942,22 @@
     {
       "keywords": [
         "croup",
+        "barking cough",
         "stridor"
       ],
       "steps": [
         {
           "id": "croup-sev",
-          "question": "1. Severity Assessment",
+          "question": "1. Severity & Dose (Consultant Plan)",
           "type": "dropdown",
           "options": [
             {
               "label": "Mild (Croupy cough, no stridor at rest)",
-              "guidance": "MANAGEMENT PLAN:\n1. Steroid: Single dose of Dexamethasone 0.15mg/kg oral (or Prednisolone 1mg/kg).\n2. Advice: Usually self-limiting within 48h. Comfort child. NICE CKS."
+              "guidance": "MANAGEMENT PLAN (RCPCH):\n1. Treatment: Single dose of Dexamethasone (0.15 mg/kg) - can use soluble tablets (e.g. 500mcg/tablet) mixed in water.\n2. Note: All children with croup should receive a steroid dose as it reduces future severity.\n3. Safety-net: Return if stridor at rest or increased work of breathing."
             },
             {
-              "label": "Moderate / Severe (Stridor at rest, recession)",
-              "guidance": "MANAGEMENT PLAN:\n1. Triage: Do not examine throat (risk of epiglottitis).\n2. Referral: Urgent hospital admission. Avoid distress. NICE CKS."
+              "label": "Moderate / Severe (Stridor at rest / Recession)",
+              "guidance": "MANAGEMENT PLAN:\n1. Triage: Immediate hospital referral (A&E). Avoid upsetting the child (no tongue depressors).\n2. Treatment: High-flow Oxygen if SpO2 < 92%; Nebulised Adrenaline 5ml 1:1000 (specialist initiation). RCPCH."
             }
           ]
         }
@@ -1848,7 +1976,7 @@
           "options": [
             {
               "label": "Safe for Home",
-              "guidance": "MANAGEMENT PLAN:\n1. Hydration: Ensure \u2265 50% normal fluid intake. Check wet nappies.\n2. No Meds: Do not use inhalers, steroids, or antibiotics for bronchiolitis.\n3. Safety-net: Return if RR > 60, grunting, or reduced feeding. NICE NG9."
+              "guidance": "MANAGEMENT PLAN (RCPCH):\n1. Hydration: Ensure \u2265 50-75% normal fluid intake. Check for \u22652 wet nappies in 12h.\n2. Admission: Refer if SpO2 < 92% (in air), RR > 70, or apnea reported.\n3. No Meds: Do not use inhalers, steroids, or antibiotics. NICE NG9 / RCPCH."
             },
             {
               "label": "Refer to Hospital",
@@ -2214,25 +2342,43 @@
     },
     {
       "keywords": [
-        "arthritis",
-        "osteoarthritis",
-        "rheumatoid"
+        "rheumatoid arthritis",
+        "inflammatory arthritis",
+        "synovitis"
       ],
       "steps": [
         {
-          "id": "arthritis-type",
-          "question": "Suspected Type",
+          "id": "ra-suspected",
+          "question": "1. Diagnosis & Triage",
           "type": "dropdown",
           "options": [
             {
-              "value": "oa",
-              "label": "Osteoarthritis",
-              "guidance": "MANAGEMENT PLAN:\nDiagnosis: Age \u226545, activity-related joint pain, no/brief morning stiffness (<30m). Management: Exercise, weight loss, topical NSAIDs, education. NICE NG226."
+              "label": "Suspected (Persistent Synovitis)",
+              "guidance": "MANAGEMENT PLAN (Consultant Grade):\n1. Urgency: Urgent referral to Rheumatology (NICE 'Suspected Persistent Synovitis' - targeted within 3 weeks).\n2. Baseline: FBC, CRP, ESR, RF, Anti-CCP, and X-rays of Hands/Feet.\n3. Note: Do not wait for results before referring if clinical suspicion (Squeeze test positive). BSR Guidelines."
             },
             {
-              "value": "ra",
-              "label": "Rheumatoid Arthritis (Suspected)",
-              "guidance": "MANAGEMENT PLAN:\nSuspect if persistent joint synovitis (swelling). Urgent referral (within 3 weeks). Baseline: FBC, CRP, ESR, RF, Anti-CCP, X-rays. Start DMARD only after specialist review. NICE NG100."
+              "label": "Treat-to-Target (Confirmed)",
+              "guidance": "MANAGEMENT PLAN:\n1. First-line DMARD: Methotrexate (weekly + Folic acid) + Bridging Steroids (IM or Oral).\n2. Escalation: Combination DMARDs (Sulfasalazine/Hydroxychloroquine) if not at target (DAS28 < 2.6). BSR."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "keywords": [
+        "ankylosing spondylitis",
+        "axial spondyloarthritis",
+        "axspa"
+      ],
+      "steps": [
+        {
+          "id": "axspa-mgt",
+          "question": "1. Specialist Workup",
+          "type": "dropdown",
+          "options": [
+            {
+              "label": "Suspected (Chronic Back Pain <45y)",
+              "guidance": "MANAGEMENT PLAN (BSR/NICE NG65):\n1. Referral: To Rheumatology if back pain \u22653 months and \u22654 features (NSAID response, waking at night, better with exercise, HLA-B27 positive, or IBD/Psoriasis history).\n2. Imaging: MRI of sacroiliac joints (STIR sequences) is diagnostic for early non-radiographic axSpA."
             }
           ]
         }
