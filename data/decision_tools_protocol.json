@@ -1,6 +1,6 @@
 {
   "source": "Learning library + NICE CKS/NG; management steps from guidelines",
-  "generated": "2026-02-19T20:22:00.234Z",
+  "generated": "2026-02-19T20:26:30.040Z",
   "totalTools": 1920,
   "systems": [
     {
@@ -822,13 +822,44 @@
           "evidence": "Management per NICE CKS and Local formulary.",
           "steps": [
             {
-              "id": "bp-referral",
-              "question": "Referral & Follow-up (Best Practice)",
+              "id": "hf-type",
+              "question": "1. Diagnosis / Type",
               "type": "dropdown",
               "options": [
                 {
-                  "label": "Referral & Safety-netting",
-                  "guidance": "MANAGEMENT PLAN:\n1. Referral: Refer 2WW if malignancy suspected. Urgent referral if clinical compromise. Routine if primary care management fails.\n2. Waiting List: Ensure patient knows how to report deterioration while waiting.\n3. Review: Review and optimize primary care management in the interim."
+                  "label": "Suspected (NT-proBNP > 400 pg/ml)",
+                  "guidance": "MANAGEMENT PLAN:\n1. NT-proBNP > 2000: Urgent Specialist Assessment + Echo within 2 weeks.\n2. NT-proBNP 400-2000: Routine Specialist Assessment + Echo within 6 weeks.\n3. Baseline: 12-lead ECG, CXR, U&E, LFT, FBC, Iron Studies (exclude iron deficiency). NICE NG106."
+                },
+                {
+                  "label": "Confirmed HFrEF (LVEF ≤ 40%)",
+                  "guidance": "MANAGEMENT PLAN (Consultant Plan):\n1. Initiate 'Four Pillars' simultaneously or in rapid sequence.\n2. Diuretics: Furosemide or Bumetanide titrated to euphovolemia.\n3. Cardiac Rehab: Mandatory referral."
+                },
+                {
+                  "label": "Confirmed HFpEF (LVEF > 40%)",
+                  "guidance": "MANAGEMENT PLAN:\n1. Diuresis to symptoms.\n2. Empagliflozin 10mg OD (NICE TA798) to reduce CV death/hospitalization risk.\n3. Strict BP control (Target < 130/80)."
+                }
+              ]
+            },
+            {
+              "id": "hf-pillars",
+              "question": "2. The Four Pillars (Titration)",
+              "type": "dropdown",
+              "options": [
+                {
+                  "label": "1: ACEi/ARB or ARNI",
+                  "guidance": "MANAGEMENT PLAN:\n1. First-line ACEi (Ramipril). If symptomatic on ACEi/ARB, switch to Sacubitril/Valsartan (ENTRESTO).\n2. Monitoring: BP and U&E after each dose escalation. NICE NG106."
+                },
+                {
+                  "label": "2: Beta-Blocker (Bisoprolol/Carvedilol)",
+                  "guidance": "MANAGEMENT PLAN:\n1. Start only when clinically stable. 'Start low, go slow'.\n2. Target: Beta-blockade until heart rate 50-60 bpm if tolerated."
+                },
+                {
+                  "label": "3: MRA (Spironolactone/Eplerenone)",
+                  "guidance": "MANAGEMENT PLAN:\n1. Indication: NYHA Class II-IV symptoms.\n2. Review: mandatory K+ check at 1, 4, 8, and 12 weeks."
+                },
+                {
+                  "label": "4: SGLT2 Inhibitor (Dapagliflozin/Empagliflozin)",
+                  "guidance": "MANAGEMENT PLAN:\n1. Add 10mg OD regardless of diabetic status. Significant mortality benefit."
                 }
               ]
             }
@@ -1289,35 +1320,39 @@
               "type": "dropdown",
               "options": [
                 {
-                  "label": "Suspected (Raised NT-proBNP)",
-                  "guidance": "MANAGEMENT PLAN:\n1. NT-proBNP > 2000: Urgent Specialist Assessment / Echo (within 2 weeks).\n2. NT-proBNP 400-2000: Routine Specialist Assessment / Echo (within 6 weeks).\n3. NT-proBNP < 400: Heart Failure unlikely. NICE NG106."
+                  "label": "Suspected (NT-proBNP > 400 pg/ml)",
+                  "guidance": "MANAGEMENT PLAN:\n1. NT-proBNP > 2000: Urgent Specialist Assessment + Echo within 2 weeks.\n2. NT-proBNP 400-2000: Routine Specialist Assessment + Echo within 6 weeks.\n3. Baseline: 12-lead ECG, CXR, U&E, LFT, FBC, Iron Studies (exclude iron deficiency). NICE NG106."
                 },
                 {
-                  "label": "Confirmed HFrEF (EF ≤ 40%)",
-                  "guidance": "MANAGEMENT PLAN:\n1. Start 'Four Pillars' as soon as tolerated.\n2. Review symptoms (NYHA class). NICE NG106."
+                  "label": "Confirmed HFrEF (LVEF ≤ 40%)",
+                  "guidance": "MANAGEMENT PLAN (Consultant Plan):\n1. Initiate 'Four Pillars' simultaneously or in rapid sequence.\n2. Diuretics: Furosemide or Bumetanide titrated to euphovolemia.\n3. Cardiac Rehab: Mandatory referral."
                 },
                 {
-                  "label": "Confirmed HFpEF (EF > 40%)",
-                  "guidance": "MANAGEMENT PLAN:\n1. Manage comorbidities (Hypertension, AF, Diabetes).\n2. Diuretics for fluid overload. NICE NG106."
+                  "label": "Confirmed HFpEF (LVEF > 40%)",
+                  "guidance": "MANAGEMENT PLAN:\n1. Diuresis to symptoms.\n2. Empagliflozin 10mg OD (NICE TA798) to reduce CV death/hospitalization risk.\n3. Strict BP control (Target < 130/80)."
                 }
               ]
             },
             {
               "id": "hf-pillars",
-              "question": "2. The Four Pillars (HFrEF)",
+              "question": "2. The Four Pillars (Titration)",
               "type": "dropdown",
               "options": [
                 {
-                  "label": "First-line: ACEi/ARB + Beta Blocker",
-                  "guidance": "MANAGEMENT PLAN:\n1. Titrate up every 2 weeks unless limited by BP/Pulse.\n2. ACEi (e.g. Ramipril) -> Switch to ARNI (Entresto) if symptoms persist. NICE NG106."
+                  "label": "1: ACEi/ARB or ARNI",
+                  "guidance": "MANAGEMENT PLAN:\n1. First-line ACEi (Ramipril). If symptomatic on ACEi/ARB, switch to Sacubitril/Valsartan (ENTRESTO).\n2. Monitoring: BP and U&E after each dose escalation. NICE NG106."
                 },
                 {
-                  "label": "MRA (Mineralocorticoid Receptor Antagonist)",
-                  "guidance": "MANAGEMENT PLAN:\n1. Eplerenone or Spironolactone. Monitor U&E (K+) closely. NICE NG106."
+                  "label": "2: Beta-Blocker (Bisoprolol/Carvedilol)",
+                  "guidance": "MANAGEMENT PLAN:\n1. Start only when clinically stable. 'Start low, go slow'.\n2. Target: Beta-blockade until heart rate 50-60 bpm if tolerated."
                 },
                 {
-                  "label": "SGLT2 Inhibitor",
-                  "guidance": "MANAGEMENT PLAN:\n1. Dapagliflozin or Empagliflozin 10mg OD. Does not require titration. NICE NG106."
+                  "label": "3: MRA (Spironolactone/Eplerenone)",
+                  "guidance": "MANAGEMENT PLAN:\n1. Indication: NYHA Class II-IV symptoms.\n2. Review: mandatory K+ check at 1, 4, 8, and 12 weeks."
+                },
+                {
+                  "label": "4: SGLT2 Inhibitor (Dapagliflozin/Empagliflozin)",
+                  "guidance": "MANAGEMENT PLAN:\n1. Add 10mg OD regardless of diabetic status. Significant mortality benefit."
                 }
               ]
             }
@@ -1340,35 +1375,39 @@
               "type": "dropdown",
               "options": [
                 {
-                  "label": "Suspected (Raised NT-proBNP)",
-                  "guidance": "MANAGEMENT PLAN:\n1. NT-proBNP > 2000: Urgent Specialist Assessment / Echo (within 2 weeks).\n2. NT-proBNP 400-2000: Routine Specialist Assessment / Echo (within 6 weeks).\n3. NT-proBNP < 400: Heart Failure unlikely. NICE NG106."
+                  "label": "Suspected (NT-proBNP > 400 pg/ml)",
+                  "guidance": "MANAGEMENT PLAN:\n1. NT-proBNP > 2000: Urgent Specialist Assessment + Echo within 2 weeks.\n2. NT-proBNP 400-2000: Routine Specialist Assessment + Echo within 6 weeks.\n3. Baseline: 12-lead ECG, CXR, U&E, LFT, FBC, Iron Studies (exclude iron deficiency). NICE NG106."
                 },
                 {
-                  "label": "Confirmed HFrEF (EF ≤ 40%)",
-                  "guidance": "MANAGEMENT PLAN:\n1. Start 'Four Pillars' as soon as tolerated.\n2. Review symptoms (NYHA class). NICE NG106."
+                  "label": "Confirmed HFrEF (LVEF ≤ 40%)",
+                  "guidance": "MANAGEMENT PLAN (Consultant Plan):\n1. Initiate 'Four Pillars' simultaneously or in rapid sequence.\n2. Diuretics: Furosemide or Bumetanide titrated to euphovolemia.\n3. Cardiac Rehab: Mandatory referral."
                 },
                 {
-                  "label": "Confirmed HFpEF (EF > 40%)",
-                  "guidance": "MANAGEMENT PLAN:\n1. Manage comorbidities (Hypertension, AF, Diabetes).\n2. Diuretics for fluid overload. NICE NG106."
+                  "label": "Confirmed HFpEF (LVEF > 40%)",
+                  "guidance": "MANAGEMENT PLAN:\n1. Diuresis to symptoms.\n2. Empagliflozin 10mg OD (NICE TA798) to reduce CV death/hospitalization risk.\n3. Strict BP control (Target < 130/80)."
                 }
               ]
             },
             {
               "id": "hf-pillars",
-              "question": "2. The Four Pillars (HFrEF)",
+              "question": "2. The Four Pillars (Titration)",
               "type": "dropdown",
               "options": [
                 {
-                  "label": "First-line: ACEi/ARB + Beta Blocker",
-                  "guidance": "MANAGEMENT PLAN:\n1. Titrate up every 2 weeks unless limited by BP/Pulse.\n2. ACEi (e.g. Ramipril) -> Switch to ARNI (Entresto) if symptoms persist. NICE NG106."
+                  "label": "1: ACEi/ARB or ARNI",
+                  "guidance": "MANAGEMENT PLAN:\n1. First-line ACEi (Ramipril). If symptomatic on ACEi/ARB, switch to Sacubitril/Valsartan (ENTRESTO).\n2. Monitoring: BP and U&E after each dose escalation. NICE NG106."
                 },
                 {
-                  "label": "MRA (Mineralocorticoid Receptor Antagonist)",
-                  "guidance": "MANAGEMENT PLAN:\n1. Eplerenone or Spironolactone. Monitor U&E (K+) closely. NICE NG106."
+                  "label": "2: Beta-Blocker (Bisoprolol/Carvedilol)",
+                  "guidance": "MANAGEMENT PLAN:\n1. Start only when clinically stable. 'Start low, go slow'.\n2. Target: Beta-blockade until heart rate 50-60 bpm if tolerated."
                 },
                 {
-                  "label": "SGLT2 Inhibitor",
-                  "guidance": "MANAGEMENT PLAN:\n1. Dapagliflozin or Empagliflozin 10mg OD. Does not require titration. NICE NG106."
+                  "label": "3: MRA (Spironolactone/Eplerenone)",
+                  "guidance": "MANAGEMENT PLAN:\n1. Indication: NYHA Class II-IV symptoms.\n2. Review: mandatory K+ check at 1, 4, 8, and 12 weeks."
+                },
+                {
+                  "label": "4: SGLT2 Inhibitor (Dapagliflozin/Empagliflozin)",
+                  "guidance": "MANAGEMENT PLAN:\n1. Add 10mg OD regardless of diabetic status. Significant mortality benefit."
                 }
               ]
             }
@@ -1391,35 +1430,39 @@
               "type": "dropdown",
               "options": [
                 {
-                  "label": "Suspected (Raised NT-proBNP)",
-                  "guidance": "MANAGEMENT PLAN:\n1. NT-proBNP > 2000: Urgent Specialist Assessment / Echo (within 2 weeks).\n2. NT-proBNP 400-2000: Routine Specialist Assessment / Echo (within 6 weeks).\n3. NT-proBNP < 400: Heart Failure unlikely. NICE NG106."
+                  "label": "Suspected (NT-proBNP > 400 pg/ml)",
+                  "guidance": "MANAGEMENT PLAN:\n1. NT-proBNP > 2000: Urgent Specialist Assessment + Echo within 2 weeks.\n2. NT-proBNP 400-2000: Routine Specialist Assessment + Echo within 6 weeks.\n3. Baseline: 12-lead ECG, CXR, U&E, LFT, FBC, Iron Studies (exclude iron deficiency). NICE NG106."
                 },
                 {
-                  "label": "Confirmed HFrEF (EF ≤ 40%)",
-                  "guidance": "MANAGEMENT PLAN:\n1. Start 'Four Pillars' as soon as tolerated.\n2. Review symptoms (NYHA class). NICE NG106."
+                  "label": "Confirmed HFrEF (LVEF ≤ 40%)",
+                  "guidance": "MANAGEMENT PLAN (Consultant Plan):\n1. Initiate 'Four Pillars' simultaneously or in rapid sequence.\n2. Diuretics: Furosemide or Bumetanide titrated to euphovolemia.\n3. Cardiac Rehab: Mandatory referral."
                 },
                 {
-                  "label": "Confirmed HFpEF (EF > 40%)",
-                  "guidance": "MANAGEMENT PLAN:\n1. Manage comorbidities (Hypertension, AF, Diabetes).\n2. Diuretics for fluid overload. NICE NG106."
+                  "label": "Confirmed HFpEF (LVEF > 40%)",
+                  "guidance": "MANAGEMENT PLAN:\n1. Diuresis to symptoms.\n2. Empagliflozin 10mg OD (NICE TA798) to reduce CV death/hospitalization risk.\n3. Strict BP control (Target < 130/80)."
                 }
               ]
             },
             {
               "id": "hf-pillars",
-              "question": "2. The Four Pillars (HFrEF)",
+              "question": "2. The Four Pillars (Titration)",
               "type": "dropdown",
               "options": [
                 {
-                  "label": "First-line: ACEi/ARB + Beta Blocker",
-                  "guidance": "MANAGEMENT PLAN:\n1. Titrate up every 2 weeks unless limited by BP/Pulse.\n2. ACEi (e.g. Ramipril) -> Switch to ARNI (Entresto) if symptoms persist. NICE NG106."
+                  "label": "1: ACEi/ARB or ARNI",
+                  "guidance": "MANAGEMENT PLAN:\n1. First-line ACEi (Ramipril). If symptomatic on ACEi/ARB, switch to Sacubitril/Valsartan (ENTRESTO).\n2. Monitoring: BP and U&E after each dose escalation. NICE NG106."
                 },
                 {
-                  "label": "MRA (Mineralocorticoid Receptor Antagonist)",
-                  "guidance": "MANAGEMENT PLAN:\n1. Eplerenone or Spironolactone. Monitor U&E (K+) closely. NICE NG106."
+                  "label": "2: Beta-Blocker (Bisoprolol/Carvedilol)",
+                  "guidance": "MANAGEMENT PLAN:\n1. Start only when clinically stable. 'Start low, go slow'.\n2. Target: Beta-blockade until heart rate 50-60 bpm if tolerated."
                 },
                 {
-                  "label": "SGLT2 Inhibitor",
-                  "guidance": "MANAGEMENT PLAN:\n1. Dapagliflozin or Empagliflozin 10mg OD. Does not require titration. NICE NG106."
+                  "label": "3: MRA (Spironolactone/Eplerenone)",
+                  "guidance": "MANAGEMENT PLAN:\n1. Indication: NYHA Class II-IV symptoms.\n2. Review: mandatory K+ check at 1, 4, 8, and 12 weeks."
+                },
+                {
+                  "label": "4: SGLT2 Inhibitor (Dapagliflozin/Empagliflozin)",
+                  "guidance": "MANAGEMENT PLAN:\n1. Add 10mg OD regardless of diabetic status. Significant mortality benefit."
                 }
               ]
             }
@@ -1442,35 +1485,39 @@
               "type": "dropdown",
               "options": [
                 {
-                  "label": "Suspected (Raised NT-proBNP)",
-                  "guidance": "MANAGEMENT PLAN:\n1. NT-proBNP > 2000: Urgent Specialist Assessment / Echo (within 2 weeks).\n2. NT-proBNP 400-2000: Routine Specialist Assessment / Echo (within 6 weeks).\n3. NT-proBNP < 400: Heart Failure unlikely. NICE NG106."
+                  "label": "Suspected (NT-proBNP > 400 pg/ml)",
+                  "guidance": "MANAGEMENT PLAN:\n1. NT-proBNP > 2000: Urgent Specialist Assessment + Echo within 2 weeks.\n2. NT-proBNP 400-2000: Routine Specialist Assessment + Echo within 6 weeks.\n3. Baseline: 12-lead ECG, CXR, U&E, LFT, FBC, Iron Studies (exclude iron deficiency). NICE NG106."
                 },
                 {
-                  "label": "Confirmed HFrEF (EF ≤ 40%)",
-                  "guidance": "MANAGEMENT PLAN:\n1. Start 'Four Pillars' as soon as tolerated.\n2. Review symptoms (NYHA class). NICE NG106."
+                  "label": "Confirmed HFrEF (LVEF ≤ 40%)",
+                  "guidance": "MANAGEMENT PLAN (Consultant Plan):\n1. Initiate 'Four Pillars' simultaneously or in rapid sequence.\n2. Diuretics: Furosemide or Bumetanide titrated to euphovolemia.\n3. Cardiac Rehab: Mandatory referral."
                 },
                 {
-                  "label": "Confirmed HFpEF (EF > 40%)",
-                  "guidance": "MANAGEMENT PLAN:\n1. Manage comorbidities (Hypertension, AF, Diabetes).\n2. Diuretics for fluid overload. NICE NG106."
+                  "label": "Confirmed HFpEF (LVEF > 40%)",
+                  "guidance": "MANAGEMENT PLAN:\n1. Diuresis to symptoms.\n2. Empagliflozin 10mg OD (NICE TA798) to reduce CV death/hospitalization risk.\n3. Strict BP control (Target < 130/80)."
                 }
               ]
             },
             {
               "id": "hf-pillars",
-              "question": "2. The Four Pillars (HFrEF)",
+              "question": "2. The Four Pillars (Titration)",
               "type": "dropdown",
               "options": [
                 {
-                  "label": "First-line: ACEi/ARB + Beta Blocker",
-                  "guidance": "MANAGEMENT PLAN:\n1. Titrate up every 2 weeks unless limited by BP/Pulse.\n2. ACEi (e.g. Ramipril) -> Switch to ARNI (Entresto) if symptoms persist. NICE NG106."
+                  "label": "1: ACEi/ARB or ARNI",
+                  "guidance": "MANAGEMENT PLAN:\n1. First-line ACEi (Ramipril). If symptomatic on ACEi/ARB, switch to Sacubitril/Valsartan (ENTRESTO).\n2. Monitoring: BP and U&E after each dose escalation. NICE NG106."
                 },
                 {
-                  "label": "MRA (Mineralocorticoid Receptor Antagonist)",
-                  "guidance": "MANAGEMENT PLAN:\n1. Eplerenone or Spironolactone. Monitor U&E (K+) closely. NICE NG106."
+                  "label": "2: Beta-Blocker (Bisoprolol/Carvedilol)",
+                  "guidance": "MANAGEMENT PLAN:\n1. Start only when clinically stable. 'Start low, go slow'.\n2. Target: Beta-blockade until heart rate 50-60 bpm if tolerated."
                 },
                 {
-                  "label": "SGLT2 Inhibitor",
-                  "guidance": "MANAGEMENT PLAN:\n1. Dapagliflozin or Empagliflozin 10mg OD. Does not require titration. NICE NG106."
+                  "label": "3: MRA (Spironolactone/Eplerenone)",
+                  "guidance": "MANAGEMENT PLAN:\n1. Indication: NYHA Class II-IV symptoms.\n2. Review: mandatory K+ check at 1, 4, 8, and 12 weeks."
+                },
+                {
+                  "label": "4: SGLT2 Inhibitor (Dapagliflozin/Empagliflozin)",
+                  "guidance": "MANAGEMENT PLAN:\n1. Add 10mg OD regardless of diabetic status. Significant mortality benefit."
                 }
               ]
             }
@@ -1493,35 +1540,39 @@
               "type": "dropdown",
               "options": [
                 {
-                  "label": "Suspected (Raised NT-proBNP)",
-                  "guidance": "MANAGEMENT PLAN:\n1. NT-proBNP > 2000: Urgent Specialist Assessment / Echo (within 2 weeks).\n2. NT-proBNP 400-2000: Routine Specialist Assessment / Echo (within 6 weeks).\n3. NT-proBNP < 400: Heart Failure unlikely. NICE NG106."
+                  "label": "Suspected (NT-proBNP > 400 pg/ml)",
+                  "guidance": "MANAGEMENT PLAN:\n1. NT-proBNP > 2000: Urgent Specialist Assessment + Echo within 2 weeks.\n2. NT-proBNP 400-2000: Routine Specialist Assessment + Echo within 6 weeks.\n3. Baseline: 12-lead ECG, CXR, U&E, LFT, FBC, Iron Studies (exclude iron deficiency). NICE NG106."
                 },
                 {
-                  "label": "Confirmed HFrEF (EF ≤ 40%)",
-                  "guidance": "MANAGEMENT PLAN:\n1. Start 'Four Pillars' as soon as tolerated.\n2. Review symptoms (NYHA class). NICE NG106."
+                  "label": "Confirmed HFrEF (LVEF ≤ 40%)",
+                  "guidance": "MANAGEMENT PLAN (Consultant Plan):\n1. Initiate 'Four Pillars' simultaneously or in rapid sequence.\n2. Diuretics: Furosemide or Bumetanide titrated to euphovolemia.\n3. Cardiac Rehab: Mandatory referral."
                 },
                 {
-                  "label": "Confirmed HFpEF (EF > 40%)",
-                  "guidance": "MANAGEMENT PLAN:\n1. Manage comorbidities (Hypertension, AF, Diabetes).\n2. Diuretics for fluid overload. NICE NG106."
+                  "label": "Confirmed HFpEF (LVEF > 40%)",
+                  "guidance": "MANAGEMENT PLAN:\n1. Diuresis to symptoms.\n2. Empagliflozin 10mg OD (NICE TA798) to reduce CV death/hospitalization risk.\n3. Strict BP control (Target < 130/80)."
                 }
               ]
             },
             {
               "id": "hf-pillars",
-              "question": "2. The Four Pillars (HFrEF)",
+              "question": "2. The Four Pillars (Titration)",
               "type": "dropdown",
               "options": [
                 {
-                  "label": "First-line: ACEi/ARB + Beta Blocker",
-                  "guidance": "MANAGEMENT PLAN:\n1. Titrate up every 2 weeks unless limited by BP/Pulse.\n2. ACEi (e.g. Ramipril) -> Switch to ARNI (Entresto) if symptoms persist. NICE NG106."
+                  "label": "1: ACEi/ARB or ARNI",
+                  "guidance": "MANAGEMENT PLAN:\n1. First-line ACEi (Ramipril). If symptomatic on ACEi/ARB, switch to Sacubitril/Valsartan (ENTRESTO).\n2. Monitoring: BP and U&E after each dose escalation. NICE NG106."
                 },
                 {
-                  "label": "MRA (Mineralocorticoid Receptor Antagonist)",
-                  "guidance": "MANAGEMENT PLAN:\n1. Eplerenone or Spironolactone. Monitor U&E (K+) closely. NICE NG106."
+                  "label": "2: Beta-Blocker (Bisoprolol/Carvedilol)",
+                  "guidance": "MANAGEMENT PLAN:\n1. Start only when clinically stable. 'Start low, go slow'.\n2. Target: Beta-blockade until heart rate 50-60 bpm if tolerated."
                 },
                 {
-                  "label": "SGLT2 Inhibitor",
-                  "guidance": "MANAGEMENT PLAN:\n1. Dapagliflozin or Empagliflozin 10mg OD. Does not require titration. NICE NG106."
+                  "label": "3: MRA (Spironolactone/Eplerenone)",
+                  "guidance": "MANAGEMENT PLAN:\n1. Indication: NYHA Class II-IV symptoms.\n2. Review: mandatory K+ check at 1, 4, 8, and 12 weeks."
+                },
+                {
+                  "label": "4: SGLT2 Inhibitor (Dapagliflozin/Empagliflozin)",
+                  "guidance": "MANAGEMENT PLAN:\n1. Add 10mg OD regardless of diabetic status. Significant mortality benefit."
                 }
               ]
             }
@@ -1544,35 +1595,39 @@
               "type": "dropdown",
               "options": [
                 {
-                  "label": "Suspected (Raised NT-proBNP)",
-                  "guidance": "MANAGEMENT PLAN:\n1. NT-proBNP > 2000: Urgent Specialist Assessment / Echo (within 2 weeks).\n2. NT-proBNP 400-2000: Routine Specialist Assessment / Echo (within 6 weeks).\n3. NT-proBNP < 400: Heart Failure unlikely. NICE NG106."
+                  "label": "Suspected (NT-proBNP > 400 pg/ml)",
+                  "guidance": "MANAGEMENT PLAN:\n1. NT-proBNP > 2000: Urgent Specialist Assessment + Echo within 2 weeks.\n2. NT-proBNP 400-2000: Routine Specialist Assessment + Echo within 6 weeks.\n3. Baseline: 12-lead ECG, CXR, U&E, LFT, FBC, Iron Studies (exclude iron deficiency). NICE NG106."
                 },
                 {
-                  "label": "Confirmed HFrEF (EF ≤ 40%)",
-                  "guidance": "MANAGEMENT PLAN:\n1. Start 'Four Pillars' as soon as tolerated.\n2. Review symptoms (NYHA class). NICE NG106."
+                  "label": "Confirmed HFrEF (LVEF ≤ 40%)",
+                  "guidance": "MANAGEMENT PLAN (Consultant Plan):\n1. Initiate 'Four Pillars' simultaneously or in rapid sequence.\n2. Diuretics: Furosemide or Bumetanide titrated to euphovolemia.\n3. Cardiac Rehab: Mandatory referral."
                 },
                 {
-                  "label": "Confirmed HFpEF (EF > 40%)",
-                  "guidance": "MANAGEMENT PLAN:\n1. Manage comorbidities (Hypertension, AF, Diabetes).\n2. Diuretics for fluid overload. NICE NG106."
+                  "label": "Confirmed HFpEF (LVEF > 40%)",
+                  "guidance": "MANAGEMENT PLAN:\n1. Diuresis to symptoms.\n2. Empagliflozin 10mg OD (NICE TA798) to reduce CV death/hospitalization risk.\n3. Strict BP control (Target < 130/80)."
                 }
               ]
             },
             {
               "id": "hf-pillars",
-              "question": "2. The Four Pillars (HFrEF)",
+              "question": "2. The Four Pillars (Titration)",
               "type": "dropdown",
               "options": [
                 {
-                  "label": "First-line: ACEi/ARB + Beta Blocker",
-                  "guidance": "MANAGEMENT PLAN:\n1. Titrate up every 2 weeks unless limited by BP/Pulse.\n2. ACEi (e.g. Ramipril) -> Switch to ARNI (Entresto) if symptoms persist. NICE NG106."
+                  "label": "1: ACEi/ARB or ARNI",
+                  "guidance": "MANAGEMENT PLAN:\n1. First-line ACEi (Ramipril). If symptomatic on ACEi/ARB, switch to Sacubitril/Valsartan (ENTRESTO).\n2. Monitoring: BP and U&E after each dose escalation. NICE NG106."
                 },
                 {
-                  "label": "MRA (Mineralocorticoid Receptor Antagonist)",
-                  "guidance": "MANAGEMENT PLAN:\n1. Eplerenone or Spironolactone. Monitor U&E (K+) closely. NICE NG106."
+                  "label": "2: Beta-Blocker (Bisoprolol/Carvedilol)",
+                  "guidance": "MANAGEMENT PLAN:\n1. Start only when clinically stable. 'Start low, go slow'.\n2. Target: Beta-blockade until heart rate 50-60 bpm if tolerated."
                 },
                 {
-                  "label": "SGLT2 Inhibitor",
-                  "guidance": "MANAGEMENT PLAN:\n1. Dapagliflozin or Empagliflozin 10mg OD. Does not require titration. NICE NG106."
+                  "label": "3: MRA (Spironolactone/Eplerenone)",
+                  "guidance": "MANAGEMENT PLAN:\n1. Indication: NYHA Class II-IV symptoms.\n2. Review: mandatory K+ check at 1, 4, 8, and 12 weeks."
+                },
+                {
+                  "label": "4: SGLT2 Inhibitor (Dapagliflozin/Empagliflozin)",
+                  "guidance": "MANAGEMENT PLAN:\n1. Add 10mg OD regardless of diabetic status. Significant mortality benefit."
                 }
               ]
             }
@@ -1593,35 +1648,39 @@
               "type": "dropdown",
               "options": [
                 {
-                  "label": "Suspected (Raised NT-proBNP)",
-                  "guidance": "MANAGEMENT PLAN:\n1. NT-proBNP > 2000: Urgent Specialist Assessment / Echo (within 2 weeks).\n2. NT-proBNP 400-2000: Routine Specialist Assessment / Echo (within 6 weeks).\n3. NT-proBNP < 400: Heart Failure unlikely. NICE NG106."
+                  "label": "Suspected (NT-proBNP > 400 pg/ml)",
+                  "guidance": "MANAGEMENT PLAN:\n1. NT-proBNP > 2000: Urgent Specialist Assessment + Echo within 2 weeks.\n2. NT-proBNP 400-2000: Routine Specialist Assessment + Echo within 6 weeks.\n3. Baseline: 12-lead ECG, CXR, U&E, LFT, FBC, Iron Studies (exclude iron deficiency). NICE NG106."
                 },
                 {
-                  "label": "Confirmed HFrEF (EF ≤ 40%)",
-                  "guidance": "MANAGEMENT PLAN:\n1. Start 'Four Pillars' as soon as tolerated.\n2. Review symptoms (NYHA class). NICE NG106."
+                  "label": "Confirmed HFrEF (LVEF ≤ 40%)",
+                  "guidance": "MANAGEMENT PLAN (Consultant Plan):\n1. Initiate 'Four Pillars' simultaneously or in rapid sequence.\n2. Diuretics: Furosemide or Bumetanide titrated to euphovolemia.\n3. Cardiac Rehab: Mandatory referral."
                 },
                 {
-                  "label": "Confirmed HFpEF (EF > 40%)",
-                  "guidance": "MANAGEMENT PLAN:\n1. Manage comorbidities (Hypertension, AF, Diabetes).\n2. Diuretics for fluid overload. NICE NG106."
+                  "label": "Confirmed HFpEF (LVEF > 40%)",
+                  "guidance": "MANAGEMENT PLAN:\n1. Diuresis to symptoms.\n2. Empagliflozin 10mg OD (NICE TA798) to reduce CV death/hospitalization risk.\n3. Strict BP control (Target < 130/80)."
                 }
               ]
             },
             {
               "id": "hf-pillars",
-              "question": "2. The Four Pillars (HFrEF)",
+              "question": "2. The Four Pillars (Titration)",
               "type": "dropdown",
               "options": [
                 {
-                  "label": "First-line: ACEi/ARB + Beta Blocker",
-                  "guidance": "MANAGEMENT PLAN:\n1. Titrate up every 2 weeks unless limited by BP/Pulse.\n2. ACEi (e.g. Ramipril) -> Switch to ARNI (Entresto) if symptoms persist. NICE NG106."
+                  "label": "1: ACEi/ARB or ARNI",
+                  "guidance": "MANAGEMENT PLAN:\n1. First-line ACEi (Ramipril). If symptomatic on ACEi/ARB, switch to Sacubitril/Valsartan (ENTRESTO).\n2. Monitoring: BP and U&E after each dose escalation. NICE NG106."
                 },
                 {
-                  "label": "MRA (Mineralocorticoid Receptor Antagonist)",
-                  "guidance": "MANAGEMENT PLAN:\n1. Eplerenone or Spironolactone. Monitor U&E (K+) closely. NICE NG106."
+                  "label": "2: Beta-Blocker (Bisoprolol/Carvedilol)",
+                  "guidance": "MANAGEMENT PLAN:\n1. Start only when clinically stable. 'Start low, go slow'.\n2. Target: Beta-blockade until heart rate 50-60 bpm if tolerated."
                 },
                 {
-                  "label": "SGLT2 Inhibitor",
-                  "guidance": "MANAGEMENT PLAN:\n1. Dapagliflozin or Empagliflozin 10mg OD. Does not require titration. NICE NG106."
+                  "label": "3: MRA (Spironolactone/Eplerenone)",
+                  "guidance": "MANAGEMENT PLAN:\n1. Indication: NYHA Class II-IV symptoms.\n2. Review: mandatory K+ check at 1, 4, 8, and 12 weeks."
+                },
+                {
+                  "label": "4: SGLT2 Inhibitor (Dapagliflozin/Empagliflozin)",
+                  "guidance": "MANAGEMENT PLAN:\n1. Add 10mg OD regardless of diabetic status. Significant mortality benefit."
                 }
               ]
             }
@@ -2379,14 +2438,44 @@
           "evidence": "Management per NICE CKS and Local formulary.",
           "steps": [
             {
-              "id": "guidance",
-              "question": "Clinical Guidance (Best Practice)",
+              "id": "hf-type",
+              "question": "1. Diagnosis / Type",
               "type": "dropdown",
               "options": [
                 {
-                  "value": "standard",
-                  "label": "Management Overview",
-                  "guidance": "MANAGEMENT PLAN:\n1. Assessment: Full clinical assessment to exclude red flags.\n2. Action: Refer to local clinical formulary for specific pharmacotherapy.\n3. Safety-net: Provide robust safety-netting advice.\n4. Follow-up: Arrange review based on clinical findings."
+                  "label": "Suspected (NT-proBNP > 400 pg/ml)",
+                  "guidance": "MANAGEMENT PLAN:\n1. NT-proBNP > 2000: Urgent Specialist Assessment + Echo within 2 weeks.\n2. NT-proBNP 400-2000: Routine Specialist Assessment + Echo within 6 weeks.\n3. Baseline: 12-lead ECG, CXR, U&E, LFT, FBC, Iron Studies (exclude iron deficiency). NICE NG106."
+                },
+                {
+                  "label": "Confirmed HFrEF (LVEF ≤ 40%)",
+                  "guidance": "MANAGEMENT PLAN (Consultant Plan):\n1. Initiate 'Four Pillars' simultaneously or in rapid sequence.\n2. Diuretics: Furosemide or Bumetanide titrated to euphovolemia.\n3. Cardiac Rehab: Mandatory referral."
+                },
+                {
+                  "label": "Confirmed HFpEF (LVEF > 40%)",
+                  "guidance": "MANAGEMENT PLAN:\n1. Diuresis to symptoms.\n2. Empagliflozin 10mg OD (NICE TA798) to reduce CV death/hospitalization risk.\n3. Strict BP control (Target < 130/80)."
+                }
+              ]
+            },
+            {
+              "id": "hf-pillars",
+              "question": "2. The Four Pillars (Titration)",
+              "type": "dropdown",
+              "options": [
+                {
+                  "label": "1: ACEi/ARB or ARNI",
+                  "guidance": "MANAGEMENT PLAN:\n1. First-line ACEi (Ramipril). If symptomatic on ACEi/ARB, switch to Sacubitril/Valsartan (ENTRESTO).\n2. Monitoring: BP and U&E after each dose escalation. NICE NG106."
+                },
+                {
+                  "label": "2: Beta-Blocker (Bisoprolol/Carvedilol)",
+                  "guidance": "MANAGEMENT PLAN:\n1. Start only when clinically stable. 'Start low, go slow'.\n2. Target: Beta-blockade until heart rate 50-60 bpm if tolerated."
+                },
+                {
+                  "label": "3: MRA (Spironolactone/Eplerenone)",
+                  "guidance": "MANAGEMENT PLAN:\n1. Indication: NYHA Class II-IV symptoms.\n2. Review: mandatory K+ check at 1, 4, 8, and 12 weeks."
+                },
+                {
+                  "label": "4: SGLT2 Inhibitor (Dapagliflozin/Empagliflozin)",
+                  "guidance": "MANAGEMENT PLAN:\n1. Add 10mg OD regardless of diabetic status. Significant mortality benefit."
                 }
               ]
             }
@@ -3393,23 +3482,20 @@
           "steps": [
             {
               "id": "copd-action",
-              "question": "Presentation",
+              "question": "1. Escalation Hierarchy",
               "type": "dropdown",
               "options": [
                 {
-                  "value": "diagnosis",
-                  "label": "Suspected COPD",
-                  "guidance": "MANAGEMENT PLAN:\nSpirometry (post-bronchodilator FEV1/FVC <0.7). Staging by FEV1%. Assess breathlessness (MRC), exacerbations. Exclude asthma. NICE NG115."
+                  "label": "LAMA+LABA (Dual Therapy)",
+                  "guidance": "MANAGEMENT PLAN (Consultant Plan):\n1. First-line for patients with persistent breathlessness or exacerbations despite SABA/LAMA mono.\n2. Inhalers: e.g. Anoro Ellipta, Ultibro Breezhaler, Spiolto Respimat.\n3. Action: Check technique; offer Pulmonary Rehab if MRC ≥ 2. NICE NG115."
                 },
                 {
-                  "value": "stable",
-                  "label": "Stable COPD – step-up",
-                  "guidance": "MANAGEMENT PLAN:\nStep 1: SABA reliever as needed (e.g. Salbutamol / Ventolin). Step 2: add a LAMA (e.g. Tiotropium / Spiriva) or a LABA (e.g. Salmeterol / Serevent). Step 3: Dual therapy (LAMA+LABA e.g. Anoro / Spiolto). Step 4: Triple therapy (LABA+LAMA+ICS e.g. Trelegy / Trimbow) if eosinophils ≥0.3 or ≥2 exacerbations/year. Offer pulmonary rehab. NICE NG115."
+                  "label": "Triple Therapy (LABA+LAMA+ICS)",
+                  "guidance": "MANAGEMENT PLAN (Consultant Plan):\n1. Indication: Blood eosinophil count ≥ 0.3 x10^9/L OR ≥ 1 severe / 2 moderate exacerbations per year.\n2. Inhalers: Trelegy Ellipta or Trimbow.\n3. Risk: Discuss increased risk of pneumonia with ICS use. NICE NG115."
                 },
                 {
-                  "value": "exacerbation",
-                  "label": "Acute exacerbation",
-                  "guidance": "MANAGEMENT PLAN:\nPrednisolone 30 mg 7–14 days. Antibiotic if purulent sputum: doxycycline or amoxicillin (or clarithromycin). Increase bronchodilators. Consider hospital if severe. NICE NG115."
+                  "label": "Refractory / Advanced COPD",
+                  "guidance": "MANAGEMENT PLAN:\n1. Chronic Macrolide: Consider Azithromycin 250mg tiw if non-smoker and frequent exacerbations (requires baseline ECG & LFT).\n2. Oxygen: Assess for LTOT (Long Term Oxygen Therapy) if pO2 < 7.3 kPa stable.\n3. Referral: Lung volume reduction or Transplant assessment."
                 }
               ]
             }
@@ -3429,23 +3515,20 @@
           "steps": [
             {
               "id": "copd-action",
-              "question": "Presentation",
+              "question": "1. Escalation Hierarchy",
               "type": "dropdown",
               "options": [
                 {
-                  "value": "diagnosis",
-                  "label": "Suspected COPD",
-                  "guidance": "MANAGEMENT PLAN:\nSpirometry (post-bronchodilator FEV1/FVC <0.7). Staging by FEV1%. Assess breathlessness (MRC), exacerbations. Exclude asthma. NICE NG115."
+                  "label": "LAMA+LABA (Dual Therapy)",
+                  "guidance": "MANAGEMENT PLAN (Consultant Plan):\n1. First-line for patients with persistent breathlessness or exacerbations despite SABA/LAMA mono.\n2. Inhalers: e.g. Anoro Ellipta, Ultibro Breezhaler, Spiolto Respimat.\n3. Action: Check technique; offer Pulmonary Rehab if MRC ≥ 2. NICE NG115."
                 },
                 {
-                  "value": "stable",
-                  "label": "Stable COPD – step-up",
-                  "guidance": "MANAGEMENT PLAN:\nStep 1: SABA reliever as needed (e.g. Salbutamol / Ventolin). Step 2: add a LAMA (e.g. Tiotropium / Spiriva) or a LABA (e.g. Salmeterol / Serevent). Step 3: Dual therapy (LAMA+LABA e.g. Anoro / Spiolto). Step 4: Triple therapy (LABA+LAMA+ICS e.g. Trelegy / Trimbow) if eosinophils ≥0.3 or ≥2 exacerbations/year. Offer pulmonary rehab. NICE NG115."
+                  "label": "Triple Therapy (LABA+LAMA+ICS)",
+                  "guidance": "MANAGEMENT PLAN (Consultant Plan):\n1. Indication: Blood eosinophil count ≥ 0.3 x10^9/L OR ≥ 1 severe / 2 moderate exacerbations per year.\n2. Inhalers: Trelegy Ellipta or Trimbow.\n3. Risk: Discuss increased risk of pneumonia with ICS use. NICE NG115."
                 },
                 {
-                  "value": "exacerbation",
-                  "label": "Acute exacerbation",
-                  "guidance": "MANAGEMENT PLAN:\nPrednisolone 30 mg 7–14 days. Antibiotic if purulent sputum: doxycycline or amoxicillin (or clarithromycin). Increase bronchodilators. Consider hospital if severe. NICE NG115."
+                  "label": "Refractory / Advanced COPD",
+                  "guidance": "MANAGEMENT PLAN:\n1. Chronic Macrolide: Consider Azithromycin 250mg tiw if non-smoker and frequent exacerbations (requires baseline ECG & LFT).\n2. Oxygen: Assess for LTOT (Long Term Oxygen Therapy) if pO2 < 7.3 kPa stable.\n3. Referral: Lung volume reduction or Transplant assessment."
                 }
               ]
             }
@@ -3465,23 +3548,20 @@
           "steps": [
             {
               "id": "copd-action",
-              "question": "Presentation",
+              "question": "1. Escalation Hierarchy",
               "type": "dropdown",
               "options": [
                 {
-                  "value": "diagnosis",
-                  "label": "Suspected COPD",
-                  "guidance": "MANAGEMENT PLAN:\nSpirometry (post-bronchodilator FEV1/FVC <0.7). Staging by FEV1%. Assess breathlessness (MRC), exacerbations. Exclude asthma. NICE NG115."
+                  "label": "LAMA+LABA (Dual Therapy)",
+                  "guidance": "MANAGEMENT PLAN (Consultant Plan):\n1. First-line for patients with persistent breathlessness or exacerbations despite SABA/LAMA mono.\n2. Inhalers: e.g. Anoro Ellipta, Ultibro Breezhaler, Spiolto Respimat.\n3. Action: Check technique; offer Pulmonary Rehab if MRC ≥ 2. NICE NG115."
                 },
                 {
-                  "value": "stable",
-                  "label": "Stable COPD – step-up",
-                  "guidance": "MANAGEMENT PLAN:\nStep 1: SABA reliever as needed (e.g. Salbutamol / Ventolin). Step 2: add a LAMA (e.g. Tiotropium / Spiriva) or a LABA (e.g. Salmeterol / Serevent). Step 3: Dual therapy (LAMA+LABA e.g. Anoro / Spiolto). Step 4: Triple therapy (LABA+LAMA+ICS e.g. Trelegy / Trimbow) if eosinophils ≥0.3 or ≥2 exacerbations/year. Offer pulmonary rehab. NICE NG115."
+                  "label": "Triple Therapy (LABA+LAMA+ICS)",
+                  "guidance": "MANAGEMENT PLAN (Consultant Plan):\n1. Indication: Blood eosinophil count ≥ 0.3 x10^9/L OR ≥ 1 severe / 2 moderate exacerbations per year.\n2. Inhalers: Trelegy Ellipta or Trimbow.\n3. Risk: Discuss increased risk of pneumonia with ICS use. NICE NG115."
                 },
                 {
-                  "value": "exacerbation",
-                  "label": "Acute exacerbation",
-                  "guidance": "MANAGEMENT PLAN:\nPrednisolone 30 mg 7–14 days. Antibiotic if purulent sputum: doxycycline or amoxicillin (or clarithromycin). Increase bronchodilators. Consider hospital if severe. NICE NG115."
+                  "label": "Refractory / Advanced COPD",
+                  "guidance": "MANAGEMENT PLAN:\n1. Chronic Macrolide: Consider Azithromycin 250mg tiw if non-smoker and frequent exacerbations (requires baseline ECG & LFT).\n2. Oxygen: Assess for LTOT (Long Term Oxygen Therapy) if pO2 < 7.3 kPa stable.\n3. Referral: Lung volume reduction or Transplant assessment."
                 }
               ]
             }
@@ -4443,25 +4523,14 @@
           "evidence": "Management per NICE CKS and Local formulary.",
           "steps": [
             {
-              "id": "eczema-severity",
-              "question": "Severity and Location",
+              "id": "guidance",
+              "question": "Clinical Guidance (Best Practice)",
               "type": "dropdown",
               "options": [
                 {
-                  "label": "Mild Eczema",
-                  "guidance": "MANAGEMENT PLAN:\n1. Emollients: Apply liberally and frequently (250g-500g per week). Use even when skin is clear.\n2. Flare: Mild potency topical steroid (e.g. Hydrocortisone 1%) once or twice daily for up to 2 weeks.\n3. Hygiene: Use emollient as soap substitute. NICE CKS."
-                },
-                {
-                  "label": "Moderate Eczema",
-                  "guidance": "MANAGEMENT PLAN:\n1. Flare: Moderate potency topical steroid (e.g. Eumovate / Betnovate-RD) once or twice daily for up to 2 weeks.\n2. Maintenance: Consider 'weekend' use of steroid on common flare areas if frequent recurrences.\n3. Antihistamine: Non-sedating (e.g. Cetirizine) for itch if needed. NICE CKS."
-                },
-                {
-                  "label": "Severe Eczema",
-                  "guidance": "MANAGEMENT PLAN:\n1. Flare: Potent topical steroid (e.g. Betnovate / Elocon) once or twice daily for up to 2 weeks. Do not use potent steroids on face/flexures.\n2. Infection: Suspect if weeping, crusting, or failing to improve. Swab and start Flucloxacillin.\n3. Referral: Failure of potent steroids or impact on sleep/quality of life. NICE CKS."
-                },
-                {
-                  "label": "Scalp Involvement",
-                  "guidance": "MANAGEMENT PLAN:\n1. Shampoo: Coal tar based shampoo (Capasal) or Ketoconazole (Nizoral) if seborrhoeic overlap.\n2. Steroid: Moderate or potent steroid scalp application/lotion for up to 4 weeks. NICE CKS."
+                  "value": "standard",
+                  "label": "Management Overview",
+                  "guidance": "MANAGEMENT PLAN:\n1. Assessment: Full clinical assessment to exclude red flags.\n2. Action: Refer to local clinical formulary for specific pharmacotherapy.\n3. Safety-net: Provide robust safety-netting advice.\n4. Follow-up: Arrange review based on clinical findings."
                 }
               ]
             }
@@ -4577,25 +4646,17 @@
           "evidence": "Management per NICE CKS and Local formulary.",
           "steps": [
             {
-              "id": "eczema-severity",
-              "question": "Severity and Location",
+              "id": "derm-specialist",
+              "question": "Specialist Management (Consultant)",
               "type": "dropdown",
               "options": [
                 {
-                  "label": "Mild Eczema",
-                  "guidance": "MANAGEMENT PLAN:\n1. Emollients: Apply liberally and frequently (250g-500g per week). Use even when skin is clear.\n2. Flare: Mild potency topical steroid (e.g. Hydrocortisone 1%) once or twice daily for up to 2 weeks.\n3. Hygiene: Use emollient as soap substitute. NICE CKS."
+                  "label": "Refractory Eczema / Psoriasis",
+                  "guidance": "MANAGEMENT PLAN (Consultant Grade):\n1. Phototherapy: Consider NB-UVB (Narrowband) 3 times weekly for 6-12 weeks if topical tx fails.\n2. Systemic Non-biologics: Methotrexate (weekly), Ciclosporin (short-term), or Azathioprine. Requires baseline FBC, U&E, LFT, and Pro-collagen III peptide (for MTX).\n3. Biologics (High impact): Dupilumab (Eczema) or Adalimumab/Ustekinumab (Psoriasis). Criteria: PASI > 10 and DLQI > 10 despite two systemic agents. NICE TA guidelines."
                 },
                 {
-                  "label": "Moderate Eczema",
-                  "guidance": "MANAGEMENT PLAN:\n1. Flare: Moderate potency topical steroid (e.g. Eumovate / Betnovate-RD) once or twice daily for up to 2 weeks.\n2. Maintenance: Consider 'weekend' use of steroid on common flare areas if frequent recurrences.\n3. Antihistamine: Non-sedating (e.g. Cetirizine) for itch if needed. NICE CKS."
-                },
-                {
-                  "label": "Severe Eczema",
-                  "guidance": "MANAGEMENT PLAN:\n1. Flare: Potent topical steroid (e.g. Betnovate / Elocon) once or twice daily for up to 2 weeks. Do not use potent steroids on face/flexures.\n2. Infection: Suspect if weeping, crusting, or failing to improve. Swab and start Flucloxacillin.\n3. Referral: Failure of potent steroids or impact on sleep/quality of life. NICE CKS."
-                },
-                {
-                  "label": "Scalp Involvement",
-                  "guidance": "MANAGEMENT PLAN:\n1. Shampoo: Coal tar based shampoo (Capasal) or Ketoconazole (Nizoral) if seborrhoeic overlap.\n2. Steroid: Moderate or potent steroid scalp application/lotion for up to 4 weeks. NICE CKS."
+                  "label": "Pyoderma Gangrenosum / Vasculitis (Suspected)",
+                  "guidance": "MANAGEMENT PLAN:\n1. Biopsy: Incisional biopsy (not punch) for histology and direct immunofluorescence (DIF).\n2. First-line: High-dose Oral Prednisolone (0.5-1mg/kg) + steroid-sparing agent.\n3. Triage: Urgent Dermatology review; exclude underlying IBD, Rheumatoid, or Myeloma."
                 }
               ]
             }
@@ -4611,25 +4672,17 @@
           "evidence": "Management per NICE CKS and Local formulary.",
           "steps": [
             {
-              "id": "eczema-severity",
-              "question": "Severity and Location",
+              "id": "derm-specialist",
+              "question": "Specialist Management (Consultant)",
               "type": "dropdown",
               "options": [
                 {
-                  "label": "Mild Eczema",
-                  "guidance": "MANAGEMENT PLAN:\n1. Emollients: Apply liberally and frequently (250g-500g per week). Use even when skin is clear.\n2. Flare: Mild potency topical steroid (e.g. Hydrocortisone 1%) once or twice daily for up to 2 weeks.\n3. Hygiene: Use emollient as soap substitute. NICE CKS."
+                  "label": "Refractory Eczema / Psoriasis",
+                  "guidance": "MANAGEMENT PLAN (Consultant Grade):\n1. Phototherapy: Consider NB-UVB (Narrowband) 3 times weekly for 6-12 weeks if topical tx fails.\n2. Systemic Non-biologics: Methotrexate (weekly), Ciclosporin (short-term), or Azathioprine. Requires baseline FBC, U&E, LFT, and Pro-collagen III peptide (for MTX).\n3. Biologics (High impact): Dupilumab (Eczema) or Adalimumab/Ustekinumab (Psoriasis). Criteria: PASI > 10 and DLQI > 10 despite two systemic agents. NICE TA guidelines."
                 },
                 {
-                  "label": "Moderate Eczema",
-                  "guidance": "MANAGEMENT PLAN:\n1. Flare: Moderate potency topical steroid (e.g. Eumovate / Betnovate-RD) once or twice daily for up to 2 weeks.\n2. Maintenance: Consider 'weekend' use of steroid on common flare areas if frequent recurrences.\n3. Antihistamine: Non-sedating (e.g. Cetirizine) for itch if needed. NICE CKS."
-                },
-                {
-                  "label": "Severe Eczema",
-                  "guidance": "MANAGEMENT PLAN:\n1. Flare: Potent topical steroid (e.g. Betnovate / Elocon) once or twice daily for up to 2 weeks. Do not use potent steroids on face/flexures.\n2. Infection: Suspect if weeping, crusting, or failing to improve. Swab and start Flucloxacillin.\n3. Referral: Failure of potent steroids or impact on sleep/quality of life. NICE CKS."
-                },
-                {
-                  "label": "Scalp Involvement",
-                  "guidance": "MANAGEMENT PLAN:\n1. Shampoo: Coal tar based shampoo (Capasal) or Ketoconazole (Nizoral) if seborrhoeic overlap.\n2. Steroid: Moderate or potent steroid scalp application/lotion for up to 4 weeks. NICE CKS."
+                  "label": "Pyoderma Gangrenosum / Vasculitis (Suspected)",
+                  "guidance": "MANAGEMENT PLAN:\n1. Biopsy: Incisional biopsy (not punch) for histology and direct immunofluorescence (DIF).\n2. First-line: High-dose Oral Prednisolone (0.5-1mg/kg) + steroid-sparing agent.\n3. Triage: Urgent Dermatology review; exclude underlying IBD, Rheumatoid, or Myeloma."
                 }
               ]
             }
@@ -4645,25 +4698,17 @@
           "evidence": "Management per NICE CKS and Local formulary.",
           "steps": [
             {
-              "id": "eczema-severity",
-              "question": "Severity and Location",
+              "id": "derm-specialist",
+              "question": "Specialist Management (Consultant)",
               "type": "dropdown",
               "options": [
                 {
-                  "label": "Mild Eczema",
-                  "guidance": "MANAGEMENT PLAN:\n1. Emollients: Apply liberally and frequently (250g-500g per week). Use even when skin is clear.\n2. Flare: Mild potency topical steroid (e.g. Hydrocortisone 1%) once or twice daily for up to 2 weeks.\n3. Hygiene: Use emollient as soap substitute. NICE CKS."
+                  "label": "Refractory Eczema / Psoriasis",
+                  "guidance": "MANAGEMENT PLAN (Consultant Grade):\n1. Phototherapy: Consider NB-UVB (Narrowband) 3 times weekly for 6-12 weeks if topical tx fails.\n2. Systemic Non-biologics: Methotrexate (weekly), Ciclosporin (short-term), or Azathioprine. Requires baseline FBC, U&E, LFT, and Pro-collagen III peptide (for MTX).\n3. Biologics (High impact): Dupilumab (Eczema) or Adalimumab/Ustekinumab (Psoriasis). Criteria: PASI > 10 and DLQI > 10 despite two systemic agents. NICE TA guidelines."
                 },
                 {
-                  "label": "Moderate Eczema",
-                  "guidance": "MANAGEMENT PLAN:\n1. Flare: Moderate potency topical steroid (e.g. Eumovate / Betnovate-RD) once or twice daily for up to 2 weeks.\n2. Maintenance: Consider 'weekend' use of steroid on common flare areas if frequent recurrences.\n3. Antihistamine: Non-sedating (e.g. Cetirizine) for itch if needed. NICE CKS."
-                },
-                {
-                  "label": "Severe Eczema",
-                  "guidance": "MANAGEMENT PLAN:\n1. Flare: Potent topical steroid (e.g. Betnovate / Elocon) once or twice daily for up to 2 weeks. Do not use potent steroids on face/flexures.\n2. Infection: Suspect if weeping, crusting, or failing to improve. Swab and start Flucloxacillin.\n3. Referral: Failure of potent steroids or impact on sleep/quality of life. NICE CKS."
-                },
-                {
-                  "label": "Scalp Involvement",
-                  "guidance": "MANAGEMENT PLAN:\n1. Shampoo: Coal tar based shampoo (Capasal) or Ketoconazole (Nizoral) if seborrhoeic overlap.\n2. Steroid: Moderate or potent steroid scalp application/lotion for up to 4 weeks. NICE CKS."
+                  "label": "Pyoderma Gangrenosum / Vasculitis (Suspected)",
+                  "guidance": "MANAGEMENT PLAN:\n1. Biopsy: Incisional biopsy (not punch) for histology and direct immunofluorescence (DIF).\n2. First-line: High-dose Oral Prednisolone (0.5-1mg/kg) + steroid-sparing agent.\n3. Triage: Urgent Dermatology review; exclude underlying IBD, Rheumatoid, or Myeloma."
                 }
               ]
             }
@@ -4679,25 +4724,17 @@
           "evidence": "Management per NICE CKS and Local formulary.",
           "steps": [
             {
-              "id": "eczema-severity",
-              "question": "Severity and Location",
+              "id": "derm-specialist",
+              "question": "Specialist Management (Consultant)",
               "type": "dropdown",
               "options": [
                 {
-                  "label": "Mild Eczema",
-                  "guidance": "MANAGEMENT PLAN:\n1. Emollients: Apply liberally and frequently (250g-500g per week). Use even when skin is clear.\n2. Flare: Mild potency topical steroid (e.g. Hydrocortisone 1%) once or twice daily for up to 2 weeks.\n3. Hygiene: Use emollient as soap substitute. NICE CKS."
+                  "label": "Refractory Eczema / Psoriasis",
+                  "guidance": "MANAGEMENT PLAN (Consultant Grade):\n1. Phototherapy: Consider NB-UVB (Narrowband) 3 times weekly for 6-12 weeks if topical tx fails.\n2. Systemic Non-biologics: Methotrexate (weekly), Ciclosporin (short-term), or Azathioprine. Requires baseline FBC, U&E, LFT, and Pro-collagen III peptide (for MTX).\n3. Biologics (High impact): Dupilumab (Eczema) or Adalimumab/Ustekinumab (Psoriasis). Criteria: PASI > 10 and DLQI > 10 despite two systemic agents. NICE TA guidelines."
                 },
                 {
-                  "label": "Moderate Eczema",
-                  "guidance": "MANAGEMENT PLAN:\n1. Flare: Moderate potency topical steroid (e.g. Eumovate / Betnovate-RD) once or twice daily for up to 2 weeks.\n2. Maintenance: Consider 'weekend' use of steroid on common flare areas if frequent recurrences.\n3. Antihistamine: Non-sedating (e.g. Cetirizine) for itch if needed. NICE CKS."
-                },
-                {
-                  "label": "Severe Eczema",
-                  "guidance": "MANAGEMENT PLAN:\n1. Flare: Potent topical steroid (e.g. Betnovate / Elocon) once or twice daily for up to 2 weeks. Do not use potent steroids on face/flexures.\n2. Infection: Suspect if weeping, crusting, or failing to improve. Swab and start Flucloxacillin.\n3. Referral: Failure of potent steroids or impact on sleep/quality of life. NICE CKS."
-                },
-                {
-                  "label": "Scalp Involvement",
-                  "guidance": "MANAGEMENT PLAN:\n1. Shampoo: Coal tar based shampoo (Capasal) or Ketoconazole (Nizoral) if seborrhoeic overlap.\n2. Steroid: Moderate or potent steroid scalp application/lotion for up to 4 weeks. NICE CKS."
+                  "label": "Pyoderma Gangrenosum / Vasculitis (Suspected)",
+                  "guidance": "MANAGEMENT PLAN:\n1. Biopsy: Incisional biopsy (not punch) for histology and direct immunofluorescence (DIF).\n2. First-line: High-dose Oral Prednisolone (0.5-1mg/kg) + steroid-sparing agent.\n3. Triage: Urgent Dermatology review; exclude underlying IBD, Rheumatoid, or Myeloma."
                 }
               ]
             }
@@ -4715,25 +4752,17 @@
           "evidence": "Management per NICE CKS and Local formulary.",
           "steps": [
             {
-              "id": "eczema-severity",
-              "question": "Severity and Location",
+              "id": "derm-specialist",
+              "question": "Specialist Management (Consultant)",
               "type": "dropdown",
               "options": [
                 {
-                  "label": "Mild Eczema",
-                  "guidance": "MANAGEMENT PLAN:\n1. Emollients: Apply liberally and frequently (250g-500g per week). Use even when skin is clear.\n2. Flare: Mild potency topical steroid (e.g. Hydrocortisone 1%) once or twice daily for up to 2 weeks.\n3. Hygiene: Use emollient as soap substitute. NICE CKS."
+                  "label": "Refractory Eczema / Psoriasis",
+                  "guidance": "MANAGEMENT PLAN (Consultant Grade):\n1. Phototherapy: Consider NB-UVB (Narrowband) 3 times weekly for 6-12 weeks if topical tx fails.\n2. Systemic Non-biologics: Methotrexate (weekly), Ciclosporin (short-term), or Azathioprine. Requires baseline FBC, U&E, LFT, and Pro-collagen III peptide (for MTX).\n3. Biologics (High impact): Dupilumab (Eczema) or Adalimumab/Ustekinumab (Psoriasis). Criteria: PASI > 10 and DLQI > 10 despite two systemic agents. NICE TA guidelines."
                 },
                 {
-                  "label": "Moderate Eczema",
-                  "guidance": "MANAGEMENT PLAN:\n1. Flare: Moderate potency topical steroid (e.g. Eumovate / Betnovate-RD) once or twice daily for up to 2 weeks.\n2. Maintenance: Consider 'weekend' use of steroid on common flare areas if frequent recurrences.\n3. Antihistamine: Non-sedating (e.g. Cetirizine) for itch if needed. NICE CKS."
-                },
-                {
-                  "label": "Severe Eczema",
-                  "guidance": "MANAGEMENT PLAN:\n1. Flare: Potent topical steroid (e.g. Betnovate / Elocon) once or twice daily for up to 2 weeks. Do not use potent steroids on face/flexures.\n2. Infection: Suspect if weeping, crusting, or failing to improve. Swab and start Flucloxacillin.\n3. Referral: Failure of potent steroids or impact on sleep/quality of life. NICE CKS."
-                },
-                {
-                  "label": "Scalp Involvement",
-                  "guidance": "MANAGEMENT PLAN:\n1. Shampoo: Coal tar based shampoo (Capasal) or Ketoconazole (Nizoral) if seborrhoeic overlap.\n2. Steroid: Moderate or potent steroid scalp application/lotion for up to 4 weeks. NICE CKS."
+                  "label": "Pyoderma Gangrenosum / Vasculitis (Suspected)",
+                  "guidance": "MANAGEMENT PLAN:\n1. Biopsy: Incisional biopsy (not punch) for histology and direct immunofluorescence (DIF).\n2. First-line: High-dose Oral Prednisolone (0.5-1mg/kg) + steroid-sparing agent.\n3. Triage: Urgent Dermatology review; exclude underlying IBD, Rheumatoid, or Myeloma."
                 }
               ]
             }
@@ -4749,25 +4778,17 @@
           "evidence": "Management per NG80 and CKS Eczema.",
           "steps": [
             {
-              "id": "eczema-severity",
-              "question": "Severity and Location",
+              "id": "derm-specialist",
+              "question": "Specialist Management (Consultant)",
               "type": "dropdown",
               "options": [
                 {
-                  "label": "Mild Eczema",
-                  "guidance": "MANAGEMENT PLAN:\n1. Emollients: Apply liberally and frequently (250g-500g per week). Use even when skin is clear.\n2. Flare: Mild potency topical steroid (e.g. Hydrocortisone 1%) once or twice daily for up to 2 weeks.\n3. Hygiene: Use emollient as soap substitute. NICE CKS."
+                  "label": "Refractory Eczema / Psoriasis",
+                  "guidance": "MANAGEMENT PLAN (Consultant Grade):\n1. Phototherapy: Consider NB-UVB (Narrowband) 3 times weekly for 6-12 weeks if topical tx fails.\n2. Systemic Non-biologics: Methotrexate (weekly), Ciclosporin (short-term), or Azathioprine. Requires baseline FBC, U&E, LFT, and Pro-collagen III peptide (for MTX).\n3. Biologics (High impact): Dupilumab (Eczema) or Adalimumab/Ustekinumab (Psoriasis). Criteria: PASI > 10 and DLQI > 10 despite two systemic agents. NICE TA guidelines."
                 },
                 {
-                  "label": "Moderate Eczema",
-                  "guidance": "MANAGEMENT PLAN:\n1. Flare: Moderate potency topical steroid (e.g. Eumovate / Betnovate-RD) once or twice daily for up to 2 weeks.\n2. Maintenance: Consider 'weekend' use of steroid on common flare areas if frequent recurrences.\n3. Antihistamine: Non-sedating (e.g. Cetirizine) for itch if needed. NICE CKS."
-                },
-                {
-                  "label": "Severe Eczema",
-                  "guidance": "MANAGEMENT PLAN:\n1. Flare: Potent topical steroid (e.g. Betnovate / Elocon) once or twice daily for up to 2 weeks. Do not use potent steroids on face/flexures.\n2. Infection: Suspect if weeping, crusting, or failing to improve. Swab and start Flucloxacillin.\n3. Referral: Failure of potent steroids or impact on sleep/quality of life. NICE CKS."
-                },
-                {
-                  "label": "Scalp Involvement",
-                  "guidance": "MANAGEMENT PLAN:\n1. Shampoo: Coal tar based shampoo (Capasal) or Ketoconazole (Nizoral) if seborrhoeic overlap.\n2. Steroid: Moderate or potent steroid scalp application/lotion for up to 4 weeks. NICE CKS."
+                  "label": "Pyoderma Gangrenosum / Vasculitis (Suspected)",
+                  "guidance": "MANAGEMENT PLAN:\n1. Biopsy: Incisional biopsy (not punch) for histology and direct immunofluorescence (DIF).\n2. First-line: High-dose Oral Prednisolone (0.5-1mg/kg) + steroid-sparing agent.\n3. Triage: Urgent Dermatology review; exclude underlying IBD, Rheumatoid, or Myeloma."
                 }
               ]
             }
@@ -11585,25 +11606,24 @@
           "evidence": "Management per NICE CKS and Local formulary.",
           "steps": [
             {
-              "id": "eczema-severity",
-              "question": "Severity and Location",
+              "id": "coeliac",
+              "question": "Coeliac disease",
               "type": "dropdown",
               "options": [
                 {
-                  "label": "Mild Eczema",
-                  "guidance": "MANAGEMENT PLAN:\n1. Emollients: Apply liberally and frequently (250g-500g per week). Use even when skin is clear.\n2. Flare: Mild potency topical steroid (e.g. Hydrocortisone 1%) once or twice daily for up to 2 weeks.\n3. Hygiene: Use emollient as soap substitute. NICE CKS."
+                  "value": "diagnosis",
+                  "label": "Diagnosis",
+                  "guidance": "MANAGEMENT PLAN:\nIgA TTG + total IgA. If positive refer for duodenal biopsy. Do not start gluten-free diet before biopsy. NICE NG20."
                 },
                 {
-                  "label": "Moderate Eczema",
-                  "guidance": "MANAGEMENT PLAN:\n1. Flare: Moderate potency topical steroid (e.g. Eumovate / Betnovate-RD) once or twice daily for up to 2 weeks.\n2. Maintenance: Consider 'weekend' use of steroid on common flare areas if frequent recurrences.\n3. Antihistamine: Non-sedating (e.g. Cetirizine) for itch if needed. NICE CKS."
+                  "value": "management",
+                  "label": "Management",
+                  "guidance": "MANAGEMENT PLAN:\nLifelong gluten-free diet. Dietitian referral. Annual review: Hb, B12, folate, ferritin, TFT, bone. NICE NG20."
                 },
                 {
-                  "label": "Severe Eczema",
-                  "guidance": "MANAGEMENT PLAN:\n1. Flare: Potent topical steroid (e.g. Betnovate / Elocon) once or twice daily for up to 2 weeks. Do not use potent steroids on face/flexures.\n2. Infection: Suspect if weeping, crusting, or failing to improve. Swab and start Flucloxacillin.\n3. Referral: Failure of potent steroids or impact on sleep/quality of life. NICE CKS."
-                },
-                {
-                  "label": "Scalp Involvement",
-                  "guidance": "MANAGEMENT PLAN:\n1. Shampoo: Coal tar based shampoo (Capasal) or Ketoconazole (Nizoral) if seborrhoeic overlap.\n2. Steroid: Moderate or potent steroid scalp application/lotion for up to 4 weeks. NICE CKS."
+                  "value": "refractory",
+                  "label": "Refractory",
+                  "guidance": "MANAGEMENT PLAN:\nRefer gastroenterology if symptoms persist despite strict GFD. Exclude lymphoma. NICE NG20."
                 }
               ]
             }
@@ -16851,18 +16871,16 @@
           "steps": [
             {
               "id": "obesity-mgmt",
-              "question": "Management Level",
+              "question": "1. Management Hierarchy",
               "type": "dropdown",
               "options": [
                 {
-                  "value": "lifestyle",
-                  "label": "Lifestyle & BMI assessment",
-                  "guidance": "MANAGEMENT PLAN:\nCalculate BMI and waist circumference. Set 5-10% weight loss goal. Tier 2 weight management referral. NICE CG189."
+                  "label": "Tier 3 Specialist Service Referral",
+                  "guidance": "MANAGEMENT PLAN:\n1. Criteria: BMI ≥ 35 with comorbidities (T2DM, OSA, HTN) or BMI ≥ 40.\n2. Multidisciplinary: Physician, Dietitian, Psychologist, and Physiotherapist led.\n3. Pharmacotherapy: Initiate GLP-1 (e.g. Wegovy/Semaglutide) as per NICE TA875 criteria (BMI ≥ 35 + at least one comorbidity)."
                 },
                 {
-                  "value": "medication",
-                  "label": "Pharmacotherapy (Orlistat/GLP-1)",
-                  "guidance": "MANAGEMENT PLAN:\nOrlistat if BMI ≥30 (or ≥28 with comorbidities). GLP-1 (e.g. Semaglutide) via Tier 3/4 specialist clinics if BMI ≥35 (or ≥30 with comorb in some cases). NICE TA664."
+                  "label": "Tier 4 (Bariatric Surgery)",
+                  "guidance": "MANAGEMENT PLAN:\n1. Procedures: Roux-en-Y Gastric Bypass (RYGB) or Sleeve Gastrectomy.\n2. Criteria: BMI ≥ 40 or ≥ 35 with significant comorbidities; failure of Tier 3 intervention for ≥ 6 months.\n3. Pre-op: Smoking cessation and psychiatric clearance mandatory. NICE CG189."
                 }
               ]
             }
@@ -16879,18 +16897,16 @@
           "steps": [
             {
               "id": "obesity-mgmt",
-              "question": "Management Level",
+              "question": "1. Management Hierarchy",
               "type": "dropdown",
               "options": [
                 {
-                  "value": "lifestyle",
-                  "label": "Lifestyle & BMI assessment",
-                  "guidance": "MANAGEMENT PLAN:\nCalculate BMI and waist circumference. Set 5-10% weight loss goal. Tier 2 weight management referral. NICE CG189."
+                  "label": "Tier 3 Specialist Service Referral",
+                  "guidance": "MANAGEMENT PLAN:\n1. Criteria: BMI ≥ 35 with comorbidities (T2DM, OSA, HTN) or BMI ≥ 40.\n2. Multidisciplinary: Physician, Dietitian, Psychologist, and Physiotherapist led.\n3. Pharmacotherapy: Initiate GLP-1 (e.g. Wegovy/Semaglutide) as per NICE TA875 criteria (BMI ≥ 35 + at least one comorbidity)."
                 },
                 {
-                  "value": "medication",
-                  "label": "Pharmacotherapy (Orlistat/GLP-1)",
-                  "guidance": "MANAGEMENT PLAN:\nOrlistat if BMI ≥30 (or ≥28 with comorbidities). GLP-1 (e.g. Semaglutide) via Tier 3/4 specialist clinics if BMI ≥35 (or ≥30 with comorb in some cases). NICE TA664."
+                  "label": "Tier 4 (Bariatric Surgery)",
+                  "guidance": "MANAGEMENT PLAN:\n1. Procedures: Roux-en-Y Gastric Bypass (RYGB) or Sleeve Gastrectomy.\n2. Criteria: BMI ≥ 40 or ≥ 35 with significant comorbidities; failure of Tier 3 intervention for ≥ 6 months.\n3. Pre-op: Smoking cessation and psychiatric clearance mandatory. NICE CG189."
                 }
               ]
             }
@@ -16907,18 +16923,16 @@
           "steps": [
             {
               "id": "obesity-mgmt",
-              "question": "Management Level",
+              "question": "1. Management Hierarchy",
               "type": "dropdown",
               "options": [
                 {
-                  "value": "lifestyle",
-                  "label": "Lifestyle & BMI assessment",
-                  "guidance": "MANAGEMENT PLAN:\nCalculate BMI and waist circumference. Set 5-10% weight loss goal. Tier 2 weight management referral. NICE CG189."
+                  "label": "Tier 3 Specialist Service Referral",
+                  "guidance": "MANAGEMENT PLAN:\n1. Criteria: BMI ≥ 35 with comorbidities (T2DM, OSA, HTN) or BMI ≥ 40.\n2. Multidisciplinary: Physician, Dietitian, Psychologist, and Physiotherapist led.\n3. Pharmacotherapy: Initiate GLP-1 (e.g. Wegovy/Semaglutide) as per NICE TA875 criteria (BMI ≥ 35 + at least one comorbidity)."
                 },
                 {
-                  "value": "medication",
-                  "label": "Pharmacotherapy (Orlistat/GLP-1)",
-                  "guidance": "MANAGEMENT PLAN:\nOrlistat if BMI ≥30 (or ≥28 with comorbidities). GLP-1 (e.g. Semaglutide) via Tier 3/4 specialist clinics if BMI ≥35 (or ≥30 with comorb in some cases). NICE TA664."
+                  "label": "Tier 4 (Bariatric Surgery)",
+                  "guidance": "MANAGEMENT PLAN:\n1. Procedures: Roux-en-Y Gastric Bypass (RYGB) or Sleeve Gastrectomy.\n2. Criteria: BMI ≥ 40 or ≥ 35 with significant comorbidities; failure of Tier 3 intervention for ≥ 6 months.\n3. Pre-op: Smoking cessation and psychiatric clearance mandatory. NICE CG189."
                 }
               ]
             }
@@ -16935,18 +16949,16 @@
           "steps": [
             {
               "id": "obesity-mgmt",
-              "question": "Management Level",
+              "question": "1. Management Hierarchy",
               "type": "dropdown",
               "options": [
                 {
-                  "value": "lifestyle",
-                  "label": "Lifestyle & BMI assessment",
-                  "guidance": "MANAGEMENT PLAN:\nCalculate BMI and waist circumference. Set 5-10% weight loss goal. Tier 2 weight management referral. NICE CG189."
+                  "label": "Tier 3 Specialist Service Referral",
+                  "guidance": "MANAGEMENT PLAN:\n1. Criteria: BMI ≥ 35 with comorbidities (T2DM, OSA, HTN) or BMI ≥ 40.\n2. Multidisciplinary: Physician, Dietitian, Psychologist, and Physiotherapist led.\n3. Pharmacotherapy: Initiate GLP-1 (e.g. Wegovy/Semaglutide) as per NICE TA875 criteria (BMI ≥ 35 + at least one comorbidity)."
                 },
                 {
-                  "value": "medication",
-                  "label": "Pharmacotherapy (Orlistat/GLP-1)",
-                  "guidance": "MANAGEMENT PLAN:\nOrlistat if BMI ≥30 (or ≥28 with comorbidities). GLP-1 (e.g. Semaglutide) via Tier 3/4 specialist clinics if BMI ≥35 (or ≥30 with comorb in some cases). NICE TA664."
+                  "label": "Tier 4 (Bariatric Surgery)",
+                  "guidance": "MANAGEMENT PLAN:\n1. Procedures: Roux-en-Y Gastric Bypass (RYGB) or Sleeve Gastrectomy.\n2. Criteria: BMI ≥ 40 or ≥ 35 with significant comorbidities; failure of Tier 3 intervention for ≥ 6 months.\n3. Pre-op: Smoking cessation and psychiatric clearance mandatory. NICE CG189."
                 }
               ]
             }
@@ -16963,18 +16975,16 @@
           "steps": [
             {
               "id": "obesity-mgmt",
-              "question": "Management Level",
+              "question": "1. Management Hierarchy",
               "type": "dropdown",
               "options": [
                 {
-                  "value": "lifestyle",
-                  "label": "Lifestyle & BMI assessment",
-                  "guidance": "MANAGEMENT PLAN:\nCalculate BMI and waist circumference. Set 5-10% weight loss goal. Tier 2 weight management referral. NICE CG189."
+                  "label": "Tier 3 Specialist Service Referral",
+                  "guidance": "MANAGEMENT PLAN:\n1. Criteria: BMI ≥ 35 with comorbidities (T2DM, OSA, HTN) or BMI ≥ 40.\n2. Multidisciplinary: Physician, Dietitian, Psychologist, and Physiotherapist led.\n3. Pharmacotherapy: Initiate GLP-1 (e.g. Wegovy/Semaglutide) as per NICE TA875 criteria (BMI ≥ 35 + at least one comorbidity)."
                 },
                 {
-                  "value": "medication",
-                  "label": "Pharmacotherapy (Orlistat/GLP-1)",
-                  "guidance": "MANAGEMENT PLAN:\nOrlistat if BMI ≥30 (or ≥28 with comorbidities). GLP-1 (e.g. Semaglutide) via Tier 3/4 specialist clinics if BMI ≥35 (or ≥30 with comorb in some cases). NICE TA664."
+                  "label": "Tier 4 (Bariatric Surgery)",
+                  "guidance": "MANAGEMENT PLAN:\n1. Procedures: Roux-en-Y Gastric Bypass (RYGB) or Sleeve Gastrectomy.\n2. Criteria: BMI ≥ 40 or ≥ 35 with significant comorbidities; failure of Tier 3 intervention for ≥ 6 months.\n3. Pre-op: Smoking cessation and psychiatric clearance mandatory. NICE CG189."
                 }
               ]
             }
@@ -16991,18 +17001,16 @@
           "steps": [
             {
               "id": "obesity-mgmt",
-              "question": "Management Level",
+              "question": "1. Management Hierarchy",
               "type": "dropdown",
               "options": [
                 {
-                  "value": "lifestyle",
-                  "label": "Lifestyle & BMI assessment",
-                  "guidance": "MANAGEMENT PLAN:\nCalculate BMI and waist circumference. Set 5-10% weight loss goal. Tier 2 weight management referral. NICE CG189."
+                  "label": "Tier 3 Specialist Service Referral",
+                  "guidance": "MANAGEMENT PLAN:\n1. Criteria: BMI ≥ 35 with comorbidities (T2DM, OSA, HTN) or BMI ≥ 40.\n2. Multidisciplinary: Physician, Dietitian, Psychologist, and Physiotherapist led.\n3. Pharmacotherapy: Initiate GLP-1 (e.g. Wegovy/Semaglutide) as per NICE TA875 criteria (BMI ≥ 35 + at least one comorbidity)."
                 },
                 {
-                  "value": "medication",
-                  "label": "Pharmacotherapy (Orlistat/GLP-1)",
-                  "guidance": "MANAGEMENT PLAN:\nOrlistat if BMI ≥30 (or ≥28 with comorbidities). GLP-1 (e.g. Semaglutide) via Tier 3/4 specialist clinics if BMI ≥35 (or ≥30 with comorb in some cases). NICE TA664."
+                  "label": "Tier 4 (Bariatric Surgery)",
+                  "guidance": "MANAGEMENT PLAN:\n1. Procedures: Roux-en-Y Gastric Bypass (RYGB) or Sleeve Gastrectomy.\n2. Criteria: BMI ≥ 40 or ≥ 35 with significant comorbidities; failure of Tier 3 intervention for ≥ 6 months.\n3. Pre-op: Smoking cessation and psychiatric clearance mandatory. NICE CG189."
                 }
               ]
             }
@@ -18960,14 +18968,21 @@
           "evidence": "Management per NICE CKS and Local formulary.",
           "steps": [
             {
-              "id": "guidance",
-              "question": "Clinical Guidance (Best Practice)",
+              "id": "frozen-shoulder-stage",
+              "question": "1. Clinical Stage",
               "type": "dropdown",
               "options": [
                 {
-                  "value": "standard",
-                  "label": "Management Overview",
-                  "guidance": "MANAGEMENT PLAN:\n1. Assessment: Full clinical assessment to exclude red flags.\n2. Action: Refer to local clinical formulary for specific pharmacotherapy.\n3. Safety-net: Provide robust safety-netting advice.\n4. Follow-up: Arrange review based on clinical findings."
+                  "label": "Freezing Stage (Painful / Inflammatory)",
+                  "guidance": "MANAGEMENT PLAN (Consultant Grade):\n1. Primary Intervention: US-guided Intra-articular Corticosteroid Injection (40mg Triamcinolone). Superior to PT in early stage.\n2. Analgesia: Scheduled NSAIDs (e.g. Naproxen 500mg bd with PPI) + Paracetamol/Codeine as rescue.\n3. Physiotherapy: Gentle active-assisted ROM within pain-free limits. Avoid aggressive stretching in inflammatory phase.\n4. Education: Natural history (12-24 month duration). NICE CKS / BESS Guidelines."
+                },
+                {
+                  "label": "Frozen Stage (Stiff / Fibrotic)",
+                  "guidance": "MANAGEMENT PLAN (Consultant Grade):\n1. Hydrodilatation: Consider high-volume image-guided distension (Injecting 20-30ml saline + steroid) to disrupt capsular adhesions.\n2. Physiotherapy: Home Exercise Programme (HEP) focusing on external rotation and abduction. 4-5 times daily.\n3. Monitoring: Review for secondary rotator cuff disuse atrophy. NICE CKS / BESS Guidelines."
+                },
+                {
+                  "label": "Refractory / Severe Functional Impairment",
+                  "guidance": "MANAGEMENT PLAN (Consultant Grade):\n1. Surgical Referral: Orthopaedic review for Manipulation Under Anaesthesia (MUA) or Arthroscopic Capsular Release (ACR).\n2. Indication: Failure of 6 months conservative management with significant impact on sleep/QoL.\n3. Post-Op: Mandatory immediate intensive PT to maintain surgical gains."
                 }
               ]
             }
@@ -18983,17 +18998,21 @@
           "evidence": "Now in this episode we'll be discussing adhesive capsulitis, more often known as a frozen shoulder and a condition which is frequently underdiagnosed in its early stages and patients are often told they've got non-specific shoulder pain, rotator cuff disease or impingement and by…",
           "steps": [
             {
-              "id": "bp-assessment",
-              "question": "Assessment (Best Practice)",
+              "id": "frozen-shoulder-stage",
+              "question": "1. Clinical Stage",
               "type": "dropdown",
               "options": [
                 {
-                  "label": "Standard Assessment",
-                  "guidance": "MANAGEMENT PLAN:\n1. History: Assess onset, severity, and triggers. Specifically exclude organic red flags (weight loss, night pain, fever, night sweats).\n2. Review: Family history and current medications.\n3. Differential: Consider most likely vs most serious diagnosis. Use validated scores (e.g. Centor, Wells, qSOFA) if applicable."
+                  "label": "Freezing Stage (Painful / Inflammatory)",
+                  "guidance": "MANAGEMENT PLAN (Consultant Grade):\n1. Primary Intervention: US-guided Intra-articular Corticosteroid Injection (40mg Triamcinolone). Superior to PT in early stage.\n2. Analgesia: Scheduled NSAIDs (e.g. Naproxen 500mg bd with PPI) + Paracetamol/Codeine as rescue.\n3. Physiotherapy: Gentle active-assisted ROM within pain-free limits. Avoid aggressive stretching in inflammatory phase.\n4. Education: Natural history (12-24 month duration). NICE CKS / BESS Guidelines."
                 },
                 {
-                  "label": "Examination & Vitals",
-                  "guidance": "MANAGEMENT PLAN:\n1. Physical Exam: Perform focused physical exam (e.g. MSK, Neuro, Respiratory).\n2. Vitals: Check NEWS2 if systemically unwell.\n3. Documentation: Document findings and clinical rationale clearly."
+                  "label": "Frozen Stage (Stiff / Fibrotic)",
+                  "guidance": "MANAGEMENT PLAN (Consultant Grade):\n1. Hydrodilatation: Consider high-volume image-guided distension (Injecting 20-30ml saline + steroid) to disrupt capsular adhesions.\n2. Physiotherapy: Home Exercise Programme (HEP) focusing on external rotation and abduction. 4-5 times daily.\n3. Monitoring: Review for secondary rotator cuff disuse atrophy. NICE CKS / BESS Guidelines."
+                },
+                {
+                  "label": "Refractory / Severe Functional Impairment",
+                  "guidance": "MANAGEMENT PLAN (Consultant Grade):\n1. Surgical Referral: Orthopaedic review for Manipulation Under Anaesthesia (MUA) or Arthroscopic Capsular Release (ACR).\n2. Indication: Failure of 6 months conservative management with significant impact on sleep/QoL.\n3. Post-Op: Mandatory immediate intensive PT to maintain surgical gains."
                 }
               ]
             }
@@ -19010,13 +19029,21 @@
           "evidence": "Now in this episode we'll be discussing adhesive capsulitis, more often known as a frozen shoulder and a condition which is frequently underdiagnosed in its early stages and patients are often told they've got non-specific shoulder pain, rotator cuff disease or impingement and by…",
           "steps": [
             {
-              "id": "bp-management",
-              "question": "Management (Best Practice)",
+              "id": "frozen-shoulder-stage",
+              "question": "1. Clinical Stage",
               "type": "dropdown",
               "options": [
                 {
-                  "label": "Initial Management Plan",
-                  "guidance": "MANAGEMENT PLAN:\n1. Advice: Advise on activity levels, hydration, and non-pharmacological measures.\n2. Information: Provide written patient info and use shared-decision making.\n3. Safety-netting: Provide clear triggers for re-consultation (rapid worsening, new red flags).\n4. Review: Arrange review based on clinical stability (e.g. 48h for acute, 2-4 weeks for chronic)."
+                  "label": "Freezing Stage (Painful / Inflammatory)",
+                  "guidance": "MANAGEMENT PLAN (Consultant Grade):\n1. Primary Intervention: US-guided Intra-articular Corticosteroid Injection (40mg Triamcinolone). Superior to PT in early stage.\n2. Analgesia: Scheduled NSAIDs (e.g. Naproxen 500mg bd with PPI) + Paracetamol/Codeine as rescue.\n3. Physiotherapy: Gentle active-assisted ROM within pain-free limits. Avoid aggressive stretching in inflammatory phase.\n4. Education: Natural history (12-24 month duration). NICE CKS / BESS Guidelines."
+                },
+                {
+                  "label": "Frozen Stage (Stiff / Fibrotic)",
+                  "guidance": "MANAGEMENT PLAN (Consultant Grade):\n1. Hydrodilatation: Consider high-volume image-guided distension (Injecting 20-30ml saline + steroid) to disrupt capsular adhesions.\n2. Physiotherapy: Home Exercise Programme (HEP) focusing on external rotation and abduction. 4-5 times daily.\n3. Monitoring: Review for secondary rotator cuff disuse atrophy. NICE CKS / BESS Guidelines."
+                },
+                {
+                  "label": "Refractory / Severe Functional Impairment",
+                  "guidance": "MANAGEMENT PLAN (Consultant Grade):\n1. Surgical Referral: Orthopaedic review for Manipulation Under Anaesthesia (MUA) or Arthroscopic Capsular Release (ACR).\n2. Indication: Failure of 6 months conservative management with significant impact on sleep/QoL.\n3. Post-Op: Mandatory immediate intensive PT to maintain surgical gains."
                 }
               ]
             }
@@ -19033,13 +19060,21 @@
           "evidence": "Now in this episode we'll be discussing adhesive capsulitis, more often known as a frozen shoulder and a condition which is frequently underdiagnosed in its early stages and patients are often told they've got non-specific shoulder pain, rotator cuff disease or impingement and by…",
           "steps": [
             {
-              "id": "bp-referral",
-              "question": "Referral & Follow-up (Best Practice)",
+              "id": "frozen-shoulder-stage",
+              "question": "1. Clinical Stage",
               "type": "dropdown",
               "options": [
                 {
-                  "label": "Referral & Safety-netting",
-                  "guidance": "MANAGEMENT PLAN:\n1. Referral: Refer 2WW if malignancy suspected. Urgent referral if clinical compromise. Routine if primary care management fails.\n2. Waiting List: Ensure patient knows how to report deterioration while waiting.\n3. Review: Review and optimize primary care management in the interim."
+                  "label": "Freezing Stage (Painful / Inflammatory)",
+                  "guidance": "MANAGEMENT PLAN (Consultant Grade):\n1. Primary Intervention: US-guided Intra-articular Corticosteroid Injection (40mg Triamcinolone). Superior to PT in early stage.\n2. Analgesia: Scheduled NSAIDs (e.g. Naproxen 500mg bd with PPI) + Paracetamol/Codeine as rescue.\n3. Physiotherapy: Gentle active-assisted ROM within pain-free limits. Avoid aggressive stretching in inflammatory phase.\n4. Education: Natural history (12-24 month duration). NICE CKS / BESS Guidelines."
+                },
+                {
+                  "label": "Frozen Stage (Stiff / Fibrotic)",
+                  "guidance": "MANAGEMENT PLAN (Consultant Grade):\n1. Hydrodilatation: Consider high-volume image-guided distension (Injecting 20-30ml saline + steroid) to disrupt capsular adhesions.\n2. Physiotherapy: Home Exercise Programme (HEP) focusing on external rotation and abduction. 4-5 times daily.\n3. Monitoring: Review for secondary rotator cuff disuse atrophy. NICE CKS / BESS Guidelines."
+                },
+                {
+                  "label": "Refractory / Severe Functional Impairment",
+                  "guidance": "MANAGEMENT PLAN (Consultant Grade):\n1. Surgical Referral: Orthopaedic review for Manipulation Under Anaesthesia (MUA) or Arthroscopic Capsular Release (ACR).\n2. Indication: Failure of 6 months conservative management with significant impact on sleep/QoL.\n3. Post-Op: Mandatory immediate intensive PT to maintain surgical gains."
                 }
               ]
             }
@@ -19413,18 +19448,16 @@
           "steps": [
             {
               "id": "cts-mgmt",
-              "question": "Clinical Features",
+              "question": "1. Severity & NCS Grading",
               "type": "dropdown",
               "options": [
                 {
-                  "value": "mild",
-                  "label": "Mild (Sensory only)",
-                  "guidance": "MANAGEMENT PLAN:\nNocturnal splints (6 weeks). Steroid injection if no response. Nerve conduction studies if diagnosis uncertain. NICE CKS."
+                  "label": "Mild to Moderate (Sensory only / Nocturnal symptoms)",
+                  "guidance": "MANAGEMENT PLAN (Specialist Care):\n1. Primary: Targeted corticosteroid injection (e.g. 20-40mg Methylprednisolone) into carpal tunnel. Highly effective for symptom relief.\n2. Splintage: Mandatory neutral-angle nocturnal wrist splints for 8 weeks.\n3. Neuro-monitoring: Repeat NCS in 3-6 months if persistent. NICE CKS."
                 },
                 {
-                  "value": "severe",
-                  "label": "Severe (Motor / Wasting)",
-                  "guidance": "MANAGEMENT PLAN:\nThenar wasting or weakness → Urgent referral for surgical decompression. Review for systemic causes (Thyroid, Diabetes, Pregnancy)."
+                  "label": "Severe (Motor deficit / Thenar atrophy)",
+                  "guidance": "MANAGEMENT PLAN (Surgical Care):\n1. Gold Standard: Open or endoscopic Carpal Tunnel Release (CTR).\n2. Urgency: Required within 4-8 weeks to prevent irreversible axotomy/atrophy.\n3. NCS Findings: Expect prolonged distal motor latency (DML > 4.5ms) and absent/reduced amplitudes."
                 }
               ]
             }
@@ -19440,18 +19473,16 @@
           "steps": [
             {
               "id": "cts-mgmt",
-              "question": "Clinical Features",
+              "question": "1. Severity & NCS Grading",
               "type": "dropdown",
               "options": [
                 {
-                  "value": "mild",
-                  "label": "Mild (Sensory only)",
-                  "guidance": "MANAGEMENT PLAN:\nNocturnal splints (6 weeks). Steroid injection if no response. Nerve conduction studies if diagnosis uncertain. NICE CKS."
+                  "label": "Mild to Moderate (Sensory only / Nocturnal symptoms)",
+                  "guidance": "MANAGEMENT PLAN (Specialist Care):\n1. Primary: Targeted corticosteroid injection (e.g. 20-40mg Methylprednisolone) into carpal tunnel. Highly effective for symptom relief.\n2. Splintage: Mandatory neutral-angle nocturnal wrist splints for 8 weeks.\n3. Neuro-monitoring: Repeat NCS in 3-6 months if persistent. NICE CKS."
                 },
                 {
-                  "value": "severe",
-                  "label": "Severe (Motor / Wasting)",
-                  "guidance": "MANAGEMENT PLAN:\nThenar wasting or weakness → Urgent referral for surgical decompression. Review for systemic causes (Thyroid, Diabetes, Pregnancy)."
+                  "label": "Severe (Motor deficit / Thenar atrophy)",
+                  "guidance": "MANAGEMENT PLAN (Surgical Care):\n1. Gold Standard: Open or endoscopic Carpal Tunnel Release (CTR).\n2. Urgency: Required within 4-8 weeks to prevent irreversible axotomy/atrophy.\n3. NCS Findings: Expect prolonged distal motor latency (DML > 4.5ms) and absent/reduced amplitudes."
                 }
               ]
             }
@@ -19468,18 +19499,16 @@
           "steps": [
             {
               "id": "cts-mgmt",
-              "question": "Clinical Features",
+              "question": "1. Severity & NCS Grading",
               "type": "dropdown",
               "options": [
                 {
-                  "value": "mild",
-                  "label": "Mild (Sensory only)",
-                  "guidance": "MANAGEMENT PLAN:\nNocturnal splints (6 weeks). Steroid injection if no response. Nerve conduction studies if diagnosis uncertain. NICE CKS."
+                  "label": "Mild to Moderate (Sensory only / Nocturnal symptoms)",
+                  "guidance": "MANAGEMENT PLAN (Specialist Care):\n1. Primary: Targeted corticosteroid injection (e.g. 20-40mg Methylprednisolone) into carpal tunnel. Highly effective for symptom relief.\n2. Splintage: Mandatory neutral-angle nocturnal wrist splints for 8 weeks.\n3. Neuro-monitoring: Repeat NCS in 3-6 months if persistent. NICE CKS."
                 },
                 {
-                  "value": "severe",
-                  "label": "Severe (Motor / Wasting)",
-                  "guidance": "MANAGEMENT PLAN:\nThenar wasting or weakness → Urgent referral for surgical decompression. Review for systemic causes (Thyroid, Diabetes, Pregnancy)."
+                  "label": "Severe (Motor deficit / Thenar atrophy)",
+                  "guidance": "MANAGEMENT PLAN (Surgical Care):\n1. Gold Standard: Open or endoscopic Carpal Tunnel Release (CTR).\n2. Urgency: Required within 4-8 weeks to prevent irreversible axotomy/atrophy.\n3. NCS Findings: Expect prolonged distal motor latency (DML > 4.5ms) and absent/reduced amplitudes."
                 }
               ]
             }
@@ -19497,18 +19526,16 @@
           "steps": [
             {
               "id": "cts-mgmt",
-              "question": "Clinical Features",
+              "question": "1. Severity & NCS Grading",
               "type": "dropdown",
               "options": [
                 {
-                  "value": "mild",
-                  "label": "Mild (Sensory only)",
-                  "guidance": "MANAGEMENT PLAN:\nNocturnal splints (6 weeks). Steroid injection if no response. Nerve conduction studies if diagnosis uncertain. NICE CKS."
+                  "label": "Mild to Moderate (Sensory only / Nocturnal symptoms)",
+                  "guidance": "MANAGEMENT PLAN (Specialist Care):\n1. Primary: Targeted corticosteroid injection (e.g. 20-40mg Methylprednisolone) into carpal tunnel. Highly effective for symptom relief.\n2. Splintage: Mandatory neutral-angle nocturnal wrist splints for 8 weeks.\n3. Neuro-monitoring: Repeat NCS in 3-6 months if persistent. NICE CKS."
                 },
                 {
-                  "value": "severe",
-                  "label": "Severe (Motor / Wasting)",
-                  "guidance": "MANAGEMENT PLAN:\nThenar wasting or weakness → Urgent referral for surgical decompression. Review for systemic causes (Thyroid, Diabetes, Pregnancy)."
+                  "label": "Severe (Motor deficit / Thenar atrophy)",
+                  "guidance": "MANAGEMENT PLAN (Surgical Care):\n1. Gold Standard: Open or endoscopic Carpal Tunnel Release (CTR).\n2. Urgency: Required within 4-8 weeks to prevent irreversible axotomy/atrophy.\n3. NCS Findings: Expect prolonged distal motor latency (DML > 4.5ms) and absent/reduced amplitudes."
                 }
               ]
             }
@@ -19526,18 +19553,16 @@
           "steps": [
             {
               "id": "cts-mgmt",
-              "question": "Clinical Features",
+              "question": "1. Severity & NCS Grading",
               "type": "dropdown",
               "options": [
                 {
-                  "value": "mild",
-                  "label": "Mild (Sensory only)",
-                  "guidance": "MANAGEMENT PLAN:\nNocturnal splints (6 weeks). Steroid injection if no response. Nerve conduction studies if diagnosis uncertain. NICE CKS."
+                  "label": "Mild to Moderate (Sensory only / Nocturnal symptoms)",
+                  "guidance": "MANAGEMENT PLAN (Specialist Care):\n1. Primary: Targeted corticosteroid injection (e.g. 20-40mg Methylprednisolone) into carpal tunnel. Highly effective for symptom relief.\n2. Splintage: Mandatory neutral-angle nocturnal wrist splints for 8 weeks.\n3. Neuro-monitoring: Repeat NCS in 3-6 months if persistent. NICE CKS."
                 },
                 {
-                  "value": "severe",
-                  "label": "Severe (Motor / Wasting)",
-                  "guidance": "MANAGEMENT PLAN:\nThenar wasting or weakness → Urgent referral for surgical decompression. Review for systemic causes (Thyroid, Diabetes, Pregnancy)."
+                  "label": "Severe (Motor deficit / Thenar atrophy)",
+                  "guidance": "MANAGEMENT PLAN (Surgical Care):\n1. Gold Standard: Open or endoscopic Carpal Tunnel Release (CTR).\n2. Urgency: Required within 4-8 weeks to prevent irreversible axotomy/atrophy.\n3. NCS Findings: Expect prolonged distal motor latency (DML > 4.5ms) and absent/reduced amplitudes."
                 }
               ]
             }
@@ -20228,14 +20253,21 @@
           "evidence": "Management per NICE CKS and Local formulary.",
           "steps": [
             {
-              "id": "guidance",
-              "question": "Clinical Guidance (Best Practice)",
+              "id": "frozen-shoulder-stage",
+              "question": "1. Clinical Stage",
               "type": "dropdown",
               "options": [
                 {
-                  "value": "standard",
-                  "label": "Management Overview",
-                  "guidance": "MANAGEMENT PLAN:\n1. Assessment: Full clinical assessment to exclude red flags.\n2. Action: Refer to local clinical formulary for specific pharmacotherapy.\n3. Safety-net: Provide robust safety-netting advice.\n4. Follow-up: Arrange review based on clinical findings."
+                  "label": "Freezing Stage (Painful / Inflammatory)",
+                  "guidance": "MANAGEMENT PLAN (Consultant Grade):\n1. Primary Intervention: US-guided Intra-articular Corticosteroid Injection (40mg Triamcinolone). Superior to PT in early stage.\n2. Analgesia: Scheduled NSAIDs (e.g. Naproxen 500mg bd with PPI) + Paracetamol/Codeine as rescue.\n3. Physiotherapy: Gentle active-assisted ROM within pain-free limits. Avoid aggressive stretching in inflammatory phase.\n4. Education: Natural history (12-24 month duration). NICE CKS / BESS Guidelines."
+                },
+                {
+                  "label": "Frozen Stage (Stiff / Fibrotic)",
+                  "guidance": "MANAGEMENT PLAN (Consultant Grade):\n1. Hydrodilatation: Consider high-volume image-guided distension (Injecting 20-30ml saline + steroid) to disrupt capsular adhesions.\n2. Physiotherapy: Home Exercise Programme (HEP) focusing on external rotation and abduction. 4-5 times daily.\n3. Monitoring: Review for secondary rotator cuff disuse atrophy. NICE CKS / BESS Guidelines."
+                },
+                {
+                  "label": "Refractory / Severe Functional Impairment",
+                  "guidance": "MANAGEMENT PLAN (Consultant Grade):\n1. Surgical Referral: Orthopaedic review for Manipulation Under Anaesthesia (MUA) or Arthroscopic Capsular Release (ACR).\n2. Indication: Failure of 6 months conservative management with significant impact on sleep/QoL.\n3. Post-Op: Mandatory immediate intensive PT to maintain surgical gains."
                 }
               ]
             }
@@ -22744,18 +22776,16 @@
           "steps": [
             {
               "id": "cts-mgmt",
-              "question": "Clinical Features",
+              "question": "1. Severity & NCS Grading",
               "type": "dropdown",
               "options": [
                 {
-                  "value": "mild",
-                  "label": "Mild (Sensory only)",
-                  "guidance": "MANAGEMENT PLAN:\nNocturnal splints (6 weeks). Steroid injection if no response. Nerve conduction studies if diagnosis uncertain. NICE CKS."
+                  "label": "Mild to Moderate (Sensory only / Nocturnal symptoms)",
+                  "guidance": "MANAGEMENT PLAN (Specialist Care):\n1. Primary: Targeted corticosteroid injection (e.g. 20-40mg Methylprednisolone) into carpal tunnel. Highly effective for symptom relief.\n2. Splintage: Mandatory neutral-angle nocturnal wrist splints for 8 weeks.\n3. Neuro-monitoring: Repeat NCS in 3-6 months if persistent. NICE CKS."
                 },
                 {
-                  "value": "severe",
-                  "label": "Severe (Motor / Wasting)",
-                  "guidance": "MANAGEMENT PLAN:\nThenar wasting or weakness → Urgent referral for surgical decompression. Review for systemic causes (Thyroid, Diabetes, Pregnancy)."
+                  "label": "Severe (Motor deficit / Thenar atrophy)",
+                  "guidance": "MANAGEMENT PLAN (Surgical Care):\n1. Gold Standard: Open or endoscopic Carpal Tunnel Release (CTR).\n2. Urgency: Required within 4-8 weeks to prevent irreversible axotomy/atrophy.\n3. NCS Findings: Expect prolonged distal motor latency (DML > 4.5ms) and absent/reduced amplitudes."
                 }
               ]
             }
@@ -23666,23 +23696,20 @@
           "steps": [
             {
               "id": "copd-action",
-              "question": "Presentation",
+              "question": "1. Escalation Hierarchy",
               "type": "dropdown",
               "options": [
                 {
-                  "value": "diagnosis",
-                  "label": "Suspected COPD",
-                  "guidance": "MANAGEMENT PLAN:\nSpirometry (post-bronchodilator FEV1/FVC <0.7). Staging by FEV1%. Assess breathlessness (MRC), exacerbations. Exclude asthma. NICE NG115."
+                  "label": "LAMA+LABA (Dual Therapy)",
+                  "guidance": "MANAGEMENT PLAN (Consultant Plan):\n1. First-line for patients with persistent breathlessness or exacerbations despite SABA/LAMA mono.\n2. Inhalers: e.g. Anoro Ellipta, Ultibro Breezhaler, Spiolto Respimat.\n3. Action: Check technique; offer Pulmonary Rehab if MRC ≥ 2. NICE NG115."
                 },
                 {
-                  "value": "stable",
-                  "label": "Stable COPD – step-up",
-                  "guidance": "MANAGEMENT PLAN:\nStep 1: SABA reliever as needed (e.g. Salbutamol / Ventolin). Step 2: add a LAMA (e.g. Tiotropium / Spiriva) or a LABA (e.g. Salmeterol / Serevent). Step 3: Dual therapy (LAMA+LABA e.g. Anoro / Spiolto). Step 4: Triple therapy (LABA+LAMA+ICS e.g. Trelegy / Trimbow) if eosinophils ≥0.3 or ≥2 exacerbations/year. Offer pulmonary rehab. NICE NG115."
+                  "label": "Triple Therapy (LABA+LAMA+ICS)",
+                  "guidance": "MANAGEMENT PLAN (Consultant Plan):\n1. Indication: Blood eosinophil count ≥ 0.3 x10^9/L OR ≥ 1 severe / 2 moderate exacerbations per year.\n2. Inhalers: Trelegy Ellipta or Trimbow.\n3. Risk: Discuss increased risk of pneumonia with ICS use. NICE NG115."
                 },
                 {
-                  "value": "exacerbation",
-                  "label": "Acute exacerbation",
-                  "guidance": "MANAGEMENT PLAN:\nPrednisolone 30 mg 7–14 days. Antibiotic if purulent sputum: doxycycline or amoxicillin (or clarithromycin). Increase bronchodilators. Consider hospital if severe. NICE NG115."
+                  "label": "Refractory / Advanced COPD",
+                  "guidance": "MANAGEMENT PLAN:\n1. Chronic Macrolide: Consider Azithromycin 250mg tiw if non-smoker and frequent exacerbations (requires baseline ECG & LFT).\n2. Oxygen: Assess for LTOT (Long Term Oxygen Therapy) if pO2 < 7.3 kPa stable.\n3. Referral: Lung volume reduction or Transplant assessment."
                 }
               ]
             }
@@ -23701,23 +23728,20 @@
           "steps": [
             {
               "id": "copd-action",
-              "question": "Presentation",
+              "question": "1. Escalation Hierarchy",
               "type": "dropdown",
               "options": [
                 {
-                  "value": "diagnosis",
-                  "label": "Suspected COPD",
-                  "guidance": "MANAGEMENT PLAN:\nSpirometry (post-bronchodilator FEV1/FVC <0.7). Staging by FEV1%. Assess breathlessness (MRC), exacerbations. Exclude asthma. NICE NG115."
+                  "label": "LAMA+LABA (Dual Therapy)",
+                  "guidance": "MANAGEMENT PLAN (Consultant Plan):\n1. First-line for patients with persistent breathlessness or exacerbations despite SABA/LAMA mono.\n2. Inhalers: e.g. Anoro Ellipta, Ultibro Breezhaler, Spiolto Respimat.\n3. Action: Check technique; offer Pulmonary Rehab if MRC ≥ 2. NICE NG115."
                 },
                 {
-                  "value": "stable",
-                  "label": "Stable COPD – step-up",
-                  "guidance": "MANAGEMENT PLAN:\nStep 1: SABA reliever as needed (e.g. Salbutamol / Ventolin). Step 2: add a LAMA (e.g. Tiotropium / Spiriva) or a LABA (e.g. Salmeterol / Serevent). Step 3: Dual therapy (LAMA+LABA e.g. Anoro / Spiolto). Step 4: Triple therapy (LABA+LAMA+ICS e.g. Trelegy / Trimbow) if eosinophils ≥0.3 or ≥2 exacerbations/year. Offer pulmonary rehab. NICE NG115."
+                  "label": "Triple Therapy (LABA+LAMA+ICS)",
+                  "guidance": "MANAGEMENT PLAN (Consultant Plan):\n1. Indication: Blood eosinophil count ≥ 0.3 x10^9/L OR ≥ 1 severe / 2 moderate exacerbations per year.\n2. Inhalers: Trelegy Ellipta or Trimbow.\n3. Risk: Discuss increased risk of pneumonia with ICS use. NICE NG115."
                 },
                 {
-                  "value": "exacerbation",
-                  "label": "Acute exacerbation",
-                  "guidance": "MANAGEMENT PLAN:\nPrednisolone 30 mg 7–14 days. Antibiotic if purulent sputum: doxycycline or amoxicillin (or clarithromycin). Increase bronchodilators. Consider hospital if severe. NICE NG115."
+                  "label": "Refractory / Advanced COPD",
+                  "guidance": "MANAGEMENT PLAN:\n1. Chronic Macrolide: Consider Azithromycin 250mg tiw if non-smoker and frequent exacerbations (requires baseline ECG & LFT).\n2. Oxygen: Assess for LTOT (Long Term Oxygen Therapy) if pO2 < 7.3 kPa stable.\n3. Referral: Lung volume reduction or Transplant assessment."
                 }
               ]
             }
@@ -23736,23 +23760,20 @@
           "steps": [
             {
               "id": "copd-action",
-              "question": "Presentation",
+              "question": "1. Escalation Hierarchy",
               "type": "dropdown",
               "options": [
                 {
-                  "value": "diagnosis",
-                  "label": "Suspected COPD",
-                  "guidance": "MANAGEMENT PLAN:\nSpirometry (post-bronchodilator FEV1/FVC <0.7). Staging by FEV1%. Assess breathlessness (MRC), exacerbations. Exclude asthma. NICE NG115."
+                  "label": "LAMA+LABA (Dual Therapy)",
+                  "guidance": "MANAGEMENT PLAN (Consultant Plan):\n1. First-line for patients with persistent breathlessness or exacerbations despite SABA/LAMA mono.\n2. Inhalers: e.g. Anoro Ellipta, Ultibro Breezhaler, Spiolto Respimat.\n3. Action: Check technique; offer Pulmonary Rehab if MRC ≥ 2. NICE NG115."
                 },
                 {
-                  "value": "stable",
-                  "label": "Stable COPD – step-up",
-                  "guidance": "MANAGEMENT PLAN:\nStep 1: SABA reliever as needed (e.g. Salbutamol / Ventolin). Step 2: add a LAMA (e.g. Tiotropium / Spiriva) or a LABA (e.g. Salmeterol / Serevent). Step 3: Dual therapy (LAMA+LABA e.g. Anoro / Spiolto). Step 4: Triple therapy (LABA+LAMA+ICS e.g. Trelegy / Trimbow) if eosinophils ≥0.3 or ≥2 exacerbations/year. Offer pulmonary rehab. NICE NG115."
+                  "label": "Triple Therapy (LABA+LAMA+ICS)",
+                  "guidance": "MANAGEMENT PLAN (Consultant Plan):\n1. Indication: Blood eosinophil count ≥ 0.3 x10^9/L OR ≥ 1 severe / 2 moderate exacerbations per year.\n2. Inhalers: Trelegy Ellipta or Trimbow.\n3. Risk: Discuss increased risk of pneumonia with ICS use. NICE NG115."
                 },
                 {
-                  "value": "exacerbation",
-                  "label": "Acute exacerbation",
-                  "guidance": "MANAGEMENT PLAN:\nPrednisolone 30 mg 7–14 days. Antibiotic if purulent sputum: doxycycline or amoxicillin (or clarithromycin). Increase bronchodilators. Consider hospital if severe. NICE NG115."
+                  "label": "Refractory / Advanced COPD",
+                  "guidance": "MANAGEMENT PLAN:\n1. Chronic Macrolide: Consider Azithromycin 250mg tiw if non-smoker and frequent exacerbations (requires baseline ECG & LFT).\n2. Oxygen: Assess for LTOT (Long Term Oxygen Therapy) if pO2 < 7.3 kPa stable.\n3. Referral: Lung volume reduction or Transplant assessment."
                 }
               ]
             }
@@ -23773,23 +23794,20 @@
           "steps": [
             {
               "id": "copd-action",
-              "question": "Presentation",
+              "question": "1. Escalation Hierarchy",
               "type": "dropdown",
               "options": [
                 {
-                  "value": "diagnosis",
-                  "label": "Suspected COPD",
-                  "guidance": "MANAGEMENT PLAN:\nSpirometry (post-bronchodilator FEV1/FVC <0.7). Staging by FEV1%. Assess breathlessness (MRC), exacerbations. Exclude asthma. NICE NG115."
+                  "label": "LAMA+LABA (Dual Therapy)",
+                  "guidance": "MANAGEMENT PLAN (Consultant Plan):\n1. First-line for patients with persistent breathlessness or exacerbations despite SABA/LAMA mono.\n2. Inhalers: e.g. Anoro Ellipta, Ultibro Breezhaler, Spiolto Respimat.\n3. Action: Check technique; offer Pulmonary Rehab if MRC ≥ 2. NICE NG115."
                 },
                 {
-                  "value": "stable",
-                  "label": "Stable COPD – step-up",
-                  "guidance": "MANAGEMENT PLAN:\nStep 1: SABA reliever as needed (e.g. Salbutamol / Ventolin). Step 2: add a LAMA (e.g. Tiotropium / Spiriva) or a LABA (e.g. Salmeterol / Serevent). Step 3: Dual therapy (LAMA+LABA e.g. Anoro / Spiolto). Step 4: Triple therapy (LABA+LAMA+ICS e.g. Trelegy / Trimbow) if eosinophils ≥0.3 or ≥2 exacerbations/year. Offer pulmonary rehab. NICE NG115."
+                  "label": "Triple Therapy (LABA+LAMA+ICS)",
+                  "guidance": "MANAGEMENT PLAN (Consultant Plan):\n1. Indication: Blood eosinophil count ≥ 0.3 x10^9/L OR ≥ 1 severe / 2 moderate exacerbations per year.\n2. Inhalers: Trelegy Ellipta or Trimbow.\n3. Risk: Discuss increased risk of pneumonia with ICS use. NICE NG115."
                 },
                 {
-                  "value": "exacerbation",
-                  "label": "Acute exacerbation",
-                  "guidance": "MANAGEMENT PLAN:\nPrednisolone 30 mg 7–14 days. Antibiotic if purulent sputum: doxycycline or amoxicillin (or clarithromycin). Increase bronchodilators. Consider hospital if severe. NICE NG115."
+                  "label": "Refractory / Advanced COPD",
+                  "guidance": "MANAGEMENT PLAN:\n1. Chronic Macrolide: Consider Azithromycin 250mg tiw if non-smoker and frequent exacerbations (requires baseline ECG & LFT).\n2. Oxygen: Assess for LTOT (Long Term Oxygen Therapy) if pO2 < 7.3 kPa stable.\n3. Referral: Lung volume reduction or Transplant assessment."
                 }
               ]
             }
@@ -23808,23 +23826,20 @@
           "steps": [
             {
               "id": "copd-action",
-              "question": "Presentation",
+              "question": "1. Escalation Hierarchy",
               "type": "dropdown",
               "options": [
                 {
-                  "value": "diagnosis",
-                  "label": "Suspected COPD",
-                  "guidance": "MANAGEMENT PLAN:\nSpirometry (post-bronchodilator FEV1/FVC <0.7). Staging by FEV1%. Assess breathlessness (MRC), exacerbations. Exclude asthma. NICE NG115."
+                  "label": "LAMA+LABA (Dual Therapy)",
+                  "guidance": "MANAGEMENT PLAN (Consultant Plan):\n1. First-line for patients with persistent breathlessness or exacerbations despite SABA/LAMA mono.\n2. Inhalers: e.g. Anoro Ellipta, Ultibro Breezhaler, Spiolto Respimat.\n3. Action: Check technique; offer Pulmonary Rehab if MRC ≥ 2. NICE NG115."
                 },
                 {
-                  "value": "stable",
-                  "label": "Stable COPD – step-up",
-                  "guidance": "MANAGEMENT PLAN:\nStep 1: SABA reliever as needed (e.g. Salbutamol / Ventolin). Step 2: add a LAMA (e.g. Tiotropium / Spiriva) or a LABA (e.g. Salmeterol / Serevent). Step 3: Dual therapy (LAMA+LABA e.g. Anoro / Spiolto). Step 4: Triple therapy (LABA+LAMA+ICS e.g. Trelegy / Trimbow) if eosinophils ≥0.3 or ≥2 exacerbations/year. Offer pulmonary rehab. NICE NG115."
+                  "label": "Triple Therapy (LABA+LAMA+ICS)",
+                  "guidance": "MANAGEMENT PLAN (Consultant Plan):\n1. Indication: Blood eosinophil count ≥ 0.3 x10^9/L OR ≥ 1 severe / 2 moderate exacerbations per year.\n2. Inhalers: Trelegy Ellipta or Trimbow.\n3. Risk: Discuss increased risk of pneumonia with ICS use. NICE NG115."
                 },
                 {
-                  "value": "exacerbation",
-                  "label": "Acute exacerbation",
-                  "guidance": "MANAGEMENT PLAN:\nPrednisolone 30 mg 7–14 days. Antibiotic if purulent sputum: doxycycline or amoxicillin (or clarithromycin). Increase bronchodilators. Consider hospital if severe. NICE NG115."
+                  "label": "Refractory / Advanced COPD",
+                  "guidance": "MANAGEMENT PLAN:\n1. Chronic Macrolide: Consider Azithromycin 250mg tiw if non-smoker and frequent exacerbations (requires baseline ECG & LFT).\n2. Oxygen: Assess for LTOT (Long Term Oxygen Therapy) if pO2 < 7.3 kPa stable.\n3. Referral: Lung volume reduction or Transplant assessment."
                 }
               ]
             }
@@ -23843,23 +23858,20 @@
           "steps": [
             {
               "id": "copd-action",
-              "question": "Presentation",
+              "question": "1. Escalation Hierarchy",
               "type": "dropdown",
               "options": [
                 {
-                  "value": "diagnosis",
-                  "label": "Suspected COPD",
-                  "guidance": "MANAGEMENT PLAN:\nSpirometry (post-bronchodilator FEV1/FVC <0.7). Staging by FEV1%. Assess breathlessness (MRC), exacerbations. Exclude asthma. NICE NG115."
+                  "label": "LAMA+LABA (Dual Therapy)",
+                  "guidance": "MANAGEMENT PLAN (Consultant Plan):\n1. First-line for patients with persistent breathlessness or exacerbations despite SABA/LAMA mono.\n2. Inhalers: e.g. Anoro Ellipta, Ultibro Breezhaler, Spiolto Respimat.\n3. Action: Check technique; offer Pulmonary Rehab if MRC ≥ 2. NICE NG115."
                 },
                 {
-                  "value": "stable",
-                  "label": "Stable COPD – step-up",
-                  "guidance": "MANAGEMENT PLAN:\nStep 1: SABA reliever as needed (e.g. Salbutamol / Ventolin). Step 2: add a LAMA (e.g. Tiotropium / Spiriva) or a LABA (e.g. Salmeterol / Serevent). Step 3: Dual therapy (LAMA+LABA e.g. Anoro / Spiolto). Step 4: Triple therapy (LABA+LAMA+ICS e.g. Trelegy / Trimbow) if eosinophils ≥0.3 or ≥2 exacerbations/year. Offer pulmonary rehab. NICE NG115."
+                  "label": "Triple Therapy (LABA+LAMA+ICS)",
+                  "guidance": "MANAGEMENT PLAN (Consultant Plan):\n1. Indication: Blood eosinophil count ≥ 0.3 x10^9/L OR ≥ 1 severe / 2 moderate exacerbations per year.\n2. Inhalers: Trelegy Ellipta or Trimbow.\n3. Risk: Discuss increased risk of pneumonia with ICS use. NICE NG115."
                 },
                 {
-                  "value": "exacerbation",
-                  "label": "Acute exacerbation",
-                  "guidance": "MANAGEMENT PLAN:\nPrednisolone 30 mg 7–14 days. Antibiotic if purulent sputum: doxycycline or amoxicillin (or clarithromycin). Increase bronchodilators. Consider hospital if severe. NICE NG115."
+                  "label": "Refractory / Advanced COPD",
+                  "guidance": "MANAGEMENT PLAN:\n1. Chronic Macrolide: Consider Azithromycin 250mg tiw if non-smoker and frequent exacerbations (requires baseline ECG & LFT).\n2. Oxygen: Assess for LTOT (Long Term Oxygen Therapy) if pO2 < 7.3 kPa stable.\n3. Referral: Lung volume reduction or Transplant assessment."
                 }
               ]
             }
@@ -23878,23 +23890,20 @@
           "steps": [
             {
               "id": "copd-action",
-              "question": "Presentation",
+              "question": "1. Escalation Hierarchy",
               "type": "dropdown",
               "options": [
                 {
-                  "value": "diagnosis",
-                  "label": "Suspected COPD",
-                  "guidance": "MANAGEMENT PLAN:\nSpirometry (post-bronchodilator FEV1/FVC <0.7). Staging by FEV1%. Assess breathlessness (MRC), exacerbations. Exclude asthma. NICE NG115."
+                  "label": "LAMA+LABA (Dual Therapy)",
+                  "guidance": "MANAGEMENT PLAN (Consultant Plan):\n1. First-line for patients with persistent breathlessness or exacerbations despite SABA/LAMA mono.\n2. Inhalers: e.g. Anoro Ellipta, Ultibro Breezhaler, Spiolto Respimat.\n3. Action: Check technique; offer Pulmonary Rehab if MRC ≥ 2. NICE NG115."
                 },
                 {
-                  "value": "stable",
-                  "label": "Stable COPD – step-up",
-                  "guidance": "MANAGEMENT PLAN:\nStep 1: SABA reliever as needed (e.g. Salbutamol / Ventolin). Step 2: add a LAMA (e.g. Tiotropium / Spiriva) or a LABA (e.g. Salmeterol / Serevent). Step 3: Dual therapy (LAMA+LABA e.g. Anoro / Spiolto). Step 4: Triple therapy (LABA+LAMA+ICS e.g. Trelegy / Trimbow) if eosinophils ≥0.3 or ≥2 exacerbations/year. Offer pulmonary rehab. NICE NG115."
+                  "label": "Triple Therapy (LABA+LAMA+ICS)",
+                  "guidance": "MANAGEMENT PLAN (Consultant Plan):\n1. Indication: Blood eosinophil count ≥ 0.3 x10^9/L OR ≥ 1 severe / 2 moderate exacerbations per year.\n2. Inhalers: Trelegy Ellipta or Trimbow.\n3. Risk: Discuss increased risk of pneumonia with ICS use. NICE NG115."
                 },
                 {
-                  "value": "exacerbation",
-                  "label": "Acute exacerbation",
-                  "guidance": "MANAGEMENT PLAN:\nPrednisolone 30 mg 7–14 days. Antibiotic if purulent sputum: doxycycline or amoxicillin (or clarithromycin). Increase bronchodilators. Consider hospital if severe. NICE NG115."
+                  "label": "Refractory / Advanced COPD",
+                  "guidance": "MANAGEMENT PLAN:\n1. Chronic Macrolide: Consider Azithromycin 250mg tiw if non-smoker and frequent exacerbations (requires baseline ECG & LFT).\n2. Oxygen: Assess for LTOT (Long Term Oxygen Therapy) if pO2 < 7.3 kPa stable.\n3. Referral: Lung volume reduction or Transplant assessment."
                 }
               ]
             }
@@ -23913,23 +23922,20 @@
           "steps": [
             {
               "id": "copd-action",
-              "question": "Presentation",
+              "question": "1. Escalation Hierarchy",
               "type": "dropdown",
               "options": [
                 {
-                  "value": "diagnosis",
-                  "label": "Suspected COPD",
-                  "guidance": "MANAGEMENT PLAN:\nSpirometry (post-bronchodilator FEV1/FVC <0.7). Staging by FEV1%. Assess breathlessness (MRC), exacerbations. Exclude asthma. NICE NG115."
+                  "label": "LAMA+LABA (Dual Therapy)",
+                  "guidance": "MANAGEMENT PLAN (Consultant Plan):\n1. First-line for patients with persistent breathlessness or exacerbations despite SABA/LAMA mono.\n2. Inhalers: e.g. Anoro Ellipta, Ultibro Breezhaler, Spiolto Respimat.\n3. Action: Check technique; offer Pulmonary Rehab if MRC ≥ 2. NICE NG115."
                 },
                 {
-                  "value": "stable",
-                  "label": "Stable COPD – step-up",
-                  "guidance": "MANAGEMENT PLAN:\nStep 1: SABA reliever as needed (e.g. Salbutamol / Ventolin). Step 2: add a LAMA (e.g. Tiotropium / Spiriva) or a LABA (e.g. Salmeterol / Serevent). Step 3: Dual therapy (LAMA+LABA e.g. Anoro / Spiolto). Step 4: Triple therapy (LABA+LAMA+ICS e.g. Trelegy / Trimbow) if eosinophils ≥0.3 or ≥2 exacerbations/year. Offer pulmonary rehab. NICE NG115."
+                  "label": "Triple Therapy (LABA+LAMA+ICS)",
+                  "guidance": "MANAGEMENT PLAN (Consultant Plan):\n1. Indication: Blood eosinophil count ≥ 0.3 x10^9/L OR ≥ 1 severe / 2 moderate exacerbations per year.\n2. Inhalers: Trelegy Ellipta or Trimbow.\n3. Risk: Discuss increased risk of pneumonia with ICS use. NICE NG115."
                 },
                 {
-                  "value": "exacerbation",
-                  "label": "Acute exacerbation",
-                  "guidance": "MANAGEMENT PLAN:\nPrednisolone 30 mg 7–14 days. Antibiotic if purulent sputum: doxycycline or amoxicillin (or clarithromycin). Increase bronchodilators. Consider hospital if severe. NICE NG115."
+                  "label": "Refractory / Advanced COPD",
+                  "guidance": "MANAGEMENT PLAN:\n1. Chronic Macrolide: Consider Azithromycin 250mg tiw if non-smoker and frequent exacerbations (requires baseline ECG & LFT).\n2. Oxygen: Assess for LTOT (Long Term Oxygen Therapy) if pO2 < 7.3 kPa stable.\n3. Referral: Lung volume reduction or Transplant assessment."
                 }
               ]
             }
@@ -23948,23 +23954,20 @@
           "steps": [
             {
               "id": "copd-action",
-              "question": "Presentation",
+              "question": "1. Escalation Hierarchy",
               "type": "dropdown",
               "options": [
                 {
-                  "value": "diagnosis",
-                  "label": "Suspected COPD",
-                  "guidance": "MANAGEMENT PLAN:\nSpirometry (post-bronchodilator FEV1/FVC <0.7). Staging by FEV1%. Assess breathlessness (MRC), exacerbations. Exclude asthma. NICE NG115."
+                  "label": "LAMA+LABA (Dual Therapy)",
+                  "guidance": "MANAGEMENT PLAN (Consultant Plan):\n1. First-line for patients with persistent breathlessness or exacerbations despite SABA/LAMA mono.\n2. Inhalers: e.g. Anoro Ellipta, Ultibro Breezhaler, Spiolto Respimat.\n3. Action: Check technique; offer Pulmonary Rehab if MRC ≥ 2. NICE NG115."
                 },
                 {
-                  "value": "stable",
-                  "label": "Stable COPD – step-up",
-                  "guidance": "MANAGEMENT PLAN:\nStep 1: SABA reliever as needed (e.g. Salbutamol / Ventolin). Step 2: add a LAMA (e.g. Tiotropium / Spiriva) or a LABA (e.g. Salmeterol / Serevent). Step 3: Dual therapy (LAMA+LABA e.g. Anoro / Spiolto). Step 4: Triple therapy (LABA+LAMA+ICS e.g. Trelegy / Trimbow) if eosinophils ≥0.3 or ≥2 exacerbations/year. Offer pulmonary rehab. NICE NG115."
+                  "label": "Triple Therapy (LABA+LAMA+ICS)",
+                  "guidance": "MANAGEMENT PLAN (Consultant Plan):\n1. Indication: Blood eosinophil count ≥ 0.3 x10^9/L OR ≥ 1 severe / 2 moderate exacerbations per year.\n2. Inhalers: Trelegy Ellipta or Trimbow.\n3. Risk: Discuss increased risk of pneumonia with ICS use. NICE NG115."
                 },
                 {
-                  "value": "exacerbation",
-                  "label": "Acute exacerbation",
-                  "guidance": "MANAGEMENT PLAN:\nPrednisolone 30 mg 7–14 days. Antibiotic if purulent sputum: doxycycline or amoxicillin (or clarithromycin). Increase bronchodilators. Consider hospital if severe. NICE NG115."
+                  "label": "Refractory / Advanced COPD",
+                  "guidance": "MANAGEMENT PLAN:\n1. Chronic Macrolide: Consider Azithromycin 250mg tiw if non-smoker and frequent exacerbations (requires baseline ECG & LFT).\n2. Oxygen: Assess for LTOT (Long Term Oxygen Therapy) if pO2 < 7.3 kPa stable.\n3. Referral: Lung volume reduction or Transplant assessment."
                 }
               ]
             }
@@ -23983,23 +23986,20 @@
           "steps": [
             {
               "id": "copd-action",
-              "question": "Presentation",
+              "question": "1. Escalation Hierarchy",
               "type": "dropdown",
               "options": [
                 {
-                  "value": "diagnosis",
-                  "label": "Suspected COPD",
-                  "guidance": "MANAGEMENT PLAN:\nSpirometry (post-bronchodilator FEV1/FVC <0.7). Staging by FEV1%. Assess breathlessness (MRC), exacerbations. Exclude asthma. NICE NG115."
+                  "label": "LAMA+LABA (Dual Therapy)",
+                  "guidance": "MANAGEMENT PLAN (Consultant Plan):\n1. First-line for patients with persistent breathlessness or exacerbations despite SABA/LAMA mono.\n2. Inhalers: e.g. Anoro Ellipta, Ultibro Breezhaler, Spiolto Respimat.\n3. Action: Check technique; offer Pulmonary Rehab if MRC ≥ 2. NICE NG115."
                 },
                 {
-                  "value": "stable",
-                  "label": "Stable COPD – step-up",
-                  "guidance": "MANAGEMENT PLAN:\nStep 1: SABA reliever as needed (e.g. Salbutamol / Ventolin). Step 2: add a LAMA (e.g. Tiotropium / Spiriva) or a LABA (e.g. Salmeterol / Serevent). Step 3: Dual therapy (LAMA+LABA e.g. Anoro / Spiolto). Step 4: Triple therapy (LABA+LAMA+ICS e.g. Trelegy / Trimbow) if eosinophils ≥0.3 or ≥2 exacerbations/year. Offer pulmonary rehab. NICE NG115."
+                  "label": "Triple Therapy (LABA+LAMA+ICS)",
+                  "guidance": "MANAGEMENT PLAN (Consultant Plan):\n1. Indication: Blood eosinophil count ≥ 0.3 x10^9/L OR ≥ 1 severe / 2 moderate exacerbations per year.\n2. Inhalers: Trelegy Ellipta or Trimbow.\n3. Risk: Discuss increased risk of pneumonia with ICS use. NICE NG115."
                 },
                 {
-                  "value": "exacerbation",
-                  "label": "Acute exacerbation",
-                  "guidance": "MANAGEMENT PLAN:\nPrednisolone 30 mg 7–14 days. Antibiotic if purulent sputum: doxycycline or amoxicillin (or clarithromycin). Increase bronchodilators. Consider hospital if severe. NICE NG115."
+                  "label": "Refractory / Advanced COPD",
+                  "guidance": "MANAGEMENT PLAN:\n1. Chronic Macrolide: Consider Azithromycin 250mg tiw if non-smoker and frequent exacerbations (requires baseline ECG & LFT).\n2. Oxygen: Assess for LTOT (Long Term Oxygen Therapy) if pO2 < 7.3 kPa stable.\n3. Referral: Lung volume reduction or Transplant assessment."
                 }
               ]
             }
@@ -24438,18 +24438,16 @@
           "steps": [
             {
               "id": "obesity-mgmt",
-              "question": "Management Level",
+              "question": "1. Management Hierarchy",
               "type": "dropdown",
               "options": [
                 {
-                  "value": "lifestyle",
-                  "label": "Lifestyle & BMI assessment",
-                  "guidance": "MANAGEMENT PLAN:\nCalculate BMI and waist circumference. Set 5-10% weight loss goal. Tier 2 weight management referral. NICE CG189."
+                  "label": "Tier 3 Specialist Service Referral",
+                  "guidance": "MANAGEMENT PLAN:\n1. Criteria: BMI ≥ 35 with comorbidities (T2DM, OSA, HTN) or BMI ≥ 40.\n2. Multidisciplinary: Physician, Dietitian, Psychologist, and Physiotherapist led.\n3. Pharmacotherapy: Initiate GLP-1 (e.g. Wegovy/Semaglutide) as per NICE TA875 criteria (BMI ≥ 35 + at least one comorbidity)."
                 },
                 {
-                  "value": "medication",
-                  "label": "Pharmacotherapy (Orlistat/GLP-1)",
-                  "guidance": "MANAGEMENT PLAN:\nOrlistat if BMI ≥30 (or ≥28 with comorbidities). GLP-1 (e.g. Semaglutide) via Tier 3/4 specialist clinics if BMI ≥35 (or ≥30 with comorb in some cases). NICE TA664."
+                  "label": "Tier 4 (Bariatric Surgery)",
+                  "guidance": "MANAGEMENT PLAN:\n1. Procedures: Roux-en-Y Gastric Bypass (RYGB) or Sleeve Gastrectomy.\n2. Criteria: BMI ≥ 40 or ≥ 35 with significant comorbidities; failure of Tier 3 intervention for ≥ 6 months.\n3. Pre-op: Smoking cessation and psychiatric clearance mandatory. NICE CG189."
                 }
               ]
             }
@@ -25478,25 +25476,14 @@
           "evidence": "Management per NICE CKS and Local formulary.",
           "steps": [
             {
-              "id": "eczema-severity",
-              "question": "Severity and Location",
+              "id": "guidance",
+              "question": "Clinical Guidance (Best Practice)",
               "type": "dropdown",
               "options": [
                 {
-                  "label": "Mild Eczema",
-                  "guidance": "MANAGEMENT PLAN:\n1. Emollients: Apply liberally and frequently (250g-500g per week). Use even when skin is clear.\n2. Flare: Mild potency topical steroid (e.g. Hydrocortisone 1%) once or twice daily for up to 2 weeks.\n3. Hygiene: Use emollient as soap substitute. NICE CKS."
-                },
-                {
-                  "label": "Moderate Eczema",
-                  "guidance": "MANAGEMENT PLAN:\n1. Flare: Moderate potency topical steroid (e.g. Eumovate / Betnovate-RD) once or twice daily for up to 2 weeks.\n2. Maintenance: Consider 'weekend' use of steroid on common flare areas if frequent recurrences.\n3. Antihistamine: Non-sedating (e.g. Cetirizine) for itch if needed. NICE CKS."
-                },
-                {
-                  "label": "Severe Eczema",
-                  "guidance": "MANAGEMENT PLAN:\n1. Flare: Potent topical steroid (e.g. Betnovate / Elocon) once or twice daily for up to 2 weeks. Do not use potent steroids on face/flexures.\n2. Infection: Suspect if weeping, crusting, or failing to improve. Swab and start Flucloxacillin.\n3. Referral: Failure of potent steroids or impact on sleep/quality of life. NICE CKS."
-                },
-                {
-                  "label": "Scalp Involvement",
-                  "guidance": "MANAGEMENT PLAN:\n1. Shampoo: Coal tar based shampoo (Capasal) or Ketoconazole (Nizoral) if seborrhoeic overlap.\n2. Steroid: Moderate or potent steroid scalp application/lotion for up to 4 weeks. NICE CKS."
+                  "value": "standard",
+                  "label": "Management Overview",
+                  "guidance": "MANAGEMENT PLAN:\n1. Assessment: Full clinical assessment to exclude red flags.\n2. Action: Refer to local clinical formulary for specific pharmacotherapy.\n3. Safety-net: Provide robust safety-netting advice.\n4. Follow-up: Arrange review based on clinical findings."
                 }
               ]
             }
@@ -26406,25 +26393,17 @@
           "evidence": "Management per NICE CKS and Local formulary.",
           "steps": [
             {
-              "id": "eczema-severity",
-              "question": "Severity and Location",
+              "id": "derm-specialist",
+              "question": "Specialist Management (Consultant)",
               "type": "dropdown",
               "options": [
                 {
-                  "label": "Mild Eczema",
-                  "guidance": "MANAGEMENT PLAN:\n1. Emollients: Apply liberally and frequently (250g-500g per week). Use even when skin is clear.\n2. Flare: Mild potency topical steroid (e.g. Hydrocortisone 1%) once or twice daily for up to 2 weeks.\n3. Hygiene: Use emollient as soap substitute. NICE CKS."
+                  "label": "Refractory Eczema / Psoriasis",
+                  "guidance": "MANAGEMENT PLAN (Consultant Grade):\n1. Phototherapy: Consider NB-UVB (Narrowband) 3 times weekly for 6-12 weeks if topical tx fails.\n2. Systemic Non-biologics: Methotrexate (weekly), Ciclosporin (short-term), or Azathioprine. Requires baseline FBC, U&E, LFT, and Pro-collagen III peptide (for MTX).\n3. Biologics (High impact): Dupilumab (Eczema) or Adalimumab/Ustekinumab (Psoriasis). Criteria: PASI > 10 and DLQI > 10 despite two systemic agents. NICE TA guidelines."
                 },
                 {
-                  "label": "Moderate Eczema",
-                  "guidance": "MANAGEMENT PLAN:\n1. Flare: Moderate potency topical steroid (e.g. Eumovate / Betnovate-RD) once or twice daily for up to 2 weeks.\n2. Maintenance: Consider 'weekend' use of steroid on common flare areas if frequent recurrences.\n3. Antihistamine: Non-sedating (e.g. Cetirizine) for itch if needed. NICE CKS."
-                },
-                {
-                  "label": "Severe Eczema",
-                  "guidance": "MANAGEMENT PLAN:\n1. Flare: Potent topical steroid (e.g. Betnovate / Elocon) once or twice daily for up to 2 weeks. Do not use potent steroids on face/flexures.\n2. Infection: Suspect if weeping, crusting, or failing to improve. Swab and start Flucloxacillin.\n3. Referral: Failure of potent steroids or impact on sleep/quality of life. NICE CKS."
-                },
-                {
-                  "label": "Scalp Involvement",
-                  "guidance": "MANAGEMENT PLAN:\n1. Shampoo: Coal tar based shampoo (Capasal) or Ketoconazole (Nizoral) if seborrhoeic overlap.\n2. Steroid: Moderate or potent steroid scalp application/lotion for up to 4 weeks. NICE CKS."
+                  "label": "Pyoderma Gangrenosum / Vasculitis (Suspected)",
+                  "guidance": "MANAGEMENT PLAN:\n1. Biopsy: Incisional biopsy (not punch) for histology and direct immunofluorescence (DIF).\n2. First-line: High-dose Oral Prednisolone (0.5-1mg/kg) + steroid-sparing agent.\n3. Triage: Urgent Dermatology review; exclude underlying IBD, Rheumatoid, or Myeloma."
                 }
               ]
             }
@@ -26440,25 +26419,17 @@
           "evidence": "Management per NICE CKS and Local formulary.",
           "steps": [
             {
-              "id": "eczema-severity",
-              "question": "Severity and Location",
+              "id": "derm-specialist",
+              "question": "Specialist Management (Consultant)",
               "type": "dropdown",
               "options": [
                 {
-                  "label": "Mild Eczema",
-                  "guidance": "MANAGEMENT PLAN:\n1. Emollients: Apply liberally and frequently (250g-500g per week). Use even when skin is clear.\n2. Flare: Mild potency topical steroid (e.g. Hydrocortisone 1%) once or twice daily for up to 2 weeks.\n3. Hygiene: Use emollient as soap substitute. NICE CKS."
+                  "label": "Refractory Eczema / Psoriasis",
+                  "guidance": "MANAGEMENT PLAN (Consultant Grade):\n1. Phototherapy: Consider NB-UVB (Narrowband) 3 times weekly for 6-12 weeks if topical tx fails.\n2. Systemic Non-biologics: Methotrexate (weekly), Ciclosporin (short-term), or Azathioprine. Requires baseline FBC, U&E, LFT, and Pro-collagen III peptide (for MTX).\n3. Biologics (High impact): Dupilumab (Eczema) or Adalimumab/Ustekinumab (Psoriasis). Criteria: PASI > 10 and DLQI > 10 despite two systemic agents. NICE TA guidelines."
                 },
                 {
-                  "label": "Moderate Eczema",
-                  "guidance": "MANAGEMENT PLAN:\n1. Flare: Moderate potency topical steroid (e.g. Eumovate / Betnovate-RD) once or twice daily for up to 2 weeks.\n2. Maintenance: Consider 'weekend' use of steroid on common flare areas if frequent recurrences.\n3. Antihistamine: Non-sedating (e.g. Cetirizine) for itch if needed. NICE CKS."
-                },
-                {
-                  "label": "Severe Eczema",
-                  "guidance": "MANAGEMENT PLAN:\n1. Flare: Potent topical steroid (e.g. Betnovate / Elocon) once or twice daily for up to 2 weeks. Do not use potent steroids on face/flexures.\n2. Infection: Suspect if weeping, crusting, or failing to improve. Swab and start Flucloxacillin.\n3. Referral: Failure of potent steroids or impact on sleep/quality of life. NICE CKS."
-                },
-                {
-                  "label": "Scalp Involvement",
-                  "guidance": "MANAGEMENT PLAN:\n1. Shampoo: Coal tar based shampoo (Capasal) or Ketoconazole (Nizoral) if seborrhoeic overlap.\n2. Steroid: Moderate or potent steroid scalp application/lotion for up to 4 weeks. NICE CKS."
+                  "label": "Pyoderma Gangrenosum / Vasculitis (Suspected)",
+                  "guidance": "MANAGEMENT PLAN:\n1. Biopsy: Incisional biopsy (not punch) for histology and direct immunofluorescence (DIF).\n2. First-line: High-dose Oral Prednisolone (0.5-1mg/kg) + steroid-sparing agent.\n3. Triage: Urgent Dermatology review; exclude underlying IBD, Rheumatoid, or Myeloma."
                 }
               ]
             }
@@ -26474,25 +26445,17 @@
           "evidence": "Management per NICE CKS and Local formulary.",
           "steps": [
             {
-              "id": "eczema-severity",
-              "question": "Severity and Location",
+              "id": "derm-specialist",
+              "question": "Specialist Management (Consultant)",
               "type": "dropdown",
               "options": [
                 {
-                  "label": "Mild Eczema",
-                  "guidance": "MANAGEMENT PLAN:\n1. Emollients: Apply liberally and frequently (250g-500g per week). Use even when skin is clear.\n2. Flare: Mild potency topical steroid (e.g. Hydrocortisone 1%) once or twice daily for up to 2 weeks.\n3. Hygiene: Use emollient as soap substitute. NICE CKS."
+                  "label": "Refractory Eczema / Psoriasis",
+                  "guidance": "MANAGEMENT PLAN (Consultant Grade):\n1. Phototherapy: Consider NB-UVB (Narrowband) 3 times weekly for 6-12 weeks if topical tx fails.\n2. Systemic Non-biologics: Methotrexate (weekly), Ciclosporin (short-term), or Azathioprine. Requires baseline FBC, U&E, LFT, and Pro-collagen III peptide (for MTX).\n3. Biologics (High impact): Dupilumab (Eczema) or Adalimumab/Ustekinumab (Psoriasis). Criteria: PASI > 10 and DLQI > 10 despite two systemic agents. NICE TA guidelines."
                 },
                 {
-                  "label": "Moderate Eczema",
-                  "guidance": "MANAGEMENT PLAN:\n1. Flare: Moderate potency topical steroid (e.g. Eumovate / Betnovate-RD) once or twice daily for up to 2 weeks.\n2. Maintenance: Consider 'weekend' use of steroid on common flare areas if frequent recurrences.\n3. Antihistamine: Non-sedating (e.g. Cetirizine) for itch if needed. NICE CKS."
-                },
-                {
-                  "label": "Severe Eczema",
-                  "guidance": "MANAGEMENT PLAN:\n1. Flare: Potent topical steroid (e.g. Betnovate / Elocon) once or twice daily for up to 2 weeks. Do not use potent steroids on face/flexures.\n2. Infection: Suspect if weeping, crusting, or failing to improve. Swab and start Flucloxacillin.\n3. Referral: Failure of potent steroids or impact on sleep/quality of life. NICE CKS."
-                },
-                {
-                  "label": "Scalp Involvement",
-                  "guidance": "MANAGEMENT PLAN:\n1. Shampoo: Coal tar based shampoo (Capasal) or Ketoconazole (Nizoral) if seborrhoeic overlap.\n2. Steroid: Moderate or potent steroid scalp application/lotion for up to 4 weeks. NICE CKS."
+                  "label": "Pyoderma Gangrenosum / Vasculitis (Suspected)",
+                  "guidance": "MANAGEMENT PLAN:\n1. Biopsy: Incisional biopsy (not punch) for histology and direct immunofluorescence (DIF).\n2. First-line: High-dose Oral Prednisolone (0.5-1mg/kg) + steroid-sparing agent.\n3. Triage: Urgent Dermatology review; exclude underlying IBD, Rheumatoid, or Myeloma."
                 }
               ]
             }
@@ -38048,18 +38011,16 @@
           "steps": [
             {
               "id": "cts-mgmt",
-              "question": "Clinical Features",
+              "question": "1. Severity & NCS Grading",
               "type": "dropdown",
               "options": [
                 {
-                  "value": "mild",
-                  "label": "Mild (Sensory only)",
-                  "guidance": "MANAGEMENT PLAN:\nNocturnal splints (6 weeks). Steroid injection if no response. Nerve conduction studies if diagnosis uncertain. NICE CKS."
+                  "label": "Mild to Moderate (Sensory only / Nocturnal symptoms)",
+                  "guidance": "MANAGEMENT PLAN (Specialist Care):\n1. Primary: Targeted corticosteroid injection (e.g. 20-40mg Methylprednisolone) into carpal tunnel. Highly effective for symptom relief.\n2. Splintage: Mandatory neutral-angle nocturnal wrist splints for 8 weeks.\n3. Neuro-monitoring: Repeat NCS in 3-6 months if persistent. NICE CKS."
                 },
                 {
-                  "value": "severe",
-                  "label": "Severe (Motor / Wasting)",
-                  "guidance": "MANAGEMENT PLAN:\nThenar wasting or weakness → Urgent referral for surgical decompression. Review for systemic causes (Thyroid, Diabetes, Pregnancy)."
+                  "label": "Severe (Motor deficit / Thenar atrophy)",
+                  "guidance": "MANAGEMENT PLAN (Surgical Care):\n1. Gold Standard: Open or endoscopic Carpal Tunnel Release (CTR).\n2. Urgency: Required within 4-8 weeks to prevent irreversible axotomy/atrophy.\n3. NCS Findings: Expect prolonged distal motor latency (DML > 4.5ms) and absent/reduced amplitudes."
                 }
               ]
             }
@@ -47526,18 +47487,16 @@
           "steps": [
             {
               "id": "obesity-mgmt",
-              "question": "Management Level",
+              "question": "1. Management Hierarchy",
               "type": "dropdown",
               "options": [
                 {
-                  "value": "lifestyle",
-                  "label": "Lifestyle & BMI assessment",
-                  "guidance": "MANAGEMENT PLAN:\nCalculate BMI and waist circumference. Set 5-10% weight loss goal. Tier 2 weight management referral. NICE CG189."
+                  "label": "Tier 3 Specialist Service Referral",
+                  "guidance": "MANAGEMENT PLAN:\n1. Criteria: BMI ≥ 35 with comorbidities (T2DM, OSA, HTN) or BMI ≥ 40.\n2. Multidisciplinary: Physician, Dietitian, Psychologist, and Physiotherapist led.\n3. Pharmacotherapy: Initiate GLP-1 (e.g. Wegovy/Semaglutide) as per NICE TA875 criteria (BMI ≥ 35 + at least one comorbidity)."
                 },
                 {
-                  "value": "medication",
-                  "label": "Pharmacotherapy (Orlistat/GLP-1)",
-                  "guidance": "MANAGEMENT PLAN:\nOrlistat if BMI ≥30 (or ≥28 with comorbidities). GLP-1 (e.g. Semaglutide) via Tier 3/4 specialist clinics if BMI ≥35 (or ≥30 with comorb in some cases). NICE TA664."
+                  "label": "Tier 4 (Bariatric Surgery)",
+                  "guidance": "MANAGEMENT PLAN:\n1. Procedures: Roux-en-Y Gastric Bypass (RYGB) or Sleeve Gastrectomy.\n2. Criteria: BMI ≥ 40 or ≥ 35 with significant comorbidities; failure of Tier 3 intervention for ≥ 6 months.\n3. Pre-op: Smoking cessation and psychiatric clearance mandatory. NICE CG189."
                 }
               ]
             }
@@ -47555,18 +47514,16 @@
           "steps": [
             {
               "id": "obesity-mgmt",
-              "question": "Management Level",
+              "question": "1. Management Hierarchy",
               "type": "dropdown",
               "options": [
                 {
-                  "value": "lifestyle",
-                  "label": "Lifestyle & BMI assessment",
-                  "guidance": "MANAGEMENT PLAN:\nCalculate BMI and waist circumference. Set 5-10% weight loss goal. Tier 2 weight management referral. NICE CG189."
+                  "label": "Tier 3 Specialist Service Referral",
+                  "guidance": "MANAGEMENT PLAN:\n1. Criteria: BMI ≥ 35 with comorbidities (T2DM, OSA, HTN) or BMI ≥ 40.\n2. Multidisciplinary: Physician, Dietitian, Psychologist, and Physiotherapist led.\n3. Pharmacotherapy: Initiate GLP-1 (e.g. Wegovy/Semaglutide) as per NICE TA875 criteria (BMI ≥ 35 + at least one comorbidity)."
                 },
                 {
-                  "value": "medication",
-                  "label": "Pharmacotherapy (Orlistat/GLP-1)",
-                  "guidance": "MANAGEMENT PLAN:\nOrlistat if BMI ≥30 (or ≥28 with comorbidities). GLP-1 (e.g. Semaglutide) via Tier 3/4 specialist clinics if BMI ≥35 (or ≥30 with comorb in some cases). NICE TA664."
+                  "label": "Tier 4 (Bariatric Surgery)",
+                  "guidance": "MANAGEMENT PLAN:\n1. Procedures: Roux-en-Y Gastric Bypass (RYGB) or Sleeve Gastrectomy.\n2. Criteria: BMI ≥ 40 or ≥ 35 with significant comorbidities; failure of Tier 3 intervention for ≥ 6 months.\n3. Pre-op: Smoking cessation and psychiatric clearance mandatory. NICE CG189."
                 }
               ]
             }
@@ -47584,18 +47541,16 @@
           "steps": [
             {
               "id": "obesity-mgmt",
-              "question": "Management Level",
+              "question": "1. Management Hierarchy",
               "type": "dropdown",
               "options": [
                 {
-                  "value": "lifestyle",
-                  "label": "Lifestyle & BMI assessment",
-                  "guidance": "MANAGEMENT PLAN:\nCalculate BMI and waist circumference. Set 5-10% weight loss goal. Tier 2 weight management referral. NICE CG189."
+                  "label": "Tier 3 Specialist Service Referral",
+                  "guidance": "MANAGEMENT PLAN:\n1. Criteria: BMI ≥ 35 with comorbidities (T2DM, OSA, HTN) or BMI ≥ 40.\n2. Multidisciplinary: Physician, Dietitian, Psychologist, and Physiotherapist led.\n3. Pharmacotherapy: Initiate GLP-1 (e.g. Wegovy/Semaglutide) as per NICE TA875 criteria (BMI ≥ 35 + at least one comorbidity)."
                 },
                 {
-                  "value": "medication",
-                  "label": "Pharmacotherapy (Orlistat/GLP-1)",
-                  "guidance": "MANAGEMENT PLAN:\nOrlistat if BMI ≥30 (or ≥28 with comorbidities). GLP-1 (e.g. Semaglutide) via Tier 3/4 specialist clinics if BMI ≥35 (or ≥30 with comorb in some cases). NICE TA664."
+                  "label": "Tier 4 (Bariatric Surgery)",
+                  "guidance": "MANAGEMENT PLAN:\n1. Procedures: Roux-en-Y Gastric Bypass (RYGB) or Sleeve Gastrectomy.\n2. Criteria: BMI ≥ 40 or ≥ 35 with significant comorbidities; failure of Tier 3 intervention for ≥ 6 months.\n3. Pre-op: Smoking cessation and psychiatric clearance mandatory. NICE CG189."
                 }
               ]
             }
@@ -50107,18 +50062,16 @@
           "steps": [
             {
               "id": "obesity-mgmt",
-              "question": "Management Level",
+              "question": "1. Management Hierarchy",
               "type": "dropdown",
               "options": [
                 {
-                  "value": "lifestyle",
-                  "label": "Lifestyle & BMI assessment",
-                  "guidance": "MANAGEMENT PLAN:\nCalculate BMI and waist circumference. Set 5-10% weight loss goal. Tier 2 weight management referral. NICE CG189."
+                  "label": "Tier 3 Specialist Service Referral",
+                  "guidance": "MANAGEMENT PLAN:\n1. Criteria: BMI ≥ 35 with comorbidities (T2DM, OSA, HTN) or BMI ≥ 40.\n2. Multidisciplinary: Physician, Dietitian, Psychologist, and Physiotherapist led.\n3. Pharmacotherapy: Initiate GLP-1 (e.g. Wegovy/Semaglutide) as per NICE TA875 criteria (BMI ≥ 35 + at least one comorbidity)."
                 },
                 {
-                  "value": "medication",
-                  "label": "Pharmacotherapy (Orlistat/GLP-1)",
-                  "guidance": "MANAGEMENT PLAN:\nOrlistat if BMI ≥30 (or ≥28 with comorbidities). GLP-1 (e.g. Semaglutide) via Tier 3/4 specialist clinics if BMI ≥35 (or ≥30 with comorb in some cases). NICE TA664."
+                  "label": "Tier 4 (Bariatric Surgery)",
+                  "guidance": "MANAGEMENT PLAN:\n1. Procedures: Roux-en-Y Gastric Bypass (RYGB) or Sleeve Gastrectomy.\n2. Criteria: BMI ≥ 40 or ≥ 35 with significant comorbidities; failure of Tier 3 intervention for ≥ 6 months.\n3. Pre-op: Smoking cessation and psychiatric clearance mandatory. NICE CG189."
                 }
               ]
             }
@@ -50191,18 +50144,16 @@
           "steps": [
             {
               "id": "obesity-mgmt",
-              "question": "Management Level",
+              "question": "1. Management Hierarchy",
               "type": "dropdown",
               "options": [
                 {
-                  "value": "lifestyle",
-                  "label": "Lifestyle & BMI assessment",
-                  "guidance": "MANAGEMENT PLAN:\nCalculate BMI and waist circumference. Set 5-10% weight loss goal. Tier 2 weight management referral. NICE CG189."
+                  "label": "Tier 3 Specialist Service Referral",
+                  "guidance": "MANAGEMENT PLAN:\n1. Criteria: BMI ≥ 35 with comorbidities (T2DM, OSA, HTN) or BMI ≥ 40.\n2. Multidisciplinary: Physician, Dietitian, Psychologist, and Physiotherapist led.\n3. Pharmacotherapy: Initiate GLP-1 (e.g. Wegovy/Semaglutide) as per NICE TA875 criteria (BMI ≥ 35 + at least one comorbidity)."
                 },
                 {
-                  "value": "medication",
-                  "label": "Pharmacotherapy (Orlistat/GLP-1)",
-                  "guidance": "MANAGEMENT PLAN:\nOrlistat if BMI ≥30 (or ≥28 with comorbidities). GLP-1 (e.g. Semaglutide) via Tier 3/4 specialist clinics if BMI ≥35 (or ≥30 with comorb in some cases). NICE TA664."
+                  "label": "Tier 4 (Bariatric Surgery)",
+                  "guidance": "MANAGEMENT PLAN:\n1. Procedures: Roux-en-Y Gastric Bypass (RYGB) or Sleeve Gastrectomy.\n2. Criteria: BMI ≥ 40 or ≥ 35 with significant comorbidities; failure of Tier 3 intervention for ≥ 6 months.\n3. Pre-op: Smoking cessation and psychiatric clearance mandatory. NICE CG189."
                 }
               ]
             }
@@ -50219,18 +50170,16 @@
           "steps": [
             {
               "id": "obesity-mgmt",
-              "question": "Management Level",
+              "question": "1. Management Hierarchy",
               "type": "dropdown",
               "options": [
                 {
-                  "value": "lifestyle",
-                  "label": "Lifestyle & BMI assessment",
-                  "guidance": "MANAGEMENT PLAN:\nCalculate BMI and waist circumference. Set 5-10% weight loss goal. Tier 2 weight management referral. NICE CG189."
+                  "label": "Tier 3 Specialist Service Referral",
+                  "guidance": "MANAGEMENT PLAN:\n1. Criteria: BMI ≥ 35 with comorbidities (T2DM, OSA, HTN) or BMI ≥ 40.\n2. Multidisciplinary: Physician, Dietitian, Psychologist, and Physiotherapist led.\n3. Pharmacotherapy: Initiate GLP-1 (e.g. Wegovy/Semaglutide) as per NICE TA875 criteria (BMI ≥ 35 + at least one comorbidity)."
                 },
                 {
-                  "value": "medication",
-                  "label": "Pharmacotherapy (Orlistat/GLP-1)",
-                  "guidance": "MANAGEMENT PLAN:\nOrlistat if BMI ≥30 (or ≥28 with comorbidities). GLP-1 (e.g. Semaglutide) via Tier 3/4 specialist clinics if BMI ≥35 (or ≥30 with comorb in some cases). NICE TA664."
+                  "label": "Tier 4 (Bariatric Surgery)",
+                  "guidance": "MANAGEMENT PLAN:\n1. Procedures: Roux-en-Y Gastric Bypass (RYGB) or Sleeve Gastrectomy.\n2. Criteria: BMI ≥ 40 or ≥ 35 with significant comorbidities; failure of Tier 3 intervention for ≥ 6 months.\n3. Pre-op: Smoking cessation and psychiatric clearance mandatory. NICE CG189."
                 }
               ]
             }
@@ -50563,17 +50512,17 @@
           "evidence": "You can follow me on [social media] for more information about our new podcasts as they become available.",
           "steps": [
             {
-              "id": "bp-assessment",
-              "question": "Assessment (Best Practice)",
+              "id": "obesity-mgmt",
+              "question": "1. Management Hierarchy",
               "type": "dropdown",
               "options": [
                 {
-                  "label": "Standard Assessment",
-                  "guidance": "MANAGEMENT PLAN:\n1. History: Assess onset, severity, and triggers. Specifically exclude organic red flags (weight loss, night pain, fever, night sweats).\n2. Review: Family history and current medications.\n3. Differential: Consider most likely vs most serious diagnosis. Use validated scores (e.g. Centor, Wells, qSOFA) if applicable."
+                  "label": "Tier 3 Specialist Service Referral",
+                  "guidance": "MANAGEMENT PLAN:\n1. Criteria: BMI ≥ 35 with comorbidities (T2DM, OSA, HTN) or BMI ≥ 40.\n2. Multidisciplinary: Physician, Dietitian, Psychologist, and Physiotherapist led.\n3. Pharmacotherapy: Initiate GLP-1 (e.g. Wegovy/Semaglutide) as per NICE TA875 criteria (BMI ≥ 35 + at least one comorbidity)."
                 },
                 {
-                  "label": "Examination & Vitals",
-                  "guidance": "MANAGEMENT PLAN:\n1. Physical Exam: Perform focused physical exam (e.g. MSK, Neuro, Respiratory).\n2. Vitals: Check NEWS2 if systemically unwell.\n3. Documentation: Document findings and clinical rationale clearly."
+                  "label": "Tier 4 (Bariatric Surgery)",
+                  "guidance": "MANAGEMENT PLAN:\n1. Procedures: Roux-en-Y Gastric Bypass (RYGB) or Sleeve Gastrectomy.\n2. Criteria: BMI ≥ 40 or ≥ 35 with significant comorbidities; failure of Tier 3 intervention for ≥ 6 months.\n3. Pre-op: Smoking cessation and psychiatric clearance mandatory. NICE CG189."
                 }
               ]
             }
@@ -50590,13 +50539,17 @@
           "evidence": "You can follow me on [social media] for more information about our new podcasts as they become available.",
           "steps": [
             {
-              "id": "bp-management",
-              "question": "Management (Best Practice)",
+              "id": "obesity-mgmt",
+              "question": "1. Management Hierarchy",
               "type": "dropdown",
               "options": [
                 {
-                  "label": "Initial Management Plan",
-                  "guidance": "MANAGEMENT PLAN:\n1. Advice: Advise on activity levels, hydration, and non-pharmacological measures.\n2. Information: Provide written patient info and use shared-decision making.\n3. Safety-netting: Provide clear triggers for re-consultation (rapid worsening, new red flags).\n4. Review: Arrange review based on clinical stability (e.g. 48h for acute, 2-4 weeks for chronic)."
+                  "label": "Tier 3 Specialist Service Referral",
+                  "guidance": "MANAGEMENT PLAN:\n1. Criteria: BMI ≥ 35 with comorbidities (T2DM, OSA, HTN) or BMI ≥ 40.\n2. Multidisciplinary: Physician, Dietitian, Psychologist, and Physiotherapist led.\n3. Pharmacotherapy: Initiate GLP-1 (e.g. Wegovy/Semaglutide) as per NICE TA875 criteria (BMI ≥ 35 + at least one comorbidity)."
+                },
+                {
+                  "label": "Tier 4 (Bariatric Surgery)",
+                  "guidance": "MANAGEMENT PLAN:\n1. Procedures: Roux-en-Y Gastric Bypass (RYGB) or Sleeve Gastrectomy.\n2. Criteria: BMI ≥ 40 or ≥ 35 with significant comorbidities; failure of Tier 3 intervention for ≥ 6 months.\n3. Pre-op: Smoking cessation and psychiatric clearance mandatory. NICE CG189."
                 }
               ]
             }
@@ -50613,13 +50566,17 @@
           "evidence": "You can follow me on [social media] for more information about our new podcasts as they become available.",
           "steps": [
             {
-              "id": "bp-referral",
-              "question": "Referral & Follow-up (Best Practice)",
+              "id": "obesity-mgmt",
+              "question": "1. Management Hierarchy",
               "type": "dropdown",
               "options": [
                 {
-                  "label": "Referral & Safety-netting",
-                  "guidance": "MANAGEMENT PLAN:\n1. Referral: Refer 2WW if malignancy suspected. Urgent referral if clinical compromise. Routine if primary care management fails.\n2. Waiting List: Ensure patient knows how to report deterioration while waiting.\n3. Review: Review and optimize primary care management in the interim."
+                  "label": "Tier 3 Specialist Service Referral",
+                  "guidance": "MANAGEMENT PLAN:\n1. Criteria: BMI ≥ 35 with comorbidities (T2DM, OSA, HTN) or BMI ≥ 40.\n2. Multidisciplinary: Physician, Dietitian, Psychologist, and Physiotherapist led.\n3. Pharmacotherapy: Initiate GLP-1 (e.g. Wegovy/Semaglutide) as per NICE TA875 criteria (BMI ≥ 35 + at least one comorbidity)."
+                },
+                {
+                  "label": "Tier 4 (Bariatric Surgery)",
+                  "guidance": "MANAGEMENT PLAN:\n1. Procedures: Roux-en-Y Gastric Bypass (RYGB) or Sleeve Gastrectomy.\n2. Criteria: BMI ≥ 40 or ≥ 35 with significant comorbidities; failure of Tier 3 intervention for ≥ 6 months.\n3. Pre-op: Smoking cessation and psychiatric clearance mandatory. NICE CG189."
                 }
               ]
             }
@@ -51234,23 +51191,20 @@
           "steps": [
             {
               "id": "copd-action",
-              "question": "Presentation",
+              "question": "1. Escalation Hierarchy",
               "type": "dropdown",
               "options": [
                 {
-                  "value": "diagnosis",
-                  "label": "Suspected COPD",
-                  "guidance": "MANAGEMENT PLAN:\nSpirometry (post-bronchodilator FEV1/FVC <0.7). Staging by FEV1%. Assess breathlessness (MRC), exacerbations. Exclude asthma. NICE NG115."
+                  "label": "LAMA+LABA (Dual Therapy)",
+                  "guidance": "MANAGEMENT PLAN (Consultant Plan):\n1. First-line for patients with persistent breathlessness or exacerbations despite SABA/LAMA mono.\n2. Inhalers: e.g. Anoro Ellipta, Ultibro Breezhaler, Spiolto Respimat.\n3. Action: Check technique; offer Pulmonary Rehab if MRC ≥ 2. NICE NG115."
                 },
                 {
-                  "value": "stable",
-                  "label": "Stable COPD – step-up",
-                  "guidance": "MANAGEMENT PLAN:\nStep 1: SABA reliever as needed (e.g. Salbutamol / Ventolin). Step 2: add a LAMA (e.g. Tiotropium / Spiriva) or a LABA (e.g. Salmeterol / Serevent). Step 3: Dual therapy (LAMA+LABA e.g. Anoro / Spiolto). Step 4: Triple therapy (LABA+LAMA+ICS e.g. Trelegy / Trimbow) if eosinophils ≥0.3 or ≥2 exacerbations/year. Offer pulmonary rehab. NICE NG115."
+                  "label": "Triple Therapy (LABA+LAMA+ICS)",
+                  "guidance": "MANAGEMENT PLAN (Consultant Plan):\n1. Indication: Blood eosinophil count ≥ 0.3 x10^9/L OR ≥ 1 severe / 2 moderate exacerbations per year.\n2. Inhalers: Trelegy Ellipta or Trimbow.\n3. Risk: Discuss increased risk of pneumonia with ICS use. NICE NG115."
                 },
                 {
-                  "value": "exacerbation",
-                  "label": "Acute exacerbation",
-                  "guidance": "MANAGEMENT PLAN:\nPrednisolone 30 mg 7–14 days. Antibiotic if purulent sputum: doxycycline or amoxicillin (or clarithromycin). Increase bronchodilators. Consider hospital if severe. NICE NG115."
+                  "label": "Refractory / Advanced COPD",
+                  "guidance": "MANAGEMENT PLAN:\n1. Chronic Macrolide: Consider Azithromycin 250mg tiw if non-smoker and frequent exacerbations (requires baseline ECG & LFT).\n2. Oxygen: Assess for LTOT (Long Term Oxygen Therapy) if pO2 < 7.3 kPa stable.\n3. Referral: Lung volume reduction or Transplant assessment."
                 }
               ]
             }
