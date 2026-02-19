@@ -1356,30 +1356,44 @@
     },
     {
       "keywords": [
+        "vte",
         "dvt",
-        "deep vein",
-        "venous thromboembolism"
+        "pe",
+        "pulmonary embolism",
+        "deep vein"
       ],
       "steps": [
         {
-          "id": "dvt",
-          "question": "DVT \u2013 diagnosis and treatment",
+          "id": "vte-diagnosis",
+          "question": "1. Diagnosis & Wells Score",
           "type": "dropdown",
           "options": [
             {
-              "value": "wells",
-              "label": "Wells score \u2013 likely DVT",
-              "guidance": "MANAGEMENT PLAN:\nD-dimer if Wells 1\u20132; if positive or Wells \u22653 do proximal leg USS. If DVT confirmed: anticoagulate. NICE NG158."
+              "label": "Suspected DVT (Wells \u2265 2)",
+              "guidance": "MANAGEMENT PLAN (NICE NG158):\n1. Action: Urgent Proximal Leg US within 4h (or interim anticoagulation if wait >4h).\n2. Result: If US negative but D-dimer positive, repeat US in 6-8 days."
             },
             {
-              "value": "treat",
-              "label": "Confirmed DVT \u2013 anticoagulation",
-              "guidance": "MANAGEMENT PLAN:\nDOAC (apixaban, rivaroxaban, edoxaban) or warfarin. Apixaban 10 mg bd 7 days then 5 mg bd. Minimum 3 months; extend if unprovoked or ongoing risk. NICE NG158."
+              "label": "Suspected PE (Wells \u2265 4.5)",
+              "guidance": "MANAGEMENT PLAN (Consultant Plan):\n1. Immediate: CTPA (Computed Tomographic Pulmonary Angiography). Interim anticoagulation (e.g. Apixaban 10mg bd) if scan delayed >1h.\n2. V/Q Scan: Preferred if renal impairment (eGFR <30) or severe allergy to contrast.\n3. Note: If PE likely, assess PESI score for suitability of outpatient management."
             },
             {
-              "value": "pe",
-              "label": "Suspected PE",
-              "guidance": "MANAGEMENT PLAN:\nWells PE; D-dimer (if low clinical probability); if positive CTPA. Treat as per NG158. Admit if haemodynamically unstable."
+              "label": "Low Probability (Wells < Score threshold)",
+              "guidance": "MANAGEMENT PLAN:\n1. Diagnostic: D-dimer (age-adjusted if over 50). If negative \u2192 VTE unlikely. If positive \u2192 Proceed to imaging (US or CTPA)."
+            }
+          ]
+        },
+        {
+          "id": "vte-treatment",
+          "question": "2. Treatment (Anticoagulation)",
+          "type": "dropdown",
+          "options": [
+            {
+              "label": "Apixaban (1st-line)",
+              "guidance": "MANAGEMENT PLAN:\n1. Titration: 10mg bd for 7 days, then 5mg bd.\n2. Duration: 3 months (provoked/low risk), 6 months+ or indefinite (unprovoked or recurrence). NICE NG158."
+            },
+            {
+              "label": "Rivaroxaban (Alternative)",
+              "guidance": "MANAGEMENT PLAN:\n1. Titration: 15mg bd for 21 days, then 20mg OD."
             }
           ]
         }
@@ -1388,28 +1402,85 @@
     {
       "keywords": [
         "pneumonia",
-        "community-acquired"
+        "cap",
+        "community acquired"
       ],
       "steps": [
         {
-          "id": "cap",
-          "question": "CURB65 and treatment",
+          "id": "cap-severity",
+          "question": "1. Severity (CURB-65)",
           "type": "dropdown",
           "options": [
             {
-              "value": "0-1",
-              "label": "CURB65 0\u20131 (home)",
-              "guidance": "MANAGEMENT PLAN:\nOral amoxicillin 500 mg tds 5 days (or doxycycline 200 mg stat then 100 mg OD if penicillin allergic). Safety-net. NICE NG138."
+              "label": "Low Risk (Score 0-1)",
+              "guidance": "MANAGEMENT PLAN (NICE NG138):\n1. Treatment: Amoxicillin 500mg tds for 5 days. \n2. Allergic: Doxycycline 200mg day 1 then 100mg OD, or Clarithromycin 500mg bd.\n3. Note: Do not use dual antibiotics for low-risk CAP."
             },
             {
-              "value": "2",
-              "label": "CURB65 2",
-              "guidance": "MANAGEMENT PLAN:\nConsider hospital; if home: oral amoxicillin 1 g tds or co-amoxiclav. Consider co-amoxiclav if atypical suspected. NICE NG138."
+              "label": "Moderate / High Risk (Score \u2265 2)",
+              "guidance": "MANAGEMENT PLAN:\n1. Triage: Consider hospital admission for Score 2; Mandatory for Score \u2265 3.\n2. Dual Antibiotics (Moderate): Amoxicillin + Clarithromycin.\n3. High Severity: Co-amoxiclav + Clarithromycin (usually IV in hospital)."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "keywords": [
+        "bronchiectasis",
+        "chronic productive cough"
+      ],
+      "steps": [
+        {
+          "id": "bronch-mgt",
+          "question": "1. Management & Airway Clearance",
+          "type": "dropdown",
+          "options": [
+            {
+              "label": "Stable Management (BTS Guildeines)",
+              "guidance": "MANAGEMENT PLAN:\n1. Airway Clearance: Mandatory referral to Respiratory Physio for techniques (ACBT). Regular exercise.\n2. Vaccination: Annual Flu + Pneumococcal.\n3. Sputum: Send for culture (ensure no Pseudomonas/Haemophilus colonization)."
             },
             {
-              "value": "3-plus",
-              "label": "CURB65 \u22653",
-              "guidance": "MANAGEMENT PLAN:\nAdmit. IV co-amoxiclav or benzylpenicillin + clarithromycin. NICE NG138."
+              "label": "Exacerbation",
+              "guidance": "MANAGEMENT PLAN:\n1. Treatment: 14 days of Targeted Antibiotics (based on previous sputum cultures). Start Amoxicillin or Doxycycline if no previous culture.\n2. CT: HRCT Chest is required for definitive diagnosis."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "keywords": [
+        "osa",
+        "sleep apnoea",
+        "snoring"
+      ],
+      "steps": [
+        {
+          "id": "osa-mgt",
+          "question": "1. Assessment & Referral",
+          "type": "dropdown",
+          "options": [
+            {
+              "label": "Suspected OSA (NICE NG202)",
+              "guidance": "MANAGEMENT PLAN:\n1. Score: Use **Epworth Sleepiness Scale** (>10 is abnormal).\n2. Risk: Assess for comorbidities (BMI >30, HTN, Diabetes).\n3. Referral: Sleep clinic for Nocturnal Oximetry or Polysomnography.\n4. Driving: Advise patient to inform DVLA if excessive daytime sleepiness affects driving."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "keywords": [
+        "ild",
+        "pulmonary fibrosis",
+        "lung disease"
+      ],
+      "steps": [
+        {
+          "id": "ild-mgt",
+          "question": "1. Specialist Workup",
+          "type": "dropdown",
+          "options": [
+            {
+              "label": "Suspected ILD (Persistent Crackles)",
+              "guidance": "MANAGEMENT PLAN (Consultant Plan):\n1. Presentation: Progressive SOB + dry cough + 'velcro' fine crackles on auscultation. No infective signs.\n2. Workup: CXR (may be normal early), Spirometry (restrictive pattern), HRCT Chest.\n3. Referral: Urgent Respiratory referral if fibrosis suspected. NICE NG105."
             }
           ]
         }

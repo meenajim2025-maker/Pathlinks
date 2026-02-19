@@ -1,6 +1,6 @@
 {
   "source": "Learning library + NICE CKS/NG; management steps from guidelines",
-  "generated": "2026-02-19T21:04:58.447Z",
+  "generated": "2026-02-19T21:07:27.474Z",
   "totalTools": 1920,
   "systems": [
     {
@@ -1061,24 +1061,36 @@
           "evidence": "Management per NICE CKS and Local formulary.",
           "steps": [
             {
-              "id": "dvt",
-              "question": "DVT – diagnosis and treatment",
+              "id": "vte-diagnosis",
+              "question": "1. Diagnosis & Wells Score",
               "type": "dropdown",
               "options": [
                 {
-                  "value": "wells",
-                  "label": "Wells score – likely DVT",
-                  "guidance": "MANAGEMENT PLAN:\nD-dimer if Wells 1–2; if positive or Wells ≥3 do proximal leg USS. If DVT confirmed: anticoagulate. NICE NG158."
+                  "label": "Suspected DVT (Wells ≥ 2)",
+                  "guidance": "MANAGEMENT PLAN (NICE NG158):\n1. Action: Urgent Proximal Leg US within 4h (or interim anticoagulation if wait >4h).\n2. Result: If US negative but D-dimer positive, repeat US in 6-8 days."
                 },
                 {
-                  "value": "treat",
-                  "label": "Confirmed DVT – anticoagulation",
-                  "guidance": "MANAGEMENT PLAN:\nDOAC (apixaban, rivaroxaban, edoxaban) or warfarin. Apixaban 10 mg bd 7 days then 5 mg bd. Minimum 3 months; extend if unprovoked or ongoing risk. NICE NG158."
+                  "label": "Suspected PE (Wells ≥ 4.5)",
+                  "guidance": "MANAGEMENT PLAN (Consultant Plan):\n1. Immediate: CTPA (Computed Tomographic Pulmonary Angiography). Interim anticoagulation (e.g. Apixaban 10mg bd) if scan delayed >1h.\n2. V/Q Scan: Preferred if renal impairment (eGFR <30) or severe allergy to contrast.\n3. Note: If PE likely, assess PESI score for suitability of outpatient management."
                 },
                 {
-                  "value": "pe",
-                  "label": "Suspected PE",
-                  "guidance": "MANAGEMENT PLAN:\nWells PE; D-dimer (if low clinical probability); if positive CTPA. Treat as per NG158. Admit if haemodynamically unstable."
+                  "label": "Low Probability (Wells < Score threshold)",
+                  "guidance": "MANAGEMENT PLAN:\n1. Diagnostic: D-dimer (age-adjusted if over 50). If negative → VTE unlikely. If positive → Proceed to imaging (US or CTPA)."
+                }
+              ]
+            },
+            {
+              "id": "vte-treatment",
+              "question": "2. Treatment (Anticoagulation)",
+              "type": "dropdown",
+              "options": [
+                {
+                  "label": "Apixaban (1st-line)",
+                  "guidance": "MANAGEMENT PLAN:\n1. Titration: 10mg bd for 7 days, then 5mg bd.\n2. Duration: 3 months (provoked/low risk), 6 months+ or indefinite (unprovoked or recurrence). NICE NG158."
+                },
+                {
+                  "label": "Rivaroxaban (Alternative)",
+                  "guidance": "MANAGEMENT PLAN:\n1. Titration: 15mg bd for 21 days, then 20mg OD."
                 }
               ]
             }
@@ -1094,24 +1106,36 @@
           "evidence": "Management per NICE CKS and Local formulary.",
           "steps": [
             {
-              "id": "dvt",
-              "question": "DVT – diagnosis and treatment",
+              "id": "vte-diagnosis",
+              "question": "1. Diagnosis & Wells Score",
               "type": "dropdown",
               "options": [
                 {
-                  "value": "wells",
-                  "label": "Wells score – likely DVT",
-                  "guidance": "MANAGEMENT PLAN:\nD-dimer if Wells 1–2; if positive or Wells ≥3 do proximal leg USS. If DVT confirmed: anticoagulate. NICE NG158."
+                  "label": "Suspected DVT (Wells ≥ 2)",
+                  "guidance": "MANAGEMENT PLAN (NICE NG158):\n1. Action: Urgent Proximal Leg US within 4h (or interim anticoagulation if wait >4h).\n2. Result: If US negative but D-dimer positive, repeat US in 6-8 days."
                 },
                 {
-                  "value": "treat",
-                  "label": "Confirmed DVT – anticoagulation",
-                  "guidance": "MANAGEMENT PLAN:\nDOAC (apixaban, rivaroxaban, edoxaban) or warfarin. Apixaban 10 mg bd 7 days then 5 mg bd. Minimum 3 months; extend if unprovoked or ongoing risk. NICE NG158."
+                  "label": "Suspected PE (Wells ≥ 4.5)",
+                  "guidance": "MANAGEMENT PLAN (Consultant Plan):\n1. Immediate: CTPA (Computed Tomographic Pulmonary Angiography). Interim anticoagulation (e.g. Apixaban 10mg bd) if scan delayed >1h.\n2. V/Q Scan: Preferred if renal impairment (eGFR <30) or severe allergy to contrast.\n3. Note: If PE likely, assess PESI score for suitability of outpatient management."
                 },
                 {
-                  "value": "pe",
-                  "label": "Suspected PE",
-                  "guidance": "MANAGEMENT PLAN:\nWells PE; D-dimer (if low clinical probability); if positive CTPA. Treat as per NG158. Admit if haemodynamically unstable."
+                  "label": "Low Probability (Wells < Score threshold)",
+                  "guidance": "MANAGEMENT PLAN:\n1. Diagnostic: D-dimer (age-adjusted if over 50). If negative → VTE unlikely. If positive → Proceed to imaging (US or CTPA)."
+                }
+              ]
+            },
+            {
+              "id": "vte-treatment",
+              "question": "2. Treatment (Anticoagulation)",
+              "type": "dropdown",
+              "options": [
+                {
+                  "label": "Apixaban (1st-line)",
+                  "guidance": "MANAGEMENT PLAN:\n1. Titration: 10mg bd for 7 days, then 5mg bd.\n2. Duration: 3 months (provoked/low risk), 6 months+ or indefinite (unprovoked or recurrence). NICE NG158."
+                },
+                {
+                  "label": "Rivaroxaban (Alternative)",
+                  "guidance": "MANAGEMENT PLAN:\n1. Titration: 15mg bd for 21 days, then 20mg OD."
                 }
               ]
             }
@@ -1129,24 +1153,36 @@
           "evidence": "Management per NICE CKS and Local formulary.",
           "steps": [
             {
-              "id": "dvt",
-              "question": "DVT – diagnosis and treatment",
+              "id": "vte-diagnosis",
+              "question": "1. Diagnosis & Wells Score",
               "type": "dropdown",
               "options": [
                 {
-                  "value": "wells",
-                  "label": "Wells score – likely DVT",
-                  "guidance": "MANAGEMENT PLAN:\nD-dimer if Wells 1–2; if positive or Wells ≥3 do proximal leg USS. If DVT confirmed: anticoagulate. NICE NG158."
+                  "label": "Suspected DVT (Wells ≥ 2)",
+                  "guidance": "MANAGEMENT PLAN (NICE NG158):\n1. Action: Urgent Proximal Leg US within 4h (or interim anticoagulation if wait >4h).\n2. Result: If US negative but D-dimer positive, repeat US in 6-8 days."
                 },
                 {
-                  "value": "treat",
-                  "label": "Confirmed DVT – anticoagulation",
-                  "guidance": "MANAGEMENT PLAN:\nDOAC (apixaban, rivaroxaban, edoxaban) or warfarin. Apixaban 10 mg bd 7 days then 5 mg bd. Minimum 3 months; extend if unprovoked or ongoing risk. NICE NG158."
+                  "label": "Suspected PE (Wells ≥ 4.5)",
+                  "guidance": "MANAGEMENT PLAN (Consultant Plan):\n1. Immediate: CTPA (Computed Tomographic Pulmonary Angiography). Interim anticoagulation (e.g. Apixaban 10mg bd) if scan delayed >1h.\n2. V/Q Scan: Preferred if renal impairment (eGFR <30) or severe allergy to contrast.\n3. Note: If PE likely, assess PESI score for suitability of outpatient management."
                 },
                 {
-                  "value": "pe",
-                  "label": "Suspected PE",
-                  "guidance": "MANAGEMENT PLAN:\nWells PE; D-dimer (if low clinical probability); if positive CTPA. Treat as per NG158. Admit if haemodynamically unstable."
+                  "label": "Low Probability (Wells < Score threshold)",
+                  "guidance": "MANAGEMENT PLAN:\n1. Diagnostic: D-dimer (age-adjusted if over 50). If negative → VTE unlikely. If positive → Proceed to imaging (US or CTPA)."
+                }
+              ]
+            },
+            {
+              "id": "vte-treatment",
+              "question": "2. Treatment (Anticoagulation)",
+              "type": "dropdown",
+              "options": [
+                {
+                  "label": "Apixaban (1st-line)",
+                  "guidance": "MANAGEMENT PLAN:\n1. Titration: 10mg bd for 7 days, then 5mg bd.\n2. Duration: 3 months (provoked/low risk), 6 months+ or indefinite (unprovoked or recurrence). NICE NG158."
+                },
+                {
+                  "label": "Rivaroxaban (Alternative)",
+                  "guidance": "MANAGEMENT PLAN:\n1. Titration: 15mg bd for 21 days, then 20mg OD."
                 }
               ]
             }
@@ -2943,14 +2979,36 @@
           "evidence": "Management per NICE CKS and Local formulary.",
           "steps": [
             {
-              "id": "guidance",
-              "question": "Clinical Guidance (Best Practice)",
+              "id": "vte-diagnosis",
+              "question": "1. Diagnosis & Wells Score",
               "type": "dropdown",
               "options": [
                 {
-                  "value": "standard",
-                  "label": "Management Overview",
-                  "guidance": "MANAGEMENT PLAN:\n1. Assessment: Full clinical assessment to exclude red flags.\n2. Action: Refer to local clinical formulary for specific pharmacotherapy.\n3. Safety-net: Provide robust safety-netting advice.\n4. Follow-up: Arrange review based on clinical findings."
+                  "label": "Suspected DVT (Wells ≥ 2)",
+                  "guidance": "MANAGEMENT PLAN (NICE NG158):\n1. Action: Urgent Proximal Leg US within 4h (or interim anticoagulation if wait >4h).\n2. Result: If US negative but D-dimer positive, repeat US in 6-8 days."
+                },
+                {
+                  "label": "Suspected PE (Wells ≥ 4.5)",
+                  "guidance": "MANAGEMENT PLAN (Consultant Plan):\n1. Immediate: CTPA (Computed Tomographic Pulmonary Angiography). Interim anticoagulation (e.g. Apixaban 10mg bd) if scan delayed >1h.\n2. V/Q Scan: Preferred if renal impairment (eGFR <30) or severe allergy to contrast.\n3. Note: If PE likely, assess PESI score for suitability of outpatient management."
+                },
+                {
+                  "label": "Low Probability (Wells < Score threshold)",
+                  "guidance": "MANAGEMENT PLAN:\n1. Diagnostic: D-dimer (age-adjusted if over 50). If negative → VTE unlikely. If positive → Proceed to imaging (US or CTPA)."
+                }
+              ]
+            },
+            {
+              "id": "vte-treatment",
+              "question": "2. Treatment (Anticoagulation)",
+              "type": "dropdown",
+              "options": [
+                {
+                  "label": "Apixaban (1st-line)",
+                  "guidance": "MANAGEMENT PLAN:\n1. Titration: 10mg bd for 7 days, then 5mg bd.\n2. Duration: 3 months (provoked/low risk), 6 months+ or indefinite (unprovoked or recurrence). NICE NG158."
+                },
+                {
+                  "label": "Rivaroxaban (Alternative)",
+                  "guidance": "MANAGEMENT PLAN:\n1. Titration: 15mg bd for 21 days, then 20mg OD."
                 }
               ]
             }
@@ -2966,13 +3024,36 @@
           "evidence": "Management per NICE CKS and Local formulary.",
           "steps": [
             {
-              "id": "cvd-mgmt",
-              "question": "Cardiovascular Management (Best Practice)",
+              "id": "vte-diagnosis",
+              "question": "1. Diagnosis & Wells Score",
               "type": "dropdown",
               "options": [
                 {
-                  "label": "CVD Risk & Lifestyle",
-                  "guidance": "MANAGEMENT PLAN:\n1. Lifestyle: Advise on low-salt/low-saturated fat diet (Mediterranean-style).\n2. Smoking: Refer to smoking cessation services if applicable.\n3. Exercise: Aim for 150 mins moderate activity/week.\n4. Weight: Target BMI 18.5-24.9.\n5. Audit: Periodically review blood pressure and lipid profile (QRISK3)."
+                  "label": "Suspected DVT (Wells ≥ 2)",
+                  "guidance": "MANAGEMENT PLAN (NICE NG158):\n1. Action: Urgent Proximal Leg US within 4h (or interim anticoagulation if wait >4h).\n2. Result: If US negative but D-dimer positive, repeat US in 6-8 days."
+                },
+                {
+                  "label": "Suspected PE (Wells ≥ 4.5)",
+                  "guidance": "MANAGEMENT PLAN (Consultant Plan):\n1. Immediate: CTPA (Computed Tomographic Pulmonary Angiography). Interim anticoagulation (e.g. Apixaban 10mg bd) if scan delayed >1h.\n2. V/Q Scan: Preferred if renal impairment (eGFR <30) or severe allergy to contrast.\n3. Note: If PE likely, assess PESI score for suitability of outpatient management."
+                },
+                {
+                  "label": "Low Probability (Wells < Score threshold)",
+                  "guidance": "MANAGEMENT PLAN:\n1. Diagnostic: D-dimer (age-adjusted if over 50). If negative → VTE unlikely. If positive → Proceed to imaging (US or CTPA)."
+                }
+              ]
+            },
+            {
+              "id": "vte-treatment",
+              "question": "2. Treatment (Anticoagulation)",
+              "type": "dropdown",
+              "options": [
+                {
+                  "label": "Apixaban (1st-line)",
+                  "guidance": "MANAGEMENT PLAN:\n1. Titration: 10mg bd for 7 days, then 5mg bd.\n2. Duration: 3 months (provoked/low risk), 6 months+ or indefinite (unprovoked or recurrence). NICE NG158."
+                },
+                {
+                  "label": "Rivaroxaban (Alternative)",
+                  "guidance": "MANAGEMENT PLAN:\n1. Titration: 15mg bd for 21 days, then 20mg OD."
                 }
               ]
             }
@@ -23703,14 +23784,17 @@
           "evidence": "Management per NICE CKS and Local formulary.",
           "steps": [
             {
-              "id": "guidance",
-              "question": "Clinical Guidance (Best Practice)",
+              "id": "bronch-mgt",
+              "question": "1. Management & Airway Clearance",
               "type": "dropdown",
               "options": [
                 {
-                  "value": "standard",
-                  "label": "Management Overview",
-                  "guidance": "MANAGEMENT PLAN:\n1. Assessment: Full clinical assessment to exclude red flags.\n2. Action: Refer to local clinical formulary for specific pharmacotherapy.\n3. Safety-net: Provide robust safety-netting advice.\n4. Follow-up: Arrange review based on clinical findings."
+                  "label": "Stable Management (BTS Guildeines)",
+                  "guidance": "MANAGEMENT PLAN:\n1. Airway Clearance: Mandatory referral to Respiratory Physio for techniques (ACBT). Regular exercise.\n2. Vaccination: Annual Flu + Pneumococcal.\n3. Sputum: Send for culture (ensure no Pseudomonas/Haemophilus colonization)."
+                },
+                {
+                  "label": "Exacerbation",
+                  "guidance": "MANAGEMENT PLAN:\n1. Treatment: 14 days of Targeted Antibiotics (based on previous sputum cultures). Start Amoxicillin or Doxycycline if no previous culture.\n2. CT: HRCT Chest is required for definitive diagnosis."
                 }
               ]
             }
@@ -23800,14 +23884,13 @@
           "evidence": "Management per NICE CKS and Local formulary.",
           "steps": [
             {
-              "id": "guidance",
-              "question": "Clinical Guidance (Best Practice)",
+              "id": "osa-mgt",
+              "question": "1. Assessment & Referral",
               "type": "dropdown",
               "options": [
                 {
-                  "value": "standard",
-                  "label": "Management Overview",
-                  "guidance": "MANAGEMENT PLAN:\n1. Assessment: Full clinical assessment to exclude red flags.\n2. Action: Refer to local clinical formulary for specific pharmacotherapy.\n3. Safety-net: Provide robust safety-netting advice.\n4. Follow-up: Arrange review based on clinical findings."
+                  "label": "Suspected OSA (NICE NG202)",
+                  "guidance": "MANAGEMENT PLAN:\n1. Score: Use **Epworth Sleepiness Scale** (>10 is abnormal).\n2. Risk: Assess for comorbidities (BMI >30, HTN, Diabetes).\n3. Referral: Sleep clinic for Nocturnal Oximetry or Polysomnography.\n4. Driving: Advise patient to inform DVLA if excessive daytime sleepiness affects driving."
                 }
               ]
             }
@@ -24356,14 +24439,13 @@
           "evidence": "Management per NICE CKS and Local formulary.",
           "steps": [
             {
-              "id": "guidance",
-              "question": "Clinical Guidance (Best Practice)",
+              "id": "ild-mgt",
+              "question": "1. Specialist Workup",
               "type": "dropdown",
               "options": [
                 {
-                  "value": "standard",
-                  "label": "Management Overview",
-                  "guidance": "MANAGEMENT PLAN:\n1. Assessment: Full clinical assessment to exclude red flags.\n2. Action: Refer to local clinical formulary for specific pharmacotherapy.\n3. Safety-net: Provide robust safety-netting advice.\n4. Follow-up: Arrange review based on clinical findings."
+                  "label": "Suspected ILD (Persistent Crackles)",
+                  "guidance": "MANAGEMENT PLAN (Consultant Plan):\n1. Presentation: Progressive SOB + dry cough + 'velcro' fine crackles on auscultation. No infective signs.\n2. Workup: CXR (may be normal early), Spirometry (restrictive pattern), HRCT Chest.\n3. Referral: Urgent Respiratory referral if fibrosis suspected. NICE NG105."
                 }
               ]
             }
@@ -24618,14 +24700,13 @@
           "evidence": "Management per NICE CKS and Local formulary.",
           "steps": [
             {
-              "id": "guidance",
-              "question": "Clinical Guidance (Best Practice)",
+              "id": "osa-mgt",
+              "question": "1. Assessment & Referral",
               "type": "dropdown",
               "options": [
                 {
-                  "value": "standard",
-                  "label": "Management Overview",
-                  "guidance": "MANAGEMENT PLAN:\n1. Assessment: Full clinical assessment to exclude red flags.\n2. Action: Refer to local clinical formulary for specific pharmacotherapy.\n3. Safety-net: Provide robust safety-netting advice.\n4. Follow-up: Arrange review based on clinical findings."
+                  "label": "Suspected OSA (NICE NG202)",
+                  "guidance": "MANAGEMENT PLAN:\n1. Score: Use **Epworth Sleepiness Scale** (>10 is abnormal).\n2. Risk: Assess for comorbidities (BMI >30, HTN, Diabetes).\n3. Referral: Sleep clinic for Nocturnal Oximetry or Polysomnography.\n4. Driving: Advise patient to inform DVLA if excessive daytime sleepiness affects driving."
                 }
               ]
             }
@@ -24643,17 +24724,13 @@
           "evidence": "(Intro removed; no clinical content in this segment.)",
           "steps": [
             {
-              "id": "bp-assessment",
-              "question": "Assessment (Best Practice)",
+              "id": "osa-mgt",
+              "question": "1. Assessment & Referral",
               "type": "dropdown",
               "options": [
                 {
-                  "label": "Standard Assessment",
-                  "guidance": "MANAGEMENT PLAN:\n1. History: Assess onset, severity, and triggers. Specifically exclude organic red flags (weight loss, night pain, fever, night sweats).\n2. Review: Family history and current medications.\n3. Differential: Consider most likely vs most serious diagnosis. Use validated scores (e.g. Centor, Wells, qSOFA) if applicable."
-                },
-                {
-                  "label": "Examination & Vitals",
-                  "guidance": "MANAGEMENT PLAN:\n1. Physical Exam: Perform focused physical exam (e.g. MSK, Neuro, Respiratory).\n2. Vitals: Check NEWS2 if systemically unwell.\n3. Documentation: Document findings and clinical rationale clearly."
+                  "label": "Suspected OSA (NICE NG202)",
+                  "guidance": "MANAGEMENT PLAN:\n1. Score: Use **Epworth Sleepiness Scale** (>10 is abnormal).\n2. Risk: Assess for comorbidities (BMI >30, HTN, Diabetes).\n3. Referral: Sleep clinic for Nocturnal Oximetry or Polysomnography.\n4. Driving: Advise patient to inform DVLA if excessive daytime sleepiness affects driving."
                 }
               ]
             }
@@ -24672,13 +24749,13 @@
           "evidence": "(Intro removed; no clinical content in this segment.)",
           "steps": [
             {
-              "id": "bp-management",
-              "question": "Management (Best Practice)",
+              "id": "osa-mgt",
+              "question": "1. Assessment & Referral",
               "type": "dropdown",
               "options": [
                 {
-                  "label": "Initial Management Plan",
-                  "guidance": "MANAGEMENT PLAN:\n1. Advice: Advise on activity levels, hydration, and non-pharmacological measures.\n2. Information: Provide written patient info and use shared-decision making.\n3. Safety-netting: Provide clear triggers for re-consultation (rapid worsening, new red flags).\n4. Review: Arrange review based on clinical stability (e.g. 48h for acute, 2-4 weeks for chronic)."
+                  "label": "Suspected OSA (NICE NG202)",
+                  "guidance": "MANAGEMENT PLAN:\n1. Score: Use **Epworth Sleepiness Scale** (>10 is abnormal).\n2. Risk: Assess for comorbidities (BMI >30, HTN, Diabetes).\n3. Referral: Sleep clinic for Nocturnal Oximetry or Polysomnography.\n4. Driving: Advise patient to inform DVLA if excessive daytime sleepiness affects driving."
                 }
               ]
             }
@@ -24697,13 +24774,13 @@
           "evidence": "(Intro removed; no clinical content in this segment.)",
           "steps": [
             {
-              "id": "bp-referral",
-              "question": "Referral & Follow-up (Best Practice)",
+              "id": "osa-mgt",
+              "question": "1. Assessment & Referral",
               "type": "dropdown",
               "options": [
                 {
-                  "label": "Referral & Safety-netting",
-                  "guidance": "MANAGEMENT PLAN:\n1. Referral: Refer 2WW if malignancy suspected. Urgent referral if clinical compromise. Routine if primary care management fails.\n2. Waiting List: Ensure patient knows how to report deterioration while waiting.\n3. Review: Review and optimize primary care management in the interim."
+                  "label": "Suspected OSA (NICE NG202)",
+                  "guidance": "MANAGEMENT PLAN:\n1. Score: Use **Epworth Sleepiness Scale** (>10 is abnormal).\n2. Risk: Assess for comorbidities (BMI >30, HTN, Diabetes).\n3. Referral: Sleep clinic for Nocturnal Oximetry or Polysomnography.\n4. Driving: Advise patient to inform DVLA if excessive daytime sleepiness affects driving."
                 }
               ]
             }
@@ -24720,14 +24797,13 @@
           "evidence": "Management per NICE CKS and Local formulary.",
           "steps": [
             {
-              "id": "guidance",
-              "question": "Clinical Guidance (Best Practice)",
+              "id": "osa-mgt",
+              "question": "1. Assessment & Referral",
               "type": "dropdown",
               "options": [
                 {
-                  "value": "standard",
-                  "label": "Management Overview",
-                  "guidance": "MANAGEMENT PLAN:\n1. Assessment: Full clinical assessment to exclude red flags.\n2. Action: Refer to local clinical formulary for specific pharmacotherapy.\n3. Safety-net: Provide robust safety-netting advice.\n4. Follow-up: Arrange review based on clinical findings."
+                  "label": "Suspected OSA (NICE NG202)",
+                  "guidance": "MANAGEMENT PLAN:\n1. Score: Use **Epworth Sleepiness Scale** (>10 is abnormal).\n2. Risk: Assess for comorbidities (BMI >30, HTN, Diabetes).\n3. Referral: Sleep clinic for Nocturnal Oximetry or Polysomnography.\n4. Driving: Advise patient to inform DVLA if excessive daytime sleepiness affects driving."
                 }
               ]
             }
@@ -24743,14 +24819,36 @@
           "evidence": "Management per NICE CKS and Local formulary.",
           "steps": [
             {
-              "id": "guidance",
-              "question": "Clinical Guidance (Best Practice)",
+              "id": "vte-diagnosis",
+              "question": "1. Diagnosis & Wells Score",
               "type": "dropdown",
               "options": [
                 {
-                  "value": "standard",
-                  "label": "Management Overview",
-                  "guidance": "MANAGEMENT PLAN:\n1. Assessment: Full clinical assessment to exclude red flags.\n2. Action: Refer to local clinical formulary for specific pharmacotherapy.\n3. Safety-net: Provide robust safety-netting advice.\n4. Follow-up: Arrange review based on clinical findings."
+                  "label": "Suspected DVT (Wells ≥ 2)",
+                  "guidance": "MANAGEMENT PLAN (NICE NG158):\n1. Action: Urgent Proximal Leg US within 4h (or interim anticoagulation if wait >4h).\n2. Result: If US negative but D-dimer positive, repeat US in 6-8 days."
+                },
+                {
+                  "label": "Suspected PE (Wells ≥ 4.5)",
+                  "guidance": "MANAGEMENT PLAN (Consultant Plan):\n1. Immediate: CTPA (Computed Tomographic Pulmonary Angiography). Interim anticoagulation (e.g. Apixaban 10mg bd) if scan delayed >1h.\n2. V/Q Scan: Preferred if renal impairment (eGFR <30) or severe allergy to contrast.\n3. Note: If PE likely, assess PESI score for suitability of outpatient management."
+                },
+                {
+                  "label": "Low Probability (Wells < Score threshold)",
+                  "guidance": "MANAGEMENT PLAN:\n1. Diagnostic: D-dimer (age-adjusted if over 50). If negative → VTE unlikely. If positive → Proceed to imaging (US or CTPA)."
+                }
+              ]
+            },
+            {
+              "id": "vte-treatment",
+              "question": "2. Treatment (Anticoagulation)",
+              "type": "dropdown",
+              "options": [
+                {
+                  "label": "Apixaban (1st-line)",
+                  "guidance": "MANAGEMENT PLAN:\n1. Titration: 10mg bd for 7 days, then 5mg bd.\n2. Duration: 3 months (provoked/low risk), 6 months+ or indefinite (unprovoked or recurrence). NICE NG158."
+                },
+                {
+                  "label": "Rivaroxaban (Alternative)",
+                  "guidance": "MANAGEMENT PLAN:\n1. Titration: 15mg bd for 21 days, then 20mg OD."
                 }
               ]
             }
@@ -24766,17 +24864,36 @@
           "evidence": "Management per NICE CKS and Local formulary.",
           "steps": [
             {
-              "id": "bp-assessment",
-              "question": "Assessment (Best Practice)",
+              "id": "vte-diagnosis",
+              "question": "1. Diagnosis & Wells Score",
               "type": "dropdown",
               "options": [
                 {
-                  "label": "Standard Assessment",
-                  "guidance": "MANAGEMENT PLAN:\n1. History: Assess onset, severity, and triggers. Specifically exclude organic red flags (weight loss, night pain, fever, night sweats).\n2. Review: Family history and current medications.\n3. Differential: Consider most likely vs most serious diagnosis. Use validated scores (e.g. Centor, Wells, qSOFA) if applicable."
+                  "label": "Suspected DVT (Wells ≥ 2)",
+                  "guidance": "MANAGEMENT PLAN (NICE NG158):\n1. Action: Urgent Proximal Leg US within 4h (or interim anticoagulation if wait >4h).\n2. Result: If US negative but D-dimer positive, repeat US in 6-8 days."
                 },
                 {
-                  "label": "Examination & Vitals",
-                  "guidance": "MANAGEMENT PLAN:\n1. Physical Exam: Perform focused physical exam (e.g. MSK, Neuro, Respiratory).\n2. Vitals: Check NEWS2 if systemically unwell.\n3. Documentation: Document findings and clinical rationale clearly."
+                  "label": "Suspected PE (Wells ≥ 4.5)",
+                  "guidance": "MANAGEMENT PLAN (Consultant Plan):\n1. Immediate: CTPA (Computed Tomographic Pulmonary Angiography). Interim anticoagulation (e.g. Apixaban 10mg bd) if scan delayed >1h.\n2. V/Q Scan: Preferred if renal impairment (eGFR <30) or severe allergy to contrast.\n3. Note: If PE likely, assess PESI score for suitability of outpatient management."
+                },
+                {
+                  "label": "Low Probability (Wells < Score threshold)",
+                  "guidance": "MANAGEMENT PLAN:\n1. Diagnostic: D-dimer (age-adjusted if over 50). If negative → VTE unlikely. If positive → Proceed to imaging (US or CTPA)."
+                }
+              ]
+            },
+            {
+              "id": "vte-treatment",
+              "question": "2. Treatment (Anticoagulation)",
+              "type": "dropdown",
+              "options": [
+                {
+                  "label": "Apixaban (1st-line)",
+                  "guidance": "MANAGEMENT PLAN:\n1. Titration: 10mg bd for 7 days, then 5mg bd.\n2. Duration: 3 months (provoked/low risk), 6 months+ or indefinite (unprovoked or recurrence). NICE NG158."
+                },
+                {
+                  "label": "Rivaroxaban (Alternative)",
+                  "guidance": "MANAGEMENT PLAN:\n1. Titration: 15mg bd for 21 days, then 20mg OD."
                 }
               ]
             }
@@ -24929,24 +25046,17 @@
           "evidence": "Management per NICE CKS and Local formulary.",
           "steps": [
             {
-              "id": "cap",
-              "question": "CURB65 and treatment",
+              "id": "cap-severity",
+              "question": "1. Severity (CURB-65)",
               "type": "dropdown",
               "options": [
                 {
-                  "value": "0-1",
-                  "label": "CURB65 0–1 (home)",
-                  "guidance": "MANAGEMENT PLAN:\nOral amoxicillin 500 mg tds 5 days (or doxycycline 200 mg stat then 100 mg OD if penicillin allergic). Safety-net. NICE NG138."
+                  "label": "Low Risk (Score 0-1)",
+                  "guidance": "MANAGEMENT PLAN (NICE NG138):\n1. Treatment: Amoxicillin 500mg tds for 5 days. \n2. Allergic: Doxycycline 200mg day 1 then 100mg OD, or Clarithromycin 500mg bd.\n3. Note: Do not use dual antibiotics for low-risk CAP."
                 },
                 {
-                  "value": "2",
-                  "label": "CURB65 2",
-                  "guidance": "MANAGEMENT PLAN:\nConsider hospital; if home: oral amoxicillin 1 g tds or co-amoxiclav. Consider co-amoxiclav if atypical suspected. NICE NG138."
-                },
-                {
-                  "value": "3-plus",
-                  "label": "CURB65 ≥3",
-                  "guidance": "MANAGEMENT PLAN:\nAdmit. IV co-amoxiclav or benzylpenicillin + clarithromycin. NICE NG138."
+                  "label": "Moderate / High Risk (Score ≥ 2)",
+                  "guidance": "MANAGEMENT PLAN:\n1. Triage: Consider hospital admission for Score 2; Mandatory for Score ≥ 3.\n2. Dual Antibiotics (Moderate): Amoxicillin + Clarithromycin.\n3. High Severity: Co-amoxiclav + Clarithromycin (usually IV in hospital)."
                 }
               ]
             }
@@ -24962,24 +25072,17 @@
           "evidence": "Management per NICE CKS and Local formulary.",
           "steps": [
             {
-              "id": "cap",
-              "question": "CURB65 and treatment",
+              "id": "cap-severity",
+              "question": "1. Severity (CURB-65)",
               "type": "dropdown",
               "options": [
                 {
-                  "value": "0-1",
-                  "label": "CURB65 0–1 (home)",
-                  "guidance": "MANAGEMENT PLAN:\nOral amoxicillin 500 mg tds 5 days (or doxycycline 200 mg stat then 100 mg OD if penicillin allergic). Safety-net. NICE NG138."
+                  "label": "Low Risk (Score 0-1)",
+                  "guidance": "MANAGEMENT PLAN (NICE NG138):\n1. Treatment: Amoxicillin 500mg tds for 5 days. \n2. Allergic: Doxycycline 200mg day 1 then 100mg OD, or Clarithromycin 500mg bd.\n3. Note: Do not use dual antibiotics for low-risk CAP."
                 },
                 {
-                  "value": "2",
-                  "label": "CURB65 2",
-                  "guidance": "MANAGEMENT PLAN:\nConsider hospital; if home: oral amoxicillin 1 g tds or co-amoxiclav. Consider co-amoxiclav if atypical suspected. NICE NG138."
-                },
-                {
-                  "value": "3-plus",
-                  "label": "CURB65 ≥3",
-                  "guidance": "MANAGEMENT PLAN:\nAdmit. IV co-amoxiclav or benzylpenicillin + clarithromycin. NICE NG138."
+                  "label": "Moderate / High Risk (Score ≥ 2)",
+                  "guidance": "MANAGEMENT PLAN:\n1. Triage: Consider hospital admission for Score 2; Mandatory for Score ≥ 3.\n2. Dual Antibiotics (Moderate): Amoxicillin + Clarithromycin.\n3. High Severity: Co-amoxiclav + Clarithromycin (usually IV in hospital)."
                 }
               ]
             }
@@ -24995,24 +25098,17 @@
           "evidence": "Management per NICE CKS and Local formulary.",
           "steps": [
             {
-              "id": "cap",
-              "question": "CURB65 and treatment",
+              "id": "cap-severity",
+              "question": "1. Severity (CURB-65)",
               "type": "dropdown",
               "options": [
                 {
-                  "value": "0-1",
-                  "label": "CURB65 0–1 (home)",
-                  "guidance": "MANAGEMENT PLAN:\nOral amoxicillin 500 mg tds 5 days (or doxycycline 200 mg stat then 100 mg OD if penicillin allergic). Safety-net. NICE NG138."
+                  "label": "Low Risk (Score 0-1)",
+                  "guidance": "MANAGEMENT PLAN (NICE NG138):\n1. Treatment: Amoxicillin 500mg tds for 5 days. \n2. Allergic: Doxycycline 200mg day 1 then 100mg OD, or Clarithromycin 500mg bd.\n3. Note: Do not use dual antibiotics for low-risk CAP."
                 },
                 {
-                  "value": "2",
-                  "label": "CURB65 2",
-                  "guidance": "MANAGEMENT PLAN:\nConsider hospital; if home: oral amoxicillin 1 g tds or co-amoxiclav. Consider co-amoxiclav if atypical suspected. NICE NG138."
-                },
-                {
-                  "value": "3-plus",
-                  "label": "CURB65 ≥3",
-                  "guidance": "MANAGEMENT PLAN:\nAdmit. IV co-amoxiclav or benzylpenicillin + clarithromycin. NICE NG138."
+                  "label": "Moderate / High Risk (Score ≥ 2)",
+                  "guidance": "MANAGEMENT PLAN:\n1. Triage: Consider hospital admission for Score 2; Mandatory for Score ≥ 3.\n2. Dual Antibiotics (Moderate): Amoxicillin + Clarithromycin.\n3. High Severity: Co-amoxiclav + Clarithromycin (usually IV in hospital)."
                 }
               ]
             }
@@ -25028,24 +25124,17 @@
           "evidence": "Management per NICE CKS and Local formulary.",
           "steps": [
             {
-              "id": "cap",
-              "question": "CURB65 and treatment",
+              "id": "cap-severity",
+              "question": "1. Severity (CURB-65)",
               "type": "dropdown",
               "options": [
                 {
-                  "value": "0-1",
-                  "label": "CURB65 0–1 (home)",
-                  "guidance": "MANAGEMENT PLAN:\nOral amoxicillin 500 mg tds 5 days (or doxycycline 200 mg stat then 100 mg OD if penicillin allergic). Safety-net. NICE NG138."
+                  "label": "Low Risk (Score 0-1)",
+                  "guidance": "MANAGEMENT PLAN (NICE NG138):\n1. Treatment: Amoxicillin 500mg tds for 5 days. \n2. Allergic: Doxycycline 200mg day 1 then 100mg OD, or Clarithromycin 500mg bd.\n3. Note: Do not use dual antibiotics for low-risk CAP."
                 },
                 {
-                  "value": "2",
-                  "label": "CURB65 2",
-                  "guidance": "MANAGEMENT PLAN:\nConsider hospital; if home: oral amoxicillin 1 g tds or co-amoxiclav. Consider co-amoxiclav if atypical suspected. NICE NG138."
-                },
-                {
-                  "value": "3-plus",
-                  "label": "CURB65 ≥3",
-                  "guidance": "MANAGEMENT PLAN:\nAdmit. IV co-amoxiclav or benzylpenicillin + clarithromycin. NICE NG138."
+                  "label": "Moderate / High Risk (Score ≥ 2)",
+                  "guidance": "MANAGEMENT PLAN:\n1. Triage: Consider hospital admission for Score 2; Mandatory for Score ≥ 3.\n2. Dual Antibiotics (Moderate): Amoxicillin + Clarithromycin.\n3. High Severity: Co-amoxiclav + Clarithromycin (usually IV in hospital)."
                 }
               ]
             }
@@ -25061,24 +25150,17 @@
           "evidence": "Management per NG138 and CKS Pneumonia.",
           "steps": [
             {
-              "id": "cap",
-              "question": "CURB65 and treatment",
+              "id": "cap-severity",
+              "question": "1. Severity (CURB-65)",
               "type": "dropdown",
               "options": [
                 {
-                  "value": "0-1",
-                  "label": "CURB65 0–1 (home)",
-                  "guidance": "MANAGEMENT PLAN:\nOral amoxicillin 500 mg tds 5 days (or doxycycline 200 mg stat then 100 mg OD if penicillin allergic). Safety-net. NICE NG138."
+                  "label": "Low Risk (Score 0-1)",
+                  "guidance": "MANAGEMENT PLAN (NICE NG138):\n1. Treatment: Amoxicillin 500mg tds for 5 days. \n2. Allergic: Doxycycline 200mg day 1 then 100mg OD, or Clarithromycin 500mg bd.\n3. Note: Do not use dual antibiotics for low-risk CAP."
                 },
                 {
-                  "value": "2",
-                  "label": "CURB65 2",
-                  "guidance": "MANAGEMENT PLAN:\nConsider hospital; if home: oral amoxicillin 1 g tds or co-amoxiclav. Consider co-amoxiclav if atypical suspected. NICE NG138."
-                },
-                {
-                  "value": "3-plus",
-                  "label": "CURB65 ≥3",
-                  "guidance": "MANAGEMENT PLAN:\nAdmit. IV co-amoxiclav or benzylpenicillin + clarithromycin. NICE NG138."
+                  "label": "Moderate / High Risk (Score ≥ 2)",
+                  "guidance": "MANAGEMENT PLAN:\n1. Triage: Consider hospital admission for Score 2; Mandatory for Score ≥ 3.\n2. Dual Antibiotics (Moderate): Amoxicillin + Clarithromycin.\n3. High Severity: Co-amoxiclav + Clarithromycin (usually IV in hospital)."
                 }
               ]
             }
@@ -25117,14 +25199,36 @@
           "evidence": "Management per NICE CKS and Local formulary.",
           "steps": [
             {
-              "id": "guidance",
-              "question": "Clinical Guidance (Best Practice)",
+              "id": "vte-diagnosis",
+              "question": "1. Diagnosis & Wells Score",
               "type": "dropdown",
               "options": [
                 {
-                  "value": "standard",
-                  "label": "Management Overview",
-                  "guidance": "MANAGEMENT PLAN:\n1. Assessment: Full clinical assessment to exclude red flags.\n2. Action: Refer to local clinical formulary for specific pharmacotherapy.\n3. Safety-net: Provide robust safety-netting advice.\n4. Follow-up: Arrange review based on clinical findings."
+                  "label": "Suspected DVT (Wells ≥ 2)",
+                  "guidance": "MANAGEMENT PLAN (NICE NG158):\n1. Action: Urgent Proximal Leg US within 4h (or interim anticoagulation if wait >4h).\n2. Result: If US negative but D-dimer positive, repeat US in 6-8 days."
+                },
+                {
+                  "label": "Suspected PE (Wells ≥ 4.5)",
+                  "guidance": "MANAGEMENT PLAN (Consultant Plan):\n1. Immediate: CTPA (Computed Tomographic Pulmonary Angiography). Interim anticoagulation (e.g. Apixaban 10mg bd) if scan delayed >1h.\n2. V/Q Scan: Preferred if renal impairment (eGFR <30) or severe allergy to contrast.\n3. Note: If PE likely, assess PESI score for suitability of outpatient management."
+                },
+                {
+                  "label": "Low Probability (Wells < Score threshold)",
+                  "guidance": "MANAGEMENT PLAN:\n1. Diagnostic: D-dimer (age-adjusted if over 50). If negative → VTE unlikely. If positive → Proceed to imaging (US or CTPA)."
+                }
+              ]
+            },
+            {
+              "id": "vte-treatment",
+              "question": "2. Treatment (Anticoagulation)",
+              "type": "dropdown",
+              "options": [
+                {
+                  "label": "Apixaban (1st-line)",
+                  "guidance": "MANAGEMENT PLAN:\n1. Titration: 10mg bd for 7 days, then 5mg bd.\n2. Duration: 3 months (provoked/low risk), 6 months+ or indefinite (unprovoked or recurrence). NICE NG158."
+                },
+                {
+                  "label": "Rivaroxaban (Alternative)",
+                  "guidance": "MANAGEMENT PLAN:\n1. Titration: 15mg bd for 21 days, then 20mg OD."
                 }
               ]
             }
@@ -25140,14 +25244,36 @@
           "evidence": "Management per NG158 and CKS PE.",
           "steps": [
             {
-              "id": "guidance",
-              "question": "Clinical Guidance (Best Practice)",
+              "id": "vte-diagnosis",
+              "question": "1. Diagnosis & Wells Score",
               "type": "dropdown",
               "options": [
                 {
-                  "value": "standard",
-                  "label": "Management Overview",
-                  "guidance": "MANAGEMENT PLAN:\n1. Assessment: Full clinical assessment to exclude red flags.\n2. Action: Refer to local clinical formulary for specific pharmacotherapy.\n3. Safety-net: Provide robust safety-netting advice.\n4. Follow-up: Arrange review based on clinical findings."
+                  "label": "Suspected DVT (Wells ≥ 2)",
+                  "guidance": "MANAGEMENT PLAN (NICE NG158):\n1. Action: Urgent Proximal Leg US within 4h (or interim anticoagulation if wait >4h).\n2. Result: If US negative but D-dimer positive, repeat US in 6-8 days."
+                },
+                {
+                  "label": "Suspected PE (Wells ≥ 4.5)",
+                  "guidance": "MANAGEMENT PLAN (Consultant Plan):\n1. Immediate: CTPA (Computed Tomographic Pulmonary Angiography). Interim anticoagulation (e.g. Apixaban 10mg bd) if scan delayed >1h.\n2. V/Q Scan: Preferred if renal impairment (eGFR <30) or severe allergy to contrast.\n3. Note: If PE likely, assess PESI score for suitability of outpatient management."
+                },
+                {
+                  "label": "Low Probability (Wells < Score threshold)",
+                  "guidance": "MANAGEMENT PLAN:\n1. Diagnostic: D-dimer (age-adjusted if over 50). If negative → VTE unlikely. If positive → Proceed to imaging (US or CTPA)."
+                }
+              ]
+            },
+            {
+              "id": "vte-treatment",
+              "question": "2. Treatment (Anticoagulation)",
+              "type": "dropdown",
+              "options": [
+                {
+                  "label": "Apixaban (1st-line)",
+                  "guidance": "MANAGEMENT PLAN:\n1. Titration: 10mg bd for 7 days, then 5mg bd.\n2. Duration: 3 months (provoked/low risk), 6 months+ or indefinite (unprovoked or recurrence). NICE NG158."
+                },
+                {
+                  "label": "Rivaroxaban (Alternative)",
+                  "guidance": "MANAGEMENT PLAN:\n1. Titration: 15mg bd for 21 days, then 20mg OD."
                 }
               ]
             }
@@ -25304,13 +25430,13 @@
           "evidence": "Management per NICE CKS and Local formulary.",
           "steps": [
             {
-              "id": "bp-referral",
-              "question": "Referral & Follow-up (Best Practice)",
+              "id": "osa-mgt",
+              "question": "1. Assessment & Referral",
               "type": "dropdown",
               "options": [
                 {
-                  "label": "Referral & Safety-netting",
-                  "guidance": "MANAGEMENT PLAN:\n1. Referral: Refer 2WW if malignancy suspected. Urgent referral if clinical compromise. Routine if primary care management fails.\n2. Waiting List: Ensure patient knows how to report deterioration while waiting.\n3. Review: Review and optimize primary care management in the interim."
+                  "label": "Suspected OSA (NICE NG202)",
+                  "guidance": "MANAGEMENT PLAN:\n1. Score: Use **Epworth Sleepiness Scale** (>10 is abnormal).\n2. Risk: Assess for comorbidities (BMI >30, HTN, Diabetes).\n3. Referral: Sleep clinic for Nocturnal Oximetry or Polysomnography.\n4. Driving: Advise patient to inform DVLA if excessive daytime sleepiness affects driving."
                 }
               ]
             }
@@ -28309,24 +28435,17 @@
           "evidence": "Management per NICE CKS and Local formulary.",
           "steps": [
             {
-              "id": "cap",
-              "question": "CURB65 and treatment",
+              "id": "cap-severity",
+              "question": "1. Severity (CURB-65)",
               "type": "dropdown",
               "options": [
                 {
-                  "value": "0-1",
-                  "label": "CURB65 0–1 (home)",
-                  "guidance": "MANAGEMENT PLAN:\nOral amoxicillin 500 mg tds 5 days (or doxycycline 200 mg stat then 100 mg OD if penicillin allergic). Safety-net. NICE NG138."
+                  "label": "Low Risk (Score 0-1)",
+                  "guidance": "MANAGEMENT PLAN (NICE NG138):\n1. Treatment: Amoxicillin 500mg tds for 5 days. \n2. Allergic: Doxycycline 200mg day 1 then 100mg OD, or Clarithromycin 500mg bd.\n3. Note: Do not use dual antibiotics for low-risk CAP."
                 },
                 {
-                  "value": "2",
-                  "label": "CURB65 2",
-                  "guidance": "MANAGEMENT PLAN:\nConsider hospital; if home: oral amoxicillin 1 g tds or co-amoxiclav. Consider co-amoxiclav if atypical suspected. NICE NG138."
-                },
-                {
-                  "value": "3-plus",
-                  "label": "CURB65 ≥3",
-                  "guidance": "MANAGEMENT PLAN:\nAdmit. IV co-amoxiclav or benzylpenicillin + clarithromycin. NICE NG138."
+                  "label": "Moderate / High Risk (Score ≥ 2)",
+                  "guidance": "MANAGEMENT PLAN:\n1. Triage: Consider hospital admission for Score 2; Mandatory for Score ≥ 3.\n2. Dual Antibiotics (Moderate): Amoxicillin + Clarithromycin.\n3. High Severity: Co-amoxiclav + Clarithromycin (usually IV in hospital)."
                 }
               ]
             }
@@ -33243,21 +33362,36 @@
           "evidence": "Management per NICE CKS and Local formulary.",
           "steps": [
             {
-              "id": "contraception-mgmt",
-              "question": "1. Method Selection & Safety",
+              "id": "vte-diagnosis",
+              "question": "1. Diagnosis & Wells Score",
               "type": "dropdown",
               "options": [
                 {
-                  "label": "Combined Hormonal (CHC) - UKMEC",
-                  "guidance": "MANAGEMENT PLAN (FSRH):\n1. Screening: BP, BMI, Migraine with aura (MEC 4), Smoking >35y (MEC 4), VTE history (MEC 4).\n2. Missed Pill: 24h+ late? Check FSRH missed pill tool. Usually, 1 pill missed = take ASAP and no extra care. 2+ pills = extra care for 7 days.\n3. Breakout Bleeding: Exclude STI. If persist, increase oestrogen dose or change progestogen type."
+                  "label": "Suspected DVT (Wells ≥ 2)",
+                  "guidance": "MANAGEMENT PLAN (NICE NG158):\n1. Action: Urgent Proximal Leg US within 4h (or interim anticoagulation if wait >4h).\n2. Result: If US negative but D-dimer positive, repeat US in 6-8 days."
                 },
                 {
-                  "label": "Long-Acting (LARC)",
-                  "guidance": "MANAGEMENT PLAN (FSRH):\n1. Mirena/Levosert: Now licensed for 8 years for contraception (if fitted age ≥25).\n2. Nexplanon: Effective for 3 years. Inform about irregular bleeding pattern.\n3. Copper IUD: Non-hormonal. Gold standard for emergency contraception (within 5 days)."
+                  "label": "Suspected PE (Wells ≥ 4.5)",
+                  "guidance": "MANAGEMENT PLAN (Consultant Plan):\n1. Immediate: CTPA (Computed Tomographic Pulmonary Angiography). Interim anticoagulation (e.g. Apixaban 10mg bd) if scan delayed >1h.\n2. V/Q Scan: Preferred if renal impairment (eGFR <30) or severe allergy to contrast.\n3. Note: If PE likely, assess PESI score for suitability of outpatient management."
                 },
                 {
-                  "label": "Emergency Contraception",
-                  "guidance": "MANAGEMENT PLAN (FSRH):\n1. Copper IUD: Most effective (MEC 1 in majority). Up to 5 days after UPSI.\n2. Ulipristal (ellaOne): Up to 5 days (120h). Avoid progestogens for 5 days after ellaOne.\n3. Levonorgestrel: Up to 3 days (72h). Double dose (3mg) if BMI >30 or on enzyme-inducers."
+                  "label": "Low Probability (Wells < Score threshold)",
+                  "guidance": "MANAGEMENT PLAN:\n1. Diagnostic: D-dimer (age-adjusted if over 50). If negative → VTE unlikely. If positive → Proceed to imaging (US or CTPA)."
+                }
+              ]
+            },
+            {
+              "id": "vte-treatment",
+              "question": "2. Treatment (Anticoagulation)",
+              "type": "dropdown",
+              "options": [
+                {
+                  "label": "Apixaban (1st-line)",
+                  "guidance": "MANAGEMENT PLAN:\n1. Titration: 10mg bd for 7 days, then 5mg bd.\n2. Duration: 3 months (provoked/low risk), 6 months+ or indefinite (unprovoked or recurrence). NICE NG158."
+                },
+                {
+                  "label": "Rivaroxaban (Alternative)",
+                  "guidance": "MANAGEMENT PLAN:\n1. Titration: 15mg bd for 21 days, then 20mg OD."
                 }
               ]
             }
@@ -33275,21 +33409,36 @@
           "evidence": "Management per NICE CKS and Local formulary.",
           "steps": [
             {
-              "id": "contraception-mgmt",
-              "question": "1. Method Selection & Safety",
+              "id": "vte-diagnosis",
+              "question": "1. Diagnosis & Wells Score",
               "type": "dropdown",
               "options": [
                 {
-                  "label": "Combined Hormonal (CHC) - UKMEC",
-                  "guidance": "MANAGEMENT PLAN (FSRH):\n1. Screening: BP, BMI, Migraine with aura (MEC 4), Smoking >35y (MEC 4), VTE history (MEC 4).\n2. Missed Pill: 24h+ late? Check FSRH missed pill tool. Usually, 1 pill missed = take ASAP and no extra care. 2+ pills = extra care for 7 days.\n3. Breakout Bleeding: Exclude STI. If persist, increase oestrogen dose or change progestogen type."
+                  "label": "Suspected DVT (Wells ≥ 2)",
+                  "guidance": "MANAGEMENT PLAN (NICE NG158):\n1. Action: Urgent Proximal Leg US within 4h (or interim anticoagulation if wait >4h).\n2. Result: If US negative but D-dimer positive, repeat US in 6-8 days."
                 },
                 {
-                  "label": "Long-Acting (LARC)",
-                  "guidance": "MANAGEMENT PLAN (FSRH):\n1. Mirena/Levosert: Now licensed for 8 years for contraception (if fitted age ≥25).\n2. Nexplanon: Effective for 3 years. Inform about irregular bleeding pattern.\n3. Copper IUD: Non-hormonal. Gold standard for emergency contraception (within 5 days)."
+                  "label": "Suspected PE (Wells ≥ 4.5)",
+                  "guidance": "MANAGEMENT PLAN (Consultant Plan):\n1. Immediate: CTPA (Computed Tomographic Pulmonary Angiography). Interim anticoagulation (e.g. Apixaban 10mg bd) if scan delayed >1h.\n2. V/Q Scan: Preferred if renal impairment (eGFR <30) or severe allergy to contrast.\n3. Note: If PE likely, assess PESI score for suitability of outpatient management."
                 },
                 {
-                  "label": "Emergency Contraception",
-                  "guidance": "MANAGEMENT PLAN (FSRH):\n1. Copper IUD: Most effective (MEC 1 in majority). Up to 5 days after UPSI.\n2. Ulipristal (ellaOne): Up to 5 days (120h). Avoid progestogens for 5 days after ellaOne.\n3. Levonorgestrel: Up to 3 days (72h). Double dose (3mg) if BMI >30 or on enzyme-inducers."
+                  "label": "Low Probability (Wells < Score threshold)",
+                  "guidance": "MANAGEMENT PLAN:\n1. Diagnostic: D-dimer (age-adjusted if over 50). If negative → VTE unlikely. If positive → Proceed to imaging (US or CTPA)."
+                }
+              ]
+            },
+            {
+              "id": "vte-treatment",
+              "question": "2. Treatment (Anticoagulation)",
+              "type": "dropdown",
+              "options": [
+                {
+                  "label": "Apixaban (1st-line)",
+                  "guidance": "MANAGEMENT PLAN:\n1. Titration: 10mg bd for 7 days, then 5mg bd.\n2. Duration: 3 months (provoked/low risk), 6 months+ or indefinite (unprovoked or recurrence). NICE NG158."
+                },
+                {
+                  "label": "Rivaroxaban (Alternative)",
+                  "guidance": "MANAGEMENT PLAN:\n1. Titration: 15mg bd for 21 days, then 20mg OD."
                 }
               ]
             }
@@ -42890,14 +43039,36 @@
           "evidence": "Management per NICE CKS and Local formulary.",
           "steps": [
             {
-              "id": "guidance",
-              "question": "Clinical Guidance (Best Practice)",
+              "id": "vte-diagnosis",
+              "question": "1. Diagnosis & Wells Score",
               "type": "dropdown",
               "options": [
                 {
-                  "value": "standard",
-                  "label": "Management Overview",
-                  "guidance": "MANAGEMENT PLAN:\n1. Assessment: Full clinical assessment to exclude red flags.\n2. Action: Refer to local clinical formulary for specific pharmacotherapy.\n3. Safety-net: Provide robust safety-netting advice.\n4. Follow-up: Arrange review based on clinical findings."
+                  "label": "Suspected DVT (Wells ≥ 2)",
+                  "guidance": "MANAGEMENT PLAN (NICE NG158):\n1. Action: Urgent Proximal Leg US within 4h (or interim anticoagulation if wait >4h).\n2. Result: If US negative but D-dimer positive, repeat US in 6-8 days."
+                },
+                {
+                  "label": "Suspected PE (Wells ≥ 4.5)",
+                  "guidance": "MANAGEMENT PLAN (Consultant Plan):\n1. Immediate: CTPA (Computed Tomographic Pulmonary Angiography). Interim anticoagulation (e.g. Apixaban 10mg bd) if scan delayed >1h.\n2. V/Q Scan: Preferred if renal impairment (eGFR <30) or severe allergy to contrast.\n3. Note: If PE likely, assess PESI score for suitability of outpatient management."
+                },
+                {
+                  "label": "Low Probability (Wells < Score threshold)",
+                  "guidance": "MANAGEMENT PLAN:\n1. Diagnostic: D-dimer (age-adjusted if over 50). If negative → VTE unlikely. If positive → Proceed to imaging (US or CTPA)."
+                }
+              ]
+            },
+            {
+              "id": "vte-treatment",
+              "question": "2. Treatment (Anticoagulation)",
+              "type": "dropdown",
+              "options": [
+                {
+                  "label": "Apixaban (1st-line)",
+                  "guidance": "MANAGEMENT PLAN:\n1. Titration: 10mg bd for 7 days, then 5mg bd.\n2. Duration: 3 months (provoked/low risk), 6 months+ or indefinite (unprovoked or recurrence). NICE NG158."
+                },
+                {
+                  "label": "Rivaroxaban (Alternative)",
+                  "guidance": "MANAGEMENT PLAN:\n1. Titration: 15mg bd for 21 days, then 20mg OD."
                 }
               ]
             }
@@ -44289,14 +44460,13 @@
           "evidence": "Management per NICE CKS and Local formulary.",
           "steps": [
             {
-              "id": "guidance",
-              "question": "Clinical Guidance (Best Practice)",
+              "id": "osa-mgt",
+              "question": "1. Assessment & Referral",
               "type": "dropdown",
               "options": [
                 {
-                  "value": "standard",
-                  "label": "Management Overview",
-                  "guidance": "MANAGEMENT PLAN:\n1. Assessment: Full clinical assessment to exclude red flags.\n2. Action: Refer to local clinical formulary for specific pharmacotherapy.\n3. Safety-net: Provide robust safety-netting advice.\n4. Follow-up: Arrange review based on clinical findings."
+                  "label": "Suspected OSA (NICE NG202)",
+                  "guidance": "MANAGEMENT PLAN:\n1. Score: Use **Epworth Sleepiness Scale** (>10 is abnormal).\n2. Risk: Assess for comorbidities (BMI >30, HTN, Diabetes).\n3. Referral: Sleep clinic for Nocturnal Oximetry or Polysomnography.\n4. Driving: Advise patient to inform DVLA if excessive daytime sleepiness affects driving."
                 }
               ]
             }
@@ -44314,14 +44484,13 @@
           "evidence": "Management per NICE CKS and Local formulary.",
           "steps": [
             {
-              "id": "guidance",
-              "question": "Clinical Guidance (Best Practice)",
+              "id": "osa-mgt",
+              "question": "1. Assessment & Referral",
               "type": "dropdown",
               "options": [
                 {
-                  "value": "standard",
-                  "label": "Management Overview",
-                  "guidance": "MANAGEMENT PLAN:\n1. Assessment: Full clinical assessment to exclude red flags.\n2. Action: Refer to local clinical formulary for specific pharmacotherapy.\n3. Safety-net: Provide robust safety-netting advice.\n4. Follow-up: Arrange review based on clinical findings."
+                  "label": "Suspected OSA (NICE NG202)",
+                  "guidance": "MANAGEMENT PLAN:\n1. Score: Use **Epworth Sleepiness Scale** (>10 is abnormal).\n2. Risk: Assess for comorbidities (BMI >30, HTN, Diabetes).\n3. Referral: Sleep clinic for Nocturnal Oximetry or Polysomnography.\n4. Driving: Advise patient to inform DVLA if excessive daytime sleepiness affects driving."
                 }
               ]
             }
@@ -50703,17 +50872,13 @@
           "evidence": "Management per NICE CKS and Local formulary.",
           "steps": [
             {
-              "id": "obesity-mgmt",
-              "question": "1. Management Hierarchy",
+              "id": "osa-mgt",
+              "question": "1. Assessment & Referral",
               "type": "dropdown",
               "options": [
                 {
-                  "label": "Tier 3 Specialist Service Referral",
-                  "guidance": "MANAGEMENT PLAN:\n1. Criteria: BMI ≥ 35 with comorbidities (T2DM, OSA, HTN) or BMI ≥ 40.\n2. Multidisciplinary: Physician, Dietitian, Psychologist, and Physiotherapist led.\n3. Pharmacotherapy: Initiate GLP-1 (e.g. Wegovy/Semaglutide) as per NICE TA875 criteria (BMI ≥ 35 + at least one comorbidity)."
-                },
-                {
-                  "label": "Tier 4 (Bariatric Surgery)",
-                  "guidance": "MANAGEMENT PLAN:\n1. Procedures: Roux-en-Y Gastric Bypass (RYGB) or Sleeve Gastrectomy.\n2. Criteria: BMI ≥ 40 or ≥ 35 with significant comorbidities; failure of Tier 3 intervention for ≥ 6 months.\n3. Pre-op: Smoking cessation and psychiatric clearance mandatory. NICE CG189."
+                  "label": "Suspected OSA (NICE NG202)",
+                  "guidance": "MANAGEMENT PLAN:\n1. Score: Use **Epworth Sleepiness Scale** (>10 is abnormal).\n2. Risk: Assess for comorbidities (BMI >30, HTN, Diabetes).\n3. Referral: Sleep clinic for Nocturnal Oximetry or Polysomnography.\n4. Driving: Advise patient to inform DVLA if excessive daytime sleepiness affects driving."
                 }
               ]
             }
@@ -52243,24 +52408,36 @@
           "evidence": "Management per NICE CKS and Local formulary.",
           "steps": [
             {
-              "id": "dvt",
-              "question": "DVT – diagnosis and treatment",
+              "id": "vte-diagnosis",
+              "question": "1. Diagnosis & Wells Score",
               "type": "dropdown",
               "options": [
                 {
-                  "value": "wells",
-                  "label": "Wells score – likely DVT",
-                  "guidance": "MANAGEMENT PLAN:\nD-dimer if Wells 1–2; if positive or Wells ≥3 do proximal leg USS. If DVT confirmed: anticoagulate. NICE NG158."
+                  "label": "Suspected DVT (Wells ≥ 2)",
+                  "guidance": "MANAGEMENT PLAN (NICE NG158):\n1. Action: Urgent Proximal Leg US within 4h (or interim anticoagulation if wait >4h).\n2. Result: If US negative but D-dimer positive, repeat US in 6-8 days."
                 },
                 {
-                  "value": "treat",
-                  "label": "Confirmed DVT – anticoagulation",
-                  "guidance": "MANAGEMENT PLAN:\nDOAC (apixaban, rivaroxaban, edoxaban) or warfarin. Apixaban 10 mg bd 7 days then 5 mg bd. Minimum 3 months; extend if unprovoked or ongoing risk. NICE NG158."
+                  "label": "Suspected PE (Wells ≥ 4.5)",
+                  "guidance": "MANAGEMENT PLAN (Consultant Plan):\n1. Immediate: CTPA (Computed Tomographic Pulmonary Angiography). Interim anticoagulation (e.g. Apixaban 10mg bd) if scan delayed >1h.\n2. V/Q Scan: Preferred if renal impairment (eGFR <30) or severe allergy to contrast.\n3. Note: If PE likely, assess PESI score for suitability of outpatient management."
                 },
                 {
-                  "value": "pe",
-                  "label": "Suspected PE",
-                  "guidance": "MANAGEMENT PLAN:\nWells PE; D-dimer (if low clinical probability); if positive CTPA. Treat as per NG158. Admit if haemodynamically unstable."
+                  "label": "Low Probability (Wells < Score threshold)",
+                  "guidance": "MANAGEMENT PLAN:\n1. Diagnostic: D-dimer (age-adjusted if over 50). If negative → VTE unlikely. If positive → Proceed to imaging (US or CTPA)."
+                }
+              ]
+            },
+            {
+              "id": "vte-treatment",
+              "question": "2. Treatment (Anticoagulation)",
+              "type": "dropdown",
+              "options": [
+                {
+                  "label": "Apixaban (1st-line)",
+                  "guidance": "MANAGEMENT PLAN:\n1. Titration: 10mg bd for 7 days, then 5mg bd.\n2. Duration: 3 months (provoked/low risk), 6 months+ or indefinite (unprovoked or recurrence). NICE NG158."
+                },
+                {
+                  "label": "Rivaroxaban (Alternative)",
+                  "guidance": "MANAGEMENT PLAN:\n1. Titration: 15mg bd for 21 days, then 20mg OD."
                 }
               ]
             }
