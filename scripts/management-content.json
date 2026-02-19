@@ -1758,24 +1758,28 @@
       ],
       "steps": [
         {
-          "id": "tia",
-          "question": "TIA / minor stroke",
+          "id": "tia-triage",
+          "question": "1. Immediate Action & Triage",
           "type": "dropdown",
           "options": [
             {
-              "value": "acute",
-              "label": "Acute TIA (ABCD2 \u22654 or crescendo)",
-              "guidance": "MANAGEMENT PLAN:\nSame-day specialist assessment. Aspirin 300 mg immediately then 75 mg OD. NICE NG128."
+              "label": "Suspected TIA (<24h resolution)",
+              "guidance": "MANAGEMENT PLAN (Consultant Plan):\n1. Antiplatelet: Aspirin 300mg stat (unless bleeding suspected).\n2. Triage: Urgent referral to TIA clinic (assessment within 24h).\n3. Driving: Mandatory 1-month ban from driving (inform DVLA). RCP/NICE."
             },
             {
-              "value": "secondary",
-              "label": "Secondary prevention",
-              "guidance": "MANAGEMENT PLAN:\nAntiplatelet: clopidogrel 75 mg OD (or aspirin + dipyridamole). BP and lipid targets. Consider anticoagulation if AF. NICE NG128."
-            },
+              "label": "Acute Stroke (Persistent)",
+              "guidance": "MANAGEMENT PLAN:\n1. Emergency: 999 for Hyperacute Stroke Unit (HASU).\n2. Action: Nil-by-mouth (swallow screen). No Aspirin until CT brain excludes haemorrhage."
+            }
+          ]
+        },
+        {
+          "id": "tia-secondary",
+          "question": "2. Secondary Prevention",
+          "type": "dropdown",
+          "options": [
             {
-              "value": "refer",
-              "label": "Referral",
-              "guidance": "MANAGEMENT PLAN:\nAll TIAs: urgent referral for investigation (imaging, carotid). NICE NG128."
+              "label": "Antiplatelet & Statins",
+              "guidance": "MANAGEMENT PLAN:\n1. 1st-line: Clopidogrel 75mg OD gold standard.\n2. Statin: Atorvastatin 80mg (Target LDL < 1.8).\n3. AF: Anticoagulate (DOAC) if AF confirmed. RCP Stroke Guidelines."
             }
           ]
         }
@@ -1783,28 +1787,99 @@
     },
     {
       "keywords": [
-        "epilepsy"
+        "epilepsy",
+        "seizure",
+        "fit"
       ],
       "steps": [
         {
-          "id": "epilepsy",
-          "question": "Epilepsy",
+          "id": "epilepsy-diagnosis",
+          "question": "1. Diagnosis & Triage",
           "type": "dropdown",
           "options": [
             {
-              "value": "new",
-              "label": "First seizure",
-              "guidance": "MANAGEMENT PLAN:\nRefer neurologist (2WW). Do not drive until assessed. EEG and MRI. NICE NG217."
+              "label": "First Seizure",
+              "guidance": "MANAGEMENT PLAN (Consultant Plan):\n1. Urgency: Refer to 'First Seizure Clinic' (within 2 weeks). NICE NG217.\n2. Investigation: EEG + MRI Brain (Standard protocol including coronal T2/FLAIR sessions). \n3. Safety: High-risk activities (driving, swimming, working at heights) must stop until specialist review."
+            }
+          ]
+        },
+        {
+          "id": "epilepsy-meds",
+          "question": "2. Medication Selection",
+          "type": "dropdown",
+          "options": [
+            {
+              "label": "Focal Seizures",
+              "guidance": "MANAGEMENT PLAN:\n1. 1st-line: Lamotrigine or Levetiracetam (Keppra). NICE NG217."
             },
             {
-              "value": "drug",
-              "label": "Drug choice",
-              "guidance": "MANAGEMENT PLAN:\nFirst-line: levetiracetam, lamotrigine, or carbamazepine (depending on seizure type). Monotherapy; titrate. NICE NG217."
+              "label": "Generalized Seizures",
+              "guidance": "MANAGEMENT PLAN:\n1. 1st-line: Sodium Valproate (Epilim) - **Strict warning: Not for use in women/girls of childbearing potential unless Pregnancy Prevention Programme in place.**\n2. Alternative: Levetiracetam or Lamotrigine."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "keywords": [
+        "parkinson",
+        "tremor",
+        "bradykinesia"
+      ],
+      "steps": [
+        {
+          "id": "parkinson-mgt",
+          "question": "1. Diagnosis & Specialist Review",
+          "type": "dropdown",
+          "options": [
+            {
+              "label": "Suspected Parkinson's",
+              "guidance": "MANAGEMENT PLAN (NICE NG71):\n1. Presentation: Asymmetrical resting tremor, rigidity, bradykinesia (slowness of movement).\n2. Action: Urgent referral to Neurology or Elderly Care Specialist (within 6 weeks, untreated).\n3. Note: Do not start Levodopa or other medications in primary care before specialist diagnosis."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "keywords": [
+        "multiple sclerosis",
+        "ms",
+        "optic neuritis"
+      ],
+      "steps": [
+        {
+          "id": "ms-mgt",
+          "question": "1. Specialist Workup",
+          "type": "dropdown",
+          "options": [
+            {
+              "label": "Suspected MS / CIS",
+              "guidance": "MANAGEMENT PLAN (Consultant Plan):\n1. Symptoms: Optic neuritis (pain on eye movement), transverse myelitis, or focal sensory/motor deficit lasting >24h.\n2. Action: Refer to Neurology for MRI (Brain/Spine with gadolinium) and Lumbar Puncture (Oligoclonal bands). NICE NG220.\n3. Flare: High-dose Methylprednisolone (500mg - 1g) for 3-5 days for significant relapses."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "keywords": [
+        "vertigo",
+        "dizziness",
+        "bppv",
+        "labyrinthitis"
+      ],
+      "steps": [
+        {
+          "id": "vertigo-triage",
+          "question": "1. Triage & Diagnosis",
+          "type": "dropdown",
+          "options": [
+            {
+              "label": "BPPV (Benign Paroxysmal Positional Vertigo)",
+              "guidance": "MANAGEMENT PLAN:\n1. Diagnosis: Dix-Hallpike maneuver (torsional nystagmus).\n2. Treatment: Epley maneuver (specialist physio or trained clinician). NICE CKS."
             },
             {
-              "value": "pregnancy",
-              "label": "Pregnancy",
-              "guidance": "MANAGEMENT PLAN:\nHigh-dose folic acid 5 mg. Review drugs (valproate avoid). Specialist advice. NICE NG217."
+              "label": "Vestibular Migraine / Meniere's",
+              "guidance": "MANAGEMENT PLAN:\n1. Meniere's: Triad of Vertigo, Hearing loss, and Tinnitus. Treatment: Prochlorperazine (acute) + Betahistine (prophylaxis).\n2. Vertigo Red Flags: Central vertigo (negative HINTS exam), new focal neurology \u2192 Urgent MRI/A&E."
             }
           ]
         }
