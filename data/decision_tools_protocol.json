@@ -1,6 +1,6 @@
 {
   "source": "Learning library + NICE CKS/NG; management steps from guidelines",
-  "generated": "2026-02-19T21:12:14.562Z",
+  "generated": "2026-02-19T21:13:45.230Z",
   "totalTools": 1920,
   "systems": [
     {
@@ -19346,17 +19346,17 @@
           "evidence": "Management per NICE CKS and Local formulary.",
           "steps": [
             {
-              "id": "bp-assessment",
-              "question": "Assessment (Best Practice)",
+              "id": "minor-surg-criteria",
+              "question": "1. Eligibility & Indicators",
               "type": "dropdown",
               "options": [
                 {
-                  "label": "Standard Assessment",
-                  "guidance": "MANAGEMENT PLAN:\n1. History: Assess onset, severity, and triggers. Specifically exclude organic red flags (weight loss, night pain, fever, night sweats).\n2. Review: Family history and current medications.\n3. Differential: Consider most likely vs most serious diagnosis. Use validated scores (e.g. Centor, Wells, qSOFA) if applicable."
+                  "label": "Benign Lumps (Indications for GP Surgery)",
+                  "guidance": "MANAGEMENT PLAN:\n1. Criteria: Symptomatic (pain, inflammation, interference with function). \n2. Lipomas: Usually only if >5cm or rapidly growing (refer for US first to exclude sarcoma).\n3. Sebaceous Cysts: Excise if recurrently infected (wait for infection to settle first).\n4. Exclusions: Cosmetic removal is generally not NHS-funded."
                 },
                 {
-                  "label": "Examination & Vitals",
-                  "guidance": "MANAGEMENT PLAN:\n1. Physical Exam: Perform focused physical exam (e.g. MSK, Neuro, Respiratory).\n2. Vitals: Check NEWS2 if systemically unwell.\n3. Documentation: Document findings and clinical rationale clearly."
+                  "label": "Red Flags (Refer to 2WW / Plastic Surgery)",
+                  "guidance": "MANAGEMENT PLAN:\n1. Changing Naevi: Refer to 2WW Dermatology.\n2. Irregular, fixed, or hard masses: Urgent referral.\n3. Note: Never excise a lesion where malignancy is suspected in primary care minor surgery clinic."
                 }
               ]
             }
@@ -19373,13 +19373,17 @@
           "evidence": "Management per NICE CKS and Local formulary.",
           "steps": [
             {
-              "id": "bp-management",
-              "question": "Management (Best Practice)",
+              "id": "minor-surg-criteria",
+              "question": "1. Eligibility & Indicators",
               "type": "dropdown",
               "options": [
                 {
-                  "label": "Initial Management Plan",
-                  "guidance": "MANAGEMENT PLAN:\n1. Advice: Advise on activity levels, hydration, and non-pharmacological measures.\n2. Information: Provide written patient info and use shared-decision making.\n3. Safety-netting: Provide clear triggers for re-consultation (rapid worsening, new red flags).\n4. Review: Arrange review based on clinical stability (e.g. 48h for acute, 2-4 weeks for chronic)."
+                  "label": "Benign Lumps (Indications for GP Surgery)",
+                  "guidance": "MANAGEMENT PLAN:\n1. Criteria: Symptomatic (pain, inflammation, interference with function). \n2. Lipomas: Usually only if >5cm or rapidly growing (refer for US first to exclude sarcoma).\n3. Sebaceous Cysts: Excise if recurrently infected (wait for infection to settle first).\n4. Exclusions: Cosmetic removal is generally not NHS-funded."
+                },
+                {
+                  "label": "Red Flags (Refer to 2WW / Plastic Surgery)",
+                  "guidance": "MANAGEMENT PLAN:\n1. Changing Naevi: Refer to 2WW Dermatology.\n2. Irregular, fixed, or hard masses: Urgent referral.\n3. Note: Never excise a lesion where malignancy is suspected in primary care minor surgery clinic."
                 }
               ]
             }
@@ -19396,13 +19400,17 @@
           "evidence": "Management per NICE CKS and Local formulary.",
           "steps": [
             {
-              "id": "bp-referral",
-              "question": "Referral & Follow-up (Best Practice)",
+              "id": "minor-surg-criteria",
+              "question": "1. Eligibility & Indicators",
               "type": "dropdown",
               "options": [
                 {
-                  "label": "Referral & Safety-netting",
-                  "guidance": "MANAGEMENT PLAN:\n1. Referral: Refer 2WW if malignancy suspected. Urgent referral if clinical compromise. Routine if primary care management fails.\n2. Waiting List: Ensure patient knows how to report deterioration while waiting.\n3. Review: Review and optimize primary care management in the interim."
+                  "label": "Benign Lumps (Indications for GP Surgery)",
+                  "guidance": "MANAGEMENT PLAN:\n1. Criteria: Symptomatic (pain, inflammation, interference with function). \n2. Lipomas: Usually only if >5cm or rapidly growing (refer for US first to exclude sarcoma).\n3. Sebaceous Cysts: Excise if recurrently infected (wait for infection to settle first).\n4. Exclusions: Cosmetic removal is generally not NHS-funded."
+                },
+                {
+                  "label": "Red Flags (Refer to 2WW / Plastic Surgery)",
+                  "guidance": "MANAGEMENT PLAN:\n1. Changing Naevi: Refer to 2WW Dermatology.\n2. Irregular, fixed, or hard masses: Urgent referral.\n3. Note: Never excise a lesion where malignancy is suspected in primary care minor surgery clinic."
                 }
               ]
             }
@@ -20761,14 +20769,17 @@
           "evidence": "Management per NICE CKS and Local formulary.",
           "steps": [
             {
-              "id": "guidance",
-              "question": "Clinical Guidance (Best Practice)",
+              "id": "minor-surg-criteria",
+              "question": "1. Eligibility & Indicators",
               "type": "dropdown",
               "options": [
                 {
-                  "value": "standard",
-                  "label": "Management Overview",
-                  "guidance": "MANAGEMENT PLAN:\n1. Assessment: Full clinical assessment to exclude red flags.\n2. Action: Refer to local clinical formulary for specific pharmacotherapy.\n3. Safety-net: Provide robust safety-netting advice.\n4. Follow-up: Arrange review based on clinical findings."
+                  "label": "Benign Lumps (Indications for GP Surgery)",
+                  "guidance": "MANAGEMENT PLAN:\n1. Criteria: Symptomatic (pain, inflammation, interference with function). \n2. Lipomas: Usually only if >5cm or rapidly growing (refer for US first to exclude sarcoma).\n3. Sebaceous Cysts: Excise if recurrently infected (wait for infection to settle first).\n4. Exclusions: Cosmetic removal is generally not NHS-funded."
+                },
+                {
+                  "label": "Red Flags (Refer to 2WW / Plastic Surgery)",
+                  "guidance": "MANAGEMENT PLAN:\n1. Changing Naevi: Refer to 2WW Dermatology.\n2. Irregular, fixed, or hard masses: Urgent referral.\n3. Note: Never excise a lesion where malignancy is suspected in primary care minor surgery clinic."
                 }
               ]
             }
@@ -28784,14 +28795,21 @@
           "evidence": "Management per NICE CKS and Local formulary.",
           "steps": [
             {
-              "id": "guidance",
-              "question": "Clinical Guidance (Best Practice)",
+              "id": "gp-ops",
+              "question": "1. General Practice Operations",
               "type": "dropdown",
               "options": [
                 {
-                  "value": "standard",
-                  "label": "Management Overview",
-                  "guidance": "MANAGEMENT PLAN:\n1. Assessment: Full clinical assessment to exclude red flags.\n2. Action: Refer to local clinical formulary for specific pharmacotherapy.\n3. Safety-net: Provide robust safety-netting advice.\n4. Follow-up: Arrange review based on clinical findings."
+                  "label": "Med3 (Fit Notes)",
+                  "guidance": "MANAGEMENT PLAN:\n1. First 7 days: Patient self-certifies (Employer cannot demand Med3).\n2. >7 days: Clinician issues Med3 based on clinical assessment.\n3. Note: Focus on what patient 'can' do (phased return, amended duties) where possible."
+                },
+                {
+                  "label": "Safeguarding (Adult/Child)",
+                  "guidance": "MANAGEMENT PLAN:\n1. Identify: Physical, emotional, sexual abuse, or neglect (including self-neglect in adults).\n2. Action: Discuss with Designated Lead. Urgent referral to MASH (Children) or Adult Social Care if risk is immediate.\n3. Documentation: Use factual, objective language. Do not promise confidentiality if disclosure is required for safety."
+                },
+                {
+                  "label": "Continuity & QOF",
+                  "guidance": "MANAGEMENT PLAN:\n1. Chronic Disease: Annual review (QOF) including bloods and symptom score.\n2. Polypharmacy: Holistic medication review (SMR) with clinical pharmacist for patients on >10 meds."
                 }
               ]
             }
@@ -28807,14 +28825,21 @@
           "evidence": "Management per NG77 and CKS Safeguarding.",
           "steps": [
             {
-              "id": "guidance",
-              "question": "Clinical Guidance (Best Practice)",
+              "id": "gp-ops",
+              "question": "1. General Practice Operations",
               "type": "dropdown",
               "options": [
                 {
-                  "value": "standard",
-                  "label": "Management Overview",
-                  "guidance": "MANAGEMENT PLAN:\n1. Assessment: Full clinical assessment to exclude red flags.\n2. Action: Refer to local clinical formulary for specific pharmacotherapy.\n3. Safety-net: Provide robust safety-netting advice.\n4. Follow-up: Arrange review based on clinical findings."
+                  "label": "Med3 (Fit Notes)",
+                  "guidance": "MANAGEMENT PLAN:\n1. First 7 days: Patient self-certifies (Employer cannot demand Med3).\n2. >7 days: Clinician issues Med3 based on clinical assessment.\n3. Note: Focus on what patient 'can' do (phased return, amended duties) where possible."
+                },
+                {
+                  "label": "Safeguarding (Adult/Child)",
+                  "guidance": "MANAGEMENT PLAN:\n1. Identify: Physical, emotional, sexual abuse, or neglect (including self-neglect in adults).\n2. Action: Discuss with Designated Lead. Urgent referral to MASH (Children) or Adult Social Care if risk is immediate.\n3. Documentation: Use factual, objective language. Do not promise confidentiality if disclosure is required for safety."
+                },
+                {
+                  "label": "Continuity & QOF",
+                  "guidance": "MANAGEMENT PLAN:\n1. Chronic Disease: Annual review (QOF) including bloods and symptom score.\n2. Polypharmacy: Holistic medication review (SMR) with clinical pharmacist for patients on >10 meds."
                 }
               ]
             }
@@ -30975,14 +31000,17 @@
           "evidence": "Management per NICE CKS and Local formulary.",
           "steps": [
             {
-              "id": "guidance",
-              "question": "Clinical Guidance (Best Practice)",
+              "id": "minor-surg-criteria",
+              "question": "1. Eligibility & Indicators",
               "type": "dropdown",
               "options": [
                 {
-                  "value": "standard",
-                  "label": "Management Overview",
-                  "guidance": "MANAGEMENT PLAN:\n1. Assessment: Full clinical assessment to exclude red flags.\n2. Action: Refer to local clinical formulary for specific pharmacotherapy.\n3. Safety-net: Provide robust safety-netting advice.\n4. Follow-up: Arrange review based on clinical findings."
+                  "label": "Benign Lumps (Indications for GP Surgery)",
+                  "guidance": "MANAGEMENT PLAN:\n1. Criteria: Symptomatic (pain, inflammation, interference with function). \n2. Lipomas: Usually only if >5cm or rapidly growing (refer for US first to exclude sarcoma).\n3. Sebaceous Cysts: Excise if recurrently infected (wait for infection to settle first).\n4. Exclusions: Cosmetic removal is generally not NHS-funded."
+                },
+                {
+                  "label": "Red Flags (Refer to 2WW / Plastic Surgery)",
+                  "guidance": "MANAGEMENT PLAN:\n1. Changing Naevi: Refer to 2WW Dermatology.\n2. Irregular, fixed, or hard masses: Urgent referral.\n3. Note: Never excise a lesion where malignancy is suspected in primary care minor surgery clinic."
                 }
               ]
             }
@@ -34740,14 +34768,17 @@
           "evidence": "Management per NICE CKS and Local formulary.",
           "steps": [
             {
-              "id": "guidance",
-              "question": "Clinical Guidance (Best Practice)",
+              "id": "minor-surg-criteria",
+              "question": "1. Eligibility & Indicators",
               "type": "dropdown",
               "options": [
                 {
-                  "value": "standard",
-                  "label": "Management Overview",
-                  "guidance": "MANAGEMENT PLAN:\n1. Assessment: Full clinical assessment to exclude red flags.\n2. Action: Refer to local clinical formulary for specific pharmacotherapy.\n3. Safety-net: Provide robust safety-netting advice.\n4. Follow-up: Arrange review based on clinical findings."
+                  "label": "Benign Lumps (Indications for GP Surgery)",
+                  "guidance": "MANAGEMENT PLAN:\n1. Criteria: Symptomatic (pain, inflammation, interference with function). \n2. Lipomas: Usually only if >5cm or rapidly growing (refer for US first to exclude sarcoma).\n3. Sebaceous Cysts: Excise if recurrently infected (wait for infection to settle first).\n4. Exclusions: Cosmetic removal is generally not NHS-funded."
+                },
+                {
+                  "label": "Red Flags (Refer to 2WW / Plastic Surgery)",
+                  "guidance": "MANAGEMENT PLAN:\n1. Changing Naevi: Refer to 2WW Dermatology.\n2. Irregular, fixed, or hard masses: Urgent referral.\n3. Note: Never excise a lesion where malignancy is suspected in primary care minor surgery clinic."
                 }
               ]
             }
@@ -45965,14 +45996,17 @@
           "evidence": "Management per NICE CKS and Local formulary.",
           "steps": [
             {
-              "id": "guidance",
-              "question": "Clinical Guidance (Best Practice)",
+              "id": "palliative-mgt",
+              "question": "1. End of Life Care (Consultant Plan)",
               "type": "dropdown",
               "options": [
                 {
-                  "value": "standard",
-                  "label": "Management Overview",
-                  "guidance": "MANAGEMENT PLAN:\n1. Assessment: Full clinical assessment to exclude red flags.\n2. Action: Refer to local clinical formulary for specific pharmacotherapy.\n3. Safety-net: Provide robust safety-netting advice.\n4. Follow-up: Arrange review based on clinical findings."
+                  "label": "Anticipatory Meds (The 'Big 4')",
+                  "guidance": "MANAGEMENT PLAN:\n1. Pain/SOB: Morphine Sulfate 2.5mg - 5mg SC prn.\n2. Secretions: Hyoscine Butylbromide 20mg SC prn.\n3. Agitation: Midazolam 2.5mg - 5mg SC prn.\n4. Nausea: Levomepromazine 6.25mg SC prn.\n5. Note: Ensure Just-in-Case box is in house and District Nurses are informed."
+                },
+                {
+                  "label": "Verification of Death",
+                  "guidance": "MANAGEMENT PLAN:\n1. Confirm identity.\n2. 5 mins observation: No respiratory effort, no palpable pulse, fixed dilated pupils.\n3. Documentation: Record time of death and clinical findings clearly."
                 }
               ]
             }
@@ -46846,14 +46880,17 @@
           "evidence": "Management per NICE CKS and Local formulary.",
           "steps": [
             {
-              "id": "guidance",
-              "question": "Clinical Guidance (Best Practice)",
+              "id": "injection-mgt",
+              "question": "1. Procedure Choice",
               "type": "dropdown",
               "options": [
                 {
-                  "value": "standard",
-                  "label": "Management Overview",
-                  "guidance": "MANAGEMENT PLAN:\n1. Assessment: Full clinical assessment to exclude red flags.\n2. Action: Refer to local clinical formulary for specific pharmacotherapy.\n3. Safety-net: Provide robust safety-netting advice.\n4. Follow-up: Arrange review based on clinical findings."
+                  "label": "Common Injections (Standard Pack)",
+                  "guidance": "MANAGEMENT PLAN:\n1. Drugs: Triamcinolone (Kenalog) 40mg or Depo-Medrone 40mg + 1% Lidocaine.\n2. Areas: Shoulder (Subacromial), Knee (Intra-articular), Trigger Finger (Tendon sheath), Carpal Tunnel.\n3. Post-op: 48 hours of joint rest. Warn about 'steroid flare' (pain increase for 24-48h)."
+                },
+                {
+                  "label": "Cautions & Consent",
+                  "guidance": "MANAGEMENT PLAN:\n1. Diabetics: Warn about blood sugar rise (may last 1-2 weeks).\n2. Anticoagulation: Safe if INR in therapeutic range (<3.0).\n3. Infection: Absolutely contraindicated if skin infection over site or suspected septic arthritis."
                 }
               ]
             }
@@ -46869,14 +46906,17 @@
           "evidence": "Management per NICE CKS and Local formulary.",
           "steps": [
             {
-              "id": "guidance",
-              "question": "Clinical Guidance (Best Practice)",
+              "id": "injection-mgt",
+              "question": "1. Procedure Choice",
               "type": "dropdown",
               "options": [
                 {
-                  "value": "standard",
-                  "label": "Management Overview",
-                  "guidance": "MANAGEMENT PLAN:\n1. Assessment: Full clinical assessment to exclude red flags.\n2. Action: Refer to local clinical formulary for specific pharmacotherapy.\n3. Safety-net: Provide robust safety-netting advice.\n4. Follow-up: Arrange review based on clinical findings."
+                  "label": "Common Injections (Standard Pack)",
+                  "guidance": "MANAGEMENT PLAN:\n1. Drugs: Triamcinolone (Kenalog) 40mg or Depo-Medrone 40mg + 1% Lidocaine.\n2. Areas: Shoulder (Subacromial), Knee (Intra-articular), Trigger Finger (Tendon sheath), Carpal Tunnel.\n3. Post-op: 48 hours of joint rest. Warn about 'steroid flare' (pain increase for 24-48h)."
+                },
+                {
+                  "label": "Cautions & Consent",
+                  "guidance": "MANAGEMENT PLAN:\n1. Diabetics: Warn about blood sugar rise (may last 1-2 weeks).\n2. Anticoagulation: Safe if INR in therapeutic range (<3.0).\n3. Infection: Absolutely contraindicated if skin infection over site or suspected septic arthritis."
                 }
               ]
             }
@@ -46892,14 +46932,17 @@
           "evidence": "Management per NICE CKS and Local formulary.",
           "steps": [
             {
-              "id": "guidance",
-              "question": "Clinical Guidance (Best Practice)",
+              "id": "injection-mgt",
+              "question": "1. Procedure Choice",
               "type": "dropdown",
               "options": [
                 {
-                  "value": "standard",
-                  "label": "Management Overview",
-                  "guidance": "MANAGEMENT PLAN:\n1. Assessment: Full clinical assessment to exclude red flags.\n2. Action: Refer to local clinical formulary for specific pharmacotherapy.\n3. Safety-net: Provide robust safety-netting advice.\n4. Follow-up: Arrange review based on clinical findings."
+                  "label": "Common Injections (Standard Pack)",
+                  "guidance": "MANAGEMENT PLAN:\n1. Drugs: Triamcinolone (Kenalog) 40mg or Depo-Medrone 40mg + 1% Lidocaine.\n2. Areas: Shoulder (Subacromial), Knee (Intra-articular), Trigger Finger (Tendon sheath), Carpal Tunnel.\n3. Post-op: 48 hours of joint rest. Warn about 'steroid flare' (pain increase for 24-48h)."
+                },
+                {
+                  "label": "Cautions & Consent",
+                  "guidance": "MANAGEMENT PLAN:\n1. Diabetics: Warn about blood sugar rise (may last 1-2 weeks).\n2. Anticoagulation: Safe if INR in therapeutic range (<3.0).\n3. Infection: Absolutely contraindicated if skin infection over site or suspected septic arthritis."
                 }
               ]
             }
@@ -46985,14 +47028,17 @@
           "evidence": "Management per NICE CKS and Local formulary.",
           "steps": [
             {
-              "id": "guidance",
-              "question": "Clinical Guidance (Best Practice)",
+              "id": "minor-surg-criteria",
+              "question": "1. Eligibility & Indicators",
               "type": "dropdown",
               "options": [
                 {
-                  "value": "standard",
-                  "label": "Management Overview",
-                  "guidance": "MANAGEMENT PLAN:\n1. Assessment: Full clinical assessment to exclude red flags.\n2. Action: Refer to local clinical formulary for specific pharmacotherapy.\n3. Safety-net: Provide robust safety-netting advice.\n4. Follow-up: Arrange review based on clinical findings."
+                  "label": "Benign Lumps (Indications for GP Surgery)",
+                  "guidance": "MANAGEMENT PLAN:\n1. Criteria: Symptomatic (pain, inflammation, interference with function). \n2. Lipomas: Usually only if >5cm or rapidly growing (refer for US first to exclude sarcoma).\n3. Sebaceous Cysts: Excise if recurrently infected (wait for infection to settle first).\n4. Exclusions: Cosmetic removal is generally not NHS-funded."
+                },
+                {
+                  "label": "Red Flags (Refer to 2WW / Plastic Surgery)",
+                  "guidance": "MANAGEMENT PLAN:\n1. Changing Naevi: Refer to 2WW Dermatology.\n2. Irregular, fixed, or hard masses: Urgent referral.\n3. Note: Never excise a lesion where malignancy is suspected in primary care minor surgery clinic."
                 }
               ]
             }
@@ -47007,14 +47053,17 @@
           "evidence": "Management per CKS Minor surgery.",
           "steps": [
             {
-              "id": "guidance",
-              "question": "Clinical Guidance (Best Practice)",
+              "id": "minor-surg-criteria",
+              "question": "1. Eligibility & Indicators",
               "type": "dropdown",
               "options": [
                 {
-                  "value": "standard",
-                  "label": "Management Overview",
-                  "guidance": "MANAGEMENT PLAN:\n1. Assessment: Full clinical assessment to exclude red flags.\n2. Action: Refer to local clinical formulary for specific pharmacotherapy.\n3. Safety-net: Provide robust safety-netting advice.\n4. Follow-up: Arrange review based on clinical findings."
+                  "label": "Benign Lumps (Indications for GP Surgery)",
+                  "guidance": "MANAGEMENT PLAN:\n1. Criteria: Symptomatic (pain, inflammation, interference with function). \n2. Lipomas: Usually only if >5cm or rapidly growing (refer for US first to exclude sarcoma).\n3. Sebaceous Cysts: Excise if recurrently infected (wait for infection to settle first).\n4. Exclusions: Cosmetic removal is generally not NHS-funded."
+                },
+                {
+                  "label": "Red Flags (Refer to 2WW / Plastic Surgery)",
+                  "guidance": "MANAGEMENT PLAN:\n1. Changing Naevi: Refer to 2WW Dermatology.\n2. Irregular, fixed, or hard masses: Urgent referral.\n3. Note: Never excise a lesion where malignancy is suspected in primary care minor surgery clinic."
                 }
               ]
             }
@@ -47030,14 +47079,17 @@
           "evidence": "Management per NICE CKS and Local formulary.",
           "steps": [
             {
-              "id": "guidance",
-              "question": "Clinical Guidance (Best Practice)",
+              "id": "palliative-mgt",
+              "question": "1. End of Life Care (Consultant Plan)",
               "type": "dropdown",
               "options": [
                 {
-                  "value": "standard",
-                  "label": "Management Overview",
-                  "guidance": "MANAGEMENT PLAN:\n1. Assessment: Full clinical assessment to exclude red flags.\n2. Action: Refer to local clinical formulary for specific pharmacotherapy.\n3. Safety-net: Provide robust safety-netting advice.\n4. Follow-up: Arrange review based on clinical findings."
+                  "label": "Anticipatory Meds (The 'Big 4')",
+                  "guidance": "MANAGEMENT PLAN:\n1. Pain/SOB: Morphine Sulfate 2.5mg - 5mg SC prn.\n2. Secretions: Hyoscine Butylbromide 20mg SC prn.\n3. Agitation: Midazolam 2.5mg - 5mg SC prn.\n4. Nausea: Levomepromazine 6.25mg SC prn.\n5. Note: Ensure Just-in-Case box is in house and District Nurses are informed."
+                },
+                {
+                  "label": "Verification of Death",
+                  "guidance": "MANAGEMENT PLAN:\n1. Confirm identity.\n2. 5 mins observation: No respiratory effort, no palpable pulse, fixed dilated pupils.\n3. Documentation: Record time of death and clinical findings clearly."
                 }
               ]
             }
@@ -47053,14 +47105,17 @@
           "evidence": "Management per NICE CKS and Local formulary.",
           "steps": [
             {
-              "id": "guidance",
-              "question": "Clinical Guidance (Best Practice)",
+              "id": "palliative-mgt",
+              "question": "1. End of Life Care (Consultant Plan)",
               "type": "dropdown",
               "options": [
                 {
-                  "value": "standard",
-                  "label": "Management Overview",
-                  "guidance": "MANAGEMENT PLAN:\n1. Assessment: Full clinical assessment to exclude red flags.\n2. Action: Refer to local clinical formulary for specific pharmacotherapy.\n3. Safety-net: Provide robust safety-netting advice.\n4. Follow-up: Arrange review based on clinical findings."
+                  "label": "Anticipatory Meds (The 'Big 4')",
+                  "guidance": "MANAGEMENT PLAN:\n1. Pain/SOB: Morphine Sulfate 2.5mg - 5mg SC prn.\n2. Secretions: Hyoscine Butylbromide 20mg SC prn.\n3. Agitation: Midazolam 2.5mg - 5mg SC prn.\n4. Nausea: Levomepromazine 6.25mg SC prn.\n5. Note: Ensure Just-in-Case box is in house and District Nurses are informed."
+                },
+                {
+                  "label": "Verification of Death",
+                  "guidance": "MANAGEMENT PLAN:\n1. Confirm identity.\n2. 5 mins observation: No respiratory effort, no palpable pulse, fixed dilated pupils.\n3. Documentation: Record time of death and clinical findings clearly."
                 }
               ]
             }
@@ -47076,14 +47131,17 @@
           "evidence": "Management per NICE CKS and Local formulary.",
           "steps": [
             {
-              "id": "guidance",
-              "question": "Clinical Guidance (Best Practice)",
+              "id": "palliative-mgt",
+              "question": "1. End of Life Care (Consultant Plan)",
               "type": "dropdown",
               "options": [
                 {
-                  "value": "standard",
-                  "label": "Management Overview",
-                  "guidance": "MANAGEMENT PLAN:\n1. Assessment: Full clinical assessment to exclude red flags.\n2. Action: Refer to local clinical formulary for specific pharmacotherapy.\n3. Safety-net: Provide robust safety-netting advice.\n4. Follow-up: Arrange review based on clinical findings."
+                  "label": "Anticipatory Meds (The 'Big 4')",
+                  "guidance": "MANAGEMENT PLAN:\n1. Pain/SOB: Morphine Sulfate 2.5mg - 5mg SC prn.\n2. Secretions: Hyoscine Butylbromide 20mg SC prn.\n3. Agitation: Midazolam 2.5mg - 5mg SC prn.\n4. Nausea: Levomepromazine 6.25mg SC prn.\n5. Note: Ensure Just-in-Case box is in house and District Nurses are informed."
+                },
+                {
+                  "label": "Verification of Death",
+                  "guidance": "MANAGEMENT PLAN:\n1. Confirm identity.\n2. 5 mins observation: No respiratory effort, no palpable pulse, fixed dilated pupils.\n3. Documentation: Record time of death and clinical findings clearly."
                 }
               ]
             }
@@ -47099,14 +47157,17 @@
           "evidence": "Management per NICE CKS and Local formulary.",
           "steps": [
             {
-              "id": "guidance",
-              "question": "Clinical Guidance (Best Practice)",
+              "id": "palliative-mgt",
+              "question": "1. End of Life Care (Consultant Plan)",
               "type": "dropdown",
               "options": [
                 {
-                  "value": "standard",
-                  "label": "Management Overview",
-                  "guidance": "MANAGEMENT PLAN:\n1. Assessment: Full clinical assessment to exclude red flags.\n2. Action: Refer to local clinical formulary for specific pharmacotherapy.\n3. Safety-net: Provide robust safety-netting advice.\n4. Follow-up: Arrange review based on clinical findings."
+                  "label": "Anticipatory Meds (The 'Big 4')",
+                  "guidance": "MANAGEMENT PLAN:\n1. Pain/SOB: Morphine Sulfate 2.5mg - 5mg SC prn.\n2. Secretions: Hyoscine Butylbromide 20mg SC prn.\n3. Agitation: Midazolam 2.5mg - 5mg SC prn.\n4. Nausea: Levomepromazine 6.25mg SC prn.\n5. Note: Ensure Just-in-Case box is in house and District Nurses are informed."
+                },
+                {
+                  "label": "Verification of Death",
+                  "guidance": "MANAGEMENT PLAN:\n1. Confirm identity.\n2. 5 mins observation: No respiratory effort, no palpable pulse, fixed dilated pupils.\n3. Documentation: Record time of death and clinical findings clearly."
                 }
               ]
             }
@@ -47122,14 +47183,17 @@
           "evidence": "Management per NICE CKS and Local formulary.",
           "steps": [
             {
-              "id": "guidance",
-              "question": "Clinical Guidance (Best Practice)",
+              "id": "palliative-mgt",
+              "question": "1. End of Life Care (Consultant Plan)",
               "type": "dropdown",
               "options": [
                 {
-                  "value": "standard",
-                  "label": "Management Overview",
-                  "guidance": "MANAGEMENT PLAN:\n1. Assessment: Full clinical assessment to exclude red flags.\n2. Action: Refer to local clinical formulary for specific pharmacotherapy.\n3. Safety-net: Provide robust safety-netting advice.\n4. Follow-up: Arrange review based on clinical findings."
+                  "label": "Anticipatory Meds (The 'Big 4')",
+                  "guidance": "MANAGEMENT PLAN:\n1. Pain/SOB: Morphine Sulfate 2.5mg - 5mg SC prn.\n2. Secretions: Hyoscine Butylbromide 20mg SC prn.\n3. Agitation: Midazolam 2.5mg - 5mg SC prn.\n4. Nausea: Levomepromazine 6.25mg SC prn.\n5. Note: Ensure Just-in-Case box is in house and District Nurses are informed."
+                },
+                {
+                  "label": "Verification of Death",
+                  "guidance": "MANAGEMENT PLAN:\n1. Confirm identity.\n2. 5 mins observation: No respiratory effort, no palpable pulse, fixed dilated pupils.\n3. Documentation: Record time of death and clinical findings clearly."
                 }
               ]
             }
@@ -47145,14 +47209,17 @@
           "evidence": "Management per NICE CKS and Local formulary.",
           "steps": [
             {
-              "id": "guidance",
-              "question": "Clinical Guidance (Best Practice)",
+              "id": "palliative-mgt",
+              "question": "1. End of Life Care (Consultant Plan)",
               "type": "dropdown",
               "options": [
                 {
-                  "value": "standard",
-                  "label": "Management Overview",
-                  "guidance": "MANAGEMENT PLAN:\n1. Assessment: Full clinical assessment to exclude red flags.\n2. Action: Refer to local clinical formulary for specific pharmacotherapy.\n3. Safety-net: Provide robust safety-netting advice.\n4. Follow-up: Arrange review based on clinical findings."
+                  "label": "Anticipatory Meds (The 'Big 4')",
+                  "guidance": "MANAGEMENT PLAN:\n1. Pain/SOB: Morphine Sulfate 2.5mg - 5mg SC prn.\n2. Secretions: Hyoscine Butylbromide 20mg SC prn.\n3. Agitation: Midazolam 2.5mg - 5mg SC prn.\n4. Nausea: Levomepromazine 6.25mg SC prn.\n5. Note: Ensure Just-in-Case box is in house and District Nurses are informed."
+                },
+                {
+                  "label": "Verification of Death",
+                  "guidance": "MANAGEMENT PLAN:\n1. Confirm identity.\n2. 5 mins observation: No respiratory effort, no palpable pulse, fixed dilated pupils.\n3. Documentation: Record time of death and clinical findings clearly."
                 }
               ]
             }
@@ -47168,14 +47235,17 @@
           "evidence": "Management per NICE CKS and Local formulary.",
           "steps": [
             {
-              "id": "guidance",
-              "question": "Clinical Guidance (Best Practice)",
+              "id": "palliative-mgt",
+              "question": "1. End of Life Care (Consultant Plan)",
               "type": "dropdown",
               "options": [
                 {
-                  "value": "standard",
-                  "label": "Management Overview",
-                  "guidance": "MANAGEMENT PLAN:\n1. Assessment: Full clinical assessment to exclude red flags.\n2. Action: Refer to local clinical formulary for specific pharmacotherapy.\n3. Safety-net: Provide robust safety-netting advice.\n4. Follow-up: Arrange review based on clinical findings."
+                  "label": "Anticipatory Meds (The 'Big 4')",
+                  "guidance": "MANAGEMENT PLAN:\n1. Pain/SOB: Morphine Sulfate 2.5mg - 5mg SC prn.\n2. Secretions: Hyoscine Butylbromide 20mg SC prn.\n3. Agitation: Midazolam 2.5mg - 5mg SC prn.\n4. Nausea: Levomepromazine 6.25mg SC prn.\n5. Note: Ensure Just-in-Case box is in house and District Nurses are informed."
+                },
+                {
+                  "label": "Verification of Death",
+                  "guidance": "MANAGEMENT PLAN:\n1. Confirm identity.\n2. 5 mins observation: No respiratory effort, no palpable pulse, fixed dilated pupils.\n3. Documentation: Record time of death and clinical findings clearly."
                 }
               ]
             }
@@ -47191,14 +47261,17 @@
           "evidence": "Management per NG142 and CKS Palliative care.",
           "steps": [
             {
-              "id": "guidance",
-              "question": "Clinical Guidance (Best Practice)",
+              "id": "palliative-mgt",
+              "question": "1. End of Life Care (Consultant Plan)",
               "type": "dropdown",
               "options": [
                 {
-                  "value": "standard",
-                  "label": "Management Overview",
-                  "guidance": "MANAGEMENT PLAN:\n1. Assessment: Full clinical assessment to exclude red flags.\n2. Action: Refer to local clinical formulary for specific pharmacotherapy.\n3. Safety-net: Provide robust safety-netting advice.\n4. Follow-up: Arrange review based on clinical findings."
+                  "label": "Anticipatory Meds (The 'Big 4')",
+                  "guidance": "MANAGEMENT PLAN:\n1. Pain/SOB: Morphine Sulfate 2.5mg - 5mg SC prn.\n2. Secretions: Hyoscine Butylbromide 20mg SC prn.\n3. Agitation: Midazolam 2.5mg - 5mg SC prn.\n4. Nausea: Levomepromazine 6.25mg SC prn.\n5. Note: Ensure Just-in-Case box is in house and District Nurses are informed."
+                },
+                {
+                  "label": "Verification of Death",
+                  "guidance": "MANAGEMENT PLAN:\n1. Confirm identity.\n2. 5 mins observation: No respiratory effort, no palpable pulse, fixed dilated pupils.\n3. Documentation: Record time of death and clinical findings clearly."
                 }
               ]
             }
@@ -47470,14 +47543,21 @@
           "evidence": "Management per NICE CKS and Local formulary.",
           "steps": [
             {
-              "id": "guidance",
-              "question": "Clinical Guidance (Best Practice)",
+              "id": "gp-ops",
+              "question": "1. General Practice Operations",
               "type": "dropdown",
               "options": [
                 {
-                  "value": "standard",
-                  "label": "Management Overview",
-                  "guidance": "MANAGEMENT PLAN:\n1. Assessment: Full clinical assessment to exclude red flags.\n2. Action: Refer to local clinical formulary for specific pharmacotherapy.\n3. Safety-net: Provide robust safety-netting advice.\n4. Follow-up: Arrange review based on clinical findings."
+                  "label": "Med3 (Fit Notes)",
+                  "guidance": "MANAGEMENT PLAN:\n1. First 7 days: Patient self-certifies (Employer cannot demand Med3).\n2. >7 days: Clinician issues Med3 based on clinical assessment.\n3. Note: Focus on what patient 'can' do (phased return, amended duties) where possible."
+                },
+                {
+                  "label": "Safeguarding (Adult/Child)",
+                  "guidance": "MANAGEMENT PLAN:\n1. Identify: Physical, emotional, sexual abuse, or neglect (including self-neglect in adults).\n2. Action: Discuss with Designated Lead. Urgent referral to MASH (Children) or Adult Social Care if risk is immediate.\n3. Documentation: Use factual, objective language. Do not promise confidentiality if disclosure is required for safety."
+                },
+                {
+                  "label": "Continuity & QOF",
+                  "guidance": "MANAGEMENT PLAN:\n1. Chronic Disease: Annual review (QOF) including bloods and symptom score.\n2. Polypharmacy: Holistic medication review (SMR) with clinical pharmacist for patients on >10 meds."
                 }
               ]
             }
@@ -47493,13 +47573,21 @@
           "evidence": "Management per NICE CKS and Local formulary.",
           "steps": [
             {
-              "id": "bp-referral",
-              "question": "Referral & Follow-up (Best Practice)",
+              "id": "gp-ops",
+              "question": "1. General Practice Operations",
               "type": "dropdown",
               "options": [
                 {
-                  "label": "Referral & Safety-netting",
-                  "guidance": "MANAGEMENT PLAN:\n1. Referral: Refer 2WW if malignancy suspected. Urgent referral if clinical compromise. Routine if primary care management fails.\n2. Waiting List: Ensure patient knows how to report deterioration while waiting.\n3. Review: Review and optimize primary care management in the interim."
+                  "label": "Med3 (Fit Notes)",
+                  "guidance": "MANAGEMENT PLAN:\n1. First 7 days: Patient self-certifies (Employer cannot demand Med3).\n2. >7 days: Clinician issues Med3 based on clinical assessment.\n3. Note: Focus on what patient 'can' do (phased return, amended duties) where possible."
+                },
+                {
+                  "label": "Safeguarding (Adult/Child)",
+                  "guidance": "MANAGEMENT PLAN:\n1. Identify: Physical, emotional, sexual abuse, or neglect (including self-neglect in adults).\n2. Action: Discuss with Designated Lead. Urgent referral to MASH (Children) or Adult Social Care if risk is immediate.\n3. Documentation: Use factual, objective language. Do not promise confidentiality if disclosure is required for safety."
+                },
+                {
+                  "label": "Continuity & QOF",
+                  "guidance": "MANAGEMENT PLAN:\n1. Chronic Disease: Annual review (QOF) including bloods and symptom score.\n2. Polypharmacy: Holistic medication review (SMR) with clinical pharmacist for patients on >10 meds."
                 }
               ]
             }
@@ -47515,14 +47603,21 @@
           "evidence": "Management per NG108 and CKS Safeguarding.",
           "steps": [
             {
-              "id": "guidance",
-              "question": "Clinical Guidance (Best Practice)",
+              "id": "gp-ops",
+              "question": "1. General Practice Operations",
               "type": "dropdown",
               "options": [
                 {
-                  "value": "standard",
-                  "label": "Management Overview",
-                  "guidance": "MANAGEMENT PLAN:\n1. Assessment: Full clinical assessment to exclude red flags.\n2. Action: Refer to local clinical formulary for specific pharmacotherapy.\n3. Safety-net: Provide robust safety-netting advice.\n4. Follow-up: Arrange review based on clinical findings."
+                  "label": "Med3 (Fit Notes)",
+                  "guidance": "MANAGEMENT PLAN:\n1. First 7 days: Patient self-certifies (Employer cannot demand Med3).\n2. >7 days: Clinician issues Med3 based on clinical assessment.\n3. Note: Focus on what patient 'can' do (phased return, amended duties) where possible."
+                },
+                {
+                  "label": "Safeguarding (Adult/Child)",
+                  "guidance": "MANAGEMENT PLAN:\n1. Identify: Physical, emotional, sexual abuse, or neglect (including self-neglect in adults).\n2. Action: Discuss with Designated Lead. Urgent referral to MASH (Children) or Adult Social Care if risk is immediate.\n3. Documentation: Use factual, objective language. Do not promise confidentiality if disclosure is required for safety."
+                },
+                {
+                  "label": "Continuity & QOF",
+                  "guidance": "MANAGEMENT PLAN:\n1. Chronic Disease: Annual review (QOF) including bloods and symptom score.\n2. Polypharmacy: Holistic medication review (SMR) with clinical pharmacist for patients on >10 meds."
                 }
               ]
             }
@@ -47586,14 +47681,17 @@
           "evidence": "Management per NICE CKS and Local formulary.",
           "steps": [
             {
-              "id": "guidance",
-              "question": "Clinical Guidance (Best Practice)",
+              "id": "injection-mgt",
+              "question": "1. Procedure Choice",
               "type": "dropdown",
               "options": [
                 {
-                  "value": "standard",
-                  "label": "Management Overview",
-                  "guidance": "MANAGEMENT PLAN:\n1. Assessment: Full clinical assessment to exclude red flags.\n2. Action: Refer to local clinical formulary for specific pharmacotherapy.\n3. Safety-net: Provide robust safety-netting advice.\n4. Follow-up: Arrange review based on clinical findings."
+                  "label": "Common Injections (Standard Pack)",
+                  "guidance": "MANAGEMENT PLAN:\n1. Drugs: Triamcinolone (Kenalog) 40mg or Depo-Medrone 40mg + 1% Lidocaine.\n2. Areas: Shoulder (Subacromial), Knee (Intra-articular), Trigger Finger (Tendon sheath), Carpal Tunnel.\n3. Post-op: 48 hours of joint rest. Warn about 'steroid flare' (pain increase for 24-48h)."
+                },
+                {
+                  "label": "Cautions & Consent",
+                  "guidance": "MANAGEMENT PLAN:\n1. Diabetics: Warn about blood sugar rise (may last 1-2 weeks).\n2. Anticoagulation: Safe if INR in therapeutic range (<3.0).\n3. Infection: Absolutely contraindicated if skin infection over site or suspected septic arthritis."
                 }
               ]
             }
@@ -47853,14 +47951,17 @@
           "evidence": "Management per CKS Wound care.",
           "steps": [
             {
-              "id": "guidance",
-              "question": "Clinical Guidance (Best Practice)",
+              "id": "wound-mgmt",
+              "question": "1. Removal & Dressing",
               "type": "dropdown",
               "options": [
                 {
-                  "value": "standard",
-                  "label": "Management Overview",
-                  "guidance": "MANAGEMENT PLAN:\n1. Assessment: Full clinical assessment to exclude red flags.\n2. Action: Refer to local clinical formulary for specific pharmacotherapy.\n3. Safety-net: Provide robust safety-netting advice.\n4. Follow-up: Arrange review based on clinical findings."
+                  "label": "Suture Removal Timings",
+                  "guidance": "MANAGEMENT PLAN:\n1. Face: 3-5 days (prevents scarring).\n2. Scalp: 7-10 days.\n3. Trunk / Arms: 10-14 days.\n4. Legs / Extensor Surfaces: 14 days.\n5. Note: Remove alternate sutures first if wound tension is high."
+                },
+                {
+                  "label": "Wound Dressing Selection",
+                  "guidance": "MANAGEMENT PLAN:\n1. Dry/Sutured: Film (Tegaderm) or simple island dressing.\n2. Sloughy: Hydrogel (Intrasite).\n3. Highly Exudative: Foam (Allevyn) or Alginate.\n4. Infected: Honey (Medihoney) or Silver dressings."
                 }
               ]
             }
@@ -49200,14 +49301,17 @@
           "evidence": "Management per NICE CKS and Local formulary.",
           "steps": [
             {
-              "id": "guidance",
-              "question": "Clinical Guidance (Best Practice)",
+              "id": "palliative-mgt",
+              "question": "1. End of Life Care (Consultant Plan)",
               "type": "dropdown",
               "options": [
                 {
-                  "value": "standard",
-                  "label": "Management Overview",
-                  "guidance": "MANAGEMENT PLAN:\n1. Assessment: Full clinical assessment to exclude red flags.\n2. Action: Refer to local clinical formulary for specific pharmacotherapy.\n3. Safety-net: Provide robust safety-netting advice.\n4. Follow-up: Arrange review based on clinical findings."
+                  "label": "Anticipatory Meds (The 'Big 4')",
+                  "guidance": "MANAGEMENT PLAN:\n1. Pain/SOB: Morphine Sulfate 2.5mg - 5mg SC prn.\n2. Secretions: Hyoscine Butylbromide 20mg SC prn.\n3. Agitation: Midazolam 2.5mg - 5mg SC prn.\n4. Nausea: Levomepromazine 6.25mg SC prn.\n5. Note: Ensure Just-in-Case box is in house and District Nurses are informed."
+                },
+                {
+                  "label": "Verification of Death",
+                  "guidance": "MANAGEMENT PLAN:\n1. Confirm identity.\n2. 5 mins observation: No respiratory effort, no palpable pulse, fixed dilated pupils.\n3. Documentation: Record time of death and clinical findings clearly."
                 }
               ]
             }
@@ -51668,14 +51772,21 @@
           "evidence": "Management per NICE CKS and Local formulary.",
           "steps": [
             {
-              "id": "guidance",
-              "question": "Clinical Guidance (Best Practice)",
+              "id": "gp-ops",
+              "question": "1. General Practice Operations",
               "type": "dropdown",
               "options": [
                 {
-                  "value": "standard",
-                  "label": "Management Overview",
-                  "guidance": "MANAGEMENT PLAN:\n1. Assessment: Full clinical assessment to exclude red flags.\n2. Action: Refer to local clinical formulary for specific pharmacotherapy.\n3. Safety-net: Provide robust safety-netting advice.\n4. Follow-up: Arrange review based on clinical findings."
+                  "label": "Med3 (Fit Notes)",
+                  "guidance": "MANAGEMENT PLAN:\n1. First 7 days: Patient self-certifies (Employer cannot demand Med3).\n2. >7 days: Clinician issues Med3 based on clinical assessment.\n3. Note: Focus on what patient 'can' do (phased return, amended duties) where possible."
+                },
+                {
+                  "label": "Safeguarding (Adult/Child)",
+                  "guidance": "MANAGEMENT PLAN:\n1. Identify: Physical, emotional, sexual abuse, or neglect (including self-neglect in adults).\n2. Action: Discuss with Designated Lead. Urgent referral to MASH (Children) or Adult Social Care if risk is immediate.\n3. Documentation: Use factual, objective language. Do not promise confidentiality if disclosure is required for safety."
+                },
+                {
+                  "label": "Continuity & QOF",
+                  "guidance": "MANAGEMENT PLAN:\n1. Chronic Disease: Annual review (QOF) including bloods and symptom score.\n2. Polypharmacy: Holistic medication review (SMR) with clinical pharmacist for patients on >10 meds."
                 }
               ]
             }
@@ -51691,14 +51802,21 @@
           "evidence": "Management per NICE CKS and Local formulary.",
           "steps": [
             {
-              "id": "guidance",
-              "question": "Clinical Guidance (Best Practice)",
+              "id": "gp-ops",
+              "question": "1. General Practice Operations",
               "type": "dropdown",
               "options": [
                 {
-                  "value": "standard",
-                  "label": "Management Overview",
-                  "guidance": "MANAGEMENT PLAN:\n1. Assessment: Full clinical assessment to exclude red flags.\n2. Action: Refer to local clinical formulary for specific pharmacotherapy.\n3. Safety-net: Provide robust safety-netting advice.\n4. Follow-up: Arrange review based on clinical findings."
+                  "label": "Med3 (Fit Notes)",
+                  "guidance": "MANAGEMENT PLAN:\n1. First 7 days: Patient self-certifies (Employer cannot demand Med3).\n2. >7 days: Clinician issues Med3 based on clinical assessment.\n3. Note: Focus on what patient 'can' do (phased return, amended duties) where possible."
+                },
+                {
+                  "label": "Safeguarding (Adult/Child)",
+                  "guidance": "MANAGEMENT PLAN:\n1. Identify: Physical, emotional, sexual abuse, or neglect (including self-neglect in adults).\n2. Action: Discuss with Designated Lead. Urgent referral to MASH (Children) or Adult Social Care if risk is immediate.\n3. Documentation: Use factual, objective language. Do not promise confidentiality if disclosure is required for safety."
+                },
+                {
+                  "label": "Continuity & QOF",
+                  "guidance": "MANAGEMENT PLAN:\n1. Chronic Disease: Annual review (QOF) including bloods and symptom score.\n2. Polypharmacy: Holistic medication review (SMR) with clinical pharmacist for patients on >10 meds."
                 }
               ]
             }

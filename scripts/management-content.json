@@ -2832,30 +2832,130 @@
     },
     {
       "keywords": [
-        "general practice",
-        "best practice",
-        "routine management"
+        "minor surgery",
+        "procedures",
+        "lumps",
+        "bumps",
+        "lipoma",
+        "cyst"
       ],
       "steps": [
         {
-          "id": "gen-mgmt",
-          "question": "Best Practice Management",
+          "id": "minor-surg-criteria",
+          "question": "1. Eligibility & Indicators",
           "type": "dropdown",
           "options": [
             {
-              "value": "assessment",
-              "label": "Clinical Assessment",
-              "guidance": "MANAGEMENT PLAN:\nVitals (NEWS2 if unwell), targeted history, and examination. Exclude red flags. Review trend vs previous presentations. Use shared decision making."
+              "label": "Benign Lumps (Indications for GP Surgery)",
+              "guidance": "MANAGEMENT PLAN:\n1. Criteria: Symptomatic (pain, inflammation, interference with function). \n2. Lipomas: Usually only if >5cm or rapidly growing (refer for US first to exclude sarcoma).\n3. Sebaceous Cysts: Excise if recurrently infected (wait for infection to settle first).\n4. Exclusions: Cosmetic removal is generally not NHS-funded."
             },
             {
-              "value": "safetynet",
-              "label": "Safety-netting",
-              "guidance": "MANAGEMENT PLAN:\nProvide clear 'When to contact' triggers: worsening pain, fever >38.5C, respiratory distress, or new neurological signs. Document patient understanding."
+              "label": "Red Flags (Refer to 2WW / Plastic Surgery)",
+              "guidance": "MANAGEMENT PLAN:\n1. Changing Naevi: Refer to 2WW Dermatology.\n2. Irregular, fixed, or hard masses: Urgent referral.\n3. Note: Never excise a lesion where malignancy is suspected in primary care minor surgery clinic."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "keywords": [
+        "joint injection",
+        "steroid injection",
+        "aspiration"
+      ],
+      "steps": [
+        {
+          "id": "injection-mgt",
+          "question": "1. Procedure Choice",
+          "type": "dropdown",
+          "options": [
+            {
+              "label": "Common Injections (Standard Pack)",
+              "guidance": "MANAGEMENT PLAN:\n1. Drugs: Triamcinolone (Kenalog) 40mg or Depo-Medrone 40mg + 1% Lidocaine.\n2. Areas: Shoulder (Subacromial), Knee (Intra-articular), Trigger Finger (Tendon sheath), Carpal Tunnel.\n3. Post-op: 48 hours of joint rest. Warn about 'steroid flare' (pain increase for 24-48h)."
             },
             {
-              "value": "next-steps",
-              "label": "Follow-up Plan",
-              "guidance": "MANAGEMENT PLAN:\nReview in 1-4 weeks depending on severity. Consider baseline bloods (FBC/CRP) if symptoms persist. Patient information leaflet/link provided."
+              "label": "Cautions & Consent",
+              "guidance": "MANAGEMENT PLAN:\n1. Diabetics: Warn about blood sugar rise (may last 1-2 weeks).\n2. Anticoagulation: Safe if INR in therapeutic range (<3.0).\n3. Infection: Absolutely contraindicated if skin infection over site or suspected septic arthritis."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "keywords": [
+        "sutures",
+        "wound care",
+        "stitches",
+        "dressings"
+      ],
+      "steps": [
+        {
+          "id": "wound-mgmt",
+          "question": "1. Removal & Dressing",
+          "type": "dropdown",
+          "options": [
+            {
+              "label": "Suture Removal Timings",
+              "guidance": "MANAGEMENT PLAN:\n1. Face: 3-5 days (prevents scarring).\n2. Scalp: 7-10 days.\n3. Trunk / Arms: 10-14 days.\n4. Legs / Extensor Surfaces: 14 days.\n5. Note: Remove alternate sutures first if wound tension is high."
+            },
+            {
+              "label": "Wound Dressing Selection",
+              "guidance": "MANAGEMENT PLAN:\n1. Dry/Sutured: Film (Tegaderm) or simple island dressing.\n2. Sloughy: Hydrogel (Intrasite).\n3. Highly Exudative: Foam (Allevyn) or Alginate.\n4. Infected: Honey (Medihoney) or Silver dressings."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "keywords": [
+        "palliative",
+        "end of life",
+        "eolc",
+        "anticipatory"
+      ],
+      "steps": [
+        {
+          "id": "palliative-mgt",
+          "question": "1. End of Life Care (Consultant Plan)",
+          "type": "dropdown",
+          "options": [
+            {
+              "label": "Anticipatory Meds (The 'Big 4')",
+              "guidance": "MANAGEMENT PLAN:\n1. Pain/SOB: Morphine Sulfate 2.5mg - 5mg SC prn.\n2. Secretions: Hyoscine Butylbromide 20mg SC prn.\n3. Agitation: Midazolam 2.5mg - 5mg SC prn.\n4. Nausea: Levomepromazine 6.25mg SC prn.\n5. Note: Ensure Just-in-Case box is in house and District Nurses are informed."
+            },
+            {
+              "label": "Verification of Death",
+              "guidance": "MANAGEMENT PLAN:\n1. Confirm identity.\n2. 5 mins observation: No respiratory effort, no palpable pulse, fixed dilated pupils.\n3. Documentation: Record time of death and clinical findings clearly."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "keywords": [
+        "best practice",
+        "admin",
+        "fit note",
+        "med3",
+        "safeguarding"
+      ],
+      "steps": [
+        {
+          "id": "gp-ops",
+          "question": "1. General Practice Operations",
+          "type": "dropdown",
+          "options": [
+            {
+              "label": "Med3 (Fit Notes)",
+              "guidance": "MANAGEMENT PLAN:\n1. First 7 days: Patient self-certifies (Employer cannot demand Med3).\n2. >7 days: Clinician issues Med3 based on clinical assessment.\n3. Note: Focus on what patient 'can' do (phased return, amended duties) where possible."
+            },
+            {
+              "label": "Safeguarding (Adult/Child)",
+              "guidance": "MANAGEMENT PLAN:\n1. Identify: Physical, emotional, sexual abuse, or neglect (including self-neglect in adults).\n2. Action: Discuss with Designated Lead. Urgent referral to MASH (Children) or Adult Social Care if risk is immediate.\n3. Documentation: Use factual, objective language. Do not promise confidentiality if disclosure is required for safety."
+            },
+            {
+              "label": "Continuity & QOF",
+              "guidance": "MANAGEMENT PLAN:\n1. Chronic Disease: Annual review (QOF) including bloods and symptom score.\n2. Polypharmacy: Holistic medication review (SMR) with clinical pharmacist for patients on >10 meds."
             }
           ]
         }
