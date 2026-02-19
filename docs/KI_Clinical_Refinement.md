@@ -21,11 +21,18 @@ This Knowledge Item documents the refactoring of the PathLinks clinical decision
 - **Hypothyroidism**: Proposed code `C10..`.
 - **Default**: `66Y..` (Result actioned via protocol).
 
-### Critical Protocols Added
-- **Sepsis**: Stratification into Low/Amber/Red risk with NEWS2/qSOFA integration in `management-content.json`.
-- **Anaphylaxis**: Emergency adrenaline dosing (1:1000 IM) by age.
-- **Autism**: Assessment pathway for primary care triage.
+## Clinical Refinement: Specialist/Consultant Phase (2026)
+- **Royal College Alignment**: Transitioned from generic NICE CKS to specialist-grade guidelines from **RCP, BCS, BTS, BASH, BSG, BSR, BAUS, RCPCH, and RCOphth**.
+- **Management Strategy**: 
+    - **Cardiology**: Shifted to "Four Pillars" for HF and invasive CTCA/Ablation triggers for Angina/AF.
+    - **Neurology**: Integrated BASH stratified care for Migraine and RCP/NICE stroke triage targets.
+    - **Respiratory**: Adopted BTS/SIGN step-wise maintenance and RCPCH paediatric dosing.
+    - **Procedures**: Added surgical indicators for GP Minor Surgery, US-guided injection protocols, and palliative care "Big 4" SC regimens.
+- **Decision Architecture**:
+    - **Two-Column UI**: Grid-based display separating selectors from guidance.
+    - **Sticky Documentation**: Continuous visibility of management plans.
+    - **System-Level Fallbacks**: Enhanced `scripts/build-decision-tools.js` to provide specialized advice even when specific keyword matches fail.
 
 ## Maintenance Notes
-- After editing `management-content.json`, you **must** run `node scripts/build-decision-tools.js` to update the decision tools data.
-- The `app/data/` directory is the deployment source; ensure root `data/` changes are copied there if using the manual build process.
+- After editing `management-content.json`, you **must** run `node scripts/build-decision-tools.js` and verify with `npx vercel --prod`.
+- The `app/data/` directory is the deployment source; ensure root `data/` changes are compiled for production.
