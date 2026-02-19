@@ -20,8 +20,12 @@ async function init() {
 
         categorySelect.addEventListener('change', updateParameters);
         document.getElementById('analyse-btn').addEventListener('click', analyseResult);
-        document.getElementById('calculate-qrisk-btn').addEventListener('click', calculateQRISK);
-        document.getElementById('simulate-emis-import-btn')?.addEventListener('click', simulateEmisImport);
+
+        // Initialize Calculators
+        initQRISK();
+        initNEWS2();
+        initWells();
+        initCURB();
 
         // Navigation logic
         const navItems = document.querySelectorAll('.nav-item');
@@ -40,6 +44,7 @@ async function init() {
 
                 if (item.id === 'nav-protocols') renderProtocols();
                 if (item.id === 'nav-decision-tools') renderDecisionTools();
+                if (item.id === 'nav-calculators') initQRISK();
                 if (item.id === 'nav-emis-coding') renderEmisIntegrations();
             });
         });
@@ -47,6 +52,16 @@ async function init() {
         // Search logic
         document.getElementById('test-search').addEventListener('input', (e) => {
             const term = e.target.value.toLowerCase();
+
+            // Special cases for calculators
+            const calcTerms = ['qrisk', 'news', 'sepsis', 'wells', 'curb', 'dvt', 'pneumonia'];
+            if (calcTerms.some(kw => term.includes(kw))) {
+                // Show a hint or just navigate?
+                // For now, let's just make the calculators tab flash or be the first hit
+                // But this search doesn't have a results dropdown, it just updates the dropdowns.
+                // Instead, let's add a small 'Search for calculators' helper
+            }
+
             if (term.length > 1) {
                 testData.forEach((cat, cIdx) => {
                     cat.tests.forEach((t, tIdx) => {
@@ -59,11 +74,6 @@ async function init() {
                 });
             }
         });
-
-        // Initialize Calculators
-        initNEWS2();
-        initWells();
-        initCURB();
 
     } catch (e) {
         console.error("Error loading test data:", e);
@@ -99,24 +109,40 @@ function updateParameters() {
     }
 }
 
+function initQRISK() {
+    const btn = document.getElementById('calculate-qrisk-btn-calc');
+    if (btn) btn.onclick = calculateQRISK;
+
+    const importBtn = document.getElementById('simulate-emis-import-btn-calc');
+    if (importBtn) importBtn.onclick = simulateEmisImport;
+}
+
 function calculateQRISK() {
-    const age = parseInt(document.getElementById('age').value);
-    const sex = document.querySelector('input[name="sex"]:checked').value;
-    const smoking = parseInt(document.getElementById('smoking-status').value);
-    const sbp = parseInt(document.getElementById('systolic-bp').value);
-    const bmi = parseFloat(document.getElementById('bmi').value);
+    const ageVal = document.getElementById('age-calc') ? document.getElementById('age-calc').value : (document.getElementById('age') ? document.getElementById('age').value : '50');
+    const age = parseInt(ageVal);
+
+    // Check if we are in the standalone view or dashboard
+    const isStandalone = !!document.getElementById('smoking-status-calc');
+    const suffix = isStandalone ? '-calc' : '';
+
+    const smoking = parseInt(document.getElementById('smoking-status' + suffix).value);
+    const sbp = parseInt(document.getElementById('systolic-bp' + suffix).value);
+    const bmi = parseFloat(document.getElementById('bmi' + suffix).value);
 
     // Checkboxes
-    const diabetes = document.getElementById('diabetes').checked;
-    const fh = document.getElementById('fh-cvd').checked;
-    const ckd = document.getElementById('ckd').checked;
-    const af = document.getElementById('af').checked;
-    const bpMeds = document.getElementById('bp-meds').checked;
-    const ra = document.getElementById('ra').checked;
+    const diabetes = document.getElementById('diabetes' + suffix).checked;
+    const fh = document.getElementById('fh-cvd' + suffix).checked;
+    const ckd = document.getElementById('ckd' + suffix).checked;
+    const af = document.getElementById('af' + suffix).checked;
+    const bpMeds = document.getElementById('bp-meds' + suffix).checked;
+    const ra = document.getElementById('ra' + suffix).checked;
 
     // Simplified Heuristic for QRISK3 (Educational Simulation)
     let risk = (age - 30) * 0.4;
+    // Sex check
+    const sex = document.querySelector(`input[name="sex${suffix}"]:checked`)?.value || 'female';
     if (sex === 'male') risk += 2.5;
+
     if (smoking > 0) risk += smoking * 2.1;
     if (sbp > 140) risk += (sbp - 140) * 0.3;
     if (bmi > 30) risk += (bmi - 30) * 0.5;
@@ -129,9 +155,9 @@ function calculateQRISK() {
 
     const finalRisk = Math.min(Math.max(risk, 0.5), 99.9).toFixed(1);
 
-    const resultBox = document.getElementById('qrisk-result');
-    const scoreVal = document.getElementById('qrisk-score');
-    const actionText = document.getElementById('qrisk-action');
+    const resultBox = document.getElementById('qrisk-result' + suffix);
+    const scoreVal = document.getElementById('qrisk-score' + suffix);
+    const actionText = document.getElementById('qrisk-action' + suffix);
 
     resultBox.classList.remove('hidden');
     scoreVal.textContent = finalRisk + "%";
@@ -145,29 +171,27 @@ function calculateQRISK() {
     }
 }
 
-function simulateEmisImport() {
-    // Mocking an EMIS API call that fetches patient properties
-    console.log("Mocking EMIS Data Fetch...");
+function simulateEmisImport(e) {
+    const btn = e.target;
+    const isStandalone = btn.id.includes('-calc');
+    const suffix = isStandalone ? '-calc' : '';
 
-    // Animate button
-    const btn = document.getElementById('simulate-emis-import-btn');
+    console.log("Mocking EMIS Data Fetch...");
     const originalText = btn.textContent;
     btn.textContent = "Connecting to EMIS Web...";
 
     setTimeout(() => {
-        // Mock data from EMIS for a fictional patient
-        document.getElementById('smoking-status').value = "3"; // Moderate Smoker
-        document.getElementById('systolic-bp').value = "155";
-        document.getElementById('bmi').value = "31.4";
-        document.getElementById('diabetes').checked = true;
-        document.getElementById('bp-meds').checked = true;
+        document.getElementById('smoking-status' + suffix).value = "3";
+        document.getElementById('systolic-bp' + suffix).value = "155";
+        document.getElementById('bmi' + suffix).value = "28.5";
+        document.getElementById('diabetes' + suffix).checked = true;
+        // document.getElementById('bp-meds' + suffix).checked = true; // Removed as per instruction
 
-        btn.textContent = "✅ Data Imported from EMIS";
-        btn.style.background = "var(--success)";
-
+        btn.textContent = "⚡ EMIS Data Imported";
+        btn.style.background = "var(--success)"; // Added this back for immediate feedback
         setTimeout(() => {
             btn.textContent = originalText;
-            btn.style.background = "#607d8b";
+            btn.style.background = "#607d8b"; // Reset background
         }, 2000);
     }, 800);
 }

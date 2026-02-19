@@ -65,15 +65,35 @@ function getManagementSteps(title, managementContent) {
 function getSystemFallbackSteps(systemId, title) {
   const t = (title || '').toLowerCase();
 
+  // Specific fallback for Dermatology to avoid generic "activity levels/hydration" nonsense
+  if (systemId === 'dermatology') {
+    if (t.includes('management') || t.includes('treatment')) {
+      return [{
+        id: 'derm-mgmt',
+        question: 'Dermatology Management (Best Practice)',
+        type: 'dropdown',
+        options: [{
+          label: 'General Skin Care & Emollients',
+          guidance: 'MANAGEMENT PLAN:\n1. Skincare: Use soap substitutes (emollients) for washing. Avoid harsh soaps and detergents.\n2. Emollients: Apply liberal amounts of emollient cream/ointment frequently to maintain skin barrier.\n3. Triggers: Identify and avoid potential irritants or allergens.\n4. Scalp: If scalp involved, use medicinal shampoo (tar or ketoconazole).\n5. Safety-net: Return if signs of infection (weeping, crusting, fever) or no improvement in 2 weeks.'
+        }]
+      }];
+    }
+  }
+
   if (t.includes('assessment') || t.includes('diagnosis')) {
     return [{
       id: 'bp-assessment',
       question: 'Assessment (Best Practice)',
       type: 'dropdown',
       options: [
-        { label: 'History & Red Flags', guidance: 'Assess onset, severity, and triggers. Specifically exclude organic red flags (weight loss, night pain, fever, night sweats). Review family history and current meds.' },
-        { label: 'Examination', guidance: 'Perform focused physical exam (e.g. MSK, Neuro, Respiratory). Check vitals (NEWS2) if systemically unwell. Document findings and clinical rationale clearly.' },
-        { label: 'Initial Differential', guidance: 'Consider most likely vs most serious diagnosis. Use validated scores (e.g. Centor, Wells, qSOFA) if applicable to the presentation.' }
+        {
+          label: 'Standard Assessment',
+          guidance: 'MANAGEMENT PLAN:\n1. History: Assess onset, severity, and triggers. Specifically exclude organic red flags (weight loss, night pain, fever, night sweats).\n2. Review: Family history and current medications.\n3. Differential: Consider most likely vs most serious diagnosis. Use validated scores (e.g. Centor, Wells, qSOFA) if applicable.'
+        },
+        {
+          label: 'Examination & Vitals',
+          guidance: 'MANAGEMENT PLAN:\n1. Physical Exam: Perform focused physical exam (e.g. MSK, Neuro, Respiratory).\n2. Vitals: Check NEWS2 if systemically unwell.\n3. Documentation: Document findings and clinical rationale clearly.'
+        }
       ]
     }];
   }
@@ -84,9 +104,10 @@ function getSystemFallbackSteps(systemId, title) {
       question: 'Management (Best Practice)',
       type: 'dropdown',
       options: [
-        { label: 'Conservative / Lifestyle', guidance: 'Advise on activity levels, hydration, and non-pharmacological measures. Provide written patient info. Use shared-decision making for all interventions.' },
-        { label: 'Safety-netting', guidance: 'Provide clear triggers for re-consultation: rapid worsening, new red flags, or no improvement in expected timeframe. Document advice given.' },
-        { label: 'Review Plan', guidance: 'Arrange review based on clinical stability (e.g. 48h for acute, 2-4 weeks for chronic). Consider baseline investigations (e.g. FBC/CRP) if symptoms persist.' }
+        {
+          label: 'Initial Management Plan',
+          guidance: 'MANAGEMENT PLAN:\n1. Advice: Advise on activity levels, hydration, and non-pharmacological measures.\n2. Information: Provide written patient info and use shared-decision making.\n3. Safety-netting: Provide clear triggers for re-consultation (rapid worsening, new red flags).\n4. Review: Arrange review based on clinical stability (e.g. 48h for acute, 2-4 weeks for chronic).'
+        }
       ]
     }];
   }
@@ -97,8 +118,10 @@ function getSystemFallbackSteps(systemId, title) {
       question: 'Referral & Follow-up (Best Practice)',
       type: 'dropdown',
       options: [
-        { label: 'Referral Criteria', guidance: 'Refer 2WW if malignancy suspected. Urgent referral if clinical compromise or high risk. Routine if primary care management fails after 6-12 weeks.' },
-        { label: 'Safety-netting while waiting', guidance: 'Ensure patient knows how to report deterioration while on the waiting list. Review and optimize primary care management in the interim.' }
+        {
+          label: 'Referral & Safety-netting',
+          guidance: 'MANAGEMENT PLAN:\n1. Referral: Refer 2WW if malignancy suspected. Urgent referral if clinical compromise. Routine if primary care management fails.\n2. Waiting List: Ensure patient knows how to report deterioration while waiting.\n3. Review: Review and optimize primary care management in the interim.'
+        }
       ]
     }];
   }
@@ -113,12 +136,7 @@ function getSystemFallbackSteps(systemId, title) {
         {
           value: 'standard',
           label: 'Management Overview',
-          guidance: 'Follow common best practice: Full clinical assessment to exclude red flags, provide robust safety-netting, and arrange follow-up. Refer to your local clinical formulary for pharmacotherapy.'
-        },
-        {
-          value: 'referral',
-          label: 'Referral Support',
-          guidance: 'Check NICE CKS for specific referral thresholds. Safety-net for red flags. Ensure patient has appropriate educational materials while awaiting specialist review.'
+          guidance: 'MANAGEMENT PLAN:\n1. Assessment: Full clinical assessment to exclude red flags.\n2. Action: Refer to local clinical formulary for specific pharmacotherapy.\n3. Safety-net: Provide robust safety-netting advice.\n4. Follow-up: Arrange review based on clinical findings.'
         }
       ]
     }

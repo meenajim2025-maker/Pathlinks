@@ -25,6 +25,7 @@
             <nav>
                 <div class="nav-item active" id="nav-dashboard">Clinical decision tool</div>
                 <div class="nav-item" id="nav-decision-tools">Decision tools</div>
+                <div class="nav-item" id="nav-calculators">Calculators</div>
                 <div class="nav-item" id="nav-protocols">Protocols</div>
                 <div class="nav-item" id="nav-emis-coding">EMIS Integration</div>
             </nav>
@@ -94,15 +95,40 @@
                         </div>
                     </div>
 
-                    <!-- QRISK3 Calculator Card (Hidden by default) -->
-                    <div class="qrisk-card card hidden" id="qrisk-section">
+                    <!-- Contextual QRISK link (Shows when Lipids selected) -->
+                    <div id="qrisk-section" class="card hidden"
+                        style="background: #f0f7ff; border-left: 4px solid #3498db;">
+                        <h3>QRISK3 Calculator Available</h3>
+                        <p>CVD risk assessment is recommended for lipid results.</p>
+                        <button class="primary-btn" onclick="document.getElementById('nav-calculators').click();"
+                            style="margin-top: 10px;">Open QRISK3 Calculator</button>
+                    </div>
+                </div>
+            </section>
+
+            <section id="calculators-view" class="view hidden">
+                <div class="welcome-section">
+                    <h2>Clinical Calculators</h2>
+                    <p>Evidence-based calculators for risk assessment and clinical decision support.</p>
+                </div>
+
+                <div class="grid-container">
+                    <!-- QRISK3 Calculator -->
+                    <div class="card" id="qrisk-standalone">
                         <h3>QRISK3 Assessment</h3>
                         <p class="small-text">Integrated CVD Risk Calculation (Simulated EMIS Data Capture)</p>
                         <div class="qrisk-inputs">
                             <div class="field-row">
                                 <div class="field-group-mini">
+                                    <label>Patient Sex</label>
+                                    <div class="radio-row" style="display: flex; gap: 10px; margin-top: 5px;">
+                                        <label><input type="radio" name="sex-calc" value="male"> M</label>
+                                        <label><input type="radio" name="sex-calc" value="female" checked> F</label>
+                                    </div>
+                                </div>
+                                <div class="field-group-mini">
                                     <label>Smoking Status</label>
-                                    <select id="smoking-status">
+                                    <select id="smoking-status-calc">
                                         <option value="0">Non-smoker</option>
                                         <option value="1">Ex-smoker</option>
                                         <option value="2">Light (1-9/day)</option>
@@ -112,7 +138,7 @@
                                 </div>
                                 <div class="field-group-mini">
                                     <label>Ethnicity</label>
-                                    <select id="ethnicity">
+                                    <select id="ethnicity-calc">
                                         <option value="1">White</option>
                                         <option value="2">Indian</option>
                                         <option value="3">Pakistani</option>
@@ -128,32 +154,111 @@
                             <div class="field-row">
                                 <div class="field-group-mini">
                                     <label>Systolic BP (mmHg)</label>
-                                    <input type="number" id="systolic-bp" value="120">
+                                    <input type="number" id="systolic-bp-calc" value="120">
                                 </div>
                                 <div class="field-group-mini">
                                     <label>BMI</label>
-                                    <input type="number" id="bmi" value="25" step="0.1">
+                                    <input type="number" id="bmi-calc" value="25" step="0.1">
                                 </div>
                             </div>
                             <div class="checkbox-grid">
-                                <label><input type="checkbox" id="diabetes"> Diabetes</label>
-                                <label><input type="checkbox" id="fh-cvd"> Family History CVD</label>
-                                <label><input type="checkbox" id="ckd"> CKD (Stage 3+)</label>
-                                <label><input type="checkbox" id="af"> Atrial Fib</label>
-                                <label><input type="checkbox" id="bp-meds"> On BP Meds</label>
-                                <label><input type="checkbox" id="ra"> Rheumatoid Arth</label>
+                                <label><input type="checkbox" id="diabetes-calc"> Diabetes</label>
+                                <label><input type="checkbox" id="fh-cvd-calc"> Family History CVD</label>
+                                <label><input type="checkbox" id="ckd-calc"> CKD (Stage 3+)</label>
+                                <label><input type="checkbox" id="af-calc"> Atrial Fib</label>
+                                <label><input type="checkbox" id="bp-meds-calc"> On BP Meds</label>
+                                <label><input type="checkbox" id="ra-calc"> Rheumatoid Arth</label>
                             </div>
-                            <button id="calculate-qrisk-btn" class="secondary-btn" style="margin-top: 15px;">Calculate
-                                10-Yr Risk</button>
-                            <button id="simulate-emis-import-btn" class="primary-btn"
+                            <button id="calculate-qrisk-btn-calc" class="secondary-btn"
+                                style="margin-top: 15px;">Calculate 10-Yr Risk</button>
+                            <button id="simulate-emis-import-btn-calc" class="primary-btn"
                                 style="margin-top: 10px; background: #607d8b;">⚡ Simulate EMIS Data Import</button>
-                            <div id="qrisk-result" class="qrisk-result-box hidden">
+
+                            <div id="qrisk-result-calc" class="qrisk-result-box hidden" style="margin-top: 20px;">
                                 <div class="score-display">
                                     <span class="score-label">10-Year CVD Risk Score</span>
-                                    <span class="score-value" id="qrisk-score">--%</span>
+                                    <span class="score-value" id="qrisk-score-calc">--%</span>
                                 </div>
-                                <p id="qrisk-action" class="qrisk-action-text"></p>
+                                <p id="qrisk-action-calc" class="qrisk-action-text"></p>
                             </div>
+                        </div>
+                    </div>
+
+                    <!-- NEWS2 & qSOFA Calculator -->
+                    <div class="card" id="news2-calculator-standalone">
+                        <h3>NEWS2 & qSOFA</h3>
+                        <p class="small-text" style="margin-bottom: 1rem;">Rapid Sepsis Risk Assessment</p>
+                        <div class="calculator-grid" style="display: grid; grid-template-columns: 1fr 1fr; gap: 10px;">
+                            <div class="field-group">
+                                <label>Resp Rate</label>
+                                <input type="number" id="news-rr" placeholder="e.g. 18">
+                            </div>
+                            <div class="field-group">
+                                <label>SpO2 (%)</label>
+                                <input type="number" id="news-spo2" placeholder="e.g. 98">
+                            </div>
+                            <div class="field-group">
+                                <label>Oxygen/Air?</label>
+                                <select id="news-oxygen">
+                                    <option value="0">Air</option>
+                                    <option value="2">Oxygen</option>
+                                </select>
+                            </div>
+                            <div class="field-group">
+                                <label>Systolic BP</label>
+                                <input type="number" id="news-sbp" placeholder="e.g. 120">
+                            </div>
+                            <div class="field-group">
+                                <label>Heart Rate</label>
+                                <input type="number" id="news-hr" placeholder="e.g. 80">
+                            </div>
+                            <div class="field-group">
+                                <label>ACVPU</label>
+                                <select id="news-consciousness">
+                                    <option value="0">Alert</option>
+                                    <option value="3">Confused/V/P/U</option>
+                                </select>
+                            </div>
+                            <div class="field-group" style="grid-column: span 2;">
+                                <label>Temp (°C)</label>
+                                <input type="number" id="news-temp" placeholder="e.g. 37.0" step="0.1">
+                            </div>
+                        </div>
+                        <div
+                            style="margin-top: 1rem; padding: 10px; background: #fdfdfd; border-radius: 8px; border: 1px dashed #ccc; display: flex; justify-content: space-around;">
+                            <div style="text-align: center;">
+                                <p style="font-size: 10px; color: var(--text-muted);">qSOFA</p>
+                                <span id="qsofa-score-display" style="font-size: 20px; font-weight: 700;">0</span>
+                            </div>
+                            <div style="text-align: center;">
+                                <p style="font-size: 10px; color: var(--text-muted);">NEWS2</p>
+                                <span id="news2-score-display"
+                                    style="font-size: 20px; font-weight: 700; color: var(--primary);">0</span>
+                            </div>
+                        </div>
+                        <div id="sepsis-risk-result" class="status-box hidden"
+                            style="margin-top: 10px; padding: 10px; font-size: 13px;">
+                            <p id="sepsis-risk-text" style="margin: 0;"></p>
+                        </div>
+                    </div>
+
+                    <!-- Wells Score (DVT) -->
+                    <div class="card" id="wells-calculator-standalone">
+                        <h3>Wells Score (DVT)</h3>
+                        <div id="wells-inputs" style="margin-top: 10px;"></div>
+                        <div style="margin-top: 1rem; padding: 10px; background: #f9f9f9; border-radius: 8px;">
+                            <p style="font-size: 14px; font-weight: 600;">Score: <span id="wells-score">0</span></p>
+                            <p id="wells-risk" style="margin: 0; font-size: 12px;"></p>
+                        </div>
+                    </div>
+
+                    <!-- CURB-65 Score -->
+                    <div class="card" id="curb-calculator-standalone">
+                        <h3>CURB-65 Score</h3>
+                        <div id="curb-inputs" style="margin-top: 10px;"></div>
+                        <div style="margin-top: 1rem; padding: 10px; background: #f9f9f9; border-radius: 8px;">
+                            <p style="font-size: 14px; font-weight: 600;">Score: <span id="curb-score">0</span></p>
+                            <p id="curb-risk" style="margin: 0; font-size: 12px;"></p>
                         </div>
                     </div>
                 </div>
@@ -210,111 +315,23 @@
                     </div>
                 </div>
 
-                <!-- NEWS2 & qSOFA Calculator -->
-                <div class="card" id="news2-calculator" style="margin-top: 2rem;">
-                    <h3>NEWS2 & qSOFA Calculator</h3>
-                    <p class="small-text" style="margin-bottom: 1rem;">Rapid Sepsis Risk Assessment</p>
-                    <div class="calculator-grid"
-                        style="display: grid; grid-template-columns: repeat(auto-fit, minmax(180px, 1fr)); gap: 1rem;">
-                        <div class="field-group">
-                            <label>Resp Rate</label>
-                            <input type="number" id="news-rr" placeholder="e.g. 18" min="0">
-                        </div>
-                        <div class="field-group">
-                            <label>SpO2 (%)</label>
-                            <input type="number" id="news-spo2" placeholder="e.g. 98" min="0" max="100">
-                        </div>
-                        <div class="field-group">
-                            <label>Oxygen / Air?</label>
-                            <select id="news-oxygen">
-                                <option value="0">Air</option>
-                                <option value="2">Oxygen</option>
-                            </select>
-                        </div>
-                        <div class="field-group">
-                            <label>Systolic BP</label>
-                            <input type="number" id="news-sbp" placeholder="e.g. 120" min="0">
-                        </div>
-                        <div class="field-group">
-                            <label>Heart Rate</label>
-                            <input type="number" id="news-hr" placeholder="e.g. 80" min="0">
-                        </div>
-                        <div class="field-group">
-                            <label>ACVPU State</label>
-                            <select id="news-consciousness">
-                                <option value="0">Alert</option>
-                                <option value="3">New Confusion/Voice/Pain/Unresponsive</option>
-                            </select>
-                        </div>
-                        <div class="field-group">
-                            <label>Temp (°C)</label>
-                            <input type="number" id="news-temp" placeholder="e.g. 37.0" step="0.1">
-                        </div>
-                    </div>
-                    <div
-                        style="margin-top: 1.5rem; padding: 1.2rem; background: #fdfdfd; border-radius: 8px; border: 1px dashed #ccc; display: flex; justify-content: space-around; align-items: center;">
-                        <div style="text-align: center;">
-                            <p
-                                style="font-size: 11px; color: var(--text-muted); text-transform: uppercase; letter-spacing: 0.5px;">
-                                qSOFA Score</p>
-                            <span id="qsofa-score-display"
-                                style="font-size: 24px; font-weight: 700; color: var(--text-main);">0</span>
-                        </div>
-                        <div style="text-align: center;">
-                            <p
-                                style="font-size: 11px; color: var(--text-muted); text-transform: uppercase; letter-spacing: 0.5px;">
-                                NEWS2 Score</p>
-                            <span id="news2-score-display"
-                                style="font-size: 24px; font-weight: 700; color: var(--primary);">0</span>
-                        </div>
-                    </div>
-                    <div id="sepsis-risk-result" class="status-box hidden"
-                        style="margin-top: 1.2rem; padding: 1rem; border-radius: 8px;">
-                        <p id="sepsis-risk-text" style="margin: 0; font-weight: 600; line-height: 1.4;"></p>
-                    </div>
-                </div>
+    </div>
+    </section>
 
-                <!-- Wells Score (DVT) -->
-                <div class="card" id="wells-calculator" style="margin-top: 1rem;">
-                    <h3>Wells Score (DVT)</h3>
-                    <div id="wells-inputs" style="margin-top: 10px;">
-                        <!-- Options injected by JS -->
-                    </div>
-                    <div
-                        style="margin-top: 1rem; padding: 1rem; background: #f9f9f9; border-radius: 8px; border: 1px solid #ddd;">
-                        <p style="font-size: 14px; font-weight: 600;">Score: <span id="wells-score">0</span></p>
-                        <p id="wells-risk" style="margin: 4px 0 0 0; font-size: 13px;"></p>
-                    </div>
-                </div>
+    <section id="protocols-view" class="view hidden">
+        <h2>Clinical Protocols Library</h2>
+        <div id="protocols-list" class="grid-container">
+            <!-- Protocol cards injected by JS -->
+        </div>
+    </section>
 
-                <!-- CURB-65 Score -->
-                <div class="card" id="curb-calculator" style="margin-top: 1rem;">
-                    <h3>CURB-65 Score (Pneumonia)</h3>
-                    <div id="curb-inputs" style="margin-top: 10px;">
-                        <!-- Options injected by JS -->
-                    </div>
-                    <div
-                        style="margin-top: 1rem; padding: 1rem; background: #f9f9f9; border-radius: 8px; border: 1px solid #ddd;">
-                        <p style="font-size: 14px; font-weight: 600;">Score: <span id="curb-score">0</span></p>
-                        <p id="curb-risk" style="margin: 4px 0 0 0; font-size: 13px;"></p>
-                    </div>
-                </div>
-            </section>
-
-            <section id="protocols-view" class="view hidden">
-                <h2>Clinical Protocols Library</h2>
-                <div id="protocols-list" class="grid-container">
-                    <!-- Protocol cards injected by JS -->
-                </div>
-            </section>
-
-            <section id="emis-coding-view" class="view hidden">
-                <h2>EMIS Integration & Coding</h2>
-                <div id="emis-integration-panel" class="grid-container">
-                    <!-- EMIS components injected by JS -->
-                </div>
-            </section>
-        </main>
+    <section id="emis-coding-view" class="view hidden">
+        <h2>EMIS Integration & Coding</h2>
+        <div id="emis-integration-panel" class="grid-container">
+            <!-- EMIS components injected by JS -->
+        </div>
+    </section>
+    </main>
     </div>
 
     <!-- Modals -->
