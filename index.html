@@ -326,49 +326,57 @@
                 <p class="welcome-section" style="margin-bottom: 1rem;">~900 tools with NICE-based management (drug
                     choices, targets, referral). Search all systems or choose a system and topic, then use the dropdowns
                     for guideline-backed decisions.</p>
-                <div class="card" style="margin-bottom: 1.5rem;">
-                    <div class="field-group" style="margin-bottom: 1rem; position: relative;">
-                        <label for="decision-search-all">Search all systems</label>
-                        <input type="text" id="decision-search-all"
-                            placeholder="e.g. sore throat, hypertension, restless legs..." style="max-width: 400px;"
-                            autocomplete="off">
-                        <div id="decision-search-results" class="decision-search-results hidden" role="listbox"></div>
+                <div class="decision-grid">
+                    <div class="decision-controls">
+                        <div class="card" style="margin-bottom: 1.5rem;">
+                            <div class="field-group" style="margin-bottom: 1rem; position: relative;">
+                                <label for="decision-search-all">Search all systems</label>
+                                <input type="text" id="decision-search-all"
+                                    placeholder="e.g. sore throat, hypertension, restless legs..."
+                                    style="max-width: 400px;" autocomplete="off">
+                                <div id="decision-search-results" class="decision-search-results hidden" role="listbox">
+                                </div>
+                            </div>
+                            <div class="field-group" style="margin-bottom: 1rem;">
+                                <label for="decision-system">System / specialty</label>
+                                <select id="decision-system">
+                                    <option value="">-- Choose system --</option>
+                                </select>
+                            </div>
+                            <div class="field-group" style="margin-bottom: 0.5rem;">
+                                <label for="decision-tool-filter">Filter topics (type to narrow)</label>
+                                <input type="text" id="decision-tool-filter"
+                                    placeholder="e.g. sore throat, hypertension, referral..." style="max-width: 400px;"
+                                    autocomplete="off">
+                            </div>
+                            <div class="field-group" style="margin-bottom: 1rem;">
+                                <label for="decision-tool">Topic / decision tool</label>
+                                <span id="decision-tool-count" class="small-text"
+                                    style="display: block; margin-bottom: 4px;"></span>
+                                <select id="decision-tool">
+                                    <option value="">-- Choose topic --</option>
+                                </select>
+                            </div>
+                        </div>
                     </div>
-                    <div class="field-group" style="margin-bottom: 1rem;">
-                        <label for="decision-system">System / specialty</label>
-                        <select id="decision-system">
-                            <option value="">-- Choose system --</option>
-                        </select>
-                    </div>
-                    <div class="field-group" style="margin-bottom: 0.5rem;">
-                        <label for="decision-tool-filter">Filter topics (type to narrow)</label>
-                        <input type="text" id="decision-tool-filter"
-                            placeholder="e.g. sore throat, hypertension, referral..." style="max-width: 400px;"
-                            autocomplete="off">
-                    </div>
-                    <div class="field-group" style="margin-bottom: 1rem;">
-                        <label for="decision-tool">Topic / decision tool</label>
-                        <span id="decision-tool-count" class="small-text"
-                            style="display: block; margin-bottom: 4px;"></span>
-                        <select id="decision-tool">
-                            <option value="">-- Choose topic --</option>
-                        </select>
-                    </div>
-                </div>
-                <div id="decision-tool-panel" class="hidden">
-                    <div class="card" style="margin-bottom: 1rem;">
-                        <h3 id="decision-tool-title" style="margin: 0 0 8px 0;"></h3>
-                        <p class="small-text" style="margin: 0 0 12px 0;"><strong>NICE / evidence:</strong> <span
-                                id="decision-tool-nice"></span></p>
-                        <p class="small-text" style="margin: 0 0 16px 0; line-height: 1.5;" id="decision-tool-evidence">
-                        </p>
-                    </div>
-                    <div id="decision-steps-container" class="card">
-                        <!-- Steps (dropdowns) rendered here -->
-                    </div>
-                    <div id="decision-guidance-box" class="card guidance-card hidden" style="margin-top: 1rem;">
-                        <h4 style="margin: 0 0 8px 0;">Guidance</h4>
-                        <p id="decision-guidance-text" style="margin: 0; line-height: 1.5;"></p>
+
+                    <div id="decision-tool-panel" class="hidden">
+                        <div class="card" style="margin-bottom: 1rem;">
+                            <h3 id="decision-tool-title" style="margin: 0 0 8px 0;"></h3>
+                            <p class="small-text" style="margin: 0 0 12px 0;"><strong>NICE / evidence:</strong> <span
+                                    id="decision-tool-nice"></span></p>
+                            <p class="small-text" style="margin: 0 0 16px 0; line-height: 1.5;"
+                                id="decision-tool-evidence">
+                            </p>
+                        </div>
+                        <div id="decision-guidance-box" class="card guidance-card hidden"
+                            style="margin-bottom: 1rem; position: sticky; top: 1rem; z-index: 10;">
+                            <h4 style="margin: 0 0 8px 0;">Management Plan & Guidance</h4>
+                            <p id="decision-guidance-text" style="margin: 0;"></p>
+                        </div>
+                        <div id="decision-steps-container" class="card">
+                            <!-- Steps (dropdowns) rendered here -->
+                        </div>
                     </div>
                 </div>
 

@@ -299,18 +299,37 @@ header {
 }
 
 .card h3 {
-    margin-bottom: 20px;
+    margin-bottom: 16px;
     font-size: 18px;
     font-weight: 700;
 }
 
+.decision-grid {
+    display: grid;
+    grid-template-columns: 380px 1fr;
+    gap: 24px;
+    align-items: start;
+}
+
 .guidance-card {
-    border-left: 4px solid var(--primary);
-    background: #f8fbfe;
+    border-left: 6px solid var(--primary);
+    background: #f0f7ff;
+    padding: 24px;
+}
+
+.guidance-card h4 {
+    color: var(--primary);
+    font-size: 16px;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    margin-bottom: 12px;
 }
 
 .guidance-card p {
     white-space: pre-line;
+    font-size: 15px;
+    line-height: 1.6;
+    color: #1a2b3c;
 }
 
 .decision-search-results {
@@ -830,6 +849,10 @@ input[type="text"] {
 
     .range-info {
         font-size: 12px;
+    }
+
+    .decision-grid {
+        grid-template-columns: 1fr;
     }
 }
 
