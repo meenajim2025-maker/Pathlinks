@@ -1,6 +1,6 @@
 {
   "source": "Learning library + NICE CKS/NG; management steps from guidelines",
-  "generated": "2026-02-20T06:41:03.279Z",
+  "generated": "2026-02-20T06:51:43.521Z",
   "totalTools": 1920,
   "systems": [
     {
@@ -8054,14 +8054,24 @@
           "evidence": "Management per NICE CKS and Local formulary.",
           "steps": [
             {
-              "id": "guidance",
-              "question": "Clinical Guidance (Best Practice)",
+              "id": "grief-overview",
+              "question": "1. Management Overview (Normal vs Pathological)",
               "type": "dropdown",
               "options": [
                 {
-                  "value": "standard",
-                  "label": "Management Overview",
-                  "guidance": "MANAGEMENT PLAN:\n1. Assessment: Full clinical assessment to exclude red flags.\n2. Action: Refer to local clinical formulary for specific pharmacotherapy.\n3. Safety-net: Provide robust safety-netting advice.\n4. Follow-up: Arrange review based on clinical findings."
+                  "label": "Consultant Differential",
+                  "guidance": "MANAGEMENT PLAN OVERVIEW:\n1. **Normal Grief**: Fluctuating distress with 'pockets of relief'. Usually improves over 6-months. No meds indicated.\n2. **Prolonged Grief Disorder (ICD-11)**: Persistent, pervasive yearning/preoccupation for >6 months. Marked functional impairment.\n3. **Co-morbid MDD**: If low mood is persistent (not just grief-related) and includes biological symptoms (sleep/appetite/guilt), treat as MDD."
+                }
+              ]
+            },
+            {
+              "id": "grief-intervention",
+              "question": "2. Intervention Strategy",
+              "type": "dropdown",
+              "options": [
+                {
+                  "label": "Supportive Measures",
+                  "guidance": "MANAGEMENT PLAN:\n1. 1st-line: Validation and signposting to bereavement services (e.g. Cruse).\n2. Therapy: Complicated Grief Therapy (CGT) if symptoms remain severe >6 months.\n3. Meds: Avoid antidepressants for uncomplicated grief—may interfere with the mourning process."
                 }
               ]
             }
@@ -10945,14 +10955,24 @@
           "evidence": "Management per NICE CKS and Local formulary.",
           "steps": [
             {
-              "id": "guidance",
-              "question": "Clinical Guidance (Best Practice)",
+              "id": "ld-overview",
+              "question": "1. Management Overview (Reasonable Adjustments)",
               "type": "dropdown",
               "options": [
                 {
-                  "value": "standard",
-                  "label": "Management Overview",
-                  "guidance": "MANAGEMENT PLAN:\n1. Assessment: Full clinical assessment to exclude red flags.\n2. Action: Refer to local clinical formulary for specific pharmacotherapy.\n3. Safety-net: Provide robust safety-netting advice.\n4. Follow-up: Arrange review based on clinical findings."
+                  "label": "Consultant LD Ethos",
+                  "guidance": "MANAGEMENT PLAN OVERVIEW:\n1. **Diagnostic Overshadowing**: Warning—don't attribute physical symptoms (e.g. pain) to the disability itself.\n2. **STOMP**: Stopping Over-Medication of People with a learning disability. Avoid long-term antipsychotics for 'behaviour' unless treating a mental illness.\n3. **Communication**: Use 'Easy Read' materials and Hospital Passports."
+                }
+              ]
+            },
+            {
+              "id": "ld-behaviour",
+              "question": "2. Disturbed Behaviour",
+              "type": "dropdown",
+              "options": [
+                {
+                  "label": "Assessment & Action",
+                  "guidance": "MANAGEMENT PLAN:\n1. First: Exclude pain, constipation, or environmental stressors (sensory overload).\n2. Positive Behaviour Support (PBS): 1st-line intervention. Focus on identifying the 'message' behind the behaviour."
                 }
               ]
             }
@@ -11014,14 +11034,28 @@
           "evidence": "Management per NICE CKS and Local formulary.",
           "steps": [
             {
-              "id": "guidance",
-              "question": "Clinical Guidance (Best Practice)",
+              "id": "mus-overview",
+              "question": "1. Management Overview (Body-Mind Integration)",
               "type": "dropdown",
               "options": [
                 {
-                  "value": "standard",
-                  "label": "Management Overview",
-                  "guidance": "MANAGEMENT PLAN:\n1. Assessment: Full clinical assessment to exclude red flags.\n2. Action: Refer to local clinical formulary for specific pharmacotherapy.\n3. Safety-net: Provide robust safety-netting advice.\n4. Follow-up: Arrange review based on clinical findings."
+                  "label": "Consultant Approach to Somatisation",
+                  "guidance": "MANAGEMENT PLAN OVERVIEW:\n1. **Philosophy**: Shift from 'Is it physical OR mental?' to 'How is the nervous system communicating distress?'.\n2. **Validation**: Acknowledge symptoms are REAL (not 'it's all in your head').\n3. **Mechanism**: Dysregulation of the autonomic nervous system or 'top-down' sensory processing errors (FND).\n4. **Goal**: Manage symptoms and improve function rather than 'eliminating' the sensation."
+                }
+              ]
+            },
+            {
+              "id": "mus-management",
+              "question": "2. Clinical Strategy (NICE CG150)",
+              "type": "dropdown",
+              "options": [
+                {
+                  "label": "Functional Neurological Disorder (FND)",
+                  "guidance": "MANAGEMENT PLAN:\n1. Diagnosis: Based on *positive signs* (e.g. Hoover's sign for leg weakness), not just exclusion.\n2. Therapy: Specialized Physiotherapy (re-training movement) + CBT focused on symptom retraining.\n3. Meds: Low-dose TCAs (Amitriptyline) for co-morbid pain/sleep."
+                },
+                {
+                  "label": "Somatisation / MUS",
+                  "guidance": "MANAGEMENT PLAN:\n1. Schedule: Regular 15-min appointments (regardless of symptom flare) to reduce 'crisis-driven' care.\n2. Education: Use metaphors (e.g. 'Software vs Hardware' problem).\n3. Meds: SSRIs if significant co-morbid anxiety/depression."
                 }
               ]
             }
@@ -11384,14 +11418,28 @@
           "evidence": "Management per NICE CKS and Local formulary.",
           "steps": [
             {
-              "id": "guidance",
-              "question": "Clinical Guidance (Best Practice)",
+              "id": "substance-overview",
+              "question": "1. Management Overview (Harm Reduction)",
               "type": "dropdown",
               "options": [
                 {
-                  "value": "standard",
-                  "label": "Management Overview",
-                  "guidance": "MANAGEMENT PLAN:\n1. Assessment: Full clinical assessment to exclude red flags.\n2. Action: Refer to local clinical formulary for specific pharmacotherapy.\n3. Safety-net: Provide robust safety-netting advice.\n4. Follow-up: Arrange review based on clinical findings."
+                  "label": "Consultant Addiction Strategy",
+                  "guidance": "MANAGEMENT PLAN OVERVIEW:\n1. **Priority**: Reduce fatalities (Overdose prevention).\n2. **Assessment**: Frequency, route (IV risk), cost, and criminal justice involvement.\n3. **Dual Diagnosis**: High correlation with trauma (PTSD) and EUPD. Treat co-morbidities simultaneously."
+                }
+              ]
+            },
+            {
+              "id": "substance-specifics",
+              "question": "2. Specific Drug Management",
+              "type": "dropdown",
+              "options": [
+                {
+                  "label": "Opioid Dependence (Heroin/Methadone)",
+                  "guidance": "MANAGEMENT PLAN:\n1. OAT: Opioid Agonist Treatment (Methadone or Buprenorphine) is the standard of care.\n2. Safety: Provide Naloxone kits for home use. Screening for Hep C and HIV."
+                },
+                {
+                  "label": "Cannabis/Cocaine",
+                  "guidance": "MANAGEMENT PLAN:\n1. 1st-line: Psychosocial (CBT, Motivational Interviewing, Contingency Management).\n2. Meds: No licensed maintenance pharmacotherapy. Symptom management only."
                 }
               ]
             }
@@ -12289,14 +12337,28 @@
           "evidence": "Management per NICE CKS and Local formulary.",
           "steps": [
             {
-              "id": "guidance",
-              "question": "Clinical Guidance (Best Practice)",
+              "id": "mus-overview",
+              "question": "1. Management Overview (Body-Mind Integration)",
               "type": "dropdown",
               "options": [
                 {
-                  "value": "standard",
-                  "label": "Management Overview",
-                  "guidance": "MANAGEMENT PLAN:\n1. Assessment: Full clinical assessment to exclude red flags.\n2. Action: Refer to local clinical formulary for specific pharmacotherapy.\n3. Safety-net: Provide robust safety-netting advice.\n4. Follow-up: Arrange review based on clinical findings."
+                  "label": "Consultant Approach to Somatisation",
+                  "guidance": "MANAGEMENT PLAN OVERVIEW:\n1. **Philosophy**: Shift from 'Is it physical OR mental?' to 'How is the nervous system communicating distress?'.\n2. **Validation**: Acknowledge symptoms are REAL (not 'it's all in your head').\n3. **Mechanism**: Dysregulation of the autonomic nervous system or 'top-down' sensory processing errors (FND).\n4. **Goal**: Manage symptoms and improve function rather than 'eliminating' the sensation."
+                }
+              ]
+            },
+            {
+              "id": "mus-management",
+              "question": "2. Clinical Strategy (NICE CG150)",
+              "type": "dropdown",
+              "options": [
+                {
+                  "label": "Functional Neurological Disorder (FND)",
+                  "guidance": "MANAGEMENT PLAN:\n1. Diagnosis: Based on *positive signs* (e.g. Hoover's sign for leg weakness), not just exclusion.\n2. Therapy: Specialized Physiotherapy (re-training movement) + CBT focused on symptom retraining.\n3. Meds: Low-dose TCAs (Amitriptyline) for co-morbid pain/sleep."
+                },
+                {
+                  "label": "Somatisation / MUS",
+                  "guidance": "MANAGEMENT PLAN:\n1. Schedule: Regular 15-min appointments (regardless of symptom flare) to reduce 'crisis-driven' care.\n2. Education: Use metaphors (e.g. 'Software vs Hardware' problem).\n3. Meds: SSRIs if significant co-morbid anxiety/depression."
                 }
               ]
             }
@@ -12312,14 +12374,28 @@
           "evidence": "Management per NICE CKS and Local formulary.",
           "steps": [
             {
-              "id": "guidance",
-              "question": "Clinical Guidance (Best Practice)",
+              "id": "substance-overview",
+              "question": "1. Management Overview (Harm Reduction)",
               "type": "dropdown",
               "options": [
                 {
-                  "value": "standard",
-                  "label": "Management Overview",
-                  "guidance": "MANAGEMENT PLAN:\n1. Assessment: Full clinical assessment to exclude red flags.\n2. Action: Refer to local clinical formulary for specific pharmacotherapy.\n3. Safety-net: Provide robust safety-netting advice.\n4. Follow-up: Arrange review based on clinical findings."
+                  "label": "Consultant Addiction Strategy",
+                  "guidance": "MANAGEMENT PLAN OVERVIEW:\n1. **Priority**: Reduce fatalities (Overdose prevention).\n2. **Assessment**: Frequency, route (IV risk), cost, and criminal justice involvement.\n3. **Dual Diagnosis**: High correlation with trauma (PTSD) and EUPD. Treat co-morbidities simultaneously."
+                }
+              ]
+            },
+            {
+              "id": "substance-specifics",
+              "question": "2. Specific Drug Management",
+              "type": "dropdown",
+              "options": [
+                {
+                  "label": "Opioid Dependence (Heroin/Methadone)",
+                  "guidance": "MANAGEMENT PLAN:\n1. OAT: Opioid Agonist Treatment (Methadone or Buprenorphine) is the standard of care.\n2. Safety: Provide Naloxone kits for home use. Screening for Hep C and HIV."
+                },
+                {
+                  "label": "Cannabis/Cocaine",
+                  "guidance": "MANAGEMENT PLAN:\n1. 1st-line: Psychosocial (CBT, Motivational Interviewing, Contingency Management).\n2. Meds: No licensed maintenance pharmacotherapy. Symptom management only."
                 }
               ]
             }
@@ -42874,17 +42950,24 @@
           "evidence": "You can find Sonor Major podcast platforms including Spotify, Apple podcasts and Google podcasts. Today...",
           "steps": [
             {
-              "id": "bp-assessment",
-              "question": "Assessment (Best Practice)",
+              "id": "grief-overview",
+              "question": "1. Management Overview (Normal vs Pathological)",
               "type": "dropdown",
               "options": [
                 {
-                  "label": "Standard Assessment",
-                  "guidance": "MANAGEMENT PLAN:\n1. History: Assess onset, severity, and triggers. Specifically exclude organic red flags (weight loss, night pain, fever, night sweats).\n2. Review: Family history and current medications.\n3. Differential: Consider most likely vs most serious diagnosis. Use validated scores (e.g. Centor, Wells, qSOFA) if applicable."
-                },
+                  "label": "Consultant Differential",
+                  "guidance": "MANAGEMENT PLAN OVERVIEW:\n1. **Normal Grief**: Fluctuating distress with 'pockets of relief'. Usually improves over 6-months. No meds indicated.\n2. **Prolonged Grief Disorder (ICD-11)**: Persistent, pervasive yearning/preoccupation for >6 months. Marked functional impairment.\n3. **Co-morbid MDD**: If low mood is persistent (not just grief-related) and includes biological symptoms (sleep/appetite/guilt), treat as MDD."
+                }
+              ]
+            },
+            {
+              "id": "grief-intervention",
+              "question": "2. Intervention Strategy",
+              "type": "dropdown",
+              "options": [
                 {
-                  "label": "Examination & Vitals",
-                  "guidance": "MANAGEMENT PLAN:\n1. Physical Exam: Perform focused physical exam (e.g. MSK, Neuro, Respiratory).\n2. Vitals: Check NEWS2 if systemically unwell.\n3. Documentation: Document findings and clinical rationale clearly."
+                  "label": "Supportive Measures",
+                  "guidance": "MANAGEMENT PLAN:\n1. 1st-line: Validation and signposting to bereavement services (e.g. Cruse).\n2. Therapy: Complicated Grief Therapy (CGT) if symptoms remain severe >6 months.\n3. Meds: Avoid antidepressants for uncomplicated grief—may interfere with the mourning process."
                 }
               ]
             }
@@ -42901,13 +42984,24 @@
           "evidence": "You can find Sonor Major podcast platforms including Spotify, Apple podcasts and Google podcasts. Today...",
           "steps": [
             {
-              "id": "bp-management",
-              "question": "Management (Best Practice)",
+              "id": "grief-overview",
+              "question": "1. Management Overview (Normal vs Pathological)",
               "type": "dropdown",
               "options": [
                 {
-                  "label": "Initial Management Plan",
-                  "guidance": "MANAGEMENT PLAN:\n1. Advice: Advise on activity levels, hydration, and non-pharmacological measures.\n2. Information: Provide written patient info and use shared-decision making.\n3. Safety-netting: Provide clear triggers for re-consultation (rapid worsening, new red flags).\n4. Review: Arrange review based on clinical stability (e.g. 48h for acute, 2-4 weeks for chronic)."
+                  "label": "Consultant Differential",
+                  "guidance": "MANAGEMENT PLAN OVERVIEW:\n1. **Normal Grief**: Fluctuating distress with 'pockets of relief'. Usually improves over 6-months. No meds indicated.\n2. **Prolonged Grief Disorder (ICD-11)**: Persistent, pervasive yearning/preoccupation for >6 months. Marked functional impairment.\n3. **Co-morbid MDD**: If low mood is persistent (not just grief-related) and includes biological symptoms (sleep/appetite/guilt), treat as MDD."
+                }
+              ]
+            },
+            {
+              "id": "grief-intervention",
+              "question": "2. Intervention Strategy",
+              "type": "dropdown",
+              "options": [
+                {
+                  "label": "Supportive Measures",
+                  "guidance": "MANAGEMENT PLAN:\n1. 1st-line: Validation and signposting to bereavement services (e.g. Cruse).\n2. Therapy: Complicated Grief Therapy (CGT) if symptoms remain severe >6 months.\n3. Meds: Avoid antidepressants for uncomplicated grief—may interfere with the mourning process."
                 }
               ]
             }
@@ -42924,13 +43018,24 @@
           "evidence": "You can find Sonor Major podcast platforms including Spotify, Apple podcasts and Google podcasts. Today...",
           "steps": [
             {
-              "id": "bp-referral",
-              "question": "Referral & Follow-up (Best Practice)",
+              "id": "grief-overview",
+              "question": "1. Management Overview (Normal vs Pathological)",
               "type": "dropdown",
               "options": [
                 {
-                  "label": "Referral & Safety-netting",
-                  "guidance": "MANAGEMENT PLAN:\n1. Referral: Refer 2WW if malignancy suspected. Urgent referral if clinical compromise. Routine if primary care management fails.\n2. Waiting List: Ensure patient knows how to report deterioration while waiting.\n3. Review: Review and optimize primary care management in the interim."
+                  "label": "Consultant Differential",
+                  "guidance": "MANAGEMENT PLAN OVERVIEW:\n1. **Normal Grief**: Fluctuating distress with 'pockets of relief'. Usually improves over 6-months. No meds indicated.\n2. **Prolonged Grief Disorder (ICD-11)**: Persistent, pervasive yearning/preoccupation for >6 months. Marked functional impairment.\n3. **Co-morbid MDD**: If low mood is persistent (not just grief-related) and includes biological symptoms (sleep/appetite/guilt), treat as MDD."
+                }
+              ]
+            },
+            {
+              "id": "grief-intervention",
+              "question": "2. Intervention Strategy",
+              "type": "dropdown",
+              "options": [
+                {
+                  "label": "Supportive Measures",
+                  "guidance": "MANAGEMENT PLAN:\n1. 1st-line: Validation and signposting to bereavement services (e.g. Cruse).\n2. Therapy: Complicated Grief Therapy (CGT) if symptoms remain severe >6 months.\n3. Meds: Avoid antidepressants for uncomplicated grief—may interfere with the mourning process."
                 }
               ]
             }
@@ -48017,14 +48122,24 @@
           "evidence": "Management per NICE CKS and Local formulary.",
           "steps": [
             {
-              "id": "guidance",
-              "question": "Clinical Guidance (Best Practice)",
+              "id": "mca-overview",
+              "question": "1. Management Overview (Medico-Legal)",
               "type": "dropdown",
               "options": [
                 {
-                  "value": "standard",
-                  "label": "Management Overview",
-                  "guidance": "MANAGEMENT PLAN:\n1. Assessment: Full clinical assessment to exclude red flags.\n2. Action: Refer to local clinical formulary for specific pharmacotherapy.\n3. Safety-net: Provide robust safety-netting advice.\n4. Follow-up: Arrange review based on clinical findings."
+                  "label": "The 5 Core Principles (MCA 2005)",
+                  "guidance": "MANAGEMENT PLAN OVERVIEW:\n1. **Presume Capacity**: Unless proven otherwise.\n2. **Support to Decide**: All practicable steps taken to help.\n3. **Unwise Decisions**: Do not equal lack of capacity.\n4. **Best Interests**: Decisions for those lacking capacity must be in their BI.\n5. **Least Restrictive**: Choose the option that restricts rights the least."
+                }
+              ]
+            },
+            {
+              "id": "mca-assessment",
+              "question": "2. The Capacity Test",
+              "type": "dropdown",
+              "options": [
+                {
+                  "label": "2-Stage Functional Test",
+                  "guidance": "MANAGEMENT PLAN:\n1. **Diagnostic Stage**: Is there an impairment of or disturbance in the functioning of the mind or brain?\n2. **Functional Stage**: Can the patient:\n   - **Understand** the information?\n   - **Retain** the information?\n   - **Use or Weigh** the information?\n   - **Communicate** the decision?"
                 }
               ]
             }
@@ -52648,14 +52763,24 @@
           "evidence": "Management per NICE CKS and Local formulary.",
           "steps": [
             {
-              "id": "guidance",
-              "question": "Clinical Guidance (Best Practice)",
+              "id": "mca-overview",
+              "question": "1. Management Overview (Medico-Legal)",
               "type": "dropdown",
               "options": [
                 {
-                  "value": "standard",
-                  "label": "Management Overview",
-                  "guidance": "MANAGEMENT PLAN:\n1. Assessment: Full clinical assessment to exclude red flags.\n2. Action: Refer to local clinical formulary for specific pharmacotherapy.\n3. Safety-net: Provide robust safety-netting advice.\n4. Follow-up: Arrange review based on clinical findings."
+                  "label": "The 5 Core Principles (MCA 2005)",
+                  "guidance": "MANAGEMENT PLAN OVERVIEW:\n1. **Presume Capacity**: Unless proven otherwise.\n2. **Support to Decide**: All practicable steps taken to help.\n3. **Unwise Decisions**: Do not equal lack of capacity.\n4. **Best Interests**: Decisions for those lacking capacity must be in their BI.\n5. **Least Restrictive**: Choose the option that restricts rights the least."
+                }
+              ]
+            },
+            {
+              "id": "mca-assessment",
+              "question": "2. The Capacity Test",
+              "type": "dropdown",
+              "options": [
+                {
+                  "label": "2-Stage Functional Test",
+                  "guidance": "MANAGEMENT PLAN:\n1. **Diagnostic Stage**: Is there an impairment of or disturbance in the functioning of the mind or brain?\n2. **Functional Stage**: Can the patient:\n   - **Understand** the information?\n   - **Retain** the information?\n   - **Use or Weigh** the information?\n   - **Communicate** the decision?"
                 }
               ]
             }
@@ -52893,14 +53018,28 @@
           "evidence": "Management per NICE CKS and Local formulary.",
           "steps": [
             {
-              "id": "guidance",
-              "question": "Clinical Guidance (Best Practice)",
+              "id": "substance-overview",
+              "question": "1. Management Overview (Harm Reduction)",
               "type": "dropdown",
               "options": [
                 {
-                  "value": "standard",
-                  "label": "Management Overview",
-                  "guidance": "MANAGEMENT PLAN:\n1. Assessment: Full clinical assessment to exclude red flags.\n2. Action: Refer to local clinical formulary for specific pharmacotherapy.\n3. Safety-net: Provide robust safety-netting advice.\n4. Follow-up: Arrange review based on clinical findings."
+                  "label": "Consultant Addiction Strategy",
+                  "guidance": "MANAGEMENT PLAN OVERVIEW:\n1. **Priority**: Reduce fatalities (Overdose prevention).\n2. **Assessment**: Frequency, route (IV risk), cost, and criminal justice involvement.\n3. **Dual Diagnosis**: High correlation with trauma (PTSD) and EUPD. Treat co-morbidities simultaneously."
+                }
+              ]
+            },
+            {
+              "id": "substance-specifics",
+              "question": "2. Specific Drug Management",
+              "type": "dropdown",
+              "options": [
+                {
+                  "label": "Opioid Dependence (Heroin/Methadone)",
+                  "guidance": "MANAGEMENT PLAN:\n1. OAT: Opioid Agonist Treatment (Methadone or Buprenorphine) is the standard of care.\n2. Safety: Provide Naloxone kits for home use. Screening for Hep C and HIV."
+                },
+                {
+                  "label": "Cannabis/Cocaine",
+                  "guidance": "MANAGEMENT PLAN:\n1. 1st-line: Psychosocial (CBT, Motivational Interviewing, Contingency Management).\n2. Meds: No licensed maintenance pharmacotherapy. Symptom management only."
                 }
               ]
             }

@@ -3391,6 +3391,176 @@
           ]
         }
       ]
+    },
+    {
+      "keywords": [
+        "bereavement",
+        "grief",
+        "loss",
+        "mourning"
+      ],
+      "steps": [
+        {
+          "id": "grief-overview",
+          "question": "1. Management Overview (Normal vs Pathological)",
+          "type": "dropdown",
+          "options": [
+            {
+              "label": "Consultant Differential",
+              "guidance": "MANAGEMENT PLAN OVERVIEW:\n1. **Normal Grief**: Fluctuating distress with 'pockets of relief'. Usually improves over 6-months. No meds indicated.\n2. **Prolonged Grief Disorder (ICD-11)**: Persistent, pervasive yearning/preoccupation for >6 months. Marked functional impairment.\n3. **Co-morbid MDD**: If low mood is persistent (not just grief-related) and includes biological symptoms (sleep/appetite/guilt), treat as MDD."
+            }
+          ]
+        },
+        {
+          "id": "grief-intervention",
+          "question": "2. Intervention Strategy",
+          "type": "dropdown",
+          "options": [
+            {
+              "label": "Supportive Measures",
+              "guidance": "MANAGEMENT PLAN:\n1. 1st-line: Validation and signposting to bereavement services (e.g. Cruse).\n2. Therapy: Complicated Grief Therapy (CGT) if symptoms remain severe >6 months.\n3. Meds: Avoid antidepressants for uncomplicated grief—may interfere with the mourning process."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "keywords": [
+        "mus",
+        "medically unexplained",
+        "somatisation",
+        "fnd",
+        "functional neurological"
+      ],
+      "steps": [
+        {
+          "id": "mus-overview",
+          "question": "1. Management Overview (Body-Mind Integration)",
+          "type": "dropdown",
+          "options": [
+            {
+              "label": "Consultant Approach to Somatisation",
+              "guidance": "MANAGEMENT PLAN OVERVIEW:\n1. **Philosophy**: Shift from 'Is it physical OR mental?' to 'How is the nervous system communicating distress?'.\n2. **Validation**: Acknowledge symptoms are REAL (not 'it's all in your head').\n3. **Mechanism**: Dysregulation of the autonomic nervous system or 'top-down' sensory processing errors (FND).\n4. **Goal**: Manage symptoms and improve function rather than 'eliminating' the sensation."
+            }
+          ]
+        },
+        {
+          "id": "mus-management",
+          "question": "2. Clinical Strategy (NICE CG150)",
+          "type": "dropdown",
+          "options": [
+            {
+              "label": "Functional Neurological Disorder (FND)",
+              "guidance": "MANAGEMENT PLAN:\n1. Diagnosis: Based on *positive signs* (e.g. Hoover's sign for leg weakness), not just exclusion.\n2. Therapy: Specialized Physiotherapy (re-training movement) + CBT focused on symptom retraining.\n3. Meds: Low-dose TCAs (Amitriptyline) for co-morbid pain/sleep."
+            },
+            {
+              "label": "Somatisation / MUS",
+              "guidance": "MANAGEMENT PLAN:\n1. Schedule: Regular 15-min appointments (regardless of symptom flare) to reduce 'crisis-driven' care.\n2. Education: Use metaphors (e.g. 'Software vs Hardware' problem).\n3. Meds: SSRIs if significant co-morbid anxiety/depression."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "keywords": [
+        "substance misuse",
+        "drug dependence",
+        "opioid",
+        "cannabis",
+        "cocaine"
+      ],
+      "steps": [
+        {
+          "id": "substance-overview",
+          "question": "1. Management Overview (Harm Reduction)",
+          "type": "dropdown",
+          "options": [
+            {
+              "label": "Consultant Addiction Strategy",
+              "guidance": "MANAGEMENT PLAN OVERVIEW:\n1. **Priority**: Reduce fatalities (Overdose prevention).\n2. **Assessment**: Frequency, route (IV risk), cost, and criminal justice involvement.\n3. **Dual Diagnosis**: High correlation with trauma (PTSD) and EUPD. Treat co-morbidities simultaneously."
+            }
+          ]
+        },
+        {
+          "id": "substance-specifics",
+          "question": "2. Specific Drug Management",
+          "type": "dropdown",
+          "options": [
+            {
+              "label": "Opioid Dependence (Heroin/Methadone)",
+              "guidance": "MANAGEMENT PLAN:\n1. OAT: Opioid Agonist Treatment (Methadone or Buprenorphine) is the standard of care.\n2. Safety: Provide Naloxone kits for home use. Screening for Hep C and HIV."
+            },
+            {
+              "label": "Cannabis/Cocaine",
+              "guidance": "MANAGEMENT PLAN:\n1. 1st-line: Psychosocial (CBT, Motivational Interviewing, Contingency Management).\n2. Meds: No licensed maintenance pharmacotherapy. Symptom management only."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "keywords": [
+        "mental capacity",
+        "mca",
+        "best interests",
+        "dols",
+        "lps"
+      ],
+      "steps": [
+        {
+          "id": "mca-overview",
+          "question": "1. Management Overview (Medico-Legal)",
+          "type": "dropdown",
+          "options": [
+            {
+              "label": "The 5 Core Principles (MCA 2005)",
+              "guidance": "MANAGEMENT PLAN OVERVIEW:\n1. **Presume Capacity**: Unless proven otherwise.\n2. **Support to Decide**: All practicable steps taken to help.\n3. **Unwise Decisions**: Do not equal lack of capacity.\n4. **Best Interests**: Decisions for those lacking capacity must be in their BI.\n5. **Least Restrictive**: Choose the option that restricts rights the least."
+            }
+          ]
+        },
+        {
+          "id": "mca-assessment",
+          "question": "2. The Capacity Test",
+          "type": "dropdown",
+          "options": [
+            {
+              "label": "2-Stage Functional Test",
+              "guidance": "MANAGEMENT PLAN:\n1. **Diagnostic Stage**: Is there an impairment of or disturbance in the functioning of the mind or brain?\n2. **Functional Stage**: Can the patient:\n   - **Understand** the information?\n   - **Retain** the information?\n   - **Use or Weigh** the information?\n   - **Communicate** the decision?"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "keywords": [
+        "learning disability",
+        "intellectual disability",
+        "challenging behaviour"
+      ],
+      "steps": [
+        {
+          "id": "ld-overview",
+          "question": "1. Management Overview (Reasonable Adjustments)",
+          "type": "dropdown",
+          "options": [
+            {
+              "label": "Consultant LD Ethos",
+              "guidance": "MANAGEMENT PLAN OVERVIEW:\n1. **Diagnostic Overshadowing**: Warning—don't attribute physical symptoms (e.g. pain) to the disability itself.\n2. **STOMP**: Stopping Over-Medication of People with a learning disability. Avoid long-term antipsychotics for 'behaviour' unless treating a mental illness.\n3. **Communication**: Use 'Easy Read' materials and Hospital Passports."
+            }
+          ]
+        },
+        {
+          "id": "ld-behaviour",
+          "question": "2. Disturbed Behaviour",
+          "type": "dropdown",
+          "options": [
+            {
+              "label": "Assessment & Action",
+              "guidance": "MANAGEMENT PLAN:\n1. First: Exclude pain, constipation, or environmental stressors (sensory overload).\n2. Positive Behaviour Support (PBS): 1st-line intervention. Focus on identifying the 'message' behind the behaviour."
+            }
+          ]
+        }
+      ]
     }
   ]
 }
