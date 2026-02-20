@@ -599,28 +599,146 @@
     },
     {
       "keywords": [
-        "depression"
+        "depression",
+        "mdd",
+        "low mood"
       ],
       "steps": [
         {
-          "id": "depression-severity",
-          "question": "Severity and treatment",
+          "id": "depression-diagnosis",
+          "question": "1. Diagnosis & Severity (DSM-5 / ICD-11)",
           "type": "dropdown",
           "options": [
             {
-              "value": "mild",
-              "label": "Mild",
-              "guidance": "MANAGEMENT PLAN:\nWatchful waiting, active monitoring, or psychological intervention (CBT, exercise). Do not offer antidepressant as first-line. NICE NG222."
+              "label": "MDD Diagnosis (DSM-5)",
+              "guidance": "MANAGEMENT PLAN:\n1. Criteria: \u22655 of 9 symptoms for \u22652 weeks (must include low mood or anhedonia). Other: sleep, interest, guilt, energy, concentration, appetite, psychomotor, suicidal ideation.\n2. Severity: Mild (few symptoms above 5, minor impairment); Moderate; Severe (\u22657 symptoms, marked functional impairment).\n3. Screening: PHQ-9 (Score \u226510 indicates probable MDD)."
             },
             {
-              "value": "moderate",
-              "label": "Moderate",
-              "guidance": "MANAGEMENT PLAN:\nSSRI (e.g. sertraline) or psychological intervention. Review at 2 weeks; continue 6 months after remission. NICE NG222."
+              "label": "ICD-11 (Depressive Episode)",
+              "guidance": "MANAGEMENT PLAN:\n1. 6A70 Criteria: Persistent low mood, diminished interest, or decreased energy + at least 10 other symptoms (disturbed sleep, changes in appetite, cognitive/suicidal). Minimum 2 weeks."
+            }
+          ]
+        },
+        {
+          "id": "depression-mgmt",
+          "question": "2. Management Strategy (NICE NG222 / RCPsych)",
+          "type": "dropdown",
+          "options": [
+            {
+              "label": "Mild Depression",
+              "guidance": "MANAGEMENT PLAN:\n1. 1st-line: Non-pharmacological. Group CBT, self-help, exercise, or peer support. Watchful waiting for 2 weeks.\n2. Do NOT offer antidepressant unless history of severe depression or chronic (>2 years) mild symptoms."
             },
             {
-              "value": "severe",
-              "label": "Severe or treatment-resistant",
-              "guidance": "MANAGEMENT PLAN:\nCombination antidepressant + high-intensity psychological therapy. Consider referral. Risk assess; consider crisis if suicidal. NICE NG222."
+              "label": "Moderate to Severe Depression",
+              "guidance": "MANAGEMENT PLAN:\n1. 1st-line: SSRI (Sertraline or Fluoxetine) + Psychological therapy (CBT or IPT).\n2. Treatment Resistant: Ensure 4-6 weeks at max dose. If no response, switch to different SSRI or SNRI (Venlafaxine). Consider augmentation (Lithium or Quetiapine) under specialist advice. NICE NG222."
+            },
+            {
+              "label": "Crisis & Risk (RCPsych)",
+              "guidance": "MANAGEMENT PLAN:\n1. Risk Assessment: Plan, intent, lethality, and protective factors.\n2. Referral: Urgent referral to Crisis Resolution Home Treatment (CRHT) if high risk of self-harm or suicide. NICE NG225."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "keywords": [
+        "anxiety",
+        "gad",
+        "panic",
+        "phobia"
+      ],
+      "steps": [
+        {
+          "id": "anxiety-diagnosis",
+          "question": "1. Diagnosis (GAD-7 / DSM-5)",
+          "type": "dropdown",
+          "options": [
+            {
+              "label": "GAD (Generalized Anxiety Disorder)",
+              "guidance": "MANAGEMENT PLAN:\n1. DSM-5: Excessive anxiety/worry most days for \u22656 months about multiple events.\n2. Screening: GAD-7 score \u226510. Exclude hyperthyroidism and substance misuse."
+            },
+            {
+              "label": "Panic Disorder",
+              "guidance": "MANAGEMENT PLAN:\n1. Recurrent unexpected panic attacks. Persistent concern about future attacks or their consequences (e.g. cardiac). NICE CG113."
+            }
+          ]
+        },
+        {
+          "id": "anxiety-mgmt",
+          "question": "2. Management (NICE CG113)",
+          "type": "dropdown",
+          "options": [
+            {
+              "label": "Stepped Care for GAD",
+              "guidance": "MANAGEMENT PLAN:\n1. Step 1: Education & active monitoring.\n2. Step 2: Low-intensity psychological (self-help CBT).\n3. Step 3: High-intensity CBT OR Drug treatment (Sertraline is 1st-line off-label for GAD; Duloxetine/Pregabalin as 2nd-line)."
+            },
+            {
+              "label": "Drug: Sertraline (GAD-specific)",
+              "guidance": "MANAGEMENT PLAN:\n1. Dose: Start 25-50mg. Titrate slowly to avoid initial jitteriness. Continue for \u22651 year after remission. BNF."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "keywords": [
+        "ptsd",
+        "ocd",
+        "trauma"
+      ],
+      "steps": [
+        {
+          "id": "ptsd-mgmt",
+          "question": "PTSD / OCD Specialist Care",
+          "type": "dropdown",
+          "options": [
+            {
+              "label": "PTSD (NICE NG116)",
+              "guidance": "MANAGEMENT PLAN:\n1. Diagnosis: Re-experiencing (flashbacks), avoidance, and hyperarousal >1 month post-trauma.\n2. Treatment: Trauma-focused CBT (TF-CBT) or EMDR. Do NOT use Benzos. Pharmacotherapy (Venlafaxine or SSRI) only if patient prefers or therapy failed."
+            },
+            {
+              "label": "OCD (NICE CG31)",
+              "guidance": "MANAGEMENT PLAN:\n1. Diagnosis: Obsessions (intrusive thoughts) and/or compulsions (repetitive acts).\n2. Treatment: ERP (Exposure & Response Prevention) + SSRI (often higher doses e.g. Fluoxetine 40-60mg required)."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "keywords": [
+        "bipolar",
+        "psychosis",
+        "schizophrenia",
+        "mania"
+      ],
+      "steps": [
+        {
+          "id": "bipolar-mgt",
+          "question": "1. Bipolar Disorder (RCPsych)",
+          "type": "dropdown",
+          "options": [
+            {
+              "label": "Acute Mania / Hypomania",
+              "guidance": "MANAGEMENT PLAN:\n1. Immediate: Stop antidepressant. Start Antipsychotic (Quetiapine, Risperidone, or Olanzapine).\n2. Urgent Referral: Specialist CMHT or Crisis team for stabilization. NICE CG185."
+            },
+            {
+              "label": "Prophylaxis (Mood Stabilizers)",
+              "guidance": "MANAGEMENT PLAN:\n1. Lithium: 1st-line. Requires monitoring (Levels q3m, TFT/U&E q6m). Target level: 0.6-0.8 mmol/L.\n2. Valproate: Do NOT use in women of childbearing potential unless part of pregnancy prevention programme."
+            }
+          ]
+        },
+        {
+          "id": "psychosis-mgt",
+          "question": "2. Early Psychosis / Schizophrenia",
+          "type": "dropdown",
+          "options": [
+            {
+              "label": "First Episode Psychosis (FEP)",
+              "guidance": "MANAGEMENT PLAN:\n1. Symptoms: Delusions, hallucinations, disorganized thinking.\n2. Referral: **Emergency (within 24h)** to Early Intervention in Psychosis (EIP) service. NICE CG178."
+            },
+            {
+              "label": "Schizophrenia Monitoring",
+              "guidance": "MANAGEMENT PLAN:\n1. Physical Health: Mandatory annual review of Lipids, HbA1c, Weight, BP (high risk of metabolic syndrome). NICE CG178."
             }
           ]
         }
@@ -632,40 +750,22 @@
         "antidepressant",
         "sertraline",
         "fluoxetine",
-        "citalopram"
+        "citalopram",
+        "venlafaxine"
       ],
       "steps": [
         {
           "id": "ssri-choice",
-          "question": "1. Drug Selection",
+          "question": "1. Drug & Follow-up",
           "type": "dropdown",
           "options": [
             {
-              "label": "Sertraline (1st-line if CVD risk)",
-              "guidance": "MANAGEMENT PLAN:\n1. Starting Dose: 50mg OD.\n2. Info: Warn about 'initial worsening' of anxiety (first 2 weeks) and GI side effects. NICE NG222."
+              "label": "Drug Choice (BNF)",
+              "guidance": "MANAGEMENT PLAN:\n1. Sertraline: 1st-line for CVD risk. 50mg-200mg.\n2. Mirtazapine: Choice if insomnia or low weight (sedating, weight gain).\n3. Venlafaxine: SNRI. 75mg-375mg (Watch BP >225mg/day)."
             },
             {
-              "label": "Fluoxetine (1st-line for youth/child)",
-              "guidance": "MANAGEMENT PLAN:\n1. Only SSRI licensed for <18s (under specialist guidance). NICE NG222."
-            },
-            {
-              "label": "Citalopram (Watch QTc)",
-              "guidance": "MANAGEMENT PLAN:\n1. Max dose 20mg if age >65 or hepatic impairment (risk of QTc prolongation). NICE NG222."
-            }
-          ]
-        },
-        {
-          "id": "ssri-monitor",
-          "question": "2. Monitoring",
-          "type": "dropdown",
-          "options": [
-            {
-              "label": "Initial Follow-up (Age <25 or high risk)",
-              "guidance": "MANAGEMENT PLAN:\n1. Review in 1 week to check for suicidal ideation or agitation. NICE NG222."
-            },
-            {
-              "label": "Standard Follow-up",
-              "guidance": "MANAGEMENT PLAN:\n1. Review in 2-4 weeks. Assess efficacy and side effects. NICE NG222."
+              "label": "Monitoring (NICE)",
+              "guidance": "MANAGEMENT PLAN:\n1. Review: 1 week (if <25y or suicide risk), otherwise 2-4 weeks.\n2. Discontinuation: Taper slowly over \u22654 weeks to avoid SSRI discontinuation syndrome."
             }
           ]
         }
@@ -1982,45 +2082,33 @@
     {
       "keywords": [
         "adhd",
-        "attention deficit"
+        "attention deficit",
+        "neurodevelopmental"
       ],
       "steps": [
         {
-          "id": "adhd-management",
-          "question": "Management plan",
+          "id": "adhd-diagnosis",
+          "question": "1. Diagnosis (DSM-5 / ICD-11)",
           "type": "dropdown",
           "options": [
             {
-              "value": "non-drug",
-              "label": "Non-drug (Child/Adult)",
-              "guidance": "MANAGEMENT PLAN:\nPsychoeducation for patient/parents. Environmental tweaks (school/work). Support groups. Consider CBT for adults. NICE NG87."
+              "label": "Clinical Criteria",
+              "guidance": "MANAGEMENT PLAN:\n1. DSM-5: 6/9 symptoms of Inattention and/or Hyperactivity-Impulsivity (5/9 for adults) in \u22652 settings, present before age 12.\n2. ICD-11 (6A05): Persistent pattern (\u22656 months) of inattention and/or hyperactivity-impulsivity across settings."
             },
             {
-              "value": "child-drug",
-              "label": "Drug treatment \u2013 Child (5+)",
-              "guidance": "MANAGEMENT PLAN:\nFirst-line: Methylphenidate (titrate carefully, monitor height/weight/pulse/BP). Second-line: Lisdexamfetamine. Third-line: Atomoxetine or Guanfacine. Specialist initiation and shared care only. NICE NG87."
-            },
-            {
-              "value": "adult-drug",
-              "label": "Drug treatment \u2013 Adult",
-              "guidance": "MANAGEMENT PLAN:\nFirst-line: Methylphenidate or Lisdexamfetamine. Second-line: Atomoxetine. Monitor BP/pulse. Specialist review required for initiation. NICE NG87."
+              "label": "Referral Pathway",
+              "guidance": "MANAGEMENT PLAN:\n1. Child: Refer to Community Paediatrics or CAMHS.\n2. Adult: Specialist ADHD service referral. Document impact on work, relationships, and driving safety. NICE NG87."
             }
           ]
         },
         {
-          "id": "adhd-monitoring",
-          "question": "Monitoring requirements",
+          "id": "adhd-meds",
+          "question": "2. Treatment (BNF / NICE)",
           "type": "dropdown",
           "options": [
             {
-              "value": "physical",
-              "label": "Physical monitoring",
-              "guidance": "MANAGEMENT PLAN:\nPulse and BP (pre-titration then 6-monthly). Weight/height (6-monthly). Monitor for side effects (sleep, appetite, mood). NICE NG87."
-            },
-            {
-              "value": "review",
-              "label": "Annual review",
-              "guidance": "MANAGEMENT PLAN:\nReview effectiveness and need for continuing medication once a year. Assess for comorbidities (anxiety, depression). NICE NG87."
+              "label": "Pharmacotherapy (Specialist Only)",
+              "guidance": "MANAGEMENT PLAN:\n1. Child 1st-line: Methylphenidate.\n2. Adult 1st-line: Methylphenidate or Lisdexamfetamine.\n3. Monitoring: Baseline ECG (if cardiac risk), BP/Pulse, Weight and Height (6-monthly)."
             }
           ]
         }
@@ -2956,6 +3044,62 @@
             {
               "label": "Continuity & QOF",
               "guidance": "MANAGEMENT PLAN:\n1. Chronic Disease: Annual review (QOF) including bloods and symptom score.\n2. Polypharmacy: Holistic medication review (SMR) with clinical pharmacist for patients on >10 meds."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "keywords": [
+        "eating disorder",
+        "anorexia",
+        "bulimia",
+        "binge eating"
+      ],
+      "steps": [
+        {
+          "id": "ed-diagnosis",
+          "question": "1. Diagnosis & Triage (DSM-5 / ICD-11)",
+          "type": "dropdown",
+          "options": [
+            {
+              "label": "Anorexia Nervosa (ICD-11: 6D90)",
+              "guidance": "MANAGEMENT PLAN:\n1. Criteria: Low body weight (BMI <18.5), intense fear of gaining weight, and body image distortion.\n2. Risk (MARSIPAN): If BMI <13 or rapid weight loss (>0.5kg/week), refeed syndrome risk is high. Urgent specialist referral."
+            },
+            {
+              "label": "Bulimia Nervosa",
+              "guidance": "MANAGEMENT PLAN:\n1. DSM-5: Recurrent binge eating + compensatory behaviors (purging, exercise). \u22651/week for 3 months.\n2. Screening: SCOFF questionnaire (\u22652 indicates probable ED)."
+            }
+          ]
+        },
+        {
+          "id": "ed-mgmt",
+          "question": "2. Management (NICE NG69 / RCPsych)",
+          "type": "dropdown",
+          "options": [
+            {
+              "label": "Primary Care Role",
+              "guidance": "MANAGEMENT PLAN:\n1. Action: Immediate referral to specialist Eating Disorder Service (EDS). Do not wait for BMI to drop further.\n2. Monitoring: Weekly weight (blind if requested), BP/Pulse (sit/stand), and bloods (U&Es, Glucose, Phosphate)."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "keywords": [
+        "wellbeing",
+        "resilience",
+        "mental health support"
+      ],
+      "steps": [
+        {
+          "id": "wellbeing-mgt",
+          "question": "1. Wellbeing & Prevention",
+          "type": "dropdown",
+          "options": [
+            {
+              "label": "Social Prescribing & Lifestyle",
+              "guidance": "MANAGEMENT PLAN:\n1. 5 Ways to Wellbeing: Connect, Be Active, Take Notice, Keep Learning, Give.\n2. Sleep Hygiene: Regular times, avoid screens, caffeine limit.\n3. Support: Signpost to local 'Talking Therapies' (IAPT) and peer-support networks."
             }
           ]
         }
