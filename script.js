@@ -20,6 +20,14 @@ async function init() {
 
         categorySelect.addEventListener('change', updateParameters);
         document.getElementById('analyse-btn').addEventListener('click', analyseResult);
+        document.getElementById('device-auth-generate-btn')?.addEventListener('click', showNewDeviceAuthCode);
+        document.getElementById('device-auth-copy-url-btn')?.addEventListener('click', function () {
+            var urlEl = document.getElementById('device-auth-url');
+            var btn = this;
+            if (urlEl && urlEl.href && urlEl.href !== '#') {
+                navigator.clipboard.writeText(urlEl.href).then(function () { btn.textContent = 'Copied!'; setTimeout(function () { btn.textContent = 'Copy link'; }, 2000); }).catch(function () {});
+            }
+        });
 
         // Initialize Calculators
         initQRISK();
@@ -53,6 +61,7 @@ async function init() {
                     initGFR();
                 }
                 if (item.id === 'nav-emis-coding') renderEmisIntegrations();
+                if (item.id === 'nav-device-auth') renderDeviceAuth();
             });
         });
 
@@ -726,6 +735,60 @@ function renderProtocols(filter = "") {
             e.target.setAttribute('aria-hidden', 'true');
         }
     };
+}
+
+// --- Device authorisation (Vercel-style: user_code + URL like vercel.com/oauth/device?user_code=XXXX-XXXX) ---
+const DEVICE_AUTH_VALID_MS = 15 * 60 * 1000;
+let deviceAuthExpiryAt = null;
+
+function generateDeviceAuthCode() {
+    var chars = 'ABCDEFGHJKLMNPQRSTUVWXYZ';
+    function part(n) {
+        var s = '';
+        var arr = new Uint8Array(n);
+        crypto.getRandomValues(arr);
+        for (var i = 0; i < n; i++) s += chars[arr[i] % chars.length];
+        return s;
+    }
+    return part(4) + '-' + part(4);
+}
+
+function getDeviceAuthUrl(code) {
+    return window.location.origin + '/oauth/device.html?user_code=' + encodeURIComponent(code);
+}
+
+function formatDeviceAuthExpiry(expiryAt) {
+    if (!expiryAt) return '';
+    var now = Date.now();
+    if (now >= expiryAt) return 'Code expired. Generate a new one.';
+    var mins = Math.ceil((expiryAt - now) / 60000);
+    var endTime = new Date(expiryAt);
+    return 'Valid for ' + mins + ' min (until ' + endTime.toLocaleTimeString([], { hour: '2-digit', minute: '2-digit' }) + ')';
+}
+
+function showNewDeviceAuthCode() {
+    var displayEl = document.getElementById('device-auth-code-display');
+    var expiryEl = document.getElementById('device-auth-expiry');
+    var urlEl = document.getElementById('device-auth-url');
+    if (!displayEl) return;
+    var code = generateDeviceAuthCode();
+    deviceAuthExpiryAt = Date.now() + DEVICE_AUTH_VALID_MS;
+    displayEl.textContent = code;
+    displayEl.setAttribute('aria-label', 'Authorisation code: ' + code);
+    if (expiryEl) expiryEl.textContent = formatDeviceAuthExpiry(deviceAuthExpiryAt);
+    var url = getDeviceAuthUrl(code);
+    if (urlEl) {
+        urlEl.href = url;
+        urlEl.textContent = url;
+    }
+}
+
+function renderDeviceAuth() {
+    var displayEl = document.getElementById('device-auth-code-display');
+    var expiryEl = document.getElementById('device-auth-expiry');
+    if (!displayEl) return;
+    if (!displayEl.textContent || displayEl.textContent === '—') showNewDeviceAuthCode();
+    else if (expiryEl) expiryEl.textContent = formatDeviceAuthExpiry(deviceAuthExpiryAt);
 }
 
 function renderEmisIntegrations() {

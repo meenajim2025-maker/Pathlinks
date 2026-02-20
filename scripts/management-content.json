@@ -1,10 +1,406 @@
 {
-  "comment": "Topic-specific management steps (NICE-based). Key = lowercase keyword match in tool title. First match wins.",
+  "comment": "Topic-specific management steps (NICE-based). Key = lowercase keyword match in tool title. First match wins. Specific keywords before broad.",
   "templates": [
     {
-      "keywords": [
-        "scalp"
-      ],
+      "keywords": ["chest pain", "stable chest", "acute chest"],
+      "steps": [{
+        "id": "chest-pain-mgt",
+        "question": "Chest pain type",
+        "type": "dropdown",
+        "options": [
+          { "label": "Stable / likely angina", "guidance": "MANAGEMENT PLAN:\n1. GTN prn; beta-blocker or CCB. Secondary prevention: aspirin, statin, ACEi if indicated.\n2. Refer: Rapid Access Chest Pain Clinic for CTCA. NICE NG72." },
+          { "label": "Acute / possible ACS", "guidance": "MANAGEMENT PLAN:\n1. Emergency: 999; aspirin 300 mg if no contraindication.\n2. Do not delay for troponin in primary care if typical presentation. NICE NG185." }
+        ]
+      }]
+    },
+    {
+      "keywords": ["pericarditis"],
+      "steps": [{
+        "id": "pericarditis-mgt",
+        "question": "Pericarditis",
+        "type": "dropdown",
+        "options": [
+          { "label": "Acute idiopathic", "guidance": "MANAGEMENT PLAN:\n1. NSAID (ibuprofen 400 mg tds) + PPI for 1–2 weeks. Colchicine 500 mcg bd can reduce recurrence.\n2. Avoid steroids first-line. Rest from strenuous activity.\n3. Refer: Large effusion, tamponade, failure to improve. NICE CKS." }
+        ]
+      }]
+    },
+    {
+      "keywords": ["syncope", "vasovagal", "fainting"],
+      "steps": [{
+        "id": "syncope-mgt",
+        "question": "Syncope",
+        "type": "dropdown",
+        "options": [
+          { "label": "Vasovagal / situational", "guidance": "MANAGEMENT PLAN:\n1. Reassurance; avoid triggers; keep hydrated.\n2. Driving: DVLA guidance (group 1: refrain if recurrent).\n3. Refer: Cardiac syncope, unexplained recurrent, or red flags (ECG abnormal, HF, exercise-induced). NICE CG109." },
+          { "label": "Cardiac / unexplained", "guidance": "MANAGEMENT PLAN:\n1. ECG; consider 24h tape, echo. Refer cardiology if structural or arrhythmia suspected.\n2. 2WW if red flags. NICE CG109." }
+        ]
+      }]
+    },
+    {
+      "keywords": ["palpitations", "supraventricular", "svt", "tachycardia", "broad complex", "narrow complex"],
+      "steps": [{
+        "id": "palpitations-mgt",
+        "question": "Palpitations / rhythm",
+        "type": "dropdown",
+        "options": [
+          { "label": "SVT / narrow complex", "guidance": "MANAGEMENT PLAN:\n1. Acute: Vagal manoeuvres; if haemodynamically stable consider adenosine.\n2. Long-term: Refer for ablation or rate control. NICE NG196." },
+          { "label": "Broad complex / uncertain", "guidance": "MANAGEMENT PLAN:\n1. ECG; exclude VT. Refer cardiology for monitoring/EP if recurrent or structural heart disease. NICE NG196." }
+        ]
+      }]
+    },
+    {
+      "keywords": ["bnp", "nt-probnp"],
+      "steps": [{
+        "id": "bnp-mgt",
+        "question": "BNP / heart failure",
+        "type": "dropdown",
+        "options": [
+          { "label": "Raised BNP", "guidance": "MANAGEMENT PLAN:\n1. NT-proBNP >2000: Urgent echo/specialist within 2 weeks. 400–2000: Routine within 6 weeks.\n2. Baseline ECG, U&E, FBC, LFT, lipids. NICE NG106." }
+        ]
+      }]
+    },
+    {
+      "keywords": ["ecg", "bundle branch", "st elevation", "bradycardia", "long qt", "brugada"],
+      "steps": [{
+        "id": "ecg-mgt",
+        "question": "ECG finding",
+        "type": "dropdown",
+        "options": [
+          { "label": "ST elevation / acute", "guidance": "MANAGEMENT PLAN:\n1. Emergency 999; aspirin 300 mg. Do not delay for repeat ECG in primary care. NICE NG185." },
+          { "label": "BBB / bradycardia / Long QT / Brugada", "guidance": "MANAGEMENT PLAN:\n1. Refer cardiology for pacemaker/ICD assessment if symptomatic or high risk.\n2. Avoid QT-prolonging drugs if Long QT. NICE NG203, CKS." }
+        ]
+      }]
+    },
+    {
+      "keywords": ["valve disease", "mitral regurgitation", "mitral stenosis", "aortic stenosis", "tricuspid"],
+      "steps": [{
+        "id": "valve-mgt",
+        "question": "Valve disease",
+        "type": "dropdown",
+        "options": [
+          { "label": "Severe / symptomatic", "guidance": "MANAGEMENT PLAN:\n1. Refer cardiology/valve clinic. Echo for severity and LV function.\n2. Endocarditis prophylaxis: only for high-risk procedures per NICE NG64." },
+          { "label": "Mild / surveillance", "guidance": "MANAGEMENT PLAN:\n1. Repeat echo per local protocol (often 1–2 years). Treat HF and AF per guidelines. NICE NG208." }
+        ]
+      }]
+    },
+    {
+      "keywords": ["pad", "peripheral arterial", "intermittent claudication"],
+      "steps": [{
+        "id": "pad-mgt",
+        "question": "PAD / claudication",
+        "type": "dropdown",
+        "options": [
+          { "label": "Medical management", "guidance": "MANAGEMENT PLAN:\n1. Antiplatelet (clopidogrel 75 mg or aspirin). Statin. Treat BP and diabetes. Supervised exercise.\n2. Refer vascular if limiting symptoms or critical ischaemia. NICE NG147." }
+        ]
+      }]
+    },
+    {
+      "keywords": ["antiplatelet", "dapt", "dual antiplatelet"],
+      "steps": [{
+        "id": "antiplatelet-mgt",
+        "question": "Antiplatelet",
+        "type": "dropdown",
+        "options": [
+          { "label": "DAPT duration", "guidance": "MANAGEMENT PLAN:\n1. Post-ACS: DAPT 12 months then single antiplatelet (usually clopidogrel). Consider longer if high ischaemic risk.\n2. Post PCI: As per stent type and bleeding risk. NICE NG185." }
+        ]
+      }]
+    },
+    {
+      "keywords": ["lipid", "ldl", "hyperlipidaemia", "familial hypercholesterolaemia"],
+      "steps": [{
+        "id": "lipid-mgt",
+        "question": "Lipids / LDL",
+        "type": "dropdown",
+        "options": [
+          { "label": "Primary prevention", "guidance": "MANAGEMENT PLAN:\n1. QRISK3 ≥10%: Atorvastatin 20 mg; consider 80 mg if high risk. Recheck lipids at 3 months.\n2. Target: LDL-C reduction >40%. NICE CG181." },
+          { "label": "FH / familial", "guidance": "MANAGEMENT PLAN:\n1. Refer lipid clinic if Simon Broome criteria. Statin from childhood in FH. NICE CG71." }
+        ]
+      }]
+    },
+    {
+      "keywords": ["endocarditis", "prophylaxis"],
+      "steps": [{
+        "id": "endocarditis-mgt",
+        "question": "Endocarditis prophylaxis",
+        "type": "dropdown",
+        "options": [
+          { "label": "NICE NG64", "guidance": "MANAGEMENT PLAN:\n1. Antibiotic prophylaxis NOT routinely recommended for dental or GI/GU procedures.\n2. Only consider for highest-risk patients (prosthetic valve, previous endocarditis, cyanotic congenital heart disease) having dental at site of infection. NICE NG64." }
+        ]
+      }]
+    },
+    {
+      "keywords": ["varicose veins", "varicose"],
+      "steps": [{
+        "id": "varicose-mgt",
+        "question": "Varicose veins",
+        "type": "dropdown",
+        "options": [
+          { "label": "Conservative & referral", "guidance": "MANAGEMENT PLAN:\n1. Compression hosiery; leg elevation; weight loss if overweight.\n2. Refer if symptomatic, skin changes, or patient choice after conservative trial. NICE CG168." }
+        ]
+      }]
+    },
+    {
+      "keywords": ["abscess", "boil", "skin abscess", "furuncle"],
+      "steps": [{
+        "id": "abscess-mgt",
+        "question": "Skin abscess / boil",
+        "type": "dropdown",
+        "options": [
+          { "label": "Small / fluctuant", "guidance": "MANAGEMENT PLAN:\n1. Incision and drainage; send pus if recurrent or cellulitis. Do not use antibiotic alone for uncomplicated abscess.\n2. Consider flucloxacillin if cellulitis or systemic symptoms. NICE NG141." },
+          { "label": "Recurrent boils", "guidance": "MANAGEMENT PLAN:\n1. Hygiene; nasal decolonisation (mupirocin) if nasal carriage. Screen household. Consider referral if persistent. NICE CKS." }
+        ]
+      }]
+    },
+    {
+      "keywords": ["erysipelas", "cellulitis"],
+      "steps": [{
+        "id": "erysipelas-mgt",
+        "question": "Erysipelas / cellulitis",
+        "type": "dropdown",
+        "options": [
+          { "label": "Mild / moderate", "guidance": "MANAGEMENT PLAN:\n1. Flucloxacillin 500 mg qds 7 days (clarithromycin if penicillin allergic). Elevate limb.\n2. Mark margin; review at 48 h. NICE NG141." },
+          { "label": "Severe / facial / systemic", "guidance": "MANAGEMENT PLAN:\n1. Admit for IV antibiotics if systemically unwell, facial, or rapid spread. NICE NG141." }
+        ]
+      }]
+    },
+    {
+      "keywords": ["lichen planus", "lichen sclerosus", "lichen simplex"],
+      "steps": [{
+        "id": "lichen-mgt",
+        "question": "Lichen condition",
+        "type": "dropdown",
+        "options": [
+          { "label": "Lichen planus", "guidance": "MANAGEMENT PLAN:\n1. Topical potent steroid (e.g. betamethasone) for limited disease. Mouth: topical steroid or specialist.\n2. Refer if widespread, genital, or diagnostic uncertainty. NICE CKS." },
+          { "label": "Lichen sclerosus", "guidance": "MANAGEMENT PLAN:\n1. Potent topical steroid (e.g. clobetasol) initially; reduce to maintenance. Long-term follow-up (malignancy risk).\n2. Refer if diagnostic uncertainty or not responding. NICE CKS." }
+        ]
+      }]
+    },
+    {
+      "keywords": ["urticaria", "hives", "chronic urticaria", "acute urticaria"],
+      "steps": [{
+        "id": "urticaria-mgt",
+        "question": "Urticaria",
+        "type": "dropdown",
+        "options": [
+          { "label": "Acute", "guidance": "MANAGEMENT PLAN:\n1. Non-sedating antihistamine (cetirizine 10 mg od or loratadine). Avoid trigger if identified.\n2. Short course higher dose if severe. NICE CKS." },
+          { "label": "Chronic", "guidance": "MANAGEMENT PLAN:\n1. Standard dose non-sedating antihistamine; increase to 4× if needed. Consider add-on (e.g. montelukast, H2 blocker).\n2. Refer if not controlled after 6 weeks. NICE CKS." }
+        ]
+      }]
+    },
+    {
+      "keywords": ["fungal groin", "groin fungal", "tinea cruris"],
+      "steps": [{
+        "id": "fungal-groin-mgt",
+        "question": "Fungal groin",
+        "type": "dropdown",
+        "options": [
+          { "label": "Topical", "guidance": "MANAGEMENT PLAN:\n1. Terbinafine 1% or clotrimazole 1% cream for 1–2 weeks. Keep area dry; avoid tight clothing.\n2. Oral terbinafine if extensive or failed topical. NICE CKS." }
+        ]
+      }]
+    },
+    {
+      "keywords": ["herpes simplex", "cold sore", "genital herpes"],
+      "steps": [{
+        "id": "herpes-mgt",
+        "question": "Herpes simplex",
+        "type": "dropdown",
+        "options": [
+          { "label": "Cold sore", "guidance": "MANAGEMENT PLAN:\n1. Aciclovir 5% cream 5×/day 5 days, or oral aciclovir 200 mg 5×/day 5 days if early/severe.\n2. Suppression: consider if ≥6 episodes/year. NICE CKS." },
+          { "label": "First episode genital", "guidance": "MANAGEMENT PLAN:\n1. Aciclovir 400 mg tds 7–10 days (or valaciclovir). Screen for other STIs. Counsel on transmission.\n2. Suppression if recurrent. NICE CKS." }
+        ]
+      }]
+    },
+    {
+      "keywords": ["alopecia", "hair loss", "androgenetic", "areata"],
+      "steps": [{
+        "id": "alopecia-mgt",
+        "question": "Alopecia",
+        "type": "dropdown",
+        "options": [
+          { "label": "Androgenetic", "guidance": "MANAGEMENT PLAN:\n1. Minoxidil 5% (women 2%) for 6+ months. Finasteride (men only) 1 mg od if minoxidil not sufficient.\n2. Reassurance; treat underlying if thyroid/iron. NICE CKS." },
+          { "label": "Alopecia areata", "guidance": "MANAGEMENT PLAN:\n1. Potent topical steroid or intralesional steroid. Many resolve spontaneously.\n2. Refer if extensive, loss of eyebrows/lashes, or not responding. NICE CKS." }
+        ]
+      }]
+    },
+    {
+      "keywords": ["pruritus", "itch", "generalised itch"],
+      "steps": [{
+        "id": "pruritus-mgt",
+        "question": "Pruritus",
+        "type": "dropdown",
+        "options": [
+          { "label": "Generalised (exclude cause)", "guidance": "MANAGEMENT PLAN:\n1. Check FBC, U&E, LFT, TFT, ferritin, glucose. Emollients; sedating antihistamine at night if sleep disturbed.\n2. Treat cause if found. Refer if unexplained or refractory. NICE CKS." }
+        ]
+      }]
+    },
+    {
+      "keywords": ["lymphoedema"],
+      "steps": [{
+        "id": "lymphoedema-mgt",
+        "question": "Lymphoedema",
+        "type": "dropdown",
+        "options": [
+          { "label": "Primary care & referral", "guidance": "MANAGEMENT PLAN:\n1. Compression; skin care; exercise. Exclude venous/renal/cardiac cause.\n2. Refer lymphoedema service if significant or secondary to cancer treatment. NICE CKS." }
+        ]
+      }]
+    },
+    {
+      "keywords": ["addison", "adrenal insufficiency", "primary adrenal"],
+      "steps": [{
+        "id": "addison-mgt",
+        "question": "Adrenal insufficiency",
+        "type": "dropdown",
+        "options": [
+          { "label": "Suspected / newly diagnosed", "guidance": "MANAGEMENT PLAN:\n1. Emergency: If adrenal crisis – hydrocortisone 100 mg IM stat; IV fluids; admit.\n2. Maintenance: Hydrocortisone 15–25 mg daily in 2–3 doses; fludrocortisone if primary. Sick-day rules: double oral hydrocortisone when unwell; injectable emergency hydrocortisone at home.\n3. Refer endocrinology for confirmation and education. NICE CKS." }
+        ]
+      }]
+    },
+    {
+      "keywords": ["goitre", "thyroid nodule", "thyroid nodules"],
+      "steps": [{
+        "id": "goitre-mgt",
+        "question": "Goitre / thyroid nodules",
+        "type": "dropdown",
+        "options": [
+          { "label": "Normal TFT", "guidance": "MANAGEMENT PLAN:\n1. TFTs and TPO ab. If diffusely enlarged and euthyroid, observe or refer if compressive symptoms.\n2. Nodule: USS + FNA if ≥1 cm or suspicious features. Refer thyroid clinic per local pathway. NICE NG145." },
+          { "label": "Abnormal TFT", "guidance": "MANAGEMENT PLAN:\n1. Hypothyroid: Levothyroxine; recheck TSH in 6–8 weeks. Hyperthyroid: Refer endocrinology (antithyroid drugs or RAI). NICE NG145." }
+        ]
+      }]
+    },
+    {
+      "keywords": ["otitis externa", "ear – infection", "swimmer's ear"],
+      "steps": [{
+        "id": "otitis-externa-mgt",
+        "question": "Otitis externa",
+        "type": "dropdown",
+        "options": [
+          { "label": "Topical treatment", "guidance": "MANAGEMENT PLAN:\n1. Topical acetic acid 2% or topical antibiotic (e.g. gentamicin/hydrocortisone or neomycin) for 7 days. Avoid water in ear.\n2. Consider ear wick if canal swollen. Oral flucloxacillin if cellulitis. NICE CKS." }
+        ]
+      }]
+    },
+    {
+      "keywords": ["hoarseness", "dysphonia", "voice change", "voice disorder", "laryngeal"],
+      "steps": [{
+        "id": "hoarseness-mgt",
+        "question": "Hoarseness",
+        "type": "dropdown",
+        "options": [
+          { "label": "Persistent >3 weeks", "guidance": "MANAGEMENT PLAN:\n1. 2WW ENT referral for laryngoscopy to exclude laryngeal cancer. Do not delay if red flags (dysphagia, neck lump, stridor). NICE NG12." }
+        ]
+      }]
+    },
+    {
+      "keywords": ["rhinitis", "allergic rhinitis", "hay fever"],
+      "steps": [{
+        "id": "rhinitis-mgt",
+        "question": "Rhinitis",
+        "type": "dropdown",
+        "options": [
+          { "label": "Allergic", "guidance": "MANAGEMENT PLAN:\n1. Intranasal corticosteroid (e.g. beclometasone) first-line; add antihistamine if needed. Avoid sedating antihistamines long-term.\n2. Consider allergen avoidance. Refer if severe or not controlled. NICE CKS." }
+        ]
+      }]
+    },
+    {
+      "keywords": ["dysphagia", "swallowing difficulty"],
+      "steps": [{
+        "id": "dysphagia-mgt",
+        "question": "Dysphagia",
+        "type": "dropdown",
+        "options": [
+          { "label": "Solid food / progressive", "guidance": "MANAGEMENT PLAN:\n1. 2WW upper GI endoscopy (or ENT if oropharyngeal). Exclude oesophageal cancer. Do not delay if weight loss or haematemesis. NICE NG12." }
+        ]
+      }]
+    },
+    {
+      "keywords": ["lft", "liver function", "abnormal liver", "transaminase", "alt", "ast", "ggt", "alp"],
+      "steps": [{
+        "id": "lft-mgt",
+        "question": "Abnormal LFT",
+        "type": "dropdown",
+        "options": [
+          { "label": "Mild isolated rise", "guidance": "MANAGEMENT PLAN:\n1. Repeat in 2–3 months; exclude fatty liver (USS), alcohol, drugs. Check viral hepatitis, ferritin (haemochromatosis) if indicated.\n2. Refer hepatology if persistently elevated, bilirubin raised, or signs of liver disease. NICE CKS." }
+        ]
+      }]
+    },
+    {
+      "keywords": ["nausea", "vomiting", "antiemetic"],
+      "steps": [{
+        "id": "nausea-mgt",
+        "question": "Nausea / vomiting",
+        "type": "dropdown",
+        "options": [
+          { "label": "Symptomatic relief", "guidance": "MANAGEMENT PLAN:\n1. Identify cause (GI, drugs, vestibular, metabolic, CNS). Cyclizine 50 mg tds or prochlorperazine 5 mg tds; metoclopramide 10 mg tds (avoid if young or parkinsonism).\n2. Red flags: Headache, abdominal pain, dehydration – assess and refer as needed. NICE CKS." }
+        ]
+      }]
+    },
+    {
+      "keywords": ["feeding difficulty", "poor feeding", "feeding problem", "faltering growth", "failure to thrive", "growth faltering", "growth concern", "poor growth"],
+      "steps": [{
+        "id": "feeding-growth-mgt",
+        "question": "Feeding / growth (child)",
+        "type": "dropdown",
+        "options": [
+          { "label": "Assessment", "guidance": "MANAGEMENT PLAN:\n1. Plot weight/height on centile charts; assess intake, swallowing, reflux, red flags (cardiac, neuro).\n2. Dietitian if weaning/feeding advice; refer paediatrician if significant faltering or organic concern. NICE NG75, CKS." }
+        ]
+      }]
+    },
+    {
+      "keywords": ["developmental delay", "development delay", "global delay"],
+      "steps": [{
+        "id": "dev-delay-mgt",
+        "question": "Developmental delay",
+        "type": "dropdown",
+        "options": [
+          { "label": "Referral & support", "guidance": "MANAGEMENT PLAN:\n1. Refer community paediatrics or child development team. Consider hearing/vision, genetic if dysmorphism.\n2. Early intervention and family support. Safeguarding if neglect suspected. NICE NG11, CKS." }
+        ]
+      }]
+    },
+    {
+      "keywords": ["myocarditis", "takotsubo", "cardiac sarcoid"],
+      "steps": [{
+        "id": "myocarditis-mgt",
+        "question": "Myocarditis / Takotsubo",
+        "type": "dropdown",
+        "options": [
+          { "label": "Suspected myocarditis", "guidance": "MANAGEMENT PLAN:\n1. Admit if acute (ECG, troponin, echo). Avoid NSAIDs in acute phase. Long-term: HF treatment; avoid strenuous exercise until reviewed.\n2. Takotsubo: Supportive; echo to confirm; usually recovers. NICE CKS." }
+        ]
+      }]
+    },
+    {
+      "keywords": ["raynaud", "raynaud's"],
+      "steps": [{
+        "id": "raynaud-mgt",
+        "question": "Raynaud's",
+        "type": "dropdown",
+        "options": [
+          { "label": "Primary", "guidance": "MANAGEMENT PLAN:\n1. Reassurance; avoid cold; gloves. Nifedipine MR 10–20 mg bd if disabling. Screen for connective tissue disease (ANA, nailfold capillaroscopy) if secondary suspected.\n2. Refer rheumatology if secondary or digital ulceration. NICE CKS." }
+        ]
+      }]
+    },
+    {
+      "keywords": ["molluscum", "molluscum contagiosum"],
+      "steps": [{
+        "id": "molluscum-mgt",
+        "question": "Molluscum",
+        "type": "dropdown",
+        "options": [
+          { "label": "Self-limiting", "guidance": "MANAGEMENT PLAN:\n1. Usually resolve in 6–18 months. Reassurance; avoid squeezing. Consider topical (e.g. potassium hydroxide) or referral if extensive/facial. NICE CKS." }
+        ]
+      }]
+    },
+    {
+      "keywords": ["pemphigoid", "pemphigus", "bullous"],
+      "steps": [{
+        "id": "bullous-mgt",
+        "question": "Bullous disease",
+        "type": "dropdown",
+        "options": [
+          { "label": "Referral", "guidance": "MANAGEMENT PLAN:\n1. Refer dermatology for biopsy and immunofluorescence. Do not start systemic steroid before diagnosis. Topical steroid may be used for limited pemphigoid. NICE CKS." }
+        ]
+      }]
+    },
+    {
+      "keywords": ["scalp"],
       "steps": [
         {
           "id": "scalp-general-mgt",
@@ -49,25 +445,6 @@
             {
               "label": "Referral Criteria",
               "guidance": "MANAGEMENT PLAN:\n1. Urgent: Erythrodermic or generalized pustular psoriasis (Same day).\n2. Routine: Diagnostic uncertainty, extensive disease (>10% BSA), or failure of topical therapy after 2-3 months. NICE CG153."
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "keywords": [
-        "dermatology",
-        "skin condition"
-      ],
-      "steps": [
-        {
-          "id": "generic-skin-mgt",
-          "question": "General Skin Management",
-          "type": "dropdown",
-          "options": [
-            {
-              "label": "Standard Skin Care Plan",
-              "guidance": "MANAGEMENT PLAN:\n1. Skincare: Use soap substitutes (emollients) for washing. Avoid harsh soaps and detergents.\n2. Emollients: Apply liberal amounts of emollient cream/ointment frequently to maintain skin barrier.\n3. Triggers: Identify and avoid potential irritants or allergens.\n4. Safety-net: Return if signs of infection (weeping, crusting, fever) or no improvement in 2 weeks. NICE CKS."
             }
           ]
         }
@@ -1201,6 +1578,35 @@
     },
     {
       "keywords": [
+        "cow's milk",
+        "cow milk",
+        "cmpa",
+        "milk protein allergy"
+      ],
+      "steps": [
+        {
+          "id": "cmpa-mgmt",
+          "question": "Cow's milk protein allergy (CMPA)",
+          "type": "dropdown",
+          "options": [
+            {
+              "label": "Diagnosis & exclusion",
+              "guidance": "MANAGEMENT PLAN:\n1. Breastfed: Maternal exclusion of cow's milk (and egg if suspected).\n2. Formula-fed: Trial extensively hydrolysed formula (EHF) for 2–4 weeks. If IgE-mediated, consider skin prick/sIgE.\n3. Reintroduction: Supervised challenge to confirm. NICE CG116, BSACI."
+            },
+            {
+              "label": "First-line formula",
+              "guidance": "MANAGEMENT PLAN:\n1. Non-IgE / delayed: EHF (e.g. Nutramigen, Aptamil Pepti).\n2. IgE-mediated / anaphylaxis: EHF or amino-acid formula (AAF e.g. Neocate) if EHF not tolerated.\n3. Avoid: Soya under 6 months; rice formula not first-line. NICE CG116."
+            },
+            {
+              "label": "Referral",
+              "guidance": "MANAGEMENT PLAN:\n1. Dietitian: If multiple exclusions, faltering growth, or weaning advice.\n2. Paediatric allergy: Anaphylaxis, diagnostic uncertainty, or need for AAF. NICE CG116."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "keywords": [
         "otitis media",
         "ear infection",
         "acute otitis"
@@ -1664,7 +2070,7 @@
     {
       "keywords": [
         "rheumatoid",
-        "ra ",
+        "ra",
         "dmard"
       ],
       "steps": [
@@ -1695,7 +2101,7 @@
     {
       "keywords": [
         "osteoarthritis",
-        "oa ",
+        "oa",
         "knee pain",
         "hip pain"
       ],
@@ -3689,61 +4095,16 @@
       ]
     },
     {
-      "keywords": [
-        "atrial fibrillation",
-        "af"
-      ],
-      "steps": [
-        {
-          "id": "af-mgmt",
-          "question": "Management Priority",
-          "type": "dropdown",
-          "options": [
-            {
-              "label": "Anticoagulation & Rate Control",
-              "guidance": "MANAGEMENT PLAN:\n1. Anticoagulation: Offer DOAC (Apixaban/Edoxaban) if CHA2DS2-VASc ≥2 (men) or ≥3 (women). Consider if score is 1.\n2. Rate Control: First-line Beta-blocker (Bisoprolol) or CCB (Diltiazem). Aim for resting HR <90 bpm.\n3. Safety: Review HAS-BLED/ORBIT score to mitigate bleeding risk; counsel on signs of major bleed. NICE NG196."
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "keywords": [
-        "asthma"
-      ],
-      "steps": [
-        {
-          "id": "asthma-steps-mgmt",
-          "question": "Treatment Step",
-          "type": "dropdown",
-          "options": [
-            {
-              "label": "Adult Step-Up Plan",
-              "guidance": "MANAGEMENT PLAN:\n1. Step 1: ICS (low dose) + SABA as needed (or MART).\n2. Step 2: Add LAMA or Montelukast if poorly controlled on ICS.\n3. MART: Consider Maintenance and Reliever Therapy (e.g. Fostair) for better symptom control and reduced exacerbations.\n4. Technique: Mandatory inhaler technique check every review. BTS/SIGN Guidelines."
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "keywords": [
-        "copd",
-        "bronchitis",
-        "emphysema"
-      ],
-      "steps": [
-        {
-          "id": "copd-optimization-mgmt",
-          "question": "Management Strategy",
-          "type": "dropdown",
-          "options": [
-            {
-              "label": "Stable COPD Plan",
-              "guidance": "MANAGEMENT PLAN:\n1. Meds: Start LAMA+LABA (e.g. Anoro) if breathless despite SABA. Add ICS (Triple Therapy) if asthma features or ≥2 exacerbations/year.\n2. Rescue: Provide rescue pack (Prednisolone 30mg for 5d + Amoxicillin 500mg tds for 5d) for use in acute exacerbations.\n3. Non-Pharm: Smoking cessation (essential), pulmonary rehab referral, and annual flu/pneumococcal vaccines. NICE NG115."
-            }
-          ]
-        }
-      ]
+      "keywords": ["dermatology", "skin condition"],
+      "steps": [{
+        "id": "generic-skin-mgt",
+        "question": "General Skin Management",
+        "type": "dropdown",
+        "options": [{
+          "label": "Standard Skin Care Plan",
+          "guidance": "MANAGEMENT PLAN:\n1. Skincare: Use soap substitutes (emollients) for washing. Avoid harsh soaps and detergents.\n2. Emollients: Apply liberal amounts of emollient cream/ointment frequently to maintain skin barrier.\n3. Triggers: Identify and avoid potential irritants or allergens.\n4. Safety-net: Return if signs of infection (weeping, crusting, fever) or no improvement in 2 weeks. NICE CKS."
+        }]
+      }]
     }
   ]
 }

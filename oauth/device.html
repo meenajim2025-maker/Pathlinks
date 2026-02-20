@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Authorize device | PathLinks</title>
+    <style>
+        * { box-sizing: border-box; margin: 0; padding: 0; }
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, sans-serif;
+            background: #f4f7fa;
+            color: #2c3e50;
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 20px;
+        }
+        .card {
+            background: #fff;
+            border-radius: 12px;
+            box-shadow: 0 4px 20px rgba(0,0,0,0.08);
+            padding: 32px;
+            max-width: 400px;
+            width: 100%;
+            text-align: center;
+        }
+        h1 {
+            font-size: 22px;
+            margin-bottom: 8px;
+            color: #0066cc;
+        }
+        .sub {
+            font-size: 14px;
+            color: #7f8c8d;
+            margin-bottom: 24px;
+        }
+        .code {
+            font-family: ui-monospace, monospace;
+            font-size: 28px;
+            font-weight: 700;
+            letter-spacing: 0.2em;
+            padding: 16px;
+            background: #f0f4f8;
+            border-radius: 8px;
+            border: 2px dashed #c5d0dc;
+            margin-bottom: 24px;
+        }
+        .btn {
+            display: inline-block;
+            background: #0066cc;
+            color: #fff;
+            border: none;
+            padding: 12px 24px;
+            font-size: 16px;
+            font-weight: 600;
+            border-radius: 8px;
+            cursor: pointer;
+            width: 100%;
+        }
+        .btn:hover { background: #004d99; }
+        .btn:disabled { opacity: 0.6; cursor: not-allowed; }
+        .success { color: #27ae60; font-weight: 600; margin-top: 16px; }
+        .error { color: #e74c3c; font-size: 14px; margin-top: 12px; }
+    </style>
+</head>
+<body>
+    <div class="card">
+        <h1>Continue with PathLinks</h1>
+        <p class="sub">Use your PathLinks account to authorise this device</p>
+        <div id="code-display" class="code" aria-live="polite">—</div>
+        <p id="message" class="error" style="display: none;"></p>
+        <button type="button" id="authorize-btn" class="btn">Authorise this device</button>
+        <p id="success-msg" class="success" style="display: none;">Device authorised. You can close this tab.</p>
+    </div>
+    <script>
+        (function () {
+            var params = new URLSearchParams(window.location.search);
+            var userCode = params.get('user_code') || '';
+            var codeEl = document.getElementById('code-display');
+            var btn = document.getElementById('authorize-btn');
+            var msgEl = document.getElementById('message');
+            var successEl = document.getElementById('success-msg');
+
+            if (userCode) {
+                codeEl.textContent = userCode;
+                codeEl.setAttribute('aria-label', 'Code: ' + userCode);
+            } else {
+                codeEl.textContent = 'No code provided';
+                msgEl.textContent = 'Open this page using the link from the device you want to authorise.';
+                msgEl.style.display = 'block';
+                btn.disabled = true;
+            }
+
+            btn.addEventListener('click', function () {
+                if (!userCode) return;
+                try {
+                    var key = 'pathlinks_device_auth_' + userCode.replace(/-/g, '').toUpperCase();
+                    localStorage.setItem(key, Date.now().toString());
+                    btn.style.display = 'none';
+                    successEl.style.display = 'block';
+                } catch (e) {
+                    msgEl.textContent = 'Could not complete authorisation. Try again.';
+                    msgEl.style.display = 'block';
+                }
+            });
+        })();
+    </script>
+</body>
+</html>

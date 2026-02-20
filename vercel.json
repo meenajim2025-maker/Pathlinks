@@ -1,17 +1,26 @@
 {
-    "version": 2,
-    "public": true,
-    "cleanUrls": true,
-    "trailingSlash": false,
-    "headers": [
+  "version": 2,
+  "public": true,
+  "cleanUrls": true,
+  "trailingSlash": false,
+  "headers": [
+    {
+      "source": "/data/(.*)",
+      "headers": [
         {
-            "source": "/data/(.*)",
-            "headers": [
-                {
-                    "key": "Cache-Control",
-                    "value": "public, max-age=300"
-                }
-            ]
+          "key": "Cache-Control",
+          "value": "public, max-age=300"
         }
-    ]
+      ]
+    },
+    {
+      "source": "/app/data/(.*)",
+      "headers": [
+        {
+          "key": "Cache-Control",
+          "value": "public, max-age=300"
+        }
+      ]
+    }
+  ],
 }

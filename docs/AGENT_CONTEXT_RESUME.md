@@ -29,8 +29,10 @@
 - **Misplaced topics:** In `scripts/extra-tools-bulk-1000.json`, “Restless legs” and “Narcolepsy” were moved from `mental-health` to `neurology`.
 - **Deploy:** Deployed to Vercel with `npx vercel --prod --yes`.
 
-**Committed:** A–Z sort, topic filter, Search all systems UI, Restless legs/Narcolepsy fix, audit doc, rebuilt `decision_tools_protocol.json`.  
-**Uncommitted at handoff:** Fix for “wrong management plan after search” in `app/script.js` and `script.js` (search result click now renders panel from the clicked tool object directly). **You should commit these two files** so the fix is saved.
+**Committed (earlier):** A–Z sort, topic filter, Search all systems UI, Restless legs/Narcolepsy fix, audit doc.  
+**Management plan audit:** Topic-specific templates added (chest pain, pericarditis, syncope, Addison’s, goitre, ENT/gastro/paeds, etc.); system fallbacks for endo/renal/ENT/neuro/haematology; “dermatology”/“skin condition” at end of list. **Final step:** single generic catch-all replaced with **system-specific consultant-grade plans** per system (cardiovascular, dermatology, gastro, paediatrics, etc.). **0 tools** now on generic plan; every tool has topic-specific or system-specific plan. See `docs/MANAGEMENT_PLAN_AUDIT_SENIOR_CONSULTANT.md`.  
+**Device authorisation:** Vercel-style user code (XXXX-XXXX) and URL `/oauth/device.html?user_code=...`; nav “Device authorisation” and `oauth/device.html`.  
+**Handover:** `docs/HANDOVER_NEXT_AGENT.md` – short handover for the next agent. All changes committed (see latest commit).
 
 ---
 
@@ -47,6 +49,9 @@
 | `scripts/extra-tools-bulk-1000.json` | Bulk conditions: `tools: [{ systemId, title }, ...]`. |
 | `docs/DECISION_TOOLS_CONTEXT.md` | How to add conditions, rebuild, deploy. |
 | `docs/FORENSIC_AUDIT_DECISION_TOOLS.md` | Audit: ordering, filter, search, placement, knowledge base. |
+| `docs/MANAGEMENT_PLAN_AUDIT_SENIOR_CONSULTANT.md` | Senior consultant audit; all tools now topic- or system-specific (0 generic plan). |
+| `docs/HANDOVER_NEXT_AGENT.md` | **Handover to next agent** – read this first when resuming. |
+| `oauth/device.html` | Device authorisation page (Vercel-style code + URL). |
 
 ---
 
@@ -67,11 +72,10 @@
 
 ## 5. Current repo state (at handoff)
 
-- **Uncommitted:** `app/script.js`, `script.js` (Search-all click fix: show correct management plan for the clicked topic).
-- **Untracked (optional):** `app/data/clinical_topics_learning.json`, `app/data/knowledge_base.json`, `data/clinical_topics_learning.json`, `data/knowledge_base.json` – from USB/transcription; add to repo or .gitignore as you prefer.
+- **Committed:** All session work (Decision tools UX, management audit and system-specific catch-all, device auth, vercel.json, oauth/, handover doc). See latest commit message.
+- **Untracked (optional):** `app/data/clinical_topics_learning.json`, `app/data/knowledge_base.json`, `data/clinical_topics_learning.json`, `data/knowledge_base.json` – from USB/transcription; add or .gitignore as you prefer. Do not commit `.cursor/`.
 
-**Recommended next step for next agent:** Commit the two script files with a message like:  
-`Fix Decision tools Search all: show correct management plan for selected topic`.
+**Next agent:** Read `docs/HANDOVER_NEXT_AGENT.md` first, then this file for full context.
 
 ---
 
