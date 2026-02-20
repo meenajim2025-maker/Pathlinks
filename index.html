@@ -123,19 +123,24 @@
                 <div class="grid-container">
                     <!-- QRISK3 Calculator -->
                     <div class="card" id="qrisk-standalone">
-                        <h3>QRISK3 Assessment</h3>
-                        <p class="small-text">Integrated CVD Risk Calculation (Simulated EMIS Data Capture)</p>
+                        <h3>QRISK3 Assessment (2024 Standards)</h3>
+                        <p class="small-text">Full clinical variables for primary CVD prevention.</p>
+
                         <div class="qrisk-inputs">
                             <div class="field-row">
                                 <div class="field-group-mini">
-                                    <label>Patient Sex</label>
+                                    <label>Sex</label>
                                     <div class="radio-row" style="display: flex; gap: 10px; margin-top: 5px;">
                                         <label><input type="radio" name="sex-calc" value="male"> M</label>
                                         <label><input type="radio" name="sex-calc" value="female" checked> F</label>
                                     </div>
                                 </div>
                                 <div class="field-group-mini">
-                                    <label>Smoking Status</label>
+                                    <label>Age (25-84)</label>
+                                    <input type="number" id="age-calc" value="50" min="25" max="84">
+                                </div>
+                                <div class="field-group-mini">
+                                    <label>Smoking</label>
                                     <select id="smoking-status-calc">
                                         <option value="0">Non-smoker</option>
                                         <option value="1">Ex-smoker</option>
@@ -144,6 +149,9 @@
                                         <option value="4">Heavy (20+/day)</option>
                                     </select>
                                 </div>
+                            </div>
+
+                            <div class="field-row">
                                 <div class="field-group-mini">
                                     <label>Ethnicity</label>
                                     <select id="ethnicity-calc">
@@ -158,29 +166,54 @@
                                         <option value="9">Other</option>
                                     </select>
                                 </div>
+                                <div class="field-group-mini">
+                                    <label>Diabetes</label>
+                                    <select id="diabetes-type-calc">
+                                        <option value="0">None</option>
+                                        <option value="1">Type 1</option>
+                                        <option value="2">Type 2</option>
+                                    </select>
+                                </div>
+                                <div class="field-group-mini">
+                                    <label>Townsend (1-10)</label>
+                                    <input type="number" id="townsend-calc" value="5" min="1" max="10">
+                                </div>
                             </div>
                             <div class="field-row">
                                 <div class="field-group-mini">
-                                    <label>Systolic BP (mmHg)</label>
+                                    <label>Systolic BP</label>
                                     <input type="number" id="systolic-bp-calc" value="120">
+                                </div>
+                                <div class="field-group-mini">
+                                    <label>Chol Ratio</label>
+                                    <input type="number" id="chol-ratio-calc" value="3.5" step="0.1">
                                 </div>
                                 <div class="field-group-mini">
                                     <label>BMI</label>
                                     <input type="number" id="bmi-calc" value="25" step="0.1">
                                 </div>
                             </div>
-                            <div class="checkbox-grid">
-                                <label><input type="checkbox" id="diabetes-calc"> Diabetes</label>
-                                <label><input type="checkbox" id="fh-cvd-calc"> Family History CVD</label>
-                                <label><input type="checkbox" id="ckd-calc"> CKD (Stage 3+)</label>
-                                <label><input type="checkbox" id="af-calc"> Atrial Fib</label>
-                                <label><input type="checkbox" id="bp-meds-calc"> On BP Meds</label>
-                                <label><input type="checkbox" id="ra-calc"> Rheumatoid Arth</label>
+
+                            <div class="checkbox-grid"
+                                style="display: grid; grid-template-columns: 1fr 1fr 1fr; gap: 10px; margin-top: 15px; font-size: 0.85rem;">
+                                <label><input type="checkbox" id="fh-cvd-calc"> Family History (<60)< /label>
+                                        <label><input type="checkbox" id="ckd-calc"> CKD (Stage 3/4/5)</label>
+                                        <label><input type="checkbox" id="af-calc"> Atrial Fibrillation</label>
+                                        <label><input type="checkbox" id="bp-meds-calc"> On BP Treatment</label>
+                                        <label><input type="checkbox" id="ra-calc"> Rheumatoid Arth</label>
+                                        <label><input type="checkbox" id="sle-calc"> SLE (Lupus)</label>
+                                        <label><input type="checkbox" id="smi-calc"> Severe Mental Ill</label>
+                                        <label><input type="checkbox" id="antipsychotic-calc"> Atypical
+                                            Antipsych</label>
+                                        <label><input type="checkbox" id="migraine-calc"> Migraine</label>
+                                        <label><input type="checkbox" id="ed-calc"> Erectile Dysfunc</label>
                             </div>
+
                             <button id="calculate-qrisk-btn-calc" class="secondary-btn"
-                                style="margin-top: 15px;">Calculate 10-Yr Risk</button>
+                                style="margin-top: 15px; width: 100%;">Calculate 10-Yr Risk</button>
                             <button id="simulate-emis-import-btn-calc" class="primary-btn"
-                                style="margin-top: 10px; background: #607d8b;">⚡ Simulate EMIS Data Import</button>
+                                style="margin-top: 10px; background: #607d8b; width: 100%;">⚡ Sync from EMIS
+                                Record</button>
 
                             <div id="qrisk-result-calc" class="qrisk-result-box hidden" style="margin-top: 20px;">
                                 <div class="score-display">

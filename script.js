@@ -128,42 +128,67 @@ function initQRISK() {
 }
 
 function calculateQRISK() {
-    const ageVal = document.getElementById('age-calc') ? document.getElementById('age-calc').value : (document.getElementById('age') ? document.getElementById('age').value : '50');
-    const age = parseInt(ageVal);
-
-    // Check if we are in the standalone view or dashboard
+    // Determine context (Standalone view or dashboard)
     const isStandalone = !!document.getElementById('smoking-status-calc');
     const suffix = isStandalone ? '-calc' : '';
 
+    const ageVal = document.getElementById('age' + suffix) ? document.getElementById('age' + suffix).value : (document.getElementById('age') ? document.getElementById('age').value : '50');
+    const age = parseInt(ageVal);
     const smoking = parseInt(document.getElementById('smoking-status' + suffix).value);
     const sbp = parseInt(document.getElementById('systolic-bp' + suffix).value);
     const bmi = parseFloat(document.getElementById('bmi' + suffix).value);
+    const cholRatio = parseFloat(document.getElementById('chol-ratio' + suffix)?.value || '3.5');
+    const ethnicity = parseInt(document.getElementById('ethnicity' + suffix).value);
+    const diabetesType = parseInt(document.getElementById('diabetes-type' + suffix)?.value || '0');
+    const townsend = parseInt(document.getElementById('townsend' + suffix)?.value || '5');
 
     // Checkboxes
-    const diabetes = document.getElementById('diabetes' + suffix).checked;
     const fh = document.getElementById('fh-cvd' + suffix).checked;
     const ckd = document.getElementById('ckd' + suffix).checked;
     const af = document.getElementById('af' + suffix).checked;
     const bpMeds = document.getElementById('bp-meds' + suffix).checked;
     const ra = document.getElementById('ra' + suffix).checked;
+    const sle = document.getElementById('sle' + suffix)?.checked || false;
+    const smi = document.getElementById('smi' + suffix)?.checked || false;
+    const antipsychotic = document.getElementById('antipsychotic' + suffix)?.checked || false;
+    const migraine = document.getElementById('migraine' + suffix)?.checked || false;
+    const ed = document.getElementById('ed' + suffix)?.checked || false;
 
-    // Simplified Heuristic for QRISK3 (Educational Simulation)
-    let risk = (age - 30) * 0.4;
     // Sex check
     const sex = document.querySelector(`input[name="sex${suffix}"]:checked`)?.value || 'female';
-    if (sex === 'male') risk += 2.5;
 
-    if (smoking > 0) risk += smoking * 2.1;
-    if (sbp > 140) risk += (sbp - 140) * 0.3;
-    if (bmi > 30) risk += (bmi - 30) * 0.5;
-    if (diabetes) risk += 5.2;
-    if (fh) risk += 3.5;
-    if (ckd) risk += 4.1;
-    if (af) risk += 2.8;
-    if (bpMeds) risk += 1.5;
-    if (ra) risk += 1.2;
+    // Heuristic QRISK3 Simulation (Improved clinical weighting)
+    // 1. Base Age Risk (Exponential increase with age)
+    let risk = 0.05 * Math.pow(1.11, age - 25);
 
-    const finalRisk = Math.min(Math.max(risk, 0.5), 99.9).toFixed(1);
+    // 2. Sex & Ethnicity Adjustments
+    if (sex === 'male') risk *= 1.4;
+    if ([2, 3, 4, 5].includes(ethnicity)) risk *= 1.3; // South Asian adjustment
+
+    // 3. Biometric Weighted Additions
+    if (smoking > 0) risk += smoking * 2.5;
+    if (sbp > 120) risk += (sbp - 120) * 0.15;
+    if (bmi > 25) risk += (bmi - 25) * 0.4;
+    if (cholRatio > 3) risk += (cholRatio - 3) * 2.0;
+
+    // 4. Deprivation (Townsend Score)
+    risk += (townsend - 1) * 0.6;
+
+    // 5. Clinical Condition Adders
+    if (diabetesType === 1) risk += 10.5;
+    if (diabetesType === 2) risk += 7.2;
+    if (fh) risk += 4.5;
+    if (ckd) risk += 5.2;
+    if (af) risk += 3.8;
+    if (bpMeds) risk += 2.0;
+    if (ra) risk += 2.2;
+    if (sle) risk += 2.8;
+    if (smi) risk += 3.5;
+    if (antipsychotic) risk += 2.5;
+    if (migraine) risk += 1.8;
+    if (ed && sex === 'male') risk += 3.2;
+
+    const finalRisk = Math.min(Math.max(risk, 0.1), 99.9).toFixed(1);
 
     const resultBox = document.getElementById('qrisk-result' + suffix);
     const scoreVal = document.getElementById('qrisk-score' + suffix);
@@ -173,37 +198,53 @@ function calculateQRISK() {
     scoreVal.textContent = finalRisk + "%";
 
     if (parseFloat(finalRisk) >= 10.0) {
-        scoreVal.style.color = "var(--accent)";
-        actionText.innerHTML = "<strong>Primary Prevention Indicated.</strong> Offer Atorvastatin 20mg if not contraindicated. Review lifestyle and BP.";
+        scoreVal.style.color = "#e74c3c"; // var(--accent)
+        actionText.innerHTML = `<strong>High CVD Risk (≥10%):</strong> Primary prevention indicated.<br>• Offer <strong>Atorvastatin 20mg</strong> nightly.<br>• Target non-HDL reduction >40%.<br>• Optimize BP and lifestyle.`;
     } else {
-        scoreVal.style.color = "var(--success)";
-        actionText.innerHTML = "Low CVD Risk (Below 10% threshold). Focus on lifestyle and primary prevention advice.";
+        scoreVal.style.color = "#27ae60"; // var(--success)
+        actionText.innerHTML = "<strong>Low CVD Risk (<10%):</strong> Statin not routinely indicated for primary prevention. Focus on lifestyle optimization.";
     }
 }
 
 function simulateEmisImport(e) {
     const btn = e.target;
-    const isStandalone = btn.id.includes('-calc');
-    const suffix = isStandalone ? '-calc' : '';
+    const suffix = btn.id.includes('-calc') ? '-calc' : '';
 
-    console.log("Mocking EMIS Data Fetch...");
     const originalText = btn.textContent;
-    btn.textContent = "Connecting to EMIS Web...";
+    btn.textContent = "⌛ Pulling Clinical Data...";
+    btn.disabled = true;
 
     setTimeout(() => {
+        // Mock data from EMIS record
+        document.getElementById('age' + suffix).value = "64";
         document.getElementById('smoking-status' + suffix).value = "3";
-        document.getElementById('systolic-bp' + suffix).value = "155";
-        document.getElementById('bmi' + suffix).value = "28.5";
-        document.getElementById('diabetes' + suffix).checked = true;
-        // document.getElementById('bp-meds' + suffix).checked = true; // Removed as per instruction
+        document.getElementById('systolic-bp' + suffix).value = "158";
+        document.getElementById('bmi' + suffix).value = "29.4";
+        if (document.getElementById('chol-ratio' + suffix)) {
+            document.getElementById('chol-ratio' + suffix).value = "5.2";
+        }
+        if (document.getElementById('diabetes-type' + suffix)) {
+            document.getElementById('diabetes-type' + suffix).value = "2";
+        }
+        if (document.getElementById('townsend' + suffix)) {
+            document.getElementById('townsend' + suffix).value = "7";
+        }
 
-        btn.textContent = "⚡ EMIS Data Imported";
-        btn.style.background = "var(--success)"; // Added this back for immediate feedback
+        document.getElementById('bp-meds' + suffix).checked = true;
+
+        if (document.getElementById('ed' + suffix)) {
+            document.getElementById('ed' + suffix).checked = true;
+        }
+
+        btn.textContent = "✅ Data Synced";
+        btn.style.background = "#27ae60";
+        btn.disabled = false;
+
         setTimeout(() => {
             btn.textContent = originalText;
-            btn.style.background = "#607d8b"; // Reset background
+            btn.style.background = "";
         }, 2000);
-    }, 800);
+    }, 1200);
 }
 
 
