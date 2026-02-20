@@ -606,8 +606,19 @@
       ],
       "steps": [
         {
+          "id": "dep-overview",
+          "question": "1. Management Overview (Bio-Psycho-Social)",
+          "type": "dropdown",
+          "options": [
+            {
+              "label": "Holistic Consultant Approach",
+              "guidance": "MANAGEMENT PLAN OVERVIEW:\n1. **Biological**: Antidepressants (SSRIs 1st-line) + optimize physical health (sleep/exercise/thyroid).\n2. **Psychological**: Evidence-based CBT, IPT, or Psychodynamic therapy. Strategy is to change cognitive distorting loops.\n3. **Social**: Stabilize housing, employment, and social isolation. Review significant relational stressors.\n4. **Remission Goal**: Total symptomatic relief, not just improvement. Continue meds for 6-12 months post-recovery."
+            }
+          ]
+        },
+        {
           "id": "depression-dx",
-          "question": "1. Diagnosis & Severity (Consultant Grade)",
+          "question": "2. Diagnosis & Severity (Consultant Grade)",
           "type": "dropdown",
           "options": [
             {
@@ -642,8 +653,19 @@
       ],
       "steps": [
         {
+          "id": "anxiety-overview",
+          "question": "1. Management Overview (Stepped Care)",
+          "type": "dropdown",
+          "options": [
+            {
+              "label": "Consultant Treatment Strategy",
+              "guidance": "MANAGEMENT PLAN OVERVIEW:\n1. **Framework**: Step-wise escalation from low-intensity (self-help) to high-intensity (Therapy + Pharmacotherapy).\n2. **Mechanism**: Address the 'avoidance loop'. Recovery requires exposure + reduction of hyperarousal.\n3. **Biological**: SSRIs/SNRIs used primarily to lower the 'anxiety floor'. Use Benzos ONLY for short-term crisis (<2 weeks).\n4. **Social**: Address environmental triggers and occupational 'stagnation' caused by avoidance."
+            }
+          ]
+        },
+        {
           "id": "anxiety-subtype",
-          "question": "1. Subtype Identification (Consultant Analysis)",
+          "question": "2. Subtype Identification (Consultant Analysis)",
           "type": "dropdown",
           "options": [
             {
@@ -695,8 +717,19 @@
       ],
       "steps": [
         {
+          "id": "psych-overview",
+          "question": "1. Management Overview (Crisis & Stability)",
+          "type": "dropdown",
+          "options": [
+            {
+              "label": "Philosophy of Care",
+              "guidance": "MANAGEMENT PLAN OVERVIEW:\n1. **Safety First**: Immediate risk assessment for Bipolar/Psychosis. Intent to self-harm or harm others (delusional pull).\n2. **Biological Core**: Mood stabilizers (Lithium) and Antipsychotics are non-negotiable for stability. High emphasis on medication adherence.\n3. **Social/Rehab**: Early Intervention Services (EIP) focus on maintaining social roles (work/education) during the 'critical period' of the first 3 years.\n4. **Long-term**: Prophylaxis to prevent 'kindling' (where each subsequent episode is easier to trigger and harder to treat)."
+            }
+          ]
+        },
+        {
           "id": "bipolar-phase",
-          "question": "1. Bipolar Disorder (Type I vs II)",
+          "question": "2. Bipolar Disorder (Type I vs II)",
           "type": "dropdown",
           "options": [
             {
@@ -2073,8 +2106,19 @@
       ],
       "steps": [
         {
+          "id": "adhd-overview",
+          "question": "1. Management Overview (Neuro-Affirming)",
+          "type": "dropdown",
+          "options": [
+            {
+              "label": "Consultant Treatment Philosophy",
+              "guidance": "MANAGEMENT PLAN OVERVIEW:\n1. **Goal**: Not 'normalcy', but 'functional alignment'. \n2. **Multimodal**: Medication (Stimulants) + Executive Function Coaching + Social adjustment.\n3. **Biological**: Correcting fronto-striatal dopaminergic deficit. Medication provides the 'brakes' for the brain.\n4. **Psycho-Social**: Reducing the 'shame cycle' associated with executive dysfunction. Occupational/Educational adjustments (reasonable adjustments) are essential."
+            }
+          ]
+        },
+        {
           "id": "adhd-diagnosis",
-          "question": "1. Diagnosis (DSM-5 / ICD-11)",
+          "question": "2. Diagnosis (DSM-5 / ICD-11)",
           "type": "dropdown",
           "options": [
             {
@@ -2142,8 +2186,19 @@
       ],
       "steps": [
         {
+          "id": "dementia-overview",
+          "question": "1. Management Overview (Holistic)",
+          "type": "dropdown",
+          "options": [
+            {
+              "label": "Philosophy of Dementia Care",
+              "guidance": "MANAGEMENT PLAN OVERVIEW:\n1. **Approach**: Person-centered care focusing on preserving dignity and functional independence.\n2. **Biological**: Managing reversible factors (infection/nutrition) and carefully titrating specialized cognitive enhancers.\n3. **Psychological**: Validation therapy and addressing 'met and unmet needs' underlying behavioral symptoms (BPSD).\n4. **Social**: Essential focus on Carer Support (respite, benefits) and home safety assessments (Occupational Therapy)."
+            }
+          ]
+        },
+        {
           "id": "dementia-subtypes",
-          "question": "1. Differential Diagnosis (Subtypes)",
+          "question": "2. Differential Diagnosis (Subtypes)",
           "type": "dropdown",
           "options": [
             {
@@ -2186,8 +2241,19 @@
       ],
       "steps": [
         {
+          "id": "alcohol-overview",
+          "question": "1. Management Overview (Recovery Model)",
+          "type": "dropdown",
+          "options": [
+            {
+              "label": "Holistic Addiction Strategy",
+              "guidance": "MANAGEMENT PLAN OVERVIEW:\n1. **Stages of Change**: Identify where the patient is (Pre-contemplation to Maintenance).\n2. **Harm Reduction**: Reducing units, switching to lower ABV, safe drinking intervals. \n3. **Biological**: Supervised detox if dependent (\u226510 units/day or morning shakes) followed by anti-craving meds.\n4. **Psychosocial**: Engagement with community services (AA, SMART Recovery) and addressing 'dual diagnosis' (co-morbid anxiety/depression)."
+            }
+          ]
+        },
+        {
           "id": "alcohol-withdrawal-ciwa",
-          "question": "1. Acute Withdrawal (CIWA-Ar)",
+          "question": "2. Acute Withdrawal (CIWA-Ar)",
           "type": "dropdown",
           "options": [
             {
@@ -2218,8 +2284,19 @@
       ],
       "steps": [
         {
+          "id": "pd-overview",
+          "question": "1. Management Overview (Validation & Boundaries)",
+          "type": "dropdown",
+          "options": [
+            {
+              "label": "Consultant Management Ethos",
+              "guidance": "MANAGEMENT PLAN OVERVIEW:\n1. **Validation**: Acknowledge the intense emotional pain while maintaining clear clinical boundaries.\n2. **Stability**: Long-term commitment to a single therapeutic model (DBT/MBTP). Avoid 'fragmented care' (seeing multiple different teams).\n3. **Safety**: Risk is often chronic but fluctuating. Focus on 'Safety Planning' over 'Risk Assessment scores'.\n4. **Medication**: Avoid polypharmacy. Use as sparse adjuncts for specific symptoms (sleep/arousal) ONLY."
+            }
+          ]
+        },
+        {
           "id": "personality-dbt",
-          "question": "1. Evidence-Based Therapy (DBT)",
+          "question": "2. Evidence-Based Therapy (DBT)",
           "type": "dropdown",
           "options": [
             {
@@ -2269,8 +2346,19 @@
       ],
       "steps": [
         {
+          "id": "insomnia-overview",
+          "question": "1. Management Overview (CBT-I First)",
+          "type": "dropdown",
+          "options": [
+            {
+              "label": "Sleep Specialist Strategy",
+              "guidance": "MANAGEMENT PLAN OVERVIEW:\n1. **Principle**: Distinguish between Primary Insomnia and secondary to comorbidities (Pain/OSA/Depression).\n2. **Therapy**: **CBT-I is the gold standard 1st-line treatment**—superior long-term results to pharmacological options.\n3. **Biological**: Circadian rhythm stabilization (melatonin) and conservative use of sedative hypnotics for short-term relief only.\n4. **Environment**: Optimization of the sleep environment and addressing 'sleep effort' (the paradoxical anxiety about falling asleep)."
+            }
+          ]
+        },
+        {
           "id": "insomnia-cbti",
-          "question": "1. CBT-I Specialist Techniques",
+          "question": "2. CBT-I Specialist Techniques",
           "type": "dropdown",
           "options": [
             {
@@ -3186,8 +3274,19 @@
       ],
       "steps": [
         {
+          "id": "ed-overview",
+          "question": "1. Management Overview (Medical & Psych)",
+          "type": "dropdown",
+          "options": [
+            {
+              "label": "Specialist Triage Strategy",
+              "guidance": "MANAGEMENT PLAN OVERVIEW:\n1. **Dual-Track Care**: Simultaneous stabilization of medical risk (Refeeding/Cardiovascular) and intensive specialized psychotherapy.\n2. **Biological**: Focus on electrolyte balance (K, PO4, Mg) and cardiac rhythm. Nutritional rehabilitation is the primary goal.\n3. **Psychological**: Addressing the 'cognitive anorexic core' and body image distortion using specialized models (MANTRA/CBT-ED).\n4. **Systemic**: Multi-disciplinary team (MDT) involvement is mandatory (Psychiatrist, Dietitian, Specialist Nurse)."
+            }
+          ]
+        },
+        {
           "id": "ed-emergency",
-          "question": "1. Emergency Risk (MARSIPAN)",
+          "question": "2. Emergency Risk (MARSIPAN)",
           "type": "dropdown",
           "options": [
             {
