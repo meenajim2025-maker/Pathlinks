@@ -158,15 +158,39 @@ function getSystemFallbackSteps(systemId, title) {
       }];
     }
 
-    // Default generic management
+    if (systemId === 'cardiology' || t.includes('heart') || t.includes('cardio')) {
+      return [{
+        id: 'cardio-mgmt',
+        question: 'Cardiology Management (RCP/BCS)',
+        type: 'dropdown',
+        options: [{
+          label: 'Immediate Actions & Risk Strategy',
+          guidance: 'MANAGEMENT PLAN:\n1. Diagnostics: Baseline ECG, BP, and Lipid profile mandatory.\n2. Risk Assessment: Calculate QRISK3; if AF present, calculate CHA2DS2-VASc and HAS-BLED.\n3. Lifestyle: Prioritize smoking cessation, cardioprotective diet (Mediterranean), and 150 min activity/week.\n4. Meds: Titrate RAAS blockade and Beta-blockers to HR/BP targets as per NICE/ESC.\n5. Safety-net: Urgent review (999) if cardiac chest pain (>15 mins), syncope, or acute desaturation.'
+        }]
+      }];
+    }
+
+    if (systemId === 'respiratory' || t.includes('lung') || t.includes('breath')) {
+      return [{
+        id: 'resp-mgmt',
+        question: 'Respiratory Care Plan (BTS/SIGN)',
+        type: 'dropdown',
+        options: [{
+          label: 'Symptom Control & ACBT',
+          guidance: 'MANAGEMENT PLAN:\n1. Technique: Review inhaler technique (In-Check dial) and ensure spacers are used for MDIs.\n2. Non-Pharm: Advise ACBT (Active Cycle of Breathing Technique) and pulmonary rehabilitation if MRC score ≥3.\n3. Action Plan: Provide written asthma/COPD action plan including rescue pack triggers (e.g. Prednisolone 30mg for 5 days).\n4. Safety-net: Urgently review if increased work of breathing, silent chest, or inability to complete sentences.'
+        }]
+      }];
+    }
+
+    // Default generic management - Consultant Grade Fallback
     return [{
-      id: 'bp-management',
-      question: 'Management (Best Practice)',
+      id: 'consultant-fallback-mgmt',
+      question: 'Management Strategy (Consultant Grade)',
       type: 'dropdown',
       options: [
         {
-          label: 'Initial Management Plan',
-          guidance: 'MANAGEMENT PLAN:\n1. Advice: Advise on activity levels, hydration, and non-pharmacological measures.\n2. Information: Provide written patient info and use shared-decision making.\n3. Safety-netting: Provide clear triggers for re-consultation (rapid worsening, new red flags).\n4. Review: Arrange review based on clinical stability (e.g. 48h for acute, 2-4 weeks for chronic).'
+          label: 'Bio-Psycho-Social Approach',
+          guidance: 'MANAGEMENT PLAN:\n1. Biological: Optimize physiological factors (nutrition, sleep, activity) and review pharmacological options via local clinical formulary.\n2. Psychological: Assess impact on mental wellbeing; utilize psycho-education and shared-decision making tools.\n3. Social: Address occupational, relational, and environmental drivers. Signpost to social prescribing if appropriate.\n4. Safety-net: Advise specific red flags (e.g. weight loss, night sweats, localized pain) and arrange follow-up based on clinical trajectory (standard 2-4 weeks).'
         }
       ]
     }];
@@ -180,24 +204,24 @@ function getSystemFallbackSteps(systemId, title) {
       type: 'dropdown',
       options: [
         {
-          label: 'Referral & Safety-netting',
-          guidance: 'MANAGEMENT PLAN:\n1. Referral: Refer 2WW if malignancy suspected. Urgent referral if clinical compromise. Routine if primary care management fails.\n2. Waiting List: Ensure patient knows how to report deterioration while waiting.\n3. Review: Review and optimize primary care management in the interim.'
+          label: 'Referral & Clinical Triage',
+          guidance: "MANAGEMENT PLAN:\n1. Triage: Refer via 2WW if malignancy suspected. Use 'Urgent' (within 2 weeks) for rapidly progressive non-malignant disease.\n2. Diagnostics: Ensure all mandatory primary care work-up (e.g. CT, Bloods, Scans) is completed before referral to prevent rejection.\n3. Safety-net: Ensure the patient understands the expected waiting time and knows who to contact if symptoms escalate."
         }
       ]
     }];
   }
 
-  // Fallback for generic patterns
+  // Final Catch-all Fallback
   return [
     {
       id: 'guidance',
-      question: 'Clinical Guidance (Best Practice)',
+      question: 'Clinical Guidance (Consultant Approach)',
       type: 'dropdown',
       options: [
         {
           value: 'standard',
-          label: 'Management Overview',
-          guidance: 'MANAGEMENT PLAN:\n1. Assessment: Full clinical assessment to exclude red flags.\n2. Action: Refer to local clinical formulary for specific pharmacotherapy.\n3. Safety-net: Provide robust safety-netting advice.\n4. Follow-up: Arrange review based on clinical findings.'
+          label: 'Holistic Management Plan',
+          guidance: 'MANAGEMENT PLAN OVERVIEW:\n1. Assessment: Targeted clinical examination to confirm diagnosis and exclude NICE-defined red flags.\n2. Multimodal Action: Combine lifestyle modification, evidence-based pharmacotherapy (per NICE/BNF), and patient education.\n3. Safety-net: Explicit instruction on emergency symptoms (Red Flags) and 24/7 access to urgent care if required.\n4. Follow-up: Scheduled review to assess treatment response and functional milestone achievement.'
         }
       ]
     }

@@ -353,7 +353,14 @@
 
     <section id="protocols-view" class="view hidden">
         <h2>Clinical Protocols Library</h2>
-        <div id="protocols-list" class="grid-container">
+        <div class="card" style="margin-bottom: 2rem;">
+            <div class="field-group">
+                <label for="protocol-filter">Filter protocols (e.g. Ferritin, Sodium, HIV...)</label>
+                <input type="text" id="protocol-filter" placeholder="Type to filter protocols..."
+                    style="max-width: 400px;">
+            </div>
+        </div>
+        <div id="protocol-list-container" class="protocol-grid">
             <!-- Protocol cards injected by JS -->
         </div>
     </section>
@@ -371,10 +378,10 @@
     <div id="protocol-modal" class="modal-overlay hidden">
         <div class="modal-content">
             <header class="modal-header">
-                <h2 id="modal-title">Protocol Details</h2>
-                <button class="close-modal">&times;</button>
+                <h2 id="protocol-modal-title">Protocol Details</h2>
+                <button class="close-modal" id="protocol-modal-close">&times;</button>
             </header>
-            <div id="modal-body" class="modal-body"></div>
+            <div id="protocol-modal-body" class="modal-body"></div>
         </div>
     </div>
 

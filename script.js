@@ -729,7 +729,7 @@ function renderProtocols(filter = "") {
 }
 
 function renderEmisIntegrations() {
-    const exportDiv = document.getElementById('emis-code-export');
+    const exportDiv = document.getElementById('emis-integration-panel');
     exportDiv.innerHTML = `
         <div class="export-container" style="display: flex; flex-direction: column; gap: 20px;">
             

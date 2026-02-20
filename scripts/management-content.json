@@ -3561,6 +3561,189 @@
           ]
         }
       ]
+    },
+    {
+      "keywords": [
+        "b12",
+        "cobalamin"
+      ],
+      "steps": [
+        {
+          "id": "b12-mgmt",
+          "question": "Management Step",
+          "type": "dropdown",
+          "options": [
+            {
+              "label": "B12 Deficiency - Replacement",
+              "guidance": "MANAGEMENT PLAN:\n1. Non-dietary (e.g. Pernicious Anaemia): Hydroxocobalamin 1mg IM every other day for 2 weeks (loading), then 1mg IM every 3 months for life.\n2. Dietary: Oral cyanocobalamin 50-150mcg daily between meals, or two 1mg injections per year.\n3. Monitoring: Reticulocyte count at 7-10 days; Hb/MCV at 8 weeks.\n4. Review: Exclude co-existing Iron/Folate deficiency if response sub-optimal. NICE CKS."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "keywords": [
+        "vitamin d",
+        "cholecalciferol"
+      ],
+      "steps": [
+        {
+          "id": "vit-d-mgmt",
+          "question": "Severity of Deficiency",
+          "type": "dropdown",
+          "options": [
+            {
+              "label": "Deficiency (<30 nmol/L)",
+              "guidance": "MANAGEMENT PLAN:\n1. Loading: 300,000 IU total over 6-10 weeks (e.g. 20,000 IU twice weekly for 7 weeks or 50,000 IU weekly for 6 weeks).\n2. Maintenance: 800-2000 IU daily (or 20,000-40,000 IU monthly) lifelong if risk factors persist.\n3. Safety: Avoid loading if primary hyperparathyroidism or renal stones suspected. ROS Guidelines."
+            },
+            {
+              "label": "Insufficiency (30-50 nmol/L)",
+              "guidance": "MANAGEMENT PLAN:\n1. Strategy: Advise dietary sources (oily fish, eggs) and safe sun exposure.\n2. Supplement: 800-1000 IU daily as maintenance; loading not routinely required unless symptomatic or high-risk of progression. NICE CKS."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "keywords": [
+        "iron deficiency",
+        "ferritin",
+        "anaemia"
+      ],
+      "steps": [
+        {
+          "id": "iron-mgmt",
+          "question": "Management Route",
+          "type": "dropdown",
+          "options": [
+            {
+              "label": "Oral Replacement",
+              "guidance": "MANAGEMENT PLAN:\n1. Dose: Ferrous Fumarate 210mg (or Sulfate 200mg) once daily or every other day (to reduce GI side effects per recent evidence).\n2. Counseling: Take on empty stomach; avoid tea/coffee/antacids within 2h.\n3. Monitoring: Check Hb in 2-4 weeks. Continue for 3 months after Hb normalizes to replete stores. BSG Guidelines."
+            },
+            {
+              "label": "IV Iron Referral",
+              "guidance": "MANAGEMENT PLAN:\n1. Criteria: Persistent intolerance to oral iron, profound deficiency with symptomatic anaemia, or malabsorption (e.g. IBD/Gastric bypass).\n2. Action: Arrange Ferric Carboxymaltose (Ferinject) or Iron Isomaltoside (Monofer) infusion via local daycare unit."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "keywords": [
+        "hypothyroid",
+        "tsh",
+        "levothyroxine"
+      ],
+      "steps": [
+        {
+          "id": "thyroid-mgmt",
+          "question": "Initiation or Review",
+          "type": "dropdown",
+          "options": [
+            {
+              "label": "Initiation: Levothyroxine",
+              "guidance": "MANAGEMENT PLAN:\n1. Dose: 1.6 mcg/kg/day (typically 50-100mcg) if young/healthy. Start 25mcg if elderly or history of IHD.\n2. Counseling: Take 30-60 mins before breakfast/caffeine; separate from Calcium/Iron by 4h.\n3. Review: Repeat TSH in 6-8 weeks. Adjust dose by 12.5-25mcg until euthyroid. NICE CKS."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "keywords": [
+        "corneal",
+        "ulcer",
+        "keratitis"
+      ],
+      "steps": [
+        {
+          "id": "eye-urgent-mgmt",
+          "question": "Urgent Action",
+          "type": "dropdown",
+          "options": [
+            {
+              "label": "Suspected Microbial Keratitis",
+              "guidance": "MANAGEMENT PLAN:\n1. IMMEDIATE: Emergency Same-Day Ophthalmology referral (A&E eye clinic).\n2. First Aid: Stop contact lens wear immediately; do not patch the eye.\n3. Note: High risk of permanent vision loss/perforation within 24-48h if untreated. Moorfields Guidelines."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "keywords": [
+        "ckd",
+        "renal",
+        "egfr"
+      ],
+      "steps": [
+        {
+          "id": "ckd-complex-mgmt",
+          "question": "Optimization Steps",
+          "type": "dropdown",
+          "options": [
+            {
+              "label": "Cardiorenal-Metabolic Plan",
+              "guidance": "MANAGEMENT PLAN:\n1. ACEi/ARB: Titrate to max tolerated dose if ACR >3mg/mmol (DM) or >30mg/mmol (non-DM).\n2. SGLT2i: Add (e.g. Dapagliflozin 10mg) if eGFR >25 and ACR >22.3 mg/mmol to reduce progression risk.\n3. BP Target: Aim for <140/90 (or <130/80 if ACR >70).\n4. Statins: Offer Atorvastatin 20mg for primary prevention of CVD. NICE NG203."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "keywords": [
+        "atrial fibrillation",
+        "af"
+      ],
+      "steps": [
+        {
+          "id": "af-mgmt",
+          "question": "Management Priority",
+          "type": "dropdown",
+          "options": [
+            {
+              "label": "Anticoagulation & Rate Control",
+              "guidance": "MANAGEMENT PLAN:\n1. Anticoagulation: Offer DOAC (Apixaban/Edoxaban) if CHA2DS2-VASc ≥2 (men) or ≥3 (women). Consider if score is 1.\n2. Rate Control: First-line Beta-blocker (Bisoprolol) or CCB (Diltiazem). Aim for resting HR <90 bpm.\n3. Safety: Review HAS-BLED/ORBIT score to mitigate bleeding risk; counsel on signs of major bleed. NICE NG196."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "keywords": [
+        "asthma"
+      ],
+      "steps": [
+        {
+          "id": "asthma-steps-mgmt",
+          "question": "Treatment Step",
+          "type": "dropdown",
+          "options": [
+            {
+              "label": "Adult Step-Up Plan",
+              "guidance": "MANAGEMENT PLAN:\n1. Step 1: ICS (low dose) + SABA as needed (or MART).\n2. Step 2: Add LAMA or Montelukast if poorly controlled on ICS.\n3. MART: Consider Maintenance and Reliever Therapy (e.g. Fostair) for better symptom control and reduced exacerbations.\n4. Technique: Mandatory inhaler technique check every review. BTS/SIGN Guidelines."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "keywords": [
+        "copd",
+        "bronchitis",
+        "emphysema"
+      ],
+      "steps": [
+        {
+          "id": "copd-optimization-mgmt",
+          "question": "Management Strategy",
+          "type": "dropdown",
+          "options": [
+            {
+              "label": "Stable COPD Plan",
+              "guidance": "MANAGEMENT PLAN:\n1. Meds: Start LAMA+LABA (e.g. Anoro) if breathless despite SABA. Add ICS (Triple Therapy) if asthma features or ≥2 exacerbations/year.\n2. Rescue: Provide rescue pack (Prednisolone 30mg for 5d + Amoxicillin 500mg tds for 5d) for use in acute exacerbations.\n3. Non-Pharm: Smoking cessation (essential), pulmonary rehab referral, and annual flu/pneumococcal vaccines. NICE NG115."
+            }
+          ]
+        }
+      ]
     }
   ]
 }

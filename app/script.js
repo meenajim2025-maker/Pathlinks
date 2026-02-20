@@ -677,11 +677,15 @@ function viewFullProtocol(testName) {
     modal.setAttribute('aria-hidden', 'false');
 }
 
-function renderProtocols() {
+function renderProtocols(filter = "") {
     const container = document.getElementById('protocol-list-container');
     container.innerHTML = "";
+    const term = filter.toLowerCase();
+
     testData.forEach(cat => {
         cat.tests.forEach(test => {
+            if (term && !test.name.toLowerCase().includes(term) && !cat.category.toLowerCase().includes(term)) return;
+
             const div = document.createElement('div');
             div.className = "protocol-item";
             const safeName = test.name.replace(/'/g, "\\'");
@@ -695,6 +699,13 @@ function renderProtocols() {
             container.appendChild(div);
         });
     });
+
+    const filterInput = document.getElementById('protocol-filter');
+    if (filterInput && !filterInput.dataset.listener) {
+        filterInput.addEventListener('input', (e) => renderProtocols(e.target.value));
+        filterInput.dataset.listener = "true";
+    }
+
     document.getElementById('protocol-modal-close').onclick = () => {
         document.getElementById('protocol-modal').classList.add('hidden');
         document.getElementById('protocol-modal').setAttribute('aria-hidden', 'true');
@@ -708,7 +719,7 @@ function renderProtocols() {
 }
 
 function renderEmisIntegrations() {
-    const exportDiv = document.getElementById('emis-code-export');
+    const exportDiv = document.getElementById('emis-integration-panel');
     exportDiv.innerHTML = `
         <div class="export-container" style="display: flex; flex-direction: column; gap: 20px;">
             
@@ -827,7 +838,7 @@ function renderEmisIntegrations() {
     // Setup Guide Download Handler
     document.getElementById('download-setup-guide')?.addEventListener('click', async () => {
         try {
-            const response = await fetch('./docs/EMIS_PROTOCOL_SETUP_GUIDE.md');
+            const response = await fetch('../docs/EMIS_PROTOCOL_SETUP_GUIDE.md');
             if (!response.ok) throw new Error('File not found');
             const text = await response.text();
             const blob = new Blob([text], { type: 'text/markdown;charset=utf-8' });
