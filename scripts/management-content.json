@@ -601,40 +601,33 @@
       "keywords": [
         "depression",
         "mdd",
-        "low mood"
+        "treatment resistant depression",
+        "trd"
       ],
       "steps": [
         {
-          "id": "depression-diagnosis",
-          "question": "1. Diagnosis & Severity (DSM-5 / ICD-11)",
+          "id": "depression-dx",
+          "question": "1. Diagnosis & Severity (Consultant Grade)",
           "type": "dropdown",
           "options": [
             {
-              "label": "MDD Diagnosis (DSM-5)",
-              "guidance": "MANAGEMENT PLAN:\n1. Criteria: \u22655 of 9 symptoms for \u22652 weeks (must include low mood or anhedonia). Other: sleep, interest, guilt, energy, concentration, appetite, psychomotor, suicidal ideation.\n2. Severity: Mild (few symptoms above 5, minor impairment); Moderate; Severe (\u22657 symptoms, marked functional impairment).\n3. Screening: PHQ-9 (Score \u226510 indicates probable MDD)."
-            },
-            {
-              "label": "ICD-11 (Depressive Episode)",
-              "guidance": "MANAGEMENT PLAN:\n1. 6A70 Criteria: Persistent low mood, diminished interest, or decreased energy + at least 10 other symptoms (disturbed sleep, changes in appetite, cognitive/suicidal). Minimum 2 weeks."
+              "label": "MDD Diagnosis (DSM-5 / PHQ-9)",
+              "guidance": "MANAGEMENT PLAN:\n1. Core: \u22655 of 9 symptoms for \u22652 weeks. Must include Mood or Anhedonia.\n2. Severity Stratification: \n   - Mild: PHQ-9 10-14. \n   - Moderate: PHQ-9 15-19.\n   - Severe: PHQ-9 \u226520 OR presence of psychotic features (delusions of guilt/poverty).\n3. Risk: Mandatory assessment of suicide/self-harm intent and access to means."
             }
           ]
         },
         {
-          "id": "depression-mgmt",
-          "question": "2. Management Strategy (NICE NG222 / RCPsych)",
+          "id": "depression-tx",
+          "question": "2. Treatment Ladder (NICE NG222 / RCPsych)",
           "type": "dropdown",
           "options": [
             {
-              "label": "Mild Depression",
-              "guidance": "MANAGEMENT PLAN:\n1. 1st-line: Non-pharmacological. Group CBT, self-help, exercise, or peer support. Watchful waiting for 2 weeks.\n2. Do NOT offer antidepressant unless history of severe depression or chronic (>2 years) mild symptoms."
+              "label": "Step 1 & 2: First-line",
+              "guidance": "MANAGEMENT PLAN:\n1. Choice: SSRI (Sertraline 50-200mg or Fluoxetine 20-40mg). \n2. Monitoring: Review in 1-2 weeks. Full effect takes 4-6 weeks at therapeutic dose.\n3. Adjunct: High-intensity CBT or IPT (Interpersonal Therapy)."
             },
             {
-              "label": "Moderate to Severe Depression",
-              "guidance": "MANAGEMENT PLAN:\n1. 1st-line: SSRI (Sertraline or Fluoxetine) + Psychological therapy (CBT or IPT).\n2. Treatment Resistant: Ensure 4-6 weeks at max dose. If no response, switch to different SSRI or SNRI (Venlafaxine). Consider augmentation (Lithium or Quetiapine) under specialist advice. NICE NG222."
-            },
-            {
-              "label": "Crisis & Risk (RCPsych)",
-              "guidance": "MANAGEMENT PLAN:\n1. Risk Assessment: Plan, intent, lethality, and protective factors.\n2. Referral: Urgent referral to Crisis Resolution Home Treatment (CRHT) if high risk of self-harm or suicide. NICE NG225."
+              "label": "Step 3: Treatment Resistance (TRD)",
+              "guidance": "MANAGEMENT PLAN:\n1. Definition: Failure of \u22652 adequate trials of different antidepressant classes.\n2. Switch: Transition to SNRI (Venlafaxine MR 75-375mg) OR NASSA (Mirtazapine 15-45mg).\n3. Augmentation: \n   - Lithium (Level 0.6-0.8 mmol/L).\n   - Atypical Antipsychotic (Quetiapine 150-300mg or Aripiprazole 2.5-5mg).\n4. ECT: Urgent specialist referral if life-threatening (catatonia, severe food/fluid refusal)."
             }
           ]
         }
@@ -644,37 +637,26 @@
       "keywords": [
         "anxiety",
         "gad",
-        "panic",
-        "phobia"
+        "panic disorder",
+        "social anxiety"
       ],
       "steps": [
         {
-          "id": "anxiety-diagnosis",
-          "question": "1. Diagnosis (GAD-7 / DSM-5)",
+          "id": "anxiety-subtype",
+          "question": "1. Subtype Identification (Consultant Analysis)",
           "type": "dropdown",
           "options": [
             {
-              "label": "GAD (Generalized Anxiety Disorder)",
-              "guidance": "MANAGEMENT PLAN:\n1. DSM-5: Excessive anxiety/worry most days for \u22656 months about multiple events.\n2. Screening: GAD-7 score \u226510. Exclude hyperthyroidism and substance misuse."
+              "label": "GAD (Generalized Anxiety)",
+              "guidance": "MANAGEMENT PLAN:\n1. Criteria: Persistent worry >6 months. \n2. 1st-line: SSRI (Sertraline) + applied relaxation or high-intensity CBT.\n3. 2nd-line: SNRI (Duloxetine/Venlafaxine) or Pregabalin (Caution: Risk of dependency/misuse)."
             },
             {
-              "label": "Panic Disorder",
-              "guidance": "MANAGEMENT PLAN:\n1. Recurrent unexpected panic attacks. Persistent concern about future attacks or their consequences (e.g. cardiac). NICE CG113."
-            }
-          ]
-        },
-        {
-          "id": "anxiety-mgmt",
-          "question": "2. Management (NICE CG113)",
-          "type": "dropdown",
-          "options": [
-            {
-              "label": "Stepped Care for GAD",
-              "guidance": "MANAGEMENT PLAN:\n1. Step 1: Education & active monitoring.\n2. Step 2: Low-intensity psychological (self-help CBT).\n3. Step 3: High-intensity CBT OR Drug treatment (Sertraline is 1st-line off-label for GAD; Duloxetine/Pregabalin as 2nd-line)."
+              "label": "Panic Disorder (with/without Agoraphobia)",
+              "guidance": "MANAGEMENT PLAN:\n1. Features: Recurrent unexpected attacks + fear of future attacks/implications.\n2. Treatment: CBT focused on interoceptive exposure (physical sensations). SSRI (Fluoxetine/Sertraline) if therapy failed or preferred. NICE CG113."
             },
             {
-              "label": "Drug: Sertraline (GAD-specific)",
-              "guidance": "MANAGEMENT PLAN:\n1. Dose: Start 25-50mg. Titrate slowly to avoid initial jitteriness. Continue for \u22651 year after remission. BNF."
+              "label": "Social Anxiety Disorder",
+              "guidance": "MANAGEMENT PLAN:\n1. Features: Marked fear of social/performance situations.\n2. 1st-line: Individual CBT (Clark & Wells or Heimberg models).\n3. Meds: Escitalopram or Sertraline if CBT declined/unavailable. NICE CG159."
             }
           ]
         }
@@ -713,32 +695,36 @@
       ],
       "steps": [
         {
-          "id": "bipolar-mgt",
-          "question": "1. Bipolar Disorder (RCPsych)",
+          "id": "bipolar-phase",
+          "question": "1. Bipolar Disorder (Type I vs II)",
           "type": "dropdown",
           "options": [
             {
               "label": "Acute Mania / Hypomania",
-              "guidance": "MANAGEMENT PLAN:\n1. Immediate: Stop antidepressant. Start Antipsychotic (Quetiapine, Risperidone, or Olanzapine).\n2. Urgent Referral: Specialist CMHT or Crisis team for stabilization. NICE CG185."
+              "guidance": "MANAGEMENT PLAN (NICE CG185):\n1. Stop: Antidepressants immediately.\n2. 1st-line: Antipsychotic (Haloperidol, Olanzapine, Quetiapine, or Risperidone).\n3. Failure: Trial 2nd antipsychotic. Lithium as 3rd-line in acute phase.\n4. Type distinction: Bipolar I (Full mania, often requires admission); Bipolar II (Hypomania + Severe Depression)."
             },
             {
-              "label": "Prophylaxis (Mood Stabilizers)",
-              "guidance": "MANAGEMENT PLAN:\n1. Lithium: 1st-line. Requires monitoring (Levels q3m, TFT/U&E q6m). Target level: 0.6-0.8 mmol/L.\n2. Valproate: Do NOT use in women of childbearing potential unless part of pregnancy prevention programme."
+              "label": "Bipolar Depression",
+              "guidance": "MANAGEMENT PLAN:\n1. Choices: Quetiapine (monotherapy), Olanzapine + Fluoxetine, or Lamotrigine (titrate slowly to prevent SJS).\n2. Avoid: Antidepressant monotherapy (risk of switch to mania)."
+            },
+            {
+              "label": "Maintenance (Lithium)",
+              "guidance": "MANAGEMENT PLAN:\n1. Target Level: 0.6-1.0 mmol/L.\n2. Monitoring: Levels q3m (initially q1w). TFT/U&E/Calcium q6m.\n3. Toxicity: Coarse tremor, ataxia, vomiting, confusion. Emergency A&E."
             }
           ]
         },
         {
-          "id": "psychosis-mgt",
-          "question": "2. Early Psychosis / Schizophrenia",
+          "id": "schizophrenia-tx",
+          "question": "2. Schizophrenia & Psychosis",
           "type": "dropdown",
           "options": [
             {
-              "label": "First Episode Psychosis (FEP)",
-              "guidance": "MANAGEMENT PLAN:\n1. Symptoms: Delusions, hallucinations, disorganized thinking.\n2. Referral: **Emergency (within 24h)** to Early Intervention in Psychosis (EIP) service. NICE CG178."
+              "label": "Early Intervention (EIP)",
+              "guidance": "MANAGEMENT PLAN:\n1. Referral: Mandatory within 24h of suspected First Episode Psychosis (FEP).\n2. Pharmacology: Oral atypical antipsychotic (Aripiprazole or Risperidone low-dose). NICE CG178."
             },
             {
-              "label": "Schizophrenia Monitoring",
-              "guidance": "MANAGEMENT PLAN:\n1. Physical Health: Mandatory annual review of Lipids, HbA1c, Weight, BP (high risk of metabolic syndrome). NICE CG178."
+              "label": "Treatment Resistant Schizophrenia (TRS)",
+              "guidance": "MANAGEMENT PLAN:\n1. Definition: Failure of 2x antipsychotics (at least one 2nd-gen) for \u22656 weeks at optimal dose.\n2. Clozapine: **The only evidence-based treatment for TRS**. Mandatory FBC monitoring (risk of agranulocytosis). Specialist initiation only."
             }
           ]
         }
@@ -2102,13 +2088,21 @@
           ]
         },
         {
-          "id": "adhd-meds",
-          "question": "2. Treatment (BNF / NICE)",
+          "id": "adhd-meds-specialist",
+          "question": "2. Pharmacotherapy (Consultant Selection)",
           "type": "dropdown",
           "options": [
             {
-              "label": "Pharmacotherapy (Specialist Only)",
-              "guidance": "MANAGEMENT PLAN:\n1. Child 1st-line: Methylphenidate.\n2. Adult 1st-line: Methylphenidate or Lisdexamfetamine.\n3. Monitoring: Baseline ECG (if cardiac risk), BP/Pulse, Weight and Height (6-monthly)."
+              "label": "Lisdexamfetamine (Elvanse)",
+              "guidance": "MANAGEMENT PLAN:\n1. 1st-line for adults. Prodrug (decreased abuse potential).\n2. Dose: 30mg-70mg. \n3. Side effects: Insomnia, increased BP, appetite suppression."
+            },
+            {
+              "label": "Methylphenidate (Choice of IR/ER)",
+              "guidance": "MANAGEMENT PLAN:\n1. 1st-line for children/young people. \n2. Brands: **Conserta XL** (22% IR/78% ER) or **Medikinet XL** (50% IR/50% ER). \n3. Shared Care: GP takes over prescribing only after stabilization (usually 3 months) under Specialist Protocol."
+            },
+            {
+              "label": "Non-Stimulants (Atomoxetine)",
+              "guidance": "MANAGEMENT PLAN:\n1. Choice if stimulants contraindicated or high risk of diversion/misuse.\n2. Warning: Rare risk of severe liver injury and suicidal ideation."
             }
           ]
         }
@@ -2142,44 +2136,42 @@
       "keywords": [
         "dementia",
         "alzheimer",
-        "cognitive impairment",
-        "mci"
+        "vascular dementia",
+        "lewy body",
+        "ftd"
       ],
       "steps": [
         {
-          "id": "dementia-diagnosis",
-          "question": "1. Diagnosis & Triage (NICE NG97)",
+          "id": "dementia-subtypes",
+          "question": "1. Differential Diagnosis (Subtypes)",
           "type": "dropdown",
           "options": [
             {
-              "label": "Suspected MCI / Dementia",
-              "guidance": "MANAGEMENT PLAN:\n1. Screening: Use **6-CIT** or **GPCOG** (Standard). If score indicates impairment, proceed to formal workup.\n2. Exclude Reversible Causes: Bloods (FBC, U&E, LFT, Bone, TFT, B12/Folate, HbA1c).\n3. Imaging: Structural imaging (CT/MRI) is mandatory to exclude tumors/vasculopathy. \n4. Referral: Memory Assessment Service (MAS) for definitive diagnosis."
-            }
-          ]
-        },
-        {
-          "id": "dementia-meds",
-          "question": "2. Pharmacotherapy (Specialist Only)",
-          "type": "dropdown",
-          "options": [
-            {
-              "label": "AChE Inhibitors (Donepezil/Galantamine)",
-              "guidance": "MANAGEMENT PLAN:\n1. Eligibility: Mild to moderate Alzheimer's, Parkinson's dementia, or Lewy Body dementia.\n2. Safety: **Mandatory ECG** before initiation to check for bradycardia/heart block. \n3. Side Effects: GI upset, vivid dreams, muscle cramps."
+              "label": "Alzheimer's Disease (Commonest)",
+              "guidance": "MANAGEMENT PLAN:\n1. Features: Early episodic memory loss, word-finding difficulty.\n2. Imaging: Medial temporal lobe atrophy.\n3. Meds: AChE inhibitors (Donepezil) or NMDA antagonists (Memantine)."
             },
             {
-              "label": "NMDA Antagonist (Memantine)",
-              "guidance": "MANAGEMENT PLAN:\n1. Indication: Moderate to severe Alzheimer's or if AChE inhibitors contraindicated.\n2. Renal: Adjust dose if eGFR <50."
+              "label": "Vascular Dementia",
+              "guidance": "MANAGEMENT PLAN:\n1. Features: Stepwise decline, focal neurological signs, executive dysfunction.\n2. Management: Aggressive V-risk factor control (BP, Lipids, Diabetes, Antiplatelets)."
+            },
+            {
+              "label": "Dementia with Lewy Bodies (DLB)",
+              "guidance": "MANAGEMENT PLAN:\n1. Triad: Visual hallucinations, Parkinsonism, Fluctuating cognition.\n2. **CRITICAL WARNING**: Extreme sensitivity to antipsychotics (Neuroleptic Malignant Syndrome risk). Use Quetiapine or Clozapine with extreme caution if BPSD severe."
+            },
+            {
+              "label": "Frontotemporal Dementia (FTD)",
+              "guidance": "MANAGEMENT PLAN:\n1. Features: Personality change, disinhibition, hyperoriality, or language decline (Primary Progressive Aphasia).\n2. Management: SSRIs (e.g. Paroxetine) for behavioral symptoms. AChE inhibitors may worsen agitation in FTD."
             }
           ]
         },
         {
-          "id": "bpsd",
-          "question": "3. BPSD (Behavioral Symptoms)",
+          "id": "bpsd-detailed",
+          "question": "2. BPSD (Behavioral Symptoms)",
           "type": "dropdown",
           "options": [
             {
-              "label": "Agitation & Distress",
-              "guidance": "MANAGEMENT PLAN:\n1. Non-Drug: Identify triggers (pain, infection, environmental). Use sensory stimulation, aromatherapy.\n2. Antipsychotics: Only if risk of harm. Use lowest dose (e.g. Risperidone 0.25mg). **Warning: Increased risk of stroke/death in dementia.** Review at 6-12 weeks. NICE NG97."
+              "label": "Management Strategy",
+              "guidance": "MANAGEMENT PLAN:\n1. Step 1: Rule out delirium (UTI/Pain/Meds/Constipation/Dehydration).\n2. Step 2: Non-pharmacological (Life story work, music therapy).\n3. Step 3: Pharmacological (Risperidone 0.25-0.5mg max 6w). Consider Trazodone or Lorazepam for acute severe distress. NICE NG97."
             }
           ]
         }
@@ -2189,40 +2181,29 @@
       "keywords": [
         "alcohol",
         "aud",
-        "alcohol withdrawal",
-        "drinking"
+        "withdrawal",
+        "wernicke"
       ],
       "steps": [
         {
-          "id": "alcohol-diagnosis",
-          "question": "1. Screening & Risk (AUDIT)",
+          "id": "alcohol-withdrawal-ciwa",
+          "question": "1. Acute Withdrawal (CIWA-Ar)",
           "type": "dropdown",
           "options": [
             {
-              "label": "Screening (AUDIT-C)",
-              "guidance": "MANAGEMENT PLAN:\n1. High Risk: Score \u22658 (AUDIT) or \u22655 (AUDIT-C).\n2. Physical Signs: Spider naevi, palmar erythema, hepatomegaly. Check GGT and MCV (macrocytosis)."
+              "label": "Withdrawal Severity & Management",
+              "guidance": "MANAGEMENT PLAN:\n1. Severity: \n   - Mild (CIWA <10): Supportive, vitamins only.\n   - Mod/Severe (CIWA \u226510): Chlordiazepoxide regime.\n2. **Wernicke's Triad**: Ophthalmoplegia, Ataxia, Confusion. \n3. **CRITICAL**: Give Pabrinex (Thiamine) BEFORE Glucose to prevent precipitating Wernicke's. NICE CG115."
             }
           ]
         },
         {
-          "id": "alcohol-withdrawal",
-          "question": "2. Acute Withdrawal & Wernicke's",
+          "id": "alcohol-maintenance",
+          "question": "2. Maintenance of Abstinence",
           "type": "dropdown",
           "options": [
             {
-              "label": "Withdrawal Protocol (Chlordiazepoxide)",
-              "guidance": "MANAGEMENT PLAN:\n1. CIWA-Ar: Assess severity. If score \u226510, start reducing regime (e.g. Chlordiazepoxide 20-40mg qds, tapering over 7-10 days).\n2. Wernicke's Prevention: **Pabrinex IM/IV** (High-dose Thiamine) 1 pair tds for 3-5 days for high-risk/malnourished patients. Oral Thiamine 200mg-300mg daily. NICE CG115."
-            }
-          ]
-        },
-        {
-          "id": "alcohol-relapse",
-          "question": "3. Relapse Prevention (Anti-Craving)",
-          "type": "dropdown",
-          "options": [
-            {
-              "label": "Acamprosate / Naltrexone",
-              "guidance": "MANAGEMENT PLAN:\n1. Acamprosate: Reduces cravings. Dose: 666mg tds. Start as soon as abstinence achieved.\n2. Naltrexone: Opioid antagonist, reduces 'high' from drinking. Specialist initiation. Monitor LFTs."
+              "label": "Anti-Craving Pharmacotherapy",
+              "guidance": "MANAGEMENT PLAN:\n1. **Acamprosate**: 666mg tds. Enhances GABA/Reduces Glutamate. Start day 1 of abstinence.\n2. **Naltrexone**: 50mg OD. Blocks opioid reward. Monitor LFTs.\n3. **Disulfiram (Antabuse)**: Specialist only. Causes acetaldehyde accumulation (vomiting/tachycardia if alcohol consumed). Significant safety risk."
             }
           ]
         }
@@ -2233,21 +2214,28 @@
         "personality disorder",
         "eupd",
         "bpd",
-        "borderline"
+        "dbt"
       ],
       "steps": [
         {
-          "id": "personality-mgt",
-          "question": "1. Specialist Management (BPD/EUPD)",
+          "id": "personality-dbt",
+          "question": "1. Evidence-Based Therapy (DBT)",
           "type": "dropdown",
           "options": [
             {
-              "label": "Diagnosis & Approach (NICE CG78)",
-              "guidance": "MANAGEMENT PLAN:\n1. Criteria (DSM-5): Instability of relationships, self-image, and affect, plus marked impulsivity.\n2. Management: **Dialectical Behaviour Therapy (DBT)** is the gold standard (specialist referral).\n3. Crisis: Use structured 'Crisis Plans'. Brief admissions only if high-risk. Avoid long-term hospitalisation."
-            },
+              "label": "DBT Components (Consultant Guide)",
+              "guidance": "MANAGEMENT PLAN:\n1. Goal: Build 'a life worth living'.\n2. Modules: \n   - Mindfulness: Staying in the present.\n   - Distress Tolerance: Crisis survival (TIPP: Temperature, Intense exercise, Paced breathing).\n   - Emotion Regulation: Reducing vulnerability to 'emotion mind'.\n   - Interpersonal Effectiveness: Assertiveness and boundary setting."
+            }
+          ]
+        },
+        {
+          "id": "eupd-crisis",
+          "question": "2. Crisis Management",
+          "type": "dropdown",
+          "options": [
             {
-              "label": "Pharmacotherapy Restrictions",
-              "guidance": "MANAGEMENT PLAN:\n1. Rule: Do NOT use drugs for the core features of personality disorder.\n2. Target Symptoms: Short-term Sedative (e.g. Promethazine) for acute distress only. Avoid long-term Antipsychotics or Mood Stabilizers unless treating a co-morbid condition (e.g. MDD). NICE CG78."
+              "label": "Approach to Self-Harm",
+              "guidance": "MANAGEMENT PLAN:\n1. Strategy: Validate distress while maintaining boundaries. Avoid 'rescuing' behavior that reinforces maladaptive coping.\n2. Pharmacotherapy: Use low-dose Quetiapine (25mg) or Promethazine ONLY for acute arousal, not long-term. NICE CG78."
             }
           ]
         }
@@ -2276,21 +2264,18 @@
     {
       "keywords": [
         "insomnia",
-        "sleep disorder"
+        "sleep disorder",
+        "cbti"
       ],
       "steps": [
         {
-          "id": "insomnia-mgt",
-          "question": "1. Chronic Insomnia (NICE/RCPsych)",
+          "id": "insomnia-cbti",
+          "question": "1. CBT-I Specialist Techniques",
           "type": "dropdown",
           "options": [
             {
-              "label": "Cognitive & Lifestyle",
-              "guidance": "MANAGEMENT PLAN:\n1. 1st-line: **CBT-I** (Cognitive Behavioural Therapy for Insomnia). Sleep restriction, stimulus control.\n2. Hygiene: Dark, cool room; no caffeine/alcohol; consistent wake-time."
-            },
-            {
-              "label": "Pharmacological (Short-term Only)",
-              "guidance": "MANAGEMENT PLAN:\n1. Z-drugs: Zopiclone 3.75mg-7.5mg or Zolpidem for <4 weeks only. Risk of dependency and falls in elderly.\n2. Melatonin (Circadin): Consider for >55s for up to 13 weeks. NICE CKS."
+              "label": "Behavioural Interventions",
+              "guidance": "MANAGEMENT PLAN:\n1. **Sleep Restriction**: Limit time in bed to actual sleep duration (min 5h). Increases 'sleep drive'.\n2. **Stimulus Control**: Leave bed if awake for >20 mins. Re-associate bed with sleep only.\n3. **Cognitive**: Challenging 'catastrophic' thoughts about sleep loss impact."
             }
           ]
         }
@@ -3197,32 +3182,32 @@
         "eating disorder",
         "anorexia",
         "bulimia",
-        "binge eating"
+        "refeeding"
       ],
       "steps": [
         {
-          "id": "ed-diagnosis",
-          "question": "1. Diagnosis & Triage (DSM-5 / ICD-11)",
+          "id": "ed-emergency",
+          "question": "1. Emergency Risk (MARSIPAN)",
           "type": "dropdown",
           "options": [
             {
-              "label": "Anorexia Nervosa (ICD-11: 6D90)",
-              "guidance": "MANAGEMENT PLAN:\n1. Criteria: Low body weight (BMI <18.5), intense fear of gaining weight, and body image distortion.\n2. Risk (MARSIPAN): If BMI <13 or rapid weight loss (>0.5kg/week), refeed syndrome risk is high. Urgent specialist referral."
-            },
-            {
-              "label": "Bulimia Nervosa",
-              "guidance": "MANAGEMENT PLAN:\n1. DSM-5: Recurrent binge eating + compensatory behaviors (purging, exercise). \u22651/week for 3 months.\n2. Screening: SCOFF questionnaire (\u22652 indicates probable ED)."
+              "label": "Life-Threatening Markers",
+              "guidance": "MANAGEMENT PLAN:\n1. Cardiovascular: HR <40 bpm, SBP <90 mmHg, QTc prolongation.\n2. Metabolic: K+ <3.0, Phosphate <0.5 (Refeeding risk), Glucose <3.0.\n3. Physical: Temp <35.5\u00b0C, BMI <13. \n4. Action: Emergency admission to medical ward + specialist ED liaison."
             }
           ]
         },
         {
-          "id": "ed-mgmt",
-          "question": "2. Management (NICE NG69 / RCPsych)",
+          "id": "ed-tx-choice",
+          "question": "2. Evidence-Based Therapy",
           "type": "dropdown",
           "options": [
             {
-              "label": "Primary Care Role",
-              "guidance": "MANAGEMENT PLAN:\n1. Action: Immediate referral to specialist Eating Disorder Service (EDS). Do not wait for BMI to drop further.\n2. Monitoring: Weekly weight (blind if requested), BP/Pulse (sit/stand), and bloods (U&Es, Glucose, Phosphate)."
+              "label": "Anorexia (Therapy)",
+              "guidance": "MANAGEMENT PLAN:\n1. Choice: AN-top (Anorexia Nervosa Focused Psychotherapy), MANTRA (Maudsley Anorexia Nervosa Treatment for Adults), or CBT-ED."
+            },
+            {
+              "label": "Bulimia (Therapy)",
+              "guidance": "MANAGEMENT PLAN:\n1. Choice: Bulimia-focused CBT (CBT-BN) or IPT."
             }
           ]
         }
