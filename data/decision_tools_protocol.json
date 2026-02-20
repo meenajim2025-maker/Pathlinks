@@ -1,6 +1,6 @@
 {
   "source": "Learning library + NICE CKS/NG; management steps from guidelines",
-  "generated": "2026-02-20T06:23:06.273Z",
+  "generated": "2026-02-20T06:26:42.861Z",
   "totalTools": 1920,
   "systems": [
     {
@@ -7607,14 +7607,35 @@
           "evidence": "Management per NICE CKS and Local formulary.",
           "steps": [
             {
-              "id": "guidance",
-              "question": "Clinical Guidance (Best Practice)",
+              "id": "alcohol-diagnosis",
+              "question": "1. Screening & Risk (AUDIT)",
               "type": "dropdown",
               "options": [
                 {
-                  "value": "standard",
-                  "label": "Management Overview",
-                  "guidance": "MANAGEMENT PLAN:\n1. Assessment: Full clinical assessment to exclude red flags.\n2. Action: Refer to local clinical formulary for specific pharmacotherapy.\n3. Safety-net: Provide robust safety-netting advice.\n4. Follow-up: Arrange review based on clinical findings."
+                  "label": "Screening (AUDIT-C)",
+                  "guidance": "MANAGEMENT PLAN:\n1. High Risk: Score ≥8 (AUDIT) or ≥5 (AUDIT-C).\n2. Physical Signs: Spider naevi, palmar erythema, hepatomegaly. Check GGT and MCV (macrocytosis)."
+                }
+              ]
+            },
+            {
+              "id": "alcohol-withdrawal",
+              "question": "2. Acute Withdrawal & Wernicke's",
+              "type": "dropdown",
+              "options": [
+                {
+                  "label": "Withdrawal Protocol (Chlordiazepoxide)",
+                  "guidance": "MANAGEMENT PLAN:\n1. CIWA-Ar: Assess severity. If score ≥10, start reducing regime (e.g. Chlordiazepoxide 20-40mg qds, tapering over 7-10 days).\n2. Wernicke's Prevention: **Pabrinex IM/IV** (High-dose Thiamine) 1 pair tds for 3-5 days for high-risk/malnourished patients. Oral Thiamine 200mg-300mg daily. NICE CG115."
+                }
+              ]
+            },
+            {
+              "id": "alcohol-relapse",
+              "question": "3. Relapse Prevention (Anti-Craving)",
+              "type": "dropdown",
+              "options": [
+                {
+                  "label": "Acamprosate / Naltrexone",
+                  "guidance": "MANAGEMENT PLAN:\n1. Acamprosate: Reduces cravings. Dose: 666mg tds. Start as soon as abstinence achieved.\n2. Naltrexone: Opioid antagonist, reduces 'high' from drinking. Specialist initiation. Monitor LFTs."
                 }
               ]
             }
@@ -7630,14 +7651,35 @@
           "evidence": "Management per NICE CKS and Local formulary.",
           "steps": [
             {
-              "id": "guidance",
-              "question": "Clinical Guidance (Best Practice)",
+              "id": "alcohol-diagnosis",
+              "question": "1. Screening & Risk (AUDIT)",
               "type": "dropdown",
               "options": [
                 {
-                  "value": "standard",
-                  "label": "Management Overview",
-                  "guidance": "MANAGEMENT PLAN:\n1. Assessment: Full clinical assessment to exclude red flags.\n2. Action: Refer to local clinical formulary for specific pharmacotherapy.\n3. Safety-net: Provide robust safety-netting advice.\n4. Follow-up: Arrange review based on clinical findings."
+                  "label": "Screening (AUDIT-C)",
+                  "guidance": "MANAGEMENT PLAN:\n1. High Risk: Score ≥8 (AUDIT) or ≥5 (AUDIT-C).\n2. Physical Signs: Spider naevi, palmar erythema, hepatomegaly. Check GGT and MCV (macrocytosis)."
+                }
+              ]
+            },
+            {
+              "id": "alcohol-withdrawal",
+              "question": "2. Acute Withdrawal & Wernicke's",
+              "type": "dropdown",
+              "options": [
+                {
+                  "label": "Withdrawal Protocol (Chlordiazepoxide)",
+                  "guidance": "MANAGEMENT PLAN:\n1. CIWA-Ar: Assess severity. If score ≥10, start reducing regime (e.g. Chlordiazepoxide 20-40mg qds, tapering over 7-10 days).\n2. Wernicke's Prevention: **Pabrinex IM/IV** (High-dose Thiamine) 1 pair tds for 3-5 days for high-risk/malnourished patients. Oral Thiamine 200mg-300mg daily. NICE CG115."
+                }
+              ]
+            },
+            {
+              "id": "alcohol-relapse",
+              "question": "3. Relapse Prevention (Anti-Craving)",
+              "type": "dropdown",
+              "options": [
+                {
+                  "label": "Acamprosate / Naltrexone",
+                  "guidance": "MANAGEMENT PLAN:\n1. Acamprosate: Reduces cravings. Dose: 666mg tds. Start as soon as abstinence achieved.\n2. Naltrexone: Opioid antagonist, reduces 'high' from drinking. Specialist initiation. Monitor LFTs."
                 }
               ]
             }
@@ -7653,14 +7695,35 @@
           "evidence": "Management per NICE CKS and Local formulary.",
           "steps": [
             {
-              "id": "guidance",
-              "question": "Clinical Guidance (Best Practice)",
+              "id": "alcohol-diagnosis",
+              "question": "1. Screening & Risk (AUDIT)",
               "type": "dropdown",
               "options": [
                 {
-                  "value": "standard",
-                  "label": "Management Overview",
-                  "guidance": "MANAGEMENT PLAN:\n1. Assessment: Full clinical assessment to exclude red flags.\n2. Action: Refer to local clinical formulary for specific pharmacotherapy.\n3. Safety-net: Provide robust safety-netting advice.\n4. Follow-up: Arrange review based on clinical findings."
+                  "label": "Screening (AUDIT-C)",
+                  "guidance": "MANAGEMENT PLAN:\n1. High Risk: Score ≥8 (AUDIT) or ≥5 (AUDIT-C).\n2. Physical Signs: Spider naevi, palmar erythema, hepatomegaly. Check GGT and MCV (macrocytosis)."
+                }
+              ]
+            },
+            {
+              "id": "alcohol-withdrawal",
+              "question": "2. Acute Withdrawal & Wernicke's",
+              "type": "dropdown",
+              "options": [
+                {
+                  "label": "Withdrawal Protocol (Chlordiazepoxide)",
+                  "guidance": "MANAGEMENT PLAN:\n1. CIWA-Ar: Assess severity. If score ≥10, start reducing regime (e.g. Chlordiazepoxide 20-40mg qds, tapering over 7-10 days).\n2. Wernicke's Prevention: **Pabrinex IM/IV** (High-dose Thiamine) 1 pair tds for 3-5 days for high-risk/malnourished patients. Oral Thiamine 200mg-300mg daily. NICE CG115."
+                }
+              ]
+            },
+            {
+              "id": "alcohol-relapse",
+              "question": "3. Relapse Prevention (Anti-Craving)",
+              "type": "dropdown",
+              "options": [
+                {
+                  "label": "Acamprosate / Naltrexone",
+                  "guidance": "MANAGEMENT PLAN:\n1. Acamprosate: Reduces cravings. Dose: 666mg tds. Start as soon as abstinence achieved.\n2. Naltrexone: Opioid antagonist, reduces 'high' from drinking. Specialist initiation. Monitor LFTs."
                 }
               ]
             }
@@ -7676,14 +7739,35 @@
           "evidence": "Management per NICE CKS and Local formulary.",
           "steps": [
             {
-              "id": "guidance",
-              "question": "Clinical Guidance (Best Practice)",
+              "id": "alcohol-diagnosis",
+              "question": "1. Screening & Risk (AUDIT)",
               "type": "dropdown",
               "options": [
                 {
-                  "value": "standard",
-                  "label": "Management Overview",
-                  "guidance": "MANAGEMENT PLAN:\n1. Assessment: Full clinical assessment to exclude red flags.\n2. Action: Refer to local clinical formulary for specific pharmacotherapy.\n3. Safety-net: Provide robust safety-netting advice.\n4. Follow-up: Arrange review based on clinical findings."
+                  "label": "Screening (AUDIT-C)",
+                  "guidance": "MANAGEMENT PLAN:\n1. High Risk: Score ≥8 (AUDIT) or ≥5 (AUDIT-C).\n2. Physical Signs: Spider naevi, palmar erythema, hepatomegaly. Check GGT and MCV (macrocytosis)."
+                }
+              ]
+            },
+            {
+              "id": "alcohol-withdrawal",
+              "question": "2. Acute Withdrawal & Wernicke's",
+              "type": "dropdown",
+              "options": [
+                {
+                  "label": "Withdrawal Protocol (Chlordiazepoxide)",
+                  "guidance": "MANAGEMENT PLAN:\n1. CIWA-Ar: Assess severity. If score ≥10, start reducing regime (e.g. Chlordiazepoxide 20-40mg qds, tapering over 7-10 days).\n2. Wernicke's Prevention: **Pabrinex IM/IV** (High-dose Thiamine) 1 pair tds for 3-5 days for high-risk/malnourished patients. Oral Thiamine 200mg-300mg daily. NICE CG115."
+                }
+              ]
+            },
+            {
+              "id": "alcohol-relapse",
+              "question": "3. Relapse Prevention (Anti-Craving)",
+              "type": "dropdown",
+              "options": [
+                {
+                  "label": "Acamprosate / Naltrexone",
+                  "guidance": "MANAGEMENT PLAN:\n1. Acamprosate: Reduces cravings. Dose: 666mg tds. Start as soon as abstinence achieved.\n2. Naltrexone: Opioid antagonist, reduces 'high' from drinking. Specialist initiation. Monitor LFTs."
                 }
               ]
             }
@@ -8518,28 +8602,39 @@
           "evidence": "Management per NICE CKS and Local formulary.",
           "steps": [
             {
-              "id": "dementia-workup",
-              "question": "1. Initial Workup",
+              "id": "dementia-diagnosis",
+              "question": "1. Diagnosis & Triage (NICE NG97)",
               "type": "dropdown",
               "options": [
                 {
-                  "label": "Suspected Dementia",
-                  "guidance": "MANAGEMENT PLAN:\n1. History: Focused history (onset, progression, impact). Use 6-CIT or GPCOG screen.\n2. Bloods: FBC, U&E, LFT, Bone, TFT, B12/Folate, HbA1c (exclude reversible causes).\n3. Referral: Refer to Memory Clinic for formal diagnosis and imaging. NICE NG97."
+                  "label": "Suspected MCI / Dementia",
+                  "guidance": "MANAGEMENT PLAN:\n1. Screening: Use **6-CIT** or **GPCOG** (Standard). If score indicates impairment, proceed to formal workup.\n2. Exclude Reversible Causes: Bloods (FBC, U&E, LFT, Bone, TFT, B12/Folate, HbA1c).\n3. Imaging: Structural imaging (CT/MRI) is mandatory to exclude tumors/vasculopathy. \n4. Referral: Memory Assessment Service (MAS) for definitive diagnosis."
                 }
               ]
             },
             {
               "id": "dementia-meds",
-              "question": "2. Medication (Post-Diagnosis)",
+              "question": "2. Pharmacotherapy (Specialist Only)",
               "type": "dropdown",
               "options": [
                 {
-                  "label": "Alzheimer's (Mild to Moderate)",
-                  "guidance": "MANAGEMENT PLAN:\n1. Cholinesterase Inhibitors: Donepezil, Rivastigmine, or Galantamine.\n2. Warning: Check ECG for heart block / bradycardia before starting DONEPEZIL. NICE NG97."
+                  "label": "AChE Inhibitors (Donepezil/Galantamine)",
+                  "guidance": "MANAGEMENT PLAN:\n1. Eligibility: Mild to moderate Alzheimer's, Parkinson's dementia, or Lewy Body dementia.\n2. Safety: **Mandatory ECG** before initiation to check for bradycardia/heart block. \n3. Side Effects: GI upset, vivid dreams, muscle cramps."
                 },
                 {
-                  "label": "Alzheimer's (Severe) / Contraindications",
-                  "guidance": "MANAGEMENT PLAN:\n1. Memantine: 1st-line for severe Alzheimer's or if ChE inhibitors not tolerated. NICE NG97."
+                  "label": "NMDA Antagonist (Memantine)",
+                  "guidance": "MANAGEMENT PLAN:\n1. Indication: Moderate to severe Alzheimer's or if AChE inhibitors contraindicated.\n2. Renal: Adjust dose if eGFR <50."
+                }
+              ]
+            },
+            {
+              "id": "bpsd",
+              "question": "3. BPSD (Behavioral Symptoms)",
+              "type": "dropdown",
+              "options": [
+                {
+                  "label": "Agitation & Distress",
+                  "guidance": "MANAGEMENT PLAN:\n1. Non-Drug: Identify triggers (pain, infection, environmental). Use sensory stimulation, aromatherapy.\n2. Antipsychotics: Only if risk of harm. Use lowest dose (e.g. Risperidone 0.25mg). **Warning: Increased risk of stroke/death in dementia.** Review at 6-12 weeks. NICE NG97."
                 }
               ]
             }
@@ -8557,28 +8652,39 @@
           "evidence": "Management per NICE CKS and Local formulary.",
           "steps": [
             {
-              "id": "dementia-workup",
-              "question": "1. Initial Workup",
+              "id": "dementia-diagnosis",
+              "question": "1. Diagnosis & Triage (NICE NG97)",
               "type": "dropdown",
               "options": [
                 {
-                  "label": "Suspected Dementia",
-                  "guidance": "MANAGEMENT PLAN:\n1. History: Focused history (onset, progression, impact). Use 6-CIT or GPCOG screen.\n2. Bloods: FBC, U&E, LFT, Bone, TFT, B12/Folate, HbA1c (exclude reversible causes).\n3. Referral: Refer to Memory Clinic for formal diagnosis and imaging. NICE NG97."
+                  "label": "Suspected MCI / Dementia",
+                  "guidance": "MANAGEMENT PLAN:\n1. Screening: Use **6-CIT** or **GPCOG** (Standard). If score indicates impairment, proceed to formal workup.\n2. Exclude Reversible Causes: Bloods (FBC, U&E, LFT, Bone, TFT, B12/Folate, HbA1c).\n3. Imaging: Structural imaging (CT/MRI) is mandatory to exclude tumors/vasculopathy. \n4. Referral: Memory Assessment Service (MAS) for definitive diagnosis."
                 }
               ]
             },
             {
               "id": "dementia-meds",
-              "question": "2. Medication (Post-Diagnosis)",
+              "question": "2. Pharmacotherapy (Specialist Only)",
               "type": "dropdown",
               "options": [
                 {
-                  "label": "Alzheimer's (Mild to Moderate)",
-                  "guidance": "MANAGEMENT PLAN:\n1. Cholinesterase Inhibitors: Donepezil, Rivastigmine, or Galantamine.\n2. Warning: Check ECG for heart block / bradycardia before starting DONEPEZIL. NICE NG97."
+                  "label": "AChE Inhibitors (Donepezil/Galantamine)",
+                  "guidance": "MANAGEMENT PLAN:\n1. Eligibility: Mild to moderate Alzheimer's, Parkinson's dementia, or Lewy Body dementia.\n2. Safety: **Mandatory ECG** before initiation to check for bradycardia/heart block. \n3. Side Effects: GI upset, vivid dreams, muscle cramps."
                 },
                 {
-                  "label": "Alzheimer's (Severe) / Contraindications",
-                  "guidance": "MANAGEMENT PLAN:\n1. Memantine: 1st-line for severe Alzheimer's or if ChE inhibitors not tolerated. NICE NG97."
+                  "label": "NMDA Antagonist (Memantine)",
+                  "guidance": "MANAGEMENT PLAN:\n1. Indication: Moderate to severe Alzheimer's or if AChE inhibitors contraindicated.\n2. Renal: Adjust dose if eGFR <50."
+                }
+              ]
+            },
+            {
+              "id": "bpsd",
+              "question": "3. BPSD (Behavioral Symptoms)",
+              "type": "dropdown",
+              "options": [
+                {
+                  "label": "Agitation & Distress",
+                  "guidance": "MANAGEMENT PLAN:\n1. Non-Drug: Identify triggers (pain, infection, environmental). Use sensory stimulation, aromatherapy.\n2. Antipsychotics: Only if risk of harm. Use lowest dose (e.g. Risperidone 0.25mg). **Warning: Increased risk of stroke/death in dementia.** Review at 6-12 weeks. NICE NG97."
                 }
               ]
             }
@@ -8596,28 +8702,39 @@
           "evidence": "Management per NICE CKS and Local formulary.",
           "steps": [
             {
-              "id": "dementia-workup",
-              "question": "1. Initial Workup",
+              "id": "dementia-diagnosis",
+              "question": "1. Diagnosis & Triage (NICE NG97)",
               "type": "dropdown",
               "options": [
                 {
-                  "label": "Suspected Dementia",
-                  "guidance": "MANAGEMENT PLAN:\n1. History: Focused history (onset, progression, impact). Use 6-CIT or GPCOG screen.\n2. Bloods: FBC, U&E, LFT, Bone, TFT, B12/Folate, HbA1c (exclude reversible causes).\n3. Referral: Refer to Memory Clinic for formal diagnosis and imaging. NICE NG97."
+                  "label": "Suspected MCI / Dementia",
+                  "guidance": "MANAGEMENT PLAN:\n1. Screening: Use **6-CIT** or **GPCOG** (Standard). If score indicates impairment, proceed to formal workup.\n2. Exclude Reversible Causes: Bloods (FBC, U&E, LFT, Bone, TFT, B12/Folate, HbA1c).\n3. Imaging: Structural imaging (CT/MRI) is mandatory to exclude tumors/vasculopathy. \n4. Referral: Memory Assessment Service (MAS) for definitive diagnosis."
                 }
               ]
             },
             {
               "id": "dementia-meds",
-              "question": "2. Medication (Post-Diagnosis)",
+              "question": "2. Pharmacotherapy (Specialist Only)",
               "type": "dropdown",
               "options": [
                 {
-                  "label": "Alzheimer's (Mild to Moderate)",
-                  "guidance": "MANAGEMENT PLAN:\n1. Cholinesterase Inhibitors: Donepezil, Rivastigmine, or Galantamine.\n2. Warning: Check ECG for heart block / bradycardia before starting DONEPEZIL. NICE NG97."
+                  "label": "AChE Inhibitors (Donepezil/Galantamine)",
+                  "guidance": "MANAGEMENT PLAN:\n1. Eligibility: Mild to moderate Alzheimer's, Parkinson's dementia, or Lewy Body dementia.\n2. Safety: **Mandatory ECG** before initiation to check for bradycardia/heart block. \n3. Side Effects: GI upset, vivid dreams, muscle cramps."
                 },
                 {
-                  "label": "Alzheimer's (Severe) / Contraindications",
-                  "guidance": "MANAGEMENT PLAN:\n1. Memantine: 1st-line for severe Alzheimer's or if ChE inhibitors not tolerated. NICE NG97."
+                  "label": "NMDA Antagonist (Memantine)",
+                  "guidance": "MANAGEMENT PLAN:\n1. Indication: Moderate to severe Alzheimer's or if AChE inhibitors contraindicated.\n2. Renal: Adjust dose if eGFR <50."
+                }
+              ]
+            },
+            {
+              "id": "bpsd",
+              "question": "3. BPSD (Behavioral Symptoms)",
+              "type": "dropdown",
+              "options": [
+                {
+                  "label": "Agitation & Distress",
+                  "guidance": "MANAGEMENT PLAN:\n1. Non-Drug: Identify triggers (pain, infection, environmental). Use sensory stimulation, aromatherapy.\n2. Antipsychotics: Only if risk of harm. Use lowest dose (e.g. Risperidone 0.25mg). **Warning: Increased risk of stroke/death in dementia.** Review at 6-12 weeks. NICE NG97."
                 }
               ]
             }
@@ -8635,28 +8752,39 @@
           "evidence": "Management per NICE CKS and Local formulary.",
           "steps": [
             {
-              "id": "dementia-workup",
-              "question": "1. Initial Workup",
+              "id": "dementia-diagnosis",
+              "question": "1. Diagnosis & Triage (NICE NG97)",
               "type": "dropdown",
               "options": [
                 {
-                  "label": "Suspected Dementia",
-                  "guidance": "MANAGEMENT PLAN:\n1. History: Focused history (onset, progression, impact). Use 6-CIT or GPCOG screen.\n2. Bloods: FBC, U&E, LFT, Bone, TFT, B12/Folate, HbA1c (exclude reversible causes).\n3. Referral: Refer to Memory Clinic for formal diagnosis and imaging. NICE NG97."
+                  "label": "Suspected MCI / Dementia",
+                  "guidance": "MANAGEMENT PLAN:\n1. Screening: Use **6-CIT** or **GPCOG** (Standard). If score indicates impairment, proceed to formal workup.\n2. Exclude Reversible Causes: Bloods (FBC, U&E, LFT, Bone, TFT, B12/Folate, HbA1c).\n3. Imaging: Structural imaging (CT/MRI) is mandatory to exclude tumors/vasculopathy. \n4. Referral: Memory Assessment Service (MAS) for definitive diagnosis."
                 }
               ]
             },
             {
               "id": "dementia-meds",
-              "question": "2. Medication (Post-Diagnosis)",
+              "question": "2. Pharmacotherapy (Specialist Only)",
               "type": "dropdown",
               "options": [
                 {
-                  "label": "Alzheimer's (Mild to Moderate)",
-                  "guidance": "MANAGEMENT PLAN:\n1. Cholinesterase Inhibitors: Donepezil, Rivastigmine, or Galantamine.\n2. Warning: Check ECG for heart block / bradycardia before starting DONEPEZIL. NICE NG97."
+                  "label": "AChE Inhibitors (Donepezil/Galantamine)",
+                  "guidance": "MANAGEMENT PLAN:\n1. Eligibility: Mild to moderate Alzheimer's, Parkinson's dementia, or Lewy Body dementia.\n2. Safety: **Mandatory ECG** before initiation to check for bradycardia/heart block. \n3. Side Effects: GI upset, vivid dreams, muscle cramps."
                 },
                 {
-                  "label": "Alzheimer's (Severe) / Contraindications",
-                  "guidance": "MANAGEMENT PLAN:\n1. Memantine: 1st-line for severe Alzheimer's or if ChE inhibitors not tolerated. NICE NG97."
+                  "label": "NMDA Antagonist (Memantine)",
+                  "guidance": "MANAGEMENT PLAN:\n1. Indication: Moderate to severe Alzheimer's or if AChE inhibitors contraindicated.\n2. Renal: Adjust dose if eGFR <50."
+                }
+              ]
+            },
+            {
+              "id": "bpsd",
+              "question": "3. BPSD (Behavioral Symptoms)",
+              "type": "dropdown",
+              "options": [
+                {
+                  "label": "Agitation & Distress",
+                  "guidance": "MANAGEMENT PLAN:\n1. Non-Drug: Identify triggers (pain, infection, environmental). Use sensory stimulation, aromatherapy.\n2. Antipsychotics: Only if risk of harm. Use lowest dose (e.g. Risperidone 0.25mg). **Warning: Increased risk of stroke/death in dementia.** Review at 6-12 weeks. NICE NG97."
                 }
               ]
             }
@@ -8674,28 +8802,39 @@
           "evidence": "Management per NICE CKS and Local formulary.",
           "steps": [
             {
-              "id": "dementia-workup",
-              "question": "1. Initial Workup",
+              "id": "dementia-diagnosis",
+              "question": "1. Diagnosis & Triage (NICE NG97)",
               "type": "dropdown",
               "options": [
                 {
-                  "label": "Suspected Dementia",
-                  "guidance": "MANAGEMENT PLAN:\n1. History: Focused history (onset, progression, impact). Use 6-CIT or GPCOG screen.\n2. Bloods: FBC, U&E, LFT, Bone, TFT, B12/Folate, HbA1c (exclude reversible causes).\n3. Referral: Refer to Memory Clinic for formal diagnosis and imaging. NICE NG97."
+                  "label": "Suspected MCI / Dementia",
+                  "guidance": "MANAGEMENT PLAN:\n1. Screening: Use **6-CIT** or **GPCOG** (Standard). If score indicates impairment, proceed to formal workup.\n2. Exclude Reversible Causes: Bloods (FBC, U&E, LFT, Bone, TFT, B12/Folate, HbA1c).\n3. Imaging: Structural imaging (CT/MRI) is mandatory to exclude tumors/vasculopathy. \n4. Referral: Memory Assessment Service (MAS) for definitive diagnosis."
                 }
               ]
             },
             {
               "id": "dementia-meds",
-              "question": "2. Medication (Post-Diagnosis)",
+              "question": "2. Pharmacotherapy (Specialist Only)",
               "type": "dropdown",
               "options": [
                 {
-                  "label": "Alzheimer's (Mild to Moderate)",
-                  "guidance": "MANAGEMENT PLAN:\n1. Cholinesterase Inhibitors: Donepezil, Rivastigmine, or Galantamine.\n2. Warning: Check ECG for heart block / bradycardia before starting DONEPEZIL. NICE NG97."
+                  "label": "AChE Inhibitors (Donepezil/Galantamine)",
+                  "guidance": "MANAGEMENT PLAN:\n1. Eligibility: Mild to moderate Alzheimer's, Parkinson's dementia, or Lewy Body dementia.\n2. Safety: **Mandatory ECG** before initiation to check for bradycardia/heart block. \n3. Side Effects: GI upset, vivid dreams, muscle cramps."
                 },
                 {
-                  "label": "Alzheimer's (Severe) / Contraindications",
-                  "guidance": "MANAGEMENT PLAN:\n1. Memantine: 1st-line for severe Alzheimer's or if ChE inhibitors not tolerated. NICE NG97."
+                  "label": "NMDA Antagonist (Memantine)",
+                  "guidance": "MANAGEMENT PLAN:\n1. Indication: Moderate to severe Alzheimer's or if AChE inhibitors contraindicated.\n2. Renal: Adjust dose if eGFR <50."
+                }
+              ]
+            },
+            {
+              "id": "bpsd",
+              "question": "3. BPSD (Behavioral Symptoms)",
+              "type": "dropdown",
+              "options": [
+                {
+                  "label": "Agitation & Distress",
+                  "guidance": "MANAGEMENT PLAN:\n1. Non-Drug: Identify triggers (pain, infection, environmental). Use sensory stimulation, aromatherapy.\n2. Antipsychotics: Only if risk of harm. Use lowest dose (e.g. Risperidone 0.25mg). **Warning: Increased risk of stroke/death in dementia.** Review at 6-12 weeks. NICE NG97."
                 }
               ]
             }
@@ -8713,28 +8852,39 @@
           "evidence": "Management per NICE CKS and Local formulary.",
           "steps": [
             {
-              "id": "dementia-workup",
-              "question": "1. Initial Workup",
+              "id": "dementia-diagnosis",
+              "question": "1. Diagnosis & Triage (NICE NG97)",
               "type": "dropdown",
               "options": [
                 {
-                  "label": "Suspected Dementia",
-                  "guidance": "MANAGEMENT PLAN:\n1. History: Focused history (onset, progression, impact). Use 6-CIT or GPCOG screen.\n2. Bloods: FBC, U&E, LFT, Bone, TFT, B12/Folate, HbA1c (exclude reversible causes).\n3. Referral: Refer to Memory Clinic for formal diagnosis and imaging. NICE NG97."
+                  "label": "Suspected MCI / Dementia",
+                  "guidance": "MANAGEMENT PLAN:\n1. Screening: Use **6-CIT** or **GPCOG** (Standard). If score indicates impairment, proceed to formal workup.\n2. Exclude Reversible Causes: Bloods (FBC, U&E, LFT, Bone, TFT, B12/Folate, HbA1c).\n3. Imaging: Structural imaging (CT/MRI) is mandatory to exclude tumors/vasculopathy. \n4. Referral: Memory Assessment Service (MAS) for definitive diagnosis."
                 }
               ]
             },
             {
               "id": "dementia-meds",
-              "question": "2. Medication (Post-Diagnosis)",
+              "question": "2. Pharmacotherapy (Specialist Only)",
               "type": "dropdown",
               "options": [
                 {
-                  "label": "Alzheimer's (Mild to Moderate)",
-                  "guidance": "MANAGEMENT PLAN:\n1. Cholinesterase Inhibitors: Donepezil, Rivastigmine, or Galantamine.\n2. Warning: Check ECG for heart block / bradycardia before starting DONEPEZIL. NICE NG97."
+                  "label": "AChE Inhibitors (Donepezil/Galantamine)",
+                  "guidance": "MANAGEMENT PLAN:\n1. Eligibility: Mild to moderate Alzheimer's, Parkinson's dementia, or Lewy Body dementia.\n2. Safety: **Mandatory ECG** before initiation to check for bradycardia/heart block. \n3. Side Effects: GI upset, vivid dreams, muscle cramps."
                 },
                 {
-                  "label": "Alzheimer's (Severe) / Contraindications",
-                  "guidance": "MANAGEMENT PLAN:\n1. Memantine: 1st-line for severe Alzheimer's or if ChE inhibitors not tolerated. NICE NG97."
+                  "label": "NMDA Antagonist (Memantine)",
+                  "guidance": "MANAGEMENT PLAN:\n1. Indication: Moderate to severe Alzheimer's or if AChE inhibitors contraindicated.\n2. Renal: Adjust dose if eGFR <50."
+                }
+              ]
+            },
+            {
+              "id": "bpsd",
+              "question": "3. BPSD (Behavioral Symptoms)",
+              "type": "dropdown",
+              "options": [
+                {
+                  "label": "Agitation & Distress",
+                  "guidance": "MANAGEMENT PLAN:\n1. Non-Drug: Identify triggers (pain, infection, environmental). Use sensory stimulation, aromatherapy.\n2. Antipsychotics: Only if risk of harm. Use lowest dose (e.g. Risperidone 0.25mg). **Warning: Increased risk of stroke/death in dementia.** Review at 6-12 weeks. NICE NG97."
                 }
               ]
             }
@@ -8752,28 +8902,39 @@
           "evidence": "Management per NICE CKS and Local formulary.",
           "steps": [
             {
-              "id": "dementia-workup",
-              "question": "1. Initial Workup",
+              "id": "dementia-diagnosis",
+              "question": "1. Diagnosis & Triage (NICE NG97)",
               "type": "dropdown",
               "options": [
                 {
-                  "label": "Suspected Dementia",
-                  "guidance": "MANAGEMENT PLAN:\n1. History: Focused history (onset, progression, impact). Use 6-CIT or GPCOG screen.\n2. Bloods: FBC, U&E, LFT, Bone, TFT, B12/Folate, HbA1c (exclude reversible causes).\n3. Referral: Refer to Memory Clinic for formal diagnosis and imaging. NICE NG97."
+                  "label": "Suspected MCI / Dementia",
+                  "guidance": "MANAGEMENT PLAN:\n1. Screening: Use **6-CIT** or **GPCOG** (Standard). If score indicates impairment, proceed to formal workup.\n2. Exclude Reversible Causes: Bloods (FBC, U&E, LFT, Bone, TFT, B12/Folate, HbA1c).\n3. Imaging: Structural imaging (CT/MRI) is mandatory to exclude tumors/vasculopathy. \n4. Referral: Memory Assessment Service (MAS) for definitive diagnosis."
                 }
               ]
             },
             {
               "id": "dementia-meds",
-              "question": "2. Medication (Post-Diagnosis)",
+              "question": "2. Pharmacotherapy (Specialist Only)",
               "type": "dropdown",
               "options": [
                 {
-                  "label": "Alzheimer's (Mild to Moderate)",
-                  "guidance": "MANAGEMENT PLAN:\n1. Cholinesterase Inhibitors: Donepezil, Rivastigmine, or Galantamine.\n2. Warning: Check ECG for heart block / bradycardia before starting DONEPEZIL. NICE NG97."
+                  "label": "AChE Inhibitors (Donepezil/Galantamine)",
+                  "guidance": "MANAGEMENT PLAN:\n1. Eligibility: Mild to moderate Alzheimer's, Parkinson's dementia, or Lewy Body dementia.\n2. Safety: **Mandatory ECG** before initiation to check for bradycardia/heart block. \n3. Side Effects: GI upset, vivid dreams, muscle cramps."
                 },
                 {
-                  "label": "Alzheimer's (Severe) / Contraindications",
-                  "guidance": "MANAGEMENT PLAN:\n1. Memantine: 1st-line for severe Alzheimer's or if ChE inhibitors not tolerated. NICE NG97."
+                  "label": "NMDA Antagonist (Memantine)",
+                  "guidance": "MANAGEMENT PLAN:\n1. Indication: Moderate to severe Alzheimer's or if AChE inhibitors contraindicated.\n2. Renal: Adjust dose if eGFR <50."
+                }
+              ]
+            },
+            {
+              "id": "bpsd",
+              "question": "3. BPSD (Behavioral Symptoms)",
+              "type": "dropdown",
+              "options": [
+                {
+                  "label": "Agitation & Distress",
+                  "guidance": "MANAGEMENT PLAN:\n1. Non-Drug: Identify triggers (pain, infection, environmental). Use sensory stimulation, aromatherapy.\n2. Antipsychotics: Only if risk of harm. Use lowest dose (e.g. Risperidone 0.25mg). **Warning: Increased risk of stroke/death in dementia.** Review at 6-12 weeks. NICE NG97."
                 }
               ]
             }
@@ -10149,17 +10310,13 @@
           "evidence": "So welcome back everybody to the third part of our series on Perry Natal Mental Health. It gives me great pleasure to welcome back [Name], who is a Perry Natal Mental Health champion in Warwick. And we've had two really wonderful podcasts before this, looking at opening the conve…",
           "steps": [
             {
-              "id": "bp-assessment",
-              "question": "Assessment (Best Practice)",
+              "id": "perinatal-mgt",
+              "question": "1. Perinatal Care (NICE CG192)",
               "type": "dropdown",
               "options": [
                 {
-                  "label": "Standard Assessment",
-                  "guidance": "MANAGEMENT PLAN:\n1. History: Assess onset, severity, and triggers. Specifically exclude organic red flags (weight loss, night pain, fever, night sweats).\n2. Review: Family history and current medications.\n3. Differential: Consider most likely vs most serious diagnosis. Use validated scores (e.g. Centor, Wells, qSOFA) if applicable."
-                },
-                {
-                  "label": "Examination & Vitals",
-                  "guidance": "MANAGEMENT PLAN:\n1. Physical Exam: Perform focused physical exam (e.g. MSK, Neuro, Respiratory).\n2. Vitals: Check NEWS2 if systemically unwell.\n3. Documentation: Document findings and clinical rationale clearly."
+                  "label": "Depression / Psychosis",
+                  "guidance": "MANAGEMENT PLAN:\n1. Postnatal Depression (PND): SSRIs (Sertraline/Paroxetine) generally preferred if breastfeeding (low milk excretion).\n2. Postpartum Psychosis: **Psychiatric Emergency**. Immediate referral to Parent & Baby Unit (MBU). Specialist management with Lithium/Antipsychotics. High risk of infanticide/suicide. NICE CG192."
                 }
               ]
             }
@@ -10177,13 +10334,13 @@
           "evidence": "So welcome back everybody to the third part of our series on Perry Natal Mental Health. It gives me great pleasure to welcome back [Name], who is a Perry Natal Mental Health champion in Warwick. And we've had two really wonderful podcasts before this, looking at opening the conve…",
           "steps": [
             {
-              "id": "mh-mgmt",
-              "question": "Mental Health Support (Best Practice)",
+              "id": "perinatal-mgt",
+              "question": "1. Perinatal Care (NICE CG192)",
               "type": "dropdown",
               "options": [
                 {
-                  "label": "Immediate Support & Signposting",
-                  "guidance": "MANAGEMENT PLAN:\n1. Crisis: Provide emergency contact numbers (NHS 111, Samaritans 116 123, or local crisis team).\n2. Self-help: Recommend digital CBT resources or self-help books.\n3. Social: Encourage engagement with family/friends and maintaining routine.\n4. Review: Arrange follow-up (usually 1-2 weeks) to monitor risk and symptom progression.\n5. Safety-net: Advise patient to contact GP or A&E if suicidal ideation increases."
+                  "label": "Depression / Psychosis",
+                  "guidance": "MANAGEMENT PLAN:\n1. Postnatal Depression (PND): SSRIs (Sertraline/Paroxetine) generally preferred if breastfeeding (low milk excretion).\n2. Postpartum Psychosis: **Psychiatric Emergency**. Immediate referral to Parent & Baby Unit (MBU). Specialist management with Lithium/Antipsychotics. High risk of infanticide/suicide. NICE CG192."
                 }
               ]
             }
@@ -10201,13 +10358,13 @@
           "evidence": "So welcome back everybody to the third part of our series on Perry Natal Mental Health. It gives me great pleasure to welcome back [Name], who is a Perry Natal Mental Health champion in Warwick. And we've had two really wonderful podcasts before this, looking at opening the conve…",
           "steps": [
             {
-              "id": "mh-mgmt",
-              "question": "Mental Health Support (Best Practice)",
+              "id": "perinatal-mgt",
+              "question": "1. Perinatal Care (NICE CG192)",
               "type": "dropdown",
               "options": [
                 {
-                  "label": "Immediate Support & Signposting",
-                  "guidance": "MANAGEMENT PLAN:\n1. Crisis: Provide emergency contact numbers (NHS 111, Samaritans 116 123, or local crisis team).\n2. Self-help: Recommend digital CBT resources or self-help books.\n3. Social: Encourage engagement with family/friends and maintaining routine.\n4. Review: Arrange follow-up (usually 1-2 weeks) to monitor risk and symptom progression.\n5. Safety-net: Advise patient to contact GP or A&E if suicidal ideation increases."
+                  "label": "Depression / Psychosis",
+                  "guidance": "MANAGEMENT PLAN:\n1. Postnatal Depression (PND): SSRIs (Sertraline/Paroxetine) generally preferred if breastfeeding (low milk excretion).\n2. Postpartum Psychosis: **Psychiatric Emergency**. Immediate referral to Parent & Baby Unit (MBU). Specialist management with Lithium/Antipsychotics. High risk of infanticide/suicide. NICE CG192."
                 }
               ]
             }
@@ -10338,14 +10495,17 @@
           "evidence": "Management per NICE CKS and Local formulary.",
           "steps": [
             {
-              "id": "guidance",
-              "question": "Clinical Guidance (Best Practice)",
+              "id": "insomnia-mgt",
+              "question": "1. Chronic Insomnia (NICE/RCPsych)",
               "type": "dropdown",
               "options": [
                 {
-                  "value": "standard",
-                  "label": "Management Overview",
-                  "guidance": "MANAGEMENT PLAN:\n1. Assessment: Full clinical assessment to exclude red flags.\n2. Action: Refer to local clinical formulary for specific pharmacotherapy.\n3. Safety-net: Provide robust safety-netting advice.\n4. Follow-up: Arrange review based on clinical findings."
+                  "label": "Cognitive & Lifestyle",
+                  "guidance": "MANAGEMENT PLAN:\n1. 1st-line: **CBT-I** (Cognitive Behavioural Therapy for Insomnia). Sleep restriction, stimulus control.\n2. Hygiene: Dark, cool room; no caffeine/alcohol; consistent wake-time."
+                },
+                {
+                  "label": "Pharmacological (Short-term Only)",
+                  "guidance": "MANAGEMENT PLAN:\n1. Z-drugs: Zopiclone 3.75mg-7.5mg or Zolpidem for <4 weeks only. Risk of dependency and falls in elderly.\n2. Melatonin (Circadin): Consider for >55s for up to 13 weeks. NICE CKS."
                 }
               ]
             }
@@ -10361,14 +10521,17 @@
           "evidence": "Management per NICE CKS and Local formulary.",
           "steps": [
             {
-              "id": "guidance",
-              "question": "Clinical Guidance (Best Practice)",
+              "id": "insomnia-mgt",
+              "question": "1. Chronic Insomnia (NICE/RCPsych)",
               "type": "dropdown",
               "options": [
                 {
-                  "value": "standard",
-                  "label": "Management Overview",
-                  "guidance": "MANAGEMENT PLAN:\n1. Assessment: Full clinical assessment to exclude red flags.\n2. Action: Refer to local clinical formulary for specific pharmacotherapy.\n3. Safety-net: Provide robust safety-netting advice.\n4. Follow-up: Arrange review based on clinical findings."
+                  "label": "Cognitive & Lifestyle",
+                  "guidance": "MANAGEMENT PLAN:\n1. 1st-line: **CBT-I** (Cognitive Behavioural Therapy for Insomnia). Sleep restriction, stimulus control.\n2. Hygiene: Dark, cool room; no caffeine/alcohol; consistent wake-time."
+                },
+                {
+                  "label": "Pharmacological (Short-term Only)",
+                  "guidance": "MANAGEMENT PLAN:\n1. Z-drugs: Zopiclone 3.75mg-7.5mg or Zolpidem for <4 weeks only. Risk of dependency and falls in elderly.\n2. Melatonin (Circadin): Consider for >55s for up to 13 weeks. NICE CKS."
                 }
               ]
             }
@@ -10384,14 +10547,17 @@
           "evidence": "Management per NICE CKS and Local formulary.",
           "steps": [
             {
-              "id": "guidance",
-              "question": "Clinical Guidance (Best Practice)",
+              "id": "insomnia-mgt",
+              "question": "1. Chronic Insomnia (NICE/RCPsych)",
               "type": "dropdown",
               "options": [
                 {
-                  "value": "standard",
-                  "label": "Management Overview",
-                  "guidance": "MANAGEMENT PLAN:\n1. Assessment: Full clinical assessment to exclude red flags.\n2. Action: Refer to local clinical formulary for specific pharmacotherapy.\n3. Safety-net: Provide robust safety-netting advice.\n4. Follow-up: Arrange review based on clinical findings."
+                  "label": "Cognitive & Lifestyle",
+                  "guidance": "MANAGEMENT PLAN:\n1. 1st-line: **CBT-I** (Cognitive Behavioural Therapy for Insomnia). Sleep restriction, stimulus control.\n2. Hygiene: Dark, cool room; no caffeine/alcohol; consistent wake-time."
+                },
+                {
+                  "label": "Pharmacological (Short-term Only)",
+                  "guidance": "MANAGEMENT PLAN:\n1. Z-drugs: Zopiclone 3.75mg-7.5mg or Zolpidem for <4 weeks only. Risk of dependency and falls in elderly.\n2. Melatonin (Circadin): Consider for >55s for up to 13 weeks. NICE CKS."
                 }
               ]
             }
@@ -10407,14 +10573,17 @@
           "evidence": "Management per NG215 and CKS Insomnia.",
           "steps": [
             {
-              "id": "guidance",
-              "question": "Clinical Guidance (Best Practice)",
+              "id": "insomnia-mgt",
+              "question": "1. Chronic Insomnia (NICE/RCPsych)",
               "type": "dropdown",
               "options": [
                 {
-                  "value": "standard",
-                  "label": "Management Overview",
-                  "guidance": "MANAGEMENT PLAN:\n1. Assessment: Full clinical assessment to exclude red flags.\n2. Action: Refer to local clinical formulary for specific pharmacotherapy.\n3. Safety-net: Provide robust safety-netting advice.\n4. Follow-up: Arrange review based on clinical findings."
+                  "label": "Cognitive & Lifestyle",
+                  "guidance": "MANAGEMENT PLAN:\n1. 1st-line: **CBT-I** (Cognitive Behavioural Therapy for Insomnia). Sleep restriction, stimulus control.\n2. Hygiene: Dark, cool room; no caffeine/alcohol; consistent wake-time."
+                },
+                {
+                  "label": "Pharmacological (Short-term Only)",
+                  "guidance": "MANAGEMENT PLAN:\n1. Z-drugs: Zopiclone 3.75mg-7.5mg or Zolpidem for <4 weeks only. Risk of dependency and falls in elderly.\n2. Melatonin (Circadin): Consider for >55s for up to 13 weeks. NICE CKS."
                 }
               ]
             }
@@ -10928,17 +11097,13 @@
           "evidence": "It gives me great pleasure to introduce you to [Name] who is a GP and Warwickshire and a perinatal mental health GP champion and today we're talking all about perinatal mental health. Welcome Jenny. Thanks very much James and thanks for having me on the podcast today. It's great …",
           "steps": [
             {
-              "id": "bp-assessment",
-              "question": "Assessment (Best Practice)",
+              "id": "perinatal-mgt",
+              "question": "1. Perinatal Care (NICE CG192)",
               "type": "dropdown",
               "options": [
                 {
-                  "label": "Standard Assessment",
-                  "guidance": "MANAGEMENT PLAN:\n1. History: Assess onset, severity, and triggers. Specifically exclude organic red flags (weight loss, night pain, fever, night sweats).\n2. Review: Family history and current medications.\n3. Differential: Consider most likely vs most serious diagnosis. Use validated scores (e.g. Centor, Wells, qSOFA) if applicable."
-                },
-                {
-                  "label": "Examination & Vitals",
-                  "guidance": "MANAGEMENT PLAN:\n1. Physical Exam: Perform focused physical exam (e.g. MSK, Neuro, Respiratory).\n2. Vitals: Check NEWS2 if systemically unwell.\n3. Documentation: Document findings and clinical rationale clearly."
+                  "label": "Depression / Psychosis",
+                  "guidance": "MANAGEMENT PLAN:\n1. Postnatal Depression (PND): SSRIs (Sertraline/Paroxetine) generally preferred if breastfeeding (low milk excretion).\n2. Postpartum Psychosis: **Psychiatric Emergency**. Immediate referral to Parent & Baby Unit (MBU). Specialist management with Lithium/Antipsychotics. High risk of infanticide/suicide. NICE CG192."
                 }
               ]
             }
@@ -10956,13 +11121,13 @@
           "evidence": "It gives me great pleasure to introduce you to [Name] who is a GP and Warwickshire and a perinatal mental health GP champion and today we're talking all about perinatal mental health. Welcome Jenny. Thanks very much James and thanks for having me on the podcast today. It's great …",
           "steps": [
             {
-              "id": "mh-mgmt",
-              "question": "Mental Health Support (Best Practice)",
+              "id": "perinatal-mgt",
+              "question": "1. Perinatal Care (NICE CG192)",
               "type": "dropdown",
               "options": [
                 {
-                  "label": "Immediate Support & Signposting",
-                  "guidance": "MANAGEMENT PLAN:\n1. Crisis: Provide emergency contact numbers (NHS 111, Samaritans 116 123, or local crisis team).\n2. Self-help: Recommend digital CBT resources or self-help books.\n3. Social: Encourage engagement with family/friends and maintaining routine.\n4. Review: Arrange follow-up (usually 1-2 weeks) to monitor risk and symptom progression.\n5. Safety-net: Advise patient to contact GP or A&E if suicidal ideation increases."
+                  "label": "Depression / Psychosis",
+                  "guidance": "MANAGEMENT PLAN:\n1. Postnatal Depression (PND): SSRIs (Sertraline/Paroxetine) generally preferred if breastfeeding (low milk excretion).\n2. Postpartum Psychosis: **Psychiatric Emergency**. Immediate referral to Parent & Baby Unit (MBU). Specialist management with Lithium/Antipsychotics. High risk of infanticide/suicide. NICE CG192."
                 }
               ]
             }
@@ -10980,13 +11145,13 @@
           "evidence": "It gives me great pleasure to introduce you to [Name] who is a GP and Warwickshire and a perinatal mental health GP champion and today we're talking all about perinatal mental health. Welcome Jenny. Thanks very much James and thanks for having me on the podcast today. It's great …",
           "steps": [
             {
-              "id": "bp-referral",
-              "question": "Referral & Follow-up (Best Practice)",
+              "id": "perinatal-mgt",
+              "question": "1. Perinatal Care (NICE CG192)",
               "type": "dropdown",
               "options": [
                 {
-                  "label": "Referral & Safety-netting",
-                  "guidance": "MANAGEMENT PLAN:\n1. Referral: Refer 2WW if malignancy suspected. Urgent referral if clinical compromise. Routine if primary care management fails.\n2. Waiting List: Ensure patient knows how to report deterioration while waiting.\n3. Review: Review and optimize primary care management in the interim."
+                  "label": "Depression / Psychosis",
+                  "guidance": "MANAGEMENT PLAN:\n1. Postnatal Depression (PND): SSRIs (Sertraline/Paroxetine) generally preferred if breastfeeding (low milk excretion).\n2. Postpartum Psychosis: **Psychiatric Emergency**. Immediate referral to Parent & Baby Unit (MBU). Specialist management with Lithium/Antipsychotics. High risk of infanticide/suicide. NICE CG192."
                 }
               ]
             }
@@ -11003,14 +11168,17 @@
           "evidence": "Management per NICE CKS and Local formulary.",
           "steps": [
             {
-              "id": "guidance",
-              "question": "Clinical Guidance (Best Practice)",
+              "id": "personality-mgt",
+              "question": "1. Specialist Management (BPD/EUPD)",
               "type": "dropdown",
               "options": [
                 {
-                  "value": "standard",
-                  "label": "Management Overview",
-                  "guidance": "MANAGEMENT PLAN:\n1. Assessment: Full clinical assessment to exclude red flags.\n2. Action: Refer to local clinical formulary for specific pharmacotherapy.\n3. Safety-net: Provide robust safety-netting advice.\n4. Follow-up: Arrange review based on clinical findings."
+                  "label": "Diagnosis & Approach (NICE CG78)",
+                  "guidance": "MANAGEMENT PLAN:\n1. Criteria (DSM-5): Instability of relationships, self-image, and affect, plus marked impulsivity.\n2. Management: **Dialectical Behaviour Therapy (DBT)** is the gold standard (specialist referral).\n3. Crisis: Use structured 'Crisis Plans'. Brief admissions only if high-risk. Avoid long-term hospitalisation."
+                },
+                {
+                  "label": "Pharmacotherapy Restrictions",
+                  "guidance": "MANAGEMENT PLAN:\n1. Rule: Do NOT use drugs for the core features of personality disorder.\n2. Target Symptoms: Short-term Sedative (e.g. Promethazine) for acute distress only. Avoid long-term Antipsychotics or Mood Stabilizers unless treating a co-morbid condition (e.g. MDD). NICE CG78."
                 }
               ]
             }
@@ -11486,13 +11654,13 @@
           "evidence": "Management per NICE CKS and Local formulary.",
           "steps": [
             {
-              "id": "bp-referral",
-              "question": "Referral & Follow-up (Best Practice)",
+              "id": "self-harm-mgt",
+              "question": "1. Acute Risk & Safety Planning",
               "type": "dropdown",
               "options": [
                 {
-                  "label": "Referral & Safety-netting",
-                  "guidance": "MANAGEMENT PLAN:\n1. Referral: Refer 2WW if malignancy suspected. Urgent referral if clinical compromise. Routine if primary care management fails.\n2. Waiting List: Ensure patient knows how to report deterioration while waiting.\n3. Review: Review and optimize primary care management in the interim."
+                  "label": "Risk Assessment (RCPsych)",
+                  "guidance": "MANAGEMENT PLAN:\n1. Immediate: Assess method, intent, and access to means. \n2. Safety Planning: Identify warning signs, coping strategies (e.g., grounding), and 'Safe People'. Provide 24/7 Crisis numbers (988 / 111 / Local Crisis Team).\n3. Referral: Emergency department if lethal act or active intent. Community Mental Health Team (CMHT) for persistent self-harm. NICE NG225."
                 }
               ]
             }
@@ -11508,14 +11676,13 @@
           "evidence": "Management per NICE CKS and Local formulary.",
           "steps": [
             {
-              "id": "guidance",
-              "question": "Clinical Guidance (Best Practice)",
+              "id": "self-harm-mgt",
+              "question": "1. Acute Risk & Safety Planning",
               "type": "dropdown",
               "options": [
                 {
-                  "value": "standard",
-                  "label": "Management Overview",
-                  "guidance": "MANAGEMENT PLAN:\n1. Assessment: Full clinical assessment to exclude red flags.\n2. Action: Refer to local clinical formulary for specific pharmacotherapy.\n3. Safety-net: Provide robust safety-netting advice.\n4. Follow-up: Arrange review based on clinical findings."
+                  "label": "Risk Assessment (RCPsych)",
+                  "guidance": "MANAGEMENT PLAN:\n1. Immediate: Assess method, intent, and access to means. \n2. Safety Planning: Identify warning signs, coping strategies (e.g., grounding), and 'Safe People'. Provide 24/7 Crisis numbers (988 / 111 / Local Crisis Team).\n3. Referral: Emergency department if lethal act or active intent. Community Mental Health Team (CMHT) for persistent self-harm. NICE NG225."
                 }
               ]
             }
@@ -11531,17 +11698,13 @@
           "evidence": "Management per NG225 and CKS Self-harm.",
           "steps": [
             {
-              "id": "bp-assessment",
-              "question": "Assessment (Best Practice)",
+              "id": "self-harm-mgt",
+              "question": "1. Acute Risk & Safety Planning",
               "type": "dropdown",
               "options": [
                 {
-                  "label": "Standard Assessment",
-                  "guidance": "MANAGEMENT PLAN:\n1. History: Assess onset, severity, and triggers. Specifically exclude organic red flags (weight loss, night pain, fever, night sweats).\n2. Review: Family history and current medications.\n3. Differential: Consider most likely vs most serious diagnosis. Use validated scores (e.g. Centor, Wells, qSOFA) if applicable."
-                },
-                {
-                  "label": "Examination & Vitals",
-                  "guidance": "MANAGEMENT PLAN:\n1. Physical Exam: Perform focused physical exam (e.g. MSK, Neuro, Respiratory).\n2. Vitals: Check NEWS2 if systemically unwell.\n3. Documentation: Document findings and clinical rationale clearly."
+                  "label": "Risk Assessment (RCPsych)",
+                  "guidance": "MANAGEMENT PLAN:\n1. Immediate: Assess method, intent, and access to means. \n2. Safety Planning: Identify warning signs, coping strategies (e.g., grounding), and 'Safe People'. Provide 24/7 Crisis numbers (988 / 111 / Local Crisis Team).\n3. Referral: Emergency department if lethal act or active intent. Community Mental Health Team (CMHT) for persistent self-harm. NICE NG225."
                 }
               ]
             }
@@ -29088,17 +29251,13 @@
           "evidence": "(Intro removed; no clinical content in this segment.)",
           "steps": [
             {
-              "id": "bp-assessment",
-              "question": "Assessment (Best Practice)",
+              "id": "perinatal-mgt",
+              "question": "1. Perinatal Care (NICE CG192)",
               "type": "dropdown",
               "options": [
                 {
-                  "label": "Standard Assessment",
-                  "guidance": "MANAGEMENT PLAN:\n1. History: Assess onset, severity, and triggers. Specifically exclude organic red flags (weight loss, night pain, fever, night sweats).\n2. Review: Family history and current medications.\n3. Differential: Consider most likely vs most serious diagnosis. Use validated scores (e.g. Centor, Wells, qSOFA) if applicable."
-                },
-                {
-                  "label": "Examination & Vitals",
-                  "guidance": "MANAGEMENT PLAN:\n1. Physical Exam: Perform focused physical exam (e.g. MSK, Neuro, Respiratory).\n2. Vitals: Check NEWS2 if systemically unwell.\n3. Documentation: Document findings and clinical rationale clearly."
+                  "label": "Depression / Psychosis",
+                  "guidance": "MANAGEMENT PLAN:\n1. Postnatal Depression (PND): SSRIs (Sertraline/Paroxetine) generally preferred if breastfeeding (low milk excretion).\n2. Postpartum Psychosis: **Psychiatric Emergency**. Immediate referral to Parent & Baby Unit (MBU). Specialist management with Lithium/Antipsychotics. High risk of infanticide/suicide. NICE CG192."
                 }
               ]
             }
@@ -29115,13 +29274,13 @@
           "evidence": "(Intro removed; no clinical content in this segment.)",
           "steps": [
             {
-              "id": "paeds-mgmt",
-              "question": "Paediatric Safety-Netting (Best Practice)",
+              "id": "perinatal-mgt",
+              "question": "1. Perinatal Care (NICE CG192)",
               "type": "dropdown",
               "options": [
                 {
-                  "label": "Traffic Light Safety-Netting",
-                  "guidance": "MANAGEMENT PLAN:\n1. Hydration: Ensure adequate fluid intake (check wet nappies/urine output).\n2. Vitals: Monitor temperature and work of breathing.\n3. Red Flags: Advise immediate review (A&E) for non-blanching rash, seizures, bulging fontanelle, or severe lethargy.\n4. Triage: Use NICE NG143 Traffic Light system for assessment."
+                  "label": "Depression / Psychosis",
+                  "guidance": "MANAGEMENT PLAN:\n1. Postnatal Depression (PND): SSRIs (Sertraline/Paroxetine) generally preferred if breastfeeding (low milk excretion).\n2. Postpartum Psychosis: **Psychiatric Emergency**. Immediate referral to Parent & Baby Unit (MBU). Specialist management with Lithium/Antipsychotics. High risk of infanticide/suicide. NICE CG192."
                 }
               ]
             }
@@ -29138,13 +29297,13 @@
           "evidence": "(Intro removed; no clinical content in this segment.)",
           "steps": [
             {
-              "id": "bp-referral",
-              "question": "Referral & Follow-up (Best Practice)",
+              "id": "perinatal-mgt",
+              "question": "1. Perinatal Care (NICE CG192)",
               "type": "dropdown",
               "options": [
                 {
-                  "label": "Referral & Safety-netting",
-                  "guidance": "MANAGEMENT PLAN:\n1. Referral: Refer 2WW if malignancy suspected. Urgent referral if clinical compromise. Routine if primary care management fails.\n2. Waiting List: Ensure patient knows how to report deterioration while waiting.\n3. Review: Review and optimize primary care management in the interim."
+                  "label": "Depression / Psychosis",
+                  "guidance": "MANAGEMENT PLAN:\n1. Postnatal Depression (PND): SSRIs (Sertraline/Paroxetine) generally preferred if breastfeeding (low milk excretion).\n2. Postpartum Psychosis: **Psychiatric Emergency**. Immediate referral to Parent & Baby Unit (MBU). Specialist management with Lithium/Antipsychotics. High risk of infanticide/suicide. NICE CG192."
                 }
               ]
             }
@@ -29489,14 +29648,13 @@
           "evidence": "Management per NICE CKS and Local formulary.",
           "steps": [
             {
-              "id": "guidance",
-              "question": "Clinical Guidance (Best Practice)",
+              "id": "self-harm-mgt",
+              "question": "1. Acute Risk & Safety Planning",
               "type": "dropdown",
               "options": [
                 {
-                  "value": "standard",
-                  "label": "Management Overview",
-                  "guidance": "MANAGEMENT PLAN:\n1. Assessment: Full clinical assessment to exclude red flags.\n2. Action: Refer to local clinical formulary for specific pharmacotherapy.\n3. Safety-net: Provide robust safety-netting advice.\n4. Follow-up: Arrange review based on clinical findings."
+                  "label": "Risk Assessment (RCPsych)",
+                  "guidance": "MANAGEMENT PLAN:\n1. Immediate: Assess method, intent, and access to means. \n2. Safety Planning: Identify warning signs, coping strategies (e.g., grounding), and 'Safe People'. Provide 24/7 Crisis numbers (988 / 111 / Local Crisis Team).\n3. Referral: Emergency department if lethal act or active intent. Community Mental Health Team (CMHT) for persistent self-harm. NICE NG225."
                 }
               ]
             }
@@ -39565,28 +39723,39 @@
           "evidence": "Management per NICE CKS and Local formulary.",
           "steps": [
             {
-              "id": "dementia-workup",
-              "question": "1. Initial Workup",
+              "id": "dementia-diagnosis",
+              "question": "1. Diagnosis & Triage (NICE NG97)",
               "type": "dropdown",
               "options": [
                 {
-                  "label": "Suspected Dementia",
-                  "guidance": "MANAGEMENT PLAN:\n1. History: Focused history (onset, progression, impact). Use 6-CIT or GPCOG screen.\n2. Bloods: FBC, U&E, LFT, Bone, TFT, B12/Folate, HbA1c (exclude reversible causes).\n3. Referral: Refer to Memory Clinic for formal diagnosis and imaging. NICE NG97."
+                  "label": "Suspected MCI / Dementia",
+                  "guidance": "MANAGEMENT PLAN:\n1. Screening: Use **6-CIT** or **GPCOG** (Standard). If score indicates impairment, proceed to formal workup.\n2. Exclude Reversible Causes: Bloods (FBC, U&E, LFT, Bone, TFT, B12/Folate, HbA1c).\n3. Imaging: Structural imaging (CT/MRI) is mandatory to exclude tumors/vasculopathy. \n4. Referral: Memory Assessment Service (MAS) for definitive diagnosis."
                 }
               ]
             },
             {
               "id": "dementia-meds",
-              "question": "2. Medication (Post-Diagnosis)",
+              "question": "2. Pharmacotherapy (Specialist Only)",
               "type": "dropdown",
               "options": [
                 {
-                  "label": "Alzheimer's (Mild to Moderate)",
-                  "guidance": "MANAGEMENT PLAN:\n1. Cholinesterase Inhibitors: Donepezil, Rivastigmine, or Galantamine.\n2. Warning: Check ECG for heart block / bradycardia before starting DONEPEZIL. NICE NG97."
+                  "label": "AChE Inhibitors (Donepezil/Galantamine)",
+                  "guidance": "MANAGEMENT PLAN:\n1. Eligibility: Mild to moderate Alzheimer's, Parkinson's dementia, or Lewy Body dementia.\n2. Safety: **Mandatory ECG** before initiation to check for bradycardia/heart block. \n3. Side Effects: GI upset, vivid dreams, muscle cramps."
                 },
                 {
-                  "label": "Alzheimer's (Severe) / Contraindications",
-                  "guidance": "MANAGEMENT PLAN:\n1. Memantine: 1st-line for severe Alzheimer's or if ChE inhibitors not tolerated. NICE NG97."
+                  "label": "NMDA Antagonist (Memantine)",
+                  "guidance": "MANAGEMENT PLAN:\n1. Indication: Moderate to severe Alzheimer's or if AChE inhibitors contraindicated.\n2. Renal: Adjust dose if eGFR <50."
+                }
+              ]
+            },
+            {
+              "id": "bpsd",
+              "question": "3. BPSD (Behavioral Symptoms)",
+              "type": "dropdown",
+              "options": [
+                {
+                  "label": "Agitation & Distress",
+                  "guidance": "MANAGEMENT PLAN:\n1. Non-Drug: Identify triggers (pain, infection, environmental). Use sensory stimulation, aromatherapy.\n2. Antipsychotics: Only if risk of harm. Use lowest dose (e.g. Risperidone 0.25mg). **Warning: Increased risk of stroke/death in dementia.** Review at 6-12 weeks. NICE NG97."
                 }
               ]
             }
@@ -39604,28 +39773,39 @@
           "evidence": "Management per NICE CKS and Local formulary.",
           "steps": [
             {
-              "id": "dementia-workup",
-              "question": "1. Initial Workup",
+              "id": "dementia-diagnosis",
+              "question": "1. Diagnosis & Triage (NICE NG97)",
               "type": "dropdown",
               "options": [
                 {
-                  "label": "Suspected Dementia",
-                  "guidance": "MANAGEMENT PLAN:\n1. History: Focused history (onset, progression, impact). Use 6-CIT or GPCOG screen.\n2. Bloods: FBC, U&E, LFT, Bone, TFT, B12/Folate, HbA1c (exclude reversible causes).\n3. Referral: Refer to Memory Clinic for formal diagnosis and imaging. NICE NG97."
+                  "label": "Suspected MCI / Dementia",
+                  "guidance": "MANAGEMENT PLAN:\n1. Screening: Use **6-CIT** or **GPCOG** (Standard). If score indicates impairment, proceed to formal workup.\n2. Exclude Reversible Causes: Bloods (FBC, U&E, LFT, Bone, TFT, B12/Folate, HbA1c).\n3. Imaging: Structural imaging (CT/MRI) is mandatory to exclude tumors/vasculopathy. \n4. Referral: Memory Assessment Service (MAS) for definitive diagnosis."
                 }
               ]
             },
             {
               "id": "dementia-meds",
-              "question": "2. Medication (Post-Diagnosis)",
+              "question": "2. Pharmacotherapy (Specialist Only)",
               "type": "dropdown",
               "options": [
                 {
-                  "label": "Alzheimer's (Mild to Moderate)",
-                  "guidance": "MANAGEMENT PLAN:\n1. Cholinesterase Inhibitors: Donepezil, Rivastigmine, or Galantamine.\n2. Warning: Check ECG for heart block / bradycardia before starting DONEPEZIL. NICE NG97."
+                  "label": "AChE Inhibitors (Donepezil/Galantamine)",
+                  "guidance": "MANAGEMENT PLAN:\n1. Eligibility: Mild to moderate Alzheimer's, Parkinson's dementia, or Lewy Body dementia.\n2. Safety: **Mandatory ECG** before initiation to check for bradycardia/heart block. \n3. Side Effects: GI upset, vivid dreams, muscle cramps."
                 },
                 {
-                  "label": "Alzheimer's (Severe) / Contraindications",
-                  "guidance": "MANAGEMENT PLAN:\n1. Memantine: 1st-line for severe Alzheimer's or if ChE inhibitors not tolerated. NICE NG97."
+                  "label": "NMDA Antagonist (Memantine)",
+                  "guidance": "MANAGEMENT PLAN:\n1. Indication: Moderate to severe Alzheimer's or if AChE inhibitors contraindicated.\n2. Renal: Adjust dose if eGFR <50."
+                }
+              ]
+            },
+            {
+              "id": "bpsd",
+              "question": "3. BPSD (Behavioral Symptoms)",
+              "type": "dropdown",
+              "options": [
+                {
+                  "label": "Agitation & Distress",
+                  "guidance": "MANAGEMENT PLAN:\n1. Non-Drug: Identify triggers (pain, infection, environmental). Use sensory stimulation, aromatherapy.\n2. Antipsychotics: Only if risk of harm. Use lowest dose (e.g. Risperidone 0.25mg). **Warning: Increased risk of stroke/death in dementia.** Review at 6-12 weeks. NICE NG97."
                 }
               ]
             }
@@ -40901,14 +41081,35 @@
           "evidence": "Management per NICE CKS and Local formulary.",
           "steps": [
             {
-              "id": "guidance",
-              "question": "Clinical Guidance (Best Practice)",
+              "id": "alcohol-diagnosis",
+              "question": "1. Screening & Risk (AUDIT)",
               "type": "dropdown",
               "options": [
                 {
-                  "value": "standard",
-                  "label": "Management Overview",
-                  "guidance": "MANAGEMENT PLAN:\n1. Assessment: Full clinical assessment to exclude red flags.\n2. Action: Refer to local clinical formulary for specific pharmacotherapy.\n3. Safety-net: Provide robust safety-netting advice.\n4. Follow-up: Arrange review based on clinical findings."
+                  "label": "Screening (AUDIT-C)",
+                  "guidance": "MANAGEMENT PLAN:\n1. High Risk: Score ≥8 (AUDIT) or ≥5 (AUDIT-C).\n2. Physical Signs: Spider naevi, palmar erythema, hepatomegaly. Check GGT and MCV (macrocytosis)."
+                }
+              ]
+            },
+            {
+              "id": "alcohol-withdrawal",
+              "question": "2. Acute Withdrawal & Wernicke's",
+              "type": "dropdown",
+              "options": [
+                {
+                  "label": "Withdrawal Protocol (Chlordiazepoxide)",
+                  "guidance": "MANAGEMENT PLAN:\n1. CIWA-Ar: Assess severity. If score ≥10, start reducing regime (e.g. Chlordiazepoxide 20-40mg qds, tapering over 7-10 days).\n2. Wernicke's Prevention: **Pabrinex IM/IV** (High-dose Thiamine) 1 pair tds for 3-5 days for high-risk/malnourished patients. Oral Thiamine 200mg-300mg daily. NICE CG115."
+                }
+              ]
+            },
+            {
+              "id": "alcohol-relapse",
+              "question": "3. Relapse Prevention (Anti-Craving)",
+              "type": "dropdown",
+              "options": [
+                {
+                  "label": "Acamprosate / Naltrexone",
+                  "guidance": "MANAGEMENT PLAN:\n1. Acamprosate: Reduces cravings. Dose: 666mg tds. Start as soon as abstinence achieved.\n2. Naltrexone: Opioid antagonist, reduces 'high' from drinking. Specialist initiation. Monitor LFTs."
                 }
               ]
             }
@@ -44262,17 +44463,35 @@
           "evidence": "Management per NICE CKS and Local formulary.",
           "steps": [
             {
-              "id": "bp-assessment",
-              "question": "Assessment (Best Practice)",
+              "id": "alcohol-diagnosis",
+              "question": "1. Screening & Risk (AUDIT)",
               "type": "dropdown",
               "options": [
                 {
-                  "label": "Standard Assessment",
-                  "guidance": "MANAGEMENT PLAN:\n1. History: Assess onset, severity, and triggers. Specifically exclude organic red flags (weight loss, night pain, fever, night sweats).\n2. Review: Family history and current medications.\n3. Differential: Consider most likely vs most serious diagnosis. Use validated scores (e.g. Centor, Wells, qSOFA) if applicable."
-                },
+                  "label": "Screening (AUDIT-C)",
+                  "guidance": "MANAGEMENT PLAN:\n1. High Risk: Score ≥8 (AUDIT) or ≥5 (AUDIT-C).\n2. Physical Signs: Spider naevi, palmar erythema, hepatomegaly. Check GGT and MCV (macrocytosis)."
+                }
+              ]
+            },
+            {
+              "id": "alcohol-withdrawal",
+              "question": "2. Acute Withdrawal & Wernicke's",
+              "type": "dropdown",
+              "options": [
                 {
-                  "label": "Examination & Vitals",
-                  "guidance": "MANAGEMENT PLAN:\n1. Physical Exam: Perform focused physical exam (e.g. MSK, Neuro, Respiratory).\n2. Vitals: Check NEWS2 if systemically unwell.\n3. Documentation: Document findings and clinical rationale clearly."
+                  "label": "Withdrawal Protocol (Chlordiazepoxide)",
+                  "guidance": "MANAGEMENT PLAN:\n1. CIWA-Ar: Assess severity. If score ≥10, start reducing regime (e.g. Chlordiazepoxide 20-40mg qds, tapering over 7-10 days).\n2. Wernicke's Prevention: **Pabrinex IM/IV** (High-dose Thiamine) 1 pair tds for 3-5 days for high-risk/malnourished patients. Oral Thiamine 200mg-300mg daily. NICE CG115."
+                }
+              ]
+            },
+            {
+              "id": "alcohol-relapse",
+              "question": "3. Relapse Prevention (Anti-Craving)",
+              "type": "dropdown",
+              "options": [
+                {
+                  "label": "Acamprosate / Naltrexone",
+                  "guidance": "MANAGEMENT PLAN:\n1. Acamprosate: Reduces cravings. Dose: 666mg tds. Start as soon as abstinence achieved.\n2. Naltrexone: Opioid antagonist, reduces 'high' from drinking. Specialist initiation. Monitor LFTs."
                 }
               ]
             }
@@ -44289,13 +44508,35 @@
           "evidence": "Management per NICE CKS and Local formulary.",
           "steps": [
             {
-              "id": "bp-management",
-              "question": "Management (Best Practice)",
+              "id": "alcohol-diagnosis",
+              "question": "1. Screening & Risk (AUDIT)",
               "type": "dropdown",
               "options": [
                 {
-                  "label": "Initial Management Plan",
-                  "guidance": "MANAGEMENT PLAN:\n1. Advice: Advise on activity levels, hydration, and non-pharmacological measures.\n2. Information: Provide written patient info and use shared-decision making.\n3. Safety-netting: Provide clear triggers for re-consultation (rapid worsening, new red flags).\n4. Review: Arrange review based on clinical stability (e.g. 48h for acute, 2-4 weeks for chronic)."
+                  "label": "Screening (AUDIT-C)",
+                  "guidance": "MANAGEMENT PLAN:\n1. High Risk: Score ≥8 (AUDIT) or ≥5 (AUDIT-C).\n2. Physical Signs: Spider naevi, palmar erythema, hepatomegaly. Check GGT and MCV (macrocytosis)."
+                }
+              ]
+            },
+            {
+              "id": "alcohol-withdrawal",
+              "question": "2. Acute Withdrawal & Wernicke's",
+              "type": "dropdown",
+              "options": [
+                {
+                  "label": "Withdrawal Protocol (Chlordiazepoxide)",
+                  "guidance": "MANAGEMENT PLAN:\n1. CIWA-Ar: Assess severity. If score ≥10, start reducing regime (e.g. Chlordiazepoxide 20-40mg qds, tapering over 7-10 days).\n2. Wernicke's Prevention: **Pabrinex IM/IV** (High-dose Thiamine) 1 pair tds for 3-5 days for high-risk/malnourished patients. Oral Thiamine 200mg-300mg daily. NICE CG115."
+                }
+              ]
+            },
+            {
+              "id": "alcohol-relapse",
+              "question": "3. Relapse Prevention (Anti-Craving)",
+              "type": "dropdown",
+              "options": [
+                {
+                  "label": "Acamprosate / Naltrexone",
+                  "guidance": "MANAGEMENT PLAN:\n1. Acamprosate: Reduces cravings. Dose: 666mg tds. Start as soon as abstinence achieved.\n2. Naltrexone: Opioid antagonist, reduces 'high' from drinking. Specialist initiation. Monitor LFTs."
                 }
               ]
             }
@@ -44312,13 +44553,35 @@
           "evidence": "Management per NICE CKS and Local formulary.",
           "steps": [
             {
-              "id": "bp-referral",
-              "question": "Referral & Follow-up (Best Practice)",
+              "id": "alcohol-diagnosis",
+              "question": "1. Screening & Risk (AUDIT)",
               "type": "dropdown",
               "options": [
                 {
-                  "label": "Referral & Safety-netting",
-                  "guidance": "MANAGEMENT PLAN:\n1. Referral: Refer 2WW if malignancy suspected. Urgent referral if clinical compromise. Routine if primary care management fails.\n2. Waiting List: Ensure patient knows how to report deterioration while waiting.\n3. Review: Review and optimize primary care management in the interim."
+                  "label": "Screening (AUDIT-C)",
+                  "guidance": "MANAGEMENT PLAN:\n1. High Risk: Score ≥8 (AUDIT) or ≥5 (AUDIT-C).\n2. Physical Signs: Spider naevi, palmar erythema, hepatomegaly. Check GGT and MCV (macrocytosis)."
+                }
+              ]
+            },
+            {
+              "id": "alcohol-withdrawal",
+              "question": "2. Acute Withdrawal & Wernicke's",
+              "type": "dropdown",
+              "options": [
+                {
+                  "label": "Withdrawal Protocol (Chlordiazepoxide)",
+                  "guidance": "MANAGEMENT PLAN:\n1. CIWA-Ar: Assess severity. If score ≥10, start reducing regime (e.g. Chlordiazepoxide 20-40mg qds, tapering over 7-10 days).\n2. Wernicke's Prevention: **Pabrinex IM/IV** (High-dose Thiamine) 1 pair tds for 3-5 days for high-risk/malnourished patients. Oral Thiamine 200mg-300mg daily. NICE CG115."
+                }
+              ]
+            },
+            {
+              "id": "alcohol-relapse",
+              "question": "3. Relapse Prevention (Anti-Craving)",
+              "type": "dropdown",
+              "options": [
+                {
+                  "label": "Acamprosate / Naltrexone",
+                  "guidance": "MANAGEMENT PLAN:\n1. Acamprosate: Reduces cravings. Dose: 666mg tds. Start as soon as abstinence achieved.\n2. Naltrexone: Opioid antagonist, reduces 'high' from drinking. Specialist initiation. Monitor LFTs."
                 }
               ]
             }
@@ -48793,14 +49056,35 @@
           "evidence": "Management per NICE CKS and Local formulary.",
           "steps": [
             {
-              "id": "guidance",
-              "question": "Clinical Guidance (Best Practice)",
+              "id": "alcohol-diagnosis",
+              "question": "1. Screening & Risk (AUDIT)",
               "type": "dropdown",
               "options": [
                 {
-                  "value": "standard",
-                  "label": "Management Overview",
-                  "guidance": "MANAGEMENT PLAN:\n1. Assessment: Full clinical assessment to exclude red flags.\n2. Action: Refer to local clinical formulary for specific pharmacotherapy.\n3. Safety-net: Provide robust safety-netting advice.\n4. Follow-up: Arrange review based on clinical findings."
+                  "label": "Screening (AUDIT-C)",
+                  "guidance": "MANAGEMENT PLAN:\n1. High Risk: Score ≥8 (AUDIT) or ≥5 (AUDIT-C).\n2. Physical Signs: Spider naevi, palmar erythema, hepatomegaly. Check GGT and MCV (macrocytosis)."
+                }
+              ]
+            },
+            {
+              "id": "alcohol-withdrawal",
+              "question": "2. Acute Withdrawal & Wernicke's",
+              "type": "dropdown",
+              "options": [
+                {
+                  "label": "Withdrawal Protocol (Chlordiazepoxide)",
+                  "guidance": "MANAGEMENT PLAN:\n1. CIWA-Ar: Assess severity. If score ≥10, start reducing regime (e.g. Chlordiazepoxide 20-40mg qds, tapering over 7-10 days).\n2. Wernicke's Prevention: **Pabrinex IM/IV** (High-dose Thiamine) 1 pair tds for 3-5 days for high-risk/malnourished patients. Oral Thiamine 200mg-300mg daily. NICE CG115."
+                }
+              ]
+            },
+            {
+              "id": "alcohol-relapse",
+              "question": "3. Relapse Prevention (Anti-Craving)",
+              "type": "dropdown",
+              "options": [
+                {
+                  "label": "Acamprosate / Naltrexone",
+                  "guidance": "MANAGEMENT PLAN:\n1. Acamprosate: Reduces cravings. Dose: 666mg tds. Start as soon as abstinence achieved.\n2. Naltrexone: Opioid antagonist, reduces 'high' from drinking. Specialist initiation. Monitor LFTs."
                 }
               ]
             }
@@ -48816,14 +49100,35 @@
           "evidence": "Management per NICE CKS and Local formulary.",
           "steps": [
             {
-              "id": "guidance",
-              "question": "Clinical Guidance (Best Practice)",
+              "id": "alcohol-diagnosis",
+              "question": "1. Screening & Risk (AUDIT)",
               "type": "dropdown",
               "options": [
                 {
-                  "value": "standard",
-                  "label": "Management Overview",
-                  "guidance": "MANAGEMENT PLAN:\n1. Assessment: Full clinical assessment to exclude red flags.\n2. Action: Refer to local clinical formulary for specific pharmacotherapy.\n3. Safety-net: Provide robust safety-netting advice.\n4. Follow-up: Arrange review based on clinical findings."
+                  "label": "Screening (AUDIT-C)",
+                  "guidance": "MANAGEMENT PLAN:\n1. High Risk: Score ≥8 (AUDIT) or ≥5 (AUDIT-C).\n2. Physical Signs: Spider naevi, palmar erythema, hepatomegaly. Check GGT and MCV (macrocytosis)."
+                }
+              ]
+            },
+            {
+              "id": "alcohol-withdrawal",
+              "question": "2. Acute Withdrawal & Wernicke's",
+              "type": "dropdown",
+              "options": [
+                {
+                  "label": "Withdrawal Protocol (Chlordiazepoxide)",
+                  "guidance": "MANAGEMENT PLAN:\n1. CIWA-Ar: Assess severity. If score ≥10, start reducing regime (e.g. Chlordiazepoxide 20-40mg qds, tapering over 7-10 days).\n2. Wernicke's Prevention: **Pabrinex IM/IV** (High-dose Thiamine) 1 pair tds for 3-5 days for high-risk/malnourished patients. Oral Thiamine 200mg-300mg daily. NICE CG115."
+                }
+              ]
+            },
+            {
+              "id": "alcohol-relapse",
+              "question": "3. Relapse Prevention (Anti-Craving)",
+              "type": "dropdown",
+              "options": [
+                {
+                  "label": "Acamprosate / Naltrexone",
+                  "guidance": "MANAGEMENT PLAN:\n1. Acamprosate: Reduces cravings. Dose: 666mg tds. Start as soon as abstinence achieved.\n2. Naltrexone: Opioid antagonist, reduces 'high' from drinking. Specialist initiation. Monitor LFTs."
                 }
               ]
             }
@@ -48839,14 +49144,35 @@
           "evidence": "Management per NICE CKS and Local formulary.",
           "steps": [
             {
-              "id": "guidance",
-              "question": "Clinical Guidance (Best Practice)",
+              "id": "alcohol-diagnosis",
+              "question": "1. Screening & Risk (AUDIT)",
               "type": "dropdown",
               "options": [
                 {
-                  "value": "standard",
-                  "label": "Management Overview",
-                  "guidance": "MANAGEMENT PLAN:\n1. Assessment: Full clinical assessment to exclude red flags.\n2. Action: Refer to local clinical formulary for specific pharmacotherapy.\n3. Safety-net: Provide robust safety-netting advice.\n4. Follow-up: Arrange review based on clinical findings."
+                  "label": "Screening (AUDIT-C)",
+                  "guidance": "MANAGEMENT PLAN:\n1. High Risk: Score ≥8 (AUDIT) or ≥5 (AUDIT-C).\n2. Physical Signs: Spider naevi, palmar erythema, hepatomegaly. Check GGT and MCV (macrocytosis)."
+                }
+              ]
+            },
+            {
+              "id": "alcohol-withdrawal",
+              "question": "2. Acute Withdrawal & Wernicke's",
+              "type": "dropdown",
+              "options": [
+                {
+                  "label": "Withdrawal Protocol (Chlordiazepoxide)",
+                  "guidance": "MANAGEMENT PLAN:\n1. CIWA-Ar: Assess severity. If score ≥10, start reducing regime (e.g. Chlordiazepoxide 20-40mg qds, tapering over 7-10 days).\n2. Wernicke's Prevention: **Pabrinex IM/IV** (High-dose Thiamine) 1 pair tds for 3-5 days for high-risk/malnourished patients. Oral Thiamine 200mg-300mg daily. NICE CG115."
+                }
+              ]
+            },
+            {
+              "id": "alcohol-relapse",
+              "question": "3. Relapse Prevention (Anti-Craving)",
+              "type": "dropdown",
+              "options": [
+                {
+                  "label": "Acamprosate / Naltrexone",
+                  "guidance": "MANAGEMENT PLAN:\n1. Acamprosate: Reduces cravings. Dose: 666mg tds. Start as soon as abstinence achieved.\n2. Naltrexone: Opioid antagonist, reduces 'high' from drinking. Specialist initiation. Monitor LFTs."
                 }
               ]
             }
@@ -48862,14 +49188,35 @@
           "evidence": "Management per NICE CKS and Local formulary.",
           "steps": [
             {
-              "id": "guidance",
-              "question": "Clinical Guidance (Best Practice)",
+              "id": "alcohol-diagnosis",
+              "question": "1. Screening & Risk (AUDIT)",
               "type": "dropdown",
               "options": [
                 {
-                  "value": "standard",
-                  "label": "Management Overview",
-                  "guidance": "MANAGEMENT PLAN:\n1. Assessment: Full clinical assessment to exclude red flags.\n2. Action: Refer to local clinical formulary for specific pharmacotherapy.\n3. Safety-net: Provide robust safety-netting advice.\n4. Follow-up: Arrange review based on clinical findings."
+                  "label": "Screening (AUDIT-C)",
+                  "guidance": "MANAGEMENT PLAN:\n1. High Risk: Score ≥8 (AUDIT) or ≥5 (AUDIT-C).\n2. Physical Signs: Spider naevi, palmar erythema, hepatomegaly. Check GGT and MCV (macrocytosis)."
+                }
+              ]
+            },
+            {
+              "id": "alcohol-withdrawal",
+              "question": "2. Acute Withdrawal & Wernicke's",
+              "type": "dropdown",
+              "options": [
+                {
+                  "label": "Withdrawal Protocol (Chlordiazepoxide)",
+                  "guidance": "MANAGEMENT PLAN:\n1. CIWA-Ar: Assess severity. If score ≥10, start reducing regime (e.g. Chlordiazepoxide 20-40mg qds, tapering over 7-10 days).\n2. Wernicke's Prevention: **Pabrinex IM/IV** (High-dose Thiamine) 1 pair tds for 3-5 days for high-risk/malnourished patients. Oral Thiamine 200mg-300mg daily. NICE CG115."
+                }
+              ]
+            },
+            {
+              "id": "alcohol-relapse",
+              "question": "3. Relapse Prevention (Anti-Craving)",
+              "type": "dropdown",
+              "options": [
+                {
+                  "label": "Acamprosate / Naltrexone",
+                  "guidance": "MANAGEMENT PLAN:\n1. Acamprosate: Reduces cravings. Dose: 666mg tds. Start as soon as abstinence achieved.\n2. Naltrexone: Opioid antagonist, reduces 'high' from drinking. Specialist initiation. Monitor LFTs."
                 }
               ]
             }
@@ -48887,14 +49234,35 @@
           "evidence": "Management per NICE CKS and Local formulary.",
           "steps": [
             {
-              "id": "guidance",
-              "question": "Clinical Guidance (Best Practice)",
+              "id": "alcohol-diagnosis",
+              "question": "1. Screening & Risk (AUDIT)",
               "type": "dropdown",
               "options": [
                 {
-                  "value": "standard",
-                  "label": "Management Overview",
-                  "guidance": "MANAGEMENT PLAN:\n1. Assessment: Full clinical assessment to exclude red flags.\n2. Action: Refer to local clinical formulary for specific pharmacotherapy.\n3. Safety-net: Provide robust safety-netting advice.\n4. Follow-up: Arrange review based on clinical findings."
+                  "label": "Screening (AUDIT-C)",
+                  "guidance": "MANAGEMENT PLAN:\n1. High Risk: Score ≥8 (AUDIT) or ≥5 (AUDIT-C).\n2. Physical Signs: Spider naevi, palmar erythema, hepatomegaly. Check GGT and MCV (macrocytosis)."
+                }
+              ]
+            },
+            {
+              "id": "alcohol-withdrawal",
+              "question": "2. Acute Withdrawal & Wernicke's",
+              "type": "dropdown",
+              "options": [
+                {
+                  "label": "Withdrawal Protocol (Chlordiazepoxide)",
+                  "guidance": "MANAGEMENT PLAN:\n1. CIWA-Ar: Assess severity. If score ≥10, start reducing regime (e.g. Chlordiazepoxide 20-40mg qds, tapering over 7-10 days).\n2. Wernicke's Prevention: **Pabrinex IM/IV** (High-dose Thiamine) 1 pair tds for 3-5 days for high-risk/malnourished patients. Oral Thiamine 200mg-300mg daily. NICE CG115."
+                }
+              ]
+            },
+            {
+              "id": "alcohol-relapse",
+              "question": "3. Relapse Prevention (Anti-Craving)",
+              "type": "dropdown",
+              "options": [
+                {
+                  "label": "Acamprosate / Naltrexone",
+                  "guidance": "MANAGEMENT PLAN:\n1. Acamprosate: Reduces cravings. Dose: 666mg tds. Start as soon as abstinence achieved.\n2. Naltrexone: Opioid antagonist, reduces 'high' from drinking. Specialist initiation. Monitor LFTs."
                 }
               ]
             }
@@ -48910,14 +49278,35 @@
           "evidence": "Management per NG115 and CKS Alcohol.",
           "steps": [
             {
-              "id": "guidance",
-              "question": "Clinical Guidance (Best Practice)",
+              "id": "alcohol-diagnosis",
+              "question": "1. Screening & Risk (AUDIT)",
               "type": "dropdown",
               "options": [
                 {
-                  "value": "standard",
-                  "label": "Management Overview",
-                  "guidance": "MANAGEMENT PLAN:\n1. Assessment: Full clinical assessment to exclude red flags.\n2. Action: Refer to local clinical formulary for specific pharmacotherapy.\n3. Safety-net: Provide robust safety-netting advice.\n4. Follow-up: Arrange review based on clinical findings."
+                  "label": "Screening (AUDIT-C)",
+                  "guidance": "MANAGEMENT PLAN:\n1. High Risk: Score ≥8 (AUDIT) or ≥5 (AUDIT-C).\n2. Physical Signs: Spider naevi, palmar erythema, hepatomegaly. Check GGT and MCV (macrocytosis)."
+                }
+              ]
+            },
+            {
+              "id": "alcohol-withdrawal",
+              "question": "2. Acute Withdrawal & Wernicke's",
+              "type": "dropdown",
+              "options": [
+                {
+                  "label": "Withdrawal Protocol (Chlordiazepoxide)",
+                  "guidance": "MANAGEMENT PLAN:\n1. CIWA-Ar: Assess severity. If score ≥10, start reducing regime (e.g. Chlordiazepoxide 20-40mg qds, tapering over 7-10 days).\n2. Wernicke's Prevention: **Pabrinex IM/IV** (High-dose Thiamine) 1 pair tds for 3-5 days for high-risk/malnourished patients. Oral Thiamine 200mg-300mg daily. NICE CG115."
+                }
+              ]
+            },
+            {
+              "id": "alcohol-relapse",
+              "question": "3. Relapse Prevention (Anti-Craving)",
+              "type": "dropdown",
+              "options": [
+                {
+                  "label": "Acamprosate / Naltrexone",
+                  "guidance": "MANAGEMENT PLAN:\n1. Acamprosate: Reduces cravings. Dose: 666mg tds. Start as soon as abstinence achieved.\n2. Naltrexone: Opioid antagonist, reduces 'high' from drinking. Specialist initiation. Monitor LFTs."
                 }
               ]
             }
@@ -51204,17 +51593,17 @@
           "evidence": "Management per NICE CKS and Local formulary.",
           "steps": [
             {
-              "id": "bp-assessment",
-              "question": "Assessment (Best Practice)",
+              "id": "insomnia-mgt",
+              "question": "1. Chronic Insomnia (NICE/RCPsych)",
               "type": "dropdown",
               "options": [
                 {
-                  "label": "Standard Assessment",
-                  "guidance": "MANAGEMENT PLAN:\n1. History: Assess onset, severity, and triggers. Specifically exclude organic red flags (weight loss, night pain, fever, night sweats).\n2. Review: Family history and current medications.\n3. Differential: Consider most likely vs most serious diagnosis. Use validated scores (e.g. Centor, Wells, qSOFA) if applicable."
+                  "label": "Cognitive & Lifestyle",
+                  "guidance": "MANAGEMENT PLAN:\n1. 1st-line: **CBT-I** (Cognitive Behavioural Therapy for Insomnia). Sleep restriction, stimulus control.\n2. Hygiene: Dark, cool room; no caffeine/alcohol; consistent wake-time."
                 },
                 {
-                  "label": "Examination & Vitals",
-                  "guidance": "MANAGEMENT PLAN:\n1. Physical Exam: Perform focused physical exam (e.g. MSK, Neuro, Respiratory).\n2. Vitals: Check NEWS2 if systemically unwell.\n3. Documentation: Document findings and clinical rationale clearly."
+                  "label": "Pharmacological (Short-term Only)",
+                  "guidance": "MANAGEMENT PLAN:\n1. Z-drugs: Zopiclone 3.75mg-7.5mg or Zolpidem for <4 weeks only. Risk of dependency and falls in elderly.\n2. Melatonin (Circadin): Consider for >55s for up to 13 weeks. NICE CKS."
                 }
               ]
             }
@@ -51231,13 +51620,17 @@
           "evidence": "Management per NICE CKS and Local formulary.",
           "steps": [
             {
-              "id": "bp-management",
-              "question": "Management (Best Practice)",
+              "id": "insomnia-mgt",
+              "question": "1. Chronic Insomnia (NICE/RCPsych)",
               "type": "dropdown",
               "options": [
                 {
-                  "label": "Initial Management Plan",
-                  "guidance": "MANAGEMENT PLAN:\n1. Advice: Advise on activity levels, hydration, and non-pharmacological measures.\n2. Information: Provide written patient info and use shared-decision making.\n3. Safety-netting: Provide clear triggers for re-consultation (rapid worsening, new red flags).\n4. Review: Arrange review based on clinical stability (e.g. 48h for acute, 2-4 weeks for chronic)."
+                  "label": "Cognitive & Lifestyle",
+                  "guidance": "MANAGEMENT PLAN:\n1. 1st-line: **CBT-I** (Cognitive Behavioural Therapy for Insomnia). Sleep restriction, stimulus control.\n2. Hygiene: Dark, cool room; no caffeine/alcohol; consistent wake-time."
+                },
+                {
+                  "label": "Pharmacological (Short-term Only)",
+                  "guidance": "MANAGEMENT PLAN:\n1. Z-drugs: Zopiclone 3.75mg-7.5mg or Zolpidem for <4 weeks only. Risk of dependency and falls in elderly.\n2. Melatonin (Circadin): Consider for >55s for up to 13 weeks. NICE CKS."
                 }
               ]
             }
@@ -51254,13 +51647,17 @@
           "evidence": "Management per NICE CKS and Local formulary.",
           "steps": [
             {
-              "id": "bp-management",
-              "question": "Management (Best Practice)",
+              "id": "insomnia-mgt",
+              "question": "1. Chronic Insomnia (NICE/RCPsych)",
               "type": "dropdown",
               "options": [
                 {
-                  "label": "Initial Management Plan",
-                  "guidance": "MANAGEMENT PLAN:\n1. Advice: Advise on activity levels, hydration, and non-pharmacological measures.\n2. Information: Provide written patient info and use shared-decision making.\n3. Safety-netting: Provide clear triggers for re-consultation (rapid worsening, new red flags).\n4. Review: Arrange review based on clinical stability (e.g. 48h for acute, 2-4 weeks for chronic)."
+                  "label": "Cognitive & Lifestyle",
+                  "guidance": "MANAGEMENT PLAN:\n1. 1st-line: **CBT-I** (Cognitive Behavioural Therapy for Insomnia). Sleep restriction, stimulus control.\n2. Hygiene: Dark, cool room; no caffeine/alcohol; consistent wake-time."
+                },
+                {
+                  "label": "Pharmacological (Short-term Only)",
+                  "guidance": "MANAGEMENT PLAN:\n1. Z-drugs: Zopiclone 3.75mg-7.5mg or Zolpidem for <4 weeks only. Risk of dependency and falls in elderly.\n2. Melatonin (Circadin): Consider for >55s for up to 13 weeks. NICE CKS."
                 }
               ]
             }
@@ -53712,17 +54109,35 @@
           "evidence": "Join us for a whole range of bite-sized topics tailored for those working in primary care, perfect for your daily commute or when you're out on a morning stroll. You can stay connected with us on X at [Organisation] for podcast updates and much more. Lastly check out the new [Org…",
           "steps": [
             {
-              "id": "bp-assessment",
-              "question": "Assessment (Best Practice)",
+              "id": "alcohol-diagnosis",
+              "question": "1. Screening & Risk (AUDIT)",
               "type": "dropdown",
               "options": [
                 {
-                  "label": "Standard Assessment",
-                  "guidance": "MANAGEMENT PLAN:\n1. History: Assess onset, severity, and triggers. Specifically exclude organic red flags (weight loss, night pain, fever, night sweats).\n2. Review: Family history and current medications.\n3. Differential: Consider most likely vs most serious diagnosis. Use validated scores (e.g. Centor, Wells, qSOFA) if applicable."
-                },
+                  "label": "Screening (AUDIT-C)",
+                  "guidance": "MANAGEMENT PLAN:\n1. High Risk: Score ≥8 (AUDIT) or ≥5 (AUDIT-C).\n2. Physical Signs: Spider naevi, palmar erythema, hepatomegaly. Check GGT and MCV (macrocytosis)."
+                }
+              ]
+            },
+            {
+              "id": "alcohol-withdrawal",
+              "question": "2. Acute Withdrawal & Wernicke's",
+              "type": "dropdown",
+              "options": [
                 {
-                  "label": "Examination & Vitals",
-                  "guidance": "MANAGEMENT PLAN:\n1. Physical Exam: Perform focused physical exam (e.g. MSK, Neuro, Respiratory).\n2. Vitals: Check NEWS2 if systemically unwell.\n3. Documentation: Document findings and clinical rationale clearly."
+                  "label": "Withdrawal Protocol (Chlordiazepoxide)",
+                  "guidance": "MANAGEMENT PLAN:\n1. CIWA-Ar: Assess severity. If score ≥10, start reducing regime (e.g. Chlordiazepoxide 20-40mg qds, tapering over 7-10 days).\n2. Wernicke's Prevention: **Pabrinex IM/IV** (High-dose Thiamine) 1 pair tds for 3-5 days for high-risk/malnourished patients. Oral Thiamine 200mg-300mg daily. NICE CG115."
+                }
+              ]
+            },
+            {
+              "id": "alcohol-relapse",
+              "question": "3. Relapse Prevention (Anti-Craving)",
+              "type": "dropdown",
+              "options": [
+                {
+                  "label": "Acamprosate / Naltrexone",
+                  "guidance": "MANAGEMENT PLAN:\n1. Acamprosate: Reduces cravings. Dose: 666mg tds. Start as soon as abstinence achieved.\n2. Naltrexone: Opioid antagonist, reduces 'high' from drinking. Specialist initiation. Monitor LFTs."
                 }
               ]
             }
@@ -53739,13 +54154,35 @@
           "evidence": "Join us for a whole range of bite-sized topics tailored for those working in primary care, perfect for your daily commute or when you're out on a morning stroll. You can stay connected with us on X at [Organisation] for podcast updates and much more. Lastly check out the new [Org…",
           "steps": [
             {
-              "id": "bp-management",
-              "question": "Management (Best Practice)",
+              "id": "alcohol-diagnosis",
+              "question": "1. Screening & Risk (AUDIT)",
               "type": "dropdown",
               "options": [
                 {
-                  "label": "Initial Management Plan",
-                  "guidance": "MANAGEMENT PLAN:\n1. Advice: Advise on activity levels, hydration, and non-pharmacological measures.\n2. Information: Provide written patient info and use shared-decision making.\n3. Safety-netting: Provide clear triggers for re-consultation (rapid worsening, new red flags).\n4. Review: Arrange review based on clinical stability (e.g. 48h for acute, 2-4 weeks for chronic)."
+                  "label": "Screening (AUDIT-C)",
+                  "guidance": "MANAGEMENT PLAN:\n1. High Risk: Score ≥8 (AUDIT) or ≥5 (AUDIT-C).\n2. Physical Signs: Spider naevi, palmar erythema, hepatomegaly. Check GGT and MCV (macrocytosis)."
+                }
+              ]
+            },
+            {
+              "id": "alcohol-withdrawal",
+              "question": "2. Acute Withdrawal & Wernicke's",
+              "type": "dropdown",
+              "options": [
+                {
+                  "label": "Withdrawal Protocol (Chlordiazepoxide)",
+                  "guidance": "MANAGEMENT PLAN:\n1. CIWA-Ar: Assess severity. If score ≥10, start reducing regime (e.g. Chlordiazepoxide 20-40mg qds, tapering over 7-10 days).\n2. Wernicke's Prevention: **Pabrinex IM/IV** (High-dose Thiamine) 1 pair tds for 3-5 days for high-risk/malnourished patients. Oral Thiamine 200mg-300mg daily. NICE CG115."
+                }
+              ]
+            },
+            {
+              "id": "alcohol-relapse",
+              "question": "3. Relapse Prevention (Anti-Craving)",
+              "type": "dropdown",
+              "options": [
+                {
+                  "label": "Acamprosate / Naltrexone",
+                  "guidance": "MANAGEMENT PLAN:\n1. Acamprosate: Reduces cravings. Dose: 666mg tds. Start as soon as abstinence achieved.\n2. Naltrexone: Opioid antagonist, reduces 'high' from drinking. Specialist initiation. Monitor LFTs."
                 }
               ]
             }
@@ -53762,13 +54199,35 @@
           "evidence": "Join us for a whole range of bite-sized topics tailored for those working in primary care, perfect for your daily commute or when you're out on a morning stroll. You can stay connected with us on X at [Organisation] for podcast updates and much more. Lastly check out the new [Org…",
           "steps": [
             {
-              "id": "bp-referral",
-              "question": "Referral & Follow-up (Best Practice)",
+              "id": "alcohol-diagnosis",
+              "question": "1. Screening & Risk (AUDIT)",
               "type": "dropdown",
               "options": [
                 {
-                  "label": "Referral & Safety-netting",
-                  "guidance": "MANAGEMENT PLAN:\n1. Referral: Refer 2WW if malignancy suspected. Urgent referral if clinical compromise. Routine if primary care management fails.\n2. Waiting List: Ensure patient knows how to report deterioration while waiting.\n3. Review: Review and optimize primary care management in the interim."
+                  "label": "Screening (AUDIT-C)",
+                  "guidance": "MANAGEMENT PLAN:\n1. High Risk: Score ≥8 (AUDIT) or ≥5 (AUDIT-C).\n2. Physical Signs: Spider naevi, palmar erythema, hepatomegaly. Check GGT and MCV (macrocytosis)."
+                }
+              ]
+            },
+            {
+              "id": "alcohol-withdrawal",
+              "question": "2. Acute Withdrawal & Wernicke's",
+              "type": "dropdown",
+              "options": [
+                {
+                  "label": "Withdrawal Protocol (Chlordiazepoxide)",
+                  "guidance": "MANAGEMENT PLAN:\n1. CIWA-Ar: Assess severity. If score ≥10, start reducing regime (e.g. Chlordiazepoxide 20-40mg qds, tapering over 7-10 days).\n2. Wernicke's Prevention: **Pabrinex IM/IV** (High-dose Thiamine) 1 pair tds for 3-5 days for high-risk/malnourished patients. Oral Thiamine 200mg-300mg daily. NICE CG115."
+                }
+              ]
+            },
+            {
+              "id": "alcohol-relapse",
+              "question": "3. Relapse Prevention (Anti-Craving)",
+              "type": "dropdown",
+              "options": [
+                {
+                  "label": "Acamprosate / Naltrexone",
+                  "guidance": "MANAGEMENT PLAN:\n1. Acamprosate: Reduces cravings. Dose: 666mg tds. Start as soon as abstinence achieved.\n2. Naltrexone: Opioid antagonist, reduces 'high' from drinking. Specialist initiation. Monitor LFTs."
                 }
               ]
             }
