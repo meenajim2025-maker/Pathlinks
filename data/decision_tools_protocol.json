@@ -1,6 +1,6 @@
 {
   "source": "Learning library + NICE CKS/NG; management steps from guidelines",
-  "generated": "2026-02-20T06:36:18.106Z",
+  "generated": "2026-02-20T06:41:03.279Z",
   "totalTools": 1920,
   "systems": [
     {
@@ -2827,14 +2827,24 @@
           "evidence": "Management per NICE CKS and Local formulary.",
           "steps": [
             {
-              "id": "guidance",
-              "question": "Clinical Guidance (Best Practice)",
+              "id": "wellbeing-overview",
+              "question": "1. Management Overview (Primary Prevention)",
               "type": "dropdown",
               "options": [
                 {
-                  "value": "standard",
-                  "label": "Management Overview",
-                  "guidance": "MANAGEMENT PLAN:\n1. Assessment: Full clinical assessment to exclude red flags.\n2. Action: Refer to local clinical formulary for specific pharmacotherapy.\n3. Safety-net: Provide robust safety-netting advice.\n4. Follow-up: Arrange review based on clinical findings."
+                  "label": "Consultant Population Health Strategy",
+                  "guidance": "MANAGEMENT PLAN OVERVIEW:\n1. **Prevention**: Shifting from reactive care to proactive wellbeing management.\n2. **Universal Factors**: Sleep, Nutrition, Connection, and Sense of Agency.\n3. **Social Prescribing**: Utilizing non-medical community assets to address medical drivers."
+                }
+              ]
+            },
+            {
+              "id": "wellbeing-mgt",
+              "question": "2. Wellbeing & Prevention Action Plan",
+              "type": "dropdown",
+              "options": [
+                {
+                  "label": "Actions & Resources",
+                  "guidance": "MANAGEMENT PLAN:\n1. **5 Ways to Wellbeing**: Connect, Be Active, Take Notice, Keep Learning, Give.\n2. **Sleep Hygiene**: Regular times, avoid screens, caffeine limit.\n3. **Support**: Signpost to local 'Talking Therapies' (IAPT) and peer-support networks."
                 }
               ]
             }
@@ -3115,14 +3125,24 @@
           "evidence": "Management per NICE CKS and Local formulary.",
           "steps": [
             {
-              "id": "guidance",
-              "question": "Clinical Guidance (Best Practice)",
+              "id": "wellbeing-overview",
+              "question": "1. Management Overview (Primary Prevention)",
               "type": "dropdown",
               "options": [
                 {
-                  "value": "standard",
-                  "label": "Management Overview",
-                  "guidance": "MANAGEMENT PLAN:\n1. Assessment: Full clinical assessment to exclude red flags.\n2. Action: Refer to local clinical formulary for specific pharmacotherapy.\n3. Safety-net: Provide robust safety-netting advice.\n4. Follow-up: Arrange review based on clinical findings."
+                  "label": "Consultant Population Health Strategy",
+                  "guidance": "MANAGEMENT PLAN OVERVIEW:\n1. **Prevention**: Shifting from reactive care to proactive wellbeing management.\n2. **Universal Factors**: Sleep, Nutrition, Connection, and Sense of Agency.\n3. **Social Prescribing**: Utilizing non-medical community assets to address medical drivers."
+                }
+              ]
+            },
+            {
+              "id": "wellbeing-mgt",
+              "question": "2. Wellbeing & Prevention Action Plan",
+              "type": "dropdown",
+              "options": [
+                {
+                  "label": "Actions & Resources",
+                  "guidance": "MANAGEMENT PLAN:\n1. **5 Ways to Wellbeing**: Connect, Be Active, Take Notice, Keep Learning, Give.\n2. **Sleep Hygiene**: Regular times, avoid screens, caffeine limit.\n3. **Support**: Signpost to local 'Talking Therapies' (IAPT) and peer-support networks."
                 }
               ]
             }
@@ -3180,17 +3200,24 @@
           "evidence": "In other words, in patients with no evidence of established cardiovascular disease, no history of heart attack, stroke, TIA and JINAR or peripheral vasodosies. But of course, patients with these comorbidities are automatically at high cardiovascular risk. And we'll also highlight…",
           "steps": [
             {
-              "id": "bp-assessment",
-              "question": "Assessment (Best Practice)",
+              "id": "wellbeing-overview",
+              "question": "1. Management Overview (Primary Prevention)",
               "type": "dropdown",
               "options": [
                 {
-                  "label": "Standard Assessment",
-                  "guidance": "MANAGEMENT PLAN:\n1. History: Assess onset, severity, and triggers. Specifically exclude organic red flags (weight loss, night pain, fever, night sweats).\n2. Review: Family history and current medications.\n3. Differential: Consider most likely vs most serious diagnosis. Use validated scores (e.g. Centor, Wells, qSOFA) if applicable."
-                },
+                  "label": "Consultant Population Health Strategy",
+                  "guidance": "MANAGEMENT PLAN OVERVIEW:\n1. **Prevention**: Shifting from reactive care to proactive wellbeing management.\n2. **Universal Factors**: Sleep, Nutrition, Connection, and Sense of Agency.\n3. **Social Prescribing**: Utilizing non-medical community assets to address medical drivers."
+                }
+              ]
+            },
+            {
+              "id": "wellbeing-mgt",
+              "question": "2. Wellbeing & Prevention Action Plan",
+              "type": "dropdown",
+              "options": [
                 {
-                  "label": "Examination & Vitals",
-                  "guidance": "MANAGEMENT PLAN:\n1. Physical Exam: Perform focused physical exam (e.g. MSK, Neuro, Respiratory).\n2. Vitals: Check NEWS2 if systemically unwell.\n3. Documentation: Document findings and clinical rationale clearly."
+                  "label": "Actions & Resources",
+                  "guidance": "MANAGEMENT PLAN:\n1. **5 Ways to Wellbeing**: Connect, Be Active, Take Notice, Keep Learning, Give.\n2. **Sleep Hygiene**: Regular times, avoid screens, caffeine limit.\n3. **Support**: Signpost to local 'Talking Therapies' (IAPT) and peer-support networks."
                 }
               ]
             }
@@ -3210,13 +3237,24 @@
           "evidence": "In other words, in patients with no evidence of established cardiovascular disease, no history of heart attack, stroke, TIA and JINAR or peripheral vasodosies. But of course, patients with these comorbidities are automatically at high cardiovascular risk. And we'll also highlight…",
           "steps": [
             {
-              "id": "cvd-mgmt",
-              "question": "Cardiovascular Management (Best Practice)",
+              "id": "wellbeing-overview",
+              "question": "1. Management Overview (Primary Prevention)",
               "type": "dropdown",
               "options": [
                 {
-                  "label": "CVD Risk & Lifestyle",
-                  "guidance": "MANAGEMENT PLAN:\n1. Lifestyle: Advise on low-salt/low-saturated fat diet (Mediterranean-style).\n2. Smoking: Refer to smoking cessation services if applicable.\n3. Exercise: Aim for 150 mins moderate activity/week.\n4. Weight: Target BMI 18.5-24.9.\n5. Audit: Periodically review blood pressure and lipid profile (QRISK3)."
+                  "label": "Consultant Population Health Strategy",
+                  "guidance": "MANAGEMENT PLAN OVERVIEW:\n1. **Prevention**: Shifting from reactive care to proactive wellbeing management.\n2. **Universal Factors**: Sleep, Nutrition, Connection, and Sense of Agency.\n3. **Social Prescribing**: Utilizing non-medical community assets to address medical drivers."
+                }
+              ]
+            },
+            {
+              "id": "wellbeing-mgt",
+              "question": "2. Wellbeing & Prevention Action Plan",
+              "type": "dropdown",
+              "options": [
+                {
+                  "label": "Actions & Resources",
+                  "guidance": "MANAGEMENT PLAN:\n1. **5 Ways to Wellbeing**: Connect, Be Active, Take Notice, Keep Learning, Give.\n2. **Sleep Hygiene**: Regular times, avoid screens, caffeine limit.\n3. **Support**: Signpost to local 'Talking Therapies' (IAPT) and peer-support networks."
                 }
               ]
             }
@@ -3236,13 +3274,24 @@
           "evidence": "In other words, in patients with no evidence of established cardiovascular disease, no history of heart attack, stroke, TIA and JINAR or peripheral vasodosies. But of course, patients with these comorbidities are automatically at high cardiovascular risk. And we'll also highlight…",
           "steps": [
             {
-              "id": "bp-referral",
-              "question": "Referral & Follow-up (Best Practice)",
+              "id": "wellbeing-overview",
+              "question": "1. Management Overview (Primary Prevention)",
               "type": "dropdown",
               "options": [
                 {
-                  "label": "Referral & Safety-netting",
-                  "guidance": "MANAGEMENT PLAN:\n1. Referral: Refer 2WW if malignancy suspected. Urgent referral if clinical compromise. Routine if primary care management fails.\n2. Waiting List: Ensure patient knows how to report deterioration while waiting.\n3. Review: Review and optimize primary care management in the interim."
+                  "label": "Consultant Population Health Strategy",
+                  "guidance": "MANAGEMENT PLAN OVERVIEW:\n1. **Prevention**: Shifting from reactive care to proactive wellbeing management.\n2. **Universal Factors**: Sleep, Nutrition, Connection, and Sense of Agency.\n3. **Social Prescribing**: Utilizing non-medical community assets to address medical drivers."
+                }
+              ]
+            },
+            {
+              "id": "wellbeing-mgt",
+              "question": "2. Wellbeing & Prevention Action Plan",
+              "type": "dropdown",
+              "options": [
+                {
+                  "label": "Actions & Resources",
+                  "guidance": "MANAGEMENT PLAN:\n1. **5 Ways to Wellbeing**: Connect, Be Active, Take Notice, Keep Learning, Give.\n2. **Sleep Hygiene**: Regular times, avoid screens, caffeine limit.\n3. **Support**: Signpost to local 'Talking Therapies' (IAPT) and peer-support networks."
                 }
               ]
             }
@@ -6509,14 +6558,24 @@
           "evidence": "Management per NICE CKS and Local formulary.",
           "steps": [
             {
-              "id": "guidance",
-              "question": "Clinical Guidance (Best Practice)",
+              "id": "wellbeing-overview",
+              "question": "1. Management Overview (Primary Prevention)",
               "type": "dropdown",
               "options": [
                 {
-                  "value": "standard",
-                  "label": "Management Overview",
-                  "guidance": "MANAGEMENT PLAN:\n1. Assessment: Full clinical assessment to exclude red flags.\n2. Action: Refer to local clinical formulary for specific pharmacotherapy.\n3. Safety-net: Provide robust safety-netting advice.\n4. Follow-up: Arrange review based on clinical findings."
+                  "label": "Consultant Population Health Strategy",
+                  "guidance": "MANAGEMENT PLAN OVERVIEW:\n1. **Prevention**: Shifting from reactive care to proactive wellbeing management.\n2. **Universal Factors**: Sleep, Nutrition, Connection, and Sense of Agency.\n3. **Social Prescribing**: Utilizing non-medical community assets to address medical drivers."
+                }
+              ]
+            },
+            {
+              "id": "wellbeing-mgt",
+              "question": "2. Wellbeing & Prevention Action Plan",
+              "type": "dropdown",
+              "options": [
+                {
+                  "label": "Actions & Resources",
+                  "guidance": "MANAGEMENT PLAN:\n1. **5 Ways to Wellbeing**: Connect, Be Active, Take Notice, Keep Learning, Give.\n2. **Sleep Hygiene**: Regular times, avoid screens, caffeine limit.\n3. **Support**: Signpost to local 'Talking Therapies' (IAPT) and peer-support networks."
                 }
               ]
             }
@@ -7641,14 +7700,32 @@
           "evidence": "Management per NICE CKS and Local formulary.",
           "steps": [
             {
-              "id": "guidance",
-              "question": "Clinical Guidance (Best Practice)",
+              "id": "phobia-overview",
+              "question": "1. Management Overview (Exposure Model)",
               "type": "dropdown",
               "options": [
                 {
-                  "value": "standard",
-                  "label": "Management Overview",
-                  "guidance": "MANAGEMENT PLAN:\n1. Assessment: Full clinical assessment to exclude red flags.\n2. Action: Refer to local clinical formulary for specific pharmacotherapy.\n3. Safety-net: Provide robust safety-netting advice.\n4. Follow-up: Arrange review based on clinical findings."
+                  "label": "Consultant Treatment Philosophy",
+                  "guidance": "MANAGEMENT PLAN OVERVIEW:\n1. **Core Mechanism**: Maintaining factor is 'Avoidance'. Recovery requires systematic exposure to the feared stimulus.\n2. **Therapy**: 1st-line is **Graded Exposure** or CBT. Goal is 'Habituation' (anxiety decreases with prolonged exposure).\n3. **Biological**: Meds (SSRIs) are secondary; they reduce the physical intensity of fear but do not 'cure' the phobia without exposure. Avoid Benzos as they prevent habituation."
+                }
+              ]
+            },
+            {
+              "id": "phobia-type",
+              "question": "2. Phobia Subtypes & Management",
+              "type": "dropdown",
+              "options": [
+                {
+                  "label": "Specific Phobias (e.g. Heights, Animals, Blood)",
+                  "guidance": "MANAGEMENT PLAN:\n1. 1st-line: Graded Exposure therapy (In vivo exposure). 80-90% success rate.\n2. Note: For blood-injection-injury phobia, use 'Applied Tension' to prevent fainting. NICE CG159."
+                },
+                {
+                  "label": "Social Anxiety Disorder (Social Phobia)",
+                  "guidance": "MANAGEMENT PLAN:\n1. Features: Marked fear of social/performance situations.\n2. 1st-line: Individual CBT (Clark & Wells or Heimberg models).\n3. Meds: Escitalopram or Sertraline if CBT declined/unavailable. NICE CG159."
+                },
+                {
+                  "label": "Agoraphobia",
+                  "guidance": "MANAGEMENT PLAN:\n1. Features: Fear of being in situations where escape might be difficult or help unavailable.\n2. Treatment: CBT + systematic exposure. Often co-occurs with Panic Disorder; treat the Panic Disorder core first. NICE CG113."
                 }
               ]
             }
@@ -7890,32 +7967,14 @@
           "evidence": "Management per NICE CKS and Local formulary.",
           "steps": [
             {
-              "id": "anxiety-overview",
-              "question": "1. Management Overview (Stepped Care)",
+              "id": "guidance",
+              "question": "Clinical Guidance (Best Practice)",
               "type": "dropdown",
               "options": [
                 {
-                  "label": "Consultant Treatment Strategy",
-                  "guidance": "MANAGEMENT PLAN OVERVIEW:\n1. **Framework**: Step-wise escalation from low-intensity (self-help) to high-intensity (Therapy + Pharmacotherapy).\n2. **Mechanism**: Address the 'avoidance loop'. Recovery requires exposure + reduction of hyperarousal.\n3. **Biological**: SSRIs/SNRIs used primarily to lower the 'anxiety floor'. Use Benzos ONLY for short-term crisis (<2 weeks).\n4. **Social**: Address environmental triggers and occupational 'stagnation' caused by avoidance."
-                }
-              ]
-            },
-            {
-              "id": "anxiety-subtype",
-              "question": "2. Subtype Identification (Consultant Analysis)",
-              "type": "dropdown",
-              "options": [
-                {
-                  "label": "GAD (Generalized Anxiety)",
-                  "guidance": "MANAGEMENT PLAN:\n1. Criteria: Persistent worry >6 months. \n2. 1st-line: SSRI (Sertraline) + applied relaxation or high-intensity CBT.\n3. 2nd-line: SNRI (Duloxetine/Venlafaxine) or Pregabalin (Caution: Risk of dependency/misuse)."
-                },
-                {
-                  "label": "Panic Disorder (with/without Agoraphobia)",
-                  "guidance": "MANAGEMENT PLAN:\n1. Features: Recurrent unexpected attacks + fear of future attacks/implications.\n2. Treatment: CBT focused on interoceptive exposure (physical sensations). SSRI (Fluoxetine/Sertraline) if therapy failed or preferred. NICE CG113."
-                },
-                {
-                  "label": "Social Anxiety Disorder",
-                  "guidance": "MANAGEMENT PLAN:\n1. Features: Marked fear of social/performance situations.\n2. 1st-line: Individual CBT (Clark & Wells or Heimberg models).\n3. Meds: Escitalopram or Sertraline if CBT declined/unavailable. NICE CG159."
+                  "value": "standard",
+                  "label": "Management Overview",
+                  "guidance": "MANAGEMENT PLAN:\n1. Assessment: Full clinical assessment to exclude red flags.\n2. Action: Refer to local clinical formulary for specific pharmacotherapy.\n3. Safety-net: Provide robust safety-netting advice.\n4. Follow-up: Arrange review based on clinical findings."
                 }
               ]
             }
@@ -7933,19 +7992,30 @@
           "evidence": "Management per NICE CKS and Local formulary.",
           "steps": [
             {
+              "id": "autism-overview",
+              "question": "1. Management Overview (Neuro-Diversity)",
+              "type": "dropdown",
+              "options": [
+                {
+                  "label": "Consultant Management Strategy",
+                  "guidance": "MANAGEMENT PLAN OVERVIEW:\n1. **Ethos**: Transition from a 'medical model' (fixing deficits) to a 'social model' (adjusting environment).\n2. **Co-morbidity**: High rates of ADHD, Anxiety, and Dyspraxia. Always screen for co-occurring conditions.\n3. **Biological**: Meds have NO role in core ASD features. Used only for co-morbidities (e.g. Melatonin for sleep, SSRIs for OCD).\n4. **Social**: Educational (EHCP) and Workplace adjustments are the primary interventions."
+                }
+              ]
+            },
+            {
               "id": "autism-assessment",
-              "question": "Assessment level",
+              "question": "2. Assessment Pathway (NICE CG128/142)",
               "type": "dropdown",
               "options": [
                 {
                   "value": "child",
                   "label": "Child/Young Person",
-                  "guidance": "MANAGEMENT PLAN:\nRefer to local multi-agency ASD pathway (Paediatrics/CAMHS). Review for co-occurring ADHD/LD. NICE CG128."
+                  "guidance": "MANAGEMENT PLAN:\n1. Referral: Local multi-agency ASD pathway (Paediatrics/CAMHS).\n2. Screening: SCQ (Social Communication Questionnaire). \n3. Assessment: ADOS and ADI-R (Gold standard tools)."
                 },
                 {
                   "value": "adult",
                   "label": "Adult suspected ASD",
-                  "guidance": "MANAGEMENT PLAN:\nRefer for specialist diagnostic assessment if significant impact on social/working life. Use AQ-10 screening tool. NICE CG142."
+                  "guidance": "MANAGEMENT PLAN:\n1. Screening: **AQ-10** (Score ≥6 = Refer).\n2. Referral: Specialist diagnostic assessment only if significant impact on social/working life. NICE CG142."
                 }
               ]
             }
@@ -8690,14 +8760,24 @@
           "evidence": "Management per NICE CKS and Local formulary.",
           "steps": [
             {
-              "id": "guidance",
-              "question": "Clinical Guidance (Best Practice)",
+              "id": "wellbeing-overview",
+              "question": "1. Management Overview (Primary Prevention)",
               "type": "dropdown",
               "options": [
                 {
-                  "value": "standard",
-                  "label": "Management Overview",
-                  "guidance": "MANAGEMENT PLAN:\n1. Assessment: Full clinical assessment to exclude red flags.\n2. Action: Refer to local clinical formulary for specific pharmacotherapy.\n3. Safety-net: Provide robust safety-netting advice.\n4. Follow-up: Arrange review based on clinical findings."
+                  "label": "Consultant Population Health Strategy",
+                  "guidance": "MANAGEMENT PLAN OVERVIEW:\n1. **Prevention**: Shifting from reactive care to proactive wellbeing management.\n2. **Universal Factors**: Sleep, Nutrition, Connection, and Sense of Agency.\n3. **Social Prescribing**: Utilizing non-medical community assets to address medical drivers."
+                }
+              ]
+            },
+            {
+              "id": "wellbeing-mgt",
+              "question": "2. Wellbeing & Prevention Action Plan",
+              "type": "dropdown",
+              "options": [
+                {
+                  "label": "Actions & Resources",
+                  "guidance": "MANAGEMENT PLAN:\n1. **5 Ways to Wellbeing**: Connect, Be Active, Take Notice, Keep Learning, Give.\n2. **Sleep Hygiene**: Regular times, avoid screens, caffeine limit.\n3. **Support**: Signpost to local 'Talking Therapies' (IAPT) and peer-support networks."
                 }
               ]
             }
@@ -9743,13 +9823,24 @@
           "evidence": "Here you will find a whole range of bites, heistopics aimed at all of those working in primary care. Perfect way to update and entertain you on the morning commute or in fact anywhere. You can also on [social media] Dodgers. Finally, check out the show notes and have a look aroun…",
           "steps": [
             {
-              "id": "wellbeing-mgt",
-              "question": "1. Wellbeing & Prevention",
+              "id": "wellbeing-overview",
+              "question": "1. Management Overview (Primary Prevention)",
               "type": "dropdown",
               "options": [
                 {
-                  "label": "Social Prescribing & Lifestyle",
-                  "guidance": "MANAGEMENT PLAN:\n1. 5 Ways to Wellbeing: Connect, Be Active, Take Notice, Keep Learning, Give.\n2. Sleep Hygiene: Regular times, avoid screens, caffeine limit.\n3. Support: Signpost to local 'Talking Therapies' (IAPT) and peer-support networks."
+                  "label": "Consultant Population Health Strategy",
+                  "guidance": "MANAGEMENT PLAN OVERVIEW:\n1. **Prevention**: Shifting from reactive care to proactive wellbeing management.\n2. **Universal Factors**: Sleep, Nutrition, Connection, and Sense of Agency.\n3. **Social Prescribing**: Utilizing non-medical community assets to address medical drivers."
+                }
+              ]
+            },
+            {
+              "id": "wellbeing-mgt",
+              "question": "2. Wellbeing & Prevention Action Plan",
+              "type": "dropdown",
+              "options": [
+                {
+                  "label": "Actions & Resources",
+                  "guidance": "MANAGEMENT PLAN:\n1. **5 Ways to Wellbeing**: Connect, Be Active, Take Notice, Keep Learning, Give.\n2. **Sleep Hygiene**: Regular times, avoid screens, caffeine limit.\n3. **Support**: Signpost to local 'Talking Therapies' (IAPT) and peer-support networks."
                 }
               ]
             }
@@ -9766,13 +9857,24 @@
           "evidence": "Here you will find a whole range of bites, heistopics aimed at all of those working in primary care. Perfect way to update and entertain you on the morning commute or in fact anywhere. You can also on [social media] Dodgers. Finally, check out the show notes and have a look aroun…",
           "steps": [
             {
-              "id": "wellbeing-mgt",
-              "question": "1. Wellbeing & Prevention",
+              "id": "wellbeing-overview",
+              "question": "1. Management Overview (Primary Prevention)",
               "type": "dropdown",
               "options": [
                 {
-                  "label": "Social Prescribing & Lifestyle",
-                  "guidance": "MANAGEMENT PLAN:\n1. 5 Ways to Wellbeing: Connect, Be Active, Take Notice, Keep Learning, Give.\n2. Sleep Hygiene: Regular times, avoid screens, caffeine limit.\n3. Support: Signpost to local 'Talking Therapies' (IAPT) and peer-support networks."
+                  "label": "Consultant Population Health Strategy",
+                  "guidance": "MANAGEMENT PLAN OVERVIEW:\n1. **Prevention**: Shifting from reactive care to proactive wellbeing management.\n2. **Universal Factors**: Sleep, Nutrition, Connection, and Sense of Agency.\n3. **Social Prescribing**: Utilizing non-medical community assets to address medical drivers."
+                }
+              ]
+            },
+            {
+              "id": "wellbeing-mgt",
+              "question": "2. Wellbeing & Prevention Action Plan",
+              "type": "dropdown",
+              "options": [
+                {
+                  "label": "Actions & Resources",
+                  "guidance": "MANAGEMENT PLAN:\n1. **5 Ways to Wellbeing**: Connect, Be Active, Take Notice, Keep Learning, Give.\n2. **Sleep Hygiene**: Regular times, avoid screens, caffeine limit.\n3. **Support**: Signpost to local 'Talking Therapies' (IAPT) and peer-support networks."
                 }
               ]
             }
@@ -9789,13 +9891,24 @@
           "evidence": "Here you will find a whole range of bites, heistopics aimed at all of those working in primary care. Perfect way to update and entertain you on the morning commute or in fact anywhere. You can also on [social media] Dodgers. Finally, check out the show notes and have a look aroun…",
           "steps": [
             {
-              "id": "wellbeing-mgt",
-              "question": "1. Wellbeing & Prevention",
+              "id": "wellbeing-overview",
+              "question": "1. Management Overview (Primary Prevention)",
               "type": "dropdown",
               "options": [
                 {
-                  "label": "Social Prescribing & Lifestyle",
-                  "guidance": "MANAGEMENT PLAN:\n1. 5 Ways to Wellbeing: Connect, Be Active, Take Notice, Keep Learning, Give.\n2. Sleep Hygiene: Regular times, avoid screens, caffeine limit.\n3. Support: Signpost to local 'Talking Therapies' (IAPT) and peer-support networks."
+                  "label": "Consultant Population Health Strategy",
+                  "guidance": "MANAGEMENT PLAN OVERVIEW:\n1. **Prevention**: Shifting from reactive care to proactive wellbeing management.\n2. **Universal Factors**: Sleep, Nutrition, Connection, and Sense of Agency.\n3. **Social Prescribing**: Utilizing non-medical community assets to address medical drivers."
+                }
+              ]
+            },
+            {
+              "id": "wellbeing-mgt",
+              "question": "2. Wellbeing & Prevention Action Plan",
+              "type": "dropdown",
+              "options": [
+                {
+                  "label": "Actions & Resources",
+                  "guidance": "MANAGEMENT PLAN:\n1. **5 Ways to Wellbeing**: Connect, Be Active, Take Notice, Keep Learning, Give.\n2. **Sleep Hygiene**: Regular times, avoid screens, caffeine limit.\n3. **Support**: Signpost to local 'Talking Therapies' (IAPT) and peer-support networks."
                 }
               ]
             }
@@ -9812,13 +9925,24 @@
           "evidence": "Thank you for joining us. Finally, check out the show notes and have a look around at our brand new [Organisation] website. In this episode we are rejoining [Name] of the work, well doctors, to discuss digital wellbeing this time for patients and about conducting the consultation…",
           "steps": [
             {
-              "id": "wellbeing-mgt",
-              "question": "1. Wellbeing & Prevention",
+              "id": "wellbeing-overview",
+              "question": "1. Management Overview (Primary Prevention)",
               "type": "dropdown",
               "options": [
                 {
-                  "label": "Social Prescribing & Lifestyle",
-                  "guidance": "MANAGEMENT PLAN:\n1. 5 Ways to Wellbeing: Connect, Be Active, Take Notice, Keep Learning, Give.\n2. Sleep Hygiene: Regular times, avoid screens, caffeine limit.\n3. Support: Signpost to local 'Talking Therapies' (IAPT) and peer-support networks."
+                  "label": "Consultant Population Health Strategy",
+                  "guidance": "MANAGEMENT PLAN OVERVIEW:\n1. **Prevention**: Shifting from reactive care to proactive wellbeing management.\n2. **Universal Factors**: Sleep, Nutrition, Connection, and Sense of Agency.\n3. **Social Prescribing**: Utilizing non-medical community assets to address medical drivers."
+                }
+              ]
+            },
+            {
+              "id": "wellbeing-mgt",
+              "question": "2. Wellbeing & Prevention Action Plan",
+              "type": "dropdown",
+              "options": [
+                {
+                  "label": "Actions & Resources",
+                  "guidance": "MANAGEMENT PLAN:\n1. **5 Ways to Wellbeing**: Connect, Be Active, Take Notice, Keep Learning, Give.\n2. **Sleep Hygiene**: Regular times, avoid screens, caffeine limit.\n3. **Support**: Signpost to local 'Talking Therapies' (IAPT) and peer-support networks."
                 }
               ]
             }
@@ -9835,13 +9959,24 @@
           "evidence": "Thank you for joining us. Finally, check out the show notes and have a look around at our brand new [Organisation] website. In this episode we are rejoining [Name] of the work, well doctors, to discuss digital wellbeing this time for patients and about conducting the consultation…",
           "steps": [
             {
-              "id": "wellbeing-mgt",
-              "question": "1. Wellbeing & Prevention",
+              "id": "wellbeing-overview",
+              "question": "1. Management Overview (Primary Prevention)",
               "type": "dropdown",
               "options": [
                 {
-                  "label": "Social Prescribing & Lifestyle",
-                  "guidance": "MANAGEMENT PLAN:\n1. 5 Ways to Wellbeing: Connect, Be Active, Take Notice, Keep Learning, Give.\n2. Sleep Hygiene: Regular times, avoid screens, caffeine limit.\n3. Support: Signpost to local 'Talking Therapies' (IAPT) and peer-support networks."
+                  "label": "Consultant Population Health Strategy",
+                  "guidance": "MANAGEMENT PLAN OVERVIEW:\n1. **Prevention**: Shifting from reactive care to proactive wellbeing management.\n2. **Universal Factors**: Sleep, Nutrition, Connection, and Sense of Agency.\n3. **Social Prescribing**: Utilizing non-medical community assets to address medical drivers."
+                }
+              ]
+            },
+            {
+              "id": "wellbeing-mgt",
+              "question": "2. Wellbeing & Prevention Action Plan",
+              "type": "dropdown",
+              "options": [
+                {
+                  "label": "Actions & Resources",
+                  "guidance": "MANAGEMENT PLAN:\n1. **5 Ways to Wellbeing**: Connect, Be Active, Take Notice, Keep Learning, Give.\n2. **Sleep Hygiene**: Regular times, avoid screens, caffeine limit.\n3. **Support**: Signpost to local 'Talking Therapies' (IAPT) and peer-support networks."
                 }
               ]
             }
@@ -9858,13 +9993,24 @@
           "evidence": "Thank you for joining us. Finally, check out the show notes and have a look around at our brand new [Organisation] website. In this episode we are rejoining [Name] of the work, well doctors, to discuss digital wellbeing this time for patients and about conducting the consultation…",
           "steps": [
             {
-              "id": "wellbeing-mgt",
-              "question": "1. Wellbeing & Prevention",
+              "id": "wellbeing-overview",
+              "question": "1. Management Overview (Primary Prevention)",
               "type": "dropdown",
               "options": [
                 {
-                  "label": "Social Prescribing & Lifestyle",
-                  "guidance": "MANAGEMENT PLAN:\n1. 5 Ways to Wellbeing: Connect, Be Active, Take Notice, Keep Learning, Give.\n2. Sleep Hygiene: Regular times, avoid screens, caffeine limit.\n3. Support: Signpost to local 'Talking Therapies' (IAPT) and peer-support networks."
+                  "label": "Consultant Population Health Strategy",
+                  "guidance": "MANAGEMENT PLAN OVERVIEW:\n1. **Prevention**: Shifting from reactive care to proactive wellbeing management.\n2. **Universal Factors**: Sleep, Nutrition, Connection, and Sense of Agency.\n3. **Social Prescribing**: Utilizing non-medical community assets to address medical drivers."
+                }
+              ]
+            },
+            {
+              "id": "wellbeing-mgt",
+              "question": "2. Wellbeing & Prevention Action Plan",
+              "type": "dropdown",
+              "options": [
+                {
+                  "label": "Actions & Resources",
+                  "guidance": "MANAGEMENT PLAN:\n1. **5 Ways to Wellbeing**: Connect, Be Active, Take Notice, Keep Learning, Give.\n2. **Sleep Hygiene**: Regular times, avoid screens, caffeine limit.\n3. **Support**: Signpost to local 'Talking Therapies' (IAPT) and peer-support networks."
                 }
               ]
             }
@@ -9975,13 +10121,24 @@
           "evidence": "Now for the next few episodes of the podcast, we've got something a little different for you. The webinars, which are being run in association with [Organisation], are",
           "steps": [
             {
-              "id": "wellbeing-mgt",
-              "question": "1. Wellbeing & Prevention",
+              "id": "wellbeing-overview",
+              "question": "1. Management Overview (Primary Prevention)",
               "type": "dropdown",
               "options": [
                 {
-                  "label": "Social Prescribing & Lifestyle",
-                  "guidance": "MANAGEMENT PLAN:\n1. 5 Ways to Wellbeing: Connect, Be Active, Take Notice, Keep Learning, Give.\n2. Sleep Hygiene: Regular times, avoid screens, caffeine limit.\n3. Support: Signpost to local 'Talking Therapies' (IAPT) and peer-support networks."
+                  "label": "Consultant Population Health Strategy",
+                  "guidance": "MANAGEMENT PLAN OVERVIEW:\n1. **Prevention**: Shifting from reactive care to proactive wellbeing management.\n2. **Universal Factors**: Sleep, Nutrition, Connection, and Sense of Agency.\n3. **Social Prescribing**: Utilizing non-medical community assets to address medical drivers."
+                }
+              ]
+            },
+            {
+              "id": "wellbeing-mgt",
+              "question": "2. Wellbeing & Prevention Action Plan",
+              "type": "dropdown",
+              "options": [
+                {
+                  "label": "Actions & Resources",
+                  "guidance": "MANAGEMENT PLAN:\n1. **5 Ways to Wellbeing**: Connect, Be Active, Take Notice, Keep Learning, Give.\n2. **Sleep Hygiene**: Regular times, avoid screens, caffeine limit.\n3. **Support**: Signpost to local 'Talking Therapies' (IAPT) and peer-support networks."
                 }
               ]
             }
@@ -9998,13 +10155,24 @@
           "evidence": "Now for the next few episodes of the podcast, we've got something a little different for you. The webinars, which are being run in association with [Organisation], are",
           "steps": [
             {
-              "id": "wellbeing-mgt",
-              "question": "1. Wellbeing & Prevention",
+              "id": "wellbeing-overview",
+              "question": "1. Management Overview (Primary Prevention)",
               "type": "dropdown",
               "options": [
                 {
-                  "label": "Social Prescribing & Lifestyle",
-                  "guidance": "MANAGEMENT PLAN:\n1. 5 Ways to Wellbeing: Connect, Be Active, Take Notice, Keep Learning, Give.\n2. Sleep Hygiene: Regular times, avoid screens, caffeine limit.\n3. Support: Signpost to local 'Talking Therapies' (IAPT) and peer-support networks."
+                  "label": "Consultant Population Health Strategy",
+                  "guidance": "MANAGEMENT PLAN OVERVIEW:\n1. **Prevention**: Shifting from reactive care to proactive wellbeing management.\n2. **Universal Factors**: Sleep, Nutrition, Connection, and Sense of Agency.\n3. **Social Prescribing**: Utilizing non-medical community assets to address medical drivers."
+                }
+              ]
+            },
+            {
+              "id": "wellbeing-mgt",
+              "question": "2. Wellbeing & Prevention Action Plan",
+              "type": "dropdown",
+              "options": [
+                {
+                  "label": "Actions & Resources",
+                  "guidance": "MANAGEMENT PLAN:\n1. **5 Ways to Wellbeing**: Connect, Be Active, Take Notice, Keep Learning, Give.\n2. **Sleep Hygiene**: Regular times, avoid screens, caffeine limit.\n3. **Support**: Signpost to local 'Talking Therapies' (IAPT) and peer-support networks."
                 }
               ]
             }
@@ -10021,13 +10189,24 @@
           "evidence": "Now for the next few episodes of the podcast, we've got something a little different for you. The webinars, which are being run in association with [Organisation], are",
           "steps": [
             {
-              "id": "wellbeing-mgt",
-              "question": "1. Wellbeing & Prevention",
+              "id": "wellbeing-overview",
+              "question": "1. Management Overview (Primary Prevention)",
               "type": "dropdown",
               "options": [
                 {
-                  "label": "Social Prescribing & Lifestyle",
-                  "guidance": "MANAGEMENT PLAN:\n1. 5 Ways to Wellbeing: Connect, Be Active, Take Notice, Keep Learning, Give.\n2. Sleep Hygiene: Regular times, avoid screens, caffeine limit.\n3. Support: Signpost to local 'Talking Therapies' (IAPT) and peer-support networks."
+                  "label": "Consultant Population Health Strategy",
+                  "guidance": "MANAGEMENT PLAN OVERVIEW:\n1. **Prevention**: Shifting from reactive care to proactive wellbeing management.\n2. **Universal Factors**: Sleep, Nutrition, Connection, and Sense of Agency.\n3. **Social Prescribing**: Utilizing non-medical community assets to address medical drivers."
+                }
+              ]
+            },
+            {
+              "id": "wellbeing-mgt",
+              "question": "2. Wellbeing & Prevention Action Plan",
+              "type": "dropdown",
+              "options": [
+                {
+                  "label": "Actions & Resources",
+                  "guidance": "MANAGEMENT PLAN:\n1. **5 Ways to Wellbeing**: Connect, Be Active, Take Notice, Keep Learning, Give.\n2. **Sleep Hygiene**: Regular times, avoid screens, caffeine limit.\n3. **Support**: Signpost to local 'Talking Therapies' (IAPT) and peer-support networks."
                 }
               ]
             }
@@ -10067,32 +10246,14 @@
           "evidence": "Management per NICE CKS and Local formulary.",
           "steps": [
             {
-              "id": "anxiety-overview",
-              "question": "1. Management Overview (Stepped Care)",
+              "id": "guidance",
+              "question": "Clinical Guidance (Best Practice)",
               "type": "dropdown",
               "options": [
                 {
-                  "label": "Consultant Treatment Strategy",
-                  "guidance": "MANAGEMENT PLAN OVERVIEW:\n1. **Framework**: Step-wise escalation from low-intensity (self-help) to high-intensity (Therapy + Pharmacotherapy).\n2. **Mechanism**: Address the 'avoidance loop'. Recovery requires exposure + reduction of hyperarousal.\n3. **Biological**: SSRIs/SNRIs used primarily to lower the 'anxiety floor'. Use Benzos ONLY for short-term crisis (<2 weeks).\n4. **Social**: Address environmental triggers and occupational 'stagnation' caused by avoidance."
-                }
-              ]
-            },
-            {
-              "id": "anxiety-subtype",
-              "question": "2. Subtype Identification (Consultant Analysis)",
-              "type": "dropdown",
-              "options": [
-                {
-                  "label": "GAD (Generalized Anxiety)",
-                  "guidance": "MANAGEMENT PLAN:\n1. Criteria: Persistent worry >6 months. \n2. 1st-line: SSRI (Sertraline) + applied relaxation or high-intensity CBT.\n3. 2nd-line: SNRI (Duloxetine/Venlafaxine) or Pregabalin (Caution: Risk of dependency/misuse)."
-                },
-                {
-                  "label": "Panic Disorder (with/without Agoraphobia)",
-                  "guidance": "MANAGEMENT PLAN:\n1. Features: Recurrent unexpected attacks + fear of future attacks/implications.\n2. Treatment: CBT focused on interoceptive exposure (physical sensations). SSRI (Fluoxetine/Sertraline) if therapy failed or preferred. NICE CG113."
-                },
-                {
-                  "label": "Social Anxiety Disorder",
-                  "guidance": "MANAGEMENT PLAN:\n1. Features: Marked fear of social/performance situations.\n2. 1st-line: Individual CBT (Clark & Wells or Heimberg models).\n3. Meds: Escitalopram or Sertraline if CBT declined/unavailable. NICE CG159."
+                  "value": "standard",
+                  "label": "Management Overview",
+                  "guidance": "MANAGEMENT PLAN:\n1. Assessment: Full clinical assessment to exclude red flags.\n2. Action: Refer to local clinical formulary for specific pharmacotherapy.\n3. Safety-net: Provide robust safety-netting advice.\n4. Follow-up: Arrange review based on clinical findings."
                 }
               ]
             }
@@ -10108,32 +10269,14 @@
           "evidence": "Management per NICE CKS and Local formulary.",
           "steps": [
             {
-              "id": "anxiety-overview",
-              "question": "1. Management Overview (Stepped Care)",
+              "id": "guidance",
+              "question": "Clinical Guidance (Best Practice)",
               "type": "dropdown",
               "options": [
                 {
-                  "label": "Consultant Treatment Strategy",
-                  "guidance": "MANAGEMENT PLAN OVERVIEW:\n1. **Framework**: Step-wise escalation from low-intensity (self-help) to high-intensity (Therapy + Pharmacotherapy).\n2. **Mechanism**: Address the 'avoidance loop'. Recovery requires exposure + reduction of hyperarousal.\n3. **Biological**: SSRIs/SNRIs used primarily to lower the 'anxiety floor'. Use Benzos ONLY for short-term crisis (<2 weeks).\n4. **Social**: Address environmental triggers and occupational 'stagnation' caused by avoidance."
-                }
-              ]
-            },
-            {
-              "id": "anxiety-subtype",
-              "question": "2. Subtype Identification (Consultant Analysis)",
-              "type": "dropdown",
-              "options": [
-                {
-                  "label": "GAD (Generalized Anxiety)",
-                  "guidance": "MANAGEMENT PLAN:\n1. Criteria: Persistent worry >6 months. \n2. 1st-line: SSRI (Sertraline) + applied relaxation or high-intensity CBT.\n3. 2nd-line: SNRI (Duloxetine/Venlafaxine) or Pregabalin (Caution: Risk of dependency/misuse)."
-                },
-                {
-                  "label": "Panic Disorder (with/without Agoraphobia)",
-                  "guidance": "MANAGEMENT PLAN:\n1. Features: Recurrent unexpected attacks + fear of future attacks/implications.\n2. Treatment: CBT focused on interoceptive exposure (physical sensations). SSRI (Fluoxetine/Sertraline) if therapy failed or preferred. NICE CG113."
-                },
-                {
-                  "label": "Social Anxiety Disorder",
-                  "guidance": "MANAGEMENT PLAN:\n1. Features: Marked fear of social/performance situations.\n2. 1st-line: Individual CBT (Clark & Wells or Heimberg models).\n3. Meds: Escitalopram or Sertraline if CBT declined/unavailable. NICE CG159."
+                  "value": "standard",
+                  "label": "Management Overview",
+                  "guidance": "MANAGEMENT PLAN:\n1. Assessment: Full clinical assessment to exclude red flags.\n2. Action: Refer to local clinical formulary for specific pharmacotherapy.\n3. Safety-net: Provide robust safety-netting advice.\n4. Follow-up: Arrange review based on clinical findings."
                 }
               ]
             }
@@ -10149,32 +10292,14 @@
           "evidence": "Management per NICE CKS and Local formulary.",
           "steps": [
             {
-              "id": "anxiety-overview",
-              "question": "1. Management Overview (Stepped Care)",
+              "id": "guidance",
+              "question": "Clinical Guidance (Best Practice)",
               "type": "dropdown",
               "options": [
                 {
-                  "label": "Consultant Treatment Strategy",
-                  "guidance": "MANAGEMENT PLAN OVERVIEW:\n1. **Framework**: Step-wise escalation from low-intensity (self-help) to high-intensity (Therapy + Pharmacotherapy).\n2. **Mechanism**: Address the 'avoidance loop'. Recovery requires exposure + reduction of hyperarousal.\n3. **Biological**: SSRIs/SNRIs used primarily to lower the 'anxiety floor'. Use Benzos ONLY for short-term crisis (<2 weeks).\n4. **Social**: Address environmental triggers and occupational 'stagnation' caused by avoidance."
-                }
-              ]
-            },
-            {
-              "id": "anxiety-subtype",
-              "question": "2. Subtype Identification (Consultant Analysis)",
-              "type": "dropdown",
-              "options": [
-                {
-                  "label": "GAD (Generalized Anxiety)",
-                  "guidance": "MANAGEMENT PLAN:\n1. Criteria: Persistent worry >6 months. \n2. 1st-line: SSRI (Sertraline) + applied relaxation or high-intensity CBT.\n3. 2nd-line: SNRI (Duloxetine/Venlafaxine) or Pregabalin (Caution: Risk of dependency/misuse)."
-                },
-                {
-                  "label": "Panic Disorder (with/without Agoraphobia)",
-                  "guidance": "MANAGEMENT PLAN:\n1. Features: Recurrent unexpected attacks + fear of future attacks/implications.\n2. Treatment: CBT focused on interoceptive exposure (physical sensations). SSRI (Fluoxetine/Sertraline) if therapy failed or preferred. NICE CG113."
-                },
-                {
-                  "label": "Social Anxiety Disorder",
-                  "guidance": "MANAGEMENT PLAN:\n1. Features: Marked fear of social/performance situations.\n2. 1st-line: Individual CBT (Clark & Wells or Heimberg models).\n3. Meds: Escitalopram or Sertraline if CBT declined/unavailable. NICE CG159."
+                  "value": "standard",
+                  "label": "Management Overview",
+                  "guidance": "MANAGEMENT PLAN:\n1. Assessment: Full clinical assessment to exclude red flags.\n2. Action: Refer to local clinical formulary for specific pharmacotherapy.\n3. Safety-net: Provide robust safety-netting advice.\n4. Follow-up: Arrange review based on clinical findings."
                 }
               ]
             }
@@ -10286,32 +10411,14 @@
           "evidence": "Management per NG226 and CKS GAD.",
           "steps": [
             {
-              "id": "anxiety-overview",
-              "question": "1. Management Overview (Stepped Care)",
+              "id": "guidance",
+              "question": "Clinical Guidance (Best Practice)",
               "type": "dropdown",
               "options": [
                 {
-                  "label": "Consultant Treatment Strategy",
-                  "guidance": "MANAGEMENT PLAN OVERVIEW:\n1. **Framework**: Step-wise escalation from low-intensity (self-help) to high-intensity (Therapy + Pharmacotherapy).\n2. **Mechanism**: Address the 'avoidance loop'. Recovery requires exposure + reduction of hyperarousal.\n3. **Biological**: SSRIs/SNRIs used primarily to lower the 'anxiety floor'. Use Benzos ONLY for short-term crisis (<2 weeks).\n4. **Social**: Address environmental triggers and occupational 'stagnation' caused by avoidance."
-                }
-              ]
-            },
-            {
-              "id": "anxiety-subtype",
-              "question": "2. Subtype Identification (Consultant Analysis)",
-              "type": "dropdown",
-              "options": [
-                {
-                  "label": "GAD (Generalized Anxiety)",
-                  "guidance": "MANAGEMENT PLAN:\n1. Criteria: Persistent worry >6 months. \n2. 1st-line: SSRI (Sertraline) + applied relaxation or high-intensity CBT.\n3. 2nd-line: SNRI (Duloxetine/Venlafaxine) or Pregabalin (Caution: Risk of dependency/misuse)."
-                },
-                {
-                  "label": "Panic Disorder (with/without Agoraphobia)",
-                  "guidance": "MANAGEMENT PLAN:\n1. Features: Recurrent unexpected attacks + fear of future attacks/implications.\n2. Treatment: CBT focused on interoceptive exposure (physical sensations). SSRI (Fluoxetine/Sertraline) if therapy failed or preferred. NICE CG113."
-                },
-                {
-                  "label": "Social Anxiety Disorder",
-                  "guidance": "MANAGEMENT PLAN:\n1. Features: Marked fear of social/performance situations.\n2. 1st-line: Individual CBT (Clark & Wells or Heimberg models).\n3. Meds: Escitalopram or Sertraline if CBT declined/unavailable. NICE CG159."
+                  "value": "standard",
+                  "label": "Management Overview",
+                  "guidance": "MANAGEMENT PLAN:\n1. Assessment: Full clinical assessment to exclude red flags.\n2. Action: Refer to local clinical formulary for specific pharmacotherapy.\n3. Safety-net: Provide robust safety-netting advice.\n4. Follow-up: Arrange review based on clinical findings."
                 }
               ]
             }
@@ -10329,32 +10436,17 @@
           "evidence": "(Intro removed; no clinical content in this segment.)",
           "steps": [
             {
-              "id": "anxiety-overview",
-              "question": "1. Management Overview (Stepped Care)",
+              "id": "bp-assessment",
+              "question": "Assessment (Best Practice)",
               "type": "dropdown",
               "options": [
                 {
-                  "label": "Consultant Treatment Strategy",
-                  "guidance": "MANAGEMENT PLAN OVERVIEW:\n1. **Framework**: Step-wise escalation from low-intensity (self-help) to high-intensity (Therapy + Pharmacotherapy).\n2. **Mechanism**: Address the 'avoidance loop'. Recovery requires exposure + reduction of hyperarousal.\n3. **Biological**: SSRIs/SNRIs used primarily to lower the 'anxiety floor'. Use Benzos ONLY for short-term crisis (<2 weeks).\n4. **Social**: Address environmental triggers and occupational 'stagnation' caused by avoidance."
-                }
-              ]
-            },
-            {
-              "id": "anxiety-subtype",
-              "question": "2. Subtype Identification (Consultant Analysis)",
-              "type": "dropdown",
-              "options": [
-                {
-                  "label": "GAD (Generalized Anxiety)",
-                  "guidance": "MANAGEMENT PLAN:\n1. Criteria: Persistent worry >6 months. \n2. 1st-line: SSRI (Sertraline) + applied relaxation or high-intensity CBT.\n3. 2nd-line: SNRI (Duloxetine/Venlafaxine) or Pregabalin (Caution: Risk of dependency/misuse)."
+                  "label": "Standard Assessment",
+                  "guidance": "MANAGEMENT PLAN:\n1. History: Assess onset, severity, and triggers. Specifically exclude organic red flags (weight loss, night pain, fever, night sweats).\n2. Review: Family history and current medications.\n3. Differential: Consider most likely vs most serious diagnosis. Use validated scores (e.g. Centor, Wells, qSOFA) if applicable."
                 },
                 {
-                  "label": "Panic Disorder (with/without Agoraphobia)",
-                  "guidance": "MANAGEMENT PLAN:\n1. Features: Recurrent unexpected attacks + fear of future attacks/implications.\n2. Treatment: CBT focused on interoceptive exposure (physical sensations). SSRI (Fluoxetine/Sertraline) if therapy failed or preferred. NICE CG113."
-                },
-                {
-                  "label": "Social Anxiety Disorder",
-                  "guidance": "MANAGEMENT PLAN:\n1. Features: Marked fear of social/performance situations.\n2. 1st-line: Individual CBT (Clark & Wells or Heimberg models).\n3. Meds: Escitalopram or Sertraline if CBT declined/unavailable. NICE CG159."
+                  "label": "Examination & Vitals",
+                  "guidance": "MANAGEMENT PLAN:\n1. Physical Exam: Perform focused physical exam (e.g. MSK, Neuro, Respiratory).\n2. Vitals: Check NEWS2 if systemically unwell.\n3. Documentation: Document findings and clinical rationale clearly."
                 }
               ]
             }
@@ -10373,32 +10465,13 @@
           "evidence": "(Intro removed; no clinical content in this segment.)",
           "steps": [
             {
-              "id": "anxiety-overview",
-              "question": "1. Management Overview (Stepped Care)",
+              "id": "mh-mgmt",
+              "question": "Mental Health Support (Best Practice)",
               "type": "dropdown",
               "options": [
                 {
-                  "label": "Consultant Treatment Strategy",
-                  "guidance": "MANAGEMENT PLAN OVERVIEW:\n1. **Framework**: Step-wise escalation from low-intensity (self-help) to high-intensity (Therapy + Pharmacotherapy).\n2. **Mechanism**: Address the 'avoidance loop'. Recovery requires exposure + reduction of hyperarousal.\n3. **Biological**: SSRIs/SNRIs used primarily to lower the 'anxiety floor'. Use Benzos ONLY for short-term crisis (<2 weeks).\n4. **Social**: Address environmental triggers and occupational 'stagnation' caused by avoidance."
-                }
-              ]
-            },
-            {
-              "id": "anxiety-subtype",
-              "question": "2. Subtype Identification (Consultant Analysis)",
-              "type": "dropdown",
-              "options": [
-                {
-                  "label": "GAD (Generalized Anxiety)",
-                  "guidance": "MANAGEMENT PLAN:\n1. Criteria: Persistent worry >6 months. \n2. 1st-line: SSRI (Sertraline) + applied relaxation or high-intensity CBT.\n3. 2nd-line: SNRI (Duloxetine/Venlafaxine) or Pregabalin (Caution: Risk of dependency/misuse)."
-                },
-                {
-                  "label": "Panic Disorder (with/without Agoraphobia)",
-                  "guidance": "MANAGEMENT PLAN:\n1. Features: Recurrent unexpected attacks + fear of future attacks/implications.\n2. Treatment: CBT focused on interoceptive exposure (physical sensations). SSRI (Fluoxetine/Sertraline) if therapy failed or preferred. NICE CG113."
-                },
-                {
-                  "label": "Social Anxiety Disorder",
-                  "guidance": "MANAGEMENT PLAN:\n1. Features: Marked fear of social/performance situations.\n2. 1st-line: Individual CBT (Clark & Wells or Heimberg models).\n3. Meds: Escitalopram or Sertraline if CBT declined/unavailable. NICE CG159."
+                  "label": "Immediate Support & Signposting",
+                  "guidance": "MANAGEMENT PLAN:\n1. Crisis: Provide emergency contact numbers (NHS 111, Samaritans 116 123, or local crisis team).\n2. Self-help: Recommend digital CBT resources or self-help books.\n3. Social: Encourage engagement with family/friends and maintaining routine.\n4. Review: Arrange follow-up (usually 1-2 weeks) to monitor risk and symptom progression.\n5. Safety-net: Advise patient to contact GP or A&E if suicidal ideation increases."
                 }
               ]
             }
@@ -10417,32 +10490,13 @@
           "evidence": "(Intro removed; no clinical content in this segment.)",
           "steps": [
             {
-              "id": "anxiety-overview",
-              "question": "1. Management Overview (Stepped Care)",
+              "id": "bp-referral",
+              "question": "Referral & Follow-up (Best Practice)",
               "type": "dropdown",
               "options": [
                 {
-                  "label": "Consultant Treatment Strategy",
-                  "guidance": "MANAGEMENT PLAN OVERVIEW:\n1. **Framework**: Step-wise escalation from low-intensity (self-help) to high-intensity (Therapy + Pharmacotherapy).\n2. **Mechanism**: Address the 'avoidance loop'. Recovery requires exposure + reduction of hyperarousal.\n3. **Biological**: SSRIs/SNRIs used primarily to lower the 'anxiety floor'. Use Benzos ONLY for short-term crisis (<2 weeks).\n4. **Social**: Address environmental triggers and occupational 'stagnation' caused by avoidance."
-                }
-              ]
-            },
-            {
-              "id": "anxiety-subtype",
-              "question": "2. Subtype Identification (Consultant Analysis)",
-              "type": "dropdown",
-              "options": [
-                {
-                  "label": "GAD (Generalized Anxiety)",
-                  "guidance": "MANAGEMENT PLAN:\n1. Criteria: Persistent worry >6 months. \n2. 1st-line: SSRI (Sertraline) + applied relaxation or high-intensity CBT.\n3. 2nd-line: SNRI (Duloxetine/Venlafaxine) or Pregabalin (Caution: Risk of dependency/misuse)."
-                },
-                {
-                  "label": "Panic Disorder (with/without Agoraphobia)",
-                  "guidance": "MANAGEMENT PLAN:\n1. Features: Recurrent unexpected attacks + fear of future attacks/implications.\n2. Treatment: CBT focused on interoceptive exposure (physical sensations). SSRI (Fluoxetine/Sertraline) if therapy failed or preferred. NICE CG113."
-                },
-                {
-                  "label": "Social Anxiety Disorder",
-                  "guidance": "MANAGEMENT PLAN:\n1. Features: Marked fear of social/performance situations.\n2. 1st-line: Individual CBT (Clark & Wells or Heimberg models).\n3. Meds: Escitalopram or Sertraline if CBT declined/unavailable. NICE CG159."
+                  "label": "Referral & Safety-netting",
+                  "guidance": "MANAGEMENT PLAN:\n1. Referral: Refer 2WW if malignancy suspected. Urgent referral if clinical compromise. Routine if primary care management fails.\n2. Waiting List: Ensure patient knows how to report deterioration while waiting.\n3. Review: Review and optimize primary care management in the interim."
                 }
               ]
             }
@@ -10461,32 +10515,14 @@
           "evidence": "Management per NICE CKS and Local formulary.",
           "steps": [
             {
-              "id": "anxiety-overview",
-              "question": "1. Management Overview (Stepped Care)",
+              "id": "guidance",
+              "question": "Clinical Guidance (Best Practice)",
               "type": "dropdown",
               "options": [
                 {
-                  "label": "Consultant Treatment Strategy",
-                  "guidance": "MANAGEMENT PLAN OVERVIEW:\n1. **Framework**: Step-wise escalation from low-intensity (self-help) to high-intensity (Therapy + Pharmacotherapy).\n2. **Mechanism**: Address the 'avoidance loop'. Recovery requires exposure + reduction of hyperarousal.\n3. **Biological**: SSRIs/SNRIs used primarily to lower the 'anxiety floor'. Use Benzos ONLY for short-term crisis (<2 weeks).\n4. **Social**: Address environmental triggers and occupational 'stagnation' caused by avoidance."
-                }
-              ]
-            },
-            {
-              "id": "anxiety-subtype",
-              "question": "2. Subtype Identification (Consultant Analysis)",
-              "type": "dropdown",
-              "options": [
-                {
-                  "label": "GAD (Generalized Anxiety)",
-                  "guidance": "MANAGEMENT PLAN:\n1. Criteria: Persistent worry >6 months. \n2. 1st-line: SSRI (Sertraline) + applied relaxation or high-intensity CBT.\n3. 2nd-line: SNRI (Duloxetine/Venlafaxine) or Pregabalin (Caution: Risk of dependency/misuse)."
-                },
-                {
-                  "label": "Panic Disorder (with/without Agoraphobia)",
-                  "guidance": "MANAGEMENT PLAN:\n1. Features: Recurrent unexpected attacks + fear of future attacks/implications.\n2. Treatment: CBT focused on interoceptive exposure (physical sensations). SSRI (Fluoxetine/Sertraline) if therapy failed or preferred. NICE CG113."
-                },
-                {
-                  "label": "Social Anxiety Disorder",
-                  "guidance": "MANAGEMENT PLAN:\n1. Features: Marked fear of social/performance situations.\n2. 1st-line: Individual CBT (Clark & Wells or Heimberg models).\n3. Meds: Escitalopram or Sertraline if CBT declined/unavailable. NICE CG159."
+                  "value": "standard",
+                  "label": "Management Overview",
+                  "guidance": "MANAGEMENT PLAN:\n1. Assessment: Full clinical assessment to exclude red flags.\n2. Action: Refer to local clinical formulary for specific pharmacotherapy.\n3. Safety-net: Provide robust safety-netting advice.\n4. Follow-up: Arrange review based on clinical findings."
                 }
               ]
             }
@@ -10526,8 +10562,19 @@
           "evidence": "So welcome back everybody to the third part of our series on Perry Natal Mental Health. It gives me great pleasure to welcome back [Name], who is a Perry Natal Mental Health champion in Warwick. And we've had two really wonderful podcasts before this, looking at opening the conve…",
           "steps": [
             {
+              "id": "perinatal-overview",
+              "question": "1. Management Overview (Mother & Baby)",
+              "type": "dropdown",
+              "options": [
+                {
+                  "label": "Consultant Care Ethos",
+                  "guidance": "MANAGEMENT PLAN OVERVIEW:\n1. **Priority**: Balance the needs of maternal mental health with fetal/infant safety.\n2. **Meds**: Avoid 'blind' stopping of effective medication in pregnancy; risk of relapse is high. Consult specialized databases (e.g. BUMPS).\n3. **Safety**: Vigilant monitoring for Postpartum Psychosis—a true psychiatric emergency.\n4. **Support**: Immediate referral to Specialist Perinatal Mental Health Teams (PMHT)."
+                }
+              ]
+            },
+            {
               "id": "perinatal-mgt",
-              "question": "1. Perinatal Care (NICE CG192)",
+              "question": "2. Perinatal Care (NICE CG192)",
               "type": "dropdown",
               "options": [
                 {
@@ -10550,8 +10597,19 @@
           "evidence": "So welcome back everybody to the third part of our series on Perry Natal Mental Health. It gives me great pleasure to welcome back [Name], who is a Perry Natal Mental Health champion in Warwick. And we've had two really wonderful podcasts before this, looking at opening the conve…",
           "steps": [
             {
+              "id": "perinatal-overview",
+              "question": "1. Management Overview (Mother & Baby)",
+              "type": "dropdown",
+              "options": [
+                {
+                  "label": "Consultant Care Ethos",
+                  "guidance": "MANAGEMENT PLAN OVERVIEW:\n1. **Priority**: Balance the needs of maternal mental health with fetal/infant safety.\n2. **Meds**: Avoid 'blind' stopping of effective medication in pregnancy; risk of relapse is high. Consult specialized databases (e.g. BUMPS).\n3. **Safety**: Vigilant monitoring for Postpartum Psychosis—a true psychiatric emergency.\n4. **Support**: Immediate referral to Specialist Perinatal Mental Health Teams (PMHT)."
+                }
+              ]
+            },
+            {
               "id": "perinatal-mgt",
-              "question": "1. Perinatal Care (NICE CG192)",
+              "question": "2. Perinatal Care (NICE CG192)",
               "type": "dropdown",
               "options": [
                 {
@@ -10574,8 +10632,19 @@
           "evidence": "So welcome back everybody to the third part of our series on Perry Natal Mental Health. It gives me great pleasure to welcome back [Name], who is a Perry Natal Mental Health champion in Warwick. And we've had two really wonderful podcasts before this, looking at opening the conve…",
           "steps": [
             {
+              "id": "perinatal-overview",
+              "question": "1. Management Overview (Mother & Baby)",
+              "type": "dropdown",
+              "options": [
+                {
+                  "label": "Consultant Care Ethos",
+                  "guidance": "MANAGEMENT PLAN OVERVIEW:\n1. **Priority**: Balance the needs of maternal mental health with fetal/infant safety.\n2. **Meds**: Avoid 'blind' stopping of effective medication in pregnancy; risk of relapse is high. Consult specialized databases (e.g. BUMPS).\n3. **Safety**: Vigilant monitoring for Postpartum Psychosis—a true psychiatric emergency.\n4. **Support**: Immediate referral to Specialist Perinatal Mental Health Teams (PMHT)."
+                }
+              ]
+            },
+            {
               "id": "perinatal-mgt",
-              "question": "1. Perinatal Care (NICE CG192)",
+              "question": "2. Perinatal Care (NICE CG192)",
               "type": "dropdown",
               "options": [
                 {
@@ -11217,17 +11286,39 @@
           "evidence": "Management per NICE CKS and Local formulary.",
           "steps": [
             {
-              "id": "ptsd-mgmt",
-              "question": "PTSD / OCD Specialist Care",
+              "id": "ptsd-ocd-overview",
+              "question": "1. Management Overview (Specialized Anxiety)",
               "type": "dropdown",
               "options": [
                 {
-                  "label": "PTSD (NICE NG116)",
-                  "guidance": "MANAGEMENT PLAN:\n1. Diagnosis: Re-experiencing (flashbacks), avoidance, and hyperarousal >1 month post-trauma.\n2. Treatment: Trauma-focused CBT (TF-CBT) or EMDR. Do NOT use Benzos. Pharmacotherapy (Venlafaxine or SSRI) only if patient prefers or therapy failed."
+                  "label": "Consultant Strategic Approach",
+                  "guidance": "MANAGEMENT PLAN OVERVIEW:\n1. **PTSD Philosophy**: Focus on 're-processing' traumatic memories rather than avoidance. \n2. **OCD Philosophy**: Focus on 'Exposure & Response Prevention' (ERP). Breaking the link between obsession and neutralizing compulsion.\n3. **Meds**: SSRIs/SNRIs used primarily to 'quieten' the cognitive noise, facilitating engagement in intensive therapy."
+                }
+              ]
+            },
+            {
+              "id": "ptsd-mgmt",
+              "question": "2. PTSD Management (NICE NG116)",
+              "type": "dropdown",
+              "options": [
+                {
+                  "label": "PTSD Evidence-Based Care",
+                  "guidance": "MANAGEMENT PLAN:\n1. Diagnosis: Re-experiencing (flashbacks), avoidance, and hyperarousal >1 month post-trauma.\n2. 1st-line: **Trauma-focused CBT (TF-CBT)** or **EMDR** (Eye Movement Desensitization and Reprocessing).\n3. Meds: Venlafaxine or SSRI (Sertraline) only if patient prefers or therapy failed. Do NOT use Benzos."
                 },
                 {
-                  "label": "OCD (NICE CG31)",
-                  "guidance": "MANAGEMENT PLAN:\n1. Diagnosis: Obsessions (intrusive thoughts) and/or compulsions (repetitive acts).\n2. Treatment: ERP (Exposure & Response Prevention) + SSRI (often higher doses e.g. Fluoxetine 40-60mg required)."
+                  "label": "Complex PTSD (C-PTSD)",
+                  "guidance": "MANAGEMENT PLAN:\n1. Features: Core PTSD + disturbances in self-organization (affect dysregulation, negative self-concept, relational diffs).\n2. Management: Requires longer-term stabilization phase followed by trauma-focused work."
+                }
+              ]
+            },
+            {
+              "id": "ocd-mgmt",
+              "question": "3. OCD Management (NICE CG31)",
+              "type": "dropdown",
+              "options": [
+                {
+                  "label": "OCD Stepwise Care",
+                  "guidance": "MANAGEMENT PLAN:\n1. 1st-line: **ERP** (Exposure & Response Prevention) +/- SSRI.\n2. Meds: Often require higher doses (e.g., Fluoxetine 60-80mg, Sertraline 200mg). Trial for ≥12 weeks.\n3. Resistance: Consider adding Clomipramine (TCA) or an atypical antipsychotic adjunct."
                 }
               ]
             }
@@ -11245,17 +11336,39 @@
           "evidence": "Management per NICE CKS and Local formulary.",
           "steps": [
             {
-              "id": "ptsd-mgmt",
-              "question": "PTSD / OCD Specialist Care",
+              "id": "ptsd-ocd-overview",
+              "question": "1. Management Overview (Specialized Anxiety)",
               "type": "dropdown",
               "options": [
                 {
-                  "label": "PTSD (NICE NG116)",
-                  "guidance": "MANAGEMENT PLAN:\n1. Diagnosis: Re-experiencing (flashbacks), avoidance, and hyperarousal >1 month post-trauma.\n2. Treatment: Trauma-focused CBT (TF-CBT) or EMDR. Do NOT use Benzos. Pharmacotherapy (Venlafaxine or SSRI) only if patient prefers or therapy failed."
+                  "label": "Consultant Strategic Approach",
+                  "guidance": "MANAGEMENT PLAN OVERVIEW:\n1. **PTSD Philosophy**: Focus on 're-processing' traumatic memories rather than avoidance. \n2. **OCD Philosophy**: Focus on 'Exposure & Response Prevention' (ERP). Breaking the link between obsession and neutralizing compulsion.\n3. **Meds**: SSRIs/SNRIs used primarily to 'quieten' the cognitive noise, facilitating engagement in intensive therapy."
+                }
+              ]
+            },
+            {
+              "id": "ptsd-mgmt",
+              "question": "2. PTSD Management (NICE NG116)",
+              "type": "dropdown",
+              "options": [
+                {
+                  "label": "PTSD Evidence-Based Care",
+                  "guidance": "MANAGEMENT PLAN:\n1. Diagnosis: Re-experiencing (flashbacks), avoidance, and hyperarousal >1 month post-trauma.\n2. 1st-line: **Trauma-focused CBT (TF-CBT)** or **EMDR** (Eye Movement Desensitization and Reprocessing).\n3. Meds: Venlafaxine or SSRI (Sertraline) only if patient prefers or therapy failed. Do NOT use Benzos."
                 },
                 {
-                  "label": "OCD (NICE CG31)",
-                  "guidance": "MANAGEMENT PLAN:\n1. Diagnosis: Obsessions (intrusive thoughts) and/or compulsions (repetitive acts).\n2. Treatment: ERP (Exposure & Response Prevention) + SSRI (often higher doses e.g. Fluoxetine 40-60mg required)."
+                  "label": "Complex PTSD (C-PTSD)",
+                  "guidance": "MANAGEMENT PLAN:\n1. Features: Core PTSD + disturbances in self-organization (affect dysregulation, negative self-concept, relational diffs).\n2. Management: Requires longer-term stabilization phase followed by trauma-focused work."
+                }
+              ]
+            },
+            {
+              "id": "ocd-mgmt",
+              "question": "3. OCD Management (NICE CG31)",
+              "type": "dropdown",
+              "options": [
+                {
+                  "label": "OCD Stepwise Care",
+                  "guidance": "MANAGEMENT PLAN:\n1. 1st-line: **ERP** (Exposure & Response Prevention) +/- SSRI.\n2. Meds: Often require higher doses (e.g., Fluoxetine 60-80mg, Sertraline 200mg). Trial for ≥12 weeks.\n3. Resistance: Consider adding Clomipramine (TCA) or an atypical antipsychotic adjunct."
                 }
               ]
             }
@@ -11294,32 +11407,14 @@
           "evidence": "Management per NG226 and CKS Panic.",
           "steps": [
             {
-              "id": "anxiety-overview",
-              "question": "1. Management Overview (Stepped Care)",
+              "id": "guidance",
+              "question": "Clinical Guidance (Best Practice)",
               "type": "dropdown",
               "options": [
                 {
-                  "label": "Consultant Treatment Strategy",
-                  "guidance": "MANAGEMENT PLAN OVERVIEW:\n1. **Framework**: Step-wise escalation from low-intensity (self-help) to high-intensity (Therapy + Pharmacotherapy).\n2. **Mechanism**: Address the 'avoidance loop'. Recovery requires exposure + reduction of hyperarousal.\n3. **Biological**: SSRIs/SNRIs used primarily to lower the 'anxiety floor'. Use Benzos ONLY for short-term crisis (<2 weeks).\n4. **Social**: Address environmental triggers and occupational 'stagnation' caused by avoidance."
-                }
-              ]
-            },
-            {
-              "id": "anxiety-subtype",
-              "question": "2. Subtype Identification (Consultant Analysis)",
-              "type": "dropdown",
-              "options": [
-                {
-                  "label": "GAD (Generalized Anxiety)",
-                  "guidance": "MANAGEMENT PLAN:\n1. Criteria: Persistent worry >6 months. \n2. 1st-line: SSRI (Sertraline) + applied relaxation or high-intensity CBT.\n3. 2nd-line: SNRI (Duloxetine/Venlafaxine) or Pregabalin (Caution: Risk of dependency/misuse)."
-                },
-                {
-                  "label": "Panic Disorder (with/without Agoraphobia)",
-                  "guidance": "MANAGEMENT PLAN:\n1. Features: Recurrent unexpected attacks + fear of future attacks/implications.\n2. Treatment: CBT focused on interoceptive exposure (physical sensations). SSRI (Fluoxetine/Sertraline) if therapy failed or preferred. NICE CG113."
-                },
-                {
-                  "label": "Social Anxiety Disorder",
-                  "guidance": "MANAGEMENT PLAN:\n1. Features: Marked fear of social/performance situations.\n2. 1st-line: Individual CBT (Clark & Wells or Heimberg models).\n3. Meds: Escitalopram or Sertraline if CBT declined/unavailable. NICE CG159."
+                  "value": "standard",
+                  "label": "Management Overview",
+                  "guidance": "MANAGEMENT PLAN:\n1. Assessment: Full clinical assessment to exclude red flags.\n2. Action: Refer to local clinical formulary for specific pharmacotherapy.\n3. Safety-net: Provide robust safety-netting advice.\n4. Follow-up: Arrange review based on clinical findings."
                 }
               ]
             }
@@ -11335,32 +11430,14 @@
           "evidence": "Management per NICE CKS and Local formulary.",
           "steps": [
             {
-              "id": "anxiety-overview",
-              "question": "1. Management Overview (Stepped Care)",
+              "id": "guidance",
+              "question": "Clinical Guidance (Best Practice)",
               "type": "dropdown",
               "options": [
                 {
-                  "label": "Consultant Treatment Strategy",
-                  "guidance": "MANAGEMENT PLAN OVERVIEW:\n1. **Framework**: Step-wise escalation from low-intensity (self-help) to high-intensity (Therapy + Pharmacotherapy).\n2. **Mechanism**: Address the 'avoidance loop'. Recovery requires exposure + reduction of hyperarousal.\n3. **Biological**: SSRIs/SNRIs used primarily to lower the 'anxiety floor'. Use Benzos ONLY for short-term crisis (<2 weeks).\n4. **Social**: Address environmental triggers and occupational 'stagnation' caused by avoidance."
-                }
-              ]
-            },
-            {
-              "id": "anxiety-subtype",
-              "question": "2. Subtype Identification (Consultant Analysis)",
-              "type": "dropdown",
-              "options": [
-                {
-                  "label": "GAD (Generalized Anxiety)",
-                  "guidance": "MANAGEMENT PLAN:\n1. Criteria: Persistent worry >6 months. \n2. 1st-line: SSRI (Sertraline) + applied relaxation or high-intensity CBT.\n3. 2nd-line: SNRI (Duloxetine/Venlafaxine) or Pregabalin (Caution: Risk of dependency/misuse)."
-                },
-                {
-                  "label": "Panic Disorder (with/without Agoraphobia)",
-                  "guidance": "MANAGEMENT PLAN:\n1. Features: Recurrent unexpected attacks + fear of future attacks/implications.\n2. Treatment: CBT focused on interoceptive exposure (physical sensations). SSRI (Fluoxetine/Sertraline) if therapy failed or preferred. NICE CG113."
-                },
-                {
-                  "label": "Social Anxiety Disorder",
-                  "guidance": "MANAGEMENT PLAN:\n1. Features: Marked fear of social/performance situations.\n2. 1st-line: Individual CBT (Clark & Wells or Heimberg models).\n3. Meds: Escitalopram or Sertraline if CBT declined/unavailable. NICE CG159."
+                  "value": "standard",
+                  "label": "Management Overview",
+                  "guidance": "MANAGEMENT PLAN:\n1. Assessment: Full clinical assessment to exclude red flags.\n2. Action: Refer to local clinical formulary for specific pharmacotherapy.\n3. Safety-net: Provide robust safety-netting advice.\n4. Follow-up: Arrange review based on clinical findings."
                 }
               ]
             }
@@ -11377,8 +11454,19 @@
           "evidence": "It gives me great pleasure to introduce you to [Name] who is a GP and Warwickshire and a perinatal mental health GP champion and today we're talking all about perinatal mental health. Welcome Jenny. Thanks very much James and thanks for having me on the podcast today. It's great …",
           "steps": [
             {
+              "id": "perinatal-overview",
+              "question": "1. Management Overview (Mother & Baby)",
+              "type": "dropdown",
+              "options": [
+                {
+                  "label": "Consultant Care Ethos",
+                  "guidance": "MANAGEMENT PLAN OVERVIEW:\n1. **Priority**: Balance the needs of maternal mental health with fetal/infant safety.\n2. **Meds**: Avoid 'blind' stopping of effective medication in pregnancy; risk of relapse is high. Consult specialized databases (e.g. BUMPS).\n3. **Safety**: Vigilant monitoring for Postpartum Psychosis—a true psychiatric emergency.\n4. **Support**: Immediate referral to Specialist Perinatal Mental Health Teams (PMHT)."
+                }
+              ]
+            },
+            {
               "id": "perinatal-mgt",
-              "question": "1. Perinatal Care (NICE CG192)",
+              "question": "2. Perinatal Care (NICE CG192)",
               "type": "dropdown",
               "options": [
                 {
@@ -11401,8 +11489,19 @@
           "evidence": "It gives me great pleasure to introduce you to [Name] who is a GP and Warwickshire and a perinatal mental health GP champion and today we're talking all about perinatal mental health. Welcome Jenny. Thanks very much James and thanks for having me on the podcast today. It's great …",
           "steps": [
             {
+              "id": "perinatal-overview",
+              "question": "1. Management Overview (Mother & Baby)",
+              "type": "dropdown",
+              "options": [
+                {
+                  "label": "Consultant Care Ethos",
+                  "guidance": "MANAGEMENT PLAN OVERVIEW:\n1. **Priority**: Balance the needs of maternal mental health with fetal/infant safety.\n2. **Meds**: Avoid 'blind' stopping of effective medication in pregnancy; risk of relapse is high. Consult specialized databases (e.g. BUMPS).\n3. **Safety**: Vigilant monitoring for Postpartum Psychosis—a true psychiatric emergency.\n4. **Support**: Immediate referral to Specialist Perinatal Mental Health Teams (PMHT)."
+                }
+              ]
+            },
+            {
               "id": "perinatal-mgt",
-              "question": "1. Perinatal Care (NICE CG192)",
+              "question": "2. Perinatal Care (NICE CG192)",
               "type": "dropdown",
               "options": [
                 {
@@ -11425,8 +11524,19 @@
           "evidence": "It gives me great pleasure to introduce you to [Name] who is a GP and Warwickshire and a perinatal mental health GP champion and today we're talking all about perinatal mental health. Welcome Jenny. Thanks very much James and thanks for having me on the podcast today. It's great …",
           "steps": [
             {
+              "id": "perinatal-overview",
+              "question": "1. Management Overview (Mother & Baby)",
+              "type": "dropdown",
+              "options": [
+                {
+                  "label": "Consultant Care Ethos",
+                  "guidance": "MANAGEMENT PLAN OVERVIEW:\n1. **Priority**: Balance the needs of maternal mental health with fetal/infant safety.\n2. **Meds**: Avoid 'blind' stopping of effective medication in pregnancy; risk of relapse is high. Consult specialized databases (e.g. BUMPS).\n3. **Safety**: Vigilant monitoring for Postpartum Psychosis—a true psychiatric emergency.\n4. **Support**: Immediate referral to Specialist Perinatal Mental Health Teams (PMHT)."
+                }
+              ]
+            },
+            {
               "id": "perinatal-mgt",
-              "question": "1. Perinatal Care (NICE CG192)",
+              "question": "2. Perinatal Care (NICE CG192)",
               "type": "dropdown",
               "options": [
                 {
@@ -11492,14 +11602,32 @@
           "evidence": "Management per NICE CKS and Local formulary.",
           "steps": [
             {
-              "id": "guidance",
-              "question": "Clinical Guidance (Best Practice)",
+              "id": "phobia-overview",
+              "question": "1. Management Overview (Exposure Model)",
               "type": "dropdown",
               "options": [
                 {
-                  "value": "standard",
-                  "label": "Management Overview",
-                  "guidance": "MANAGEMENT PLAN:\n1. Assessment: Full clinical assessment to exclude red flags.\n2. Action: Refer to local clinical formulary for specific pharmacotherapy.\n3. Safety-net: Provide robust safety-netting advice.\n4. Follow-up: Arrange review based on clinical findings."
+                  "label": "Consultant Treatment Philosophy",
+                  "guidance": "MANAGEMENT PLAN OVERVIEW:\n1. **Core Mechanism**: Maintaining factor is 'Avoidance'. Recovery requires systematic exposure to the feared stimulus.\n2. **Therapy**: 1st-line is **Graded Exposure** or CBT. Goal is 'Habituation' (anxiety decreases with prolonged exposure).\n3. **Biological**: Meds (SSRIs) are secondary; they reduce the physical intensity of fear but do not 'cure' the phobia without exposure. Avoid Benzos as they prevent habituation."
+                }
+              ]
+            },
+            {
+              "id": "phobia-type",
+              "question": "2. Phobia Subtypes & Management",
+              "type": "dropdown",
+              "options": [
+                {
+                  "label": "Specific Phobias (e.g. Heights, Animals, Blood)",
+                  "guidance": "MANAGEMENT PLAN:\n1. 1st-line: Graded Exposure therapy (In vivo exposure). 80-90% success rate.\n2. Note: For blood-injection-injury phobia, use 'Applied Tension' to prevent fainting. NICE CG159."
+                },
+                {
+                  "label": "Social Anxiety Disorder (Social Phobia)",
+                  "guidance": "MANAGEMENT PLAN:\n1. Features: Marked fear of social/performance situations.\n2. 1st-line: Individual CBT (Clark & Wells or Heimberg models).\n3. Meds: Escitalopram or Sertraline if CBT declined/unavailable. NICE CG159."
+                },
+                {
+                  "label": "Agoraphobia",
+                  "guidance": "MANAGEMENT PLAN:\n1. Features: Fear of being in situations where escape might be difficult or help unavailable.\n2. Treatment: CBT + systematic exposure. Often co-occurs with Panic Disorder; treat the Panic Disorder core first. NICE CG113."
                 }
               ]
             }
@@ -11515,14 +11643,32 @@
           "evidence": "Management per NICE CKS and Local formulary.",
           "steps": [
             {
-              "id": "guidance",
-              "question": "Clinical Guidance (Best Practice)",
+              "id": "phobia-overview",
+              "question": "1. Management Overview (Exposure Model)",
               "type": "dropdown",
               "options": [
                 {
-                  "value": "standard",
-                  "label": "Management Overview",
-                  "guidance": "MANAGEMENT PLAN:\n1. Assessment: Full clinical assessment to exclude red flags.\n2. Action: Refer to local clinical formulary for specific pharmacotherapy.\n3. Safety-net: Provide robust safety-netting advice.\n4. Follow-up: Arrange review based on clinical findings."
+                  "label": "Consultant Treatment Philosophy",
+                  "guidance": "MANAGEMENT PLAN OVERVIEW:\n1. **Core Mechanism**: Maintaining factor is 'Avoidance'. Recovery requires systematic exposure to the feared stimulus.\n2. **Therapy**: 1st-line is **Graded Exposure** or CBT. Goal is 'Habituation' (anxiety decreases with prolonged exposure).\n3. **Biological**: Meds (SSRIs) are secondary; they reduce the physical intensity of fear but do not 'cure' the phobia without exposure. Avoid Benzos as they prevent habituation."
+                }
+              ]
+            },
+            {
+              "id": "phobia-type",
+              "question": "2. Phobia Subtypes & Management",
+              "type": "dropdown",
+              "options": [
+                {
+                  "label": "Specific Phobias (e.g. Heights, Animals, Blood)",
+                  "guidance": "MANAGEMENT PLAN:\n1. 1st-line: Graded Exposure therapy (In vivo exposure). 80-90% success rate.\n2. Note: For blood-injection-injury phobia, use 'Applied Tension' to prevent fainting. NICE CG159."
+                },
+                {
+                  "label": "Social Anxiety Disorder (Social Phobia)",
+                  "guidance": "MANAGEMENT PLAN:\n1. Features: Marked fear of social/performance situations.\n2. 1st-line: Individual CBT (Clark & Wells or Heimberg models).\n3. Meds: Escitalopram or Sertraline if CBT declined/unavailable. NICE CG159."
+                },
+                {
+                  "label": "Agoraphobia",
+                  "guidance": "MANAGEMENT PLAN:\n1. Features: Fear of being in situations where escape might be difficult or help unavailable.\n2. Treatment: CBT + systematic exposure. Often co-occurs with Panic Disorder; treat the Panic Disorder core first. NICE CG113."
                 }
               ]
             }
@@ -11667,17 +11813,39 @@
           "evidence": "Management per NICE CKS and Local formulary.",
           "steps": [
             {
-              "id": "ptsd-mgmt",
-              "question": "PTSD / OCD Specialist Care",
+              "id": "ptsd-ocd-overview",
+              "question": "1. Management Overview (Specialized Anxiety)",
               "type": "dropdown",
               "options": [
                 {
-                  "label": "PTSD (NICE NG116)",
-                  "guidance": "MANAGEMENT PLAN:\n1. Diagnosis: Re-experiencing (flashbacks), avoidance, and hyperarousal >1 month post-trauma.\n2. Treatment: Trauma-focused CBT (TF-CBT) or EMDR. Do NOT use Benzos. Pharmacotherapy (Venlafaxine or SSRI) only if patient prefers or therapy failed."
+                  "label": "Consultant Strategic Approach",
+                  "guidance": "MANAGEMENT PLAN OVERVIEW:\n1. **PTSD Philosophy**: Focus on 're-processing' traumatic memories rather than avoidance. \n2. **OCD Philosophy**: Focus on 'Exposure & Response Prevention' (ERP). Breaking the link between obsession and neutralizing compulsion.\n3. **Meds**: SSRIs/SNRIs used primarily to 'quieten' the cognitive noise, facilitating engagement in intensive therapy."
+                }
+              ]
+            },
+            {
+              "id": "ptsd-mgmt",
+              "question": "2. PTSD Management (NICE NG116)",
+              "type": "dropdown",
+              "options": [
+                {
+                  "label": "PTSD Evidence-Based Care",
+                  "guidance": "MANAGEMENT PLAN:\n1. Diagnosis: Re-experiencing (flashbacks), avoidance, and hyperarousal >1 month post-trauma.\n2. 1st-line: **Trauma-focused CBT (TF-CBT)** or **EMDR** (Eye Movement Desensitization and Reprocessing).\n3. Meds: Venlafaxine or SSRI (Sertraline) only if patient prefers or therapy failed. Do NOT use Benzos."
                 },
                 {
-                  "label": "OCD (NICE CG31)",
-                  "guidance": "MANAGEMENT PLAN:\n1. Diagnosis: Obsessions (intrusive thoughts) and/or compulsions (repetitive acts).\n2. Treatment: ERP (Exposure & Response Prevention) + SSRI (often higher doses e.g. Fluoxetine 40-60mg required)."
+                  "label": "Complex PTSD (C-PTSD)",
+                  "guidance": "MANAGEMENT PLAN:\n1. Features: Core PTSD + disturbances in self-organization (affect dysregulation, negative self-concept, relational diffs).\n2. Management: Requires longer-term stabilization phase followed by trauma-focused work."
+                }
+              ]
+            },
+            {
+              "id": "ocd-mgmt",
+              "question": "3. OCD Management (NICE CG31)",
+              "type": "dropdown",
+              "options": [
+                {
+                  "label": "OCD Stepwise Care",
+                  "guidance": "MANAGEMENT PLAN:\n1. 1st-line: **ERP** (Exposure & Response Prevention) +/- SSRI.\n2. Meds: Often require higher doses (e.g., Fluoxetine 60-80mg, Sertraline 200mg). Trial for ≥12 weeks.\n3. Resistance: Consider adding Clomipramine (TCA) or an atypical antipsychotic adjunct."
                 }
               ]
             }
@@ -11693,17 +11861,39 @@
           "evidence": "Management per NICE CKS and Local formulary.",
           "steps": [
             {
-              "id": "ptsd-mgmt",
-              "question": "PTSD / OCD Specialist Care",
+              "id": "ptsd-ocd-overview",
+              "question": "1. Management Overview (Specialized Anxiety)",
               "type": "dropdown",
               "options": [
                 {
-                  "label": "PTSD (NICE NG116)",
-                  "guidance": "MANAGEMENT PLAN:\n1. Diagnosis: Re-experiencing (flashbacks), avoidance, and hyperarousal >1 month post-trauma.\n2. Treatment: Trauma-focused CBT (TF-CBT) or EMDR. Do NOT use Benzos. Pharmacotherapy (Venlafaxine or SSRI) only if patient prefers or therapy failed."
+                  "label": "Consultant Strategic Approach",
+                  "guidance": "MANAGEMENT PLAN OVERVIEW:\n1. **PTSD Philosophy**: Focus on 're-processing' traumatic memories rather than avoidance. \n2. **OCD Philosophy**: Focus on 'Exposure & Response Prevention' (ERP). Breaking the link between obsession and neutralizing compulsion.\n3. **Meds**: SSRIs/SNRIs used primarily to 'quieten' the cognitive noise, facilitating engagement in intensive therapy."
+                }
+              ]
+            },
+            {
+              "id": "ptsd-mgmt",
+              "question": "2. PTSD Management (NICE NG116)",
+              "type": "dropdown",
+              "options": [
+                {
+                  "label": "PTSD Evidence-Based Care",
+                  "guidance": "MANAGEMENT PLAN:\n1. Diagnosis: Re-experiencing (flashbacks), avoidance, and hyperarousal >1 month post-trauma.\n2. 1st-line: **Trauma-focused CBT (TF-CBT)** or **EMDR** (Eye Movement Desensitization and Reprocessing).\n3. Meds: Venlafaxine or SSRI (Sertraline) only if patient prefers or therapy failed. Do NOT use Benzos."
                 },
                 {
-                  "label": "OCD (NICE CG31)",
-                  "guidance": "MANAGEMENT PLAN:\n1. Diagnosis: Obsessions (intrusive thoughts) and/or compulsions (repetitive acts).\n2. Treatment: ERP (Exposure & Response Prevention) + SSRI (often higher doses e.g. Fluoxetine 40-60mg required)."
+                  "label": "Complex PTSD (C-PTSD)",
+                  "guidance": "MANAGEMENT PLAN:\n1. Features: Core PTSD + disturbances in self-organization (affect dysregulation, negative self-concept, relational diffs).\n2. Management: Requires longer-term stabilization phase followed by trauma-focused work."
+                }
+              ]
+            },
+            {
+              "id": "ocd-mgmt",
+              "question": "3. OCD Management (NICE CG31)",
+              "type": "dropdown",
+              "options": [
+                {
+                  "label": "OCD Stepwise Care",
+                  "guidance": "MANAGEMENT PLAN:\n1. 1st-line: **ERP** (Exposure & Response Prevention) +/- SSRI.\n2. Meds: Often require higher doses (e.g., Fluoxetine 60-80mg, Sertraline 200mg). Trial for ≥12 weeks.\n3. Resistance: Consider adding Clomipramine (TCA) or an atypical antipsychotic adjunct."
                 }
               ]
             }
@@ -11719,17 +11909,39 @@
           "evidence": "Management per NICE CKS and Local formulary.",
           "steps": [
             {
-              "id": "ptsd-mgmt",
-              "question": "PTSD / OCD Specialist Care",
+              "id": "ptsd-ocd-overview",
+              "question": "1. Management Overview (Specialized Anxiety)",
               "type": "dropdown",
               "options": [
                 {
-                  "label": "PTSD (NICE NG116)",
-                  "guidance": "MANAGEMENT PLAN:\n1. Diagnosis: Re-experiencing (flashbacks), avoidance, and hyperarousal >1 month post-trauma.\n2. Treatment: Trauma-focused CBT (TF-CBT) or EMDR. Do NOT use Benzos. Pharmacotherapy (Venlafaxine or SSRI) only if patient prefers or therapy failed."
+                  "label": "Consultant Strategic Approach",
+                  "guidance": "MANAGEMENT PLAN OVERVIEW:\n1. **PTSD Philosophy**: Focus on 're-processing' traumatic memories rather than avoidance. \n2. **OCD Philosophy**: Focus on 'Exposure & Response Prevention' (ERP). Breaking the link between obsession and neutralizing compulsion.\n3. **Meds**: SSRIs/SNRIs used primarily to 'quieten' the cognitive noise, facilitating engagement in intensive therapy."
+                }
+              ]
+            },
+            {
+              "id": "ptsd-mgmt",
+              "question": "2. PTSD Management (NICE NG116)",
+              "type": "dropdown",
+              "options": [
+                {
+                  "label": "PTSD Evidence-Based Care",
+                  "guidance": "MANAGEMENT PLAN:\n1. Diagnosis: Re-experiencing (flashbacks), avoidance, and hyperarousal >1 month post-trauma.\n2. 1st-line: **Trauma-focused CBT (TF-CBT)** or **EMDR** (Eye Movement Desensitization and Reprocessing).\n3. Meds: Venlafaxine or SSRI (Sertraline) only if patient prefers or therapy failed. Do NOT use Benzos."
                 },
                 {
-                  "label": "OCD (NICE CG31)",
-                  "guidance": "MANAGEMENT PLAN:\n1. Diagnosis: Obsessions (intrusive thoughts) and/or compulsions (repetitive acts).\n2. Treatment: ERP (Exposure & Response Prevention) + SSRI (often higher doses e.g. Fluoxetine 40-60mg required)."
+                  "label": "Complex PTSD (C-PTSD)",
+                  "guidance": "MANAGEMENT PLAN:\n1. Features: Core PTSD + disturbances in self-organization (affect dysregulation, negative self-concept, relational diffs).\n2. Management: Requires longer-term stabilization phase followed by trauma-focused work."
+                }
+              ]
+            },
+            {
+              "id": "ocd-mgmt",
+              "question": "3. OCD Management (NICE CG31)",
+              "type": "dropdown",
+              "options": [
+                {
+                  "label": "OCD Stepwise Care",
+                  "guidance": "MANAGEMENT PLAN:\n1. 1st-line: **ERP** (Exposure & Response Prevention) +/- SSRI.\n2. Meds: Often require higher doses (e.g., Fluoxetine 60-80mg, Sertraline 200mg). Trial for ≥12 weeks.\n3. Resistance: Consider adding Clomipramine (TCA) or an atypical antipsychotic adjunct."
                 }
               ]
             }
@@ -11745,17 +11957,39 @@
           "evidence": "Management per NG116 and CKS PTSD.",
           "steps": [
             {
-              "id": "ptsd-mgmt",
-              "question": "PTSD / OCD Specialist Care",
+              "id": "ptsd-ocd-overview",
+              "question": "1. Management Overview (Specialized Anxiety)",
               "type": "dropdown",
               "options": [
                 {
-                  "label": "PTSD (NICE NG116)",
-                  "guidance": "MANAGEMENT PLAN:\n1. Diagnosis: Re-experiencing (flashbacks), avoidance, and hyperarousal >1 month post-trauma.\n2. Treatment: Trauma-focused CBT (TF-CBT) or EMDR. Do NOT use Benzos. Pharmacotherapy (Venlafaxine or SSRI) only if patient prefers or therapy failed."
+                  "label": "Consultant Strategic Approach",
+                  "guidance": "MANAGEMENT PLAN OVERVIEW:\n1. **PTSD Philosophy**: Focus on 're-processing' traumatic memories rather than avoidance. \n2. **OCD Philosophy**: Focus on 'Exposure & Response Prevention' (ERP). Breaking the link between obsession and neutralizing compulsion.\n3. **Meds**: SSRIs/SNRIs used primarily to 'quieten' the cognitive noise, facilitating engagement in intensive therapy."
+                }
+              ]
+            },
+            {
+              "id": "ptsd-mgmt",
+              "question": "2. PTSD Management (NICE NG116)",
+              "type": "dropdown",
+              "options": [
+                {
+                  "label": "PTSD Evidence-Based Care",
+                  "guidance": "MANAGEMENT PLAN:\n1. Diagnosis: Re-experiencing (flashbacks), avoidance, and hyperarousal >1 month post-trauma.\n2. 1st-line: **Trauma-focused CBT (TF-CBT)** or **EMDR** (Eye Movement Desensitization and Reprocessing).\n3. Meds: Venlafaxine or SSRI (Sertraline) only if patient prefers or therapy failed. Do NOT use Benzos."
                 },
                 {
-                  "label": "OCD (NICE CG31)",
-                  "guidance": "MANAGEMENT PLAN:\n1. Diagnosis: Obsessions (intrusive thoughts) and/or compulsions (repetitive acts).\n2. Treatment: ERP (Exposure & Response Prevention) + SSRI (often higher doses e.g. Fluoxetine 40-60mg required)."
+                  "label": "Complex PTSD (C-PTSD)",
+                  "guidance": "MANAGEMENT PLAN:\n1. Features: Core PTSD + disturbances in self-organization (affect dysregulation, negative self-concept, relational diffs).\n2. Management: Requires longer-term stabilization phase followed by trauma-focused work."
+                }
+              ]
+            },
+            {
+              "id": "ocd-mgmt",
+              "question": "3. OCD Management (NICE CG31)",
+              "type": "dropdown",
+              "options": [
+                {
+                  "label": "OCD Stepwise Care",
+                  "guidance": "MANAGEMENT PLAN:\n1. 1st-line: **ERP** (Exposure & Response Prevention) +/- SSRI.\n2. Meds: Often require higher doses (e.g., Fluoxetine 60-80mg, Sertraline 200mg). Trial for ≥12 weeks.\n3. Resistance: Consider adding Clomipramine (TCA) or an atypical antipsychotic adjunct."
                 }
               ]
             }
@@ -12014,32 +12248,32 @@
           "evidence": "Management per NICE CKS and Local formulary.",
           "steps": [
             {
-              "id": "anxiety-overview",
-              "question": "1. Management Overview (Stepped Care)",
+              "id": "phobia-overview",
+              "question": "1. Management Overview (Exposure Model)",
               "type": "dropdown",
               "options": [
                 {
-                  "label": "Consultant Treatment Strategy",
-                  "guidance": "MANAGEMENT PLAN OVERVIEW:\n1. **Framework**: Step-wise escalation from low-intensity (self-help) to high-intensity (Therapy + Pharmacotherapy).\n2. **Mechanism**: Address the 'avoidance loop'. Recovery requires exposure + reduction of hyperarousal.\n3. **Biological**: SSRIs/SNRIs used primarily to lower the 'anxiety floor'. Use Benzos ONLY for short-term crisis (<2 weeks).\n4. **Social**: Address environmental triggers and occupational 'stagnation' caused by avoidance."
+                  "label": "Consultant Treatment Philosophy",
+                  "guidance": "MANAGEMENT PLAN OVERVIEW:\n1. **Core Mechanism**: Maintaining factor is 'Avoidance'. Recovery requires systematic exposure to the feared stimulus.\n2. **Therapy**: 1st-line is **Graded Exposure** or CBT. Goal is 'Habituation' (anxiety decreases with prolonged exposure).\n3. **Biological**: Meds (SSRIs) are secondary; they reduce the physical intensity of fear but do not 'cure' the phobia without exposure. Avoid Benzos as they prevent habituation."
                 }
               ]
             },
             {
-              "id": "anxiety-subtype",
-              "question": "2. Subtype Identification (Consultant Analysis)",
+              "id": "phobia-type",
+              "question": "2. Phobia Subtypes & Management",
               "type": "dropdown",
               "options": [
                 {
-                  "label": "GAD (Generalized Anxiety)",
-                  "guidance": "MANAGEMENT PLAN:\n1. Criteria: Persistent worry >6 months. \n2. 1st-line: SSRI (Sertraline) + applied relaxation or high-intensity CBT.\n3. 2nd-line: SNRI (Duloxetine/Venlafaxine) or Pregabalin (Caution: Risk of dependency/misuse)."
+                  "label": "Specific Phobias (e.g. Heights, Animals, Blood)",
+                  "guidance": "MANAGEMENT PLAN:\n1. 1st-line: Graded Exposure therapy (In vivo exposure). 80-90% success rate.\n2. Note: For blood-injection-injury phobia, use 'Applied Tension' to prevent fainting. NICE CG159."
                 },
                 {
-                  "label": "Panic Disorder (with/without Agoraphobia)",
-                  "guidance": "MANAGEMENT PLAN:\n1. Features: Recurrent unexpected attacks + fear of future attacks/implications.\n2. Treatment: CBT focused on interoceptive exposure (physical sensations). SSRI (Fluoxetine/Sertraline) if therapy failed or preferred. NICE CG113."
-                },
-                {
-                  "label": "Social Anxiety Disorder",
+                  "label": "Social Anxiety Disorder (Social Phobia)",
                   "guidance": "MANAGEMENT PLAN:\n1. Features: Marked fear of social/performance situations.\n2. 1st-line: Individual CBT (Clark & Wells or Heimberg models).\n3. Meds: Escitalopram or Sertraline if CBT declined/unavailable. NICE CG159."
+                },
+                {
+                  "label": "Agoraphobia",
+                  "guidance": "MANAGEMENT PLAN:\n1. Features: Fear of being in situations where escape might be difficult or help unavailable.\n2. Treatment: CBT + systematic exposure. Often co-occurs with Panic Disorder; treat the Panic Disorder core first. NICE CG113."
                 }
               ]
             }
@@ -26736,32 +26970,21 @@
           "evidence": "Management per NICE CKS and Local formulary.",
           "steps": [
             {
-              "id": "anxiety-overview",
-              "question": "1. Management Overview (Stepped Care)",
+              "id": "fever-child",
+              "question": "Fever in under-5s (Traffic Light)",
               "type": "dropdown",
               "options": [
                 {
-                  "label": "Consultant Treatment Strategy",
-                  "guidance": "MANAGEMENT PLAN OVERVIEW:\n1. **Framework**: Step-wise escalation from low-intensity (self-help) to high-intensity (Therapy + Pharmacotherapy).\n2. **Mechanism**: Address the 'avoidance loop'. Recovery requires exposure + reduction of hyperarousal.\n3. **Biological**: SSRIs/SNRIs used primarily to lower the 'anxiety floor'. Use Benzos ONLY for short-term crisis (<2 weeks).\n4. **Social**: Address environmental triggers and occupational 'stagnation' caused by avoidance."
-                }
-              ]
-            },
-            {
-              "id": "anxiety-subtype",
-              "question": "2. Subtype Identification (Consultant Analysis)",
-              "type": "dropdown",
-              "options": [
-                {
-                  "label": "GAD (Generalized Anxiety)",
-                  "guidance": "MANAGEMENT PLAN:\n1. Criteria: Persistent worry >6 months. \n2. 1st-line: SSRI (Sertraline) + applied relaxation or high-intensity CBT.\n3. 2nd-line: SNRI (Duloxetine/Venlafaxine) or Pregabalin (Caution: Risk of dependency/misuse)."
+                  "label": "Green (Low Risk)",
+                  "guidance": "MANAGEMENT PLAN:\n1. Management: Paracetamol/Ibuprofen for distress (not for fever alone).\n2. Hydration: Encourage fluids. Check for rash.\n3. Safety-net: Advise on amber/red signs. NICE NG143."
                 },
                 {
-                  "label": "Panic Disorder (with/without Agoraphobia)",
-                  "guidance": "MANAGEMENT PLAN:\n1. Features: Recurrent unexpected attacks + fear of future attacks/implications.\n2. Treatment: CBT focused on interoceptive exposure (physical sensations). SSRI (Fluoxetine/Sertraline) if therapy failed or preferred. NICE CG113."
+                  "label": "Amber (Intermediate Risk)",
+                  "guidance": "MANAGEMENT PLAN:\n1. Assessment: Check for focus (ears, urine, chest). Consider urine dip.\n2. Disposition: Refer if no focus or clinical concern. NICE NG143."
                 },
                 {
-                  "label": "Social Anxiety Disorder",
-                  "guidance": "MANAGEMENT PLAN:\n1. Features: Marked fear of social/performance situations.\n2. 1st-line: Individual CBT (Clark & Wells or Heimberg models).\n3. Meds: Escitalopram or Sertraline if CBT declined/unavailable. NICE CG159."
+                  "label": "Red (High Risk / Sepsis)",
+                  "guidance": "MANAGEMENT PLAN:\n1. Indication: Non-blanching rash, bulging fontanelle, status epilepticus, or RR > 60.\n2. Action: Emergency 999 Admission. NICE NG143."
                 }
               ]
             }
@@ -26904,19 +27127,30 @@
           "evidence": "Management per NICE CKS and Local formulary.",
           "steps": [
             {
+              "id": "autism-overview",
+              "question": "1. Management Overview (Neuro-Diversity)",
+              "type": "dropdown",
+              "options": [
+                {
+                  "label": "Consultant Management Strategy",
+                  "guidance": "MANAGEMENT PLAN OVERVIEW:\n1. **Ethos**: Transition from a 'medical model' (fixing deficits) to a 'social model' (adjusting environment).\n2. **Co-morbidity**: High rates of ADHD, Anxiety, and Dyspraxia. Always screen for co-occurring conditions.\n3. **Biological**: Meds have NO role in core ASD features. Used only for co-morbidities (e.g. Melatonin for sleep, SSRIs for OCD).\n4. **Social**: Educational (EHCP) and Workplace adjustments are the primary interventions."
+                }
+              ]
+            },
+            {
               "id": "autism-assessment",
-              "question": "Assessment level",
+              "question": "2. Assessment Pathway (NICE CG128/142)",
               "type": "dropdown",
               "options": [
                 {
                   "value": "child",
                   "label": "Child/Young Person",
-                  "guidance": "MANAGEMENT PLAN:\nRefer to local multi-agency ASD pathway (Paediatrics/CAMHS). Review for co-occurring ADHD/LD. NICE CG128."
+                  "guidance": "MANAGEMENT PLAN:\n1. Referral: Local multi-agency ASD pathway (Paediatrics/CAMHS).\n2. Screening: SCQ (Social Communication Questionnaire). \n3. Assessment: ADOS and ADI-R (Gold standard tools)."
                 },
                 {
                   "value": "adult",
                   "label": "Adult suspected ASD",
-                  "guidance": "MANAGEMENT PLAN:\nRefer for specialist diagnostic assessment if significant impact on social/working life. Use AQ-10 screening tool. NICE CG142."
+                  "guidance": "MANAGEMENT PLAN:\n1. Screening: **AQ-10** (Score ≥6 = Refer).\n2. Referral: Specialist diagnostic assessment only if significant impact on social/working life. NICE CG142."
                 }
               ]
             }
@@ -29586,8 +29820,19 @@
           "evidence": "(Intro removed; no clinical content in this segment.)",
           "steps": [
             {
+              "id": "perinatal-overview",
+              "question": "1. Management Overview (Mother & Baby)",
+              "type": "dropdown",
+              "options": [
+                {
+                  "label": "Consultant Care Ethos",
+                  "guidance": "MANAGEMENT PLAN OVERVIEW:\n1. **Priority**: Balance the needs of maternal mental health with fetal/infant safety.\n2. **Meds**: Avoid 'blind' stopping of effective medication in pregnancy; risk of relapse is high. Consult specialized databases (e.g. BUMPS).\n3. **Safety**: Vigilant monitoring for Postpartum Psychosis—a true psychiatric emergency.\n4. **Support**: Immediate referral to Specialist Perinatal Mental Health Teams (PMHT)."
+                }
+              ]
+            },
+            {
               "id": "perinatal-mgt",
-              "question": "1. Perinatal Care (NICE CG192)",
+              "question": "2. Perinatal Care (NICE CG192)",
               "type": "dropdown",
               "options": [
                 {
@@ -29609,8 +29854,19 @@
           "evidence": "(Intro removed; no clinical content in this segment.)",
           "steps": [
             {
+              "id": "perinatal-overview",
+              "question": "1. Management Overview (Mother & Baby)",
+              "type": "dropdown",
+              "options": [
+                {
+                  "label": "Consultant Care Ethos",
+                  "guidance": "MANAGEMENT PLAN OVERVIEW:\n1. **Priority**: Balance the needs of maternal mental health with fetal/infant safety.\n2. **Meds**: Avoid 'blind' stopping of effective medication in pregnancy; risk of relapse is high. Consult specialized databases (e.g. BUMPS).\n3. **Safety**: Vigilant monitoring for Postpartum Psychosis—a true psychiatric emergency.\n4. **Support**: Immediate referral to Specialist Perinatal Mental Health Teams (PMHT)."
+                }
+              ]
+            },
+            {
               "id": "perinatal-mgt",
-              "question": "1. Perinatal Care (NICE CG192)",
+              "question": "2. Perinatal Care (NICE CG192)",
               "type": "dropdown",
               "options": [
                 {
@@ -29632,8 +29888,19 @@
           "evidence": "(Intro removed; no clinical content in this segment.)",
           "steps": [
             {
+              "id": "perinatal-overview",
+              "question": "1. Management Overview (Mother & Baby)",
+              "type": "dropdown",
+              "options": [
+                {
+                  "label": "Consultant Care Ethos",
+                  "guidance": "MANAGEMENT PLAN OVERVIEW:\n1. **Priority**: Balance the needs of maternal mental health with fetal/infant safety.\n2. **Meds**: Avoid 'blind' stopping of effective medication in pregnancy; risk of relapse is high. Consult specialized databases (e.g. BUMPS).\n3. **Safety**: Vigilant monitoring for Postpartum Psychosis—a true psychiatric emergency.\n4. **Support**: Immediate referral to Specialist Perinatal Mental Health Teams (PMHT)."
+                }
+              ]
+            },
+            {
               "id": "perinatal-mgt",
-              "question": "1. Perinatal Care (NICE CG192)",
+              "question": "2. Perinatal Care (NICE CG192)",
               "type": "dropdown",
               "options": [
                 {
@@ -30757,19 +31024,30 @@
           "evidence": "Today we will be discussing autism. With me today I have [Name] who works as a salary GP in County Durham and as a teaching fellow at Newcastle University's Medical School. She's also a mom to two autistic children. Thank you so much for joining me today Nikki.",
           "steps": [
             {
+              "id": "autism-overview",
+              "question": "1. Management Overview (Neuro-Diversity)",
+              "type": "dropdown",
+              "options": [
+                {
+                  "label": "Consultant Management Strategy",
+                  "guidance": "MANAGEMENT PLAN OVERVIEW:\n1. **Ethos**: Transition from a 'medical model' (fixing deficits) to a 'social model' (adjusting environment).\n2. **Co-morbidity**: High rates of ADHD, Anxiety, and Dyspraxia. Always screen for co-occurring conditions.\n3. **Biological**: Meds have NO role in core ASD features. Used only for co-morbidities (e.g. Melatonin for sleep, SSRIs for OCD).\n4. **Social**: Educational (EHCP) and Workplace adjustments are the primary interventions."
+                }
+              ]
+            },
+            {
               "id": "autism-assessment",
-              "question": "Assessment level",
+              "question": "2. Assessment Pathway (NICE CG128/142)",
               "type": "dropdown",
               "options": [
                 {
                   "value": "child",
                   "label": "Child/Young Person",
-                  "guidance": "MANAGEMENT PLAN:\nRefer to local multi-agency ASD pathway (Paediatrics/CAMHS). Review for co-occurring ADHD/LD. NICE CG128."
+                  "guidance": "MANAGEMENT PLAN:\n1. Referral: Local multi-agency ASD pathway (Paediatrics/CAMHS).\n2. Screening: SCQ (Social Communication Questionnaire). \n3. Assessment: ADOS and ADI-R (Gold standard tools)."
                 },
                 {
                   "value": "adult",
                   "label": "Adult suspected ASD",
-                  "guidance": "MANAGEMENT PLAN:\nRefer for specialist diagnostic assessment if significant impact on social/working life. Use AQ-10 screening tool. NICE CG142."
+                  "guidance": "MANAGEMENT PLAN:\n1. Screening: **AQ-10** (Score ≥6 = Refer).\n2. Referral: Specialist diagnostic assessment only if significant impact on social/working life. NICE CG142."
                 }
               ]
             }
@@ -30788,19 +31066,30 @@
           "evidence": "Today we will be discussing autism. With me today I have [Name] who works as a salary GP in County Durham and as a teaching fellow at Newcastle University's Medical School. She's also a mom to two autistic children. Thank you so much for joining me today Nikki.",
           "steps": [
             {
+              "id": "autism-overview",
+              "question": "1. Management Overview (Neuro-Diversity)",
+              "type": "dropdown",
+              "options": [
+                {
+                  "label": "Consultant Management Strategy",
+                  "guidance": "MANAGEMENT PLAN OVERVIEW:\n1. **Ethos**: Transition from a 'medical model' (fixing deficits) to a 'social model' (adjusting environment).\n2. **Co-morbidity**: High rates of ADHD, Anxiety, and Dyspraxia. Always screen for co-occurring conditions.\n3. **Biological**: Meds have NO role in core ASD features. Used only for co-morbidities (e.g. Melatonin for sleep, SSRIs for OCD).\n4. **Social**: Educational (EHCP) and Workplace adjustments are the primary interventions."
+                }
+              ]
+            },
+            {
               "id": "autism-assessment",
-              "question": "Assessment level",
+              "question": "2. Assessment Pathway (NICE CG128/142)",
               "type": "dropdown",
               "options": [
                 {
                   "value": "child",
                   "label": "Child/Young Person",
-                  "guidance": "MANAGEMENT PLAN:\nRefer to local multi-agency ASD pathway (Paediatrics/CAMHS). Review for co-occurring ADHD/LD. NICE CG128."
+                  "guidance": "MANAGEMENT PLAN:\n1. Referral: Local multi-agency ASD pathway (Paediatrics/CAMHS).\n2. Screening: SCQ (Social Communication Questionnaire). \n3. Assessment: ADOS and ADI-R (Gold standard tools)."
                 },
                 {
                   "value": "adult",
                   "label": "Adult suspected ASD",
-                  "guidance": "MANAGEMENT PLAN:\nRefer for specialist diagnostic assessment if significant impact on social/working life. Use AQ-10 screening tool. NICE CG142."
+                  "guidance": "MANAGEMENT PLAN:\n1. Screening: **AQ-10** (Score ≥6 = Refer).\n2. Referral: Specialist diagnostic assessment only if significant impact on social/working life. NICE CG142."
                 }
               ]
             }
@@ -30819,19 +31108,30 @@
           "evidence": "Today we will be discussing autism. With me today I have [Name] who works as a salary GP in County Durham and as a teaching fellow at Newcastle University's Medical School. She's also a mom to two autistic children. Thank you so much for joining me today Nikki.",
           "steps": [
             {
+              "id": "autism-overview",
+              "question": "1. Management Overview (Neuro-Diversity)",
+              "type": "dropdown",
+              "options": [
+                {
+                  "label": "Consultant Management Strategy",
+                  "guidance": "MANAGEMENT PLAN OVERVIEW:\n1. **Ethos**: Transition from a 'medical model' (fixing deficits) to a 'social model' (adjusting environment).\n2. **Co-morbidity**: High rates of ADHD, Anxiety, and Dyspraxia. Always screen for co-occurring conditions.\n3. **Biological**: Meds have NO role in core ASD features. Used only for co-morbidities (e.g. Melatonin for sleep, SSRIs for OCD).\n4. **Social**: Educational (EHCP) and Workplace adjustments are the primary interventions."
+                }
+              ]
+            },
+            {
               "id": "autism-assessment",
-              "question": "Assessment level",
+              "question": "2. Assessment Pathway (NICE CG128/142)",
               "type": "dropdown",
               "options": [
                 {
                   "value": "child",
                   "label": "Child/Young Person",
-                  "guidance": "MANAGEMENT PLAN:\nRefer to local multi-agency ASD pathway (Paediatrics/CAMHS). Review for co-occurring ADHD/LD. NICE CG128."
+                  "guidance": "MANAGEMENT PLAN:\n1. Referral: Local multi-agency ASD pathway (Paediatrics/CAMHS).\n2. Screening: SCQ (Social Communication Questionnaire). \n3. Assessment: ADOS and ADI-R (Gold standard tools)."
                 },
                 {
                   "value": "adult",
                   "label": "Adult suspected ASD",
-                  "guidance": "MANAGEMENT PLAN:\nRefer for specialist diagnostic assessment if significant impact on social/working life. Use AQ-10 screening tool. NICE CG142."
+                  "guidance": "MANAGEMENT PLAN:\n1. Screening: **AQ-10** (Score ≥6 = Refer).\n2. Referral: Specialist diagnostic assessment only if significant impact on social/working life. NICE CG142."
                 }
               ]
             }
@@ -33178,14 +33478,24 @@
           "evidence": "Management per NICE CKS and Local formulary.",
           "steps": [
             {
-              "id": "guidance",
-              "question": "Clinical Guidance (Best Practice)",
+              "id": "wellbeing-overview",
+              "question": "1. Management Overview (Primary Prevention)",
               "type": "dropdown",
               "options": [
                 {
-                  "value": "standard",
-                  "label": "Management Overview",
-                  "guidance": "MANAGEMENT PLAN:\n1. Assessment: Full clinical assessment to exclude red flags.\n2. Action: Refer to local clinical formulary for specific pharmacotherapy.\n3. Safety-net: Provide robust safety-netting advice.\n4. Follow-up: Arrange review based on clinical findings."
+                  "label": "Consultant Population Health Strategy",
+                  "guidance": "MANAGEMENT PLAN OVERVIEW:\n1. **Prevention**: Shifting from reactive care to proactive wellbeing management.\n2. **Universal Factors**: Sleep, Nutrition, Connection, and Sense of Agency.\n3. **Social Prescribing**: Utilizing non-medical community assets to address medical drivers."
+                }
+              ]
+            },
+            {
+              "id": "wellbeing-mgt",
+              "question": "2. Wellbeing & Prevention Action Plan",
+              "type": "dropdown",
+              "options": [
+                {
+                  "label": "Actions & Resources",
+                  "guidance": "MANAGEMENT PLAN:\n1. **5 Ways to Wellbeing**: Connect, Be Active, Take Notice, Keep Learning, Give.\n2. **Sleep Hygiene**: Regular times, avoid screens, caffeine limit.\n3. **Support**: Signpost to local 'Talking Therapies' (IAPT) and peer-support networks."
                 }
               ]
             }
@@ -38739,17 +39049,24 @@
           "evidence": "And this is part three in our four part series exploring HIV and primary care. And today we're focusing on prevention, prep and pep, what they are, who therefore and why they matter in everyday general practice. And we're once again joined by the brilliant [Name], Lewisham GP and…",
           "steps": [
             {
-              "id": "bp-assessment",
-              "question": "Assessment (Best Practice)",
+              "id": "wellbeing-overview",
+              "question": "1. Management Overview (Primary Prevention)",
               "type": "dropdown",
               "options": [
                 {
-                  "label": "Standard Assessment",
-                  "guidance": "MANAGEMENT PLAN:\n1. History: Assess onset, severity, and triggers. Specifically exclude organic red flags (weight loss, night pain, fever, night sweats).\n2. Review: Family history and current medications.\n3. Differential: Consider most likely vs most serious diagnosis. Use validated scores (e.g. Centor, Wells, qSOFA) if applicable."
-                },
+                  "label": "Consultant Population Health Strategy",
+                  "guidance": "MANAGEMENT PLAN OVERVIEW:\n1. **Prevention**: Shifting from reactive care to proactive wellbeing management.\n2. **Universal Factors**: Sleep, Nutrition, Connection, and Sense of Agency.\n3. **Social Prescribing**: Utilizing non-medical community assets to address medical drivers."
+                }
+              ]
+            },
+            {
+              "id": "wellbeing-mgt",
+              "question": "2. Wellbeing & Prevention Action Plan",
+              "type": "dropdown",
+              "options": [
                 {
-                  "label": "Examination & Vitals",
-                  "guidance": "MANAGEMENT PLAN:\n1. Physical Exam: Perform focused physical exam (e.g. MSK, Neuro, Respiratory).\n2. Vitals: Check NEWS2 if systemically unwell.\n3. Documentation: Document findings and clinical rationale clearly."
+                  "label": "Actions & Resources",
+                  "guidance": "MANAGEMENT PLAN:\n1. **5 Ways to Wellbeing**: Connect, Be Active, Take Notice, Keep Learning, Give.\n2. **Sleep Hygiene**: Regular times, avoid screens, caffeine limit.\n3. **Support**: Signpost to local 'Talking Therapies' (IAPT) and peer-support networks."
                 }
               ]
             }
@@ -38766,13 +39083,24 @@
           "evidence": "And this is part three in our four part series exploring HIV and primary care. And today we're focusing on prevention, prep and pep, what they are, who therefore and why they matter in everyday general practice. And we're once again joined by the brilliant [Name], Lewisham GP and…",
           "steps": [
             {
-              "id": "bp-management",
-              "question": "Management (Best Practice)",
+              "id": "wellbeing-overview",
+              "question": "1. Management Overview (Primary Prevention)",
               "type": "dropdown",
               "options": [
                 {
-                  "label": "Initial Management Plan",
-                  "guidance": "MANAGEMENT PLAN:\n1. Advice: Advise on activity levels, hydration, and non-pharmacological measures.\n2. Information: Provide written patient info and use shared-decision making.\n3. Safety-netting: Provide clear triggers for re-consultation (rapid worsening, new red flags).\n4. Review: Arrange review based on clinical stability (e.g. 48h for acute, 2-4 weeks for chronic)."
+                  "label": "Consultant Population Health Strategy",
+                  "guidance": "MANAGEMENT PLAN OVERVIEW:\n1. **Prevention**: Shifting from reactive care to proactive wellbeing management.\n2. **Universal Factors**: Sleep, Nutrition, Connection, and Sense of Agency.\n3. **Social Prescribing**: Utilizing non-medical community assets to address medical drivers."
+                }
+              ]
+            },
+            {
+              "id": "wellbeing-mgt",
+              "question": "2. Wellbeing & Prevention Action Plan",
+              "type": "dropdown",
+              "options": [
+                {
+                  "label": "Actions & Resources",
+                  "guidance": "MANAGEMENT PLAN:\n1. **5 Ways to Wellbeing**: Connect, Be Active, Take Notice, Keep Learning, Give.\n2. **Sleep Hygiene**: Regular times, avoid screens, caffeine limit.\n3. **Support**: Signpost to local 'Talking Therapies' (IAPT) and peer-support networks."
                 }
               ]
             }
@@ -38789,13 +39117,24 @@
           "evidence": "And this is part three in our four part series exploring HIV and primary care. And today we're focusing on prevention, prep and pep, what they are, who therefore and why they matter in everyday general practice. And we're once again joined by the brilliant [Name], Lewisham GP and…",
           "steps": [
             {
-              "id": "bp-referral",
-              "question": "Referral & Follow-up (Best Practice)",
+              "id": "wellbeing-overview",
+              "question": "1. Management Overview (Primary Prevention)",
               "type": "dropdown",
               "options": [
                 {
-                  "label": "Referral & Safety-netting",
-                  "guidance": "MANAGEMENT PLAN:\n1. Referral: Refer 2WW if malignancy suspected. Urgent referral if clinical compromise. Routine if primary care management fails.\n2. Waiting List: Ensure patient knows how to report deterioration while waiting.\n3. Review: Review and optimize primary care management in the interim."
+                  "label": "Consultant Population Health Strategy",
+                  "guidance": "MANAGEMENT PLAN OVERVIEW:\n1. **Prevention**: Shifting from reactive care to proactive wellbeing management.\n2. **Universal Factors**: Sleep, Nutrition, Connection, and Sense of Agency.\n3. **Social Prescribing**: Utilizing non-medical community assets to address medical drivers."
+                }
+              ]
+            },
+            {
+              "id": "wellbeing-mgt",
+              "question": "2. Wellbeing & Prevention Action Plan",
+              "type": "dropdown",
+              "options": [
+                {
+                  "label": "Actions & Resources",
+                  "guidance": "MANAGEMENT PLAN:\n1. **5 Ways to Wellbeing**: Connect, Be Active, Take Notice, Keep Learning, Give.\n2. **Sleep Hygiene**: Regular times, avoid screens, caffeine limit.\n3. **Support**: Signpost to local 'Talking Therapies' (IAPT) and peer-support networks."
                 }
               ]
             }
@@ -47289,14 +47628,24 @@
           "evidence": "Management per NICE CKS and Local formulary.",
           "steps": [
             {
-              "id": "guidance",
-              "question": "Clinical Guidance (Best Practice)",
+              "id": "wellbeing-overview",
+              "question": "1. Management Overview (Primary Prevention)",
               "type": "dropdown",
               "options": [
                 {
-                  "value": "standard",
-                  "label": "Management Overview",
-                  "guidance": "MANAGEMENT PLAN:\n1. Assessment: Full clinical assessment to exclude red flags.\n2. Action: Refer to local clinical formulary for specific pharmacotherapy.\n3. Safety-net: Provide robust safety-netting advice.\n4. Follow-up: Arrange review based on clinical findings."
+                  "label": "Consultant Population Health Strategy",
+                  "guidance": "MANAGEMENT PLAN OVERVIEW:\n1. **Prevention**: Shifting from reactive care to proactive wellbeing management.\n2. **Universal Factors**: Sleep, Nutrition, Connection, and Sense of Agency.\n3. **Social Prescribing**: Utilizing non-medical community assets to address medical drivers."
+                }
+              ]
+            },
+            {
+              "id": "wellbeing-mgt",
+              "question": "2. Wellbeing & Prevention Action Plan",
+              "type": "dropdown",
+              "options": [
+                {
+                  "label": "Actions & Resources",
+                  "guidance": "MANAGEMENT PLAN:\n1. **5 Ways to Wellbeing**: Connect, Be Active, Take Notice, Keep Learning, Give.\n2. **Sleep Hygiene**: Regular times, avoid screens, caffeine limit.\n3. **Support**: Signpost to local 'Talking Therapies' (IAPT) and peer-support networks."
                 }
               ]
             }
@@ -49941,14 +50290,24 @@
           "evidence": "Management per NICE CKS and Local formulary.",
           "steps": [
             {
-              "id": "guidance",
-              "question": "Clinical Guidance (Best Practice)",
+              "id": "wellbeing-overview",
+              "question": "1. Management Overview (Primary Prevention)",
               "type": "dropdown",
               "options": [
                 {
-                  "value": "standard",
-                  "label": "Management Overview",
-                  "guidance": "MANAGEMENT PLAN:\n1. Assessment: Full clinical assessment to exclude red flags.\n2. Action: Refer to local clinical formulary for specific pharmacotherapy.\n3. Safety-net: Provide robust safety-netting advice.\n4. Follow-up: Arrange review based on clinical findings."
+                  "label": "Consultant Population Health Strategy",
+                  "guidance": "MANAGEMENT PLAN OVERVIEW:\n1. **Prevention**: Shifting from reactive care to proactive wellbeing management.\n2. **Universal Factors**: Sleep, Nutrition, Connection, and Sense of Agency.\n3. **Social Prescribing**: Utilizing non-medical community assets to address medical drivers."
+                }
+              ]
+            },
+            {
+              "id": "wellbeing-mgt",
+              "question": "2. Wellbeing & Prevention Action Plan",
+              "type": "dropdown",
+              "options": [
+                {
+                  "label": "Actions & Resources",
+                  "guidance": "MANAGEMENT PLAN:\n1. **5 Ways to Wellbeing**: Connect, Be Active, Take Notice, Keep Learning, Give.\n2. **Sleep Hygiene**: Regular times, avoid screens, caffeine limit.\n3. **Support**: Signpost to local 'Talking Therapies' (IAPT) and peer-support networks."
                 }
               ]
             }
@@ -50835,14 +51194,24 @@
           "evidence": "Management per NG161 and CKS Falls.",
           "steps": [
             {
-              "id": "guidance",
-              "question": "Clinical Guidance (Best Practice)",
+              "id": "wellbeing-overview",
+              "question": "1. Management Overview (Primary Prevention)",
               "type": "dropdown",
               "options": [
                 {
-                  "value": "standard",
-                  "label": "Management Overview",
-                  "guidance": "MANAGEMENT PLAN:\n1. Assessment: Full clinical assessment to exclude red flags.\n2. Action: Refer to local clinical formulary for specific pharmacotherapy.\n3. Safety-net: Provide robust safety-netting advice.\n4. Follow-up: Arrange review based on clinical findings."
+                  "label": "Consultant Population Health Strategy",
+                  "guidance": "MANAGEMENT PLAN OVERVIEW:\n1. **Prevention**: Shifting from reactive care to proactive wellbeing management.\n2. **Universal Factors**: Sleep, Nutrition, Connection, and Sense of Agency.\n3. **Social Prescribing**: Utilizing non-medical community assets to address medical drivers."
+                }
+              ]
+            },
+            {
+              "id": "wellbeing-mgt",
+              "question": "2. Wellbeing & Prevention Action Plan",
+              "type": "dropdown",
+              "options": [
+                {
+                  "label": "Actions & Resources",
+                  "guidance": "MANAGEMENT PLAN:\n1. **5 Ways to Wellbeing**: Connect, Be Active, Take Notice, Keep Learning, Give.\n2. **Sleep Hygiene**: Regular times, avoid screens, caffeine limit.\n3. **Support**: Signpost to local 'Talking Therapies' (IAPT) and peer-support networks."
                 }
               ]
             }
@@ -52899,17 +53268,24 @@
           "evidence": "The webinars which are being run in association with [Organisation] are designed to provide wide-ranging clinical education programme, focusing not only on the diagnosis...",
           "steps": [
             {
-              "id": "bp-assessment",
-              "question": "Assessment (Best Practice)",
+              "id": "wellbeing-overview",
+              "question": "1. Management Overview (Primary Prevention)",
               "type": "dropdown",
               "options": [
                 {
-                  "label": "Standard Assessment",
-                  "guidance": "MANAGEMENT PLAN:\n1. History: Assess onset, severity, and triggers. Specifically exclude organic red flags (weight loss, night pain, fever, night sweats).\n2. Review: Family history and current medications.\n3. Differential: Consider most likely vs most serious diagnosis. Use validated scores (e.g. Centor, Wells, qSOFA) if applicable."
-                },
+                  "label": "Consultant Population Health Strategy",
+                  "guidance": "MANAGEMENT PLAN OVERVIEW:\n1. **Prevention**: Shifting from reactive care to proactive wellbeing management.\n2. **Universal Factors**: Sleep, Nutrition, Connection, and Sense of Agency.\n3. **Social Prescribing**: Utilizing non-medical community assets to address medical drivers."
+                }
+              ]
+            },
+            {
+              "id": "wellbeing-mgt",
+              "question": "2. Wellbeing & Prevention Action Plan",
+              "type": "dropdown",
+              "options": [
                 {
-                  "label": "Examination & Vitals",
-                  "guidance": "MANAGEMENT PLAN:\n1. Physical Exam: Perform focused physical exam (e.g. MSK, Neuro, Respiratory).\n2. Vitals: Check NEWS2 if systemically unwell.\n3. Documentation: Document findings and clinical rationale clearly."
+                  "label": "Actions & Resources",
+                  "guidance": "MANAGEMENT PLAN:\n1. **5 Ways to Wellbeing**: Connect, Be Active, Take Notice, Keep Learning, Give.\n2. **Sleep Hygiene**: Regular times, avoid screens, caffeine limit.\n3. **Support**: Signpost to local 'Talking Therapies' (IAPT) and peer-support networks."
                 }
               ]
             }
@@ -52926,13 +53302,24 @@
           "evidence": "The webinars which are being run in association with [Organisation] are designed to provide wide-ranging clinical education programme, focusing not only on the diagnosis...",
           "steps": [
             {
-              "id": "bp-management",
-              "question": "Management (Best Practice)",
+              "id": "wellbeing-overview",
+              "question": "1. Management Overview (Primary Prevention)",
               "type": "dropdown",
               "options": [
                 {
-                  "label": "Initial Management Plan",
-                  "guidance": "MANAGEMENT PLAN:\n1. Advice: Advise on activity levels, hydration, and non-pharmacological measures.\n2. Information: Provide written patient info and use shared-decision making.\n3. Safety-netting: Provide clear triggers for re-consultation (rapid worsening, new red flags).\n4. Review: Arrange review based on clinical stability (e.g. 48h for acute, 2-4 weeks for chronic)."
+                  "label": "Consultant Population Health Strategy",
+                  "guidance": "MANAGEMENT PLAN OVERVIEW:\n1. **Prevention**: Shifting from reactive care to proactive wellbeing management.\n2. **Universal Factors**: Sleep, Nutrition, Connection, and Sense of Agency.\n3. **Social Prescribing**: Utilizing non-medical community assets to address medical drivers."
+                }
+              ]
+            },
+            {
+              "id": "wellbeing-mgt",
+              "question": "2. Wellbeing & Prevention Action Plan",
+              "type": "dropdown",
+              "options": [
+                {
+                  "label": "Actions & Resources",
+                  "guidance": "MANAGEMENT PLAN:\n1. **5 Ways to Wellbeing**: Connect, Be Active, Take Notice, Keep Learning, Give.\n2. **Sleep Hygiene**: Regular times, avoid screens, caffeine limit.\n3. **Support**: Signpost to local 'Talking Therapies' (IAPT) and peer-support networks."
                 }
               ]
             }
@@ -52949,13 +53336,24 @@
           "evidence": "The webinars which are being run in association with [Organisation] are designed to provide wide-ranging clinical education programme, focusing not only on the diagnosis...",
           "steps": [
             {
-              "id": "bp-referral",
-              "question": "Referral & Follow-up (Best Practice)",
+              "id": "wellbeing-overview",
+              "question": "1. Management Overview (Primary Prevention)",
               "type": "dropdown",
               "options": [
                 {
-                  "label": "Referral & Safety-netting",
-                  "guidance": "MANAGEMENT PLAN:\n1. Referral: Refer 2WW if malignancy suspected. Urgent referral if clinical compromise. Routine if primary care management fails.\n2. Waiting List: Ensure patient knows how to report deterioration while waiting.\n3. Review: Review and optimize primary care management in the interim."
+                  "label": "Consultant Population Health Strategy",
+                  "guidance": "MANAGEMENT PLAN OVERVIEW:\n1. **Prevention**: Shifting from reactive care to proactive wellbeing management.\n2. **Universal Factors**: Sleep, Nutrition, Connection, and Sense of Agency.\n3. **Social Prescribing**: Utilizing non-medical community assets to address medical drivers."
+                }
+              ]
+            },
+            {
+              "id": "wellbeing-mgt",
+              "question": "2. Wellbeing & Prevention Action Plan",
+              "type": "dropdown",
+              "options": [
+                {
+                  "label": "Actions & Resources",
+                  "guidance": "MANAGEMENT PLAN:\n1. **5 Ways to Wellbeing**: Connect, Be Active, Take Notice, Keep Learning, Give.\n2. **Sleep Hygiene**: Regular times, avoid screens, caffeine limit.\n3. **Support**: Signpost to local 'Talking Therapies' (IAPT) and peer-support networks."
                 }
               ]
             }
