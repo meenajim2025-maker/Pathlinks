@@ -1,6 +1,6 @@
 {
   "source": "Learning library + NICE CKS/NG; management steps from guidelines",
-  "generated": "2026-02-21T06:21:01.683Z",
+  "generated": "2026-02-21T06:39:13.035Z",
   "totalTools": 1920,
   "systems": [
     {
@@ -16871,21 +16871,13 @@
           "evidence": "Management per NICE CKS and Local formulary.",
           "steps": [
             {
-              "id": "guidance-endocrinology",
-              "question": "Endocrinology (Consultant Standard)",
+              "id": "acromegaly-mgt",
+              "question": "Acromegaly – suspect",
               "type": "dropdown",
               "options": [
                 {
-                  "label": "1. Assessment & red flags",
-                  "guidance": "ASSESSMENT:\n• Thyroid: TFTs, TPO ab if abnormal. Goitre/nodule: USS + FNA per NG145. Calcium: corrected Ca, PTH, vitamin D.\n• Diabetes: HbA1c, renal function, lipids; foot check. Adrenal: electrolytes, short synacthen if suspected insufficiency.\n• Red flags: Thyroid storm, severe hypo/hyperglycaemia, adrenal crisis – emergency. NICE NG28, NG145."
-                },
-                {
-                  "label": "2. Management",
-                  "guidance": "MANAGEMENT:\n• Thyroid: Levothyroxine if hypothyroid; recheck TSH 6–8 weeks. Hyperthyroid refer. Subclinical: TPO ab; treat if symptomatic. NICE NG145.\n• Diabetes: HbA1c target 48–53; metformin; SGLT2i if CVD/HF/CKD. NICE NG28.\n• Adrenal: Sick-day rules; never stop steroids abruptly; emergency hydrocortisone. NICE CKS."
-                },
-                {
-                  "label": "3. Referral",
-                  "guidance": "REFERRAL:\n• 2WW: Pituitary/adrenal crisis, severe thyroid eye disease.\n• Urgent: Adrenal crisis, thyroid storm, severe DKA/HHS.\n• Routine: Hyperthyroid, goitre/nodule with concern, type 1 diabetes, pituitary/adrenal confirmed. NICE NG145, NG28."
+                  "label": "Suspicion & referral",
+                  "guidance": "MANAGEMENT PLAN:\n1. Suspect: acral enlargement, coarse features, macroglossia, headache, sweating, arthralgia. IGF-1 (age-adjusted); if raised, refer endocrinology for OGTT with GH and pituitary MRI.\n2. Do not delay referral for multiple tests. Comorbidities: diabetes, hypertension, sleep apnoea, cardiac. NICE CKS, Local formulary."
                 }
               ]
             }
@@ -16996,15 +16988,15 @@
               "options": [
                 {
                   "label": "1. Assessment & red flags",
-                  "guidance": "ASSESSMENT:\n• Thyroid: TFTs, TPO ab if abnormal. Goitre/nodule: USS + FNA per NG145. Calcium: corrected Ca, PTH, vitamin D.\n• Diabetes: HbA1c, renal function, lipids; foot check. Adrenal: electrolytes, short synacthen if suspected insufficiency.\n• Red flags: Thyroid storm, severe hypo/hyperglycaemia, adrenal crisis – emergency. NICE NG28, NG145."
+                  "guidance": "ASSESSMENT:\n• Tailor to the condition: history, examination, and investigations relevant to the endocrine presentation (e.g. thyroid: TFTs, TPO; diabetes: HbA1c, foot check; adrenal: electrolytes, short synacthen; calcium/bone: corrected Ca, PTH, vitamin D).\n• Red flags: Thyroid storm, severe hypo/hyperglycaemia, adrenal crisis, severe hypercalcaemia – emergency. NICE CKS, NG28, NG145."
                 },
                 {
                   "label": "2. Management",
-                  "guidance": "MANAGEMENT:\n• Thyroid: Levothyroxine if hypothyroid; recheck TSH 6–8 weeks. Hyperthyroid refer. Subclinical: TPO ab; treat if symptomatic. NICE NG145.\n• Diabetes: HbA1c target 48–53; metformin; SGLT2i if CVD/HF/CKD. NICE NG28.\n• Adrenal: Sick-day rules; never stop steroids abruptly; emergency hydrocortisone. NICE CKS."
+                  "guidance": "MANAGEMENT:\n• Follow NICE CKS and Local formulary for the specific condition. Do not apply thyroid or diabetes advice to non-thyroid/non-diabetes topics (e.g. Cushing’s, Conn’s, steroid, pituitary have their own pathways).\n• General principles: sick-day rules for anyone on glucocorticoids; do not stop steroids abruptly; treat hypo-/hyperglycaemia and electrolyte disturbance as indicated. NICE CKS."
                 },
                 {
                   "label": "3. Referral",
-                  "guidance": "REFERRAL:\n• 2WW: Pituitary/adrenal crisis, severe thyroid eye disease.\n• Urgent: Adrenal crisis, thyroid storm, severe DKA/HHS.\n• Routine: Hyperthyroid, goitre/nodule with concern, type 1 diabetes, pituitary/adrenal confirmed. NICE NG145, NG28."
+                  "guidance": "REFERRAL:\n• 2WW: Pituitary/adrenal crisis, severe thyroid eye disease, suspected phaeochromocytoma crisis.\n• Urgent: Adrenal crisis, thyroid storm, severe DKA/HHS, severe hypercalcaemia.\n• Routine: Hyperthyroid, goitre/nodule with concern, type 1 diabetes, pituitary/adrenal/calcium disorders. Use topic-specific pathway where available. NICE NG12, NG145, NG28."
                 }
               ]
             }
@@ -17105,15 +17097,15 @@
               "options": [
                 {
                   "label": "1. Assessment & red flags",
-                  "guidance": "ASSESSMENT:\n• Thyroid: TFTs, TPO ab if abnormal. Goitre/nodule: USS + FNA per NG145. Calcium: corrected Ca, PTH, vitamin D.\n• Diabetes: HbA1c, renal function, lipids; foot check. Adrenal: electrolytes, short synacthen if suspected insufficiency.\n• Red flags: Thyroid storm, severe hypo/hyperglycaemia, adrenal crisis – emergency. NICE NG28, NG145."
+                  "guidance": "ASSESSMENT:\n• Tailor to the condition: history, examination, and investigations relevant to the endocrine presentation (e.g. thyroid: TFTs, TPO; diabetes: HbA1c, foot check; adrenal: electrolytes, short synacthen; calcium/bone: corrected Ca, PTH, vitamin D).\n• Red flags: Thyroid storm, severe hypo/hyperglycaemia, adrenal crisis, severe hypercalcaemia – emergency. NICE CKS, NG28, NG145."
                 },
                 {
                   "label": "2. Management",
-                  "guidance": "MANAGEMENT:\n• Thyroid: Levothyroxine if hypothyroid; recheck TSH 6–8 weeks. Hyperthyroid refer. Subclinical: TPO ab; treat if symptomatic. NICE NG145.\n• Diabetes: HbA1c target 48–53; metformin; SGLT2i if CVD/HF/CKD. NICE NG28.\n• Adrenal: Sick-day rules; never stop steroids abruptly; emergency hydrocortisone. NICE CKS."
+                  "guidance": "MANAGEMENT:\n• Follow NICE CKS and Local formulary for the specific condition. Do not apply thyroid or diabetes advice to non-thyroid/non-diabetes topics (e.g. Cushing’s, Conn’s, steroid, pituitary have their own pathways).\n• General principles: sick-day rules for anyone on glucocorticoids; do not stop steroids abruptly; treat hypo-/hyperglycaemia and electrolyte disturbance as indicated. NICE CKS."
                 },
                 {
                   "label": "3. Referral",
-                  "guidance": "REFERRAL:\n• 2WW: Pituitary/adrenal crisis, severe thyroid eye disease.\n• Urgent: Adrenal crisis, thyroid storm, severe DKA/HHS.\n• Routine: Hyperthyroid, goitre/nodule with concern, type 1 diabetes, pituitary/adrenal confirmed. NICE NG145, NG28."
+                  "guidance": "REFERRAL:\n• 2WW: Pituitary/adrenal crisis, severe thyroid eye disease, suspected phaeochromocytoma crisis.\n• Urgent: Adrenal crisis, thyroid storm, severe DKA/HHS, severe hypercalcaemia.\n• Routine: Hyperthyroid, goitre/nodule with concern, type 1 diabetes, pituitary/adrenal/calcium disorders. Use topic-specific pathway where available. NICE NG12, NG145, NG28."
                 }
               ]
             }
@@ -17135,15 +17127,15 @@
               "options": [
                 {
                   "label": "1. Assessment & red flags",
-                  "guidance": "ASSESSMENT:\n• Thyroid: TFTs, TPO ab if abnormal. Goitre/nodule: USS + FNA per NG145. Calcium: corrected Ca, PTH, vitamin D.\n• Diabetes: HbA1c, renal function, lipids; foot check. Adrenal: electrolytes, short synacthen if suspected insufficiency.\n• Red flags: Thyroid storm, severe hypo/hyperglycaemia, adrenal crisis – emergency. NICE NG28, NG145."
+                  "guidance": "ASSESSMENT:\n• Tailor to the condition: history, examination, and investigations relevant to the endocrine presentation (e.g. thyroid: TFTs, TPO; diabetes: HbA1c, foot check; adrenal: electrolytes, short synacthen; calcium/bone: corrected Ca, PTH, vitamin D).\n• Red flags: Thyroid storm, severe hypo/hyperglycaemia, adrenal crisis, severe hypercalcaemia – emergency. NICE CKS, NG28, NG145."
                 },
                 {
                   "label": "2. Management",
-                  "guidance": "MANAGEMENT:\n• Thyroid: Levothyroxine if hypothyroid; recheck TSH 6–8 weeks. Hyperthyroid refer. Subclinical: TPO ab; treat if symptomatic. NICE NG145.\n• Diabetes: HbA1c target 48–53; metformin; SGLT2i if CVD/HF/CKD. NICE NG28.\n• Adrenal: Sick-day rules; never stop steroids abruptly; emergency hydrocortisone. NICE CKS."
+                  "guidance": "MANAGEMENT:\n• Follow NICE CKS and Local formulary for the specific condition. Do not apply thyroid or diabetes advice to non-thyroid/non-diabetes topics (e.g. Cushing’s, Conn’s, steroid, pituitary have their own pathways).\n• General principles: sick-day rules for anyone on glucocorticoids; do not stop steroids abruptly; treat hypo-/hyperglycaemia and electrolyte disturbance as indicated. NICE CKS."
                 },
                 {
                   "label": "3. Referral",
-                  "guidance": "REFERRAL:\n• 2WW: Pituitary/adrenal crisis, severe thyroid eye disease.\n• Urgent: Adrenal crisis, thyroid storm, severe DKA/HHS.\n• Routine: Hyperthyroid, goitre/nodule with concern, type 1 diabetes, pituitary/adrenal confirmed. NICE NG145, NG28."
+                  "guidance": "REFERRAL:\n• 2WW: Pituitary/adrenal crisis, severe thyroid eye disease, suspected phaeochromocytoma crisis.\n• Urgent: Adrenal crisis, thyroid storm, severe DKA/HHS, severe hypercalcaemia.\n• Routine: Hyperthyroid, goitre/nodule with concern, type 1 diabetes, pituitary/adrenal/calcium disorders. Use topic-specific pathway where available. NICE NG12, NG145, NG28."
                 }
               ]
             }
@@ -17191,15 +17183,15 @@
               "options": [
                 {
                   "label": "1. Assessment & red flags",
-                  "guidance": "ASSESSMENT:\n• Thyroid: TFTs, TPO ab if abnormal. Goitre/nodule: USS + FNA per NG145. Calcium: corrected Ca, PTH, vitamin D.\n• Diabetes: HbA1c, renal function, lipids; foot check. Adrenal: electrolytes, short synacthen if suspected insufficiency.\n• Red flags: Thyroid storm, severe hypo/hyperglycaemia, adrenal crisis – emergency. NICE NG28, NG145."
+                  "guidance": "ASSESSMENT:\n• Tailor to the condition: history, examination, and investigations relevant to the endocrine presentation (e.g. thyroid: TFTs, TPO; diabetes: HbA1c, foot check; adrenal: electrolytes, short synacthen; calcium/bone: corrected Ca, PTH, vitamin D).\n• Red flags: Thyroid storm, severe hypo/hyperglycaemia, adrenal crisis, severe hypercalcaemia – emergency. NICE CKS, NG28, NG145."
                 },
                 {
                   "label": "2. Management",
-                  "guidance": "MANAGEMENT:\n• Thyroid: Levothyroxine if hypothyroid; recheck TSH 6–8 weeks. Hyperthyroid refer. Subclinical: TPO ab; treat if symptomatic. NICE NG145.\n• Diabetes: HbA1c target 48–53; metformin; SGLT2i if CVD/HF/CKD. NICE NG28.\n• Adrenal: Sick-day rules; never stop steroids abruptly; emergency hydrocortisone. NICE CKS."
+                  "guidance": "MANAGEMENT:\n• Follow NICE CKS and Local formulary for the specific condition. Do not apply thyroid or diabetes advice to non-thyroid/non-diabetes topics (e.g. Cushing’s, Conn’s, steroid, pituitary have their own pathways).\n• General principles: sick-day rules for anyone on glucocorticoids; do not stop steroids abruptly; treat hypo-/hyperglycaemia and electrolyte disturbance as indicated. NICE CKS."
                 },
                 {
                   "label": "3. Referral",
-                  "guidance": "REFERRAL:\n• 2WW: Pituitary/adrenal crisis, severe thyroid eye disease.\n• Urgent: Adrenal crisis, thyroid storm, severe DKA/HHS.\n• Routine: Hyperthyroid, goitre/nodule with concern, type 1 diabetes, pituitary/adrenal confirmed. NICE NG145, NG28."
+                  "guidance": "REFERRAL:\n• 2WW: Pituitary/adrenal crisis, severe thyroid eye disease, suspected phaeochromocytoma crisis.\n• Urgent: Adrenal crisis, thyroid storm, severe DKA/HHS, severe hypercalcaemia.\n• Routine: Hyperthyroid, goitre/nodule with concern, type 1 diabetes, pituitary/adrenal/calcium disorders. Use topic-specific pathway where available. NICE NG12, NG145, NG28."
                 }
               ]
             }
@@ -17222,15 +17214,15 @@
               "options": [
                 {
                   "label": "1. Assessment & red flags",
-                  "guidance": "ASSESSMENT:\n• Thyroid: TFTs, TPO ab if abnormal. Goitre/nodule: USS + FNA per NG145. Calcium: corrected Ca, PTH, vitamin D.\n• Diabetes: HbA1c, renal function, lipids; foot check. Adrenal: electrolytes, short synacthen if suspected insufficiency.\n• Red flags: Thyroid storm, severe hypo/hyperglycaemia, adrenal crisis – emergency. NICE NG28, NG145."
+                  "guidance": "ASSESSMENT:\n• Tailor to the condition: history, examination, and investigations relevant to the endocrine presentation (e.g. thyroid: TFTs, TPO; diabetes: HbA1c, foot check; adrenal: electrolytes, short synacthen; calcium/bone: corrected Ca, PTH, vitamin D).\n• Red flags: Thyroid storm, severe hypo/hyperglycaemia, adrenal crisis, severe hypercalcaemia – emergency. NICE CKS, NG28, NG145."
                 },
                 {
                   "label": "2. Management",
-                  "guidance": "MANAGEMENT:\n• Thyroid: Levothyroxine if hypothyroid; recheck TSH 6–8 weeks. Hyperthyroid refer. Subclinical: TPO ab; treat if symptomatic. NICE NG145.\n• Diabetes: HbA1c target 48–53; metformin; SGLT2i if CVD/HF/CKD. NICE NG28.\n• Adrenal: Sick-day rules; never stop steroids abruptly; emergency hydrocortisone. NICE CKS."
+                  "guidance": "MANAGEMENT:\n• Follow NICE CKS and Local formulary for the specific condition. Do not apply thyroid or diabetes advice to non-thyroid/non-diabetes topics (e.g. Cushing’s, Conn’s, steroid, pituitary have their own pathways).\n• General principles: sick-day rules for anyone on glucocorticoids; do not stop steroids abruptly; treat hypo-/hyperglycaemia and electrolyte disturbance as indicated. NICE CKS."
                 },
                 {
                   "label": "3. Referral",
-                  "guidance": "REFERRAL:\n• 2WW: Pituitary/adrenal crisis, severe thyroid eye disease.\n• Urgent: Adrenal crisis, thyroid storm, severe DKA/HHS.\n• Routine: Hyperthyroid, goitre/nodule with concern, type 1 diabetes, pituitary/adrenal confirmed. NICE NG145, NG28."
+                  "guidance": "REFERRAL:\n• 2WW: Pituitary/adrenal crisis, severe thyroid eye disease, suspected phaeochromocytoma crisis.\n• Urgent: Adrenal crisis, thyroid storm, severe DKA/HHS, severe hypercalcaemia.\n• Routine: Hyperthyroid, goitre/nodule with concern, type 1 diabetes, pituitary/adrenal/calcium disorders. Use topic-specific pathway where available. NICE NG12, NG145, NG28."
                 }
               ]
             }
@@ -17246,21 +17238,17 @@
           "evidence": "Management per NICE CKS and Local formulary.",
           "steps": [
             {
-              "id": "guidance-endocrinology",
-              "question": "Endocrinology (Consultant Standard)",
+              "id": "conns-mgt",
+              "question": "Conn's syndrome (Primary hyperaldosteronism)",
               "type": "dropdown",
               "options": [
                 {
-                  "label": "1. Assessment & red flags",
-                  "guidance": "ASSESSMENT:\n• Thyroid: TFTs, TPO ab if abnormal. Goitre/nodule: USS + FNA per NG145. Calcium: corrected Ca, PTH, vitamin D.\n• Diabetes: HbA1c, renal function, lipids; foot check. Adrenal: electrolytes, short synacthen if suspected insufficiency.\n• Red flags: Thyroid storm, severe hypo/hyperglycaemia, adrenal crisis – emergency. NICE NG28, NG145."
+                  "label": "Screening & referral",
+                  "guidance": "MANAGEMENT PLAN:\n1. Suspect in resistant hypertension, hypokalaemia (or normokalaemic). Screen: plasma aldosterone and renin; aldosterone:renin ratio (ARR) raised. Do not adjust antihypertensives that affect renin (e.g. stop spironolactone/eplerenone 4–6 weeks; use alpha-blocker/CCB if needed).\n2. Refer endocrinology for confirmatory testing (saline suppression or fludrocortisone suppression) and adrenal imaging. NICE CKS, Local formulary."
                 },
                 {
-                  "label": "2. Management",
-                  "guidance": "MANAGEMENT:\n• Thyroid: Levothyroxine if hypothyroid; recheck TSH 6–8 weeks. Hyperthyroid refer. Subclinical: TPO ab; treat if symptomatic. NICE NG145.\n• Diabetes: HbA1c target 48–53; metformin; SGLT2i if CVD/HF/CKD. NICE NG28.\n• Adrenal: Sick-day rules; never stop steroids abruptly; emergency hydrocortisone. NICE CKS."
-                },
-                {
-                  "label": "3. Referral",
-                  "guidance": "REFERRAL:\n• 2WW: Pituitary/adrenal crisis, severe thyroid eye disease.\n• Urgent: Adrenal crisis, thyroid storm, severe DKA/HHS.\n• Routine: Hyperthyroid, goitre/nodule with concern, type 1 diabetes, pituitary/adrenal confirmed. NICE NG145, NG28."
+                  "label": "Medical management (post-diagnosis)",
+                  "guidance": "MANAGEMENT PLAN:\n1. Mineralocorticoid receptor antagonist: spironolactone or eplerenone per local formulary. Titrate to BP and K+; monitor U&E regularly.\n2. Add other antihypertensives as needed. Avoid potassium supplements unless K+ low despite MRA.\n3. Surgical option (adrenalectomy) for unilateral adenoma – discuss with endocrinology. NICE CKS, Local formulary."
                 }
               ]
             }
@@ -17276,21 +17264,17 @@
           "evidence": "Management per NICE CKS and Local formulary.",
           "steps": [
             {
-              "id": "guidance-endocrinology",
-              "question": "Endocrinology (Consultant Standard)",
+              "id": "cushing-mgt",
+              "question": "Cushing's (iatrogenic & endogenous)",
               "type": "dropdown",
               "options": [
                 {
-                  "label": "1. Assessment & red flags",
-                  "guidance": "ASSESSMENT:\n• Thyroid: TFTs, TPO ab if abnormal. Goitre/nodule: USS + FNA per NG145. Calcium: corrected Ca, PTH, vitamin D.\n• Diabetes: HbA1c, renal function, lipids; foot check. Adrenal: electrolytes, short synacthen if suspected insufficiency.\n• Red flags: Thyroid storm, severe hypo/hyperglycaemia, adrenal crisis – emergency. NICE NG28, NG145."
+                  "label": "Iatrogenic (steroid-induced)",
+                  "guidance": "MANAGEMENT PLAN:\n1. Reduce steroid to lowest effective dose; consider topical/inhaled alternatives where possible. Taper slowly to avoid adrenal insufficiency – do not stop abruptly.\n2. Monitor: BP, glucose, bone health (DEXA if long-term), weight. Treat hypertension and hyperglycaemia per NICE. Consider bisphosphonate if high fracture risk.\n3. Sick-day rules if on any systemic steroid: double dose when unwell; emergency hydrocortisone if unable to take oral. NICE CKS, Local formulary."
                 },
                 {
-                  "label": "2. Management",
-                  "guidance": "MANAGEMENT:\n• Thyroid: Levothyroxine if hypothyroid; recheck TSH 6–8 weeks. Hyperthyroid refer. Subclinical: TPO ab; treat if symptomatic. NICE NG145.\n• Diabetes: HbA1c target 48–53; metformin; SGLT2i if CVD/HF/CKD. NICE NG28.\n• Adrenal: Sick-day rules; never stop steroids abruptly; emergency hydrocortisone. NICE CKS."
-                },
-                {
-                  "label": "3. Referral",
-                  "guidance": "REFERRAL:\n• 2WW: Pituitary/adrenal crisis, severe thyroid eye disease.\n• Urgent: Adrenal crisis, thyroid storm, severe DKA/HHS.\n• Routine: Hyperthyroid, goitre/nodule with concern, type 1 diabetes, pituitary/adrenal confirmed. NICE NG145, NG28."
+                  "label": "Endogenous / when to suspect",
+                  "guidance": "MANAGEMENT PLAN:\n1. Suspect: central obesity, facial plethora, thin skin, bruising, proximal weakness, hypertension, diabetes. Screen: 24 h urinary free cortisol or late-night salivary cortisol; dexamethasone suppression test. Refer endocrinology for confirmation and imaging (pituitary/adrenal).\n2. Do not stop exogenous steroids to investigate until under specialist guidance. NICE CKS, Local formulary."
                 }
               ]
             }
@@ -17306,21 +17290,17 @@
           "evidence": "Management per NICE CKS and Local formulary.",
           "steps": [
             {
-              "id": "guidance-endocrinology",
-              "question": "Endocrinology (Consultant Standard)",
+              "id": "cushing-mgt",
+              "question": "Cushing's (iatrogenic & endogenous)",
               "type": "dropdown",
               "options": [
                 {
-                  "label": "1. Assessment & red flags",
-                  "guidance": "ASSESSMENT:\n• Thyroid: TFTs, TPO ab if abnormal. Goitre/nodule: USS + FNA per NG145. Calcium: corrected Ca, PTH, vitamin D.\n• Diabetes: HbA1c, renal function, lipids; foot check. Adrenal: electrolytes, short synacthen if suspected insufficiency.\n• Red flags: Thyroid storm, severe hypo/hyperglycaemia, adrenal crisis – emergency. NICE NG28, NG145."
+                  "label": "Iatrogenic (steroid-induced)",
+                  "guidance": "MANAGEMENT PLAN:\n1. Reduce steroid to lowest effective dose; consider topical/inhaled alternatives where possible. Taper slowly to avoid adrenal insufficiency – do not stop abruptly.\n2. Monitor: BP, glucose, bone health (DEXA if long-term), weight. Treat hypertension and hyperglycaemia per NICE. Consider bisphosphonate if high fracture risk.\n3. Sick-day rules if on any systemic steroid: double dose when unwell; emergency hydrocortisone if unable to take oral. NICE CKS, Local formulary."
                 },
                 {
-                  "label": "2. Management",
-                  "guidance": "MANAGEMENT:\n• Thyroid: Levothyroxine if hypothyroid; recheck TSH 6–8 weeks. Hyperthyroid refer. Subclinical: TPO ab; treat if symptomatic. NICE NG145.\n• Diabetes: HbA1c target 48–53; metformin; SGLT2i if CVD/HF/CKD. NICE NG28.\n• Adrenal: Sick-day rules; never stop steroids abruptly; emergency hydrocortisone. NICE CKS."
-                },
-                {
-                  "label": "3. Referral",
-                  "guidance": "REFERRAL:\n• 2WW: Pituitary/adrenal crisis, severe thyroid eye disease.\n• Urgent: Adrenal crisis, thyroid storm, severe DKA/HHS.\n• Routine: Hyperthyroid, goitre/nodule with concern, type 1 diabetes, pituitary/adrenal confirmed. NICE NG145, NG28."
+                  "label": "Endogenous / when to suspect",
+                  "guidance": "MANAGEMENT PLAN:\n1. Suspect: central obesity, facial plethora, thin skin, bruising, proximal weakness, hypertension, diabetes. Screen: 24 h urinary free cortisol or late-night salivary cortisol; dexamethasone suppression test. Refer endocrinology for confirmation and imaging (pituitary/adrenal).\n2. Do not stop exogenous steroids to investigate until under specialist guidance. NICE CKS, Local formulary."
                 }
               ]
             }
@@ -17335,21 +17315,17 @@
           "evidence": "Management per CKS Cushing's.",
           "steps": [
             {
-              "id": "guidance-endocrinology",
-              "question": "Endocrinology (Consultant Standard)",
+              "id": "cushing-mgt",
+              "question": "Cushing's (iatrogenic & endogenous)",
               "type": "dropdown",
               "options": [
                 {
-                  "label": "1. Assessment & red flags",
-                  "guidance": "ASSESSMENT:\n• Thyroid: TFTs, TPO ab if abnormal. Goitre/nodule: USS + FNA per NG145. Calcium: corrected Ca, PTH, vitamin D.\n• Diabetes: HbA1c, renal function, lipids; foot check. Adrenal: electrolytes, short synacthen if suspected insufficiency.\n• Red flags: Thyroid storm, severe hypo/hyperglycaemia, adrenal crisis – emergency. NICE NG28, NG145."
+                  "label": "Iatrogenic (steroid-induced)",
+                  "guidance": "MANAGEMENT PLAN:\n1. Reduce steroid to lowest effective dose; consider topical/inhaled alternatives where possible. Taper slowly to avoid adrenal insufficiency – do not stop abruptly.\n2. Monitor: BP, glucose, bone health (DEXA if long-term), weight. Treat hypertension and hyperglycaemia per NICE. Consider bisphosphonate if high fracture risk.\n3. Sick-day rules if on any systemic steroid: double dose when unwell; emergency hydrocortisone if unable to take oral. NICE CKS, Local formulary."
                 },
                 {
-                  "label": "2. Management",
-                  "guidance": "MANAGEMENT:\n• Thyroid: Levothyroxine if hypothyroid; recheck TSH 6–8 weeks. Hyperthyroid refer. Subclinical: TPO ab; treat if symptomatic. NICE NG145.\n• Diabetes: HbA1c target 48–53; metformin; SGLT2i if CVD/HF/CKD. NICE NG28.\n• Adrenal: Sick-day rules; never stop steroids abruptly; emergency hydrocortisone. NICE CKS."
-                },
-                {
-                  "label": "3. Referral",
-                  "guidance": "REFERRAL:\n• 2WW: Pituitary/adrenal crisis, severe thyroid eye disease.\n• Urgent: Adrenal crisis, thyroid storm, severe DKA/HHS.\n• Routine: Hyperthyroid, goitre/nodule with concern, type 1 diabetes, pituitary/adrenal confirmed. NICE NG145, NG28."
+                  "label": "Endogenous / when to suspect",
+                  "guidance": "MANAGEMENT PLAN:\n1. Suspect: central obesity, facial plethora, thin skin, bruising, proximal weakness, hypertension, diabetes. Screen: 24 h urinary free cortisol or late-night salivary cortisol; dexamethasone suppression test. Refer endocrinology for confirmation and imaging (pituitary/adrenal).\n2. Do not stop exogenous steroids to investigate until under specialist guidance. NICE CKS, Local formulary."
                 }
               ]
             }
@@ -17365,21 +17341,13 @@
           "evidence": "Management per NICE CKS and Local formulary.",
           "steps": [
             {
-              "id": "guidance-endocrinology",
-              "question": "Endocrinology (Consultant Standard)",
+              "id": "hypocalcaemia-mgt",
+              "question": "Hypocalcaemia",
               "type": "dropdown",
               "options": [
                 {
-                  "label": "1. Assessment & red flags",
-                  "guidance": "ASSESSMENT:\n• Thyroid: TFTs, TPO ab if abnormal. Goitre/nodule: USS + FNA per NG145. Calcium: corrected Ca, PTH, vitamin D.\n• Diabetes: HbA1c, renal function, lipids; foot check. Adrenal: electrolytes, short synacthen if suspected insufficiency.\n• Red flags: Thyroid storm, severe hypo/hyperglycaemia, adrenal crisis – emergency. NICE NG28, NG145."
-                },
-                {
-                  "label": "2. Management",
-                  "guidance": "MANAGEMENT:\n• Thyroid: Levothyroxine if hypothyroid; recheck TSH 6–8 weeks. Hyperthyroid refer. Subclinical: TPO ab; treat if symptomatic. NICE NG145.\n• Diabetes: HbA1c target 48–53; metformin; SGLT2i if CVD/HF/CKD. NICE NG28.\n• Adrenal: Sick-day rules; never stop steroids abruptly; emergency hydrocortisone. NICE CKS."
-                },
-                {
-                  "label": "3. Referral",
-                  "guidance": "REFERRAL:\n• 2WW: Pituitary/adrenal crisis, severe thyroid eye disease.\n• Urgent: Adrenal crisis, thyroid storm, severe DKA/HHS.\n• Routine: Hyperthyroid, goitre/nodule with concern, type 1 diabetes, pituitary/adrenal confirmed. NICE NG145, NG28."
+                  "label": "Assessment & treatment",
+                  "guidance": "MANAGEMENT PLAN:\n1. Corrected calcium; PTH, vitamin D, Mg. Causes: hypoparathyroidism, vitamin D deficiency, renal failure, pancreatitis. Acute symptomatic: IV calcium gluconate.\n2. Chronic: calcium and vitamin D supplementation; alfacalcidol if hypoparathyroid. Refer endocrinology if persistent or hypoparathyroidism. NICE CKS, Local formulary."
                 }
               ]
             }
@@ -17681,44 +17649,13 @@
           "evidence": "Management per NICE CKS and Local formulary.",
           "steps": [
             {
-              "id": "diabetes-stage",
-              "question": "1. HbA1c Target",
+              "id": "di-mgt",
+              "question": "Diabetes insipidus",
               "type": "dropdown",
               "options": [
                 {
-                  "label": "Lifestyle or Single Drug (Mono)",
-                  "guidance": "MANAGEMENT PLAN:\n1. Target: 48 mmol/mol (6.5%).\n2. Review: Every 3-6 months until stable. NICE NG28."
-                },
-                {
-                  "label": "Dual / Triple Therapy",
-                  "guidance": "MANAGEMENT PLAN:\n1. Target: 53 mmol/mol (7.0%).\n2. Adjust: Intensify if HbA1c rises to 58 mmol/mol. NICE NG28."
-                },
-                {
-                  "label": "Frailty / Comorbidities",
-                  "guidance": "MANAGEMENT PLAN:\n1. Individualise: Consider less stringent target (e.g. 58-64) to avoid hypoglycaemia. NICE NG28."
-                }
-              ]
-            },
-            {
-              "id": "diabetes-drug",
-              "question": "2. Drug Choice (NICE 2024)",
-              "type": "dropdown",
-              "options": [
-                {
-                  "label": "Step 1: Metformin First-line",
-                  "guidance": "MANAGEMENT PLAN:\n1. Dose: Start 500mg daily, increase slowly to 1g-2g total daily to avoid GI upset.\n2. SGLT2i: Add if CVD, HF, or high risk of CVD (QRISK ≥10%) regardless of HbA1c control. NICE NG28."
-                },
-                {
-                  "label": "CVD / Heart Failure / High Risk",
-                  "guidance": "MANAGEMENT PLAN:\n1. SGLT2 inhibitor (e.g. Dapagliflozin/Empagliflozin) should be added to Metformin as soon as CVD/HF is confirmed. NICE NG28."
-                },
-                {
-                  "label": "CKD + Albuminuria (ACR ≥3)",
-                  "guidance": "MANAGEMENT PLAN:\n1. SGLT2 inhibitor is indicated. Monitor eGFR; check local SPC for withdrawal thresholds. NICE NG28."
-                },
-                {
-                  "label": "Obesity (BMI ≥ 35)",
-                  "guidance": "MANAGEMENT PLAN:\n1. GLP-1 mimetics (e.g. Semaglutide) if BMI ≥35 AND triple therapy not at target (or BMI <35 if insulin would have occupational implications). NICE NG28."
+                  "label": "Assessment & referral",
+                  "guidance": "MANAGEMENT PLAN:\n1. Polyuria, polydipsia, dilute urine. Water deprivation test under specialist guidance; measure urine/osmolarity and serum Na.\n2. Cranial: desmopressin. Nephrogenic: treat cause (lithium, drugs); consider thiazide, low-solute diet. Refer endocrinology for confirmation. NICE CKS, Local formulary."
                 }
               ]
             }
@@ -18117,15 +18054,15 @@
               "options": [
                 {
                   "label": "1. Assessment & red flags",
-                  "guidance": "ASSESSMENT:\n• Thyroid: TFTs, TPO ab if abnormal. Goitre/nodule: USS + FNA per NG145. Calcium: corrected Ca, PTH, vitamin D.\n• Diabetes: HbA1c, renal function, lipids; foot check. Adrenal: electrolytes, short synacthen if suspected insufficiency.\n• Red flags: Thyroid storm, severe hypo/hyperglycaemia, adrenal crisis – emergency. NICE NG28, NG145."
+                  "guidance": "ASSESSMENT:\n• Tailor to the condition: history, examination, and investigations relevant to the endocrine presentation (e.g. thyroid: TFTs, TPO; diabetes: HbA1c, foot check; adrenal: electrolytes, short synacthen; calcium/bone: corrected Ca, PTH, vitamin D).\n• Red flags: Thyroid storm, severe hypo/hyperglycaemia, adrenal crisis, severe hypercalcaemia – emergency. NICE CKS, NG28, NG145."
                 },
                 {
                   "label": "2. Management",
-                  "guidance": "MANAGEMENT:\n• Thyroid: Levothyroxine if hypothyroid; recheck TSH 6–8 weeks. Hyperthyroid refer. Subclinical: TPO ab; treat if symptomatic. NICE NG145.\n• Diabetes: HbA1c target 48–53; metformin; SGLT2i if CVD/HF/CKD. NICE NG28.\n• Adrenal: Sick-day rules; never stop steroids abruptly; emergency hydrocortisone. NICE CKS."
+                  "guidance": "MANAGEMENT:\n• Follow NICE CKS and Local formulary for the specific condition. Do not apply thyroid or diabetes advice to non-thyroid/non-diabetes topics (e.g. Cushing’s, Conn’s, steroid, pituitary have their own pathways).\n• General principles: sick-day rules for anyone on glucocorticoids; do not stop steroids abruptly; treat hypo-/hyperglycaemia and electrolyte disturbance as indicated. NICE CKS."
                 },
                 {
                   "label": "3. Referral",
-                  "guidance": "REFERRAL:\n• 2WW: Pituitary/adrenal crisis, severe thyroid eye disease.\n• Urgent: Adrenal crisis, thyroid storm, severe DKA/HHS.\n• Routine: Hyperthyroid, goitre/nodule with concern, type 1 diabetes, pituitary/adrenal confirmed. NICE NG145, NG28."
+                  "guidance": "REFERRAL:\n• 2WW: Pituitary/adrenal crisis, severe thyroid eye disease, suspected phaeochromocytoma crisis.\n• Urgent: Adrenal crisis, thyroid storm, severe DKA/HHS, severe hypercalcaemia.\n• Routine: Hyperthyroid, goitre/nodule with concern, type 1 diabetes, pituitary/adrenal/calcium disorders. Use topic-specific pathway where available. NICE NG12, NG145, NG28."
                 }
               ]
             }
@@ -18141,21 +18078,17 @@
           "evidence": "Management per NICE CKS and Local formulary.",
           "steps": [
             {
-              "id": "guidance-endocrinology",
-              "question": "Endocrinology (Consultant Standard)",
+              "id": "hypercalcaemia-mgt",
+              "question": "Hypercalcaemia",
               "type": "dropdown",
               "options": [
                 {
-                  "label": "1. Assessment & red flags",
-                  "guidance": "ASSESSMENT:\n• Thyroid: TFTs, TPO ab if abnormal. Goitre/nodule: USS + FNA per NG145. Calcium: corrected Ca, PTH, vitamin D.\n• Diabetes: HbA1c, renal function, lipids; foot check. Adrenal: electrolytes, short synacthen if suspected insufficiency.\n• Red flags: Thyroid storm, severe hypo/hyperglycaemia, adrenal crisis – emergency. NICE NG28, NG145."
+                  "label": "Mild",
+                  "guidance": "MANAGEMENT PLAN:\n1. Corrected calcium; check PTH, vitamin D. Causes: primary hyperparathyroidism, malignancy, vitamin D excess, thiazides. Hydration; avoid calcium/vitamin D supplements.\n2. Refer for PTH interpretation and imaging. NICE CKS, Local formulary."
                 },
                 {
-                  "label": "2. Management",
-                  "guidance": "MANAGEMENT:\n• Thyroid: Levothyroxine if hypothyroid; recheck TSH 6–8 weeks. Hyperthyroid refer. Subclinical: TPO ab; treat if symptomatic. NICE NG145.\n• Diabetes: HbA1c target 48–53; metformin; SGLT2i if CVD/HF/CKD. NICE NG28.\n• Adrenal: Sick-day rules; never stop steroids abruptly; emergency hydrocortisone. NICE CKS."
-                },
-                {
-                  "label": "3. Referral",
-                  "guidance": "REFERRAL:\n• 2WW: Pituitary/adrenal crisis, severe thyroid eye disease.\n• Urgent: Adrenal crisis, thyroid storm, severe DKA/HHS.\n• Routine: Hyperthyroid, goitre/nodule with concern, type 1 diabetes, pituitary/adrenal confirmed. NICE NG145, NG28."
+                  "label": "Severe / emergency",
+                  "guidance": "MANAGEMENT PLAN:\n1. Severe (e.g. Ca >3.0): IV fluids, consider bisphosphonate (e.g. IV zoledronate) under specialist guidance. Treat underlying cause.\n2. Urgent referral or admission. NICE CKS, Local formulary."
                 }
               ]
             }
@@ -18171,21 +18104,17 @@
           "evidence": "Management per NICE CKS and Local formulary.",
           "steps": [
             {
-              "id": "guidance-endocrinology",
-              "question": "Endocrinology (Consultant Standard)",
+              "id": "hypercalcaemia-mgt",
+              "question": "Hypercalcaemia",
               "type": "dropdown",
               "options": [
                 {
-                  "label": "1. Assessment & red flags",
-                  "guidance": "ASSESSMENT:\n• Thyroid: TFTs, TPO ab if abnormal. Goitre/nodule: USS + FNA per NG145. Calcium: corrected Ca, PTH, vitamin D.\n• Diabetes: HbA1c, renal function, lipids; foot check. Adrenal: electrolytes, short synacthen if suspected insufficiency.\n• Red flags: Thyroid storm, severe hypo/hyperglycaemia, adrenal crisis – emergency. NICE NG28, NG145."
+                  "label": "Mild",
+                  "guidance": "MANAGEMENT PLAN:\n1. Corrected calcium; check PTH, vitamin D. Causes: primary hyperparathyroidism, malignancy, vitamin D excess, thiazides. Hydration; avoid calcium/vitamin D supplements.\n2. Refer for PTH interpretation and imaging. NICE CKS, Local formulary."
                 },
                 {
-                  "label": "2. Management",
-                  "guidance": "MANAGEMENT:\n• Thyroid: Levothyroxine if hypothyroid; recheck TSH 6–8 weeks. Hyperthyroid refer. Subclinical: TPO ab; treat if symptomatic. NICE NG145.\n• Diabetes: HbA1c target 48–53; metformin; SGLT2i if CVD/HF/CKD. NICE NG28.\n• Adrenal: Sick-day rules; never stop steroids abruptly; emergency hydrocortisone. NICE CKS."
-                },
-                {
-                  "label": "3. Referral",
-                  "guidance": "REFERRAL:\n• 2WW: Pituitary/adrenal crisis, severe thyroid eye disease.\n• Urgent: Adrenal crisis, thyroid storm, severe DKA/HHS.\n• Routine: Hyperthyroid, goitre/nodule with concern, type 1 diabetes, pituitary/adrenal confirmed. NICE NG145, NG28."
+                  "label": "Severe / emergency",
+                  "guidance": "MANAGEMENT PLAN:\n1. Severe (e.g. Ca >3.0): IV fluids, consider bisphosphonate (e.g. IV zoledronate) under specialist guidance. Treat underlying cause.\n2. Urgent referral or admission. NICE CKS, Local formulary."
                 }
               ]
             }
@@ -18209,15 +18138,15 @@
               "options": [
                 {
                   "label": "1. Assessment & red flags",
-                  "guidance": "ASSESSMENT:\n• Thyroid: TFTs, TPO ab if abnormal. Goitre/nodule: USS + FNA per NG145. Calcium: corrected Ca, PTH, vitamin D.\n• Diabetes: HbA1c, renal function, lipids; foot check. Adrenal: electrolytes, short synacthen if suspected insufficiency.\n• Red flags: Thyroid storm, severe hypo/hyperglycaemia, adrenal crisis – emergency. NICE NG28, NG145."
+                  "guidance": "ASSESSMENT:\n• Tailor to the condition: history, examination, and investigations relevant to the endocrine presentation (e.g. thyroid: TFTs, TPO; diabetes: HbA1c, foot check; adrenal: electrolytes, short synacthen; calcium/bone: corrected Ca, PTH, vitamin D).\n• Red flags: Thyroid storm, severe hypo/hyperglycaemia, adrenal crisis, severe hypercalcaemia – emergency. NICE CKS, NG28, NG145."
                 },
                 {
                   "label": "2. Management",
-                  "guidance": "MANAGEMENT:\n• Thyroid: Levothyroxine if hypothyroid; recheck TSH 6–8 weeks. Hyperthyroid refer. Subclinical: TPO ab; treat if symptomatic. NICE NG145.\n• Diabetes: HbA1c target 48–53; metformin; SGLT2i if CVD/HF/CKD. NICE NG28.\n• Adrenal: Sick-day rules; never stop steroids abruptly; emergency hydrocortisone. NICE CKS."
+                  "guidance": "MANAGEMENT:\n• Follow NICE CKS and Local formulary for the specific condition. Do not apply thyroid or diabetes advice to non-thyroid/non-diabetes topics (e.g. Cushing’s, Conn’s, steroid, pituitary have their own pathways).\n• General principles: sick-day rules for anyone on glucocorticoids; do not stop steroids abruptly; treat hypo-/hyperglycaemia and electrolyte disturbance as indicated. NICE CKS."
                 },
                 {
                   "label": "3. Referral",
-                  "guidance": "REFERRAL:\n• 2WW: Pituitary/adrenal crisis, severe thyroid eye disease.\n• Urgent: Adrenal crisis, thyroid storm, severe DKA/HHS.\n• Routine: Hyperthyroid, goitre/nodule with concern, type 1 diabetes, pituitary/adrenal confirmed. NICE NG145, NG28."
+                  "guidance": "REFERRAL:\n• 2WW: Pituitary/adrenal crisis, severe thyroid eye disease, suspected phaeochromocytoma crisis.\n• Urgent: Adrenal crisis, thyroid storm, severe DKA/HHS, severe hypercalcaemia.\n• Routine: Hyperthyroid, goitre/nodule with concern, type 1 diabetes, pituitary/adrenal/calcium disorders. Use topic-specific pathway where available. NICE NG12, NG145, NG28."
                 }
               ]
             }
@@ -18232,21 +18161,13 @@
           "evidence": "Management per CKS Prolactin.",
           "steps": [
             {
-              "id": "guidance-endocrinology",
-              "question": "Endocrinology (Consultant Standard)",
+              "id": "prolactinoma-mgt",
+              "question": "Prolactinoma / hyperprolactinaemia",
               "type": "dropdown",
               "options": [
                 {
-                  "label": "1. Assessment & red flags",
-                  "guidance": "ASSESSMENT:\n• Thyroid: TFTs, TPO ab if abnormal. Goitre/nodule: USS + FNA per NG145. Calcium: corrected Ca, PTH, vitamin D.\n• Diabetes: HbA1c, renal function, lipids; foot check. Adrenal: electrolytes, short synacthen if suspected insufficiency.\n• Red flags: Thyroid storm, severe hypo/hyperglycaemia, adrenal crisis – emergency. NICE NG28, NG145."
-                },
-                {
-                  "label": "2. Management",
-                  "guidance": "MANAGEMENT:\n• Thyroid: Levothyroxine if hypothyroid; recheck TSH 6–8 weeks. Hyperthyroid refer. Subclinical: TPO ab; treat if symptomatic. NICE NG145.\n• Diabetes: HbA1c target 48–53; metformin; SGLT2i if CVD/HF/CKD. NICE NG28.\n• Adrenal: Sick-day rules; never stop steroids abruptly; emergency hydrocortisone. NICE CKS."
-                },
-                {
-                  "label": "3. Referral",
-                  "guidance": "REFERRAL:\n• 2WW: Pituitary/adrenal crisis, severe thyroid eye disease.\n• Urgent: Adrenal crisis, thyroid storm, severe DKA/HHS.\n• Routine: Hyperthyroid, goitre/nodule with concern, type 1 diabetes, pituitary/adrenal confirmed. NICE NG145, NG28."
+                  "label": "Medical & referral",
+                  "guidance": "MANAGEMENT PLAN:\n1. Exclude drugs (antipsychotics, metoclopramide, etc.), pregnancy, hypothyroidism. MRI pituitary if prolactin significantly raised.\n2. Cabergoline first-line for macroprolactinoma or symptomatic microadenoma; titrate to prolactin. Refer endocrinology for diagnosis and follow-up.\n3. Monitor visual fields if macroadenoma. NICE CKS, Local formulary."
                 }
               ]
             }
@@ -18309,21 +18230,13 @@
           "evidence": "Management per NICE CKS and Local formulary.",
           "steps": [
             {
-              "id": "guidance-endocrinology",
-              "question": "Endocrinology (Consultant Standard)",
+              "id": "hypocalcaemia-mgt",
+              "question": "Hypocalcaemia",
               "type": "dropdown",
               "options": [
                 {
-                  "label": "1. Assessment & red flags",
-                  "guidance": "ASSESSMENT:\n• Thyroid: TFTs, TPO ab if abnormal. Goitre/nodule: USS + FNA per NG145. Calcium: corrected Ca, PTH, vitamin D.\n• Diabetes: HbA1c, renal function, lipids; foot check. Adrenal: electrolytes, short synacthen if suspected insufficiency.\n• Red flags: Thyroid storm, severe hypo/hyperglycaemia, adrenal crisis – emergency. NICE NG28, NG145."
-                },
-                {
-                  "label": "2. Management",
-                  "guidance": "MANAGEMENT:\n• Thyroid: Levothyroxine if hypothyroid; recheck TSH 6–8 weeks. Hyperthyroid refer. Subclinical: TPO ab; treat if symptomatic. NICE NG145.\n• Diabetes: HbA1c target 48–53; metformin; SGLT2i if CVD/HF/CKD. NICE NG28.\n• Adrenal: Sick-day rules; never stop steroids abruptly; emergency hydrocortisone. NICE CKS."
-                },
-                {
-                  "label": "3. Referral",
-                  "guidance": "REFERRAL:\n• 2WW: Pituitary/adrenal crisis, severe thyroid eye disease.\n• Urgent: Adrenal crisis, thyroid storm, severe DKA/HHS.\n• Routine: Hyperthyroid, goitre/nodule with concern, type 1 diabetes, pituitary/adrenal confirmed. NICE NG145, NG28."
+                  "label": "Assessment & treatment",
+                  "guidance": "MANAGEMENT PLAN:\n1. Corrected calcium; PTH, vitamin D, Mg. Causes: hypoparathyroidism, vitamin D deficiency, renal failure, pancreatitis. Acute symptomatic: IV calcium gluconate.\n2. Chronic: calcium and vitamin D supplementation; alfacalcidol if hypoparathyroid. Refer endocrinology if persistent or hypoparathyroidism. NICE CKS, Local formulary."
                 }
               ]
             }
@@ -18345,15 +18258,15 @@
               "options": [
                 {
                   "label": "1. Assessment & red flags",
-                  "guidance": "ASSESSMENT:\n• Thyroid: TFTs, TPO ab if abnormal. Goitre/nodule: USS + FNA per NG145. Calcium: corrected Ca, PTH, vitamin D.\n• Diabetes: HbA1c, renal function, lipids; foot check. Adrenal: electrolytes, short synacthen if suspected insufficiency.\n• Red flags: Thyroid storm, severe hypo/hyperglycaemia, adrenal crisis – emergency. NICE NG28, NG145."
+                  "guidance": "ASSESSMENT:\n• Tailor to the condition: history, examination, and investigations relevant to the endocrine presentation (e.g. thyroid: TFTs, TPO; diabetes: HbA1c, foot check; adrenal: electrolytes, short synacthen; calcium/bone: corrected Ca, PTH, vitamin D).\n• Red flags: Thyroid storm, severe hypo/hyperglycaemia, adrenal crisis, severe hypercalcaemia – emergency. NICE CKS, NG28, NG145."
                 },
                 {
                   "label": "2. Management",
-                  "guidance": "MANAGEMENT:\n• Thyroid: Levothyroxine if hypothyroid; recheck TSH 6–8 weeks. Hyperthyroid refer. Subclinical: TPO ab; treat if symptomatic. NICE NG145.\n• Diabetes: HbA1c target 48–53; metformin; SGLT2i if CVD/HF/CKD. NICE NG28.\n• Adrenal: Sick-day rules; never stop steroids abruptly; emergency hydrocortisone. NICE CKS."
+                  "guidance": "MANAGEMENT:\n• Follow NICE CKS and Local formulary for the specific condition. Do not apply thyroid or diabetes advice to non-thyroid/non-diabetes topics (e.g. Cushing’s, Conn’s, steroid, pituitary have their own pathways).\n• General principles: sick-day rules for anyone on glucocorticoids; do not stop steroids abruptly; treat hypo-/hyperglycaemia and electrolyte disturbance as indicated. NICE CKS."
                 },
                 {
                   "label": "3. Referral",
-                  "guidance": "REFERRAL:\n• 2WW: Pituitary/adrenal crisis, severe thyroid eye disease.\n• Urgent: Adrenal crisis, thyroid storm, severe DKA/HHS.\n• Routine: Hyperthyroid, goitre/nodule with concern, type 1 diabetes, pituitary/adrenal confirmed. NICE NG145, NG28."
+                  "guidance": "REFERRAL:\n• 2WW: Pituitary/adrenal crisis, severe thyroid eye disease, suspected phaeochromocytoma crisis.\n• Urgent: Adrenal crisis, thyroid storm, severe DKA/HHS, severe hypercalcaemia.\n• Routine: Hyperthyroid, goitre/nodule with concern, type 1 diabetes, pituitary/adrenal/calcium disorders. Use topic-specific pathway where available. NICE NG12, NG145, NG28."
                 }
               ]
             }
@@ -18375,15 +18288,15 @@
               "options": [
                 {
                   "label": "1. Assessment & red flags",
-                  "guidance": "ASSESSMENT:\n• Thyroid: TFTs, TPO ab if abnormal. Goitre/nodule: USS + FNA per NG145. Calcium: corrected Ca, PTH, vitamin D.\n• Diabetes: HbA1c, renal function, lipids; foot check. Adrenal: electrolytes, short synacthen if suspected insufficiency.\n• Red flags: Thyroid storm, severe hypo/hyperglycaemia, adrenal crisis – emergency. NICE NG28, NG145."
+                  "guidance": "ASSESSMENT:\n• Tailor to the condition: history, examination, and investigations relevant to the endocrine presentation (e.g. thyroid: TFTs, TPO; diabetes: HbA1c, foot check; adrenal: electrolytes, short synacthen; calcium/bone: corrected Ca, PTH, vitamin D).\n• Red flags: Thyroid storm, severe hypo/hyperglycaemia, adrenal crisis, severe hypercalcaemia – emergency. NICE CKS, NG28, NG145."
                 },
                 {
                   "label": "2. Management",
-                  "guidance": "MANAGEMENT:\n• Thyroid: Levothyroxine if hypothyroid; recheck TSH 6–8 weeks. Hyperthyroid refer. Subclinical: TPO ab; treat if symptomatic. NICE NG145.\n• Diabetes: HbA1c target 48–53; metformin; SGLT2i if CVD/HF/CKD. NICE NG28.\n• Adrenal: Sick-day rules; never stop steroids abruptly; emergency hydrocortisone. NICE CKS."
+                  "guidance": "MANAGEMENT:\n• Follow NICE CKS and Local formulary for the specific condition. Do not apply thyroid or diabetes advice to non-thyroid/non-diabetes topics (e.g. Cushing’s, Conn’s, steroid, pituitary have their own pathways).\n• General principles: sick-day rules for anyone on glucocorticoids; do not stop steroids abruptly; treat hypo-/hyperglycaemia and electrolyte disturbance as indicated. NICE CKS."
                 },
                 {
                   "label": "3. Referral",
-                  "guidance": "REFERRAL:\n• 2WW: Pituitary/adrenal crisis, severe thyroid eye disease.\n• Urgent: Adrenal crisis, thyroid storm, severe DKA/HHS.\n• Routine: Hyperthyroid, goitre/nodule with concern, type 1 diabetes, pituitary/adrenal confirmed. NICE NG145, NG28."
+                  "guidance": "REFERRAL:\n• 2WW: Pituitary/adrenal crisis, severe thyroid eye disease, suspected phaeochromocytoma crisis.\n• Urgent: Adrenal crisis, thyroid storm, severe DKA/HHS, severe hypercalcaemia.\n• Routine: Hyperthyroid, goitre/nodule with concern, type 1 diabetes, pituitary/adrenal/calcium disorders. Use topic-specific pathway where available. NICE NG12, NG145, NG28."
                 }
               ]
             }
@@ -18405,15 +18318,15 @@
               "options": [
                 {
                   "label": "1. Assessment & red flags",
-                  "guidance": "ASSESSMENT:\n• Thyroid: TFTs, TPO ab if abnormal. Goitre/nodule: USS + FNA per NG145. Calcium: corrected Ca, PTH, vitamin D.\n• Diabetes: HbA1c, renal function, lipids; foot check. Adrenal: electrolytes, short synacthen if suspected insufficiency.\n• Red flags: Thyroid storm, severe hypo/hyperglycaemia, adrenal crisis – emergency. NICE NG28, NG145."
+                  "guidance": "ASSESSMENT:\n• Tailor to the condition: history, examination, and investigations relevant to the endocrine presentation (e.g. thyroid: TFTs, TPO; diabetes: HbA1c, foot check; adrenal: electrolytes, short synacthen; calcium/bone: corrected Ca, PTH, vitamin D).\n• Red flags: Thyroid storm, severe hypo/hyperglycaemia, adrenal crisis, severe hypercalcaemia – emergency. NICE CKS, NG28, NG145."
                 },
                 {
                   "label": "2. Management",
-                  "guidance": "MANAGEMENT:\n• Thyroid: Levothyroxine if hypothyroid; recheck TSH 6–8 weeks. Hyperthyroid refer. Subclinical: TPO ab; treat if symptomatic. NICE NG145.\n• Diabetes: HbA1c target 48–53; metformin; SGLT2i if CVD/HF/CKD. NICE NG28.\n• Adrenal: Sick-day rules; never stop steroids abruptly; emergency hydrocortisone. NICE CKS."
+                  "guidance": "MANAGEMENT:\n• Follow NICE CKS and Local formulary for the specific condition. Do not apply thyroid or diabetes advice to non-thyroid/non-diabetes topics (e.g. Cushing’s, Conn’s, steroid, pituitary have their own pathways).\n• General principles: sick-day rules for anyone on glucocorticoids; do not stop steroids abruptly; treat hypo-/hyperglycaemia and electrolyte disturbance as indicated. NICE CKS."
                 },
                 {
                   "label": "3. Referral",
-                  "guidance": "REFERRAL:\n• 2WW: Pituitary/adrenal crisis, severe thyroid eye disease.\n• Urgent: Adrenal crisis, thyroid storm, severe DKA/HHS.\n• Routine: Hyperthyroid, goitre/nodule with concern, type 1 diabetes, pituitary/adrenal confirmed. NICE NG145, NG28."
+                  "guidance": "REFERRAL:\n• 2WW: Pituitary/adrenal crisis, severe thyroid eye disease, suspected phaeochromocytoma crisis.\n• Urgent: Adrenal crisis, thyroid storm, severe DKA/HHS, severe hypercalcaemia.\n• Routine: Hyperthyroid, goitre/nodule with concern, type 1 diabetes, pituitary/adrenal/calcium disorders. Use topic-specific pathway where available. NICE NG12, NG145, NG28."
                 }
               ]
             }
@@ -18437,15 +18350,15 @@
               "options": [
                 {
                   "label": "1. Assessment & red flags",
-                  "guidance": "ASSESSMENT:\n• Thyroid: TFTs, TPO ab if abnormal. Goitre/nodule: USS + FNA per NG145. Calcium: corrected Ca, PTH, vitamin D.\n• Diabetes: HbA1c, renal function, lipids; foot check. Adrenal: electrolytes, short synacthen if suspected insufficiency.\n• Red flags: Thyroid storm, severe hypo/hyperglycaemia, adrenal crisis – emergency. NICE NG28, NG145."
+                  "guidance": "ASSESSMENT:\n• Tailor to the condition: history, examination, and investigations relevant to the endocrine presentation (e.g. thyroid: TFTs, TPO; diabetes: HbA1c, foot check; adrenal: electrolytes, short synacthen; calcium/bone: corrected Ca, PTH, vitamin D).\n• Red flags: Thyroid storm, severe hypo/hyperglycaemia, adrenal crisis, severe hypercalcaemia – emergency. NICE CKS, NG28, NG145."
                 },
                 {
                   "label": "2. Management",
-                  "guidance": "MANAGEMENT:\n• Thyroid: Levothyroxine if hypothyroid; recheck TSH 6–8 weeks. Hyperthyroid refer. Subclinical: TPO ab; treat if symptomatic. NICE NG145.\n• Diabetes: HbA1c target 48–53; metformin; SGLT2i if CVD/HF/CKD. NICE NG28.\n• Adrenal: Sick-day rules; never stop steroids abruptly; emergency hydrocortisone. NICE CKS."
+                  "guidance": "MANAGEMENT:\n• Follow NICE CKS and Local formulary for the specific condition. Do not apply thyroid or diabetes advice to non-thyroid/non-diabetes topics (e.g. Cushing’s, Conn’s, steroid, pituitary have their own pathways).\n• General principles: sick-day rules for anyone on glucocorticoids; do not stop steroids abruptly; treat hypo-/hyperglycaemia and electrolyte disturbance as indicated. NICE CKS."
                 },
                 {
                   "label": "3. Referral",
-                  "guidance": "REFERRAL:\n• 2WW: Pituitary/adrenal crisis, severe thyroid eye disease.\n• Urgent: Adrenal crisis, thyroid storm, severe DKA/HHS.\n• Routine: Hyperthyroid, goitre/nodule with concern, type 1 diabetes, pituitary/adrenal confirmed. NICE NG145, NG28."
+                  "guidance": "REFERRAL:\n• 2WW: Pituitary/adrenal crisis, severe thyroid eye disease, suspected phaeochromocytoma crisis.\n• Urgent: Adrenal crisis, thyroid storm, severe DKA/HHS, severe hypercalcaemia.\n• Routine: Hyperthyroid, goitre/nodule with concern, type 1 diabetes, pituitary/adrenal/calcium disorders. Use topic-specific pathway where available. NICE NG12, NG145, NG28."
                 }
               ]
             }
@@ -18461,21 +18374,13 @@
           "evidence": "Management per NICE CKS and Local formulary.",
           "steps": [
             {
-              "id": "guidance-endocrinology",
-              "question": "Endocrinology (Consultant Standard)",
+              "id": "hypopit-mgt",
+              "question": "Hypopituitarism",
               "type": "dropdown",
               "options": [
                 {
-                  "label": "1. Assessment & red flags",
-                  "guidance": "ASSESSMENT:\n• Thyroid: TFTs, TPO ab if abnormal. Goitre/nodule: USS + FNA per NG145. Calcium: corrected Ca, PTH, vitamin D.\n• Diabetes: HbA1c, renal function, lipids; foot check. Adrenal: electrolytes, short synacthen if suspected insufficiency.\n• Red flags: Thyroid storm, severe hypo/hyperglycaemia, adrenal crisis – emergency. NICE NG28, NG145."
-                },
-                {
-                  "label": "2. Management",
-                  "guidance": "MANAGEMENT:\n• Thyroid: Levothyroxine if hypothyroid; recheck TSH 6–8 weeks. Hyperthyroid refer. Subclinical: TPO ab; treat if symptomatic. NICE NG145.\n• Diabetes: HbA1c target 48–53; metformin; SGLT2i if CVD/HF/CKD. NICE NG28.\n• Adrenal: Sick-day rules; never stop steroids abruptly; emergency hydrocortisone. NICE CKS."
-                },
-                {
-                  "label": "3. Referral",
-                  "guidance": "REFERRAL:\n• 2WW: Pituitary/adrenal crisis, severe thyroid eye disease.\n• Urgent: Adrenal crisis, thyroid storm, severe DKA/HHS.\n• Routine: Hyperthyroid, goitre/nodule with concern, type 1 diabetes, pituitary/adrenal confirmed. NICE NG145, NG28."
+                  "label": "Replacement & referral",
+                  "guidance": "MANAGEMENT PLAN:\n1. Replace deficient axes: hydrocortisone (sick-day rules), levothyroxine (after cortisol replete), testosterone/oestrogen, GH (specialist). Do not start levothyroxine before glucocorticoid in combined deficiency.\n2. Diabetes insipidus: desmopressin if present. Refer endocrinology for confirmation and long-term care. NICE CKS, Local formulary."
                 }
               ]
             }
@@ -18922,15 +18827,15 @@
               "options": [
                 {
                   "label": "1. Assessment & red flags",
-                  "guidance": "ASSESSMENT:\n• Thyroid: TFTs, TPO ab if abnormal. Goitre/nodule: USS + FNA per NG145. Calcium: corrected Ca, PTH, vitamin D.\n• Diabetes: HbA1c, renal function, lipids; foot check. Adrenal: electrolytes, short synacthen if suspected insufficiency.\n• Red flags: Thyroid storm, severe hypo/hyperglycaemia, adrenal crisis – emergency. NICE NG28, NG145."
+                  "guidance": "ASSESSMENT:\n• Tailor to the condition: history, examination, and investigations relevant to the endocrine presentation (e.g. thyroid: TFTs, TPO; diabetes: HbA1c, foot check; adrenal: electrolytes, short synacthen; calcium/bone: corrected Ca, PTH, vitamin D).\n• Red flags: Thyroid storm, severe hypo/hyperglycaemia, adrenal crisis, severe hypercalcaemia – emergency. NICE CKS, NG28, NG145."
                 },
                 {
                   "label": "2. Management",
-                  "guidance": "MANAGEMENT:\n• Thyroid: Levothyroxine if hypothyroid; recheck TSH 6–8 weeks. Hyperthyroid refer. Subclinical: TPO ab; treat if symptomatic. NICE NG145.\n• Diabetes: HbA1c target 48–53; metformin; SGLT2i if CVD/HF/CKD. NICE NG28.\n• Adrenal: Sick-day rules; never stop steroids abruptly; emergency hydrocortisone. NICE CKS."
+                  "guidance": "MANAGEMENT:\n• Follow NICE CKS and Local formulary for the specific condition. Do not apply thyroid or diabetes advice to non-thyroid/non-diabetes topics (e.g. Cushing’s, Conn’s, steroid, pituitary have their own pathways).\n• General principles: sick-day rules for anyone on glucocorticoids; do not stop steroids abruptly; treat hypo-/hyperglycaemia and electrolyte disturbance as indicated. NICE CKS."
                 },
                 {
                   "label": "3. Referral",
-                  "guidance": "REFERRAL:\n• 2WW: Pituitary/adrenal crisis, severe thyroid eye disease.\n• Urgent: Adrenal crisis, thyroid storm, severe DKA/HHS.\n• Routine: Hyperthyroid, goitre/nodule with concern, type 1 diabetes, pituitary/adrenal confirmed. NICE NG145, NG28."
+                  "guidance": "REFERRAL:\n• 2WW: Pituitary/adrenal crisis, severe thyroid eye disease, suspected phaeochromocytoma crisis.\n• Urgent: Adrenal crisis, thyroid storm, severe DKA/HHS, severe hypercalcaemia.\n• Routine: Hyperthyroid, goitre/nodule with concern, type 1 diabetes, pituitary/adrenal/calcium disorders. Use topic-specific pathway where available. NICE NG12, NG145, NG28."
                 }
               ]
             }
@@ -19139,15 +19044,15 @@
               "options": [
                 {
                   "label": "1. Assessment & red flags",
-                  "guidance": "ASSESSMENT:\n• Thyroid: TFTs, TPO ab if abnormal. Goitre/nodule: USS + FNA per NG145. Calcium: corrected Ca, PTH, vitamin D.\n• Diabetes: HbA1c, renal function, lipids; foot check. Adrenal: electrolytes, short synacthen if suspected insufficiency.\n• Red flags: Thyroid storm, severe hypo/hyperglycaemia, adrenal crisis – emergency. NICE NG28, NG145."
+                  "guidance": "ASSESSMENT:\n• Tailor to the condition: history, examination, and investigations relevant to the endocrine presentation (e.g. thyroid: TFTs, TPO; diabetes: HbA1c, foot check; adrenal: electrolytes, short synacthen; calcium/bone: corrected Ca, PTH, vitamin D).\n• Red flags: Thyroid storm, severe hypo/hyperglycaemia, adrenal crisis, severe hypercalcaemia – emergency. NICE CKS, NG28, NG145."
                 },
                 {
                   "label": "2. Management",
-                  "guidance": "MANAGEMENT:\n• Thyroid: Levothyroxine if hypothyroid; recheck TSH 6–8 weeks. Hyperthyroid refer. Subclinical: TPO ab; treat if symptomatic. NICE NG145.\n• Diabetes: HbA1c target 48–53; metformin; SGLT2i if CVD/HF/CKD. NICE NG28.\n• Adrenal: Sick-day rules; never stop steroids abruptly; emergency hydrocortisone. NICE CKS."
+                  "guidance": "MANAGEMENT:\n• Follow NICE CKS and Local formulary for the specific condition. Do not apply thyroid or diabetes advice to non-thyroid/non-diabetes topics (e.g. Cushing’s, Conn’s, steroid, pituitary have their own pathways).\n• General principles: sick-day rules for anyone on glucocorticoids; do not stop steroids abruptly; treat hypo-/hyperglycaemia and electrolyte disturbance as indicated. NICE CKS."
                 },
                 {
                   "label": "3. Referral",
-                  "guidance": "REFERRAL:\n• 2WW: Pituitary/adrenal crisis, severe thyroid eye disease.\n• Urgent: Adrenal crisis, thyroid storm, severe DKA/HHS.\n• Routine: Hyperthyroid, goitre/nodule with concern, type 1 diabetes, pituitary/adrenal confirmed. NICE NG145, NG28."
+                  "guidance": "REFERRAL:\n• 2WW: Pituitary/adrenal crisis, severe thyroid eye disease, suspected phaeochromocytoma crisis.\n• Urgent: Adrenal crisis, thyroid storm, severe DKA/HHS, severe hypercalcaemia.\n• Routine: Hyperthyroid, goitre/nodule with concern, type 1 diabetes, pituitary/adrenal/calcium disorders. Use topic-specific pathway where available. NICE NG12, NG145, NG28."
                 }
               ]
             }
@@ -19169,15 +19074,15 @@
               "options": [
                 {
                   "label": "1. Assessment & red flags",
-                  "guidance": "ASSESSMENT:\n• Thyroid: TFTs, TPO ab if abnormal. Goitre/nodule: USS + FNA per NG145. Calcium: corrected Ca, PTH, vitamin D.\n• Diabetes: HbA1c, renal function, lipids; foot check. Adrenal: electrolytes, short synacthen if suspected insufficiency.\n• Red flags: Thyroid storm, severe hypo/hyperglycaemia, adrenal crisis – emergency. NICE NG28, NG145."
+                  "guidance": "ASSESSMENT:\n• Tailor to the condition: history, examination, and investigations relevant to the endocrine presentation (e.g. thyroid: TFTs, TPO; diabetes: HbA1c, foot check; adrenal: electrolytes, short synacthen; calcium/bone: corrected Ca, PTH, vitamin D).\n• Red flags: Thyroid storm, severe hypo/hyperglycaemia, adrenal crisis, severe hypercalcaemia – emergency. NICE CKS, NG28, NG145."
                 },
                 {
                   "label": "2. Management",
-                  "guidance": "MANAGEMENT:\n• Thyroid: Levothyroxine if hypothyroid; recheck TSH 6–8 weeks. Hyperthyroid refer. Subclinical: TPO ab; treat if symptomatic. NICE NG145.\n• Diabetes: HbA1c target 48–53; metformin; SGLT2i if CVD/HF/CKD. NICE NG28.\n• Adrenal: Sick-day rules; never stop steroids abruptly; emergency hydrocortisone. NICE CKS."
+                  "guidance": "MANAGEMENT:\n• Follow NICE CKS and Local formulary for the specific condition. Do not apply thyroid or diabetes advice to non-thyroid/non-diabetes topics (e.g. Cushing’s, Conn’s, steroid, pituitary have their own pathways).\n• General principles: sick-day rules for anyone on glucocorticoids; do not stop steroids abruptly; treat hypo-/hyperglycaemia and electrolyte disturbance as indicated. NICE CKS."
                 },
                 {
                   "label": "3. Referral",
-                  "guidance": "REFERRAL:\n• 2WW: Pituitary/adrenal crisis, severe thyroid eye disease.\n• Urgent: Adrenal crisis, thyroid storm, severe DKA/HHS.\n• Routine: Hyperthyroid, goitre/nodule with concern, type 1 diabetes, pituitary/adrenal confirmed. NICE NG145, NG28."
+                  "guidance": "REFERRAL:\n• 2WW: Pituitary/adrenal crisis, severe thyroid eye disease, suspected phaeochromocytoma crisis.\n• Urgent: Adrenal crisis, thyroid storm, severe DKA/HHS, severe hypercalcaemia.\n• Routine: Hyperthyroid, goitre/nodule with concern, type 1 diabetes, pituitary/adrenal/calcium disorders. Use topic-specific pathway where available. NICE NG12, NG145, NG28."
                 }
               ]
             }
@@ -19355,15 +19260,15 @@
               "options": [
                 {
                   "label": "1. Assessment & red flags",
-                  "guidance": "ASSESSMENT:\n• Thyroid: TFTs, TPO ab if abnormal. Goitre/nodule: USS + FNA per NG145. Calcium: corrected Ca, PTH, vitamin D.\n• Diabetes: HbA1c, renal function, lipids; foot check. Adrenal: electrolytes, short synacthen if suspected insufficiency.\n• Red flags: Thyroid storm, severe hypo/hyperglycaemia, adrenal crisis – emergency. NICE NG28, NG145."
+                  "guidance": "ASSESSMENT:\n• Tailor to the condition: history, examination, and investigations relevant to the endocrine presentation (e.g. thyroid: TFTs, TPO; diabetes: HbA1c, foot check; adrenal: electrolytes, short synacthen; calcium/bone: corrected Ca, PTH, vitamin D).\n• Red flags: Thyroid storm, severe hypo/hyperglycaemia, adrenal crisis, severe hypercalcaemia – emergency. NICE CKS, NG28, NG145."
                 },
                 {
                   "label": "2. Management",
-                  "guidance": "MANAGEMENT:\n• Thyroid: Levothyroxine if hypothyroid; recheck TSH 6–8 weeks. Hyperthyroid refer. Subclinical: TPO ab; treat if symptomatic. NICE NG145.\n• Diabetes: HbA1c target 48–53; metformin; SGLT2i if CVD/HF/CKD. NICE NG28.\n• Adrenal: Sick-day rules; never stop steroids abruptly; emergency hydrocortisone. NICE CKS."
+                  "guidance": "MANAGEMENT:\n• Follow NICE CKS and Local formulary for the specific condition. Do not apply thyroid or diabetes advice to non-thyroid/non-diabetes topics (e.g. Cushing’s, Conn’s, steroid, pituitary have their own pathways).\n• General principles: sick-day rules for anyone on glucocorticoids; do not stop steroids abruptly; treat hypo-/hyperglycaemia and electrolyte disturbance as indicated. NICE CKS."
                 },
                 {
                   "label": "3. Referral",
-                  "guidance": "REFERRAL:\n• 2WW: Pituitary/adrenal crisis, severe thyroid eye disease.\n• Urgent: Adrenal crisis, thyroid storm, severe DKA/HHS.\n• Routine: Hyperthyroid, goitre/nodule with concern, type 1 diabetes, pituitary/adrenal confirmed. NICE NG145, NG28."
+                  "guidance": "REFERRAL:\n• 2WW: Pituitary/adrenal crisis, severe thyroid eye disease, suspected phaeochromocytoma crisis.\n• Urgent: Adrenal crisis, thyroid storm, severe DKA/HHS, severe hypercalcaemia.\n• Routine: Hyperthyroid, goitre/nodule with concern, type 1 diabetes, pituitary/adrenal/calcium disorders. Use topic-specific pathway where available. NICE NG12, NG145, NG28."
                 }
               ]
             }
@@ -19385,15 +19290,15 @@
               "options": [
                 {
                   "label": "1. Assessment & red flags",
-                  "guidance": "ASSESSMENT:\n• Thyroid: TFTs, TPO ab if abnormal. Goitre/nodule: USS + FNA per NG145. Calcium: corrected Ca, PTH, vitamin D.\n• Diabetes: HbA1c, renal function, lipids; foot check. Adrenal: electrolytes, short synacthen if suspected insufficiency.\n• Red flags: Thyroid storm, severe hypo/hyperglycaemia, adrenal crisis – emergency. NICE NG28, NG145."
+                  "guidance": "ASSESSMENT:\n• Tailor to the condition: history, examination, and investigations relevant to the endocrine presentation (e.g. thyroid: TFTs, TPO; diabetes: HbA1c, foot check; adrenal: electrolytes, short synacthen; calcium/bone: corrected Ca, PTH, vitamin D).\n• Red flags: Thyroid storm, severe hypo/hyperglycaemia, adrenal crisis, severe hypercalcaemia – emergency. NICE CKS, NG28, NG145."
                 },
                 {
                   "label": "2. Management",
-                  "guidance": "MANAGEMENT:\n• Thyroid: Levothyroxine if hypothyroid; recheck TSH 6–8 weeks. Hyperthyroid refer. Subclinical: TPO ab; treat if symptomatic. NICE NG145.\n• Diabetes: HbA1c target 48–53; metformin; SGLT2i if CVD/HF/CKD. NICE NG28.\n• Adrenal: Sick-day rules; never stop steroids abruptly; emergency hydrocortisone. NICE CKS."
+                  "guidance": "MANAGEMENT:\n• Follow NICE CKS and Local formulary for the specific condition. Do not apply thyroid or diabetes advice to non-thyroid/non-diabetes topics (e.g. Cushing’s, Conn’s, steroid, pituitary have their own pathways).\n• General principles: sick-day rules for anyone on glucocorticoids; do not stop steroids abruptly; treat hypo-/hyperglycaemia and electrolyte disturbance as indicated. NICE CKS."
                 },
                 {
                   "label": "3. Referral",
-                  "guidance": "REFERRAL:\n• 2WW: Pituitary/adrenal crisis, severe thyroid eye disease.\n• Urgent: Adrenal crisis, thyroid storm, severe DKA/HHS.\n• Routine: Hyperthyroid, goitre/nodule with concern, type 1 diabetes, pituitary/adrenal confirmed. NICE NG145, NG28."
+                  "guidance": "REFERRAL:\n• 2WW: Pituitary/adrenal crisis, severe thyroid eye disease, suspected phaeochromocytoma crisis.\n• Urgent: Adrenal crisis, thyroid storm, severe DKA/HHS, severe hypercalcaemia.\n• Routine: Hyperthyroid, goitre/nodule with concern, type 1 diabetes, pituitary/adrenal/calcium disorders. Use topic-specific pathway where available. NICE NG12, NG145, NG28."
                 }
               ]
             }
@@ -19415,15 +19320,15 @@
               "options": [
                 {
                   "label": "1. Assessment & red flags",
-                  "guidance": "ASSESSMENT:\n• Thyroid: TFTs, TPO ab if abnormal. Goitre/nodule: USS + FNA per NG145. Calcium: corrected Ca, PTH, vitamin D.\n• Diabetes: HbA1c, renal function, lipids; foot check. Adrenal: electrolytes, short synacthen if suspected insufficiency.\n• Red flags: Thyroid storm, severe hypo/hyperglycaemia, adrenal crisis – emergency. NICE NG28, NG145."
+                  "guidance": "ASSESSMENT:\n• Tailor to the condition: history, examination, and investigations relevant to the endocrine presentation (e.g. thyroid: TFTs, TPO; diabetes: HbA1c, foot check; adrenal: electrolytes, short synacthen; calcium/bone: corrected Ca, PTH, vitamin D).\n• Red flags: Thyroid storm, severe hypo/hyperglycaemia, adrenal crisis, severe hypercalcaemia – emergency. NICE CKS, NG28, NG145."
                 },
                 {
                   "label": "2. Management",
-                  "guidance": "MANAGEMENT:\n• Thyroid: Levothyroxine if hypothyroid; recheck TSH 6–8 weeks. Hyperthyroid refer. Subclinical: TPO ab; treat if symptomatic. NICE NG145.\n• Diabetes: HbA1c target 48–53; metformin; SGLT2i if CVD/HF/CKD. NICE NG28.\n• Adrenal: Sick-day rules; never stop steroids abruptly; emergency hydrocortisone. NICE CKS."
+                  "guidance": "MANAGEMENT:\n• Follow NICE CKS and Local formulary for the specific condition. Do not apply thyroid or diabetes advice to non-thyroid/non-diabetes topics (e.g. Cushing’s, Conn’s, steroid, pituitary have their own pathways).\n• General principles: sick-day rules for anyone on glucocorticoids; do not stop steroids abruptly; treat hypo-/hyperglycaemia and electrolyte disturbance as indicated. NICE CKS."
                 },
                 {
                   "label": "3. Referral",
-                  "guidance": "REFERRAL:\n• 2WW: Pituitary/adrenal crisis, severe thyroid eye disease.\n• Urgent: Adrenal crisis, thyroid storm, severe DKA/HHS.\n• Routine: Hyperthyroid, goitre/nodule with concern, type 1 diabetes, pituitary/adrenal confirmed. NICE NG145, NG28."
+                  "guidance": "REFERRAL:\n• 2WW: Pituitary/adrenal crisis, severe thyroid eye disease, suspected phaeochromocytoma crisis.\n• Urgent: Adrenal crisis, thyroid storm, severe DKA/HHS, severe hypercalcaemia.\n• Routine: Hyperthyroid, goitre/nodule with concern, type 1 diabetes, pituitary/adrenal/calcium disorders. Use topic-specific pathway where available. NICE NG12, NG145, NG28."
                 }
               ]
             }
@@ -19445,15 +19350,15 @@
               "options": [
                 {
                   "label": "1. Assessment & red flags",
-                  "guidance": "ASSESSMENT:\n• Thyroid: TFTs, TPO ab if abnormal. Goitre/nodule: USS + FNA per NG145. Calcium: corrected Ca, PTH, vitamin D.\n• Diabetes: HbA1c, renal function, lipids; foot check. Adrenal: electrolytes, short synacthen if suspected insufficiency.\n• Red flags: Thyroid storm, severe hypo/hyperglycaemia, adrenal crisis – emergency. NICE NG28, NG145."
+                  "guidance": "ASSESSMENT:\n• Tailor to the condition: history, examination, and investigations relevant to the endocrine presentation (e.g. thyroid: TFTs, TPO; diabetes: HbA1c, foot check; adrenal: electrolytes, short synacthen; calcium/bone: corrected Ca, PTH, vitamin D).\n• Red flags: Thyroid storm, severe hypo/hyperglycaemia, adrenal crisis, severe hypercalcaemia – emergency. NICE CKS, NG28, NG145."
                 },
                 {
                   "label": "2. Management",
-                  "guidance": "MANAGEMENT:\n• Thyroid: Levothyroxine if hypothyroid; recheck TSH 6–8 weeks. Hyperthyroid refer. Subclinical: TPO ab; treat if symptomatic. NICE NG145.\n• Diabetes: HbA1c target 48–53; metformin; SGLT2i if CVD/HF/CKD. NICE NG28.\n• Adrenal: Sick-day rules; never stop steroids abruptly; emergency hydrocortisone. NICE CKS."
+                  "guidance": "MANAGEMENT:\n• Follow NICE CKS and Local formulary for the specific condition. Do not apply thyroid or diabetes advice to non-thyroid/non-diabetes topics (e.g. Cushing’s, Conn’s, steroid, pituitary have their own pathways).\n• General principles: sick-day rules for anyone on glucocorticoids; do not stop steroids abruptly; treat hypo-/hyperglycaemia and electrolyte disturbance as indicated. NICE CKS."
                 },
                 {
                   "label": "3. Referral",
-                  "guidance": "REFERRAL:\n• 2WW: Pituitary/adrenal crisis, severe thyroid eye disease.\n• Urgent: Adrenal crisis, thyroid storm, severe DKA/HHS.\n• Routine: Hyperthyroid, goitre/nodule with concern, type 1 diabetes, pituitary/adrenal confirmed. NICE NG145, NG28."
+                  "guidance": "REFERRAL:\n• 2WW: Pituitary/adrenal crisis, severe thyroid eye disease, suspected phaeochromocytoma crisis.\n• Urgent: Adrenal crisis, thyroid storm, severe DKA/HHS, severe hypercalcaemia.\n• Routine: Hyperthyroid, goitre/nodule with concern, type 1 diabetes, pituitary/adrenal/calcium disorders. Use topic-specific pathway where available. NICE NG12, NG145, NG28."
                 }
               ]
             }
@@ -19475,15 +19380,15 @@
               "options": [
                 {
                   "label": "1. Assessment & red flags",
-                  "guidance": "ASSESSMENT:\n• Thyroid: TFTs, TPO ab if abnormal. Goitre/nodule: USS + FNA per NG145. Calcium: corrected Ca, PTH, vitamin D.\n• Diabetes: HbA1c, renal function, lipids; foot check. Adrenal: electrolytes, short synacthen if suspected insufficiency.\n• Red flags: Thyroid storm, severe hypo/hyperglycaemia, adrenal crisis – emergency. NICE NG28, NG145."
+                  "guidance": "ASSESSMENT:\n• Tailor to the condition: history, examination, and investigations relevant to the endocrine presentation (e.g. thyroid: TFTs, TPO; diabetes: HbA1c, foot check; adrenal: electrolytes, short synacthen; calcium/bone: corrected Ca, PTH, vitamin D).\n• Red flags: Thyroid storm, severe hypo/hyperglycaemia, adrenal crisis, severe hypercalcaemia – emergency. NICE CKS, NG28, NG145."
                 },
                 {
                   "label": "2. Management",
-                  "guidance": "MANAGEMENT:\n• Thyroid: Levothyroxine if hypothyroid; recheck TSH 6–8 weeks. Hyperthyroid refer. Subclinical: TPO ab; treat if symptomatic. NICE NG145.\n• Diabetes: HbA1c target 48–53; metformin; SGLT2i if CVD/HF/CKD. NICE NG28.\n• Adrenal: Sick-day rules; never stop steroids abruptly; emergency hydrocortisone. NICE CKS."
+                  "guidance": "MANAGEMENT:\n• Follow NICE CKS and Local formulary for the specific condition. Do not apply thyroid or diabetes advice to non-thyroid/non-diabetes topics (e.g. Cushing’s, Conn’s, steroid, pituitary have their own pathways).\n• General principles: sick-day rules for anyone on glucocorticoids; do not stop steroids abruptly; treat hypo-/hyperglycaemia and electrolyte disturbance as indicated. NICE CKS."
                 },
                 {
                   "label": "3. Referral",
-                  "guidance": "REFERRAL:\n• 2WW: Pituitary/adrenal crisis, severe thyroid eye disease.\n• Urgent: Adrenal crisis, thyroid storm, severe DKA/HHS.\n• Routine: Hyperthyroid, goitre/nodule with concern, type 1 diabetes, pituitary/adrenal confirmed. NICE NG145, NG28."
+                  "guidance": "REFERRAL:\n• 2WW: Pituitary/adrenal crisis, severe thyroid eye disease, suspected phaeochromocytoma crisis.\n• Urgent: Adrenal crisis, thyroid storm, severe DKA/HHS, severe hypercalcaemia.\n• Routine: Hyperthyroid, goitre/nodule with concern, type 1 diabetes, pituitary/adrenal/calcium disorders. Use topic-specific pathway where available. NICE NG12, NG145, NG28."
                 }
               ]
             }
@@ -19505,15 +19410,15 @@
               "options": [
                 {
                   "label": "1. Assessment & red flags",
-                  "guidance": "ASSESSMENT:\n• Thyroid: TFTs, TPO ab if abnormal. Goitre/nodule: USS + FNA per NG145. Calcium: corrected Ca, PTH, vitamin D.\n• Diabetes: HbA1c, renal function, lipids; foot check. Adrenal: electrolytes, short synacthen if suspected insufficiency.\n• Red flags: Thyroid storm, severe hypo/hyperglycaemia, adrenal crisis – emergency. NICE NG28, NG145."
+                  "guidance": "ASSESSMENT:\n• Tailor to the condition: history, examination, and investigations relevant to the endocrine presentation (e.g. thyroid: TFTs, TPO; diabetes: HbA1c, foot check; adrenal: electrolytes, short synacthen; calcium/bone: corrected Ca, PTH, vitamin D).\n• Red flags: Thyroid storm, severe hypo/hyperglycaemia, adrenal crisis, severe hypercalcaemia – emergency. NICE CKS, NG28, NG145."
                 },
                 {
                   "label": "2. Management",
-                  "guidance": "MANAGEMENT:\n• Thyroid: Levothyroxine if hypothyroid; recheck TSH 6–8 weeks. Hyperthyroid refer. Subclinical: TPO ab; treat if symptomatic. NICE NG145.\n• Diabetes: HbA1c target 48–53; metformin; SGLT2i if CVD/HF/CKD. NICE NG28.\n• Adrenal: Sick-day rules; never stop steroids abruptly; emergency hydrocortisone. NICE CKS."
+                  "guidance": "MANAGEMENT:\n• Follow NICE CKS and Local formulary for the specific condition. Do not apply thyroid or diabetes advice to non-thyroid/non-diabetes topics (e.g. Cushing’s, Conn’s, steroid, pituitary have their own pathways).\n• General principles: sick-day rules for anyone on glucocorticoids; do not stop steroids abruptly; treat hypo-/hyperglycaemia and electrolyte disturbance as indicated. NICE CKS."
                 },
                 {
                   "label": "3. Referral",
-                  "guidance": "REFERRAL:\n• 2WW: Pituitary/adrenal crisis, severe thyroid eye disease.\n• Urgent: Adrenal crisis, thyroid storm, severe DKA/HHS.\n• Routine: Hyperthyroid, goitre/nodule with concern, type 1 diabetes, pituitary/adrenal confirmed. NICE NG145, NG28."
+                  "guidance": "REFERRAL:\n• 2WW: Pituitary/adrenal crisis, severe thyroid eye disease, suspected phaeochromocytoma crisis.\n• Urgent: Adrenal crisis, thyroid storm, severe DKA/HHS, severe hypercalcaemia.\n• Routine: Hyperthyroid, goitre/nodule with concern, type 1 diabetes, pituitary/adrenal/calcium disorders. Use topic-specific pathway where available. NICE NG12, NG145, NG28."
                 }
               ]
             }
@@ -19535,15 +19440,15 @@
               "options": [
                 {
                   "label": "1. Assessment & red flags",
-                  "guidance": "ASSESSMENT:\n• Thyroid: TFTs, TPO ab if abnormal. Goitre/nodule: USS + FNA per NG145. Calcium: corrected Ca, PTH, vitamin D.\n• Diabetes: HbA1c, renal function, lipids; foot check. Adrenal: electrolytes, short synacthen if suspected insufficiency.\n• Red flags: Thyroid storm, severe hypo/hyperglycaemia, adrenal crisis – emergency. NICE NG28, NG145."
+                  "guidance": "ASSESSMENT:\n• Tailor to the condition: history, examination, and investigations relevant to the endocrine presentation (e.g. thyroid: TFTs, TPO; diabetes: HbA1c, foot check; adrenal: electrolytes, short synacthen; calcium/bone: corrected Ca, PTH, vitamin D).\n• Red flags: Thyroid storm, severe hypo/hyperglycaemia, adrenal crisis, severe hypercalcaemia – emergency. NICE CKS, NG28, NG145."
                 },
                 {
                   "label": "2. Management",
-                  "guidance": "MANAGEMENT:\n• Thyroid: Levothyroxine if hypothyroid; recheck TSH 6–8 weeks. Hyperthyroid refer. Subclinical: TPO ab; treat if symptomatic. NICE NG145.\n• Diabetes: HbA1c target 48–53; metformin; SGLT2i if CVD/HF/CKD. NICE NG28.\n• Adrenal: Sick-day rules; never stop steroids abruptly; emergency hydrocortisone. NICE CKS."
+                  "guidance": "MANAGEMENT:\n• Follow NICE CKS and Local formulary for the specific condition. Do not apply thyroid or diabetes advice to non-thyroid/non-diabetes topics (e.g. Cushing’s, Conn’s, steroid, pituitary have their own pathways).\n• General principles: sick-day rules for anyone on glucocorticoids; do not stop steroids abruptly; treat hypo-/hyperglycaemia and electrolyte disturbance as indicated. NICE CKS."
                 },
                 {
                   "label": "3. Referral",
-                  "guidance": "REFERRAL:\n• 2WW: Pituitary/adrenal crisis, severe thyroid eye disease.\n• Urgent: Adrenal crisis, thyroid storm, severe DKA/HHS.\n• Routine: Hyperthyroid, goitre/nodule with concern, type 1 diabetes, pituitary/adrenal confirmed. NICE NG145, NG28."
+                  "guidance": "REFERRAL:\n• 2WW: Pituitary/adrenal crisis, severe thyroid eye disease, suspected phaeochromocytoma crisis.\n• Urgent: Adrenal crisis, thyroid storm, severe DKA/HHS, severe hypercalcaemia.\n• Routine: Hyperthyroid, goitre/nodule with concern, type 1 diabetes, pituitary/adrenal/calcium disorders. Use topic-specific pathway where available. NICE NG12, NG145, NG28."
                 }
               ]
             }
@@ -19565,15 +19470,15 @@
               "options": [
                 {
                   "label": "1. Assessment & red flags",
-                  "guidance": "ASSESSMENT:\n• Thyroid: TFTs, TPO ab if abnormal. Goitre/nodule: USS + FNA per NG145. Calcium: corrected Ca, PTH, vitamin D.\n• Diabetes: HbA1c, renal function, lipids; foot check. Adrenal: electrolytes, short synacthen if suspected insufficiency.\n• Red flags: Thyroid storm, severe hypo/hyperglycaemia, adrenal crisis – emergency. NICE NG28, NG145."
+                  "guidance": "ASSESSMENT:\n• Tailor to the condition: history, examination, and investigations relevant to the endocrine presentation (e.g. thyroid: TFTs, TPO; diabetes: HbA1c, foot check; adrenal: electrolytes, short synacthen; calcium/bone: corrected Ca, PTH, vitamin D).\n• Red flags: Thyroid storm, severe hypo/hyperglycaemia, adrenal crisis, severe hypercalcaemia – emergency. NICE CKS, NG28, NG145."
                 },
                 {
                   "label": "2. Management",
-                  "guidance": "MANAGEMENT:\n• Thyroid: Levothyroxine if hypothyroid; recheck TSH 6–8 weeks. Hyperthyroid refer. Subclinical: TPO ab; treat if symptomatic. NICE NG145.\n• Diabetes: HbA1c target 48–53; metformin; SGLT2i if CVD/HF/CKD. NICE NG28.\n• Adrenal: Sick-day rules; never stop steroids abruptly; emergency hydrocortisone. NICE CKS."
+                  "guidance": "MANAGEMENT:\n• Follow NICE CKS and Local formulary for the specific condition. Do not apply thyroid or diabetes advice to non-thyroid/non-diabetes topics (e.g. Cushing’s, Conn’s, steroid, pituitary have their own pathways).\n• General principles: sick-day rules for anyone on glucocorticoids; do not stop steroids abruptly; treat hypo-/hyperglycaemia and electrolyte disturbance as indicated. NICE CKS."
                 },
                 {
                   "label": "3. Referral",
-                  "guidance": "REFERRAL:\n• 2WW: Pituitary/adrenal crisis, severe thyroid eye disease.\n• Urgent: Adrenal crisis, thyroid storm, severe DKA/HHS.\n• Routine: Hyperthyroid, goitre/nodule with concern, type 1 diabetes, pituitary/adrenal confirmed. NICE NG145, NG28."
+                  "guidance": "REFERRAL:\n• 2WW: Pituitary/adrenal crisis, severe thyroid eye disease, suspected phaeochromocytoma crisis.\n• Urgent: Adrenal crisis, thyroid storm, severe DKA/HHS, severe hypercalcaemia.\n• Routine: Hyperthyroid, goitre/nodule with concern, type 1 diabetes, pituitary/adrenal/calcium disorders. Use topic-specific pathway where available. NICE NG12, NG145, NG28."
                 }
               ]
             }
@@ -19697,21 +19602,13 @@
           "evidence": "Management per NICE CKS and Local formulary.",
           "steps": [
             {
-              "id": "guidance-endocrinology",
-              "question": "Endocrinology (Consultant Standard)",
+              "id": "phaeo-mgt",
+              "question": "Phaeochromocytoma – suspect",
               "type": "dropdown",
               "options": [
                 {
-                  "label": "1. Assessment & red flags",
-                  "guidance": "ASSESSMENT:\n• Thyroid: TFTs, TPO ab if abnormal. Goitre/nodule: USS + FNA per NG145. Calcium: corrected Ca, PTH, vitamin D.\n• Diabetes: HbA1c, renal function, lipids; foot check. Adrenal: electrolytes, short synacthen if suspected insufficiency.\n• Red flags: Thyroid storm, severe hypo/hyperglycaemia, adrenal crisis – emergency. NICE NG28, NG145."
-                },
-                {
-                  "label": "2. Management",
-                  "guidance": "MANAGEMENT:\n• Thyroid: Levothyroxine if hypothyroid; recheck TSH 6–8 weeks. Hyperthyroid refer. Subclinical: TPO ab; treat if symptomatic. NICE NG145.\n• Diabetes: HbA1c target 48–53; metformin; SGLT2i if CVD/HF/CKD. NICE NG28.\n• Adrenal: Sick-day rules; never stop steroids abruptly; emergency hydrocortisone. NICE CKS."
-                },
-                {
-                  "label": "3. Referral",
-                  "guidance": "REFERRAL:\n• 2WW: Pituitary/adrenal crisis, severe thyroid eye disease.\n• Urgent: Adrenal crisis, thyroid storm, severe DKA/HHS.\n• Routine: Hyperthyroid, goitre/nodule with concern, type 1 diabetes, pituitary/adrenal confirmed. NICE NG145, NG28."
+                  "label": "Suspicion & referral",
+                  "guidance": "MANAGEMENT PLAN:\n1. Suspect: paroxysmal or resistant hypertension, headache, palpitations, sweating. Avoid alpha-blockade before biochemical confirmation.\n2. Screen: plasma or urinary metadrenalines; avoid tricyclics, decongestants before test. Refer endocrinology for imaging and surgery planning.\n3. If hypertensive crisis: alpha-blocker (e.g. phenoxybenzamine) under specialist guidance. NICE CKS, Local formulary."
                 }
               ]
             }
@@ -19733,15 +19630,15 @@
               "options": [
                 {
                   "label": "1. Assessment & red flags",
-                  "guidance": "ASSESSMENT:\n• Thyroid: TFTs, TPO ab if abnormal. Goitre/nodule: USS + FNA per NG145. Calcium: corrected Ca, PTH, vitamin D.\n• Diabetes: HbA1c, renal function, lipids; foot check. Adrenal: electrolytes, short synacthen if suspected insufficiency.\n• Red flags: Thyroid storm, severe hypo/hyperglycaemia, adrenal crisis – emergency. NICE NG28, NG145."
+                  "guidance": "ASSESSMENT:\n• Tailor to the condition: history, examination, and investigations relevant to the endocrine presentation (e.g. thyroid: TFTs, TPO; diabetes: HbA1c, foot check; adrenal: electrolytes, short synacthen; calcium/bone: corrected Ca, PTH, vitamin D).\n• Red flags: Thyroid storm, severe hypo/hyperglycaemia, adrenal crisis, severe hypercalcaemia – emergency. NICE CKS, NG28, NG145."
                 },
                 {
                   "label": "2. Management",
-                  "guidance": "MANAGEMENT:\n• Thyroid: Levothyroxine if hypothyroid; recheck TSH 6–8 weeks. Hyperthyroid refer. Subclinical: TPO ab; treat if symptomatic. NICE NG145.\n• Diabetes: HbA1c target 48–53; metformin; SGLT2i if CVD/HF/CKD. NICE NG28.\n• Adrenal: Sick-day rules; never stop steroids abruptly; emergency hydrocortisone. NICE CKS."
+                  "guidance": "MANAGEMENT:\n• Follow NICE CKS and Local formulary for the specific condition. Do not apply thyroid or diabetes advice to non-thyroid/non-diabetes topics (e.g. Cushing’s, Conn’s, steroid, pituitary have their own pathways).\n• General principles: sick-day rules for anyone on glucocorticoids; do not stop steroids abruptly; treat hypo-/hyperglycaemia and electrolyte disturbance as indicated. NICE CKS."
                 },
                 {
                   "label": "3. Referral",
-                  "guidance": "REFERRAL:\n• 2WW: Pituitary/adrenal crisis, severe thyroid eye disease.\n• Urgent: Adrenal crisis, thyroid storm, severe DKA/HHS.\n• Routine: Hyperthyroid, goitre/nodule with concern, type 1 diabetes, pituitary/adrenal confirmed. NICE NG145, NG28."
+                  "guidance": "REFERRAL:\n• 2WW: Pituitary/adrenal crisis, severe thyroid eye disease, suspected phaeochromocytoma crisis.\n• Urgent: Adrenal crisis, thyroid storm, severe DKA/HHS, severe hypercalcaemia.\n• Routine: Hyperthyroid, goitre/nodule with concern, type 1 diabetes, pituitary/adrenal/calcium disorders. Use topic-specific pathway where available. NICE NG12, NG145, NG28."
                 }
               ]
             }
@@ -19844,15 +19741,15 @@
               "options": [
                 {
                   "label": "1. Assessment & red flags",
-                  "guidance": "ASSESSMENT:\n• Thyroid: TFTs, TPO ab if abnormal. Goitre/nodule: USS + FNA per NG145. Calcium: corrected Ca, PTH, vitamin D.\n• Diabetes: HbA1c, renal function, lipids; foot check. Adrenal: electrolytes, short synacthen if suspected insufficiency.\n• Red flags: Thyroid storm, severe hypo/hyperglycaemia, adrenal crisis – emergency. NICE NG28, NG145."
+                  "guidance": "ASSESSMENT:\n• Tailor to the condition: history, examination, and investigations relevant to the endocrine presentation (e.g. thyroid: TFTs, TPO; diabetes: HbA1c, foot check; adrenal: electrolytes, short synacthen; calcium/bone: corrected Ca, PTH, vitamin D).\n• Red flags: Thyroid storm, severe hypo/hyperglycaemia, adrenal crisis, severe hypercalcaemia – emergency. NICE CKS, NG28, NG145."
                 },
                 {
                   "label": "2. Management",
-                  "guidance": "MANAGEMENT:\n• Thyroid: Levothyroxine if hypothyroid; recheck TSH 6–8 weeks. Hyperthyroid refer. Subclinical: TPO ab; treat if symptomatic. NICE NG145.\n• Diabetes: HbA1c target 48–53; metformin; SGLT2i if CVD/HF/CKD. NICE NG28.\n• Adrenal: Sick-day rules; never stop steroids abruptly; emergency hydrocortisone. NICE CKS."
+                  "guidance": "MANAGEMENT:\n• Follow NICE CKS and Local formulary for the specific condition. Do not apply thyroid or diabetes advice to non-thyroid/non-diabetes topics (e.g. Cushing’s, Conn’s, steroid, pituitary have their own pathways).\n• General principles: sick-day rules for anyone on glucocorticoids; do not stop steroids abruptly; treat hypo-/hyperglycaemia and electrolyte disturbance as indicated. NICE CKS."
                 },
                 {
                   "label": "3. Referral",
-                  "guidance": "REFERRAL:\n• 2WW: Pituitary/adrenal crisis, severe thyroid eye disease.\n• Urgent: Adrenal crisis, thyroid storm, severe DKA/HHS.\n• Routine: Hyperthyroid, goitre/nodule with concern, type 1 diabetes, pituitary/adrenal confirmed. NICE NG145, NG28."
+                  "guidance": "REFERRAL:\n• 2WW: Pituitary/adrenal crisis, severe thyroid eye disease, suspected phaeochromocytoma crisis.\n• Urgent: Adrenal crisis, thyroid storm, severe DKA/HHS, severe hypercalcaemia.\n• Routine: Hyperthyroid, goitre/nodule with concern, type 1 diabetes, pituitary/adrenal/calcium disorders. Use topic-specific pathway where available. NICE NG12, NG145, NG28."
                 }
               ]
             }
@@ -19868,21 +19765,13 @@
           "evidence": "Management per NICE CKS and Local formulary.",
           "steps": [
             {
-              "id": "guidance-endocrinology",
-              "question": "Endocrinology (Consultant Standard)",
+              "id": "prolactinoma-mgt",
+              "question": "Prolactinoma / hyperprolactinaemia",
               "type": "dropdown",
               "options": [
                 {
-                  "label": "1. Assessment & red flags",
-                  "guidance": "ASSESSMENT:\n• Thyroid: TFTs, TPO ab if abnormal. Goitre/nodule: USS + FNA per NG145. Calcium: corrected Ca, PTH, vitamin D.\n• Diabetes: HbA1c, renal function, lipids; foot check. Adrenal: electrolytes, short synacthen if suspected insufficiency.\n• Red flags: Thyroid storm, severe hypo/hyperglycaemia, adrenal crisis – emergency. NICE NG28, NG145."
-                },
-                {
-                  "label": "2. Management",
-                  "guidance": "MANAGEMENT:\n• Thyroid: Levothyroxine if hypothyroid; recheck TSH 6–8 weeks. Hyperthyroid refer. Subclinical: TPO ab; treat if symptomatic. NICE NG145.\n• Diabetes: HbA1c target 48–53; metformin; SGLT2i if CVD/HF/CKD. NICE NG28.\n• Adrenal: Sick-day rules; never stop steroids abruptly; emergency hydrocortisone. NICE CKS."
-                },
-                {
-                  "label": "3. Referral",
-                  "guidance": "REFERRAL:\n• 2WW: Pituitary/adrenal crisis, severe thyroid eye disease.\n• Urgent: Adrenal crisis, thyroid storm, severe DKA/HHS.\n• Routine: Hyperthyroid, goitre/nodule with concern, type 1 diabetes, pituitary/adrenal confirmed. NICE NG145, NG28."
+                  "label": "Medical & referral",
+                  "guidance": "MANAGEMENT PLAN:\n1. Exclude drugs (antipsychotics, metoclopramide, etc.), pregnancy, hypothyroidism. MRI pituitary if prolactin significantly raised.\n2. Cabergoline first-line for macroprolactinoma or symptomatic microadenoma; titrate to prolactin. Refer endocrinology for diagnosis and follow-up.\n3. Monitor visual fields if macroadenoma. NICE CKS, Local formulary."
                 }
               ]
             }
@@ -20069,21 +19958,13 @@
           "evidence": "Management per NICE CKS and Local formulary.",
           "steps": [
             {
-              "id": "guidance-endocrinology",
-              "question": "Endocrinology (Consultant Standard)",
+              "id": "siadh-mgt",
+              "question": "SIADH / hyponatraemia",
               "type": "dropdown",
               "options": [
                 {
-                  "label": "1. Assessment & red flags",
-                  "guidance": "ASSESSMENT:\n• Thyroid: TFTs, TPO ab if abnormal. Goitre/nodule: USS + FNA per NG145. Calcium: corrected Ca, PTH, vitamin D.\n• Diabetes: HbA1c, renal function, lipids; foot check. Adrenal: electrolytes, short synacthen if suspected insufficiency.\n• Red flags: Thyroid storm, severe hypo/hyperglycaemia, adrenal crisis – emergency. NICE NG28, NG145."
-                },
-                {
-                  "label": "2. Management",
-                  "guidance": "MANAGEMENT:\n• Thyroid: Levothyroxine if hypothyroid; recheck TSH 6–8 weeks. Hyperthyroid refer. Subclinical: TPO ab; treat if symptomatic. NICE NG145.\n• Diabetes: HbA1c target 48–53; metformin; SGLT2i if CVD/HF/CKD. NICE NG28.\n• Adrenal: Sick-day rules; never stop steroids abruptly; emergency hydrocortisone. NICE CKS."
-                },
-                {
-                  "label": "3. Referral",
-                  "guidance": "REFERRAL:\n• 2WW: Pituitary/adrenal crisis, severe thyroid eye disease.\n• Urgent: Adrenal crisis, thyroid storm, severe DKA/HHS.\n• Routine: Hyperthyroid, goitre/nodule with concern, type 1 diabetes, pituitary/adrenal confirmed. NICE NG145, NG28."
+                  "label": "Assessment & management",
+                  "guidance": "MANAGEMENT PLAN:\n1. Confirm euvolaemic hyponatraemia: U&E, osmolality, urine Na. Exclude hypothyroidism, cortisol deficiency. Treat cause (drugs, malignancy, lung).\n2. Fluid restrict (e.g. 1 L/day); correct slowly to avoid osmotic demyelination. Consider demeclocycline or tolvaptan (specialist) if chronic SIADH.\n3. Urgent if severe (Na <125, seizures, coma). NICE CKS, Local formulary."
                 }
               ]
             }
@@ -20272,21 +20153,13 @@
           "evidence": "Management per NICE CKS and Local formulary.",
           "steps": [
             {
-              "id": "guidance-endocrinology",
-              "question": "Endocrinology (Consultant Standard)",
+              "id": "steroid-longterm-mgt",
+              "question": "Steroid – long-term monitoring",
               "type": "dropdown",
               "options": [
                 {
-                  "label": "1. Assessment & red flags",
-                  "guidance": "ASSESSMENT:\n• Thyroid: TFTs, TPO ab if abnormal. Goitre/nodule: USS + FNA per NG145. Calcium: corrected Ca, PTH, vitamin D.\n• Diabetes: HbA1c, renal function, lipids; foot check. Adrenal: electrolytes, short synacthen if suspected insufficiency.\n• Red flags: Thyroid storm, severe hypo/hyperglycaemia, adrenal crisis – emergency. NICE NG28, NG145."
-                },
-                {
-                  "label": "2. Management",
-                  "guidance": "MANAGEMENT:\n• Thyroid: Levothyroxine if hypothyroid; recheck TSH 6–8 weeks. Hyperthyroid refer. Subclinical: TPO ab; treat if symptomatic. NICE NG145.\n• Diabetes: HbA1c target 48–53; metformin; SGLT2i if CVD/HF/CKD. NICE NG28.\n• Adrenal: Sick-day rules; never stop steroids abruptly; emergency hydrocortisone. NICE CKS."
-                },
-                {
-                  "label": "3. Referral",
-                  "guidance": "REFERRAL:\n• 2WW: Pituitary/adrenal crisis, severe thyroid eye disease.\n• Urgent: Adrenal crisis, thyroid storm, severe DKA/HHS.\n• Routine: Hyperthyroid, goitre/nodule with concern, type 1 diabetes, pituitary/adrenal confirmed. NICE NG145, NG28."
+                  "label": "Monitoring",
+                  "guidance": "MANAGEMENT PLAN:\n1. Lowest effective dose; consider bone protection (calcium, vitamin D; bisphosphonate if high risk). Monitor BP, glucose, weight, lipids.\n2. Steroid card and sick-day rules. Ophthalmology if >1 year or high dose (cataract/glaucoma).\n3. Consider PCP prophylaxis if prednisolone >20 mg/day and immunosuppressed. NICE CKS, Local formulary."
                 }
               ]
             }
@@ -20304,21 +20177,13 @@
           "evidence": "Management per NICE CKS and Local formulary.",
           "steps": [
             {
-              "id": "guidance-endocrinology",
-              "question": "Endocrinology (Consultant Standard)",
+              "id": "steroid-sickday-mgt",
+              "question": "Steroid – sick day rules",
               "type": "dropdown",
               "options": [
                 {
-                  "label": "1. Assessment & red flags",
-                  "guidance": "ASSESSMENT:\n• Thyroid: TFTs, TPO ab if abnormal. Goitre/nodule: USS + FNA per NG145. Calcium: corrected Ca, PTH, vitamin D.\n• Diabetes: HbA1c, renal function, lipids; foot check. Adrenal: electrolytes, short synacthen if suspected insufficiency.\n• Red flags: Thyroid storm, severe hypo/hyperglycaemia, adrenal crisis – emergency. NICE NG28, NG145."
-                },
-                {
-                  "label": "2. Management",
-                  "guidance": "MANAGEMENT:\n• Thyroid: Levothyroxine if hypothyroid; recheck TSH 6–8 weeks. Hyperthyroid refer. Subclinical: TPO ab; treat if symptomatic. NICE NG145.\n• Diabetes: HbA1c target 48–53; metformin; SGLT2i if CVD/HF/CKD. NICE NG28.\n• Adrenal: Sick-day rules; never stop steroids abruptly; emergency hydrocortisone. NICE CKS."
-                },
-                {
-                  "label": "3. Referral",
-                  "guidance": "REFERRAL:\n• 2WW: Pituitary/adrenal crisis, severe thyroid eye disease.\n• Urgent: Adrenal crisis, thyroid storm, severe DKA/HHS.\n• Routine: Hyperthyroid, goitre/nodule with concern, type 1 diabetes, pituitary/adrenal confirmed. NICE NG145, NG28."
+                  "label": "Sick-day rules",
+                  "guidance": "MANAGEMENT PLAN:\n1. Double usual oral glucocorticoid dose during illness (fever, vomiting, diarrhoea, infection, surgery). Do not stop steroid.\n2. If unable to take oral: give emergency hydrocortisone IM (e.g. 100 mg) and seek urgent medical care. Ensure patient has emergency hydrocortisone at home and steroid card.\n3. Advise when to call 999 or attend A&E. NICE CKS, Local formulary."
                 }
               ]
             }
@@ -20336,35 +20201,13 @@
           "evidence": "Management per NICE CKS and Local formulary.",
           "steps": [
             {
-              "id": "alcohol-overview",
-              "question": "1. Management Overview (Recovery Model)",
+              "id": "steroid-withdrawal-mgt",
+              "question": "Steroid withdrawal",
               "type": "dropdown",
               "options": [
                 {
-                  "label": "Holistic Addiction Strategy",
-                  "guidance": "MANAGEMENT PLAN OVERVIEW:\n1. **Stages of Change**: Identify where the patient is (Pre-contemplation to Maintenance).\n2. **Harm Reduction**: Reducing units, switching to lower ABV, safe drinking intervals. \n3. **Biological**: Supervised detox if dependent (≥10 units/day or morning shakes) followed by anti-craving meds.\n4. **Psychosocial**: Engagement with community services (AA, SMART Recovery) and addressing 'dual diagnosis' (co-morbid anxiety/depression)."
-                }
-              ]
-            },
-            {
-              "id": "alcohol-withdrawal-ciwa",
-              "question": "2. Acute Withdrawal (CIWA-Ar)",
-              "type": "dropdown",
-              "options": [
-                {
-                  "label": "Withdrawal Severity & Management",
-                  "guidance": "MANAGEMENT PLAN:\n1. Severity: \n   - Mild (CIWA <10): Supportive, vitamins only.\n   - Mod/Severe (CIWA ≥10): Chlordiazepoxide regime.\n2. **Wernicke's Triad**: Ophthalmoplegia, Ataxia, Confusion. \n3. **CRITICAL**: Give Pabrinex (Thiamine) BEFORE Glucose to prevent precipitating Wernicke's. NICE CG115."
-                }
-              ]
-            },
-            {
-              "id": "alcohol-maintenance",
-              "question": "2. Maintenance of Abstinence",
-              "type": "dropdown",
-              "options": [
-                {
-                  "label": "Anti-Craving Pharmacotherapy",
-                  "guidance": "MANAGEMENT PLAN:\n1. **Acamprosate**: 666mg tds. Enhances GABA/Reduces Glutamate. Start day 1 of abstinence.\n2. **Naltrexone**: 50mg OD. Blocks opioid reward. Monitor LFTs.\n3. **Disulfiram (Antabuse)**: Specialist only. Causes acetaldehyde accumulation (vomiting/tachycardia if alcohol consumed). Significant safety risk."
+                  "label": "Tapering",
+                  "guidance": "MANAGEMENT PLAN:\n1. Taper slowly to allow HPA axis recovery. After >3 weeks therapy, reduce by small increments (e.g. prednisolone 1–2.5 mg every 1–2 weeks); slower if long-term use.\n2. Monitor for symptoms of adrenal insufficiency (fatigue, nausea, hypotension). If unwell or surgery needed, increase dose temporarily; sick-day rules apply.\n3. Consider short synacthen test if uncertain about axis recovery. NICE CKS, Local formulary."
                 }
               ]
             }
@@ -20748,15 +20591,15 @@
               "options": [
                 {
                   "label": "1. Assessment & red flags",
-                  "guidance": "ASSESSMENT:\n• Thyroid: TFTs, TPO ab if abnormal. Goitre/nodule: USS + FNA per NG145. Calcium: corrected Ca, PTH, vitamin D.\n• Diabetes: HbA1c, renal function, lipids; foot check. Adrenal: electrolytes, short synacthen if suspected insufficiency.\n• Red flags: Thyroid storm, severe hypo/hyperglycaemia, adrenal crisis – emergency. NICE NG28, NG145."
+                  "guidance": "ASSESSMENT:\n• Tailor to the condition: history, examination, and investigations relevant to the endocrine presentation (e.g. thyroid: TFTs, TPO; diabetes: HbA1c, foot check; adrenal: electrolytes, short synacthen; calcium/bone: corrected Ca, PTH, vitamin D).\n• Red flags: Thyroid storm, severe hypo/hyperglycaemia, adrenal crisis, severe hypercalcaemia – emergency. NICE CKS, NG28, NG145."
                 },
                 {
                   "label": "2. Management",
-                  "guidance": "MANAGEMENT:\n• Thyroid: Levothyroxine if hypothyroid; recheck TSH 6–8 weeks. Hyperthyroid refer. Subclinical: TPO ab; treat if symptomatic. NICE NG145.\n• Diabetes: HbA1c target 48–53; metformin; SGLT2i if CVD/HF/CKD. NICE NG28.\n• Adrenal: Sick-day rules; never stop steroids abruptly; emergency hydrocortisone. NICE CKS."
+                  "guidance": "MANAGEMENT:\n• Follow NICE CKS and Local formulary for the specific condition. Do not apply thyroid or diabetes advice to non-thyroid/non-diabetes topics (e.g. Cushing’s, Conn’s, steroid, pituitary have their own pathways).\n• General principles: sick-day rules for anyone on glucocorticoids; do not stop steroids abruptly; treat hypo-/hyperglycaemia and electrolyte disturbance as indicated. NICE CKS."
                 },
                 {
                   "label": "3. Referral",
-                  "guidance": "REFERRAL:\n• 2WW: Pituitary/adrenal crisis, severe thyroid eye disease.\n• Urgent: Adrenal crisis, thyroid storm, severe DKA/HHS.\n• Routine: Hyperthyroid, goitre/nodule with concern, type 1 diabetes, pituitary/adrenal confirmed. NICE NG145, NG28."
+                  "guidance": "REFERRAL:\n• 2WW: Pituitary/adrenal crisis, severe thyroid eye disease, suspected phaeochromocytoma crisis.\n• Urgent: Adrenal crisis, thyroid storm, severe DKA/HHS, severe hypercalcaemia.\n• Routine: Hyperthyroid, goitre/nodule with concern, type 1 diabetes, pituitary/adrenal/calcium disorders. Use topic-specific pathway where available. NICE NG12, NG145, NG28."
                 }
               ]
             }

@@ -256,6 +256,152 @@
       }]
     },
     {
+      "keywords": ["conn's", "conns", "conn syndrome", "aldosteronism", "primary hyperaldosteronism"],
+      "steps": [{
+        "id": "conns-mgt",
+        "question": "Conn's syndrome (Primary hyperaldosteronism)",
+        "type": "dropdown",
+        "options": [
+          { "label": "Screening & referral", "guidance": "MANAGEMENT PLAN:\n1. Suspect in resistant hypertension, hypokalaemia (or normokalaemic). Screen: plasma aldosterone and renin; aldosterone:renin ratio (ARR) raised. Do not adjust antihypertensives that affect renin (e.g. stop spironolactone/eplerenone 4–6 weeks; use alpha-blocker/CCB if needed).\n2. Refer endocrinology for confirmatory testing (saline suppression or fludrocortisone suppression) and adrenal imaging. NICE CKS, Local formulary." },
+          { "label": "Medical management (post-diagnosis)", "guidance": "MANAGEMENT PLAN:\n1. Mineralocorticoid receptor antagonist: spironolactone or eplerenone per local formulary. Titrate to BP and K+; monitor U&E regularly.\n2. Add other antihypertensives as needed. Avoid potassium supplements unless K+ low despite MRA.\n3. Surgical option (adrenalectomy) for unilateral adenoma – discuss with endocrinology. NICE CKS, Local formulary." }
+        ]
+      }]
+    },
+    {
+      "keywords": ["cushing's", "cushings", "cushing syndrome", "iatrogenic cushing", "iatrogenic steroid", "exogenous steroid"],
+      "steps": [{
+        "id": "cushing-mgt",
+        "question": "Cushing's (iatrogenic & endogenous)",
+        "type": "dropdown",
+        "options": [
+          { "label": "Iatrogenic (steroid-induced)", "guidance": "MANAGEMENT PLAN:\n1. Reduce steroid to lowest effective dose; consider topical/inhaled alternatives where possible. Taper slowly to avoid adrenal insufficiency – do not stop abruptly.\n2. Monitor: BP, glucose, bone health (DEXA if long-term), weight. Treat hypertension and hyperglycaemia per NICE. Consider bisphosphonate if high fracture risk.\n3. Sick-day rules if on any systemic steroid: double dose when unwell; emergency hydrocortisone if unable to take oral. NICE CKS, Local formulary." },
+          { "label": "Endogenous / when to suspect", "guidance": "MANAGEMENT PLAN:\n1. Suspect: central obesity, facial plethora, thin skin, bruising, proximal weakness, hypertension, diabetes. Screen: 24 h urinary free cortisol or late-night salivary cortisol; dexamethasone suppression test. Refer endocrinology for confirmation and imaging (pituitary/adrenal).\n2. Do not stop exogenous steroids to investigate until under specialist guidance. NICE CKS, Local formulary." }
+        ]
+      }]
+    },
+    {
+      "keywords": ["steroid – sick day", "steroid sick day", "sick day rules steroid", "glucocorticoid sick day"],
+      "steps": [{
+        "id": "steroid-sickday-mgt",
+        "question": "Steroid – sick day rules",
+        "type": "dropdown",
+        "options": [
+          { "label": "Sick-day rules", "guidance": "MANAGEMENT PLAN:\n1. Double usual oral glucocorticoid dose during illness (fever, vomiting, diarrhoea, infection, surgery). Do not stop steroid.\n2. If unable to take oral: give emergency hydrocortisone IM (e.g. 100 mg) and seek urgent medical care. Ensure patient has emergency hydrocortisone at home and steroid card.\n3. Advise when to call 999 or attend A&E. NICE CKS, Local formulary." }
+        ]
+      }]
+    },
+    {
+      "keywords": ["steroid – withdrawal", "steroid withdrawal", "glucocorticoid withdrawal", "steroid weaning"],
+      "steps": [{
+        "id": "steroid-withdrawal-mgt",
+        "question": "Steroid withdrawal",
+        "type": "dropdown",
+        "options": [
+          { "label": "Tapering", "guidance": "MANAGEMENT PLAN:\n1. Taper slowly to allow HPA axis recovery. After >3 weeks therapy, reduce by small increments (e.g. prednisolone 1–2.5 mg every 1–2 weeks); slower if long-term use.\n2. Monitor for symptoms of adrenal insufficiency (fatigue, nausea, hypotension). If unwell or surgery needed, increase dose temporarily; sick-day rules apply.\n3. Consider short synacthen test if uncertain about axis recovery. NICE CKS, Local formulary." }
+        ]
+      }]
+    },
+    {
+      "keywords": ["steroid – long-term", "steroid long-term", "long-term steroid", "glucocorticoid long-term", "long-term glucocorticoid"],
+      "steps": [{
+        "id": "steroid-longterm-mgt",
+        "question": "Steroid – long-term monitoring",
+        "type": "dropdown",
+        "options": [
+          { "label": "Monitoring", "guidance": "MANAGEMENT PLAN:\n1. Lowest effective dose; consider bone protection (calcium, vitamin D; bisphosphonate if high risk). Monitor BP, glucose, weight, lipids.\n2. Steroid card and sick-day rules. Ophthalmology if >1 year or high dose (cataract/glaucoma).\n3. Consider PCP prophylaxis if prednisolone >20 mg/day and immunosuppressed. NICE CKS, Local formulary." }
+        ]
+      }]
+    },
+    {
+      "keywords": ["phaeochromocytoma", "pheochromocytoma", "phaeo"],
+      "steps": [{
+        "id": "phaeo-mgt",
+        "question": "Phaeochromocytoma – suspect",
+        "type": "dropdown",
+        "options": [
+          { "label": "Suspicion & referral", "guidance": "MANAGEMENT PLAN:\n1. Suspect: paroxysmal or resistant hypertension, headache, palpitations, sweating. Avoid alpha-blockade before biochemical confirmation.\n2. Screen: plasma or urinary metadrenalines; avoid tricyclics, decongestants before test. Refer endocrinology for imaging and surgery planning.\n3. If hypertensive crisis: alpha-blocker (e.g. phenoxybenzamine) under specialist guidance. NICE CKS, Local formulary." }
+        ]
+      }]
+    },
+    {
+      "keywords": ["acromegaly", "acromegal"],
+      "steps": [{
+        "id": "acromegaly-mgt",
+        "question": "Acromegaly – suspect",
+        "type": "dropdown",
+        "options": [
+          { "label": "Suspicion & referral", "guidance": "MANAGEMENT PLAN:\n1. Suspect: acral enlargement, coarse features, macroglossia, headache, sweating, arthralgia. IGF-1 (age-adjusted); if raised, refer endocrinology for OGTT with GH and pituitary MRI.\n2. Do not delay referral for multiple tests. Comorbidities: diabetes, hypertension, sleep apnoea, cardiac. NICE CKS, Local formulary." }
+        ]
+      }]
+    },
+    {
+      "keywords": ["prolactinoma", "hyperprolactinaemia", "raised prolactin"],
+      "steps": [{
+        "id": "prolactinoma-mgt",
+        "question": "Prolactinoma / hyperprolactinaemia",
+        "type": "dropdown",
+        "options": [
+          { "label": "Medical & referral", "guidance": "MANAGEMENT PLAN:\n1. Exclude drugs (antipsychotics, metoclopramide, etc.), pregnancy, hypothyroidism. MRI pituitary if prolactin significantly raised.\n2. Cabergoline first-line for macroprolactinoma or symptomatic microadenoma; titrate to prolactin. Refer endocrinology for diagnosis and follow-up.\n3. Monitor visual fields if macroadenoma. NICE CKS, Local formulary." }
+        ]
+      }]
+    },
+    {
+      "keywords": ["hypopituitarism", "pituitary insufficiency", "panhypopituitarism"],
+      "steps": [{
+        "id": "hypopit-mgt",
+        "question": "Hypopituitarism",
+        "type": "dropdown",
+        "options": [
+          { "label": "Replacement & referral", "guidance": "MANAGEMENT PLAN:\n1. Replace deficient axes: hydrocortisone (sick-day rules), levothyroxine (after cortisol replete), testosterone/oestrogen, GH (specialist). Do not start levothyroxine before glucocorticoid in combined deficiency.\n2. Diabetes insipidus: desmopressin if present. Refer endocrinology for confirmation and long-term care. NICE CKS, Local formulary." }
+        ]
+      }]
+    },
+    {
+      "keywords": ["siadh", "syndrome of inappropriate", "hyponatraemia"],
+      "steps": [{
+        "id": "siadh-mgt",
+        "question": "SIADH / hyponatraemia",
+        "type": "dropdown",
+        "options": [
+          { "label": "Assessment & management", "guidance": "MANAGEMENT PLAN:\n1. Confirm euvolaemic hyponatraemia: U&E, osmolality, urine Na. Exclude hypothyroidism, cortisol deficiency. Treat cause (drugs, malignancy, lung).\n2. Fluid restrict (e.g. 1 L/day); correct slowly to avoid osmotic demyelination. Consider demeclocycline or tolvaptan (specialist) if chronic SIADH.\n3. Urgent if severe (Na <125, seizures, coma). NICE CKS, Local formulary." }
+        ]
+      }]
+    },
+    {
+      "keywords": ["diabetes insipidus", "di insipidus", "cranial diabetes insipidus"],
+      "steps": [{
+        "id": "di-mgt",
+        "question": "Diabetes insipidus",
+        "type": "dropdown",
+        "options": [
+          { "label": "Assessment & referral", "guidance": "MANAGEMENT PLAN:\n1. Polyuria, polydipsia, dilute urine. Water deprivation test under specialist guidance; measure urine/osmolarity and serum Na.\n2. Cranial: desmopressin. Nephrogenic: treat cause (lithium, drugs); consider thiazide, low-solute diet. Refer endocrinology for confirmation. NICE CKS, Local formulary." }
+        ]
+      }]
+    },
+    {
+      "keywords": ["hypercalcaemia", "hypercalcaemic", "raised calcium"],
+      "steps": [{
+        "id": "hypercalcaemia-mgt",
+        "question": "Hypercalcaemia",
+        "type": "dropdown",
+        "options": [
+          { "label": "Mild", "guidance": "MANAGEMENT PLAN:\n1. Corrected calcium; check PTH, vitamin D. Causes: primary hyperparathyroidism, malignancy, vitamin D excess, thiazides. Hydration; avoid calcium/vitamin D supplements.\n2. Refer for PTH interpretation and imaging. NICE CKS, Local formulary." },
+          { "label": "Severe / emergency", "guidance": "MANAGEMENT PLAN:\n1. Severe (e.g. Ca >3.0): IV fluids, consider bisphosphonate (e.g. IV zoledronate) under specialist guidance. Treat underlying cause.\n2. Urgent referral or admission. NICE CKS, Local formulary." }
+        ]
+      }]
+    },
+    {
+      "keywords": ["hypocalcaemia", "hypocalcaemic", "low calcium"],
+      "steps": [{
+        "id": "hypocalcaemia-mgt",
+        "question": "Hypocalcaemia",
+        "type": "dropdown",
+        "options": [
+          { "label": "Assessment & treatment", "guidance": "MANAGEMENT PLAN:\n1. Corrected calcium; PTH, vitamin D, Mg. Causes: hypoparathyroidism, vitamin D deficiency, renal failure, pancreatitis. Acute symptomatic: IV calcium gluconate.\n2. Chronic: calcium and vitamin D supplementation; alfacalcidol if hypoparathyroid. Refer endocrinology if persistent or hypoparathyroidism. NICE CKS, Local formulary." }
+        ]
+      }]
+    },
+    {
       "keywords": ["goitre", "thyroid nodule", "thyroid nodules"],
       "steps": [{
         "id": "goitre-mgt",
