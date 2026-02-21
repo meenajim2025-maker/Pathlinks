@@ -24672,11 +24672,13 @@
                 },
                 {
                   "label": "Severe (PEFR 33-50% / RR ≥ 25 / HR ≥ 110)",
-                  "guidance": "MANAGEMENT PLAN:\n1. Triage: Immediate hospital admission (999). High-flow Oxygen. Nebulised SABA + Ipratropium."
+                  "guidance": "MANAGEMENT PLAN:\n1. Triage: Immediate hospital admission (999). High-flow Oxygen. Nebulised SABA + Ipratropium.",
+                  "guidance_paramedic": "PARAMEDIC EMERGENCY PLAN:\n1. Triage: Blue-light transfer directly to ED Resus/Majors.\n2. Action: High-flow Oxygen (15L Non Re-Breathe) to maintain SpO2 94-98%.\n3. Meds: Nebulised Salbutamol 5mg + Ipratropium 500mcg back-to-back. Consider IM Adrenaline if crashing."
                 },
                 {
                   "label": "Life-Threatening (PEFR <33% / SpO2 <92% / Silent Chest)",
-                  "guidance": "MANAGEMENT PLAN:\n1. Emergency: 999. Do not delay. Life-threatening features (33-92-CHEST)."
+                  "guidance": "MANAGEMENT PLAN:\n1. Emergency: 999. Do not delay. Life-threatening features (33-92-CHEST).",
+                  "guidance_paramedic": "PARAMEDIC CATASTROPHIC PLAN:\n1. Triage: Immediate Blue-Light to nearest ED Resus.\n2. Action: Pre-alert ED (Red Call). High-flow O2. Continuous Nebulisers.\n3. Meds: Prepare for RSI/Intubation if respiratory exhaustion. IV Hydrocortisone 100mg if access available."
                 }
               ]
             }
@@ -43395,11 +43397,13 @@
               "options": [
                 {
                   "label": "Suspected TIA (<24h resolution)",
-                  "guidance": "MANAGEMENT PLAN (Consultant Plan):\n1. Antiplatelet: Aspirin 300mg stat (unless bleeding suspected).\n2. Triage: Urgent referral to TIA clinic (assessment within 24h).\n3. Driving: Mandatory 1-month ban from driving (inform DVLA). RCP/NICE."
+                  "guidance": "MANAGEMENT PLAN (Consultant Plan):\n1. Antiplatelet: Aspirin 300mg stat (unless bleeding suspected).\n2. Triage: Urgent referral to TIA clinic (assessment within 24h).\n3. Driving: Mandatory 1-month ban from driving (inform DVLA). RCP/NICE.",
+                  "guidance_paramedic": "PARAMEDIC TRIAGE PLAN:\n1. Assessment: Patient with fully resolved stroke-like symptoms.\n2. Action: Obtain baseline ECG, calculate ABCD2 Score.\n3. Discharge: Do NOT blue-light. Refer to GP/TIA Clinic within 24 hours. Advise patient not to drive."
                 },
                 {
                   "label": "Acute Stroke (Persistent)",
-                  "guidance": "MANAGEMENT PLAN:\n1. Emergency: 999 for Hyperacute Stroke Unit (HASU).\n2. Action: Nil-by-mouth (swallow screen). No Aspirin until CT brain excludes haemorrhage."
+                  "guidance": "MANAGEMENT PLAN:\n1. Emergency: 999 for Hyperacute Stroke Unit (HASU).\n2. Action: Nil-by-mouth (swallow screen). No Aspirin until CT brain excludes haemorrhage.",
+                  "guidance_paramedic": "PARAMEDIC EMERGENCY PLAN:\n1. Fast Positive: Blue-light transfer directly to Hyperacute Stroke Unit (HASU).\n2. Time is Brain: Pre-alert ED with symptom onset time.\n3. Action: Maintain O2 > 94%. Check Blood Glucose (treat if < 4.0). Do NOT give Aspirin."
                 }
               ]
             },
