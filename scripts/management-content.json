@@ -649,6 +649,349 @@
       }]
     },
     {
+      "keywords": ["verification of death", "verify death", "confirm death"],
+      "steps": [{
+        "id": "verification-death-mgt",
+        "question": "Verification of death",
+        "type": "dropdown",
+        "options": [
+          { "label": "Expected death", "guidance": "MANAGEMENT PLAN:\n1. Confirm absence of pulse, breathing, response; record time. If expected and you attended in last 28 days (14 in Scotland), complete MCCD. Advise family on next steps (funeral director, registering death).\n2. Follow local policy and RCGP guidance. NICE CKS, Local formulary." },
+          { "label": "Unexpected / referral to coroner", "guidance": "MANAGEMENT PLAN:\n1. Do not complete MCCD if cause unknown, suspicious, or referral required. Contact coroner (England/Wales) or procurator fiscal (Scotland) per local protocol.\n2. Support family; document clearly. NICE CKS, Local formulary." }
+        ]
+      }]
+    },
+    {
+      "keywords": ["advance care planning", "acp", "dnar", "dnar and advance care", "resuscitation decision"],
+      "steps": [{
+        "id": "acp-dnar-mgt",
+        "question": "Advance care planning / DNAR",
+        "type": "dropdown",
+        "options": [
+          { "label": "Discussion & form", "guidance": "MANAGEMENT PLAN:\n1. Document preferences for CPR, treatment escalation, preferred place of death. Use ReSPECT or local DNAR form; copy to OOH/ambulance.\n2. Review with patient and family; update if wishes change. NICE NG108, Local formulary." }
+        ]
+      }]
+    },
+    {
+      "keywords": ["sick note", "fit note", "fitness to work", "med3"],
+      "steps": [{
+        "id": "sick-note-mgt",
+        "question": "Sick note / Fit note",
+        "type": "dropdown",
+        "options": [
+          { "label": "Issuing", "guidance": "MANAGEMENT PLAN:\n1. Duration appropriate to condition; phased return if helpful. Consider 'may be fit for work' with modifications. No need to state diagnosis.\n2. Safety-net and review. NICE NG12, gov.uk fit note guidance." }
+        ]
+      }]
+    },
+    {
+      "keywords": ["consent", "capacity", "consent – capacity", "mental capacity"],
+      "steps": [{
+        "id": "consent-capacity-mgt",
+        "question": "Consent & capacity",
+        "type": "dropdown",
+        "options": [
+          { "label": "Assessment", "guidance": "MANAGEMENT PLAN:\n1. Assess capacity per MCA: understand, retain, weigh, communicate. Decision-specific. Best interests if lacking capacity; involve family/IMCA.\n2. DoLS/LPS if deprivation of liberty in care. NICE NG108, CKS." }
+        ]
+      }]
+    },
+    {
+      "keywords": ["cervical smear", "cervical screening", "smear test"],
+      "steps": [{
+        "id": "cervical-smear-mgt",
+        "question": "Cervical smear / screening",
+        "type": "dropdown",
+        "options": [
+          { "label": "Routine & follow-up", "guidance": "MANAGEMENT PLAN:\n1. Invite per NHS programme (25–64). If abnormal: refer colposcopy per pathway (HPV triage).\n2. Manage anxiety; ensure result and follow-up communicated. NICE NG12, NHS CSP." }
+        ]
+      }]
+    },
+    {
+      "keywords": ["catheter – female", "catheter – male", "catheter", "urinary catheter"],
+      "steps": [{
+        "id": "catheter-mgt",
+        "question": "Catheter",
+        "type": "dropdown",
+        "options": [
+          { "label": "Insertion & care", "guidance": "MANAGEMENT PLAN:\n1. Aseptic technique; correct size (e.g. 12–14Ch). Trial without catheter when appropriate. Document indication and review date.\n2. Long-term: change per protocol; screen for infection only if symptomatic. NICE NG12, CKS." }
+        ]
+      }]
+    },
+    {
+      "keywords": ["venepuncture", "blood taking", "blood draw"],
+      "steps": [{
+        "id": "venepuncture-mgt",
+        "question": "Venepuncture",
+        "type": "dropdown",
+        "options": [
+          { "label": "Technique", "guidance": "MANAGEMENT PLAN:\n1. Consent; correct bottles and order. Avoid prolonged tourniquet. Label at bedside; send promptly.\n2. Follow local phlebotomy policy. NICE CKS, Local formulary." }
+        ]
+      }]
+    },
+    {
+      "keywords": ["cannulation", "iv cannula", "intravenous access"],
+      "steps": [{
+        "id": "cannulation-mgt",
+        "question": "Cannulation",
+        "type": "dropdown",
+        "options": [
+          { "label": "Insertion & care", "guidance": "MANAGEMENT PLAN:\n1. Aseptic technique; smallest gauge for indication. Secure; document site and date. Remove when no longer needed.\n2. Monitor for phlebitis/infection. NICE CKS, Local formulary." }
+        ]
+      }]
+    },
+    {
+      "keywords": ["blood culture", "cultures – blood"],
+      "steps": [{
+        "id": "blood-culture-mgt",
+        "question": "Blood culture",
+        "type": "dropdown",
+        "options": [
+          { "label": "When & how", "guidance": "MANAGEMENT PLAN:\n1. Before antibiotics if sepsis/bacteraemia suspected. Clean skin; multiple sets from different sites if indicated. Document indication.\n2. Do not delay empiric antibiotics for culture. NICE NG51, CKS." }
+        ]
+      }]
+    },
+    {
+      "keywords": ["mental health act", "section 2", "section 3", "mha", "detention"],
+      "steps": [{
+        "id": "mha-mgt",
+        "question": "Mental Health Act",
+        "type": "dropdown",
+        "options": [
+          { "label": "Section 2 / 3", "guidance": "MANAGEMENT PLAN:\n1. Section 2: assessment (up to 28 days). Section 3: treatment (up to 6 months, renewable). Two doctors + AMHP; nearest relative considerations.\n2. After detention: inform patient of rights, copy to care team. NICE NG10, MHA 1983 (as amended)." }
+        ]
+      }]
+    },
+    {
+      "keywords": ["last days of life", "dying", "end of life care", "gold standard framework"],
+      "steps": [{
+        "id": "eol-mgt",
+        "question": "Last days of life",
+        "type": "dropdown",
+        "options": [
+          { "label": "Care & prescribing", "guidance": "MANAGEMENT PLAN:\n1. Recognise dying (GSF, NICE); communicate with family. Anticipatory drugs: analgesia, anti-secretory, antiemetic, anxiolytic. Review and stop non-essential meds.\n2. Support family; verify death when appropriate. NICE NG142, GSF." }
+        ]
+      }]
+    },
+    {
+      "keywords": ["driving – group 1", "driving – group 2", "fitness to drive", "fitness to fly", "dvla"],
+      "steps": [{
+        "id": "fitness-drive-mgt",
+        "question": "Fitness to drive / fly",
+        "type": "dropdown",
+        "options": [
+          { "label": "Group 1 (car/motorcycle)", "guidance": "MANAGEMENT PLAN:\n1. Advise per DVLA guidance: notify DVLA if condition affects safety (e.g. epilepsy, syncope, insulin-treated diabetes). Temporary surrender or licence review.\n2. Document advice given. Gov.uk DVLA, NICE CKS." },
+          { "label": "Group 2 / flying", "guidance": "MANAGEMENT PLAN:\n1. Group 2 (HGV/PSV): stricter standards; report to DVLA. Flying: advise per condition (DVT risk, oxygen, cabin pressure). NICE CKS, CAA." }
+        ]
+      }]
+    },
+    {
+      "keywords": ["deprivation of liberty", "dols", "lps", "liberty protection"],
+      "steps": [{
+        "id": "dols-mgt",
+        "question": "Deprivation of liberty",
+        "type": "dropdown",
+        "options": [
+          { "label": "DoLS / LPS", "guidance": "MANAGEMENT PLAN:\n1. When person lacks capacity and is under continuous supervision in care/hospital. Apply to supervisory body (local authority).\n2. LPS (England) replacing DoLS; advance planning. NICE NG108, MCA." }
+        ]
+      }]
+    },
+    {
+      "keywords": ["cremation form", "cremation"],
+      "steps": [{
+        "id": "cremation-mgt",
+        "question": "Cremation form",
+        "type": "dropdown",
+        "options": [
+          { "label": "Completion", "guidance": "MANAGEMENT PLAN:\n1. Two-part form (Form 4/5): confirm no concern about cause of death; second doctor independent. Fee applicable.\n2. Follow Cremation Regulations. Local formulary." }
+        ]
+      }]
+    },
+    {
+      "keywords": ["immunisation – adult", "adult vaccination", "catch-up immunisation"],
+      "steps": [{
+        "id": "immunisation-adult-mgt",
+        "question": "Immunisation – adult",
+        "type": "dropdown",
+        "options": [
+          { "label": "Catch-up & travel", "guidance": "MANAGEMENT PLAN:\n1. Green Book; catch-up for incomplete childhood. Influenza, COVID, pneumococcal, shingles per eligibility. Travel: advise on destination vaccines.\n2. Document consent and batch. NICE CKS, PHE/UKHSA." }
+        ]
+      }]
+    },
+    {
+      "keywords": ["spirometry", "lung function"],
+      "steps": [{
+        "id": "spirometry-mgt",
+        "question": "Spirometry",
+        "type": "dropdown",
+        "options": [
+          { "label": "Interpretation", "guidance": "MANAGEMENT PLAN:\n1. Pre- and post-bronchodilator; quality checks. Obstruction: FEV1/FVC <0.7. Restriction: reduced FVC, proportionately. Refer if diagnostic uncertainty or severe.\n2. NICE NG115, NG80, BTS." }
+        ]
+      }]
+    },
+    {
+      "keywords": ["wound closure", "suture – wound", "suturing", "wound repair"],
+      "steps": [{
+        "id": "wound-closure-mgt",
+        "question": "Wound closure / suture",
+        "type": "dropdown",
+        "options": [
+          { "label": "Technique", "guidance": "MANAGEMENT PLAN:\n1. Clean wound; consider closure if <24 h and low risk. Sutures vs glue vs steri-strips by site and tension. Tetanus if indicated.\n2. Remove sutures by site (face 3–5 d, limb 7–10 d). NICE CKS." }
+        ]
+      }]
+    },
+    {
+      "keywords": ["ascitic tap", "paracentesis", "ascites – tap"],
+      "steps": [{
+        "id": "ascitic-tap-mgt",
+        "question": "Ascitic tap",
+        "type": "dropdown",
+        "options": [
+          { "label": "Indication & sampling", "guidance": "MANAGEMENT PLAN:\n1. Diagnostic or therapeutic. Send for cell count, protein, culture, cytology if indicated. Albumin if considering SBP.\n2. Consider coagulation; ultrasound guidance. NICE CKS, Local formulary." }
+        ]
+      }]
+    },
+    {
+      "keywords": ["pleural tap", "pleural fluid", "thoracocentesis"],
+      "steps": [{
+        "id": "pleural-tap-mgt",
+        "question": "Pleural tap",
+        "type": "dropdown",
+        "options": [
+          { "label": "Sampling", "guidance": "MANAGEMENT PLAN:\n1. Send fluid for protein, LDH, pH, cytology, culture. Light's criteria for exudate vs transudate. Consider image guidance.\n2. Therapeutic tap if symptomatic; avoid removing >1.5 L. NICE CKS." }
+        ]
+      }]
+    },
+    {
+      "keywords": ["lumbar puncture", "lp", "spinal tap"],
+      "steps": [{
+        "id": "lp-mgt",
+        "question": "Lumbar puncture",
+        "type": "dropdown",
+        "options": [
+          { "label": "Indication & referral", "guidance": "MANAGEMENT PLAN:\n1. Exclude raised ICP (imaging if concern). Send CSF for cells, protein, glucose, culture, viral PCR. Consider specialist perform.\n2. Post-LP: lie flat; monitor headache. NICE NG51, CKS." }
+        ]
+      }]
+    },
+    {
+      "keywords": ["punch biopsy", "skin biopsy", "cryotherapy – skin"],
+      "steps": [{
+        "id": "skin-procedure-mgt",
+        "question": "Skin procedure",
+        "type": "dropdown",
+        "options": [
+          { "label": "Biopsy / cryotherapy", "guidance": "MANAGEMENT PLAN:\n1. Punch biopsy: consent; suture or cautery. Send in formalin with form. Cryotherapy: liquid nitrogen for warts/keratosis; advise blistering.\n2. Follow local dermatology policy. NICE CKS." }
+        ]
+      }]
+    },
+    {
+      "keywords": ["injection – joint", "joint injection", "injection technique", "intramuscular"],
+      "steps": [{
+        "id": "injection-mgt",
+        "question": "Injection technique",
+        "type": "dropdown",
+        "options": [
+          { "label": "Joint / IM", "guidance": "MANAGEMENT PLAN:\n1. Aseptic technique; correct site (e.g. Z-track IM). Joint: confirm no sepsis; steroid ± local anaesthetic per indication.\n2. Document site, drug, batch. NICE CKS, Local formulary." }
+        ]
+      }]
+    },
+    {
+      "keywords": ["corticosteroid – systemic", "systemic steroid"],
+      "steps": [{
+        "id": "systemic-steroid-mgt",
+        "question": "Corticosteroid – systemic",
+        "type": "dropdown",
+        "options": [
+          { "label": "Prescribing", "guidance": "MANAGEMENT PLAN:\n1. Lowest dose, shortest duration. Bone protection if >3 months. Steroid card; sick-day rules. Taper when stopping.\n2. NICE CKS, Local formulary." }
+        ]
+      }]
+    },
+    {
+      "keywords": ["cqc", "regulated activity", "fast track chc", "chc"],
+      "steps": [{
+        "id": "cqc-chc-mgt",
+        "question": "CQC / CHC",
+        "type": "dropdown",
+        "options": [
+          { "label": "Guidance", "guidance": "MANAGEMENT PLAN:\n1. CQC: register regulated activities per guidance. Fast track CHC: complete DS1500 for rapidly deteriorating; support application.\n2. Follow NHS CHC framework. NICE CKS, gov.uk." }
+        ]
+      }]
+    },
+    {
+      "keywords": ["warts", "verrucas", "warts and verrucas", "warts – topical", "warts – cryotherapy"],
+      "steps": [{
+        "id": "warts-mgt",
+        "question": "Warts and verrucas",
+        "type": "dropdown",
+        "options": [
+          { "label": "Topical", "guidance": "MANAGEMENT PLAN:\n1. Salicylic acid (e.g. 12–26%) daily; paring if thick. Consider cryotherapy for common warts. Genital warts: refer or treat per CKS.\n2. Reassure; many resolve. Refer if recalcitrant or diagnostic uncertainty. NICE CKS." }
+        ]
+      }]
+    },
+    {
+      "keywords": ["folliculitis", "fungal – groin", "candidal intertrigo", "intertrigo"],
+      "steps": [{
+        "id": "folliculitis-intertrigo-mgt",
+        "question": "Folliculitis / fungal groin / intertrigo",
+        "type": "dropdown",
+        "options": [
+          { "label": "Treatment", "guidance": "MANAGEMENT PLAN:\n1. Folliculitis: topical fusidic acid or oral flucloxacillin if extensive. Fungal groin: topical terbinafine or clotrimazole; keep dry.\n2. Intertrigo: barrier cream; topical antifungal if Candida. NICE CKS." }
+        ]
+      }]
+    },
+    {
+      "keywords": ["vitiligo", "granuloma annulare", "basal cell – superficial", "squamous cell – in situ"],
+      "steps": [{
+        "id": "derm-misc-mgt",
+        "question": "Skin condition",
+        "type": "dropdown",
+        "options": [
+          { "label": "Vitiligo / granuloma annulare", "guidance": "MANAGEMENT PLAN:\n1. Vitiligo: sun protection; topical steroid or calcineurin inhibitor for active patches. Refer if extensive or cosmetic concern. Granuloma annulare: often self-limiting; topical steroid if localised.\n2. BCC/SCC in situ: refer per 2WW or local pathway. NICE CKS, NG12." }
+        ]
+      }]
+    },
+    {
+      "keywords": ["lice – head", "lice – pubic", "head lice", "pubic lice", "nits"],
+      "steps": [{
+        "id": "lice-mgt",
+        "question": "Lice",
+        "type": "dropdown",
+        "options": [
+          { "label": "Treatment", "guidance": "MANAGEMENT PLAN:\n1. Head lice: wet combing or dimeticone/lotion (check resistance). Two applications 7 days apart. Pubic lice: permethrin or malathion; treat contacts.\n2. NICE CKS." }
+        ]
+      }]
+    },
+    {
+      "keywords": ["nail – fungal", "fungal nail", "onychomycosis"],
+      "steps": [{
+        "id": "fungal-nail-mgt",
+        "question": "Fungal nail",
+        "type": "dropdown",
+        "options": [
+          { "label": "Treatment", "guidance": "MANAGEMENT PLAN:\n1. Confirm (culture/PCR). Terbinafine oral 6–12 weeks (fingernail shorter). Topical amorolfine if limited. Check LFT if oral.\n2. Refer if diagnostic uncertainty or treatment failure. NICE CKS." }
+        ]
+      }]
+    },
+    {
+      "keywords": ["erythema multiforme", "erythema nodosum", "stevens-johnson", "toxic epidermal necrolysis", "skin – drug eruption"],
+      "steps": [{
+        "id": "erythema-sjs-ten-mgt",
+        "question": "Erythema / SJS / TEN / drug eruption",
+        "type": "dropdown",
+        "options": [
+          { "label": "Assessment", "guidance": "MANAGEMENT PLAN:\n1. Erythema multiforme: often viral; supportive. Erythema nodosum: treat cause; NSAID. Stop culprit drug. SJS/TEN: emergency – admit; stop drug; supportive care.\n2. Drug eruption: stop drug; antihistamine/moderate steroid if needed. NICE CKS." }
+        ]
+      }]
+    },
+    {
+      "keywords": ["pyoderma gangrenosum", "dermatitis herpetiformis", "dermatomyositis", "lupus – discoid", "scleroderma – localised", "photosensitivity", "granulomatous skin", "cutaneous lymphoma", "kaposi sarcoma", "hirsutism"],
+      "steps": [{
+        "id": "derm-specialist-mgt",
+        "question": "Dermatology – specialist conditions",
+        "type": "dropdown",
+        "options": [
+          { "label": "Referral", "guidance": "MANAGEMENT PLAN:\n1. Pyoderma gangrenosum: wound care; often need systemic treatment – refer dermatology. Dermatitis herpetiformis: gluten-free; dapsone if needed – refer. Dermatomyositis/Lupus/Scleroderma: refer rheumatology/dermatology.\n2. Hirsutism: treat underlying (PCOS); cosmetic options. NICE CKS." }
+        ]
+      }]
+    },
+    {
       "keywords": ["otitis externa", "ear – infection", "swimmer's ear"],
       "steps": [{
         "id": "otitis-externa-mgt",
@@ -656,6 +999,242 @@
         "type": "dropdown",
         "options": [
           { "label": "Topical treatment", "guidance": "MANAGEMENT PLAN:\n1. Topical acetic acid 2% or topical antibiotic (e.g. gentamicin/hydrocortisone or neomycin) for 7 days. Avoid water in ear.\n2. Consider ear wick if canal swollen. Oral flucloxacillin if cellulitis. NICE CKS." }
+        ]
+      }]
+    },
+    {
+      "keywords": ["achalasia", "oesophageal motility", "oesophagus – motility", "oesophageal spasm"],
+      "steps": [{
+        "id": "achalasia-mgt",
+        "question": "Achalasia / oesophageal motility",
+        "type": "dropdown",
+        "options": [
+          { "label": "Referral", "guidance": "MANAGEMENT PLAN:\n1. Suspect if dysphagia, regurgitation. Barium swallow or manometry. Refer gastroenterology for pneumatic dilation or surgery.\n2. NICE CKS." }
+        ]
+      }]
+    },
+    {
+      "keywords": ["acute diarrhoea", "diarrhoea – acute", "diarrhoea – traveller's", "diarrhoea – c. difficile", "diarrhoea – chronic"],
+      "steps": [{
+        "id": "diarrhoea-mgt",
+        "question": "Diarrhoea",
+        "type": "dropdown",
+        "options": [
+          { "label": "Acute", "guidance": "MANAGEMENT PLAN:\n1. Hydration; avoid antimotility if infective. Stool culture if bloody, systemic, or recent antibiotic (C. difficile). Antibiotic only if indicated (e.g. C. difficile, traveller's).\n2. NICE NG84, CKS." },
+          { "label": "Chronic", "guidance": "MANAGEMENT PLAN:\n1. Coeliac serology, FBC, CRP, TTG; consider FIT, calprotectin. Refer if red flags or persistent. NICE CKS." }
+        ]
+      }]
+    },
+    {
+      "keywords": ["anal fissure", "fistula – anal", "pilonidal sinus", "haemorrhoids", "haemorrhoids – thrombosed"],
+      "steps": [{
+        "id": "anal-mgt",
+        "question": "Anal / perianal",
+        "type": "dropdown",
+        "options": [
+          { "label": "Fissure / haemorrhoids", "guidance": "MANAGEMENT PLAN:\n1. Fissure: fibre, GTN or diltiazem ointment. Haemorrhoids: fibre, topical preparation; thrombosed: analgesia, consider referral. Fistula/pilonidal: refer.\n2. NICE CKS." }
+        ]
+      }]
+    },
+    {
+      "keywords": ["ascites", "cirrhosis", "hepatic encephalopathy", "biliary colic", "cholangitis", "gallstones", "gallbladder – asymptomatic", "gallstones – asymptomatic", "gallstones – symptomatic", "gallstones and biliary colic"],
+      "steps": [{
+        "id": "liver-gallbladder-mgt",
+        "question": "Liver / gallbladder",
+        "type": "dropdown",
+        "options": [
+          { "label": "Ascites / cirrhosis", "guidance": "MANAGEMENT PLAN:\n1. Ascites: salt restrict, diuretic (spironolactone ± furosemide). SBP prophylaxis if indicated. Refer hepatology. Hepatic encephalopathy: treat precipitant; lactulose.\n2. NICE CKS." },
+          { "label": "Gallstones", "guidance": "MANAGEMENT PLAN:\n1. Biliary colic: analgesia. Cholecystitis: admit. Asymptomatic stones: discuss cholecystectomy if diabetic or high risk. NICE NG104, CKS." }
+        ]
+      }]
+    },
+    {
+      "keywords": ["barrett's", "barrett's – surveillance", "oesophagitis", "gastritis", "gastritis – atrophic", "h. pylori", "gastric cancer – 2ww", "oesophageal cancer – 2ww", "colorectal cancer – 2ww", "pancreatic cancer – 2ww"],
+      "steps": [{
+        "id": "upper-gi-cancer-mgt",
+        "question": "Upper GI / cancer 2WW",
+        "type": "dropdown",
+        "options": [
+          { "label": "Barrett's / gastritis", "guidance": "MANAGEMENT PLAN:\n1. Barrett's: surveillance endoscopy per local protocol. H. pylori: test and treat. Gastritis: PPI; consider endoscopy if atrophic or concern.\n2. 2WW: dysphagia, weight loss, bleeding, anaemia – NICE NG12." }
+        ]
+      }]
+    },
+    {
+      "keywords": ["pancreatitis – acute", "pancreatitis – chronic", "pancreatic"],
+      "steps": [{
+        "id": "pancreatitis-mgt",
+        "question": "Pancreatitis",
+        "type": "dropdown",
+        "options": [
+          { "label": "Acute", "guidance": "MANAGEMENT PLAN:\n1. Admit if acute. NBM, IV fluids, analgesia. Gallstones: cholecystectomy after recovery. NICE NG104." },
+          { "label": "Chronic", "guidance": "MANAGEMENT PLAN:\n1. Pain relief; pancreatic enzyme replacement; diabetes screening. Refer gastroenterology. NICE CKS." }
+        ]
+      }]
+    },
+    {
+      "keywords": ["inflammatory bowel disease", "ibd", "microscopic colitis", "lactose intolerance", "faecal impaction", "rectal bleeding", "gastroparesis", "gist", "whipple", "autoimmune hepatitis", "primary biliary cholangitis", "primary sclerosing cholangitis", "haemochromatosis", "wilson disease", "appendicitis – paediatric", "mesenteric adenitis", "small bowel bacterial overgrowth"],
+      "steps": [{
+        "id": "gastro-misc-mgt",
+        "question": "Gastroenterology",
+        "type": "dropdown",
+        "options": [
+          { "label": "IBD / colitis", "guidance": "MANAGEMENT PLAN:\n1. IBD: refer; maintain on treatment per specialist. Microscopic colitis: consider budesonide. Rectal bleeding: FIT, sigmoidoscopy/colonoscopy per pathway.\n2. NICE NG129, NG12." },
+          { "label": "Liver / rare", "guidance": "MANAGEMENT PLAN:\n1. Autoimmune hepatitis/PBC/PSC: refer hepatology. Haemochromatosis: venesection. Wilson's: refer. Gastroparesis: diet, prokinetic; refer. NICE CKS." }
+        ]
+      }]
+    },
+    {
+      "keywords": ["pleural effusion", "pleural effusion – exudate", "pleural effusion – transudate", "pleural effusion – malignant", "haemoptysis", "cough – chronic", "cough – chronic dry", "cough – post-viral", "bronchitis – antibiotic", "bronchitis and cough", "pneumothorax", "pulmonary nodule", "solitary pulmonary nodule", "lung cancer – 2ww", "lung cancer – nsclc", "lung cancer – sclc", "sarcoidosis", "abpa", "allergic bronchopulmonary aspergillosis", "aspergilloma", "cteph", "chronic thromboembolic", "mesothelioma", "pleural – mesothelioma", "mediastinal mass", "respiratory – neuromuscular", "diaphragm – paralysis", "lung – metastasis"],
+      "steps": [{
+        "id": "respiratory-misc-mgt",
+        "question": "Respiratory",
+        "type": "dropdown",
+        "options": [
+          { "label": "Pleural effusion", "guidance": "MANAGEMENT PLAN:\n1. CXR; consider tap for diagnosis. Light's criteria. Refer if exudate, malignant, or symptomatic. NICE CKS." },
+          { "label": "Haemoptysis / cancer", "guidance": "MANAGEMENT PLAN:\n1. Haemoptysis: 2WW lung cancer. Cough: no antibiotic for acute bronchitis; consider asthma/ACE-i. Pulmonary nodule: refer per NICE. NICE NG12, NG120." }
+        ]
+      }]
+    },
+    {
+      "keywords": ["aki – causes", "glomerulonephritis", "iga nephropathy", "membranous nephropathy", "nephrotic syndrome", "lupus nephritis", "polycystic kidney", "epididymitis", "orchitis", "erectile dysfunction", "bladder – overactive drug", "overactive bladder", "incontinence – stress", "incontinence – urge", "urinary incontinence – male", "nocturia", "bladder cancer – 2ww", "testicular cancer – 2ww", "prostatitis", "urethritis", "urethral stricture", "retention – acute", "scrotal swelling", "hydrocele", "varicocele", "testicular pain", "fournier's gangrene", "paraphimosis", "priapism", "peyronie's", "pelvic floor – exercises", "pelvic organ prolapse", "vaginal prolapse", "asymptomatic bacteriuria", "wilms tumour"],
+      "steps": [{
+        "id": "renal-urology-misc-mgt",
+        "question": "Renal / urology",
+        "type": "dropdown",
+        "options": [
+          { "label": "AKI / glomerular", "guidance": "MANAGEMENT PLAN:\n1. AKI: treat cause; stop nephrotoxics; fluid/electrolytes. Nephrotic/glomerulonephritis: refer nephrology. NICE NG148, NG203." },
+          { "label": "LUTS / erectile / scrotal", "guidance": "MANAGEMENT PLAN:\n1. Overactive bladder: anticholinergic or beta-3 agonist. ED: exclude vascular/psychological; PDE5i. Epididymitis: antibiotics. 2WW: haematuria, testicular mass. NICE NG12, CKS." }
+        ]
+      }]
+    },
+    {
+      "keywords": ["adenomyosis", "amenorrhoea", "breast – lump", "breast – mastitis", "breast – pain", "bv", "candidiasis", "cervical cancer – 2ww", "cervical screening – abnormal", "chlamydia", "coil", "iud", "ius", "combined pill", "dysmenorrhoea", "endometrial cancer – 2ww", "fibroids", "gonorrhoea", "hyperemesis", "implant", "intermenstrual bleeding", "lactation – mastitis", "miscarriage", "ovarian cancer – 2ww", "pelvic inflammatory disease", "pelvic pain", "pid", "post-coital bleeding", "postmenopausal bleeding", "postpartum haemorrhage", "pre-eclampsia", "premenstrual syndrome", "progestogen-only pill", "trichomonas", "vaginal discharge", "vaginismus", "vulval", "vulvodynia", "vulvovaginal candidiasis"],
+      "steps": [{
+        "id": "women-health-mgt",
+        "question": "Women's health",
+        "type": "dropdown",
+        "options": [
+          { "label": "Contraception / bleeding", "guidance": "MANAGEMENT PLAN:\n1. HMB: Levonorgestrel IUS, tranexamic acid. IMB/PCB: speculum; swabs; 2WW if PMB. Contraception: choice per need; POP/COCP/implant/IUD per CKS.\n2. NICE NG88, NG3, CKS." },
+          { "label": "Infection / pain / 2WW", "guidance": "MANAGEMENT PLAN:\n1. Vaginal infection: Candida/BV/Trichomonas – treat per CKS. Pelvic pain: exclude PID; consider endometriosis. 2WW: breast lump, PMB, cervical/ovarian/endometrial concern. NICE NG12, NG3." }
+        ]
+      }]
+    },
+    {
+      "keywords": ["anxiety – medication", "gad – first-line", "gad – long-term", "gad – step-up", "generalised anxiety disorder", "health anxiety", "panic disorder", "benzodiazepine – reduction", "binge eating", "eating disorders: when to refer", "body dysmorphic disorder", "clozapine – monitoring", "lithium – monitoring", "conversion disorder", "crisis – de-escalation", "cyclothymia", "delirium – causes", "dissociative disorder", "factitious disorder", "munchausen", "gambling – harm", "hoarding", "liaison – physical and mental", "nightmares", "section 2", "section 3"],
+      "steps": [{
+        "id": "mental-health-misc-mgt",
+        "question": "Mental health",
+        "type": "dropdown",
+        "options": [
+          { "label": "Anxiety / GAD / panic", "guidance": "MANAGEMENT PLAN:\n1. CBT first-line; SSRI if preferred or moderate–severe. Benzodiazepines short-term only. Reduce gradually. NICE NG226, CKS." },
+          { "label": "Bipolar / psychosis / monitoring", "guidance": "MANAGEMENT PLAN:\n1. Lithium: check U&E, TFT, Ca; therapeutic level. Clozapine: FBC monitoring. Section 2/3: MHA process; inform rights. NICE NG222, NG10." },
+          { "label": "Eating / other", "guidance": "MANAGEMENT PLAN:\n1. Eating disorders: refer if suspected. Gambling/hoarding: signpost; consider referral. Delirium: treat cause; avoid antipsychotic unless distress. NICE NG69, CKS." }
+        ]
+      }]
+    },
+    {
+      "keywords": ["ac joint", "ankle – achilles", "ankle – sprain", "ankle sprain", "biceps tendinopathy", "cervical radiculopathy", "compartment syndrome", "complex regional pain", "cubital tunnel", "elbow – lateral epicondylitis", "elbow – medial epicondylitis", "elbow – olecranon bursitis", "fibromyalgia", "foot – hallux valgus", "foot – metatarsalgia", "foot – morton's neuroma", "foot – plantar fasciitis", "foot – stress fracture", "ganglion – wrist", "giant cell arteritis", "hand – dupuytren's", "hand – trigger finger", "hip – avascular necrosis", "hip – labral", "hip – trochanteric bursitis", "knee – ligament", "knee – meniscal", "knee – patellar tendinopathy", "knee – patellofemoral", "osteomyelitis", "plantar fasciitis", "polymyalgia", "polymyalgia rheumatica", "pseudogout", "reactive arthritis", "rotator cuff", "sarcoid – musculoskeletal", "septic arthritis – knee", "shin splints", "shoulder – frozen", "shoulder – impingement", "shoulder pain", "soft tissue infection", "spondyloarthritis", "stress fracture", "tendinopathy – achilles", "tennis elbow", "vasculitis – anca", "vasculitis – iga", "vasculitis – large vessel"],
+      "steps": [{
+        "id": "msk-misc-mgt",
+        "question": "Musculoskeletal",
+        "type": "dropdown",
+        "options": [
+          { "label": "Soft tissue / tendon", "guidance": "MANAGEMENT PLAN:\n1. Rest, ice, analgesia; physio. Plantar fasciitis: stretch, orthotics. Tennis elbow: eccentric exercises. Rotator cuff: physio; consider injection. NICE CKS, NG124." },
+          { "label": "Joint / arthritis / red flags", "guidance": "MANAGEMENT PLAN:\n1. GCA: urgent high-dose steroid; refer. Polymyalgia: steroid; monitor. Pseudogout: NSAID. Septic arthritis: emergency referral. NICE NG210, NG100." }
+        ]
+      }]
+    },
+    {
+      "keywords": ["allergy – food", "atopic march", "behaviour – oppositional", "chickenpox", "circumcision", "congenital heart – murmur", "cystic fibrosis – screening", "daytime wetting", "delayed puberty", "dyslexia", "encopresis", "enuresis", "epiglottitis", "febrile convulsion", "growth – short stature", "hand foot mouth", "head lice", "henoch-schönlein", "hypospadias", "immunisation – catch-up", "jaundice – neonatal", "juvenile idiopathic arthritis", "kawasaki", "limp – septic joint", "measles", "mumps", "murmur – innocent", "nappy rash", "nocturnal enuresis", "osgood-schlatter", "paediatric rash", "perthes disease", "phimosis", "precocious puberty", "recurrent abdominal pain", "rubella", "scoliosis", "slapped cheek", "sleep – toddler", "slipped capital femoral epiphysis", "speech delay", "threadworm", "undescended testis", "viral exanthem", "whooping cough"],
+      "steps": [{
+        "id": "paediatrics-misc-mgt",
+        "question": "Paediatrics",
+        "type": "dropdown",
+        "options": [
+          { "label": "Infection / rash", "guidance": "MANAGEMENT PLAN:\n1. Chickenpox/measles/mumps/rubella: supportive. Kawasaki: refer. Febrile convulsion: reassure. Hand foot mouth/slapped cheek: supportive. NICE NG143, CKS." },
+          { "label": "Development / growth / surgical", "guidance": "MANAGEMENT PLAN:\n1. Enuresis: alarm; desmopressin if needed. Short stature: plot; refer if faltering. Circumcision/phimosis/hypospadias: refer. NICE NG11, NG111, CKS." }
+        ]
+      }]
+    },
+    {
+      "keywords": ["bite – animal", "bite – human", "brucellosis", "c. difficile – recurrence", "cat scratch", "chikungunya", "covid – antiviral", "covid – long", "cytomegalovirus", "dengue", "helicobacter", "hepatitis a", "hepatitis e", "hiv – drug", "hiv – monitoring", "hiv – pep", "hiv – prep", "hiv – testing", "hiv – opportunistic", "hiv – post-exposure", "hiv – drug resistance", "hiv – drug interactions", "hiv testing", "influenza – antiviral", "influenza – vaccination", "leptospirosis", "lyme", "lymphadenitis", "malaria – severe", "mrsa – decolonisation", "necrotising fasciitis", "needlestick", "osteomyelitis – acute", "shingles", "tb – active", "tb – bone", "tb – cns", "tb – contact", "tb – latent", "tb – suspect", "tb: when to suspect", "tick bite", "toxoplasmosis", "typhoid", "varicella – adult", "zika"],
+      "steps": [{
+        "id": "infectious-misc-mgt",
+        "question": "Infectious disease",
+        "type": "dropdown",
+        "options": [
+          { "label": "HIV / TB / viral", "guidance": "MANAGEMENT PLAN:\n1. HIV: test; PrEP/PEP per NICE. TB: refer TB service; RIPE. COVID antiviral: per eligibility. Shingles: aciclovir if <72 h; 2WW if ophthalmic. NICE NG33, NG122, CKS." },
+          { "label": "Bites / travel / other", "guidance": "MANAGEMENT PLAN:\n1. Bite: clean; antibiotic if high risk; rabies/tetanus. Needlestick: risk assess; PEP if source high risk. Travel: advise vaccines; malaria prophylaxis. NICE CKS." }
+        ]
+      }]
+    },
+    {
+      "keywords": ["ataxia", "bell's palsy", "brain tumour – 2ww", "chronic subdural", "dystonia", "glossopharyngeal neuralgia", "guillain-barré", "guillain barré", "guillain barre", "guillain", "huntington's", "hydrocephalus", "lambert-eaton", "motor neurone disease", "myasthenia – crisis", "myasthenia gravis", "narcolepsy", "normal pressure hydrocephalus", "occipital neuralgia", "peripheral neuropathy", "radiculopathy", "rem sleep behaviour", "restless legs", "subarachnoid haemorrhage", "subdural haematoma", "trigeminal neuralgia", "ulnar neuropathy"],
+      "steps": [{
+        "id": "neurology-misc-mgt",
+        "question": "Neurology",
+        "type": "dropdown",
+        "options": [
+          { "label": "Cranial nerve / headache", "guidance": "MANAGEMENT PLAN:\n1. Bell's palsy: steroid within 72 h; eye care. Trigeminal neuralgia: carbamazepine. 2WW: brain tumour. SAH: emergency. NICE NG150, NG12, CKS." },
+          { "label": "Neuropathy / neuromuscular", "guidance": "MANAGEMENT PLAN:\n1. Peripheral neuropathy: exclude B12, diabetes; refer if cause unclear. Myasthenia gravis: refer. MND: refer. NICE CKS." }
+        ]
+      }]
+    },
+    {
+      "keywords": ["all", "aml", "anticoagulation – doac", "anticoagulation – warfarin", "anticoagulation: warfarin vs doac", "warfarin vs doac", "antiphospholipid syndrome", "bleeding – anticoagulant", "cll", "cml", "dic", "doac – reversal", "folate – deficiency", "folate deficiency", "g6pd deficiency", "haemophilia – carrier", "hit", "hodgkin lymphoma", "iron – iv", "iron – oral intolerance", "itp", "leucocytosis", "leukaemia – acute", "lymphadenopathy", "lymphoma – 2ww", "mds", "mgus", "myelofibrosis", "myeloma – suspect", "myeloproliferative", "neutropenia", "non-hodgkin lymphoma", "paroxysmal nocturnal haemoglobinuria", "platelet – drug-induced", "polycythaemia", "sickle cell", "splenomegaly", "thalassaemia", "thrombocytopenia", "thrombocytosis", "thrombophilia", "thrombosis – unprovoked", "von willebrand", "waldenström", "warfarin – inr", "warfarin – reversal"],
+      "steps": [{
+        "id": "haematology-misc-mgt",
+        "question": "Haematology",
+        "type": "dropdown",
+        "options": [
+          { "label": "Anaemia / clotting", "guidance": "MANAGEMENT PLAN:\n1. Iron: oral first; IV if intolerant or urgent. Folate: replace; exclude B12. Anticoagulation: DOAC per NICE NG196. Warfarin: INR target; reversal per guidance. NICE NG24, NG196." },
+          { "label": "Malignancy / cytopenia", "guidance": "MANAGEMENT PLAN:\n1. 2WW: unexplained cytopenia, lymphadenopathy, suspected lymphoma/leukaemia. Thrombosis: exclude malignancy. MGUS: monitor or refer. NICE NG12, NG24." }
+        ]
+      }]
+    },
+    {
+      "keywords": ["adenoid hypertrophy", "anosmia", "barotrauma", "cholesteatoma", "ear – foreign body", "facial palsy", "glue ear", "hoarse voice", "laryngitis – acute", "meniere's", "nasal fracture", "nasal polyps", "nose – foreign body", "oral cancer – 2ww", "otitis – chronic suppurative", "otosclerosis", "phantosmia", "presbyacusis", "quinsy", "rhinosinusitis – chronic", "salivary – stone", "salivary gland – swelling", "septal deviation", "tongue – lesion", "tonsil – malignancy", "tonsillitis – recurrent", "vocal cord nodule"],
+      "steps": [{
+        "id": "ent-misc-mgt",
+        "question": "ENT",
+        "type": "dropdown",
+        "options": [
+          { "label": "Ear / hearing", "guidance": "MANAGEMENT PLAN:\n1. Glue ear: watch or refer. Cholesteatoma: refer. Otosclerosis: refer. Presbyacusis: hearing aid. Foreign body: refer if impacted. NICE CKS." },
+          { "label": "Nose / throat / 2WW", "guidance": "MANAGEMENT PLAN:\n1. Nasal polyps: topical steroid; refer if obstructing. Quinsy: admit. 2WW: hoarseness >3 weeks, oral cancer. Recurrent tonsillitis: refer per criteria. NICE NG12, CKS." }
+        ]
+      }]
+    },
+    {
+      "keywords": ["asylum seeker", "cachexia", "capacity and consent", "care home – medication", "complementary therapy", "deprescribing", "domestic violence", "doping – therapeutic", "elder abuse", "falls – bone health", "falls – intervention", "falls – multifactorial", "falls – orthostatic", "falls – risk", "female genital mutilation", "frail elderly", "frailty – cga", "frailty – intervention", "gold standard framework", "homeless – health", "honour-based violence", "hydration", "immigration – medical", "insurance – medical", "jet lag", "lasting power of attorney", "lifestyle – diet", "magnesium – deficiency", "malnutrition", "medicines reconciliation", "medicines review", "medicolegal – report", "multimorbidity", "neuropathic – gabapentin", "neuropathic – pregabalin", "occupational health", "polypharmacy", "prison – healthcare", "sarcopenia", "sport – concussion", "travel – advice", "travel – altitude", "travel – diarrhoea", "travel – diving", "travel – vaccination", "vitamin c – deficiency", "vitamin deficiency – multiple", "vitamin k – deficiency", "vulnerable adult", "zinc – deficiency"],
+      "steps": [{
+        "id": "other-misc-mgt",
+        "question": "Other clinical topics",
+        "type": "dropdown",
+        "options": [
+          { "label": "Falls / frailty / deprescribing", "guidance": "MANAGEMENT PLAN:\n1. Falls: multifactorial assessment; bone health; vision. Frailty: CGA; advance care planning. Deprescribing: reduce inappropriate meds; review. NICE NG161, NG108, CKS." },
+          { "label": "Safeguarding / travel / nutrition", "guidance": "MANAGEMENT PLAN:\n1. Safeguarding: document; refer per policy. Travel: vaccines; altitude/diving advice. Malnutrition: screen; oral supplements. Vitamin/mineral deficiency: replace. NICE CKS, Local formulary." }
+        ]
+      }]
+    },
+    {
+      "keywords": ["hepatitis b – chronic", "hepatitis b chronic", "chronic hepatitis b"],
+      "steps": [{
+        "id": "hepb-chronic-mgt",
+        "question": "Hepatitis B – chronic",
+        "type": "dropdown",
+        "options": [
+          { "label": "Monitoring & referral", "guidance": "MANAGEMENT PLAN:\n1. LFT, viral load, HBeAg/Ab; ultrasound for cirrhosis/HCC surveillance. Refer hepatology for treatment (NAs or pegIFN).\n2. Vaccinate contacts. NICE NG43, CKS." }
+        ]
+      }]
+    },
+    {
+      "keywords": ["tuberculosis – lymph node", "tb – lymph node", "lymph node tb"],
+      "steps": [{
+        "id": "tb-lymph-mgt",
+        "question": "Tuberculosis – lymph node",
+        "type": "dropdown",
+        "options": [
+          { "label": "Referral", "guidance": "MANAGEMENT PLAN:\n1. Refer TB service. Diagnosis: FNA or biopsy; culture. Treat per NICE NG33 (RIPE). Screen contacts.\n2. NICE NG33, CKS." }
         ]
       }]
     },

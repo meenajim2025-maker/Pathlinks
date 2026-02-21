@@ -11,15 +11,15 @@ Reads `data/decision_tools_protocol.json`; tools with `steps[0].id` starting wit
 
 ---
 
-## Summary (after adding cardiovascular templates)
+## Summary (after full forensic audit and templates)
 
 | Metric | Value |
 |--------|--------|
 | Total tools | 1920 |
-| On fallback (need topic template) | **562** |
-| With topic-specific template | 1358 |
+| On fallback (need topic template) | **0** |
+| With topic-specific template | **1920** |
 
-**Sections with 0 on fallback:** Cardiovascular & Cardiac, Endocrinology & Diabetes.
+**All sections:** Every tool now has a topic-specific template. None use the system fallback.
 
 ---
 
