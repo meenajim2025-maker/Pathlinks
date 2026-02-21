@@ -271,142 +271,159 @@ function getSystemFallbackSteps(systemId, title) {
     }];
   }
 
-  // Final Catch-all: system-specific consultant-grade plans (no single generic plan)
+  // Final Catch-all: system-specific consultant-grade plans; consistent 3-part structure (Assessment | Management | Referral)
   const systemGuidance = {
     cardiovascular: {
       id: 'guidance-cardiovascular',
       question: 'Cardiovascular (Consultant Standard)',
       options: [
-        { label: 'Assessment & risk', guidance: 'MANAGEMENT PLAN:\n1. ECG, BP, lipids; QRISK3. If AF: CHA2DS2-VASc, HAS-BLED; anticoagulate per NICE NG196.\n2. Chest pain: GTN, beta-blocker/CCB; refer RACPC for CTCA. Heart failure: BNP, echo; four pillars (ACEi/ARB, beta-blocker, MRA, SGLT2i).\n3. Red flags: 999 for acute chest pain, syncope, acute SOB. NICE NG72, NG106, NG185, NG196.' },
-        { label: 'Referral', guidance: '2WW: suspected cancer, severe valve disease. Urgent: ACS, haemodynamically unstable. Routine: AF for rhythm control, refractory hypertension, PAD. NICE NG12.' }
+        { label: '1. Assessment & red flags', guidance: 'ASSESSMENT:\n• History: chest pain character, palpitations, syncope, breathlessness, oedema. Medication and risk factors.\n• Examination: BP, pulse (rate/rhythm), JVP, heart sounds, peripheral perfusion. NEWS2 if unwell.\n• Investigations: ECG, lipids, HbA1c; BNP if breathless; troponin if ACS suspected.\n• Red flags: Acute chest pain >15 min, syncope with exertion, acute SOB – 999. NICE NG72, NG106, NG185, NG196.' },
+        { label: '2. Management', guidance: 'MANAGEMENT:\n• CVD risk: QRISK3; statin if ≥10%. AF: CHA2DS2-VASc, HAS-BLED; DOAC first-line. Hypertension: ACE-i/ARB/CCB per NG136.\n• Chest pain: GTN prn; beta-blocker or CCB; aspirin, statin. Heart failure: four pillars (ACEi/ARB, beta-blocker, MRA, SGLT2i); diuretic for congestion.\n• Safety-net: When to call 999; follow-up and titration. NICE NG72, NG106, NG196.' },
+        { label: '3. Referral', guidance: 'REFERRAL:\n• 2WW: Suspected cancer, severe valve disease. RACPC for stable angina (CTCA).\n• Urgent: ACS, haemodynamically unstable AF, acute HF, aortic dissection.\n• Routine: AF for rhythm control, refractory hypertension, PAD, arrhythmia workup. NICE NG12.' }
       ]
     },
     cardiology: {
       id: 'guidance-cardiology',
       question: 'Cardiology (Consultant Standard)',
       options: [
-        { label: 'Assessment & risk', guidance: 'MANAGEMENT PLAN:\n1. ECG, BP, lipids; QRISK3. If AF: CHA2DS2-VASc, HAS-BLED; anticoagulate per NICE NG196.\n2. Chest pain: GTN, beta-blocker/CCB; refer RACPC for CTCA. Heart failure: BNP, echo; four pillars (ACEi/ARB, beta-blocker, MRA, SGLT2i).\n3. Red flags: 999 for acute chest pain, syncope, acute SOB. NICE NG72, NG106, NG185, NG196.' },
-        { label: 'Referral', guidance: '2WW: suspected cancer, severe valve disease. Urgent: ACS, haemodynamically unstable. Routine: AF for rhythm control, refractory hypertension, PAD. NICE NG12.' }
+        { label: '1. Assessment & red flags', guidance: 'ASSESSMENT:\n• History: chest pain character, palpitations, syncope, breathlessness, oedema. Medication and risk factors.\n• Examination: BP, pulse (rate/rhythm), JVP, heart sounds. NEWS2 if unwell.\n• Investigations: ECG, lipids, BNP if breathless; echo if murmur or HF suspected.\n• Red flags: Acute chest pain, syncope with exertion, acute SOB – 999. NICE NG72, NG106, NG185.' },
+        { label: '2. Management', guidance: 'MANAGEMENT:\n• QRISK3; statin. AF: anticoagulate per CHA2DS2-VASc; rate control (beta-blocker/CCB). Heart failure: four pillars; diuretic for congestion.\n• Angina: GTN, beta-blocker/CCB, aspirin, statin. Valve disease: treat HF and AF; endocarditis prophylaxis only per NG64.\n• Safety-net and follow-up. NICE NG106, NG196.' },
+        { label: '3. Referral', guidance: 'REFERRAL:\n• 2WW: Severe valve disease, suspected cancer. RACPC for angina.\n• Urgent: ACS, unstable AF, acute HF.\n• Routine: AF for ablation/rhythm, refractory HF, pacing. NICE NG12.' }
       ]
     },
     dermatology: {
       id: 'guidance-dermatology',
       question: 'Dermatology (Consultant Standard)',
       options: [
-        { label: 'Topical & systemic', guidance: 'MANAGEMENT PLAN:\n1. Emollients first-line for dry/eczema; potent topical steroid for plaque (max 4 weeks); antifungal for tinea. Infection: flucloxacillin or fusidic acid.\n2. Oral: doxycycline for acne; consider prednisolone short course for severe acute. Avoid long-term steroid without dermatology.\n3. 2WW: changing mole, suspected melanoma/SCC. NICE NG12, NG80, CKS.' },
-        { label: 'Referral', guidance: 'Routine: diagnostic uncertainty, failure of topical therapy, biologics. Urgent: erythroderma, pustular flare, SJS/TEN. NICE CG153.' }
+        { label: '1. Assessment & red flags', guidance: 'ASSESSMENT:\n• Distribution, duration, triggers, treatments tried. Skin type and sun exposure. Systemic symptoms.\n• Examine: morphology, site, extent; lymph nodes if concern. Dermoscopy if trained for pigmented lesions.\n• Red flags: Changing mole (asymmetry, border, colour, diameter); rapidly growing lesion; immunosuppression. Non-blanching rash in child – emergency. NICE NG12, NG14.' },
+        { label: '2. Management', guidance: 'MANAGEMENT:\n• Emollients first-line for dry/eczema. Topical steroid: potency and duration by site (face/flexures mild; body potent; max 4 weeks). Antifungal for tinea. Infection: flucloxacillin or fusidic acid (limited use).\n• Acne: topical then oral doxycycline. Avoid long-term oral steroid without dermatology. NICE NG80, CG153, CKS.' },
+        { label: '3. Referral', guidance: 'REFERRAL:\n• 2WW: Suspected melanoma, SCC, changing mole. NICE NG12, NG14.\n• Urgent: Erythroderma, generalised pustular flare, SJS/TEN.\n• Routine: Diagnostic uncertainty, failure of topical therapy, biologics, complex rashes. NICE CG153.' }
       ]
     },
     'mental-health': {
       id: 'guidance-mental-health',
       question: 'Mental Health (Consultant Standard)',
       options: [
-        { label: 'Risk & support', guidance: 'MANAGEMENT PLAN:\n1. Risk: Suicide/self-harm assessment; crisis numbers (111, Samaritans 116 123). Do not leave at risk without plan.\n2. Depression: SSRI first-line (sertraline 50 mg); review 2 weeks; CBT. Anxiety: CBT or SSRI. Continue 6 months after remission. NICE NG222, NG226.\n3. Refer: IAPT for mild–moderate; CMHT if severe, psychosis, or risk. NICE NG222.' },
-        { label: 'Referral', guidance: 'Urgent: acute risk, psychosis. Routine: treatment-resistant, personality disorder (DBT), eating disorder. NICE NG12.' }
+        { label: '1. Assessment & red flags', guidance: 'ASSESSMENT:\n• Risk: Suicide, self-harm, harm to others; access to means; recent change. PHQ-9, GAD-7 where appropriate.\n• Diagnosis: Depression, anxiety, psychosis, bipolar, eating disorder – duration, severity, functional impact.\n• Red flags: Acute risk to life; psychosis; severe self-neglect; safeguarding. Crisis numbers: 111, Samaritans 116 123. NICE NG222, NG226.' },
+        { label: '2. Management', guidance: 'MANAGEMENT:\n• Depression: SSRI first-line (sertraline 50 mg); review at 2 weeks; CBT/IAPT for mild–moderate. Continue 6 months after remission. NICE NG222.\n• Anxiety: CBT first-line; SSRI if preferred or moderate–severe. Benzodiazepines short-term only. NICE NG226.\n• Do not leave at risk without safety plan and follow-up. NICE NG222.' },
+        { label: '3. Referral', guidance: 'REFERRAL:\n• Urgent: Acute risk, psychosis, catatonia – crisis team or A&E.\n• IAPT: Mild–moderate depression/anxiety. CMHT: Severe, treatment-resistant, psychosis, bipolar, eating disorder, personality disorder (DBT). NICE NG12, NG222.' }
       ]
     },
     gastroenterology: {
       id: 'guidance-gastroenterology',
       question: 'Gastroenterology (Consultant Standard)',
       options: [
-        { label: 'Investigation & treatment', guidance: 'MANAGEMENT PLAN:\n1. Dyspepsia: PPI 4–8 weeks; consider H. pylori test. IBS: dietary advice, mebeverine; low FODMAP if needed. Constipation: macrogol; stimulant if resistant. Diarrhoea: loperamide prn; exclude infection/C difficile if recent antibiotic.\n2. FIT if ≥50 with change in bowel habit or IDA. Coeliac: TTG + IgA. NICE NG12, NG20, NG61.\n3. 2WW: dysphagia, rectal bleeding + red flags, FIT+. NICE NG12.' },
-        { label: 'Referral', guidance: 'Emergency: acute abdomen, GI bleed, pancreatitis. 2WW: dysphagia, unexplained anaemia. Routine: IBD, refractory IBS, liver disease. NICE NG12.' }
+        { label: '1. Assessment & red flags', guidance: 'ASSESSMENT:\n• History: dysphagia, weight loss, bleeding, change in bowel habit, pain, reflux, jaundice. Drug history (NSAIDs, PPI).\n• Examination: abdomen, mass, organomegaly; rectal if indicated. FBC, U&E, LFT, coeliac serology, FIT if ≥50 with change in bowel habit or IDA.\n• Red flags: Dysphagia, unexplained anaemia, rectal bleeding + concern, weight loss – 2WW. Acute abdomen – emergency. NICE NG12, NG20.' },
+        { label: '2. Management', guidance: 'MANAGEMENT:\n• Dyspepsia: PPI 4–8 weeks; H. pylori test and treat if positive. IBS: dietary advice, mebeverine; low FODMAP if needed. Constipation: macrogol; stimulant if resistant. Diarrhoea: exclude C difficile if recent antibiotic; loperamide prn. NICE NG61, NG12.\n• Liver: LFT pattern; viral serology, ferritin if indicated. Avoid alcohol and hepatotoxics. NICE CKS.' },
+        { label: '3. Referral', guidance: 'REFERRAL:\n• 2WW: Dysphagia, unexplained anaemia, rectal bleeding + red flags, FIT+. NICE NG12.\n• Emergency: Acute abdomen, GI bleed, pancreatitis, severe colitis.\n• Routine: IBD, refractory IBS, liver disease, Barrett’s surveillance. NICE NG12.' }
       ]
     },
     endocrinology: {
       id: 'guidance-endocrinology',
       question: 'Endocrinology (Consultant Standard)',
       options: [
-        { label: 'Thyroid, diabetes, adrenal', guidance: 'MANAGEMENT PLAN:\n1. Thyroid: Levothyroxine if hypothyroid; recheck TSH 6–8 weeks. Hyperthyroid refer. Subclinical: TPO ab; treat if symptomatic. NICE NG145.\n2. Diabetes: HbA1c 48–53; metformin; SGLT2i if CVD/HF/CKD. NICE NG28.\n3. Adrenal: Sick-day rules for steroids; do not stop abruptly. Refer if Addison’s suspected. NICE CKS.' },
-        { label: 'Referral', guidance: 'Thyroid: hyperthyroid, goitre/nodule with concern. Diabetes: type 1, pregnancy, foot complications. Pituitary/adrenal: confirmed or suspected. NICE NG145, NG28.' }
+        { label: '1. Assessment & red flags', guidance: 'ASSESSMENT:\n• Thyroid: TFTs, TPO ab if abnormal. Goitre/nodule: USS + FNA per NG145. Calcium: corrected Ca, PTH, vitamin D.\n• Diabetes: HbA1c, renal function, lipids; foot check. Adrenal: electrolytes, short synacthen if suspected insufficiency.\n• Red flags: Thyroid storm, severe hypo/hyperglycaemia, adrenal crisis – emergency. NICE NG28, NG145.' },
+        { label: '2. Management', guidance: 'MANAGEMENT:\n• Thyroid: Levothyroxine if hypothyroid; recheck TSH 6–8 weeks. Hyperthyroid refer. Subclinical: TPO ab; treat if symptomatic. NICE NG145.\n• Diabetes: HbA1c target 48–53; metformin; SGLT2i if CVD/HF/CKD. NICE NG28.\n• Adrenal: Sick-day rules; never stop steroids abruptly; emergency hydrocortisone. NICE CKS.' },
+        { label: '3. Referral', guidance: 'REFERRAL:\n• 2WW: Pituitary/adrenal crisis, severe thyroid eye disease.\n• Urgent: Adrenal crisis, thyroid storm, severe DKA/HHS.\n• Routine: Hyperthyroid, goitre/nodule with concern, type 1 diabetes, pituitary/adrenal confirmed. NICE NG145, NG28.' }
       ]
     },
     musculoskeletal: {
       id: 'guidance-musculoskeletal',
       question: 'Musculoskeletal (Consultant Standard)',
       options: [
-        { label: 'Pain & function', guidance: 'MANAGEMENT PLAN:\n1. Acute: Paracetamol + NSAID (with PPI); avoid long-term NSAID. Back pain: advise activity; consider physio. Gout: naproxen or colchicine; allopurinol if recurrent. NICE NG59, NG219, NG226.\n2. OA: Exercise, weight loss; topical NSAID for knee; consider joint replacement referral if severe. Inflammatory arthritis: 2WW if suspected RA (synovitis). NICE NG100, NG226.\n3. Red flags: Cauda equina, septic arthritis – emergency. NICE NG59.' },
-        { label: 'Referral', guidance: '2WW: suspected RA, septic arthritis. Routine: persistent pain after conservative treatment, carpal tunnel, frozen shoulder. NICE NG59, NG100.' }
+        { label: '1. Assessment & red flags', guidance: 'ASSESSMENT:\n• History: onset, trauma, mechanical vs inflammatory pattern, morning stiffness, systemic symptoms. Functional impact.\n• Examination: look, feel, move; joint line tenderness; neurological if spine/radiculopathy.\n• Red flags: Cauda equina (saddle numbness, retention, bilateral leg weakness) – emergency. Septic arthritis, suspected cord compression – urgent. Inflammatory arthritis (persistent synovitis) – 2WW. NICE NG59, NG100.' },
+        { label: '2. Management', guidance: 'MANAGEMENT:\n• Acute pain: Paracetamol + NSAID (with PPI); avoid long-term NSAID. Back pain: advise activity; physio. Gout: naproxen or colchicine; allopurinol if recurrent. NICE NG59, NG219.\n• OA: Exercise, weight loss; topical NSAID for knee; oral NSAID short-term. Consider joint replacement referral if severe. NICE NG226.' },
+        { label: '3. Referral', guidance: 'REFERRAL:\n• 2WW: Suspected RA (persistent synovitis), septic arthritis. NICE NG100.\n• Urgent: Cauda equina, septic arthritis, compartment syndrome.\n• Routine: Persistent pain after conservative treatment, carpal tunnel, frozen shoulder, joint replacement. NICE NG59, NG100.' }
       ]
     },
     respiratory: {
       id: 'guidance-respiratory',
       question: 'Respiratory (Consultant Standard)',
       options: [
-        { label: 'Asthma & COPD', guidance: 'MANAGEMENT PLAN:\n1. Asthma: ICS + SABA; step up per BTS/SIGN. Check technique; MART if appropriate. NICE NG80.\n2. COPD: LAMA/LABA; add ICS if exacerbations or eosinophils. Rescue pack (pred + antibiotic). Smoking cessation essential. NICE NG115.\n3. 2WW: haemoptysis, suspected lung cancer. Emergency: severe asthma, PE. NICE NG12, NG80, NG115.' },
-        { label: 'Referral', guidance: 'Urgent: severe exacerbation, haemoptysis. Routine: uncontrolled asthma/COPD, sleep apnoea, ILD. NICE NG115.' }
+        { label: '1. Assessment & red flags', guidance: 'ASSESSMENT:\n• History: breathlessness, cough, wheeze, sputum, smoking, occupation. Exacerbation frequency, inhaler technique.\n• Examination: chest, SpO2, respiratory rate, wheeze/crackles. NEWS2 if unwell.\n• Red flags: Haemoptysis – 2WW. Severe asthma (silent chest, unable to complete sentences) – emergency. PE, pneumothorax – emergency. NICE NG12, NG80, NG115.' },
+        { label: '2. Management', guidance: 'MANAGEMENT:\n• Asthma: ICS + SABA; step up per BTS/SIGN; check technique; MART if appropriate. NICE NG80.\n• COPD: LAMA/LABA; add ICS if exacerbations or eosinophils. Rescue pack (prednisolone + antibiotic). Smoking cessation essential. NICE NG115.\n• Cough: no antibiotic for acute bronchitis; consider ACE-i review. NICE NG120.' },
+        { label: '3. Referral', guidance: 'REFERRAL:\n• 2WW: Haemoptysis, suspected lung cancer. NICE NG12.\n• Urgent: Severe asthma, PE, pneumothorax, life-threatening exacerbation.\n• Routine: Uncontrolled asthma/COPD, sleep apnoea, ILD, bronchiectasis. NICE NG115.' }
       ]
     },
     paediatrics: {
       id: 'guidance-paediatrics',
       question: 'Paediatrics (Consultant Standard)',
       options: [
-        { label: 'Safety-netting & treatment', guidance: 'MANAGEMENT PLAN:\n1. Traffic light (NG143) for fever/ill child. Hydration, paracetamol/ibuprofen. AOM: safety-net; amoxicillin if <2y bilateral or unwell. UTI: MSU; trimethoprim/cephalexin. Croup: dexamethasone. NICE NG91, NG93, NG109, NG143.\n2. Growth: plot centiles; refer if faltering. Development: refer if delay. NICE NG11, NG75.\n3. Emergency: non-blanching rash, meningism, severe breathing difficulty. NICE NG51.' },
-        { label: 'Referral', guidance: 'Emergency: sepsis, meningococcal rash, severe croup. 2WW: safeguarding, developmental concern. Routine: recurrent UTI, poor growth. NICE NG51, NG11.' }
+        { label: '1. Assessment & red flags', guidance: 'ASSESSMENT:\n• Traffic light (NG143) for fever/ill child: green/amber/red. Hydration, activity, urine output. Birth and developmental history if relevant.\n• Red flags: Non-blanching rash, meningism, bulging fontanelle, severe breathing difficulty, shock – emergency. Sepsis, dehydration – urgent. NICE NG51, NG143.' },
+        { label: '2. Management', guidance: 'MANAGEMENT:\n• Fever: paracetamol/ibuprofen; safety-net. AOM: safety-net; amoxicillin if <2y bilateral or systemically unwell. UTI: MSU; trimethoprim/cephalexin. Croup: dexamethasone. NICE NG91, NG93, NG109, NG143.\n• Growth: plot centiles; refer if faltering. Development: refer if delay. NICE NG11, NG75.' },
+        { label: '3. Referral', guidance: 'REFERRAL:\n• Emergency: Non-blanching rash, meningism, sepsis, severe croup, severe dehydration. NICE NG51.\n• 2WW: Safeguarding concern, developmental delay, suspected malignancy.\n• Routine: Recurrent UTI, faltering growth, behavioural/developmental. NICE NG11.' }
       ]
     },
     'renal-urology': {
       id: 'guidance-renal-urology',
       question: 'Renal & Urology (Consultant Standard)',
       options: [
-        { label: 'CKD & LUTS', guidance: 'MANAGEMENT PLAN:\n1. CKD: eGFR, ACR; BP target <140/90 (or <130/80 if proteinuric). SGLT2i if T2DM and eGFR ≥20. Avoid nephrotoxics. Refer if eGFR <30 or rapid decline. NICE NG203.\n2. LUTS: Alpha-blocker; rule out retention. Haematuria: 2WW if visible or non-visible with eGFR <60. NICE NG97, NG12.\n3. UTI: nitrofurantoin/trimethoprim 3 days (women). NICE NG109.' },
-        { label: 'Referral', guidance: '2WW: visible haematuria; non-visible with eGFR <60. Emergency: acute retention, anuria. Routine: BPH not controlled, stone, recurrent UTI. NICE NG12, NG97.' }
+        { label: '1. Assessment & red flags', guidance: 'ASSESSMENT:\n• CKD: eGFR, ACR, BP, electrolytes. Cause if unknown. AKI: volume status, drugs, obstruction.\n• LUTS: voiding diary, retention, haematuria. UTI: MSU before antibiotic if possible.\n• Red flags: Visible haematuria – 2WW. Acute retention, anuria – emergency. NICE NG12, NG97, NG203.' },
+        { label: '2. Management', guidance: 'MANAGEMENT:\n• CKD: BP target <140/90 (or <130/80 if proteinuric). SGLT2i if T2DM and eGFR ≥20. Avoid nephrotoxics. Refer if eGFR <30 or rapid decline. NICE NG203.\n• LUTS: Alpha-blocker (e.g. tamsulosin); rule out retention. UTI: nitrofurantoin/trimethoprim 3 days (women). NICE NG97, NG109.' },
+        { label: '3. Referral', guidance: 'REFERRAL:\n• 2WW: Visible haematuria; non-visible with eGFR <60. NICE NG12, NG97.\n• Emergency: Acute retention, anuria.\n• Routine: BPH not controlled, stone, recurrent UTI, eGFR <30. NICE NG97.' }
       ]
     },
     'women-health': {
       id: 'guidance-women-health',
       question: "Women's Health (Consultant Standard)",
       options: [
-        { label: 'Gynae & contraception', guidance: 'MANAGEMENT PLAN:\n1. HMB: Levonorgestrel IUS first-line; tranexamic acid, NSAID. HRT: oestrogen + progestogen if uterus; review annually. NICE NG23, NG88.\n2. Vaginal infection: Candida – clotrimazole/fluconazole. BV – metronidazole. PID – ofloxacin + metronidazole; refer if severe. NICE NG3.\n3. 2WW: postmenopausal bleeding, suspected cancer. NICE NG12.' },
-        { label: 'Referral', guidance: '2WW: PMB, suspected cancer. Routine: HMB not controlled, endometriosis, contraception complex. NICE NG12, NG88.' }
+        { label: '1. Assessment & red flags', guidance: 'ASSESSMENT:\n• History: LMP, contraception, pregnancy possibility. Bleeding pattern, pain, discharge. Breast: lump, nipple change, family history.\n• Examination: abdominal/pelvic if indicated; breast if lump. Pregnancy test if relevant.\n• Red flags: Postmenopausal bleeding – 2WW. Breast lump with concern – 2WW. Acute pelvic pain, haemodynamically unstable – urgent. NICE NG12, NG88.' },
+        { label: '2. Management', guidance: 'MANAGEMENT:\n• HMB: Levonorgestrel IUS first-line; tranexamic acid, NSAID. HRT: oestrogen + progestogen if uterus; review annually. NICE NG23, NG88.\n• Vaginal infection: Candida – clotrimazole/fluconazole. BV – metronidazole. PID – ofloxacin + metronidazole; refer if severe. NICE NG3.\n• Breast pain: reassurance; simple analgesia. Mastitis: flucloxacillin; empty breast. NICE CKS.' },
+        { label: '3. Referral', guidance: 'REFERRAL:\n• 2WW: Postmenopausal bleeding, suspected cancer, breast lump with concern. NICE NG12.\n• Urgent: Ectopic, torsion, severe PID.\n• Routine: HMB not controlled, endometriosis, contraception complex, recurrent thrush. NICE NG88.' }
       ]
     },
     infectious: {
       id: 'guidance-infectious',
       question: 'Infectious Disease (Consultant Standard)',
       options: [
-        { label: 'Antibiotics & prevention', guidance: 'MANAGEMENT PLAN:\n1. Use local resistance data. Cellulitis: flucloxacillin. CAP: amoxicillin 500 mg tds 5 days. UTI: nitrofurantoin/trimethoprim. Sore throat: penicillin V if FeverPAIN 2–3+. NICE NG138, NG84, NG109.\n2. Viral: no antibiotic for cold, sinusitis <10 days, acute bronchitis. Influenza: oseltamivir if at-risk and <48 h. NICE NG120.\n3. HIV/TB: offer testing if risk; refer if suspected TB. NICE NG33.' },
-        { label: 'Referral', guidance: 'Emergency: sepsis, meningitis. 2WW: HIV positive, TB. Routine: recurrent infection, HIV management. NICE NG51, NG33.' }
+        { label: '1. Assessment & red flags', guidance: 'ASSESSMENT:\n• History: travel, contacts, animals, bites, immunosuppression, recent antibiotics. Severity and focus of infection.\n• Examination: focus (skin, chest, abdomen); sepsis screening (NEWS2, qSOFA).\n• Red flags: Sepsis, meningitis, non-blanching rash – emergency. HIV/TB risk – test and refer. NICE NG51, NG33.' },
+        { label: '2. Management', guidance: 'MANAGEMENT:\n• Use local resistance data. Cellulitis: flucloxacillin. CAP: amoxicillin 500 mg tds 5 days. UTI: nitrofurantoin/trimethoprim. Sore throat: penicillin V if FeverPAIN 2–3+. NICE NG138, NG84, NG109.\n• Viral: no antibiotic for cold, sinusitis <10 days, acute bronchitis. Influenza: oseltamivir if at-risk and <48 h. C. difficile: stop precipitant antibiotic; treat per guidance. NICE NG120.' },
+        { label: '3. Referral', guidance: 'REFERRAL:\n• Emergency: Sepsis, meningitis, severe infection. NICE NG51.\n• 2WW: HIV positive, TB suspected.\n• Routine: Recurrent infection, HIV management, travel medicine, complex infection. NICE NG33.' }
       ]
     },
     neurology: {
       id: 'guidance-neurology',
       question: 'Neurology (Consultant Standard)',
       options: [
-        { label: 'Headache, seizure, stroke', guidance: 'MANAGEMENT PLAN:\n1. Headache: Exclude red flags. Migraine: triptan + NSAID; prophylaxis if ≥8 days/month. Tension: paracetamol/NSAID. NICE NG150.\n2. First seizure: refer. Epilepsy: drug review; driving advice. TIA: aspirin 300 mg then 75 mg; refer all. NICE NG217, NG128.\n3. 2WW: first seizure, suspected MS. Emergency: stroke, meningism. NICE NG12.' },
-        { label: 'Referral', guidance: '2WW: first seizure, suspected MS, Parkinson’s. Emergency: stroke, meningitis. Routine: chronic headache not controlled, neuropathy. NICE NG217, NG71.' }
+        { label: '1. Assessment & red flags', guidance: 'ASSESSMENT:\n• Headache: red flags (thunderclap, progressive, fever, focal neurology). Migraine vs tension pattern. Seizure: first or breakthrough; driving. TIA: ABCD2; stroke mimic.\n• Examination: consciousness, focal signs, fundi, neck stiffness if headache.\n• Red flags: Thunderclap headache, first seizure, suspected stroke/TIA, meningism – urgent/emergency. NICE NG150, NG217, NG128.' },
+        { label: '2. Management', guidance: 'MANAGEMENT:\n• Migraine: triptan + NSAID; prophylaxis if ≥8 days/month. Tension: paracetamol/NSAID. NICE NG150.\n• First seizure: refer. Epilepsy: drug review; driving advice (DVLA). TIA: aspirin 300 mg then 75 mg; refer all. NICE NG217, NG128.\n• Bell’s palsy: steroid within 72 h; eye care. NICE CKS.' },
+        { label: '3. Referral', guidance: 'REFERRAL:\n• 2WW: First seizure, suspected MS, Parkinson’s, brain tumour. NICE NG12.\n• Emergency: Stroke, TIA (same-day assessment), meningitis.\n• Routine: Chronic headache not controlled, epilepsy optimisation, neuropathy. NICE NG217, NG71.' }
       ]
     },
     haematology: {
       id: 'guidance-haematology',
       question: 'Haematology (Consultant Standard)',
       options: [
-        { label: 'Anaemia & anticoagulation', guidance: 'MANAGEMENT PLAN:\n1. Anaemia: Iron studies; ferrous sulfate if deficient. B12: hydroxocobalamin if deficient. Check for cause (bleed, malabsorption). NICE NG24.\n2. Anticoagulation: DOAC for VTE/AF per CHA2DS2-VASc. Consider HAS-BLED. NICE NG196, NG158.\n3. 2WW: unexplained anaemia with red flags, thrombocytopenia. NICE NG24.' },
-        { label: 'Referral', guidance: '2WW: anaemia with red flags. Routine: haemoglobinopathy, clotting disorder, anticoagulation advice. NICE NG24.' }
+        { label: '1. Assessment & red flags', guidance: 'ASSESSMENT:\n• Anaemia: FBC, film, iron studies, B12/folate, haemolysis screen if indicated. Cause: bleed, malabsorption, chronic disease.\n• Anticoagulation: indication, renal function, bleeding risk (HAS-BLED/ORBIT). Thrombosis: Wells, D-dimer.\n• Red flags: Unexplained anaemia with weight loss/bleeding – 2WW. Severe thrombocytopenia, bleeding on anticoagulant – urgent. NICE NG24.' },
+        { label: '2. Management', guidance: 'MANAGEMENT:\n• Iron deficiency: ferrous sulfate; treat cause; recheck Hb. B12: hydroxocobalamin if deficient. NICE NG24.\n• Anticoagulation: DOAC for VTE/AF per NICE NG196, NG158. Warfarin if DOAC unsuitable. Consider HAS-BLED; address modifiable risk. NICE NG196.' },
+        { label: '3. Referral', guidance: 'REFERRAL:\n• 2WW: Unexplained anaemia with red flags, thrombocytopenia, suspected malignancy. NICE NG24.\n• Urgent: Major bleed on anticoagulant, severe cytopenia.\n• Routine: Haemoglobinopathy, clotting disorder, anticoagulation advice, persistent unexplained anaemia. NICE NG24.' }
       ]
     },
     ent: {
       id: 'guidance-ent',
       question: 'ENT (Consultant Standard)',
       options: [
-        { label: 'Throat, ear, nose', guidance: 'MANAGEMENT PLAN:\n1. Sore throat: FeverPAIN/Centor; penicillin V if 2–3+. NICE NG84. Ear: AOM safety-net; topical for otitis externa. Wax: olive oil or sodium bicarbonate; refer if impacted. NICE NG91.\n2. Hearing loss/tinnitus: exclude wax; refer if unilateral or sudden. Vertigo: Epley if BPPV. NICE CKS.\n3. 2WW: hoarseness >3 weeks. NICE NG12.' },
-        { label: 'Referral', guidance: '2WW: hoarseness >3 weeks, suspected cancer. Routine: hearing loss, tinnitus, chronic sinusitis. NICE NG12.' }
+        { label: '1. Assessment & red flags', guidance: 'ASSESSMENT:\n• Throat: FeverPAIN/Centor; duration, dysphagia, stridor. Ear: pain, discharge, hearing, vertigo. Nose: rhinorrhoea, obstruction, smell. Voice: hoarseness duration.\n• Examination: throat, ears, neck nodes. Cranial nerves if facial/voice concern.\n• Red flags: Stridor, difficulty swallowing – urgent. Hoarseness >3 weeks – 2WW. Unilateral deafness, unilateral tinnitus – refer. NICE NG12, NG84.' },
+        { label: '2. Management', guidance: 'MANAGEMENT:\n• Sore throat: penicillin V if FeverPAIN 2–3+; 5–10 days. No antibiotic if 0–1. NICE NG84. Ear: AOM safety-net; topical for otitis externa. Wax: olive oil or sodium bicarbonate; refer if impacted. NICE NG91.\n• Rhinitis: intranasal steroid. Vertigo: Epley if BPPV. NICE CKS.' },
+        { label: '3. Referral', guidance: 'REFERRAL:\n• 2WW: Hoarseness >3 weeks, suspected head and neck cancer. NICE NG12.\n• Urgent: Stridor, quinsy, mastoiditis, sudden sensorineural hearing loss.\n• Routine: Hearing loss, tinnitus, chronic sinusitis, glue ear, recurrent tonsillitis. NICE NG12.' }
       ]
     },
     'procedures-general': {
       id: 'guidance-procedures',
       question: 'Procedures & General (Consultant Standard)',
       options: [
-        { label: 'Safeguarding & capacity', guidance: 'MANAGEMENT PLAN:\n1. Safeguarding: Follow local policy; document concerns; refer if child/vulnerable adult at risk. NICE NG76.\n2. Capacity: Assess per MCA; best interests if lacking capacity. DoLS/LPS for deprivation of liberty. NICE NG108.\n3. Fit note: Duration; phased return if appropriate. Safety-net and review. NICE NG12.' },
-        { label: 'Referral', guidance: 'Safeguarding to social care/police as indicated. Capacity: Court of Protection if complex. NICE NG108.' }
+        { label: '1. Assessment & safety', guidance: 'ASSESSMENT:\n• Safeguarding: concerns for child or vulnerable adult; document; follow local policy. NICE NG76.\n• Capacity: assess per MCA; best interests if lacking capacity; DoLS/LPS if deprivation of liberty. NICE NG108.\n• Consent: capacity, information given, voluntary. Fit note: duration, phased return, restrictions. NICE NG12.' },
+        { label: '2. Management', guidance: 'MANAGEMENT:\n• Safeguarding: refer to social care/police as per policy; do not leave at risk. Capacity: support decision-making; involve family/IMCA if appropriate.\n• Procedures: aseptic technique; consent; document. Bloods/cannulation: follow local policy. Catheter: indication; trial without catheter if appropriate. NICE NG108.' },
+        { label: '3. Referral', guidance: 'REFERRAL:\n• Safeguarding: social care, police, named GP. Capacity: Court of Protection if complex or dispute.\n• Clinical: refer as per indication (e.g. smear to colposcopy if abnormal). NICE NG108.' }
       ]
     },
     other: {
       id: 'guidance-other',
       question: 'Clinical Guidance (Consultant Standard)',
       options: [
-        { label: 'Assessment & action', guidance: 'MANAGEMENT PLAN:\n1. Assessment: Focused history and examination; exclude NICE red flags for the relevant system.\n2. Management: Evidence-based treatment per NICE/BNF; lifestyle and patient education; shared decision-making.\n3. Safety-net: Clear advice on when to reattend or seek urgent care. Follow-up to assess response. NICE CKS.' },
-        { label: 'Referral', guidance: '2WW if cancer suspected. Urgent if rapidly progressive or high risk. Ensure appropriate work-up before referral. NICE NG12.' }
+        { label: '1. Assessment & red flags', guidance: 'ASSESSMENT:\n• Focused history and examination for the presenting system. Exclude NICE-defined red flags for that area.\n• Relevant investigations: FBC, U&E, LFT, etc. as indicated. Document findings and differential.\n• Safety-net: when to reattend or seek urgent care. NICE CKS.' },
+        { label: '2. Management', guidance: 'MANAGEMENT:\n• Evidence-based treatment per NICE/BNF. Lifestyle and patient education. Shared decision-making.\n• Address polypharmacy and deprescribing if relevant. Consider social prescribing and community support.\n• Follow-up to assess response; review interval appropriate to condition. NICE CKS.' },
+        { label: '3. Referral', guidance: 'REFERRAL:\n• 2WW if cancer suspected. Urgent if rapidly progressive or high risk. Routine for elective conditions.\n• Ensure appropriate primary care work-up before referral to avoid rejection. Document referral reason and safety-net. NICE NG12.' }
       ]
     }
   };
