@@ -335,7 +335,7 @@
       }]
     },
     {
-      "keywords": ["prolactinoma", "hyperprolactinaemia", "raised prolactin"],
+      "keywords": ["prolactinoma", "hyperprolactinaemia", "raised prolactin", "prolactin – raised", "prolactin raised"],
       "steps": [{
         "id": "prolactinoma-mgt",
         "question": "Prolactinoma / hyperprolactinaemia",
@@ -398,6 +398,208 @@
         "type": "dropdown",
         "options": [
           { "label": "Assessment & treatment", "guidance": "MANAGEMENT PLAN:\n1. Corrected calcium; PTH, vitamin D, Mg. Causes: hypoparathyroidism, vitamin D deficiency, renal failure, pancreatitis. Acute symptomatic: IV calcium gluconate.\n2. Chronic: calcium and vitamin D supplementation; alfacalcidol if hypoparathyroid. Refer endocrinology if persistent or hypoparathyroidism. NICE CKS, Local formulary." }
+        ]
+      }]
+    },
+    {
+      "keywords": ["calcium – raised", "calcium – low", "calcium raised", "calcium low"],
+      "steps": [{
+        "id": "calcium-mgt",
+        "question": "Calcium disorder",
+        "type": "dropdown",
+        "options": [
+          { "label": "Raised", "guidance": "MANAGEMENT PLAN:\n1. Corrected calcium; PTH, vitamin D. Causes: primary hyperparathyroidism, malignancy, vitamin D excess. Hydration; avoid calcium/vitamin D supplements. Refer for interpretation. NICE CKS." },
+          { "label": "Low", "guidance": "MANAGEMENT PLAN:\n1. Corrected calcium; PTH, vitamin D, Mg. Acute symptomatic: IV calcium gluconate. Chronic: calcium and vitamin D; alfacalcidol if hypoparathyroid. Refer if persistent. NICE CKS." }
+        ]
+      }]
+    },
+    {
+      "keywords": ["osteoporosis", "osteomalacia", "paget's disease", "paget disease", "paget"],
+      "steps": [{
+        "id": "bone-mgt",
+        "question": "Bone / osteoporosis",
+        "type": "dropdown",
+        "options": [
+          { "label": "Osteoporosis – fracture / DEXA", "guidance": "MANAGEMENT PLAN:\n1. FRAX; DEXA if indicated. Calcium + vitamin D. First-line: oral bisphosphonate (alendronate/risedronate); ensure correct administration. Consider IV zoledronate if oral not tolerated. NICE NG146, CKS." },
+          { "label": "Osteoporosis – denosumab / teriparatide", "guidance": "MANAGEMENT PLAN:\n1. Denosumab: 6-monthly SC; do not miss doses (rebound fracture risk). Monitor calcium/vitamin D. Teriparatide: specialist; limited duration. NICE NG146, CKS." },
+          { "label": "Osteomalacia / Paget's", "guidance": "MANAGEMENT PLAN:\n1. Osteomalacia: vitamin D repletion; treat cause. Paget's: refer or bisphosphonate per specialist. NICE CKS." }
+        ]
+      }]
+    },
+    {
+      "keywords": ["bisphosphonate – holiday", "bisphosphonate holiday", "drug holiday bisphosphonate"],
+      "steps": [{
+        "id": "bisphosphonate-holiday-mgt",
+        "question": "Bisphosphonate holiday",
+        "type": "dropdown",
+        "options": [
+          { "label": "When to consider", "guidance": "MANAGEMENT PLAN:\n1. After 5 years oral (or 3 years IV) reassess fracture risk. Consider holiday if low–moderate risk; continue if high risk or previous vertebral fracture.\n2. Recheck FRAX/DEXA after holiday; restart if risk increases. NICE NG146, CKS." }
+        ]
+      }]
+    },
+    {
+      "keywords": ["graves", "graves' disease", "graves disease"],
+      "steps": [{
+        "id": "graves-mgt",
+        "question": "Graves' disease",
+        "type": "dropdown",
+        "options": [
+          { "label": "Refer & management", "guidance": "MANAGEMENT PLAN:\n1. Refer endocrinology (antithyroid drugs, RAI, or surgery). Do not start antithyroid drugs without specialist if orbitopathy risk. Beta-blocker for symptoms.\n2. Monitor TFTs; check TSI/TRab if indicated. NICE NG145, CKS." }
+        ]
+      }]
+    },
+    {
+      "keywords": ["thyroiditis", "subacute thyroiditis", "de quervain", "postpartum thyroiditis"],
+      "steps": [{
+        "id": "thyroiditis-mgt",
+        "question": "Thyroiditis",
+        "type": "dropdown",
+        "options": [
+          { "label": "Assessment & referral", "guidance": "MANAGEMENT PLAN:\n1. Painful (subacute): often viral; NSAID; beta-blocker if thyrotoxic. Usually self-limiting. Refer if severe or prolonged.\n2. Painless/postpartum: monitor TFTs; treat hypo or hyper as per NICE NG145. NICE CKS." }
+        ]
+      }]
+    },
+    {
+      "keywords": ["subclinical hyperthyroidism", "subclinical hyperthyroid"],
+      "steps": [{
+        "id": "subclinical-hyper-mgt",
+        "question": "Subclinical hyperthyroidism",
+        "type": "dropdown",
+        "options": [
+          { "label": "Assessment & referral", "guidance": "MANAGEMENT PLAN:\n1. TSH persistently <0.1: assess for atrial fibrillation, osteoporosis; consider referral. TSH 0.1–0.4: repeat in 3–6 months; treat if symptomatic or high risk. NICE NG145, CKS." }
+        ]
+      }]
+    },
+    {
+      "keywords": ["hyperthyroidism", "hyperthyroid"],
+      "steps": [{
+        "id": "hyperthyroidism-mgt",
+        "question": "Hyperthyroidism",
+        "type": "dropdown",
+        "options": [
+          { "label": "Referral", "guidance": "MANAGEMENT PLAN:\n1. Refer endocrinology for confirmation and treatment (antithyroid drugs, RAI, or surgery). Beta-blocker for symptom relief. Do not start long-term antithyroid without specialist if Graves/orbitopathy.\n2. Monitor TFTs. NICE NG145, CKS." }
+        ]
+      }]
+    },
+    {
+      "keywords": ["hypoglycaemia", "hypoglycemic", "hypoglycaemic"],
+      "steps": [{
+        "id": "hypoglycaemia-mgt",
+        "question": "Hypoglycaemia",
+        "type": "dropdown",
+        "options": [
+          { "label": "Diabetic", "guidance": "MANAGEMENT PLAN:\n1. Immediate: 15–20 g fast-acting glucose; recheck in 15 min; repeat if needed. Review medication (sulfonylurea, insulin), diet, driving. Sick-day rules. NICE NG17, NG28." },
+          { "label": "Non-diabetic", "guidance": "MANAGEMENT PLAN:\n1. Confirm Whipple’s triad; fasting glucose, insulin, C-peptide, sulfonylurea screen. Consider insulinoma, adrenal insufficiency, drugs. Refer endocrinology. NICE CKS." }
+        ]
+      }]
+    },
+    {
+      "keywords": ["metabolic syndrome"],
+      "steps": [{
+        "id": "metabolic-syndrome-mgt",
+        "question": "Metabolic syndrome",
+        "type": "dropdown",
+        "options": [
+          { "label": "Assessment & management", "guidance": "MANAGEMENT PLAN:\n1. Central obesity plus two of: raised TG, low HDL, raised BP, raised fasting glucose. Address each component: lifestyle (weight, activity), statin, antihypertensive, diabetes prevention. NICE CKS, NG28." }
+        ]
+      }]
+    },
+    {
+      "keywords": ["insulinoma"],
+      "steps": [{
+        "id": "insulinoma-mgt",
+        "question": "Insulinoma",
+        "type": "dropdown",
+        "options": [
+          { "label": "Suspicion & referral", "guidance": "MANAGEMENT PLAN:\n1. Suspect in fasting hypoglycaemia with Whipple’s triad. 72 h fast (supervised); insulin, C-peptide, glucose; exclude sulfonylurea. Refer endocrinology for imaging and surgery.\n2. Do not delay referral. NICE CKS, Local formulary." }
+        ]
+      }]
+    },
+    {
+      "keywords": ["carcinoid syndrome", "carcinoid"],
+      "steps": [{
+        "id": "carcinoid-mgt",
+        "question": "Carcinoid syndrome",
+        "type": "dropdown",
+        "options": [
+          { "label": "Suspicion & referral", "guidance": "MANAGEMENT PLAN:\n1. Flushing, diarrhoea, wheeze, right heart; 24 h urinary 5-HIAA or chromogranin A. Refer oncology/endocrinology for imaging (NET) and somatostatin analogue. NICE CKS, Local formulary." }
+        ]
+      }]
+    },
+    {
+      "keywords": ["congenital adrenal hyperplasia", "cah", "adrenal hyperplasia"],
+      "steps": [{
+        "id": "cah-mgt",
+        "question": "Congenital adrenal hyperplasia",
+        "type": "dropdown",
+        "options": [
+          { "label": "Management & referral", "guidance": "MANAGEMENT PLAN:\n1. Glucocorticoid (and mineralocorticoid if salt-wasting); stress dosing. Monitor growth, electrolytes, 17-OHP/androgens. Refer endocrinology for long-term care.\n2. Sick-day rules. NICE CKS, Local formulary." }
+        ]
+      }]
+    },
+    {
+      "keywords": ["multiple endocrine neoplasia", "men1", "men2", "men 1", "men 2"],
+      "steps": [{
+        "id": "men-mgt",
+        "question": "Multiple endocrine neoplasia",
+        "type": "dropdown",
+        "options": [
+          { "label": "Surveillance & referral", "guidance": "MANAGEMENT PLAN:\n1. MEN1: parathyroid, pituitary, pancreas (including insulinoma/gastrinoma). MEN2: MTC, phaeochromocytoma, parathyroid. Refer specialist genetics/endocrinology for screening and surveillance. NICE CKS, Local formulary." }
+        ]
+      }]
+    },
+    {
+      "keywords": ["hyperparathyroidism", "primary hyperparathyroidism"],
+      "steps": [{
+        "id": "hyperparathyroidism-mgt",
+        "question": "Hyperparathyroidism",
+        "type": "dropdown",
+        "options": [
+          { "label": "Assessment & referral", "guidance": "MANAGEMENT PLAN:\n1. Raised PTH with raised or high-normal calcium. Exclude renal failure. Refer endocrinology/surgery for imaging and parathyroidectomy if indicated. Hydration; avoid thiazides. NICE CKS." }
+        ]
+      }]
+    },
+    {
+      "keywords": ["hypoparathyroidism"],
+      "steps": [{
+        "id": "hypoparathyroidism-mgt",
+        "question": "Hypoparathyroidism",
+        "type": "dropdown",
+        "options": [
+          { "label": "Management", "guidance": "MANAGEMENT PLAN:\n1. Calcium and vitamin D (alfacalcidol/calcitriol); target calcium in low-normal range. Monitor calcium, phosphate, renal function. Refer endocrinology. NICE CKS." }
+        ]
+      }]
+    },
+    {
+      "keywords": ["pituitary – adenoma", "pituitary adenoma", "pituitary tumour"],
+      "steps": [{
+        "id": "pituitary-adenoma-mgt",
+        "question": "Pituitary adenoma",
+        "type": "dropdown",
+        "options": [
+          { "label": "Referral & surveillance", "guidance": "MANAGEMENT PLAN:\n1. Functioning vs non-functioning; hormone panel; visual fields if macroadenoma. Refer endocrinology/neurosurgery. Replace deficient axes; sick-day rules if cortisol deficient. NICE CKS." }
+        ]
+      }]
+    },
+    {
+      "keywords": ["testosterone deficiency", "low testosterone", "hypogonadism"],
+      "steps": [{
+        "id": "testosterone-mgt",
+        "question": "Testosterone deficiency",
+        "type": "dropdown",
+        "options": [
+          { "label": "Assessment & referral", "guidance": "MANAGEMENT PLAN:\n1. Confirm with early-morning testosterone (repeat if borderline); LH/FSH to distinguish primary vs secondary. Exclude reversible causes. Refer urology/endocrinology for replacement if indicated. NICE NG23, CKS." }
+        ]
+      }]
+    },
+    {
+      "keywords": ["prescribing steroids", "steroid therapy", "key considerations when prescribing", "dmards", "steroid therapy and covid"],
+      "steps": [{
+        "id": "steroid-prescribing-mgt",
+        "question": "Steroid prescribing / long-term use",
+        "type": "dropdown",
+        "options": [
+          { "label": "Key considerations", "guidance": "MANAGEMENT PLAN:\n1. Lowest effective dose; bone protection (calcium, vitamin D; bisphosphonate if high risk). Monitor BP, glucose, weight. Steroid card and sick-day rules (double dose when unwell; emergency hydrocortisone if unable to take oral).\n2. Consider PCP prophylaxis if immunosuppressed. Taper when stopping. NICE CKS, Local formulary." }
         ]
       }]
     },

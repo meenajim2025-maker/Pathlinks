@@ -1,6 +1,6 @@
 {
   "source": "Learning library + NICE CKS/NG; management steps from guidelines",
-  "generated": "2026-02-21T06:39:13.035Z",
+  "generated": "2026-02-21T06:53:05.332Z",
   "totalTools": 1920,
   "systems": [
     {
@@ -13433,21 +13433,13 @@
           "evidence": "Management per NICE CKS and Local formulary.",
           "steps": [
             {
-              "id": "guidance-gastroenterology",
-              "question": "Gastroenterology (Consultant Standard)",
+              "id": "carcinoid-mgt",
+              "question": "Carcinoid syndrome",
               "type": "dropdown",
               "options": [
                 {
-                  "label": "1. Assessment & red flags",
-                  "guidance": "ASSESSMENT:\n• History: dysphagia, weight loss, bleeding, change in bowel habit, pain, reflux, jaundice. Drug history (NSAIDs, PPI).\n• Examination: abdomen, mass, organomegaly; rectal if indicated. FBC, U&E, LFT, coeliac serology, FIT if ≥50 with change in bowel habit or IDA.\n• Red flags: Dysphagia, unexplained anaemia, rectal bleeding + concern, weight loss – 2WW. Acute abdomen – emergency. NICE NG12, NG20."
-                },
-                {
-                  "label": "2. Management",
-                  "guidance": "MANAGEMENT:\n• Dyspepsia: PPI 4–8 weeks; H. pylori test and treat if positive. IBS: dietary advice, mebeverine; low FODMAP if needed. Constipation: macrogol; stimulant if resistant. Diarrhoea: exclude C difficile if recent antibiotic; loperamide prn. NICE NG61, NG12.\n• Liver: LFT pattern; viral serology, ferritin if indicated. Avoid alcohol and hepatotoxics. NICE CKS."
-                },
-                {
-                  "label": "3. Referral",
-                  "guidance": "REFERRAL:\n• 2WW: Dysphagia, unexplained anaemia, rectal bleeding + red flags, FIT+. NICE NG12.\n• Emergency: Acute abdomen, GI bleed, pancreatitis, severe colitis.\n• Routine: IBD, refractory IBS, liver disease, Barrett’s surveillance. NICE NG12."
+                  "label": "Suspicion & referral",
+                  "guidance": "MANAGEMENT PLAN:\n1. Flushing, diarrhoea, wheeze, right heart; 24 h urinary 5-HIAA or chromogranin A. Refer oncology/endocrinology for imaging (NET) and somatostatin analogue. NICE CKS, Local formulary."
                 }
               ]
             }
@@ -16982,21 +16974,13 @@
           "evidence": "Management per NICE CKS and Local formulary.",
           "steps": [
             {
-              "id": "guidance-endocrinology",
-              "question": "Endocrinology (Consultant Standard)",
+              "id": "bisphosphonate-holiday-mgt",
+              "question": "Bisphosphonate holiday",
               "type": "dropdown",
               "options": [
                 {
-                  "label": "1. Assessment & red flags",
-                  "guidance": "ASSESSMENT:\n• Tailor to the condition: history, examination, and investigations relevant to the endocrine presentation (e.g. thyroid: TFTs, TPO; diabetes: HbA1c, foot check; adrenal: electrolytes, short synacthen; calcium/bone: corrected Ca, PTH, vitamin D).\n• Red flags: Thyroid storm, severe hypo/hyperglycaemia, adrenal crisis, severe hypercalcaemia – emergency. NICE CKS, NG28, NG145."
-                },
-                {
-                  "label": "2. Management",
-                  "guidance": "MANAGEMENT:\n• Follow NICE CKS and Local formulary for the specific condition. Do not apply thyroid or diabetes advice to non-thyroid/non-diabetes topics (e.g. Cushing’s, Conn’s, steroid, pituitary have their own pathways).\n• General principles: sick-day rules for anyone on glucocorticoids; do not stop steroids abruptly; treat hypo-/hyperglycaemia and electrolyte disturbance as indicated. NICE CKS."
-                },
-                {
-                  "label": "3. Referral",
-                  "guidance": "REFERRAL:\n• 2WW: Pituitary/adrenal crisis, severe thyroid eye disease, suspected phaeochromocytoma crisis.\n• Urgent: Adrenal crisis, thyroid storm, severe DKA/HHS, severe hypercalcaemia.\n• Routine: Hyperthyroid, goitre/nodule with concern, type 1 diabetes, pituitary/adrenal/calcium disorders. Use topic-specific pathway where available. NICE NG12, NG145, NG28."
+                  "label": "When to consider",
+                  "guidance": "MANAGEMENT PLAN:\n1. After 5 years oral (or 3 years IV) reassess fracture risk. Consider holiday if low–moderate risk; continue if high risk or previous vertebral fracture.\n2. Recheck FRAX/DEXA after holiday; restart if risk increases. NICE NG146, CKS."
                 }
               ]
             }
@@ -17014,17 +16998,13 @@
           "evidence": "We continue to work in very challenging times and there remains considerable uncertainty about how to support and advise individuals with significant comorbidities or on certain medications about their risk of COVID-19 infection. In this brief podcast, I'm [Name], the BSR, includ…",
           "steps": [
             {
-              "id": "bp-assessment",
-              "question": "Assessment (Best Practice)",
+              "id": "steroid-prescribing-mgt",
+              "question": "Steroid prescribing / long-term use",
               "type": "dropdown",
               "options": [
                 {
-                  "label": "Standard Assessment",
-                  "guidance": "MANAGEMENT PLAN:\n1. History: Assess onset, severity, and triggers. Specifically exclude organic red flags (weight loss, night pain, fever, night sweats).\n2. Review: Family history and current medications.\n3. Differential: Consider most likely vs most serious diagnosis. Use validated scores (e.g. Centor, Wells, qSOFA) if applicable."
-                },
-                {
-                  "label": "Examination & Vitals",
-                  "guidance": "MANAGEMENT PLAN:\n1. Physical Exam: Perform focused physical exam (e.g. MSK, Neuro, Respiratory).\n2. Vitals: Check NEWS2 if systemically unwell.\n3. Documentation: Document findings and clinical rationale clearly."
+                  "label": "Key considerations",
+                  "guidance": "MANAGEMENT PLAN:\n1. Lowest effective dose; bone protection (calcium, vitamin D; bisphosphonate if high risk). Monitor BP, glucose, weight. Steroid card and sick-day rules (double dose when unwell; emergency hydrocortisone if unable to take oral).\n2. Consider PCP prophylaxis if immunosuppressed. Taper when stopping. NICE CKS, Local formulary."
                 }
               ]
             }
@@ -17043,13 +17023,13 @@
           "evidence": "We continue to work in very challenging times and there remains considerable uncertainty about how to support and advise individuals with significant comorbidities or on certain medications about their risk of COVID-19 infection. In this brief podcast, I'm [Name], the BSR, includ…",
           "steps": [
             {
-              "id": "endo-mgmt",
-              "question": "Endocrinology (Best Practice)",
+              "id": "steroid-prescribing-mgt",
+              "question": "Steroid prescribing / long-term use",
               "type": "dropdown",
               "options": [
                 {
-                  "label": "Hormone & Metabolic Review",
-                  "guidance": "MANAGEMENT PLAN:\n1. Thyroid: If abnormal TFTs, repeat with TPO ab; treat or refer per NICE NG145. Avoid routine T3.\n2. Diabetes: HbA1c target 48–53 mmol/mol; metformin first-line; add SGLT2i if CVD/HF/CKD. NICE NG28.\n3. Adrenal: Do not stop steroids abruptly; sick-day rules. Refer if Addison’s suspected.\n4. Safety-net: Red flags – thyroid storm, severe hypoglycaemia, DKA. NICE CKS."
+                  "label": "Key considerations",
+                  "guidance": "MANAGEMENT PLAN:\n1. Lowest effective dose; bone protection (calcium, vitamin D; bisphosphonate if high risk). Monitor BP, glucose, weight. Steroid card and sick-day rules (double dose when unwell; emergency hydrocortisone if unable to take oral).\n2. Consider PCP prophylaxis if immunosuppressed. Taper when stopping. NICE CKS, Local formulary."
                 }
               ]
             }
@@ -17068,13 +17048,13 @@
           "evidence": "We continue to work in very challenging times and there remains considerable uncertainty about how to support and advise individuals with significant comorbidities or on certain medications about their risk of COVID-19 infection. In this brief podcast, I'm [Name], the BSR, includ…",
           "steps": [
             {
-              "id": "bp-referral",
-              "question": "Referral & Follow-up (Best Practice)",
+              "id": "steroid-prescribing-mgt",
+              "question": "Steroid prescribing / long-term use",
               "type": "dropdown",
               "options": [
                 {
-                  "label": "Referral & Clinical Triage",
-                  "guidance": "MANAGEMENT PLAN:\n1. Triage: Refer via 2WW if malignancy suspected. Use 'Urgent' (within 2 weeks) for rapidly progressive non-malignant disease.\n2. Diagnostics: Ensure all mandatory primary care work-up (e.g. CT, Bloods, Scans) is completed before referral to prevent rejection.\n3. Safety-net: Ensure the patient understands the expected waiting time and knows who to contact if symptoms escalate."
+                  "label": "Key considerations",
+                  "guidance": "MANAGEMENT PLAN:\n1. Lowest effective dose; bone protection (calcium, vitamin D; bisphosphonate if high risk). Monitor BP, glucose, weight. Steroid card and sick-day rules (double dose when unwell; emergency hydrocortisone if unable to take oral).\n2. Consider PCP prophylaxis if immunosuppressed. Taper when stopping. NICE CKS, Local formulary."
                 }
               ]
             }
@@ -17091,21 +17071,17 @@
           "evidence": "Management per NICE CKS and Local formulary.",
           "steps": [
             {
-              "id": "guidance-endocrinology",
-              "question": "Endocrinology (Consultant Standard)",
+              "id": "calcium-mgt",
+              "question": "Calcium disorder",
               "type": "dropdown",
               "options": [
                 {
-                  "label": "1. Assessment & red flags",
-                  "guidance": "ASSESSMENT:\n• Tailor to the condition: history, examination, and investigations relevant to the endocrine presentation (e.g. thyroid: TFTs, TPO; diabetes: HbA1c, foot check; adrenal: electrolytes, short synacthen; calcium/bone: corrected Ca, PTH, vitamin D).\n• Red flags: Thyroid storm, severe hypo/hyperglycaemia, adrenal crisis, severe hypercalcaemia – emergency. NICE CKS, NG28, NG145."
+                  "label": "Raised",
+                  "guidance": "MANAGEMENT PLAN:\n1. Corrected calcium; PTH, vitamin D. Causes: primary hyperparathyroidism, malignancy, vitamin D excess. Hydration; avoid calcium/vitamin D supplements. Refer for interpretation. NICE CKS."
                 },
                 {
-                  "label": "2. Management",
-                  "guidance": "MANAGEMENT:\n• Follow NICE CKS and Local formulary for the specific condition. Do not apply thyroid or diabetes advice to non-thyroid/non-diabetes topics (e.g. Cushing’s, Conn’s, steroid, pituitary have their own pathways).\n• General principles: sick-day rules for anyone on glucocorticoids; do not stop steroids abruptly; treat hypo-/hyperglycaemia and electrolyte disturbance as indicated. NICE CKS."
-                },
-                {
-                  "label": "3. Referral",
-                  "guidance": "REFERRAL:\n• 2WW: Pituitary/adrenal crisis, severe thyroid eye disease, suspected phaeochromocytoma crisis.\n• Urgent: Adrenal crisis, thyroid storm, severe DKA/HHS, severe hypercalcaemia.\n• Routine: Hyperthyroid, goitre/nodule with concern, type 1 diabetes, pituitary/adrenal/calcium disorders. Use topic-specific pathway where available. NICE NG12, NG145, NG28."
+                  "label": "Low",
+                  "guidance": "MANAGEMENT PLAN:\n1. Corrected calcium; PTH, vitamin D, Mg. Acute symptomatic: IV calcium gluconate. Chronic: calcium and vitamin D; alfacalcidol if hypoparathyroid. Refer if persistent. NICE CKS."
                 }
               ]
             }
@@ -17121,21 +17097,17 @@
           "evidence": "Management per NICE CKS and Local formulary.",
           "steps": [
             {
-              "id": "guidance-endocrinology",
-              "question": "Endocrinology (Consultant Standard)",
+              "id": "calcium-mgt",
+              "question": "Calcium disorder",
               "type": "dropdown",
               "options": [
                 {
-                  "label": "1. Assessment & red flags",
-                  "guidance": "ASSESSMENT:\n• Tailor to the condition: history, examination, and investigations relevant to the endocrine presentation (e.g. thyroid: TFTs, TPO; diabetes: HbA1c, foot check; adrenal: electrolytes, short synacthen; calcium/bone: corrected Ca, PTH, vitamin D).\n• Red flags: Thyroid storm, severe hypo/hyperglycaemia, adrenal crisis, severe hypercalcaemia – emergency. NICE CKS, NG28, NG145."
+                  "label": "Raised",
+                  "guidance": "MANAGEMENT PLAN:\n1. Corrected calcium; PTH, vitamin D. Causes: primary hyperparathyroidism, malignancy, vitamin D excess. Hydration; avoid calcium/vitamin D supplements. Refer for interpretation. NICE CKS."
                 },
                 {
-                  "label": "2. Management",
-                  "guidance": "MANAGEMENT:\n• Follow NICE CKS and Local formulary for the specific condition. Do not apply thyroid or diabetes advice to non-thyroid/non-diabetes topics (e.g. Cushing’s, Conn’s, steroid, pituitary have their own pathways).\n• General principles: sick-day rules for anyone on glucocorticoids; do not stop steroids abruptly; treat hypo-/hyperglycaemia and electrolyte disturbance as indicated. NICE CKS."
-                },
-                {
-                  "label": "3. Referral",
-                  "guidance": "REFERRAL:\n• 2WW: Pituitary/adrenal crisis, severe thyroid eye disease, suspected phaeochromocytoma crisis.\n• Urgent: Adrenal crisis, thyroid storm, severe DKA/HHS, severe hypercalcaemia.\n• Routine: Hyperthyroid, goitre/nodule with concern, type 1 diabetes, pituitary/adrenal/calcium disorders. Use topic-specific pathway where available. NICE NG12, NG145, NG28."
+                  "label": "Low",
+                  "guidance": "MANAGEMENT PLAN:\n1. Corrected calcium; PTH, vitamin D, Mg. Acute symptomatic: IV calcium gluconate. Chronic: calcium and vitamin D; alfacalcidol if hypoparathyroid. Refer if persistent. NICE CKS."
                 }
               ]
             }
@@ -17177,21 +17149,13 @@
           "evidence": "Management per NICE CKS and Local formulary.",
           "steps": [
             {
-              "id": "guidance-endocrinology",
-              "question": "Endocrinology (Consultant Standard)",
+              "id": "carcinoid-mgt",
+              "question": "Carcinoid syndrome",
               "type": "dropdown",
               "options": [
                 {
-                  "label": "1. Assessment & red flags",
-                  "guidance": "ASSESSMENT:\n• Tailor to the condition: history, examination, and investigations relevant to the endocrine presentation (e.g. thyroid: TFTs, TPO; diabetes: HbA1c, foot check; adrenal: electrolytes, short synacthen; calcium/bone: corrected Ca, PTH, vitamin D).\n• Red flags: Thyroid storm, severe hypo/hyperglycaemia, adrenal crisis, severe hypercalcaemia – emergency. NICE CKS, NG28, NG145."
-                },
-                {
-                  "label": "2. Management",
-                  "guidance": "MANAGEMENT:\n• Follow NICE CKS and Local formulary for the specific condition. Do not apply thyroid or diabetes advice to non-thyroid/non-diabetes topics (e.g. Cushing’s, Conn’s, steroid, pituitary have their own pathways).\n• General principles: sick-day rules for anyone on glucocorticoids; do not stop steroids abruptly; treat hypo-/hyperglycaemia and electrolyte disturbance as indicated. NICE CKS."
-                },
-                {
-                  "label": "3. Referral",
-                  "guidance": "REFERRAL:\n• 2WW: Pituitary/adrenal crisis, severe thyroid eye disease, suspected phaeochromocytoma crisis.\n• Urgent: Adrenal crisis, thyroid storm, severe DKA/HHS, severe hypercalcaemia.\n• Routine: Hyperthyroid, goitre/nodule with concern, type 1 diabetes, pituitary/adrenal/calcium disorders. Use topic-specific pathway where available. NICE NG12, NG145, NG28."
+                  "label": "Suspicion & referral",
+                  "guidance": "MANAGEMENT PLAN:\n1. Flushing, diarrhoea, wheeze, right heart; 24 h urinary 5-HIAA or chromogranin A. Refer oncology/endocrinology for imaging (NET) and somatostatin analogue. NICE CKS, Local formulary."
                 }
               ]
             }
@@ -17208,21 +17172,13 @@
           "evidence": "Management per NICE CKS and Local formulary.",
           "steps": [
             {
-              "id": "guidance-endocrinology",
-              "question": "Endocrinology (Consultant Standard)",
+              "id": "cah-mgt",
+              "question": "Congenital adrenal hyperplasia",
               "type": "dropdown",
               "options": [
                 {
-                  "label": "1. Assessment & red flags",
-                  "guidance": "ASSESSMENT:\n• Tailor to the condition: history, examination, and investigations relevant to the endocrine presentation (e.g. thyroid: TFTs, TPO; diabetes: HbA1c, foot check; adrenal: electrolytes, short synacthen; calcium/bone: corrected Ca, PTH, vitamin D).\n• Red flags: Thyroid storm, severe hypo/hyperglycaemia, adrenal crisis, severe hypercalcaemia – emergency. NICE CKS, NG28, NG145."
-                },
-                {
-                  "label": "2. Management",
-                  "guidance": "MANAGEMENT:\n• Follow NICE CKS and Local formulary for the specific condition. Do not apply thyroid or diabetes advice to non-thyroid/non-diabetes topics (e.g. Cushing’s, Conn’s, steroid, pituitary have their own pathways).\n• General principles: sick-day rules for anyone on glucocorticoids; do not stop steroids abruptly; treat hypo-/hyperglycaemia and electrolyte disturbance as indicated. NICE CKS."
-                },
-                {
-                  "label": "3. Referral",
-                  "guidance": "REFERRAL:\n• 2WW: Pituitary/adrenal crisis, severe thyroid eye disease, suspected phaeochromocytoma crisis.\n• Urgent: Adrenal crisis, thyroid storm, severe DKA/HHS, severe hypercalcaemia.\n• Routine: Hyperthyroid, goitre/nodule with concern, type 1 diabetes, pituitary/adrenal/calcium disorders. Use topic-specific pathway where available. NICE NG12, NG145, NG28."
+                  "label": "Management & referral",
+                  "guidance": "MANAGEMENT PLAN:\n1. Glucocorticoid (and mineralocorticoid if salt-wasting); stress dosing. Monitor growth, electrolytes, 17-OHP/androgens. Refer endocrinology for long-term care.\n2. Sick-day rules. NICE CKS, Local formulary."
                 }
               ]
             }
@@ -18048,21 +18004,13 @@
           "evidence": "Management per NICE CKS and Local formulary.",
           "steps": [
             {
-              "id": "guidance-endocrinology",
-              "question": "Endocrinology (Consultant Standard)",
+              "id": "graves-mgt",
+              "question": "Graves' disease",
               "type": "dropdown",
               "options": [
                 {
-                  "label": "1. Assessment & red flags",
-                  "guidance": "ASSESSMENT:\n• Tailor to the condition: history, examination, and investigations relevant to the endocrine presentation (e.g. thyroid: TFTs, TPO; diabetes: HbA1c, foot check; adrenal: electrolytes, short synacthen; calcium/bone: corrected Ca, PTH, vitamin D).\n• Red flags: Thyroid storm, severe hypo/hyperglycaemia, adrenal crisis, severe hypercalcaemia – emergency. NICE CKS, NG28, NG145."
-                },
-                {
-                  "label": "2. Management",
-                  "guidance": "MANAGEMENT:\n• Follow NICE CKS and Local formulary for the specific condition. Do not apply thyroid or diabetes advice to non-thyroid/non-diabetes topics (e.g. Cushing’s, Conn’s, steroid, pituitary have their own pathways).\n• General principles: sick-day rules for anyone on glucocorticoids; do not stop steroids abruptly; treat hypo-/hyperglycaemia and electrolyte disturbance as indicated. NICE CKS."
-                },
-                {
-                  "label": "3. Referral",
-                  "guidance": "REFERRAL:\n• 2WW: Pituitary/adrenal crisis, severe thyroid eye disease, suspected phaeochromocytoma crisis.\n• Urgent: Adrenal crisis, thyroid storm, severe DKA/HHS, severe hypercalcaemia.\n• Routine: Hyperthyroid, goitre/nodule with concern, type 1 diabetes, pituitary/adrenal/calcium disorders. Use topic-specific pathway where available. NICE NG12, NG145, NG28."
+                  "label": "Refer & management",
+                  "guidance": "MANAGEMENT PLAN:\n1. Refer endocrinology (antithyroid drugs, RAI, or surgery). Do not start antithyroid drugs without specialist if orbitopathy risk. Beta-blocker for symptoms.\n2. Monitor TFTs; check TSI/TRab if indicated. NICE NG145, CKS."
                 }
               ]
             }
@@ -18132,21 +18080,13 @@
           "evidence": "Management per NICE CKS and Local formulary.",
           "steps": [
             {
-              "id": "guidance-endocrinology",
-              "question": "Endocrinology (Consultant Standard)",
+              "id": "hyperparathyroidism-mgt",
+              "question": "Hyperparathyroidism",
               "type": "dropdown",
               "options": [
                 {
-                  "label": "1. Assessment & red flags",
-                  "guidance": "ASSESSMENT:\n• Tailor to the condition: history, examination, and investigations relevant to the endocrine presentation (e.g. thyroid: TFTs, TPO; diabetes: HbA1c, foot check; adrenal: electrolytes, short synacthen; calcium/bone: corrected Ca, PTH, vitamin D).\n• Red flags: Thyroid storm, severe hypo/hyperglycaemia, adrenal crisis, severe hypercalcaemia – emergency. NICE CKS, NG28, NG145."
-                },
-                {
-                  "label": "2. Management",
-                  "guidance": "MANAGEMENT:\n• Follow NICE CKS and Local formulary for the specific condition. Do not apply thyroid or diabetes advice to non-thyroid/non-diabetes topics (e.g. Cushing’s, Conn’s, steroid, pituitary have their own pathways).\n• General principles: sick-day rules for anyone on glucocorticoids; do not stop steroids abruptly; treat hypo-/hyperglycaemia and electrolyte disturbance as indicated. NICE CKS."
-                },
-                {
-                  "label": "3. Referral",
-                  "guidance": "REFERRAL:\n• 2WW: Pituitary/adrenal crisis, severe thyroid eye disease, suspected phaeochromocytoma crisis.\n• Urgent: Adrenal crisis, thyroid storm, severe DKA/HHS, severe hypercalcaemia.\n• Routine: Hyperthyroid, goitre/nodule with concern, type 1 diabetes, pituitary/adrenal/calcium disorders. Use topic-specific pathway where available. NICE NG12, NG145, NG28."
+                  "label": "Assessment & referral",
+                  "guidance": "MANAGEMENT PLAN:\n1. Raised PTH with raised or high-normal calcium. Exclude renal failure. Refer endocrinology/surgery for imaging and parathyroidectomy if indicated. Hydration; avoid thiazides. NICE CKS."
                 }
               ]
             }
@@ -18186,13 +18126,13 @@
           "evidence": "Management per NICE CKS and Local formulary.",
           "steps": [
             {
-              "id": "bp-referral",
-              "question": "Referral & Follow-up (Best Practice)",
+              "id": "hyperthyroidism-mgt",
+              "question": "Hyperthyroidism",
               "type": "dropdown",
               "options": [
                 {
-                  "label": "Referral & Clinical Triage",
-                  "guidance": "MANAGEMENT PLAN:\n1. Triage: Refer via 2WW if malignancy suspected. Use 'Urgent' (within 2 weeks) for rapidly progressive non-malignant disease.\n2. Diagnostics: Ensure all mandatory primary care work-up (e.g. CT, Bloods, Scans) is completed before referral to prevent rejection.\n3. Safety-net: Ensure the patient understands the expected waiting time and knows who to contact if symptoms escalate."
+                  "label": "Referral",
+                  "guidance": "MANAGEMENT PLAN:\n1. Refer endocrinology for confirmation and treatment (antithyroid drugs, RAI, or surgery). Beta-blocker for symptom relief. Do not start long-term antithyroid without specialist if Graves/orbitopathy.\n2. Monitor TFTs. NICE NG145, CKS."
                 }
               ]
             }
@@ -18208,13 +18148,13 @@
           "evidence": "Management per NG145 and CKS Hyperthyroidism.",
           "steps": [
             {
-              "id": "bp-referral",
-              "question": "Referral & Follow-up (Best Practice)",
+              "id": "hyperthyroidism-mgt",
+              "question": "Hyperthyroidism",
               "type": "dropdown",
               "options": [
                 {
-                  "label": "Referral & Clinical Triage",
-                  "guidance": "MANAGEMENT PLAN:\n1. Triage: Refer via 2WW if malignancy suspected. Use 'Urgent' (within 2 weeks) for rapidly progressive non-malignant disease.\n2. Diagnostics: Ensure all mandatory primary care work-up (e.g. CT, Bloods, Scans) is completed before referral to prevent rejection.\n3. Safety-net: Ensure the patient understands the expected waiting time and knows who to contact if symptoms escalate."
+                  "label": "Referral",
+                  "guidance": "MANAGEMENT PLAN:\n1. Refer endocrinology for confirmation and treatment (antithyroid drugs, RAI, or surgery). Beta-blocker for symptom relief. Do not start long-term antithyroid without specialist if Graves/orbitopathy.\n2. Monitor TFTs. NICE NG145, CKS."
                 }
               ]
             }
@@ -18252,21 +18192,17 @@
           "evidence": "Management per NICE CKS and Local formulary.",
           "steps": [
             {
-              "id": "guidance-endocrinology",
-              "question": "Endocrinology (Consultant Standard)",
+              "id": "hypoglycaemia-mgt",
+              "question": "Hypoglycaemia",
               "type": "dropdown",
               "options": [
                 {
-                  "label": "1. Assessment & red flags",
-                  "guidance": "ASSESSMENT:\n• Tailor to the condition: history, examination, and investigations relevant to the endocrine presentation (e.g. thyroid: TFTs, TPO; diabetes: HbA1c, foot check; adrenal: electrolytes, short synacthen; calcium/bone: corrected Ca, PTH, vitamin D).\n• Red flags: Thyroid storm, severe hypo/hyperglycaemia, adrenal crisis, severe hypercalcaemia – emergency. NICE CKS, NG28, NG145."
+                  "label": "Diabetic",
+                  "guidance": "MANAGEMENT PLAN:\n1. Immediate: 15–20 g fast-acting glucose; recheck in 15 min; repeat if needed. Review medication (sulfonylurea, insulin), diet, driving. Sick-day rules. NICE NG17, NG28."
                 },
                 {
-                  "label": "2. Management",
-                  "guidance": "MANAGEMENT:\n• Follow NICE CKS and Local formulary for the specific condition. Do not apply thyroid or diabetes advice to non-thyroid/non-diabetes topics (e.g. Cushing’s, Conn’s, steroid, pituitary have their own pathways).\n• General principles: sick-day rules for anyone on glucocorticoids; do not stop steroids abruptly; treat hypo-/hyperglycaemia and electrolyte disturbance as indicated. NICE CKS."
-                },
-                {
-                  "label": "3. Referral",
-                  "guidance": "REFERRAL:\n• 2WW: Pituitary/adrenal crisis, severe thyroid eye disease, suspected phaeochromocytoma crisis.\n• Urgent: Adrenal crisis, thyroid storm, severe DKA/HHS, severe hypercalcaemia.\n• Routine: Hyperthyroid, goitre/nodule with concern, type 1 diabetes, pituitary/adrenal/calcium disorders. Use topic-specific pathway where available. NICE NG12, NG145, NG28."
+                  "label": "Non-diabetic",
+                  "guidance": "MANAGEMENT PLAN:\n1. Confirm Whipple’s triad; fasting glucose, insulin, C-peptide, sulfonylurea screen. Consider insulinoma, adrenal insufficiency, drugs. Refer endocrinology. NICE CKS."
                 }
               ]
             }
@@ -18282,21 +18218,17 @@
           "evidence": "Management per NICE CKS and Local formulary.",
           "steps": [
             {
-              "id": "guidance-endocrinology",
-              "question": "Endocrinology (Consultant Standard)",
+              "id": "hypoglycaemia-mgt",
+              "question": "Hypoglycaemia",
               "type": "dropdown",
               "options": [
                 {
-                  "label": "1. Assessment & red flags",
-                  "guidance": "ASSESSMENT:\n• Tailor to the condition: history, examination, and investigations relevant to the endocrine presentation (e.g. thyroid: TFTs, TPO; diabetes: HbA1c, foot check; adrenal: electrolytes, short synacthen; calcium/bone: corrected Ca, PTH, vitamin D).\n• Red flags: Thyroid storm, severe hypo/hyperglycaemia, adrenal crisis, severe hypercalcaemia – emergency. NICE CKS, NG28, NG145."
+                  "label": "Diabetic",
+                  "guidance": "MANAGEMENT PLAN:\n1. Immediate: 15–20 g fast-acting glucose; recheck in 15 min; repeat if needed. Review medication (sulfonylurea, insulin), diet, driving. Sick-day rules. NICE NG17, NG28."
                 },
                 {
-                  "label": "2. Management",
-                  "guidance": "MANAGEMENT:\n• Follow NICE CKS and Local formulary for the specific condition. Do not apply thyroid or diabetes advice to non-thyroid/non-diabetes topics (e.g. Cushing’s, Conn’s, steroid, pituitary have their own pathways).\n• General principles: sick-day rules for anyone on glucocorticoids; do not stop steroids abruptly; treat hypo-/hyperglycaemia and electrolyte disturbance as indicated. NICE CKS."
-                },
-                {
-                  "label": "3. Referral",
-                  "guidance": "REFERRAL:\n• 2WW: Pituitary/adrenal crisis, severe thyroid eye disease, suspected phaeochromocytoma crisis.\n• Urgent: Adrenal crisis, thyroid storm, severe DKA/HHS, severe hypercalcaemia.\n• Routine: Hyperthyroid, goitre/nodule with concern, type 1 diabetes, pituitary/adrenal/calcium disorders. Use topic-specific pathway where available. NICE NG12, NG145, NG28."
+                  "label": "Non-diabetic",
+                  "guidance": "MANAGEMENT PLAN:\n1. Confirm Whipple’s triad; fasting glucose, insulin, C-peptide, sulfonylurea screen. Consider insulinoma, adrenal insufficiency, drugs. Refer endocrinology. NICE CKS."
                 }
               ]
             }
@@ -18312,21 +18244,17 @@
           "evidence": "Management per NICE CKS and Local formulary.",
           "steps": [
             {
-              "id": "guidance-endocrinology",
-              "question": "Endocrinology (Consultant Standard)",
+              "id": "hypoglycaemia-mgt",
+              "question": "Hypoglycaemia",
               "type": "dropdown",
               "options": [
                 {
-                  "label": "1. Assessment & red flags",
-                  "guidance": "ASSESSMENT:\n• Tailor to the condition: history, examination, and investigations relevant to the endocrine presentation (e.g. thyroid: TFTs, TPO; diabetes: HbA1c, foot check; adrenal: electrolytes, short synacthen; calcium/bone: corrected Ca, PTH, vitamin D).\n• Red flags: Thyroid storm, severe hypo/hyperglycaemia, adrenal crisis, severe hypercalcaemia – emergency. NICE CKS, NG28, NG145."
+                  "label": "Diabetic",
+                  "guidance": "MANAGEMENT PLAN:\n1. Immediate: 15–20 g fast-acting glucose; recheck in 15 min; repeat if needed. Review medication (sulfonylurea, insulin), diet, driving. Sick-day rules. NICE NG17, NG28."
                 },
                 {
-                  "label": "2. Management",
-                  "guidance": "MANAGEMENT:\n• Follow NICE CKS and Local formulary for the specific condition. Do not apply thyroid or diabetes advice to non-thyroid/non-diabetes topics (e.g. Cushing’s, Conn’s, steroid, pituitary have their own pathways).\n• General principles: sick-day rules for anyone on glucocorticoids; do not stop steroids abruptly; treat hypo-/hyperglycaemia and electrolyte disturbance as indicated. NICE CKS."
-                },
-                {
-                  "label": "3. Referral",
-                  "guidance": "REFERRAL:\n• 2WW: Pituitary/adrenal crisis, severe thyroid eye disease, suspected phaeochromocytoma crisis.\n• Urgent: Adrenal crisis, thyroid storm, severe DKA/HHS, severe hypercalcaemia.\n• Routine: Hyperthyroid, goitre/nodule with concern, type 1 diabetes, pituitary/adrenal/calcium disorders. Use topic-specific pathway where available. NICE NG12, NG145, NG28."
+                  "label": "Non-diabetic",
+                  "guidance": "MANAGEMENT PLAN:\n1. Confirm Whipple’s triad; fasting glucose, insulin, C-peptide, sulfonylurea screen. Consider insulinoma, adrenal insufficiency, drugs. Refer endocrinology. NICE CKS."
                 }
               ]
             }
@@ -18344,21 +18272,13 @@
           "evidence": "Management per NICE CKS and Local formulary.",
           "steps": [
             {
-              "id": "guidance-endocrinology",
-              "question": "Endocrinology (Consultant Standard)",
+              "id": "hypoparathyroidism-mgt",
+              "question": "Hypoparathyroidism",
               "type": "dropdown",
               "options": [
                 {
-                  "label": "1. Assessment & red flags",
-                  "guidance": "ASSESSMENT:\n• Tailor to the condition: history, examination, and investigations relevant to the endocrine presentation (e.g. thyroid: TFTs, TPO; diabetes: HbA1c, foot check; adrenal: electrolytes, short synacthen; calcium/bone: corrected Ca, PTH, vitamin D).\n• Red flags: Thyroid storm, severe hypo/hyperglycaemia, adrenal crisis, severe hypercalcaemia – emergency. NICE CKS, NG28, NG145."
-                },
-                {
-                  "label": "2. Management",
-                  "guidance": "MANAGEMENT:\n• Follow NICE CKS and Local formulary for the specific condition. Do not apply thyroid or diabetes advice to non-thyroid/non-diabetes topics (e.g. Cushing’s, Conn’s, steroid, pituitary have their own pathways).\n• General principles: sick-day rules for anyone on glucocorticoids; do not stop steroids abruptly; treat hypo-/hyperglycaemia and electrolyte disturbance as indicated. NICE CKS."
-                },
-                {
-                  "label": "3. Referral",
-                  "guidance": "REFERRAL:\n• 2WW: Pituitary/adrenal crisis, severe thyroid eye disease, suspected phaeochromocytoma crisis.\n• Urgent: Adrenal crisis, thyroid storm, severe DKA/HHS, severe hypercalcaemia.\n• Routine: Hyperthyroid, goitre/nodule with concern, type 1 diabetes, pituitary/adrenal/calcium disorders. Use topic-specific pathway where available. NICE NG12, NG145, NG28."
+                  "label": "Management",
+                  "guidance": "MANAGEMENT PLAN:\n1. Calcium and vitamin D (alfacalcidol/calcitriol); target calcium in low-normal range. Monitor calcium, phosphate, renal function. Refer endocrinology. NICE CKS."
                 }
               ]
             }
@@ -18821,21 +18741,13 @@
           "evidence": "Management per NICE CKS and Local formulary.",
           "steps": [
             {
-              "id": "guidance-endocrinology",
-              "question": "Endocrinology (Consultant Standard)",
+              "id": "insulinoma-mgt",
+              "question": "Insulinoma",
               "type": "dropdown",
               "options": [
                 {
-                  "label": "1. Assessment & red flags",
-                  "guidance": "ASSESSMENT:\n• Tailor to the condition: history, examination, and investigations relevant to the endocrine presentation (e.g. thyroid: TFTs, TPO; diabetes: HbA1c, foot check; adrenal: electrolytes, short synacthen; calcium/bone: corrected Ca, PTH, vitamin D).\n• Red flags: Thyroid storm, severe hypo/hyperglycaemia, adrenal crisis, severe hypercalcaemia – emergency. NICE CKS, NG28, NG145."
-                },
-                {
-                  "label": "2. Management",
-                  "guidance": "MANAGEMENT:\n• Follow NICE CKS and Local formulary for the specific condition. Do not apply thyroid or diabetes advice to non-thyroid/non-diabetes topics (e.g. Cushing’s, Conn’s, steroid, pituitary have their own pathways).\n• General principles: sick-day rules for anyone on glucocorticoids; do not stop steroids abruptly; treat hypo-/hyperglycaemia and electrolyte disturbance as indicated. NICE CKS."
-                },
-                {
-                  "label": "3. Referral",
-                  "guidance": "REFERRAL:\n• 2WW: Pituitary/adrenal crisis, severe thyroid eye disease, suspected phaeochromocytoma crisis.\n• Urgent: Adrenal crisis, thyroid storm, severe DKA/HHS, severe hypercalcaemia.\n• Routine: Hyperthyroid, goitre/nodule with concern, type 1 diabetes, pituitary/adrenal/calcium disorders. Use topic-specific pathway where available. NICE NG12, NG145, NG28."
+                  "label": "Suspicion & referral",
+                  "guidance": "MANAGEMENT PLAN:\n1. Suspect in fasting hypoglycaemia with Whipple’s triad. 72 h fast (supervised); insulin, C-peptide, glucose; exclude sulfonylurea. Refer endocrinology for imaging and surgery.\n2. Do not delay referral. NICE CKS, Local formulary."
                 }
               ]
             }
@@ -18853,17 +18765,13 @@
           "evidence": "Podcast will cover clinical tips and hacks, as well as hot topics to help make our lives a wee bit easier, but ultimately to help improve the lives of our patients in primary care. Now, for the next few episodes of the podcast, we've got something a little bit different for you. …",
           "steps": [
             {
-              "id": "bp-assessment",
-              "question": "Assessment (Best Practice)",
+              "id": "steroid-prescribing-mgt",
+              "question": "Steroid prescribing / long-term use",
               "type": "dropdown",
               "options": [
                 {
-                  "label": "Standard Assessment",
-                  "guidance": "MANAGEMENT PLAN:\n1. History: Assess onset, severity, and triggers. Specifically exclude organic red flags (weight loss, night pain, fever, night sweats).\n2. Review: Family history and current medications.\n3. Differential: Consider most likely vs most serious diagnosis. Use validated scores (e.g. Centor, Wells, qSOFA) if applicable."
-                },
-                {
-                  "label": "Examination & Vitals",
-                  "guidance": "MANAGEMENT PLAN:\n1. Physical Exam: Perform focused physical exam (e.g. MSK, Neuro, Respiratory).\n2. Vitals: Check NEWS2 if systemically unwell.\n3. Documentation: Document findings and clinical rationale clearly."
+                  "label": "Key considerations",
+                  "guidance": "MANAGEMENT PLAN:\n1. Lowest effective dose; bone protection (calcium, vitamin D; bisphosphonate if high risk). Monitor BP, glucose, weight. Steroid card and sick-day rules (double dose when unwell; emergency hydrocortisone if unable to take oral).\n2. Consider PCP prophylaxis if immunosuppressed. Taper when stopping. NICE CKS, Local formulary."
                 }
               ]
             }
@@ -18882,13 +18790,13 @@
           "evidence": "Podcast will cover clinical tips and hacks, as well as hot topics to help make our lives a wee bit easier, but ultimately to help improve the lives of our patients in primary care. Now, for the next few episodes of the podcast, we've got something a little bit different for you. …",
           "steps": [
             {
-              "id": "endo-mgmt",
-              "question": "Endocrinology (Best Practice)",
+              "id": "steroid-prescribing-mgt",
+              "question": "Steroid prescribing / long-term use",
               "type": "dropdown",
               "options": [
                 {
-                  "label": "Hormone & Metabolic Review",
-                  "guidance": "MANAGEMENT PLAN:\n1. Thyroid: If abnormal TFTs, repeat with TPO ab; treat or refer per NICE NG145. Avoid routine T3.\n2. Diabetes: HbA1c target 48–53 mmol/mol; metformin first-line; add SGLT2i if CVD/HF/CKD. NICE NG28.\n3. Adrenal: Do not stop steroids abruptly; sick-day rules. Refer if Addison’s suspected.\n4. Safety-net: Red flags – thyroid storm, severe hypoglycaemia, DKA. NICE CKS."
+                  "label": "Key considerations",
+                  "guidance": "MANAGEMENT PLAN:\n1. Lowest effective dose; bone protection (calcium, vitamin D; bisphosphonate if high risk). Monitor BP, glucose, weight. Steroid card and sick-day rules (double dose when unwell; emergency hydrocortisone if unable to take oral).\n2. Consider PCP prophylaxis if immunosuppressed. Taper when stopping. NICE CKS, Local formulary."
                 }
               ]
             }
@@ -18907,13 +18815,13 @@
           "evidence": "Podcast will cover clinical tips and hacks, as well as hot topics to help make our lives a wee bit easier, but ultimately to help improve the lives of our patients in primary care. Now, for the next few episodes of the podcast, we've got something a little bit different for you. …",
           "steps": [
             {
-              "id": "bp-referral",
-              "question": "Referral & Follow-up (Best Practice)",
+              "id": "steroid-prescribing-mgt",
+              "question": "Steroid prescribing / long-term use",
               "type": "dropdown",
               "options": [
                 {
-                  "label": "Referral & Clinical Triage",
-                  "guidance": "MANAGEMENT PLAN:\n1. Triage: Refer via 2WW if malignancy suspected. Use 'Urgent' (within 2 weeks) for rapidly progressive non-malignant disease.\n2. Diagnostics: Ensure all mandatory primary care work-up (e.g. CT, Bloods, Scans) is completed before referral to prevent rejection.\n3. Safety-net: Ensure the patient understands the expected waiting time and knows who to contact if symptoms escalate."
+                  "label": "Key considerations",
+                  "guidance": "MANAGEMENT PLAN:\n1. Lowest effective dose; bone protection (calcium, vitamin D; bisphosphonate if high risk). Monitor BP, glucose, weight. Steroid card and sick-day rules (double dose when unwell; emergency hydrocortisone if unable to take oral).\n2. Consider PCP prophylaxis if immunosuppressed. Taper when stopping. NICE CKS, Local formulary."
                 }
               ]
             }
@@ -19038,21 +18946,13 @@
           "evidence": "Management per NICE CKS and Local formulary.",
           "steps": [
             {
-              "id": "guidance-endocrinology",
-              "question": "Endocrinology (Consultant Standard)",
+              "id": "metabolic-syndrome-mgt",
+              "question": "Metabolic syndrome",
               "type": "dropdown",
               "options": [
                 {
-                  "label": "1. Assessment & red flags",
-                  "guidance": "ASSESSMENT:\n• Tailor to the condition: history, examination, and investigations relevant to the endocrine presentation (e.g. thyroid: TFTs, TPO; diabetes: HbA1c, foot check; adrenal: electrolytes, short synacthen; calcium/bone: corrected Ca, PTH, vitamin D).\n• Red flags: Thyroid storm, severe hypo/hyperglycaemia, adrenal crisis, severe hypercalcaemia – emergency. NICE CKS, NG28, NG145."
-                },
-                {
-                  "label": "2. Management",
-                  "guidance": "MANAGEMENT:\n• Follow NICE CKS and Local formulary for the specific condition. Do not apply thyroid or diabetes advice to non-thyroid/non-diabetes topics (e.g. Cushing’s, Conn’s, steroid, pituitary have their own pathways).\n• General principles: sick-day rules for anyone on glucocorticoids; do not stop steroids abruptly; treat hypo-/hyperglycaemia and electrolyte disturbance as indicated. NICE CKS."
-                },
-                {
-                  "label": "3. Referral",
-                  "guidance": "REFERRAL:\n• 2WW: Pituitary/adrenal crisis, severe thyroid eye disease, suspected phaeochromocytoma crisis.\n• Urgent: Adrenal crisis, thyroid storm, severe DKA/HHS, severe hypercalcaemia.\n• Routine: Hyperthyroid, goitre/nodule with concern, type 1 diabetes, pituitary/adrenal/calcium disorders. Use topic-specific pathway where available. NICE NG12, NG145, NG28."
+                  "label": "Assessment & management",
+                  "guidance": "MANAGEMENT PLAN:\n1. Central obesity plus two of: raised TG, low HDL, raised BP, raised fasting glucose. Address each component: lifestyle (weight, activity), statin, antihypertensive, diabetes prevention. NICE CKS, NG28."
                 }
               ]
             }
@@ -19068,21 +18968,13 @@
           "evidence": "Management per NICE CKS and Local formulary.",
           "steps": [
             {
-              "id": "guidance-endocrinology",
-              "question": "Endocrinology (Consultant Standard)",
+              "id": "men-mgt",
+              "question": "Multiple endocrine neoplasia",
               "type": "dropdown",
               "options": [
                 {
-                  "label": "1. Assessment & red flags",
-                  "guidance": "ASSESSMENT:\n• Tailor to the condition: history, examination, and investigations relevant to the endocrine presentation (e.g. thyroid: TFTs, TPO; diabetes: HbA1c, foot check; adrenal: electrolytes, short synacthen; calcium/bone: corrected Ca, PTH, vitamin D).\n• Red flags: Thyroid storm, severe hypo/hyperglycaemia, adrenal crisis, severe hypercalcaemia – emergency. NICE CKS, NG28, NG145."
-                },
-                {
-                  "label": "2. Management",
-                  "guidance": "MANAGEMENT:\n• Follow NICE CKS and Local formulary for the specific condition. Do not apply thyroid or diabetes advice to non-thyroid/non-diabetes topics (e.g. Cushing’s, Conn’s, steroid, pituitary have their own pathways).\n• General principles: sick-day rules for anyone on glucocorticoids; do not stop steroids abruptly; treat hypo-/hyperglycaemia and electrolyte disturbance as indicated. NICE CKS."
-                },
-                {
-                  "label": "3. Referral",
-                  "guidance": "REFERRAL:\n• 2WW: Pituitary/adrenal crisis, severe thyroid eye disease, suspected phaeochromocytoma crisis.\n• Urgent: Adrenal crisis, thyroid storm, severe DKA/HHS, severe hypercalcaemia.\n• Routine: Hyperthyroid, goitre/nodule with concern, type 1 diabetes, pituitary/adrenal/calcium disorders. Use topic-specific pathway where available. NICE NG12, NG145, NG28."
+                  "label": "Surveillance & referral",
+                  "guidance": "MANAGEMENT PLAN:\n1. MEN1: parathyroid, pituitary, pancreas (including insulinoma/gastrinoma). MEN2: MTC, phaeochromocytoma, parathyroid. Refer specialist genetics/endocrinology for screening and surveillance. NICE CKS, Local formulary."
                 }
               ]
             }
@@ -19254,21 +19146,21 @@
           "evidence": "Management per NICE CKS and Local formulary.",
           "steps": [
             {
-              "id": "guidance-endocrinology",
-              "question": "Endocrinology (Consultant Standard)",
+              "id": "bone-mgt",
+              "question": "Bone / osteoporosis",
               "type": "dropdown",
               "options": [
                 {
-                  "label": "1. Assessment & red flags",
-                  "guidance": "ASSESSMENT:\n• Tailor to the condition: history, examination, and investigations relevant to the endocrine presentation (e.g. thyroid: TFTs, TPO; diabetes: HbA1c, foot check; adrenal: electrolytes, short synacthen; calcium/bone: corrected Ca, PTH, vitamin D).\n• Red flags: Thyroid storm, severe hypo/hyperglycaemia, adrenal crisis, severe hypercalcaemia – emergency. NICE CKS, NG28, NG145."
+                  "label": "Osteoporosis – fracture / DEXA",
+                  "guidance": "MANAGEMENT PLAN:\n1. FRAX; DEXA if indicated. Calcium + vitamin D. First-line: oral bisphosphonate (alendronate/risedronate); ensure correct administration. Consider IV zoledronate if oral not tolerated. NICE NG146, CKS."
                 },
                 {
-                  "label": "2. Management",
-                  "guidance": "MANAGEMENT:\n• Follow NICE CKS and Local formulary for the specific condition. Do not apply thyroid or diabetes advice to non-thyroid/non-diabetes topics (e.g. Cushing’s, Conn’s, steroid, pituitary have their own pathways).\n• General principles: sick-day rules for anyone on glucocorticoids; do not stop steroids abruptly; treat hypo-/hyperglycaemia and electrolyte disturbance as indicated. NICE CKS."
+                  "label": "Osteoporosis – denosumab / teriparatide",
+                  "guidance": "MANAGEMENT PLAN:\n1. Denosumab: 6-monthly SC; do not miss doses (rebound fracture risk). Monitor calcium/vitamin D. Teriparatide: specialist; limited duration. NICE NG146, CKS."
                 },
                 {
-                  "label": "3. Referral",
-                  "guidance": "REFERRAL:\n• 2WW: Pituitary/adrenal crisis, severe thyroid eye disease, suspected phaeochromocytoma crisis.\n• Urgent: Adrenal crisis, thyroid storm, severe DKA/HHS, severe hypercalcaemia.\n• Routine: Hyperthyroid, goitre/nodule with concern, type 1 diabetes, pituitary/adrenal/calcium disorders. Use topic-specific pathway where available. NICE NG12, NG145, NG28."
+                  "label": "Osteomalacia / Paget's",
+                  "guidance": "MANAGEMENT PLAN:\n1. Osteomalacia: vitamin D repletion; treat cause. Paget's: refer or bisphosphonate per specialist. NICE CKS."
                 }
               ]
             }
@@ -19284,21 +19176,21 @@
           "evidence": "Management per NICE CKS and Local formulary.",
           "steps": [
             {
-              "id": "guidance-endocrinology",
-              "question": "Endocrinology (Consultant Standard)",
+              "id": "bone-mgt",
+              "question": "Bone / osteoporosis",
               "type": "dropdown",
               "options": [
                 {
-                  "label": "1. Assessment & red flags",
-                  "guidance": "ASSESSMENT:\n• Tailor to the condition: history, examination, and investigations relevant to the endocrine presentation (e.g. thyroid: TFTs, TPO; diabetes: HbA1c, foot check; adrenal: electrolytes, short synacthen; calcium/bone: corrected Ca, PTH, vitamin D).\n• Red flags: Thyroid storm, severe hypo/hyperglycaemia, adrenal crisis, severe hypercalcaemia – emergency. NICE CKS, NG28, NG145."
+                  "label": "Osteoporosis – fracture / DEXA",
+                  "guidance": "MANAGEMENT PLAN:\n1. FRAX; DEXA if indicated. Calcium + vitamin D. First-line: oral bisphosphonate (alendronate/risedronate); ensure correct administration. Consider IV zoledronate if oral not tolerated. NICE NG146, CKS."
                 },
                 {
-                  "label": "2. Management",
-                  "guidance": "MANAGEMENT:\n• Follow NICE CKS and Local formulary for the specific condition. Do not apply thyroid or diabetes advice to non-thyroid/non-diabetes topics (e.g. Cushing’s, Conn’s, steroid, pituitary have their own pathways).\n• General principles: sick-day rules for anyone on glucocorticoids; do not stop steroids abruptly; treat hypo-/hyperglycaemia and electrolyte disturbance as indicated. NICE CKS."
+                  "label": "Osteoporosis – denosumab / teriparatide",
+                  "guidance": "MANAGEMENT PLAN:\n1. Denosumab: 6-monthly SC; do not miss doses (rebound fracture risk). Monitor calcium/vitamin D. Teriparatide: specialist; limited duration. NICE NG146, CKS."
                 },
                 {
-                  "label": "3. Referral",
-                  "guidance": "REFERRAL:\n• 2WW: Pituitary/adrenal crisis, severe thyroid eye disease, suspected phaeochromocytoma crisis.\n• Urgent: Adrenal crisis, thyroid storm, severe DKA/HHS, severe hypercalcaemia.\n• Routine: Hyperthyroid, goitre/nodule with concern, type 1 diabetes, pituitary/adrenal/calcium disorders. Use topic-specific pathway where available. NICE NG12, NG145, NG28."
+                  "label": "Osteomalacia / Paget's",
+                  "guidance": "MANAGEMENT PLAN:\n1. Osteomalacia: vitamin D repletion; treat cause. Paget's: refer or bisphosphonate per specialist. NICE CKS."
                 }
               ]
             }
@@ -19314,21 +19206,21 @@
           "evidence": "Management per NICE CKS and Local formulary.",
           "steps": [
             {
-              "id": "guidance-endocrinology",
-              "question": "Endocrinology (Consultant Standard)",
+              "id": "bone-mgt",
+              "question": "Bone / osteoporosis",
               "type": "dropdown",
               "options": [
                 {
-                  "label": "1. Assessment & red flags",
-                  "guidance": "ASSESSMENT:\n• Tailor to the condition: history, examination, and investigations relevant to the endocrine presentation (e.g. thyroid: TFTs, TPO; diabetes: HbA1c, foot check; adrenal: electrolytes, short synacthen; calcium/bone: corrected Ca, PTH, vitamin D).\n• Red flags: Thyroid storm, severe hypo/hyperglycaemia, adrenal crisis, severe hypercalcaemia – emergency. NICE CKS, NG28, NG145."
+                  "label": "Osteoporosis – fracture / DEXA",
+                  "guidance": "MANAGEMENT PLAN:\n1. FRAX; DEXA if indicated. Calcium + vitamin D. First-line: oral bisphosphonate (alendronate/risedronate); ensure correct administration. Consider IV zoledronate if oral not tolerated. NICE NG146, CKS."
                 },
                 {
-                  "label": "2. Management",
-                  "guidance": "MANAGEMENT:\n• Follow NICE CKS and Local formulary for the specific condition. Do not apply thyroid or diabetes advice to non-thyroid/non-diabetes topics (e.g. Cushing’s, Conn’s, steroid, pituitary have their own pathways).\n• General principles: sick-day rules for anyone on glucocorticoids; do not stop steroids abruptly; treat hypo-/hyperglycaemia and electrolyte disturbance as indicated. NICE CKS."
+                  "label": "Osteoporosis – denosumab / teriparatide",
+                  "guidance": "MANAGEMENT PLAN:\n1. Denosumab: 6-monthly SC; do not miss doses (rebound fracture risk). Monitor calcium/vitamin D. Teriparatide: specialist; limited duration. NICE NG146, CKS."
                 },
                 {
-                  "label": "3. Referral",
-                  "guidance": "REFERRAL:\n• 2WW: Pituitary/adrenal crisis, severe thyroid eye disease, suspected phaeochromocytoma crisis.\n• Urgent: Adrenal crisis, thyroid storm, severe DKA/HHS, severe hypercalcaemia.\n• Routine: Hyperthyroid, goitre/nodule with concern, type 1 diabetes, pituitary/adrenal/calcium disorders. Use topic-specific pathway where available. NICE NG12, NG145, NG28."
+                  "label": "Osteomalacia / Paget's",
+                  "guidance": "MANAGEMENT PLAN:\n1. Osteomalacia: vitamin D repletion; treat cause. Paget's: refer or bisphosphonate per specialist. NICE CKS."
                 }
               ]
             }
@@ -19344,21 +19236,21 @@
           "evidence": "Management per NICE CKS and Local formulary.",
           "steps": [
             {
-              "id": "guidance-endocrinology",
-              "question": "Endocrinology (Consultant Standard)",
+              "id": "bone-mgt",
+              "question": "Bone / osteoporosis",
               "type": "dropdown",
               "options": [
                 {
-                  "label": "1. Assessment & red flags",
-                  "guidance": "ASSESSMENT:\n• Tailor to the condition: history, examination, and investigations relevant to the endocrine presentation (e.g. thyroid: TFTs, TPO; diabetes: HbA1c, foot check; adrenal: electrolytes, short synacthen; calcium/bone: corrected Ca, PTH, vitamin D).\n• Red flags: Thyroid storm, severe hypo/hyperglycaemia, adrenal crisis, severe hypercalcaemia – emergency. NICE CKS, NG28, NG145."
+                  "label": "Osteoporosis – fracture / DEXA",
+                  "guidance": "MANAGEMENT PLAN:\n1. FRAX; DEXA if indicated. Calcium + vitamin D. First-line: oral bisphosphonate (alendronate/risedronate); ensure correct administration. Consider IV zoledronate if oral not tolerated. NICE NG146, CKS."
                 },
                 {
-                  "label": "2. Management",
-                  "guidance": "MANAGEMENT:\n• Follow NICE CKS and Local formulary for the specific condition. Do not apply thyroid or diabetes advice to non-thyroid/non-diabetes topics (e.g. Cushing’s, Conn’s, steroid, pituitary have their own pathways).\n• General principles: sick-day rules for anyone on glucocorticoids; do not stop steroids abruptly; treat hypo-/hyperglycaemia and electrolyte disturbance as indicated. NICE CKS."
+                  "label": "Osteoporosis – denosumab / teriparatide",
+                  "guidance": "MANAGEMENT PLAN:\n1. Denosumab: 6-monthly SC; do not miss doses (rebound fracture risk). Monitor calcium/vitamin D. Teriparatide: specialist; limited duration. NICE NG146, CKS."
                 },
                 {
-                  "label": "3. Referral",
-                  "guidance": "REFERRAL:\n• 2WW: Pituitary/adrenal crisis, severe thyroid eye disease, suspected phaeochromocytoma crisis.\n• Urgent: Adrenal crisis, thyroid storm, severe DKA/HHS, severe hypercalcaemia.\n• Routine: Hyperthyroid, goitre/nodule with concern, type 1 diabetes, pituitary/adrenal/calcium disorders. Use topic-specific pathway where available. NICE NG12, NG145, NG28."
+                  "label": "Osteomalacia / Paget's",
+                  "guidance": "MANAGEMENT PLAN:\n1. Osteomalacia: vitamin D repletion; treat cause. Paget's: refer or bisphosphonate per specialist. NICE CKS."
                 }
               ]
             }
@@ -19374,21 +19266,21 @@
           "evidence": "Management per NICE CKS and Local formulary.",
           "steps": [
             {
-              "id": "guidance-endocrinology",
-              "question": "Endocrinology (Consultant Standard)",
+              "id": "bone-mgt",
+              "question": "Bone / osteoporosis",
               "type": "dropdown",
               "options": [
                 {
-                  "label": "1. Assessment & red flags",
-                  "guidance": "ASSESSMENT:\n• Tailor to the condition: history, examination, and investigations relevant to the endocrine presentation (e.g. thyroid: TFTs, TPO; diabetes: HbA1c, foot check; adrenal: electrolytes, short synacthen; calcium/bone: corrected Ca, PTH, vitamin D).\n• Red flags: Thyroid storm, severe hypo/hyperglycaemia, adrenal crisis, severe hypercalcaemia – emergency. NICE CKS, NG28, NG145."
+                  "label": "Osteoporosis – fracture / DEXA",
+                  "guidance": "MANAGEMENT PLAN:\n1. FRAX; DEXA if indicated. Calcium + vitamin D. First-line: oral bisphosphonate (alendronate/risedronate); ensure correct administration. Consider IV zoledronate if oral not tolerated. NICE NG146, CKS."
                 },
                 {
-                  "label": "2. Management",
-                  "guidance": "MANAGEMENT:\n• Follow NICE CKS and Local formulary for the specific condition. Do not apply thyroid or diabetes advice to non-thyroid/non-diabetes topics (e.g. Cushing’s, Conn’s, steroid, pituitary have their own pathways).\n• General principles: sick-day rules for anyone on glucocorticoids; do not stop steroids abruptly; treat hypo-/hyperglycaemia and electrolyte disturbance as indicated. NICE CKS."
+                  "label": "Osteoporosis – denosumab / teriparatide",
+                  "guidance": "MANAGEMENT PLAN:\n1. Denosumab: 6-monthly SC; do not miss doses (rebound fracture risk). Monitor calcium/vitamin D. Teriparatide: specialist; limited duration. NICE NG146, CKS."
                 },
                 {
-                  "label": "3. Referral",
-                  "guidance": "REFERRAL:\n• 2WW: Pituitary/adrenal crisis, severe thyroid eye disease, suspected phaeochromocytoma crisis.\n• Urgent: Adrenal crisis, thyroid storm, severe DKA/HHS, severe hypercalcaemia.\n• Routine: Hyperthyroid, goitre/nodule with concern, type 1 diabetes, pituitary/adrenal/calcium disorders. Use topic-specific pathway where available. NICE NG12, NG145, NG28."
+                  "label": "Osteomalacia / Paget's",
+                  "guidance": "MANAGEMENT PLAN:\n1. Osteomalacia: vitamin D repletion; treat cause. Paget's: refer or bisphosphonate per specialist. NICE CKS."
                 }
               ]
             }
@@ -19404,21 +19296,21 @@
           "evidence": "Management per NICE CKS and Local formulary.",
           "steps": [
             {
-              "id": "guidance-endocrinology",
-              "question": "Endocrinology (Consultant Standard)",
+              "id": "bone-mgt",
+              "question": "Bone / osteoporosis",
               "type": "dropdown",
               "options": [
                 {
-                  "label": "1. Assessment & red flags",
-                  "guidance": "ASSESSMENT:\n• Tailor to the condition: history, examination, and investigations relevant to the endocrine presentation (e.g. thyroid: TFTs, TPO; diabetes: HbA1c, foot check; adrenal: electrolytes, short synacthen; calcium/bone: corrected Ca, PTH, vitamin D).\n• Red flags: Thyroid storm, severe hypo/hyperglycaemia, adrenal crisis, severe hypercalcaemia – emergency. NICE CKS, NG28, NG145."
+                  "label": "Osteoporosis – fracture / DEXA",
+                  "guidance": "MANAGEMENT PLAN:\n1. FRAX; DEXA if indicated. Calcium + vitamin D. First-line: oral bisphosphonate (alendronate/risedronate); ensure correct administration. Consider IV zoledronate if oral not tolerated. NICE NG146, CKS."
                 },
                 {
-                  "label": "2. Management",
-                  "guidance": "MANAGEMENT:\n• Follow NICE CKS and Local formulary for the specific condition. Do not apply thyroid or diabetes advice to non-thyroid/non-diabetes topics (e.g. Cushing’s, Conn’s, steroid, pituitary have their own pathways).\n• General principles: sick-day rules for anyone on glucocorticoids; do not stop steroids abruptly; treat hypo-/hyperglycaemia and electrolyte disturbance as indicated. NICE CKS."
+                  "label": "Osteoporosis – denosumab / teriparatide",
+                  "guidance": "MANAGEMENT PLAN:\n1. Denosumab: 6-monthly SC; do not miss doses (rebound fracture risk). Monitor calcium/vitamin D. Teriparatide: specialist; limited duration. NICE NG146, CKS."
                 },
                 {
-                  "label": "3. Referral",
-                  "guidance": "REFERRAL:\n• 2WW: Pituitary/adrenal crisis, severe thyroid eye disease, suspected phaeochromocytoma crisis.\n• Urgent: Adrenal crisis, thyroid storm, severe DKA/HHS, severe hypercalcaemia.\n• Routine: Hyperthyroid, goitre/nodule with concern, type 1 diabetes, pituitary/adrenal/calcium disorders. Use topic-specific pathway where available. NICE NG12, NG145, NG28."
+                  "label": "Osteomalacia / Paget's",
+                  "guidance": "MANAGEMENT PLAN:\n1. Osteomalacia: vitamin D repletion; treat cause. Paget's: refer or bisphosphonate per specialist. NICE CKS."
                 }
               ]
             }
@@ -19434,21 +19326,21 @@
           "evidence": "Management per NG146 and CKS Osteoporosis.",
           "steps": [
             {
-              "id": "guidance-endocrinology",
-              "question": "Endocrinology (Consultant Standard)",
+              "id": "bone-mgt",
+              "question": "Bone / osteoporosis",
               "type": "dropdown",
               "options": [
                 {
-                  "label": "1. Assessment & red flags",
-                  "guidance": "ASSESSMENT:\n• Tailor to the condition: history, examination, and investigations relevant to the endocrine presentation (e.g. thyroid: TFTs, TPO; diabetes: HbA1c, foot check; adrenal: electrolytes, short synacthen; calcium/bone: corrected Ca, PTH, vitamin D).\n• Red flags: Thyroid storm, severe hypo/hyperglycaemia, adrenal crisis, severe hypercalcaemia – emergency. NICE CKS, NG28, NG145."
+                  "label": "Osteoporosis – fracture / DEXA",
+                  "guidance": "MANAGEMENT PLAN:\n1. FRAX; DEXA if indicated. Calcium + vitamin D. First-line: oral bisphosphonate (alendronate/risedronate); ensure correct administration. Consider IV zoledronate if oral not tolerated. NICE NG146, CKS."
                 },
                 {
-                  "label": "2. Management",
-                  "guidance": "MANAGEMENT:\n• Follow NICE CKS and Local formulary for the specific condition. Do not apply thyroid or diabetes advice to non-thyroid/non-diabetes topics (e.g. Cushing’s, Conn’s, steroid, pituitary have their own pathways).\n• General principles: sick-day rules for anyone on glucocorticoids; do not stop steroids abruptly; treat hypo-/hyperglycaemia and electrolyte disturbance as indicated. NICE CKS."
+                  "label": "Osteoporosis – denosumab / teriparatide",
+                  "guidance": "MANAGEMENT PLAN:\n1. Denosumab: 6-monthly SC; do not miss doses (rebound fracture risk). Monitor calcium/vitamin D. Teriparatide: specialist; limited duration. NICE NG146, CKS."
                 },
                 {
-                  "label": "3. Referral",
-                  "guidance": "REFERRAL:\n• 2WW: Pituitary/adrenal crisis, severe thyroid eye disease, suspected phaeochromocytoma crisis.\n• Urgent: Adrenal crisis, thyroid storm, severe DKA/HHS, severe hypercalcaemia.\n• Routine: Hyperthyroid, goitre/nodule with concern, type 1 diabetes, pituitary/adrenal/calcium disorders. Use topic-specific pathway where available. NICE NG12, NG145, NG28."
+                  "label": "Osteomalacia / Paget's",
+                  "guidance": "MANAGEMENT PLAN:\n1. Osteomalacia: vitamin D repletion; treat cause. Paget's: refer or bisphosphonate per specialist. NICE CKS."
                 }
               ]
             }
@@ -19464,21 +19356,21 @@
           "evidence": "Management per NICE CKS and Local formulary.",
           "steps": [
             {
-              "id": "guidance-endocrinology",
-              "question": "Endocrinology (Consultant Standard)",
+              "id": "bone-mgt",
+              "question": "Bone / osteoporosis",
               "type": "dropdown",
               "options": [
                 {
-                  "label": "1. Assessment & red flags",
-                  "guidance": "ASSESSMENT:\n• Tailor to the condition: history, examination, and investigations relevant to the endocrine presentation (e.g. thyroid: TFTs, TPO; diabetes: HbA1c, foot check; adrenal: electrolytes, short synacthen; calcium/bone: corrected Ca, PTH, vitamin D).\n• Red flags: Thyroid storm, severe hypo/hyperglycaemia, adrenal crisis, severe hypercalcaemia – emergency. NICE CKS, NG28, NG145."
+                  "label": "Osteoporosis – fracture / DEXA",
+                  "guidance": "MANAGEMENT PLAN:\n1. FRAX; DEXA if indicated. Calcium + vitamin D. First-line: oral bisphosphonate (alendronate/risedronate); ensure correct administration. Consider IV zoledronate if oral not tolerated. NICE NG146, CKS."
                 },
                 {
-                  "label": "2. Management",
-                  "guidance": "MANAGEMENT:\n• Follow NICE CKS and Local formulary for the specific condition. Do not apply thyroid or diabetes advice to non-thyroid/non-diabetes topics (e.g. Cushing’s, Conn’s, steroid, pituitary have their own pathways).\n• General principles: sick-day rules for anyone on glucocorticoids; do not stop steroids abruptly; treat hypo-/hyperglycaemia and electrolyte disturbance as indicated. NICE CKS."
+                  "label": "Osteoporosis – denosumab / teriparatide",
+                  "guidance": "MANAGEMENT PLAN:\n1. Denosumab: 6-monthly SC; do not miss doses (rebound fracture risk). Monitor calcium/vitamin D. Teriparatide: specialist; limited duration. NICE NG146, CKS."
                 },
                 {
-                  "label": "3. Referral",
-                  "guidance": "REFERRAL:\n• 2WW: Pituitary/adrenal crisis, severe thyroid eye disease, suspected phaeochromocytoma crisis.\n• Urgent: Adrenal crisis, thyroid storm, severe DKA/HHS, severe hypercalcaemia.\n• Routine: Hyperthyroid, goitre/nodule with concern, type 1 diabetes, pituitary/adrenal/calcium disorders. Use topic-specific pathway where available. NICE NG12, NG145, NG28."
+                  "label": "Osteomalacia / Paget's",
+                  "guidance": "MANAGEMENT PLAN:\n1. Osteomalacia: vitamin D repletion; treat cause. Paget's: refer or bisphosphonate per specialist. NICE CKS."
                 }
               ]
             }
@@ -19624,21 +19516,13 @@
           "evidence": "Management per NICE CKS and Local formulary.",
           "steps": [
             {
-              "id": "guidance-endocrinology",
-              "question": "Endocrinology (Consultant Standard)",
+              "id": "pituitary-adenoma-mgt",
+              "question": "Pituitary adenoma",
               "type": "dropdown",
               "options": [
                 {
-                  "label": "1. Assessment & red flags",
-                  "guidance": "ASSESSMENT:\n• Tailor to the condition: history, examination, and investigations relevant to the endocrine presentation (e.g. thyroid: TFTs, TPO; diabetes: HbA1c, foot check; adrenal: electrolytes, short synacthen; calcium/bone: corrected Ca, PTH, vitamin D).\n• Red flags: Thyroid storm, severe hypo/hyperglycaemia, adrenal crisis, severe hypercalcaemia – emergency. NICE CKS, NG28, NG145."
-                },
-                {
-                  "label": "2. Management",
-                  "guidance": "MANAGEMENT:\n• Follow NICE CKS and Local formulary for the specific condition. Do not apply thyroid or diabetes advice to non-thyroid/non-diabetes topics (e.g. Cushing’s, Conn’s, steroid, pituitary have their own pathways).\n• General principles: sick-day rules for anyone on glucocorticoids; do not stop steroids abruptly; treat hypo-/hyperglycaemia and electrolyte disturbance as indicated. NICE CKS."
-                },
-                {
-                  "label": "3. Referral",
-                  "guidance": "REFERRAL:\n• 2WW: Pituitary/adrenal crisis, severe thyroid eye disease, suspected phaeochromocytoma crisis.\n• Urgent: Adrenal crisis, thyroid storm, severe DKA/HHS, severe hypercalcaemia.\n• Routine: Hyperthyroid, goitre/nodule with concern, type 1 diabetes, pituitary/adrenal/calcium disorders. Use topic-specific pathway where available. NICE NG12, NG145, NG28."
+                  "label": "Referral & surveillance",
+                  "guidance": "MANAGEMENT PLAN:\n1. Functioning vs non-functioning; hormone panel; visual fields if macroadenoma. Refer endocrinology/neurosurgery. Replace deficient axes; sick-day rules if cortisol deficient. NICE CKS."
                 }
               ]
             }
@@ -19735,21 +19619,13 @@
           "evidence": "Management per NICE CKS and Local formulary.",
           "steps": [
             {
-              "id": "guidance-endocrinology",
-              "question": "Endocrinology (Consultant Standard)",
+              "id": "prolactinoma-mgt",
+              "question": "Prolactinoma / hyperprolactinaemia",
               "type": "dropdown",
               "options": [
                 {
-                  "label": "1. Assessment & red flags",
-                  "guidance": "ASSESSMENT:\n• Tailor to the condition: history, examination, and investigations relevant to the endocrine presentation (e.g. thyroid: TFTs, TPO; diabetes: HbA1c, foot check; adrenal: electrolytes, short synacthen; calcium/bone: corrected Ca, PTH, vitamin D).\n• Red flags: Thyroid storm, severe hypo/hyperglycaemia, adrenal crisis, severe hypercalcaemia – emergency. NICE CKS, NG28, NG145."
-                },
-                {
-                  "label": "2. Management",
-                  "guidance": "MANAGEMENT:\n• Follow NICE CKS and Local formulary for the specific condition. Do not apply thyroid or diabetes advice to non-thyroid/non-diabetes topics (e.g. Cushing’s, Conn’s, steroid, pituitary have their own pathways).\n• General principles: sick-day rules for anyone on glucocorticoids; do not stop steroids abruptly; treat hypo-/hyperglycaemia and electrolyte disturbance as indicated. NICE CKS."
-                },
-                {
-                  "label": "3. Referral",
-                  "guidance": "REFERRAL:\n• 2WW: Pituitary/adrenal crisis, severe thyroid eye disease, suspected phaeochromocytoma crisis.\n• Urgent: Adrenal crisis, thyroid storm, severe DKA/HHS, severe hypercalcaemia.\n• Routine: Hyperthyroid, goitre/nodule with concern, type 1 diabetes, pituitary/adrenal/calcium disorders. Use topic-specific pathway where available. NICE NG12, NG145, NG28."
+                  "label": "Medical & referral",
+                  "guidance": "MANAGEMENT PLAN:\n1. Exclude drugs (antipsychotics, metoclopramide, etc.), pregnancy, hypothyroidism. MRI pituitary if prolactin significantly raised.\n2. Cabergoline first-line for macroprolactinoma or symptomatic microadenoma; titrate to prolactin. Refer endocrinology for diagnosis and follow-up.\n3. Monitor visual fields if macroadenoma. NICE CKS, Local formulary."
                 }
               ]
             }
@@ -19983,44 +19859,17 @@
           "evidence": "I'm [Name] [Organisation] education and Scottish Lead of the Primary Care Diabetes Society. We've had an explosion of new diabetes drugs over the last ten years, what I like to call the Postmet Form in Melange. Each of these drugs has their own modes of action, potencies, cardior…",
           "steps": [
             {
-              "id": "diabetes-stage",
-              "question": "1. HbA1c Target",
+              "id": "hypoglycaemia-mgt",
+              "question": "Hypoglycaemia",
               "type": "dropdown",
               "options": [
                 {
-                  "label": "Lifestyle or Single Drug (Mono)",
-                  "guidance": "MANAGEMENT PLAN:\n1. Target: 48 mmol/mol (6.5%).\n2. Review: Every 3-6 months until stable. NICE NG28."
+                  "label": "Diabetic",
+                  "guidance": "MANAGEMENT PLAN:\n1. Immediate: 15–20 g fast-acting glucose; recheck in 15 min; repeat if needed. Review medication (sulfonylurea, insulin), diet, driving. Sick-day rules. NICE NG17, NG28."
                 },
                 {
-                  "label": "Dual / Triple Therapy",
-                  "guidance": "MANAGEMENT PLAN:\n1. Target: 53 mmol/mol (7.0%).\n2. Adjust: Intensify if HbA1c rises to 58 mmol/mol. NICE NG28."
-                },
-                {
-                  "label": "Frailty / Comorbidities",
-                  "guidance": "MANAGEMENT PLAN:\n1. Individualise: Consider less stringent target (e.g. 58-64) to avoid hypoglycaemia. NICE NG28."
-                }
-              ]
-            },
-            {
-              "id": "diabetes-drug",
-              "question": "2. Drug Choice (NICE 2024)",
-              "type": "dropdown",
-              "options": [
-                {
-                  "label": "Step 1: Metformin First-line",
-                  "guidance": "MANAGEMENT PLAN:\n1. Dose: Start 500mg daily, increase slowly to 1g-2g total daily to avoid GI upset.\n2. SGLT2i: Add if CVD, HF, or high risk of CVD (QRISK ≥10%) regardless of HbA1c control. NICE NG28."
-                },
-                {
-                  "label": "CVD / Heart Failure / High Risk",
-                  "guidance": "MANAGEMENT PLAN:\n1. SGLT2 inhibitor (e.g. Dapagliflozin/Empagliflozin) should be added to Metformin as soon as CVD/HF is confirmed. NICE NG28."
-                },
-                {
-                  "label": "CKD + Albuminuria (ACR ≥3)",
-                  "guidance": "MANAGEMENT PLAN:\n1. SGLT2 inhibitor is indicated. Monitor eGFR; check local SPC for withdrawal thresholds. NICE NG28."
-                },
-                {
-                  "label": "Obesity (BMI ≥ 35)",
-                  "guidance": "MANAGEMENT PLAN:\n1. GLP-1 mimetics (e.g. Semaglutide) if BMI ≥35 AND triple therapy not at target (or BMI <35 if insulin would have occupational implications). NICE NG28."
+                  "label": "Non-diabetic",
+                  "guidance": "MANAGEMENT PLAN:\n1. Confirm Whipple’s triad; fasting glucose, insulin, C-peptide, sulfonylurea screen. Consider insulinoma, adrenal insufficiency, drugs. Refer endocrinology. NICE CKS."
                 }
               ]
             }
@@ -20040,44 +19889,17 @@
           "evidence": "I'm [Name] [Organisation] education and Scottish Lead of the Primary Care Diabetes Society. We've had an explosion of new diabetes drugs over the last ten years, what I like to call the Postmet Form in Melange. Each of these drugs has their own modes of action, potencies, cardior…",
           "steps": [
             {
-              "id": "diabetes-stage",
-              "question": "1. HbA1c Target",
+              "id": "hypoglycaemia-mgt",
+              "question": "Hypoglycaemia",
               "type": "dropdown",
               "options": [
                 {
-                  "label": "Lifestyle or Single Drug (Mono)",
-                  "guidance": "MANAGEMENT PLAN:\n1. Target: 48 mmol/mol (6.5%).\n2. Review: Every 3-6 months until stable. NICE NG28."
+                  "label": "Diabetic",
+                  "guidance": "MANAGEMENT PLAN:\n1. Immediate: 15–20 g fast-acting glucose; recheck in 15 min; repeat if needed. Review medication (sulfonylurea, insulin), diet, driving. Sick-day rules. NICE NG17, NG28."
                 },
                 {
-                  "label": "Dual / Triple Therapy",
-                  "guidance": "MANAGEMENT PLAN:\n1. Target: 53 mmol/mol (7.0%).\n2. Adjust: Intensify if HbA1c rises to 58 mmol/mol. NICE NG28."
-                },
-                {
-                  "label": "Frailty / Comorbidities",
-                  "guidance": "MANAGEMENT PLAN:\n1. Individualise: Consider less stringent target (e.g. 58-64) to avoid hypoglycaemia. NICE NG28."
-                }
-              ]
-            },
-            {
-              "id": "diabetes-drug",
-              "question": "2. Drug Choice (NICE 2024)",
-              "type": "dropdown",
-              "options": [
-                {
-                  "label": "Step 1: Metformin First-line",
-                  "guidance": "MANAGEMENT PLAN:\n1. Dose: Start 500mg daily, increase slowly to 1g-2g total daily to avoid GI upset.\n2. SGLT2i: Add if CVD, HF, or high risk of CVD (QRISK ≥10%) regardless of HbA1c control. NICE NG28."
-                },
-                {
-                  "label": "CVD / Heart Failure / High Risk",
-                  "guidance": "MANAGEMENT PLAN:\n1. SGLT2 inhibitor (e.g. Dapagliflozin/Empagliflozin) should be added to Metformin as soon as CVD/HF is confirmed. NICE NG28."
-                },
-                {
-                  "label": "CKD + Albuminuria (ACR ≥3)",
-                  "guidance": "MANAGEMENT PLAN:\n1. SGLT2 inhibitor is indicated. Monitor eGFR; check local SPC for withdrawal thresholds. NICE NG28."
-                },
-                {
-                  "label": "Obesity (BMI ≥ 35)",
-                  "guidance": "MANAGEMENT PLAN:\n1. GLP-1 mimetics (e.g. Semaglutide) if BMI ≥35 AND triple therapy not at target (or BMI <35 if insulin would have occupational implications). NICE NG28."
+                  "label": "Non-diabetic",
+                  "guidance": "MANAGEMENT PLAN:\n1. Confirm Whipple’s triad; fasting glucose, insulin, C-peptide, sulfonylurea screen. Consider insulinoma, adrenal insufficiency, drugs. Refer endocrinology. NICE CKS."
                 }
               ]
             }
@@ -20097,44 +19919,17 @@
           "evidence": "I'm [Name] [Organisation] education and Scottish Lead of the Primary Care Diabetes Society. We've had an explosion of new diabetes drugs over the last ten years, what I like to call the Postmet Form in Melange. Each of these drugs has their own modes of action, potencies, cardior…",
           "steps": [
             {
-              "id": "diabetes-stage",
-              "question": "1. HbA1c Target",
+              "id": "hypoglycaemia-mgt",
+              "question": "Hypoglycaemia",
               "type": "dropdown",
               "options": [
                 {
-                  "label": "Lifestyle or Single Drug (Mono)",
-                  "guidance": "MANAGEMENT PLAN:\n1. Target: 48 mmol/mol (6.5%).\n2. Review: Every 3-6 months until stable. NICE NG28."
+                  "label": "Diabetic",
+                  "guidance": "MANAGEMENT PLAN:\n1. Immediate: 15–20 g fast-acting glucose; recheck in 15 min; repeat if needed. Review medication (sulfonylurea, insulin), diet, driving. Sick-day rules. NICE NG17, NG28."
                 },
                 {
-                  "label": "Dual / Triple Therapy",
-                  "guidance": "MANAGEMENT PLAN:\n1. Target: 53 mmol/mol (7.0%).\n2. Adjust: Intensify if HbA1c rises to 58 mmol/mol. NICE NG28."
-                },
-                {
-                  "label": "Frailty / Comorbidities",
-                  "guidance": "MANAGEMENT PLAN:\n1. Individualise: Consider less stringent target (e.g. 58-64) to avoid hypoglycaemia. NICE NG28."
-                }
-              ]
-            },
-            {
-              "id": "diabetes-drug",
-              "question": "2. Drug Choice (NICE 2024)",
-              "type": "dropdown",
-              "options": [
-                {
-                  "label": "Step 1: Metformin First-line",
-                  "guidance": "MANAGEMENT PLAN:\n1. Dose: Start 500mg daily, increase slowly to 1g-2g total daily to avoid GI upset.\n2. SGLT2i: Add if CVD, HF, or high risk of CVD (QRISK ≥10%) regardless of HbA1c control. NICE NG28."
-                },
-                {
-                  "label": "CVD / Heart Failure / High Risk",
-                  "guidance": "MANAGEMENT PLAN:\n1. SGLT2 inhibitor (e.g. Dapagliflozin/Empagliflozin) should be added to Metformin as soon as CVD/HF is confirmed. NICE NG28."
-                },
-                {
-                  "label": "CKD + Albuminuria (ACR ≥3)",
-                  "guidance": "MANAGEMENT PLAN:\n1. SGLT2 inhibitor is indicated. Monitor eGFR; check local SPC for withdrawal thresholds. NICE NG28."
-                },
-                {
-                  "label": "Obesity (BMI ≥ 35)",
-                  "guidance": "MANAGEMENT PLAN:\n1. GLP-1 mimetics (e.g. Semaglutide) if BMI ≥35 AND triple therapy not at target (or BMI <35 if insulin would have occupational implications). NICE NG28."
+                  "label": "Non-diabetic",
+                  "guidance": "MANAGEMENT PLAN:\n1. Confirm Whipple’s triad; fasting glucose, insulin, C-peptide, sulfonylurea screen. Consider insulinoma, adrenal insufficiency, drugs. Refer endocrinology. NICE CKS."
                 }
               ]
             }
@@ -20226,17 +20021,13 @@
           "evidence": "Welcome to our new season of [Organisation] podcasts. Bite size regular chats for all of us working in primary care as GPs, nurses and pharmacists. Podcasts will cover clinical tips and hacks as well as hot topics to help make our lives a wee bit easier but ultimately to help imp…",
           "steps": [
             {
-              "id": "bp-assessment",
-              "question": "Assessment (Best Practice)",
+              "id": "subclinical-hyper-mgt",
+              "question": "Subclinical hyperthyroidism",
               "type": "dropdown",
               "options": [
                 {
-                  "label": "Standard Assessment",
-                  "guidance": "MANAGEMENT PLAN:\n1. History: Assess onset, severity, and triggers. Specifically exclude organic red flags (weight loss, night pain, fever, night sweats).\n2. Review: Family history and current medications.\n3. Differential: Consider most likely vs most serious diagnosis. Use validated scores (e.g. Centor, Wells, qSOFA) if applicable."
-                },
-                {
-                  "label": "Examination & Vitals",
-                  "guidance": "MANAGEMENT PLAN:\n1. Physical Exam: Perform focused physical exam (e.g. MSK, Neuro, Respiratory).\n2. Vitals: Check NEWS2 if systemically unwell.\n3. Documentation: Document findings and clinical rationale clearly."
+                  "label": "Assessment & referral",
+                  "guidance": "MANAGEMENT PLAN:\n1. TSH persistently <0.1: assess for atrial fibrillation, osteoporosis; consider referral. TSH 0.1–0.4: repeat in 3–6 months; treat if symptomatic or high risk. NICE NG145, CKS."
                 }
               ]
             }
@@ -20256,13 +20047,13 @@
           "evidence": "Welcome to our new season of [Organisation] podcasts. Bite size regular chats for all of us working in primary care as GPs, nurses and pharmacists. Podcasts will cover clinical tips and hacks as well as hot topics to help make our lives a wee bit easier but ultimately to help imp…",
           "steps": [
             {
-              "id": "endo-mgmt",
-              "question": "Endocrinology (Best Practice)",
+              "id": "subclinical-hyper-mgt",
+              "question": "Subclinical hyperthyroidism",
               "type": "dropdown",
               "options": [
                 {
-                  "label": "Hormone & Metabolic Review",
-                  "guidance": "MANAGEMENT PLAN:\n1. Thyroid: If abnormal TFTs, repeat with TPO ab; treat or refer per NICE NG145. Avoid routine T3.\n2. Diabetes: HbA1c target 48–53 mmol/mol; metformin first-line; add SGLT2i if CVD/HF/CKD. NICE NG28.\n3. Adrenal: Do not stop steroids abruptly; sick-day rules. Refer if Addison’s suspected.\n4. Safety-net: Red flags – thyroid storm, severe hypoglycaemia, DKA. NICE CKS."
+                  "label": "Assessment & referral",
+                  "guidance": "MANAGEMENT PLAN:\n1. TSH persistently <0.1: assess for atrial fibrillation, osteoporosis; consider referral. TSH 0.1–0.4: repeat in 3–6 months; treat if symptomatic or high risk. NICE NG145, CKS."
                 }
               ]
             }
@@ -20282,13 +20073,13 @@
           "evidence": "Welcome to our new season of [Organisation] podcasts. Bite size regular chats for all of us working in primary care as GPs, nurses and pharmacists. Podcasts will cover clinical tips and hacks as well as hot topics to help make our lives a wee bit easier but ultimately to help imp…",
           "steps": [
             {
-              "id": "bp-referral",
-              "question": "Referral & Follow-up (Best Practice)",
+              "id": "subclinical-hyper-mgt",
+              "question": "Subclinical hyperthyroidism",
               "type": "dropdown",
               "options": [
                 {
-                  "label": "Referral & Clinical Triage",
-                  "guidance": "MANAGEMENT PLAN:\n1. Triage: Refer via 2WW if malignancy suspected. Use 'Urgent' (within 2 weeks) for rapidly progressive non-malignant disease.\n2. Diagnostics: Ensure all mandatory primary care work-up (e.g. CT, Bloods, Scans) is completed before referral to prevent rejection.\n3. Safety-net: Ensure the patient understands the expected waiting time and knows who to contact if symptoms escalate."
+                  "label": "Assessment & referral",
+                  "guidance": "MANAGEMENT PLAN:\n1. TSH persistently <0.1: assess for atrial fibrillation, osteoporosis; consider referral. TSH 0.1–0.4: repeat in 3–6 months; treat if symptomatic or high risk. NICE NG145, CKS."
                 }
               ]
             }
@@ -20340,17 +20131,13 @@
           "evidence": "Management per NICE CKS and Local formulary.",
           "steps": [
             {
-              "id": "bp-assessment",
-              "question": "Assessment (Best Practice)",
+              "id": "testosterone-mgt",
+              "question": "Testosterone deficiency",
               "type": "dropdown",
               "options": [
                 {
-                  "label": "Standard Assessment",
-                  "guidance": "MANAGEMENT PLAN:\n1. History: Assess onset, severity, and triggers. Specifically exclude organic red flags (weight loss, night pain, fever, night sweats).\n2. Review: Family history and current medications.\n3. Differential: Consider most likely vs most serious diagnosis. Use validated scores (e.g. Centor, Wells, qSOFA) if applicable."
-                },
-                {
-                  "label": "Examination & Vitals",
-                  "guidance": "MANAGEMENT PLAN:\n1. Physical Exam: Perform focused physical exam (e.g. MSK, Neuro, Respiratory).\n2. Vitals: Check NEWS2 if systemically unwell.\n3. Documentation: Document findings and clinical rationale clearly."
+                  "label": "Assessment & referral",
+                  "guidance": "MANAGEMENT PLAN:\n1. Confirm with early-morning testosterone (repeat if borderline); LH/FSH to distinguish primary vs secondary. Exclude reversible causes. Refer urology/endocrinology for replacement if indicated. NICE NG23, CKS."
                 }
               ]
             }
@@ -20367,13 +20154,13 @@
           "evidence": "Management per NICE CKS and Local formulary.",
           "steps": [
             {
-              "id": "endo-mgmt",
-              "question": "Endocrinology (Best Practice)",
+              "id": "testosterone-mgt",
+              "question": "Testosterone deficiency",
               "type": "dropdown",
               "options": [
                 {
-                  "label": "Hormone & Metabolic Review",
-                  "guidance": "MANAGEMENT PLAN:\n1. Thyroid: If abnormal TFTs, repeat with TPO ab; treat or refer per NICE NG145. Avoid routine T3.\n2. Diabetes: HbA1c target 48–53 mmol/mol; metformin first-line; add SGLT2i if CVD/HF/CKD. NICE NG28.\n3. Adrenal: Do not stop steroids abruptly; sick-day rules. Refer if Addison’s suspected.\n4. Safety-net: Red flags – thyroid storm, severe hypoglycaemia, DKA. NICE CKS."
+                  "label": "Assessment & referral",
+                  "guidance": "MANAGEMENT PLAN:\n1. Confirm with early-morning testosterone (repeat if borderline); LH/FSH to distinguish primary vs secondary. Exclude reversible causes. Refer urology/endocrinology for replacement if indicated. NICE NG23, CKS."
                 }
               ]
             }
@@ -20390,13 +20177,13 @@
           "evidence": "Management per NICE CKS and Local formulary.",
           "steps": [
             {
-              "id": "bp-referral",
-              "question": "Referral & Follow-up (Best Practice)",
+              "id": "testosterone-mgt",
+              "question": "Testosterone deficiency",
               "type": "dropdown",
               "options": [
                 {
-                  "label": "Referral & Clinical Triage",
-                  "guidance": "MANAGEMENT PLAN:\n1. Triage: Refer via 2WW if malignancy suspected. Use 'Urgent' (within 2 weeks) for rapidly progressive non-malignant disease.\n2. Diagnostics: Ensure all mandatory primary care work-up (e.g. CT, Bloods, Scans) is completed before referral to prevent rejection.\n3. Safety-net: Ensure the patient understands the expected waiting time and knows who to contact if symptoms escalate."
+                  "label": "Assessment & referral",
+                  "guidance": "MANAGEMENT PLAN:\n1. Confirm with early-morning testosterone (repeat if borderline); LH/FSH to distinguish primary vs secondary. Exclude reversible causes. Refer urology/endocrinology for replacement if indicated. NICE NG23, CKS."
                 }
               ]
             }
@@ -20585,21 +20372,13 @@
           "evidence": "Management per NICE CKS and Local formulary.",
           "steps": [
             {
-              "id": "guidance-endocrinology",
-              "question": "Endocrinology (Consultant Standard)",
+              "id": "thyroiditis-mgt",
+              "question": "Thyroiditis",
               "type": "dropdown",
               "options": [
                 {
-                  "label": "1. Assessment & red flags",
-                  "guidance": "ASSESSMENT:\n• Tailor to the condition: history, examination, and investigations relevant to the endocrine presentation (e.g. thyroid: TFTs, TPO; diabetes: HbA1c, foot check; adrenal: electrolytes, short synacthen; calcium/bone: corrected Ca, PTH, vitamin D).\n• Red flags: Thyroid storm, severe hypo/hyperglycaemia, adrenal crisis, severe hypercalcaemia – emergency. NICE CKS, NG28, NG145."
-                },
-                {
-                  "label": "2. Management",
-                  "guidance": "MANAGEMENT:\n• Follow NICE CKS and Local formulary for the specific condition. Do not apply thyroid or diabetes advice to non-thyroid/non-diabetes topics (e.g. Cushing’s, Conn’s, steroid, pituitary have their own pathways).\n• General principles: sick-day rules for anyone on glucocorticoids; do not stop steroids abruptly; treat hypo-/hyperglycaemia and electrolyte disturbance as indicated. NICE CKS."
-                },
-                {
-                  "label": "3. Referral",
-                  "guidance": "REFERRAL:\n• 2WW: Pituitary/adrenal crisis, severe thyroid eye disease, suspected phaeochromocytoma crisis.\n• Urgent: Adrenal crisis, thyroid storm, severe DKA/HHS, severe hypercalcaemia.\n• Routine: Hyperthyroid, goitre/nodule with concern, type 1 diabetes, pituitary/adrenal/calcium disorders. Use topic-specific pathway where available. NICE NG12, NG145, NG28."
+                  "label": "Assessment & referral",
+                  "guidance": "MANAGEMENT PLAN:\n1. Painful (subacute): often viral; NSAID; beta-blocker if thyrotoxic. Usually self-limiting. Refer if severe or prolonged.\n2. Painless/postpartum: monitor TFTs; treat hypo or hyper as per NICE NG145. NICE CKS."
                 }
               ]
             }
@@ -22127,21 +21906,13 @@
           "evidence": "Management per NICE CKS and Local formulary.",
           "steps": [
             {
-              "id": "guidance-musculoskeletal",
-              "question": "Musculoskeletal (Consultant Standard)",
+              "id": "thyroiditis-mgt",
+              "question": "Thyroiditis",
               "type": "dropdown",
               "options": [
                 {
-                  "label": "1. Assessment & red flags",
-                  "guidance": "ASSESSMENT:\n• History: onset, trauma, mechanical vs inflammatory pattern, morning stiffness, systemic symptoms. Functional impact.\n• Examination: look, feel, move; joint line tenderness; neurological if spine/radiculopathy.\n• Red flags: Cauda equina (saddle numbness, retention, bilateral leg weakness) – emergency. Septic arthritis, suspected cord compression – urgent. Inflammatory arthritis (persistent synovitis) – 2WW. NICE NG59, NG100."
-                },
-                {
-                  "label": "2. Management",
-                  "guidance": "MANAGEMENT:\n• Acute pain: Paracetamol + NSAID (with PPI); avoid long-term NSAID. Back pain: advise activity; physio. Gout: naproxen or colchicine; allopurinol if recurrent. NICE NG59, NG219.\n• OA: Exercise, weight loss; topical NSAID for knee; oral NSAID short-term. Consider joint replacement referral if severe. NICE NG226."
-                },
-                {
-                  "label": "3. Referral",
-                  "guidance": "REFERRAL:\n• 2WW: Suspected RA (persistent synovitis), septic arthritis. NICE NG100.\n• Urgent: Cauda equina, septic arthritis, compartment syndrome.\n• Routine: Persistent pain after conservative treatment, carpal tunnel, frozen shoulder, joint replacement. NICE NG59, NG100."
+                  "label": "Assessment & referral",
+                  "guidance": "MANAGEMENT PLAN:\n1. Painful (subacute): often viral; NSAID; beta-blocker if thyrotoxic. Usually self-limiting. Refer if severe or prolonged.\n2. Painless/postpartum: monitor TFTs; treat hypo or hyper as per NICE NG145. NICE CKS."
                 }
               ]
             }
@@ -24150,21 +23921,21 @@
           "evidence": "Management per NICE CKS and Local formulary.",
           "steps": [
             {
-              "id": "guidance-musculoskeletal",
-              "question": "Musculoskeletal (Consultant Standard)",
+              "id": "bone-mgt",
+              "question": "Bone / osteoporosis",
               "type": "dropdown",
               "options": [
                 {
-                  "label": "1. Assessment & red flags",
-                  "guidance": "ASSESSMENT:\n• History: onset, trauma, mechanical vs inflammatory pattern, morning stiffness, systemic symptoms. Functional impact.\n• Examination: look, feel, move; joint line tenderness; neurological if spine/radiculopathy.\n• Red flags: Cauda equina (saddle numbness, retention, bilateral leg weakness) – emergency. Septic arthritis, suspected cord compression – urgent. Inflammatory arthritis (persistent synovitis) – 2WW. NICE NG59, NG100."
+                  "label": "Osteoporosis – fracture / DEXA",
+                  "guidance": "MANAGEMENT PLAN:\n1. FRAX; DEXA if indicated. Calcium + vitamin D. First-line: oral bisphosphonate (alendronate/risedronate); ensure correct administration. Consider IV zoledronate if oral not tolerated. NICE NG146, CKS."
                 },
                 {
-                  "label": "2. Management",
-                  "guidance": "MANAGEMENT:\n• Acute pain: Paracetamol + NSAID (with PPI); avoid long-term NSAID. Back pain: advise activity; physio. Gout: naproxen or colchicine; allopurinol if recurrent. NICE NG59, NG219.\n• OA: Exercise, weight loss; topical NSAID for knee; oral NSAID short-term. Consider joint replacement referral if severe. NICE NG226."
+                  "label": "Osteoporosis – denosumab / teriparatide",
+                  "guidance": "MANAGEMENT PLAN:\n1. Denosumab: 6-monthly SC; do not miss doses (rebound fracture risk). Monitor calcium/vitamin D. Teriparatide: specialist; limited duration. NICE NG146, CKS."
                 },
                 {
-                  "label": "3. Referral",
-                  "guidance": "REFERRAL:\n• 2WW: Suspected RA (persistent synovitis), septic arthritis. NICE NG100.\n• Urgent: Cauda equina, septic arthritis, compartment syndrome.\n• Routine: Persistent pain after conservative treatment, carpal tunnel, frozen shoulder, joint replacement. NICE NG59, NG100."
+                  "label": "Osteomalacia / Paget's",
+                  "guidance": "MANAGEMENT PLAN:\n1. Osteomalacia: vitamin D repletion; treat cause. Paget's: refer or bisphosphonate per specialist. NICE CKS."
                 }
               ]
             }
@@ -24180,21 +23951,21 @@
           "evidence": "Management per NICE CKS and Local formulary.",
           "steps": [
             {
-              "id": "guidance-musculoskeletal",
-              "question": "Musculoskeletal (Consultant Standard)",
+              "id": "bone-mgt",
+              "question": "Bone / osteoporosis",
               "type": "dropdown",
               "options": [
                 {
-                  "label": "1. Assessment & red flags",
-                  "guidance": "ASSESSMENT:\n• History: onset, trauma, mechanical vs inflammatory pattern, morning stiffness, systemic symptoms. Functional impact.\n• Examination: look, feel, move; joint line tenderness; neurological if spine/radiculopathy.\n• Red flags: Cauda equina (saddle numbness, retention, bilateral leg weakness) – emergency. Septic arthritis, suspected cord compression – urgent. Inflammatory arthritis (persistent synovitis) – 2WW. NICE NG59, NG100."
+                  "label": "Osteoporosis – fracture / DEXA",
+                  "guidance": "MANAGEMENT PLAN:\n1. FRAX; DEXA if indicated. Calcium + vitamin D. First-line: oral bisphosphonate (alendronate/risedronate); ensure correct administration. Consider IV zoledronate if oral not tolerated. NICE NG146, CKS."
                 },
                 {
-                  "label": "2. Management",
-                  "guidance": "MANAGEMENT:\n• Acute pain: Paracetamol + NSAID (with PPI); avoid long-term NSAID. Back pain: advise activity; physio. Gout: naproxen or colchicine; allopurinol if recurrent. NICE NG59, NG219.\n• OA: Exercise, weight loss; topical NSAID for knee; oral NSAID short-term. Consider joint replacement referral if severe. NICE NG226."
+                  "label": "Osteoporosis – denosumab / teriparatide",
+                  "guidance": "MANAGEMENT PLAN:\n1. Denosumab: 6-monthly SC; do not miss doses (rebound fracture risk). Monitor calcium/vitamin D. Teriparatide: specialist; limited duration. NICE NG146, CKS."
                 },
                 {
-                  "label": "3. Referral",
-                  "guidance": "REFERRAL:\n• 2WW: Suspected RA (persistent synovitis), septic arthritis. NICE NG100.\n• Urgent: Cauda equina, septic arthritis, compartment syndrome.\n• Routine: Persistent pain after conservative treatment, carpal tunnel, frozen shoulder, joint replacement. NICE NG59, NG100."
+                  "label": "Osteomalacia / Paget's",
+                  "guidance": "MANAGEMENT PLAN:\n1. Osteomalacia: vitamin D repletion; treat cause. Paget's: refer or bisphosphonate per specialist. NICE CKS."
                 }
               ]
             }
@@ -25486,21 +25257,13 @@
           "evidence": "Management per NICE CKS and Local formulary.",
           "steps": [
             {
-              "id": "guidance-musculoskeletal",
-              "question": "Musculoskeletal (Consultant Standard)",
+              "id": "thyroiditis-mgt",
+              "question": "Thyroiditis",
               "type": "dropdown",
               "options": [
                 {
-                  "label": "1. Assessment & red flags",
-                  "guidance": "ASSESSMENT:\n• History: onset, trauma, mechanical vs inflammatory pattern, morning stiffness, systemic symptoms. Functional impact.\n• Examination: look, feel, move; joint line tenderness; neurological if spine/radiculopathy.\n• Red flags: Cauda equina (saddle numbness, retention, bilateral leg weakness) – emergency. Septic arthritis, suspected cord compression – urgent. Inflammatory arthritis (persistent synovitis) – 2WW. NICE NG59, NG100."
-                },
-                {
-                  "label": "2. Management",
-                  "guidance": "MANAGEMENT:\n• Acute pain: Paracetamol + NSAID (with PPI); avoid long-term NSAID. Back pain: advise activity; physio. Gout: naproxen or colchicine; allopurinol if recurrent. NICE NG59, NG219.\n• OA: Exercise, weight loss; topical NSAID for knee; oral NSAID short-term. Consider joint replacement referral if severe. NICE NG226."
-                },
-                {
-                  "label": "3. Referral",
-                  "guidance": "REFERRAL:\n• 2WW: Suspected RA (persistent synovitis), septic arthritis. NICE NG100.\n• Urgent: Cauda equina, septic arthritis, compartment syndrome.\n• Routine: Persistent pain after conservative treatment, carpal tunnel, frozen shoulder, joint replacement. NICE NG59, NG100."
+                  "label": "Assessment & referral",
+                  "guidance": "MANAGEMENT PLAN:\n1. Painful (subacute): often viral; NSAID; beta-blocker if thyrotoxic. Usually self-limiting. Refer if severe or prolonged.\n2. Painless/postpartum: monitor TFTs; treat hypo or hyper as per NICE NG145. NICE CKS."
                 }
               ]
             }
@@ -34535,21 +34298,13 @@
           "evidence": "Management per NICE CKS and Local formulary.",
           "steps": [
             {
-              "id": "guidance-renal-urology",
-              "question": "Renal & Urology (Consultant Standard)",
+              "id": "testosterone-mgt",
+              "question": "Testosterone deficiency",
               "type": "dropdown",
               "options": [
                 {
-                  "label": "1. Assessment & red flags",
-                  "guidance": "ASSESSMENT:\n• CKD: eGFR, ACR, BP, electrolytes. Cause if unknown. AKI: volume status, drugs, obstruction.\n• LUTS: voiding diary, retention, haematuria. UTI: MSU before antibiotic if possible.\n• Red flags: Visible haematuria – 2WW. Acute retention, anuria – emergency. NICE NG12, NG97, NG203."
-                },
-                {
-                  "label": "2. Management",
-                  "guidance": "MANAGEMENT:\n• CKD: BP target <140/90 (or <130/80 if proteinuric). SGLT2i if T2DM and eGFR ≥20. Avoid nephrotoxics. Refer if eGFR <30 or rapid decline. NICE NG203.\n• LUTS: Alpha-blocker (e.g. tamsulosin); rule out retention. UTI: nitrofurantoin/trimethoprim 3 days (women). NICE NG97, NG109."
-                },
-                {
-                  "label": "3. Referral",
-                  "guidance": "REFERRAL:\n• 2WW: Visible haematuria; non-visible with eGFR <60. NICE NG12, NG97.\n• Emergency: Acute retention, anuria.\n• Routine: BPH not controlled, stone, recurrent UTI, eGFR <30. NICE NG97."
+                  "label": "Assessment & referral",
+                  "guidance": "MANAGEMENT PLAN:\n1. Confirm with early-morning testosterone (repeat if borderline); LH/FSH to distinguish primary vs secondary. Exclude reversible causes. Refer urology/endocrinology for replacement if indicated. NICE NG23, CKS."
                 }
               ]
             }
@@ -38309,24 +38064,21 @@
           "evidence": "Management per NICE CKS and Local formulary.",
           "steps": [
             {
-              "id": "hrt",
-              "question": "HRT choice",
+              "id": "bone-mgt",
+              "question": "Bone / osteoporosis",
               "type": "dropdown",
               "options": [
                 {
-                  "value": "oestrogen-only",
-                  "label": "No uterus – oestrogen only",
-                  "guidance": "MANAGEMENT PLAN:\nOestrogen only (patch/gel preferred for VTE risk). Review annually. NICE NG23."
+                  "label": "Osteoporosis – fracture / DEXA",
+                  "guidance": "MANAGEMENT PLAN:\n1. FRAX; DEXA if indicated. Calcium + vitamin D. First-line: oral bisphosphonate (alendronate/risedronate); ensure correct administration. Consider IV zoledronate if oral not tolerated. NICE NG146, CKS."
                 },
                 {
-                  "value": "combined",
-                  "label": "With uterus – combined",
-                  "guidance": "MANAGEMENT PLAN:\nOestrogen + cyclical or continuous progestogen. Sequential if perimenopausal; continuous if postmenopausal. NICE NG23."
+                  "label": "Osteoporosis – denosumab / teriparatide",
+                  "guidance": "MANAGEMENT PLAN:\n1. Denosumab: 6-monthly SC; do not miss doses (rebound fracture risk). Monitor calcium/vitamin D. Teriparatide: specialist; limited duration. NICE NG146, CKS."
                 },
                 {
-                  "value": "contraindications",
-                  "label": "Contraindications / alternatives",
-                  "guidance": "MANAGEMENT PLAN:\nContraindications: breast cancer, VTE, stroke. Consider non-hormonal (clonidine, CBT) or topical oestrogen for urogenital. NICE NG23."
+                  "label": "Osteomalacia / Paget's",
+                  "guidance": "MANAGEMENT PLAN:\n1. Osteomalacia: vitamin D repletion; treat cause. Paget's: refer or bisphosphonate per specialist. NICE CKS."
                 }
               ]
             }
@@ -49637,17 +49389,21 @@
           "evidence": "Join us for a whole range of bite-sized topics tailored for those working in primary care. Perfect for your daily commute or when you're out on a morning stroll. You can tune into us on all leading podcast platforms and don't forget to like and subscribe so you don't miss an epis…",
           "steps": [
             {
-              "id": "bp-assessment",
-              "question": "Assessment (Best Practice)",
+              "id": "bone-mgt",
+              "question": "Bone / osteoporosis",
               "type": "dropdown",
               "options": [
                 {
-                  "label": "Standard Assessment",
-                  "guidance": "MANAGEMENT PLAN:\n1. History: Assess onset, severity, and triggers. Specifically exclude organic red flags (weight loss, night pain, fever, night sweats).\n2. Review: Family history and current medications.\n3. Differential: Consider most likely vs most serious diagnosis. Use validated scores (e.g. Centor, Wells, qSOFA) if applicable."
+                  "label": "Osteoporosis – fracture / DEXA",
+                  "guidance": "MANAGEMENT PLAN:\n1. FRAX; DEXA if indicated. Calcium + vitamin D. First-line: oral bisphosphonate (alendronate/risedronate); ensure correct administration. Consider IV zoledronate if oral not tolerated. NICE NG146, CKS."
                 },
                 {
-                  "label": "Examination & Vitals",
-                  "guidance": "MANAGEMENT PLAN:\n1. Physical Exam: Perform focused physical exam (e.g. MSK, Neuro, Respiratory).\n2. Vitals: Check NEWS2 if systemically unwell.\n3. Documentation: Document findings and clinical rationale clearly."
+                  "label": "Osteoporosis – denosumab / teriparatide",
+                  "guidance": "MANAGEMENT PLAN:\n1. Denosumab: 6-monthly SC; do not miss doses (rebound fracture risk). Monitor calcium/vitamin D. Teriparatide: specialist; limited duration. NICE NG146, CKS."
+                },
+                {
+                  "label": "Osteomalacia / Paget's",
+                  "guidance": "MANAGEMENT PLAN:\n1. Osteomalacia: vitamin D repletion; treat cause. Paget's: refer or bisphosphonate per specialist. NICE CKS."
                 }
               ]
             }
@@ -49664,13 +49420,21 @@
           "evidence": "Join us for a whole range of bite-sized topics tailored for those working in primary care. Perfect for your daily commute or when you're out on a morning stroll. You can tune into us on all leading podcast platforms and don't forget to like and subscribe so you don't miss an epis…",
           "steps": [
             {
-              "id": "ent-mgmt",
-              "question": "ENT (Best Practice)",
+              "id": "bone-mgt",
+              "question": "Bone / osteoporosis",
               "type": "dropdown",
               "options": [
                 {
-                  "label": "Ear, Nose, Throat & Safety-net",
-                  "guidance": "MANAGEMENT PLAN:\n1. Throat: FeverPAIN/Centor for sore throat; penicillin V or clarithromycin if 2–3+. NICE NG84.\n2. Ear: AOM safety-netting; topical for otitis externa. NICE NG91.\n3. Nose: Topical steroid for rhinitis; consider allergy referral if severe.\n4. Red flags: 2WW hoarseness >3 weeks; unilateral deafness; suspected cancer. NICE NG12."
+                  "label": "Osteoporosis – fracture / DEXA",
+                  "guidance": "MANAGEMENT PLAN:\n1. FRAX; DEXA if indicated. Calcium + vitamin D. First-line: oral bisphosphonate (alendronate/risedronate); ensure correct administration. Consider IV zoledronate if oral not tolerated. NICE NG146, CKS."
+                },
+                {
+                  "label": "Osteoporosis – denosumab / teriparatide",
+                  "guidance": "MANAGEMENT PLAN:\n1. Denosumab: 6-monthly SC; do not miss doses (rebound fracture risk). Monitor calcium/vitamin D. Teriparatide: specialist; limited duration. NICE NG146, CKS."
+                },
+                {
+                  "label": "Osteomalacia / Paget's",
+                  "guidance": "MANAGEMENT PLAN:\n1. Osteomalacia: vitamin D repletion; treat cause. Paget's: refer or bisphosphonate per specialist. NICE CKS."
                 }
               ]
             }
@@ -49687,13 +49451,21 @@
           "evidence": "Join us for a whole range of bite-sized topics tailored for those working in primary care. Perfect for your daily commute or when you're out on a morning stroll. You can tune into us on all leading podcast platforms and don't forget to like and subscribe so you don't miss an epis…",
           "steps": [
             {
-              "id": "bp-referral",
-              "question": "Referral & Follow-up (Best Practice)",
+              "id": "bone-mgt",
+              "question": "Bone / osteoporosis",
               "type": "dropdown",
               "options": [
                 {
-                  "label": "Referral & Clinical Triage",
-                  "guidance": "MANAGEMENT PLAN:\n1. Triage: Refer via 2WW if malignancy suspected. Use 'Urgent' (within 2 weeks) for rapidly progressive non-malignant disease.\n2. Diagnostics: Ensure all mandatory primary care work-up (e.g. CT, Bloods, Scans) is completed before referral to prevent rejection.\n3. Safety-net: Ensure the patient understands the expected waiting time and knows who to contact if symptoms escalate."
+                  "label": "Osteoporosis – fracture / DEXA",
+                  "guidance": "MANAGEMENT PLAN:\n1. FRAX; DEXA if indicated. Calcium + vitamin D. First-line: oral bisphosphonate (alendronate/risedronate); ensure correct administration. Consider IV zoledronate if oral not tolerated. NICE NG146, CKS."
+                },
+                {
+                  "label": "Osteoporosis – denosumab / teriparatide",
+                  "guidance": "MANAGEMENT PLAN:\n1. Denosumab: 6-monthly SC; do not miss doses (rebound fracture risk). Monitor calcium/vitamin D. Teriparatide: specialist; limited duration. NICE NG146, CKS."
+                },
+                {
+                  "label": "Osteomalacia / Paget's",
+                  "guidance": "MANAGEMENT PLAN:\n1. Osteomalacia: vitamin D repletion; treat cause. Paget's: refer or bisphosphonate per specialist. NICE CKS."
                 }
               ]
             }
@@ -50542,21 +50314,13 @@
           "evidence": "Management per NICE CKS and Local formulary.",
           "steps": [
             {
-              "id": "guidance-ent",
-              "question": "ENT (Consultant Standard)",
+              "id": "thyroiditis-mgt",
+              "question": "Thyroiditis",
               "type": "dropdown",
               "options": [
                 {
-                  "label": "1. Assessment & red flags",
-                  "guidance": "ASSESSMENT:\n• Throat: FeverPAIN/Centor; duration, dysphagia, stridor. Ear: pain, discharge, hearing, vertigo. Nose: rhinorrhoea, obstruction, smell. Voice: hoarseness duration.\n• Examination: throat, ears, neck nodes. Cranial nerves if facial/voice concern.\n• Red flags: Stridor, difficulty swallowing – urgent. Hoarseness >3 weeks – 2WW. Unilateral deafness, unilateral tinnitus – refer. NICE NG12, NG84."
-                },
-                {
-                  "label": "2. Management",
-                  "guidance": "MANAGEMENT:\n• Sore throat: penicillin V if FeverPAIN 2–3+; 5–10 days. No antibiotic if 0–1. NICE NG84. Ear: AOM safety-net; topical for otitis externa. Wax: olive oil or sodium bicarbonate; refer if impacted. NICE NG91.\n• Rhinitis: intranasal steroid. Vertigo: Epley if BPPV. NICE CKS."
-                },
-                {
-                  "label": "3. Referral",
-                  "guidance": "REFERRAL:\n• 2WW: Hoarseness >3 weeks, suspected head and neck cancer. NICE NG12.\n• Urgent: Stridor, quinsy, mastoiditis, sudden sensorineural hearing loss.\n• Routine: Hearing loss, tinnitus, chronic sinusitis, glue ear, recurrent tonsillitis. NICE NG12."
+                  "label": "Assessment & referral",
+                  "guidance": "MANAGEMENT PLAN:\n1. Painful (subacute): often viral; NSAID; beta-blocker if thyrotoxic. Usually self-limiting. Refer if severe or prolonged.\n2. Painless/postpartum: monitor TFTs; treat hypo or hyper as per NICE NG145. NICE CKS."
                 }
               ]
             }
