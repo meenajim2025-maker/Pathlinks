@@ -57,47 +57,44 @@ async function init() {
                 initCURB();
                 initCHA2DS2();
                 initGFR();
-            }
-                if (item.id === 'nav-emis-coding') renderEmisIntegrations();
-            if (item.id === 'nav-device-auth') renderDeviceAuth();
-        });
-    });
-
-    initTheme();
-
-    // Search logic
-    document.getElementById('test-search').addEventListener('input', (e) => {
-        const term = e.target.value.toLowerCase();
-
-        // Special cases for calculators
-        const calcTerms = ['qrisk', 'news', 'sepsis', 'wells', 'curb', 'dvt', 'pneumonia', 'stroke', 'af', 'gfr', 'renal'];
-        if (calcTerms.some(kw => term.includes(kw))) {
-            // If specific calculator keyword found, highlight the calculators tab
-            document.getElementById('nav-calculators').style.boxShadow = '0 0 10px rgba(52, 152, 219, 0.5)';
-            setTimeout(() => {
-                document.getElementById('nav-calculators').style.boxShadow = 'none';
-            }, 2000);
-        }
-
-        if (term.length > 1) {
-            testData.forEach((cat, cIdx) => {
-                cat.tests.forEach((t, tIdx) => {
-                    if (t.name.toLowerCase().includes(term)) {
-                        document.getElementById('select-test').value = cIdx;
-                        updateParameters();
-                        document.getElementById('select-param').value = tIdx;
-                    }
-                });
             });
-        }
-    });
+        });
 
-} catch (e) {
-    console.error("Error loading test data:", e);
-    document.getElementById('select-test').innerHTML = '<option value="">Failed to load protocols</option>';
-    const out = document.getElementById('guidance-output');
-    if (out) out.innerHTML = '<div class="placeholder-text"><p>Could not load blood test data. Check the console or try refreshing.</p></div>';
-}
+        initTheme();
+
+        // Search logic
+        document.getElementById('test-search').addEventListener('input', (e) => {
+            const term = e.target.value.toLowerCase();
+
+            // Special cases for calculators
+            const calcTerms = ['qrisk', 'news', 'sepsis', 'wells', 'curb', 'dvt', 'pneumonia', 'stroke', 'af', 'gfr', 'renal'];
+            if (calcTerms.some(kw => term.includes(kw))) {
+                // If specific calculator keyword found, highlight the calculators tab
+                document.getElementById('nav-calculators').style.boxShadow = '0 0 10px rgba(52, 152, 219, 0.5)';
+                setTimeout(() => {
+                    document.getElementById('nav-calculators').style.boxShadow = 'none';
+                }, 2000);
+            }
+
+            if (term.length > 1) {
+                testData.forEach((cat, cIdx) => {
+                    cat.tests.forEach((t, tIdx) => {
+                        if (t.name.toLowerCase().includes(term)) {
+                            document.getElementById('select-test').value = cIdx;
+                            updateParameters();
+                            document.getElementById('select-param').value = tIdx;
+                        }
+                    });
+                });
+            }
+        });
+
+    } catch (e) {
+        console.error("Error loading test data:", e);
+        document.getElementById('select-test').innerHTML = '<option value="">Failed to load protocols</option>';
+        const out = document.getElementById('guidance-output');
+        if (out) out.innerHTML = '<div class="placeholder-text"><p>Could not load blood test data. Check the console or try refreshing.</p></div>';
+    }
 }
 
 function updateParameters() {

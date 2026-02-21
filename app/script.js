@@ -20,7 +20,6 @@ async function init() {
 
         categorySelect.addEventListener('change', updateParameters);
         document.getElementById('analyse-btn').addEventListener('click', analyseResult);
-        document.getElementById('analyse-btn').addEventListener('click', analyseResult);
 
         // Initialize Calculators
         initQRISK();
