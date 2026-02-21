@@ -1,6 +1,6 @@
 {
   "source": "Learning library + NICE CKS/NG; management steps from guidelines",
-  "generated": "2026-02-21T07:20:31.174Z",
+  "generated": "2026-02-21T07:25:02.833Z",
   "totalTools": 1920,
   "systems": [
     {
@@ -19849,44 +19849,17 @@
           "evidence": "Management per NICE CKS and Local formulary.",
           "steps": [
             {
-              "id": "diabetes-stage",
-              "question": "1. HbA1c Target",
+              "id": "dka-mgt",
+              "question": "Type 1 diabetes – DKA (emergency)",
               "type": "dropdown",
               "options": [
                 {
-                  "label": "Lifestyle or Single Drug (Mono)",
-                  "guidance": "MANAGEMENT PLAN:\n1. Target: 48 mmol/mol (6.5%).\n2. Review: Every 3-6 months until stable. NICE NG28."
+                  "label": "Emergency – primary care",
+                  "guidance": "MANAGEMENT PLAN:\n1. **Emergency:** Admit immediately (999 if severe or altered consciousness). Do not delay.\n2. **Before transfer:** If trained and IV access: 0.9% NaCl 1 L over 1 h; soluble insulin 0.1 unit/kg/h (after fluids started). Do not give insulin without fluids. Check K+ before insulin; if K+ <3.5 give potassium with first bag.\n3. **Sick-day:** Stop SGLT2i 3 days before planned procedures/surgery. NICE NG17, NG28, CKS Diabetes."
                 },
                 {
-                  "label": "Dual / Triple Therapy",
-                  "guidance": "MANAGEMENT PLAN:\n1. Target: 53 mmol/mol (7.0%).\n2. Adjust: Intensify if HbA1c rises to 58 mmol/mol. NICE NG28."
-                },
-                {
-                  "label": "Frailty / Comorbidities",
-                  "guidance": "MANAGEMENT PLAN:\n1. Individualise: Consider less stringent target (e.g. 58-64) to avoid hypoglycaemia. NICE NG28."
-                }
-              ]
-            },
-            {
-              "id": "diabetes-drug",
-              "question": "2. Drug Choice (NICE 2024)",
-              "type": "dropdown",
-              "options": [
-                {
-                  "label": "Step 1: Metformin First-line",
-                  "guidance": "MANAGEMENT PLAN:\n1. Dose: Start 500mg daily, increase slowly to 1g-2g total daily to avoid GI upset.\n2. SGLT2i: Add if CVD, HF, or high risk of CVD (QRISK ≥10%) regardless of HbA1c control. NICE NG28."
-                },
-                {
-                  "label": "CVD / Heart Failure / High Risk",
-                  "guidance": "MANAGEMENT PLAN:\n1. SGLT2 inhibitor (e.g. Dapagliflozin/Empagliflozin) should be added to Metformin as soon as CVD/HF is confirmed. NICE NG28."
-                },
-                {
-                  "label": "CKD + Albuminuria (ACR ≥3)",
-                  "guidance": "MANAGEMENT PLAN:\n1. SGLT2 inhibitor is indicated. Monitor eGFR; check local SPC for withdrawal thresholds. NICE NG28."
-                },
-                {
-                  "label": "Obesity (BMI ≥ 35)",
-                  "guidance": "MANAGEMENT PLAN:\n1. GLP-1 mimetics (e.g. Semaglutide) if BMI ≥35 AND triple therapy not at target (or BMI <35 if insulin would have occupational implications). NICE NG28."
+                  "label": "Inpatient (reference)",
+                  "guidance": "MANAGEMENT PLAN:\n1. **Fluids:** 0.9% NaCl; rate per local protocol (e.g. 1 L over 1 h then 1 L over 2 h then 2 L over 4 h then 1 L over 4 h). Replace deficit over 24–48 h.\n2. **Insulin:** Fixed-rate IV insulin 0.1 unit/kg/h; add 10% glucose when blood glucose <14 mmol/L; continue until ketones <0.6 and pH >7.3.\n3. **Potassium:** Add K+ to bags (e.g. 40 mmol/L) unless anuric; monitor 2–4 h. Phosphate only if severely low.\n4. **Monitor:** Capillary glucose 1 h; U&E 2–4 h; venous gas as indicated. NICE NG17, NG28, CKS Diabetes."
                 }
               ]
             }
