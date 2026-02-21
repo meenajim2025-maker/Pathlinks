@@ -391,26 +391,6 @@ input[type="text"] {
     margin-left: 8px;
 }
 
-/* Protocols list */
-.protocol-item {
-    background: white;
-    padding: 20px;
-    border-radius: 12px;
-    margin-bottom: 12px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    border: 1px solid #eee;
-}
-
-
-.protocol-item .cat-label {
-    background: #eee;
-    padding: 4px 10px;
-    border-radius: 10px;
-    font-size: 11px;
-    font-weight: 700;
-}
 
 /* Learning topics */
 .learning-topic-list {
@@ -580,88 +560,6 @@ input[type="text"] {
     color: var(--text-main);
 }
 
-/* Protocol modal */
-.modal-overlay {
-    position: fixed;
-    inset: 0;
-    background: rgba(0, 0, 0, 0.4);
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    z-index: 1000;
-    padding: 20px;
-}
-
-.modal-overlay.hidden {
-    display: none;
-}
-
-.modal-card {
-    background: var(--card-bg);
-    border-radius: var(--border-radius);
-    box-shadow: var(--shadow);
-    max-width: 520px;
-    width: 100%;
-    max-height: 85vh;
-    overflow: hidden;
-    display: flex;
-    flex-direction: column;
-}
-
-.modal-header {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding: 16px 20px;
-    border-bottom: 1px solid #eee;
-}
-
-.modal-header h3 {
-    margin: 0;
-    font-size: 1.1rem;
-    color: var(--primary);
-}
-
-.modal-close {
-    background: none;
-    border: none;
-    font-size: 24px;
-    line-height: 1;
-    color: var(--text-muted);
-    cursor: pointer;
-    padding: 0 4px;
-}
-
-.modal-close:hover {
-    color: var(--text-main);
-}
-
-.modal-body {
-    padding: 20px;
-    overflow-y: auto;
-    font-size: 14px;
-    line-height: 1.5;
-}
-
-.modal-body h4 {
-    margin: 12px 0 6px 0;
-    font-size: 13px;
-    color: var(--text-muted);
-}
-
-.modal-body .action-list {
-    list-style: none;
-    padding: 0;
-    margin: 0;
-}
-
-.modal-body .action-item {
-    padding: 6px 0;
-    border-left: 3px solid var(--primary);
-    padding-left: 12px;
-    margin-bottom: 6px;
-    font-size: 13px;
-}
 
 /* ===== MOBILE RESPONSIVE ===== */
 @media (max-width: 768px) {

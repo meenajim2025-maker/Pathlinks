@@ -26,7 +26,6 @@
                 <div class="nav-item active" id="nav-dashboard">Clinical decision tool</div>
                 <div class="nav-item" id="nav-decision-tools">Decision tools</div>
                 <div class="nav-item" id="nav-calculators">Calculators</div>
-                <div class="nav-item" id="nav-protocols">Protocols</div>
                 <div class="nav-item" id="nav-emis-coding">EMIS Integration</div>
                 <div class="nav-item" id="nav-device-auth">Device authorisation</div>
             </nav>
@@ -417,19 +416,6 @@
     </div>
     </section>
 
-    <section id="protocols-view" class="view hidden">
-        <h2>Clinical Protocols Library</h2>
-        <div class="card" style="margin-bottom: 2rem;">
-            <div class="field-group">
-                <label for="protocol-filter">Filter protocols (e.g. Ferritin, Sodium, HIV...)</label>
-                <input type="text" id="protocol-filter" placeholder="Type to filter protocols..."
-                    style="max-width: 400px;">
-            </div>
-        </div>
-        <div id="protocol-list-container" class="protocol-grid">
-            <!-- Protocol cards injected by JS -->
-        </div>
-    </section>
 
     <section id="emis-coding-view" class="view hidden">
         <h2>EMIS Integration & Coding</h2>
@@ -440,7 +426,8 @@
 
     <section id="device-auth-view" class="view hidden">
         <h2>Device authorisation</h2>
-        <p class="welcome-section" style="margin-bottom: 1rem;">Use your code to sign in on another device. Open the link below (or go to the URL and enter your code).</p>
+        <p class="welcome-section" style="margin-bottom: 1rem;">Use your code to sign in on another device. Open the
+            link below (or go to the URL and enter your code).</p>
         <div class="card" style="max-width: 520px;">
             <div class="field-group">
                 <label>Your code</label>
@@ -449,25 +436,18 @@
             </div>
             <div class="field-group" style="margin-top: 1rem;">
                 <label>Open this link to authorise</label>
-                <a id="device-auth-url" href="#" target="_blank" rel="noopener" class="device-auth-url" style="display: block; margin-top: 6px; word-break: break-all;">—</a>
-                <button type="button" id="device-auth-copy-url-btn" class="secondary-btn" style="margin-top: 8px;">Copy link</button>
+                <a id="device-auth-url" href="#" target="_blank" rel="noopener" class="device-auth-url"
+                    style="display: block; margin-top: 6px; word-break: break-all;">—</a>
+                <button type="button" id="device-auth-copy-url-btn" class="secondary-btn" style="margin-top: 8px;">Copy
+                    link</button>
             </div>
-            <button type="button" id="device-auth-generate-btn" class="primary-btn" style="margin-top: 0.5rem;">Generate new code</button>
-            <p class="small-text" style="margin-top: 1rem; color: var(--text-muted);">Code is valid for 15 minutes. Generate a new one if it expires.</p>
+            <button type="button" id="device-auth-generate-btn" class="primary-btn" style="margin-top: 0.5rem;">Generate
+                new code</button>
+            <p class="small-text" style="margin-top: 1rem; color: var(--text-muted);">Code is valid for 15 minutes.
+                Generate a new one if it expires.</p>
         </div>
     </section>
     </main>
-    </div>
-
-    <!-- Modals -->
-    <div id="protocol-modal" class="modal-overlay hidden">
-        <div class="modal-content">
-            <header class="modal-header">
-                <h2 id="protocol-modal-title">Protocol Details</h2>
-                <button class="close-modal" id="protocol-modal-close">&times;</button>
-            </header>
-            <div id="protocol-modal-body" class="modal-body"></div>
-        </div>
     </div>
 
     <script src="script.js"></script>

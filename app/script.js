@@ -25,7 +25,7 @@ async function init() {
             const urlEl = document.getElementById('device-auth-url');
             const btn = this;
             if (urlEl && urlEl.href && urlEl.href !== '#') {
-                navigator.clipboard.writeText(urlEl.href).then(() => { btn.textContent = 'Copied!'; setTimeout(() => { btn.textContent = 'Copy link'; }, 2000); }).catch(() => {});
+                navigator.clipboard.writeText(urlEl.href).then(() => { btn.textContent = 'Copied!'; setTimeout(() => { btn.textContent = 'Copy link'; }, 2000); }).catch(() => { });
             }
         });
 
@@ -50,7 +50,7 @@ async function init() {
                     else v.classList.add('hidden');
                 });
 
-                if (item.id === 'nav-protocols') renderProtocols();
+
                 if (item.id === 'nav-decision-tools') renderDecisionTools();
                 if (item.id === 'nav-calculators') initQRISK();
                 if (item.id === 'nav-emis-coding') renderEmisIntegrations();
@@ -639,147 +639,7 @@ function escapeHtml(s) {
     return div.innerHTML;
 }
 
-function viewFullProtocol(testName) {
-    let found = null;
-    let categoryName = '';
-    for (const cat of testData) {
-        const t = cat.tests.find(x => x.name === testName);
-        if (t) {
-            found = t;
-            categoryName = cat.category;
-            break;
-        }
-    }
-    if (!found) return;
-    let rangeStr;
-    if (found.ranges.all) {
-        rangeStr = `${found.ranges.all.min ?? 0} – ${found.ranges.all.max} ${found.unit}`;
-    } else if (found.ranges.male && found.ranges.female) {
-        rangeStr = `M: ${found.ranges.male.min}–${found.ranges.male.max} / F: ${found.ranges.female.min}–${found.ranges.female.max} ${found.unit}`;
-    } else if (found.ranges.age_40_49 || found.ranges.age_50_59) {
-        const parts = [];
-        if (found.ranges.age_40_49) parts.push('40–49: ≤' + found.ranges.age_40_49.max);
-        if (found.ranges.age_50_59) parts.push('50–59: ≤' + found.ranges.age_50_59.max);
-        if (found.ranges.age_60_69) parts.push('60–69: ≤' + found.ranges.age_60_69.max);
-        if (found.ranges.age_70_79) parts.push('70–79: ≤' + found.ranges.age_70_79.max);
-        rangeStr = (parts.length ? parts.join(' | ') + ' ' : '') + found.unit;
-    } else {
-        rangeStr = found.unit;
-    }
-    let body = `<p><strong>Reference range:</strong> ${rangeStr}</p>`;
-    if (found.guidance) {
-        if (found.guidance.high && found.guidance.high.actions) {
-            body += `<h4 style="margin-top: 12px;">If high</h4><ul class="action-list">`;
-            found.guidance.high.actions.forEach(a => { body += `<li class="action-item">${a}</li>`; });
-            body += '</ul>';
-        }
-        if (found.guidance.low && found.guidance.low.actions) {
-            body += `<h4 style="margin-top: 12px;">If low</h4><ul class="action-list">`;
-            found.guidance.low.actions.forEach(a => { body += `<li class="action-item">${a}</li>`; });
-            body += '</ul>';
-        }
-    }
-    document.getElementById('protocol-modal-title').textContent = `${found.name} (${categoryName})`;
-    document.getElementById('protocol-modal-body').innerHTML = body;
-    const modal = document.getElementById('protocol-modal');
-    modal.classList.remove('hidden');
-    modal.setAttribute('aria-hidden', 'false');
-}
 
-// --- Device authorisation (Vercel-style: user_code + URL like vercel.com/oauth/device?user_code=XXXX-XXXX) ---
-const DEVICE_AUTH_VALID_MS = 15 * 60 * 1000;
-let deviceAuthExpiryAt = null;
-
-function generateDeviceAuthCode() {
-    const chars = 'ABCDEFGHJKLMNPQRSTUVWXYZ';
-    const part = (n) => {
-        let s = '';
-        const arr = new Uint8Array(n);
-        crypto.getRandomValues(arr);
-        for (let i = 0; i < n; i++) s += chars[arr[i] % chars.length];
-        return s;
-    };
-    return part(4) + '-' + part(4);
-}
-
-function getDeviceAuthUrl(code) {
-    return window.location.origin + '/oauth/device.html?user_code=' + encodeURIComponent(code);
-}
-
-function formatDeviceAuthExpiry(expiryAt) {
-    if (!expiryAt) return '';
-    const now = Date.now();
-    if (now >= expiryAt) return 'Code expired. Generate a new one.';
-    const mins = Math.ceil((expiryAt - now) / 60000);
-    const endTime = new Date(expiryAt);
-    return `Valid for ${mins} min (until ${endTime.toLocaleTimeString([], { hour: '2-digit', minute: '2-digit' })})`;
-}
-
-function showNewDeviceAuthCode() {
-    const displayEl = document.getElementById('device-auth-code-display');
-    const expiryEl = document.getElementById('device-auth-expiry');
-    const urlEl = document.getElementById('device-auth-url');
-    if (!displayEl) return;
-    const code = generateDeviceAuthCode();
-    deviceAuthExpiryAt = Date.now() + DEVICE_AUTH_VALID_MS;
-    displayEl.textContent = code;
-    displayEl.setAttribute('aria-label', 'Authorisation code: ' + code);
-    if (expiryEl) expiryEl.textContent = formatDeviceAuthExpiry(deviceAuthExpiryAt);
-    const url = getDeviceAuthUrl(code);
-    if (urlEl) {
-        urlEl.href = url;
-        urlEl.textContent = url;
-    }
-}
-
-function renderDeviceAuth() {
-    const displayEl = document.getElementById('device-auth-code-display');
-    const expiryEl = document.getElementById('device-auth-expiry');
-    if (!displayEl) return;
-    if (!displayEl.textContent || displayEl.textContent === '—') showNewDeviceAuthCode();
-    else if (expiryEl) expiryEl.textContent = formatDeviceAuthExpiry(deviceAuthExpiryAt);
-}
-
-function renderProtocols(filter = "") {
-    const container = document.getElementById('protocol-list-container');
-    container.innerHTML = "";
-    const term = filter.toLowerCase();
-
-    testData.forEach(cat => {
-        cat.tests.forEach(test => {
-            if (term && !test.name.toLowerCase().includes(term) && !cat.category.toLowerCase().includes(term)) return;
-
-            const div = document.createElement('div');
-            div.className = "protocol-item";
-            const safeName = test.name.replace(/'/g, "\\'");
-            div.innerHTML = `
-                <div>
-                    <span class="cat-label">${cat.category}</span>
-                    <strong style="margin-left: 10px;">${test.name}</strong>
-                </div>
-                <button class="primary-btn" style="width: auto; padding: 8px 16px; font-size: 12px;" onclick="viewFullProtocol('${safeName}')">View Guidance</button>
-            `;
-            container.appendChild(div);
-        });
-    });
-
-    const filterInput = document.getElementById('protocol-filter');
-    if (filterInput && !filterInput.dataset.listener) {
-        filterInput.addEventListener('input', (e) => renderProtocols(e.target.value));
-        filterInput.dataset.listener = "true";
-    }
-
-    document.getElementById('protocol-modal-close').onclick = () => {
-        document.getElementById('protocol-modal').classList.add('hidden');
-        document.getElementById('protocol-modal').setAttribute('aria-hidden', 'true');
-    };
-    document.getElementById('protocol-modal').onclick = (e) => {
-        if (e.target.id === 'protocol-modal') {
-            e.target.classList.add('hidden');
-            e.target.setAttribute('aria-hidden', 'true');
-        }
-    };
-}
 
 function renderEmisIntegrations() {
     const exportDiv = document.getElementById('emis-integration-panel');
