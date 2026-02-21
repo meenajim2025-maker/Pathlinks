@@ -332,18 +332,6 @@ header {
     color: #1a2b3c;
 }
 
-.device-auth-code {
-    font-family: ui-monospace, 'Cascadia Code', 'Source Code Pro', Menlo, monospace;
-    font-size: 28px;
-    font-weight: 700;
-    letter-spacing: 0.25em;
-    padding: 16px 20px;
-    background: #f0f4f8;
-    border-radius: var(--border-radius);
-    border: 2px dashed #c5d0dc;
-    color: var(--text-main);
-    user-select: all;
-}
 
 .decision-search-results {
     position: absolute;
@@ -483,16 +471,7 @@ input[type="text"] {
     content: "📋";
 }
 
-.emis-code-badge {
-    display: inline-block;
-    background: #34495e;
-    color: white;
-    padding: 2px 8px;
-    border-radius: 4px;
-    font-family: monospace;
-    font-size: 12px;
-    margin-left: 8px;
-}
+
 
 
 /* Learning topics */

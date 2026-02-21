@@ -20,14 +20,7 @@ async function init() {
 
         categorySelect.addEventListener('change', updateParameters);
         document.getElementById('analyse-btn').addEventListener('click', analyseResult);
-        document.getElementById('device-auth-generate-btn')?.addEventListener('click', showNewDeviceAuthCode);
-        document.getElementById('device-auth-copy-url-btn')?.addEventListener('click', function () {
-            const urlEl = document.getElementById('device-auth-url');
-            const btn = this;
-            if (urlEl && urlEl.href && urlEl.href !== '#') {
-                navigator.clipboard.writeText(urlEl.href).then(() => { btn.textContent = 'Copied!'; setTimeout(() => { btn.textContent = 'Copy link'; }, 2000); }).catch(() => { });
-            }
-        });
+        document.getElementById('analyse-btn').addEventListener('click', analyseResult);
 
         // Initialize Calculators
         initQRISK();
@@ -53,8 +46,6 @@ async function init() {
 
                 if (item.id === 'nav-decision-tools') renderDecisionTools();
                 if (item.id === 'nav-calculators') initQRISK();
-                if (item.id === 'nav-emis-coding') renderEmisIntegrations();
-                if (item.id === 'nav-device-auth') renderDeviceAuth();
             });
         });
 
