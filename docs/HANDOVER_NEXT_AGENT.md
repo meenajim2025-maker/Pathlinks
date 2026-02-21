@@ -12,6 +12,8 @@ UK GP clinical decision support web app: blood test actioning, **~1920 Decision 
 **Live:** https://pathlinks-clinical.vercel.app  
 **Deploy:** `npx vercel --prod --yes` from repo root.
 
+**Important:** After making any changes that affect the app (data, scripts, UI), **always deploy to Vercel** so the user can see the changes. They do not have another way to view updates (e.g. localhost is not used). Commit first, then run `npx vercel --prod --yes`.
+
 ---
 
 ## What was completed (this session)
