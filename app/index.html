@@ -26,6 +26,9 @@
                 <div class="nav-item active" id="nav-dashboard">Clinical decision tool</div>
                 <div class="nav-item" id="nav-decision-tools">Decision tools</div>
                 <div class="nav-item" id="nav-calculators">Calculators</div>
+                <div class="nav-item" id="nav-sandbox"
+                    style="background: rgba(231, 76, 60, 0.1); color: var(--accent); margin-top: 10px; border: 1px dashed var(--accent);">
+                    🎓 Sandbox</div>
             </nav>
             <div class="user-profile">
                 <div class="avatar">DR</div>
@@ -347,14 +350,78 @@
                 </div>
 
     </div>
+    </div>
     </section>
 
+    <!-- Medical Education Sandbox View (Mobile) -->
+    <section id="sandbox-view" class="view hidden">
+        <div class="welcome-section">
+            <h2 style="color: var(--accent); font-size: 24px;">Clinical Sandbox</h2>
+            <p>Practice simulated patient cases. Powered by NICE guidelines.</p>
+        </div>
 
+        <div id="sandbox-scenario-selection" class="grid-container" style="grid-template-columns: 1fr;">
+            <div class="card" style="border-top: 4px solid var(--accent); padding: 16px;">
+                <h3>Select a Clinical Case</h3>
+                <div id="sandbox-scenario-list">
+                    <p class="small-text">Loading scenarios...</p>
+                </div>
+            </div>
+        </div>
+
+        <div id="sandbox-active-simulation" class="grid-container hidden"
+            style="grid-template-columns: 1fr; gap: 16px;">
+            <div class="card" style="border: 2px solid var(--primary); background: #f8fbfe; padding: 16px;">
+                <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 12px;">
+                    <h3 id="sandbox-vignette-title" style="margin: 0; font-size: 16px; color: var(--primary-dark);">
+                    </h3>
+                    <div
+                        style="background: #e74c3c; color: white; padding: 4px 8px; border-radius: 12px; font-weight: bold; font-family: monospace; font-size: 12px;">
+                        ⏱️ <span id="sandbox-timer">00:00</span>
+                    </div>
+                </div>
+                <p id="sandbox-vignette-text" style="line-height: 1.5; font-size: 14px;"></p>
+                <hr style="border: 0; border-top: 1px solid #ddd; margin: 16px 0;">
+                <button class="primary-btn" style="background: var(--accent);" onclick="endSandboxScenario()">🏁 End
+                    Simulation</button>
+            </div>
+
+            <div class="card" style="background: #fafafa; padding: 16px;">
+                <h4 style="margin-bottom: 8px; font-size: 12px; text-transform: uppercase;">Actions Logged</h4>
+                <ul id="sandbox-live-log"
+                    style="list-style: none; padding: 0; margin: 0; min-height: 50px; background: white; border: 1px solid #eee; border-radius: 8px; padding: 8px;">
+                </ul>
+            </div>
+        </div>
+
+        <div id="sandbox-results-panel" class="grid-container hidden"
+            style="grid-template-columns: 1fr; margin-top: 16px;">
+            <div class="card" style="border-top: 4px solid var(--success); padding: 16px;">
+                <h3>Simulation Review</h3>
+                <div
+                    style="text-align: center; padding: 16px; background: #f8fafd; border-radius: 12px; border: 1px solid #e1e8ed; margin: 16px 0;">
+                    <span class="small-text">Final Score</span>
+                    <div id="sandbox-final-score" style="font-size: 36px; font-weight: 800; font-family: 'Outfit';">
+                    </div>
+                </div>
+                <h4 style="margin-bottom: 8px; font-size: 14px;">Feedback:</h4>
+                <ul id="sandbox-feedback-list" style="padding-left: 20px; color: #333; font-size: 13px;"></ul>
+
+                <h4 style="margin-top: 16px; margin-bottom: 8px; font-size: 14px;">NICE Rationale:</h4>
+                <p id="sandbox-rationale"
+                    style="font-size: 13px; line-height: 1.5; padding: 12px; background: #e3f2fd; border-radius: 8px; border-left: 4px solid #2196F3;">
+                </p>
+
+                <button class="secondary-btn" style="margin-top: 16px;" onclick="returnToSandboxMenu()">Menu</button>
+            </div>
+        </div>
+    </section>
 
     </main>
     </div>
 
     <script src="script.js"></script>
+    <script src="../sandbox.js"></script>
 </body>
 
 </html>

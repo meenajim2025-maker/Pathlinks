@@ -26,6 +26,9 @@
                 <div class="nav-item active" id="nav-dashboard">Clinical decision tool</div>
                 <div class="nav-item" id="nav-decision-tools">Decision tools</div>
                 <div class="nav-item" id="nav-calculators">Calculators</div>
+                <div class="nav-item" id="nav-sandbox"
+                    style="background: rgba(231, 76, 60, 0.1); color: var(--accent); margin-top: 10px; border: 1px dashed var(--accent);">
+                    🎓 Education Sandbox</div>
             </nav>
             <div class="sidebar-spacer"></div>
             <div class="theme-toggle">
@@ -414,12 +417,100 @@
     </div>
     </section>
 
+    <!-- Medical Education Sandbox View -->
+    <section id="sandbox-view" class="view hidden">
+        <div class="welcome-section">
+            <h2 style="color: var(--accent);">Clinical Sandbox Mode</h2>
+            <p>Practice simulated patient cases and test your decision-making using PathLinks tools. Scores are checked
+                against NICE guidelines.</p>
+        </div>
+
+        <!-- Scenario Selection Screen -->
+        <div id="sandbox-scenario-selection" class="grid-container" style="grid-template-columns: 1fr;">
+            <div class="card" style="border-top: 4px solid var(--accent);">
+                <h3>Select a Clinical Case</h3>
+                <div id="sandbox-scenario-list">
+                    <!-- Javascript populates this list -->
+                    <p class="small-text">Loading scenarios...</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Active Simulation Screen -->
+        <div id="sandbox-active-simulation" class="grid-container hidden"
+            style="grid-template-columns: 1fr 300px; gap: 24px;">
+            <!-- Left: Case Details -->
+            <div class="card" style="border: 2px solid var(--primary); background: #f8fbfe;">
+                <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 16px;">
+                    <h3 id="sandbox-vignette-title" style="margin: 0; color: var(--primary-dark);"></h3>
+                    <div
+                        style="background: #e74c3c; color: white; padding: 4px 12px; border-radius: 20px; font-weight: bold; font-family: monospace;">
+                        ⏱️ <span id="sandbox-timer">00:00</span>
+                    </div>
+                </div>
+
+                <p id="sandbox-vignette-text" style="line-height: 1.6; font-size: 15px;"></p>
+
+                <hr style="border: 0; border-top: 1px solid #ddd; margin: 20px 0;">
+
+                <h4>Instructions:</h4>
+                <p class="small-text">Use the side navigation to open relevant Calculators or Decision Tools. Your
+                    actions are tracked. When you have formulated a management plan, end the simulation to receive your
+                    grade.</p>
+
+                <button class="primary-btn" style="background: var(--accent); margin-top: 20px;"
+                    onclick="endSandboxScenario()">🏁 End Simulation & Grade</button>
+                <button class="secondary-btn" style="margin-top: 10px;" onclick="returnToSandboxMenu()">Cancel
+                    Case</button>
+            </div>
+
+            <!-- Right: Action Tracker Panel -->
+            <div class="card" style="background: #fafafa;">
+                <h4 style="margin-bottom: 12px; font-size: 14px; text-transform: uppercase; color: #666;">Actions Logged
+                </h4>
+                <ul id="sandbox-live-log"
+                    style="list-style: none; padding: 0; margin: 0; min-height: 150px; background: white; border: 1px solid #eee; border-radius: 8px; padding: 12px;">
+                    <!-- Javascript adds logs here -->
+                </ul>
+            </div>
+        </div>
+
+        <!-- Results Review Screen -->
+        <div id="sandbox-results-panel" class="grid-container hidden"
+            style="grid-template-columns: 1fr; margin-top: 24px;">
+            <div class="card" style="border-top: 4px solid var(--success);">
+                <h3>Simulation Review</h3>
+                <div style="display: flex; gap: 30px; margin-top: 20px;">
+                    <div
+                        style="text-align: center; padding: 20px; background: #f8fafd; border-radius: 12px; border: 1px solid #e1e8ed; min-width: 150px;">
+                        <span class="small-text">Final Score</span>
+                        <div id="sandbox-final-score"
+                            style="font-size: 42px; font-weight: 800; font-family: 'Outfit'; margin-top: 8px;"></div>
+                    </div>
+                    <div style="flex: 1;">
+                        <h4 style="margin-bottom: 8px;">Action Feedback:</h4>
+                        <ul id="sandbox-feedback-list" style="padding-left: 20px; color: #333;"></ul>
+
+                        <h4 style="margin-top: 20px; margin-bottom: 8px;">NICE Rationale:</h4>
+                        <p id="sandbox-rationale"
+                            style="font-size: 14px; line-height: 1.6; padding: 16px; background: #e3f2fd; border-radius: 8px; border-left: 4px solid #2196F3;">
+                        </p>
+
+                        <button class="secondary-btn" style="width: auto; margin-top: 20px;"
+                            onclick="returnToSandboxMenu()">Return to Menu</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
 
 
     </main>
     </div>
 
     <script src="script.js"></script>
+    <script src="sandbox.js"></script>
 </body>
 
 </html>
