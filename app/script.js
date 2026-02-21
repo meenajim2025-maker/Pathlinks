@@ -44,7 +44,12 @@ async function init() {
 
 
                 if (item.id === 'nav-decision-tools') renderDecisionTools();
-                if (item.id === 'nav-calculators') initQRISK();
+                if (item.id === 'nav-calculators') {
+                    initQRISK();
+                    initNEWS2();
+                    initWells();
+                    initCURB();
+                }
             });
         });
 

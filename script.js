@@ -50,13 +50,15 @@ async function init() {
                     else v.classList.add('hidden');
                 });
 
-
-
-                initNEWS2();
-                initWells();
-                initCURB();
-                initCHA2DS2();
-                initGFR();
+                if (item.id === 'nav-decision-tools') renderDecisionTools();
+                if (item.id === 'nav-calculators') {
+                    initQRISK();
+                    initNEWS2();
+                    initWells();
+                    initCURB();
+                    initCHA2DS2();
+                    initGFR();
+                }
             });
         });
 
