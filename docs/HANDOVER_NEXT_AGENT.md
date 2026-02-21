@@ -1,38 +1,27 @@
 # Handover to next agent
 
-**Date:** 2025-02-16  
-**Read this first** when resuming work on PathLinks. For full context, also read `docs/AGENT_CONTEXT_RESUME.md`.
+**Date:** 2025-02-21  
+**Read this first** when resuming work on PathLinks. For full context, read `docs/AGENT_CONTEXT_RESUME.md`.
 
 ---
 
 ## What is PathLinks?
 
-UK GP clinical decision support web app: blood test actioning, **~1920 Decision tools** by system with NICE-based management, Protocols, Learning library, EMIS Integration, Device authorisation (Vercel-style code + URL).
+UK GP clinical decision support web app: blood test actioning, **1920 Decision tools** by system with NICE-based management, Protocols, Learning library, EMIS Integration, Device authorisation (Vercel-style code + URL).
 
 **Live:** https://pathlinks-clinical.vercel.app  
 **Deploy:** `npx vercel --prod --yes` from repo root.
 
-**Important:** After making any changes that affect the app (data, scripts, UI), **always deploy to Vercel** so the user can see the changes. They do not have another way to view updates (e.g. localhost is not used). Commit first, then run `npx vercel --prod --yes`.
+**Important:** After any change that affects the app (data, templates, UI), **commit then deploy to Vercel** so the user can see updates. They do not use localhost.
 
 ---
 
-## What was completed (this session)
+## Current state (shutdown handover)
 
-1. **Decision tools UX**  
-   - Tools sorted A–Z within each system.  
-   - Topic filter (“Filter topics”) and “Search all systems” with correct management plan on click.  
-   - Restless legs / Narcolepsy moved to neurology in bulk data.
-
-2. **Management plans – no generic plan left**  
-   - **Senior consultant audit** (`docs/MANAGEMENT_PLAN_AUDIT_SENIOR_CONSULTANT.md`): analysed all tools; added many topic-specific templates and system-specific fallbacks.  
-   - **Final change:** the single generic “Holistic Management Plan” catch-all was **replaced by system-specific consultant-grade plans**. Every tool now has either a **topic-specific** template (from `management-content.json`) or a **system-specific** plan (cardiovascular, dermatology, ENT, gastro, paediatrics, etc.) with NICE-referenced content. **0** tools use a one-size-fits-all generic plan.
-
-3. **Device authorisation**  
-   - Vercel-style flow: user code (XXXX-XXXX) and URL `/oauth/device.html?user_code=...`.  
-   - Nav item “Device authorisation”; page at `oauth/device.html`.
-
-4. **Vercel**  
-   - `vercel.json` updated (cache headers for `/data/` and `/app/data/`).
+- **Decision tools:** **1920 tools**, **all** have a **topic-specific** template. **0** use the system fallback. Audit: `node scripts/audit-all-sections-fallback.js` (expect 0 on fallback).
+- **Templates:** `scripts/management-content.json` – first keyword match wins. **DKA** and **Verification of death** have correct emergency/procedure content; **Type 1 diabetes – DKA** shows DKA management (admit, fluids, insulin, K+), not HbA1c/drug choice.
+- **Protocol cache:** App fetches `decision_tools_protocol.json?v=5`; bump version in `app/script.js` when protocol changes.
+- **Vercel:** All changes deployed; live at https://pathlinks-clinical.vercel.app.
 
 ---
 
@@ -40,34 +29,37 @@ UK GP clinical decision support web app: blood test actioning, **~1920 Decision 
 
 | File | Role |
 |------|------|
-| `scripts/build-decision-tools.js` | Builds decision tools; contains **system-specific catch-all** plans (no generic plan). |
-| `scripts/management-content.json` | Topic-specific templates (first keyword match wins). Broad “dermatology”/“skin condition” at end. |
-| `data/decision_tools_protocol.json` | Built output; copy to `app/data/` after build. |
-| `docs/MANAGEMENT_PLAN_AUDIT_SENIOR_CONSULTANT.md` | Audit, recommendations 1–5, QA counts. |
+| `scripts/management-content.json` | Topic-specific templates (DKA, Verification of death, endocrine, procedures, derm, gastro, etc.). First keyword match wins. |
+| `scripts/build-decision-tools.js` | Builds `data/decision_tools_protocol.json`; contains system-specific fallbacks (used only when no template matches). |
+| `data/decision_tools_protocol.json` | Built output; **copy to `app/data/`** after build. |
+| `app/data/decision_tools_protocol.json` | What the live app loads. |
+| `app/script.js` | Loads protocol with `?v=5`; Decision tools UI. |
+| `docs/FORENSIC_AUDIT_ALL_SECTIONS.md` | Full audit: all sections, 0 on fallback. |
+| `scripts/audit-all-sections-fallback.js` | Lists tools on fallback; run after build. |
 | `docs/AGENT_CONTEXT_RESUME.md` | Full project context and layout. |
-| `oauth/device.html` | Device auth page. |
+| `oauth/device.html` | Device authorisation page. |
 
 ---
 
 ## Commands
 
 - **Rebuild Decision tools:** `node scripts/build-decision-tools.js` then `cp data/decision_tools_protocol.json app/data/`
+- **Audit (check fallback count):** `node scripts/audit-all-sections-fallback.js`
 - **Deploy:** `npx vercel --prod --yes`
 
 ---
 
 ## Repo state at handover
 
-- **Committed:** All changes from this session (see commit message).  
-- **Optional untracked:** `data/knowledge_base.json`, `app/data/knowledge_base.json` (from USB/transcription) – add or .gitignore as you prefer.  
-- **Do not commit:** `.cursor/` (local IDE).
+- **Committed:** All session work (DKA template, Verification of death, full forensic audit, all 1920 topic-specific, cache v5). See recent commits.
+- **Untracked:** `.cursor/` (local IDE – do not commit).
 
 ---
 
 ## Suggested next steps (optional)
 
-- Add more topic-specific templates in `management-content.json` to match more condition titles (reduces use of system-specific catch-all).  
-- Deploy to Vercel after pull so live app reflects latest management plans and device auth.
+- Add or refine topic-specific templates in `scripts/management-content.json` if any new tool titles are added; rebuild, copy to `app/data/`, bump cache version, deploy.
+- If user reports wrong content for a tool: add a **more specific** template (with keywords that match that title) **before** any broader template that might match it (e.g. DKA before generic diabetes).
 
 ---
 

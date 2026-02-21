@@ -1,6 +1,6 @@
 # Context for next agent – resume work here
 
-**Last updated:** 2025-02-16  
+**Last updated:** 2025-02-21  
 **Purpose:** Read this file first so the next agent can continue without losing context.
 
 ---
@@ -10,7 +10,7 @@
 **PathLinks** is a UK GP clinical decision support web app. It includes:
 
 - **Clinical decision tool (dashboard):** Blood test actioning (select test, enter value → NICE-aligned guidance, EMIS coding).
-- **Decision tools:** ~1900 tools by system (cardiovascular, dermatology, mental-health, gastroenterology, endocrinology, musculoskeletal, respiratory, paediatrics, renal-urology, women-health, infectious, neurology, haematology, ent, procedures-general, other). Each tool has **real NICE-based management** (drugs, doses, referral). No generic “see guidelines”.
+- **Decision tools:** **1920** tools by system (cardiovascular, dermatology, mental-health, gastroenterology, endocrinology, musculoskeletal, respiratory, paediatrics, renal-urology, women-health, infectious, neurology, haematology, ent, procedures-general, other). **All** have a **topic-specific** template (0 on system fallback). Each tool shows NICE-based management (drugs, doses, referral).
 - **Protocols:** Browse all blood tests and view full protocol text.
 - **Learning library:** Search/read transcript content (from USB MP3 extraction) if `knowledge_base.json` is present.
 - **EMIS Integration:** Download XML for EMIS Web.
@@ -72,8 +72,8 @@
 
 ## 5. Current repo state (at handoff)
 
-- **Committed:** All session work (Decision tools UX, management audit and system-specific catch-all, device auth, vercel.json, oauth/, handover doc). See latest commit message.
-- **Untracked (optional):** `app/data/clinical_topics_learning.json`, `app/data/knowledge_base.json`, `data/clinical_topics_learning.json`, `data/knowledge_base.json` – from USB/transcription; add or .gitignore as you prefer. Do not commit `.cursor/`.
+- **Committed:** All session work: full forensic audit (all sections), 1920/1920 topic-specific (0 on fallback), DKA template (Type 1 diabetes – DKA), Verification of death, procedures/derm/gastro/respiratory/renal/women/MH/MSK/paeds/infectious/neuro/haem/ENT/other templates, cache v5, handover docs. See recent commits.
+- **Untracked (optional):** `app/data/clinical_topics_learning.json`, `app/data/knowledge_base.json`, etc. Do not commit `.cursor/`.
 
 **Next agent:** Read `docs/HANDOVER_NEXT_AGENT.md` first, then this file for full context.
 
