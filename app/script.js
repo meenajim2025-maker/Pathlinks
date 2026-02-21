@@ -398,7 +398,7 @@ async function renderDecisionTools() {
     if (!decisionToolsData) {
         systemSelect.dataset.loading = 'true';
         try {
-            const res = await fetch('./data/decision_tools_protocol.json');
+            const res = await fetch('./data/decision_tools_protocol.json?v=' + (window.DECISION_TOOLS_CACHE_BUST || '3'));
             if (!res.ok) throw new Error('Not found');
             decisionToolsData = await res.json();
             systemSelect.dataset.loading = 'false';

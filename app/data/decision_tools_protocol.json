@@ -1,6 +1,6 @@
 {
   "source": "Learning library + NICE CKS/NG; management steps from guidelines",
-  "generated": "2026-02-21T06:53:05.332Z",
+  "generated": "2026-02-21T07:07:59.758Z",
   "totalTools": 1920,
   "systems": [
     {
@@ -281,21 +281,13 @@
           "evidence": "Management per NICE CKS and Local formulary.",
           "steps": [
             {
-              "id": "guidance-cardiovascular",
-              "question": "Cardiovascular (Consultant Standard)",
+              "id": "abpm-mgt",
+              "question": "Ambulatory BP monitoring",
               "type": "dropdown",
               "options": [
                 {
-                  "label": "1. Assessment & red flags",
-                  "guidance": "ASSESSMENT:\n• History: chest pain character, palpitations, syncope, breathlessness, oedema. Medication and risk factors.\n• Examination: BP, pulse (rate/rhythm), JVP, heart sounds, peripheral perfusion. NEWS2 if unwell.\n• Investigations: ECG, lipids, HbA1c; BNP if breathless; troponin if ACS suspected.\n• Red flags: Acute chest pain >15 min, syncope with exertion, acute SOB – 999. NICE NG72, NG106, NG185, NG196."
-                },
-                {
-                  "label": "2. Management",
-                  "guidance": "MANAGEMENT:\n• CVD risk: QRISK3; statin if ≥10%. AF: CHA2DS2-VASc, HAS-BLED; DOAC first-line. Hypertension: ACE-i/ARB/CCB per NG136.\n• Chest pain: GTN prn; beta-blocker or CCB; aspirin, statin. Heart failure: four pillars (ACEi/ARB, beta-blocker, MRA, SGLT2i); diuretic for congestion.\n• Safety-net: When to call 999; follow-up and titration. NICE NG72, NG106, NG196."
-                },
-                {
-                  "label": "3. Referral",
-                  "guidance": "REFERRAL:\n• 2WW: Suspected cancer, severe valve disease. RACPC for stable angina (CTCA).\n• Urgent: ACS, haemodynamically unstable AF, acute HF, aortic dissection.\n• Routine: AF for rhythm control, refractory hypertension, PAD, arrhythmia workup. NICE NG12."
+                  "label": "When & how",
+                  "guidance": "MANAGEMENT PLAN:\n1. Use to confirm hypertension (clinic BP 140/90+), white-coat effect, or resistant hypertension. Minimum 14 readings daytime, 7 night.\n2. Interpret using ABPM thresholds (e.g. daytime ≥135/85). NICE NG136, CKS."
                 }
               ]
             }
@@ -801,21 +793,13 @@
           "evidence": "Management per NICE CKS and Local formulary.",
           "steps": [
             {
-              "id": "guidance-cardiovascular",
-              "question": "Cardiovascular (Consultant Standard)",
+              "id": "cardiac-arrest-survivor-mgt",
+              "question": "Cardiac arrest – survivor",
               "type": "dropdown",
               "options": [
                 {
-                  "label": "1. Assessment & red flags",
-                  "guidance": "ASSESSMENT:\n• History: chest pain character, palpitations, syncope, breathlessness, oedema. Medication and risk factors.\n• Examination: BP, pulse (rate/rhythm), JVP, heart sounds, peripheral perfusion. NEWS2 if unwell.\n• Investigations: ECG, lipids, HbA1c; BNP if breathless; troponin if ACS suspected.\n• Red flags: Acute chest pain >15 min, syncope with exertion, acute SOB – 999. NICE NG72, NG106, NG185, NG196."
-                },
-                {
-                  "label": "2. Management",
-                  "guidance": "MANAGEMENT:\n• CVD risk: QRISK3; statin if ≥10%. AF: CHA2DS2-VASc, HAS-BLED; DOAC first-line. Hypertension: ACE-i/ARB/CCB per NG136.\n• Chest pain: GTN prn; beta-blocker or CCB; aspirin, statin. Heart failure: four pillars (ACEi/ARB, beta-blocker, MRA, SGLT2i); diuretic for congestion.\n• Safety-net: When to call 999; follow-up and titration. NICE NG72, NG106, NG196."
-                },
-                {
-                  "label": "3. Referral",
-                  "guidance": "REFERRAL:\n• 2WW: Suspected cancer, severe valve disease. RACPC for stable angina (CTCA).\n• Urgent: ACS, haemodynamically unstable AF, acute HF, aortic dissection.\n• Routine: AF for rhythm control, refractory hypertension, PAD, arrhythmia workup. NICE NG12."
+                  "label": "Post-resuscitation",
+                  "guidance": "MANAGEMENT PLAN:\n1. Echo, coronary assessment; treat reversible cause. ICD if LVEF ≤35% or high-risk arrhythmia. Cardiac rehab.\n2. Driving: Group 1 disqualified until specialist clearance; Group 2 6–12 months. NICE NG185, DVLA."
                 }
               ]
             }
@@ -3818,21 +3802,13 @@
           "evidence": "Management per NICE CKS and Local formulary.",
           "steps": [
             {
-              "id": "guidance-cardiovascular",
-              "question": "Cardiovascular (Consultant Standard)",
+              "id": "vectopics-mgt",
+              "question": "Ventricular ectopics",
               "type": "dropdown",
               "options": [
                 {
-                  "label": "1. Assessment & red flags",
-                  "guidance": "ASSESSMENT:\n• History: chest pain character, palpitations, syncope, breathlessness, oedema. Medication and risk factors.\n• Examination: BP, pulse (rate/rhythm), JVP, heart sounds, peripheral perfusion. NEWS2 if unwell.\n• Investigations: ECG, lipids, HbA1c; BNP if breathless; troponin if ACS suspected.\n• Red flags: Acute chest pain >15 min, syncope with exertion, acute SOB – 999. NICE NG72, NG106, NG185, NG196."
-                },
-                {
-                  "label": "2. Management",
-                  "guidance": "MANAGEMENT:\n• CVD risk: QRISK3; statin if ≥10%. AF: CHA2DS2-VASc, HAS-BLED; DOAC first-line. Hypertension: ACE-i/ARB/CCB per NG136.\n• Chest pain: GTN prn; beta-blocker or CCB; aspirin, statin. Heart failure: four pillars (ACEi/ARB, beta-blocker, MRA, SGLT2i); diuretic for congestion.\n• Safety-net: When to call 999; follow-up and titration. NICE NG72, NG106, NG196."
-                },
-                {
-                  "label": "3. Referral",
-                  "guidance": "REFERRAL:\n• 2WW: Suspected cancer, severe valve disease. RACPC for stable angina (CTCA).\n• Urgent: ACS, haemodynamically unstable AF, acute HF, aortic dissection.\n• Routine: AF for rhythm control, refractory hypertension, PAD, arrhythmia workup. NICE NG12."
+                  "label": "Assessment & referral",
+                  "guidance": "MANAGEMENT PLAN:\n1. If symptomatic or frequent: ECG, echo; exclude structural heart disease and channelopathy. Reduce stimulants; treat anxiety if relevant.\n2. Refer if structural disease, sustained VT, or very frequent. Beta-blocker or calcium channel blocker for symptoms. NICE CKS."
                 }
               ]
             }

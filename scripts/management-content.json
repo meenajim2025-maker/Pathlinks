@@ -616,6 +616,39 @@
       }]
     },
     {
+      "keywords": ["ambulatory bp", "ambulatory bp monitoring", "abpm"],
+      "steps": [{
+        "id": "abpm-mgt",
+        "question": "Ambulatory BP monitoring",
+        "type": "dropdown",
+        "options": [
+          { "label": "When & how", "guidance": "MANAGEMENT PLAN:\n1. Use to confirm hypertension (clinic BP 140/90+), white-coat effect, or resistant hypertension. Minimum 14 readings daytime, 7 night.\n2. Interpret using ABPM thresholds (e.g. daytime ≥135/85). NICE NG136, CKS." }
+        ]
+      }]
+    },
+    {
+      "keywords": ["cardiac arrest", "survivor"],
+      "steps": [{
+        "id": "cardiac-arrest-survivor-mgt",
+        "question": "Cardiac arrest – survivor",
+        "type": "dropdown",
+        "options": [
+          { "label": "Post-resuscitation", "guidance": "MANAGEMENT PLAN:\n1. Echo, coronary assessment; treat reversible cause. ICD if LVEF ≤35% or high-risk arrhythmia. Cardiac rehab.\n2. Driving: Group 1 disqualified until specialist clearance; Group 2 6–12 months. NICE NG185, DVLA." }
+        ]
+      }]
+    },
+    {
+      "keywords": ["ventricular ectopics", "ventricular ectopic", "pvc", "premature ventricular"],
+      "steps": [{
+        "id": "vectopics-mgt",
+        "question": "Ventricular ectopics",
+        "type": "dropdown",
+        "options": [
+          { "label": "Assessment & referral", "guidance": "MANAGEMENT PLAN:\n1. If symptomatic or frequent: ECG, echo; exclude structural heart disease and channelopathy. Reduce stimulants; treat anxiety if relevant.\n2. Refer if structural disease, sustained VT, or very frequent. Beta-blocker or calcium channel blocker for symptoms. NICE CKS." }
+        ]
+      }]
+    },
+    {
       "keywords": ["otitis externa", "ear – infection", "swimmer's ear"],
       "steps": [{
         "id": "otitis-externa-mgt",
