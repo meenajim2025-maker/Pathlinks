@@ -2113,7 +2113,7 @@
         "question": "Domestic violence & abuse / safeguarding",
         "type": "dropdown",
         "options": [
-          { "label": "Management & referral", "guidance": "MANAGEMENT PLAN:\n1. Safety first: assess immediate risk; respect confidentiality but explain limits (safeguarding, risk to others). Do not investigate alone.\n2. Document findings; refer to specialist (IDVA, refuge, social care) per local pathway. Offer follow-up. NICE PH50, NG76, CKS." }
+          { "label": "Management & referral", "guidance": "MANAGEMENT PLAN:\n1. Safety first: assess immediate risk; explain limits of confidentiality (safeguarding, risk to others). Do not investigate alone. Document in separate confidential record.\n2. High risk (DASH/serious harm): refer to MARAC and IDVA per local pathway. All: offer specialist support (IDVA, refuge, social care). Ask about children; consider child safeguarding.\n3. Follow-up; do not pressure to leave. NICE PH50, NG76, CKS." }
         ]
       }]
     },
@@ -2124,7 +2124,8 @@
         "question": "Falls – assessment & intervention",
         "type": "dropdown",
         "options": [
-          { "label": "Management", "guidance": "MANAGEMENT PLAN:\n1. Multifactorial assessment: medication review (sedatives, hypotensives), vision, footwear, home hazards, strength/balance. Treat osteoporosis if fracture risk.\n2. Exercise (strength and balance); vitamin D; address orthostatic hypotension. NICE CG161, NG231, CKS." }
+          { "label": "Assessment", "guidance": "MANAGEMENT PLAN:\n1. Distinguish syncope (cardiac, orthostatic, carotid sinus) from non-syncopal fall. Medication review (sedatives, hypotensives); vision; footwear; home hazards; bone health.\n2. Consider 24h BP if orthostatic; ECG if syncope/cardiac suspected. NICE CG161, NG231, CKS." },
+          { "label": "Intervention", "guidance": "MANAGEMENT PLAN:\n1. Multifactorial intervention: strength and balance exercise; vitamin D; treat osteoporosis if fracture risk; address orthostatic hypotension; reduce/stop culprit drugs where safe.\n2. If fall with head injury: assess for concussion; consider imaging if on anticoagulants or red flags. NICE CG161, NG231, CKS." }
         ]
       }]
     },
@@ -2135,7 +2136,7 @@
         "question": "Deprescribing",
         "type": "dropdown",
         "options": [
-          { "label": "Principles", "guidance": "MANAGEMENT PLAN:\n1. Review indication, benefit vs harm; involve patient. Stop one drug at a time; taper where needed (e.g. benzodiazepines, antihypertensives).\n2. PPI: trial dose reduction/stop if no ongoing indication. Statin: consider in frailty/life-limiting illness. Antihypertensive: reduce if hypotension/falls. Antipsychotic: taper slowly; monitor. NICE NG215, CKS, deprescribing.org." }
+          { "label": "Principles", "guidance": "MANAGEMENT PLAN:\n1. Shared decision-making; document indication and rationale for stop. One drug at a time; taper to avoid withdrawal.\n2. Benzodiazepines: slow taper (e.g. 1/8 dose every 2–4 weeks); consider switching to diazepam for smoother taper. PPI: trial stop; warn re rebound symptoms (temporary). Statin: consider in frailty/life-limiting illness (NG215). Antihypertensive: reduce if hypotension/falls. Antipsychotic: slow taper; monitor for relapse.\n3. NICE NG215, CKS, deprescribing.org." }
         ]
       }]
     },
@@ -2146,7 +2147,7 @@
         "question": "Frailty – assessment & intervention",
         "type": "dropdown",
         "options": [
-          { "label": "CGA & intervention", "guidance": "MANAGEMENT PLAN:\n1. Comprehensive geriatric assessment (CGA): function, cognition, mood, medication, nutrition. Identify reversible causes.\n2. Intervention: medication review; strength/balance; advance care planning; treat osteoporosis. NICE NG161, CKS." }
+          { "label": "CGA & intervention", "guidance": "MANAGEMENT PLAN:\n1. CGA: function, cognition, mood, medication, nutrition, social. Exclude reversible causes (infection, constipation, drugs, delirium).\n2. Intervention: medication review (STOPP/START); strength and balance; bone health; advance care planning. Refer geriatrics if complex or diagnostic uncertainty.\n3. NICE NG161, CKS." }
         ]
       }]
     },
@@ -2157,7 +2158,7 @@
         "question": "Malnutrition – screening & management",
         "type": "dropdown",
         "options": [
-          { "label": "MUST & management", "guidance": "MANAGEMENT PLAN:\n1. Screen: MUST (or equivalent); weight/BMI trend. Treat cause (dysphagia, illness, social).\n2. Oral nutritional supplements if dietary advice insufficient; refer if severe or complex. NICE NG69, CKS." }
+          { "label": "MUST & management", "guidance": "MANAGEMENT PLAN:\n1. Screen: MUST; weight/BMI trend. Treat cause (dysphagia, illness, social).\n2. Refeeding risk: if high risk (e.g. BMI <16, >15% weight loss, minimal intake >10 days), give thiamine before and during refeeding; start nutrition cautiously; monitor K, Mg, PO4. NICE NG69, BAPEN.\n3. ONS if dietary advice insufficient; refer if severe or complex. In advanced illness, avoid forced feeding; agree goals. NICE NG69, CKS." }
         ]
       }]
     },
@@ -2168,7 +2169,7 @@
         "question": "Medicines review / polypharmacy",
         "type": "dropdown",
         "options": [
-          { "label": "Structured review", "guidance": "MANAGEMENT PLAN:\n1. Indication for each drug; check interactions, renal/hepatic dose. STOPP/START or equivalent. Deprescribe where benefit unclear.\n2. Patient understanding; adherence; monitoring. NICE NG5, NG114, NG67, CKS." }
+          { "label": "Structured review", "guidance": "MANAGEMENT PLAN:\n1. Indication for each drug; interactions; renal/hepatic dose; anticholinergic burden. STOPP/START (or equivalent). Deprescribe where benefit unclear or burden high; shared decision-making.\n2. High-risk in elderly: NSAIDs, anticholinergics, benzodiazepines, duplicate drug classes. Patient understanding; adherence; monitoring. NICE NG5, NG114, NG67, CKS." }
         ]
       }]
     },
@@ -2179,7 +2180,7 @@
         "question": "Sarcopenia",
         "type": "dropdown",
         "options": [
-          { "label": "Management", "guidance": "MANAGEMENT PLAN:\n1. Resistance exercise (strength training); adequate protein intake. Treat underlying cause (malnutrition, inactivity).\n2. Vitamin D if deficient. Consider osteoporosis assessment. NICE NG231, CKS." }
+          { "label": "Management", "guidance": "MANAGEMENT PLAN:\n1. Diagnose: low muscle strength (± low mass) per EWGSOP2 or equivalent. First-line: progressive resistance training; adequate protein (1.2–1.5 g/kg/day). Treat malnutrition, inactivity, vitamin D deficiency.\n2. Consider bone health/fracture risk (NG231). No licensed drug for sarcopenia alone. NICE NG231 (falls/bone), CKS, EWGSOP2." }
         ]
       }]
     },
@@ -2190,7 +2191,7 @@
         "question": "Cachexia",
         "type": "dropdown",
         "options": [
-          { "label": "Management", "guidance": "MANAGEMENT PLAN:\n1. Treat underlying disease; nutritional support (dietitian). Screen for reversible causes (e.g. dysphagia, depression).\n2. Consider oral supplements; avoid forced feeding in advanced illness. Palliative approach if appropriate. NICE NG69, CKS." }
+          { "label": "Management", "guidance": "MANAGEMENT PLAN:\n1. Cachexia = weight loss + metabolic driver (not just underfeeding). Treat reversible causes (thyroid, depression, dysphagia, malabsorption); dietitian input.\n2. Trial of ONS may be appropriate; document goals of care. In advanced/terminal illness, avoid forced feeding; focus on symptoms and patient priorities.\n3. NICE NG69, CKS." }
         ]
       }]
     },
@@ -2201,7 +2202,7 @@
         "question": "Travel health",
         "type": "dropdown",
         "options": [
-          { "label": "Pre-travel", "guidance": "MANAGEMENT PLAN:\n1. Vaccinations per destination (NaTHNaC); malaria chemoprophylaxis if indicated. Altitude: gradual ascent; acetazolamide if AMS risk. Diving: fitness to dive.\n2. Travellers' diarrhoea: hygiene; loperamide/antibiotic for use abroad. NICE CKS Travel, NaTHNaC." }
+          { "label": "Pre-travel", "guidance": "MANAGEMENT PLAN:\n1. Vaccinations per destination (NaTHNaC); malaria chemoprophylaxis if indicated. Altitude: gradual ascent; acetazolamide 125–250 mg bd if AMS risk. Diving: fitness-to-dive assessment; exclude cardiac/respiratory contraindications.\n2. Travellers' diarrhoea: hygiene; loperamide for symptoms; standby antibiotic (e.g. azithromycin) per local resistance. Complex (diabetes, anticoagulation, immunosuppression): consider travel clinic. NICE CKS Travel, NaTHNaC." }
         ]
       }]
     },
@@ -2212,7 +2213,7 @@
         "question": "Vitamin / mineral deficiency",
         "type": "dropdown",
         "options": [
-          { "label": "Replacement", "guidance": "MANAGEMENT PLAN:\n1. Confirm deficiency; treat cause. Magnesium: replace orally (e.g. magnesium glycerophosphate). Vitamin C: dietary + supplement if deficient. Vitamin K: phytonadione if bleeding/anticoagulant reversal. Zinc: oral replacement. Multiple: address diet; replace as per levels. NICE CKS, BNF." }
+          { "label": "Replacement", "guidance": "MANAGEMENT PLAN:\n1. Confirm deficiency before replacing; treat cause. Magnesium: oral (e.g. magnesium glycerophosphate). Vitamin C: diet + supplement if deficient. Vitamin K: phytonadione for deficiency/malabsorption; do not give high-dose vitamin K to patients on warfarin without specialist advice (reverses anticoagulation). Zinc: oral replacement. Multiple: diet + replace per levels. NICE CKS, BNF." }
         ]
       }]
     },
@@ -2223,7 +2224,7 @@
         "question": "Hydration",
         "type": "dropdown",
         "options": [
-          { "label": "Assessment & management", "guidance": "MANAGEMENT PLAN:\n1. Assess cause (dehydration vs fluid overload). Encourage oral fluids; consider IV if severe or unable to drink.\n2. In elderly: avoid dehydration; monitor in heat/c illness. CKS." }
+          { "label": "Assessment & management", "guidance": "MANAGEMENT PLAN:\n1. Assess cause and severity (skin turgor, UOP, confusion, BP, HR). Dehydration vs fluid overload (heart failure, renal).\n2. Mild: oral fluids. Severe or unable to drink: consider admission; IV if indicated. In elderly/heat/illness: proactive fluids; monitor. CKS." }
         ]
       }]
     },
@@ -2234,7 +2235,7 @@
         "question": "Homeless / asylum seeker health",
         "type": "dropdown",
         "options": [
-          { "label": "Approach", "guidance": "MANAGEMENT PLAN:\n1. Register as temp/fully; offer health screening (TB, blood-borne viruses, mental health, immunisation). Address barriers to access.\n2. Safeguarding; signpost to housing/support. RCGP, GOV.UK, NICE." }
+          { "label": "Approach", "guidance": "MANAGEMENT PLAN:\n1. Register (temp or full); asylum seekers exempt from charges. Trauma-informed approach; professional interpreter if needed.\n2. Screening: TB (asylum seekers), BBV, mental health, immunisation catch-up. Safeguarding; signpost housing/support. RCGP, GOV.UK, NICE, UKHSA." }
         ]
       }]
     },
@@ -2245,7 +2246,7 @@
         "question": "Care home – medication",
         "type": "dropdown",
         "options": [
-          { "label": "Review & safety", "guidance": "MANAGEMENT PLAN:\n1. Structured medication review; indication, interactions, monitoring. Consider deprescribing (antipsychotics, sedatives).\n2. Ensure care home has current list; document DNAR/ACP. NICE NG67, NG114, CKS." }
+          { "label": "Review & safety", "guidance": "MANAGEMENT PLAN:\n1. Structured review; indication, interactions, monitoring. Deprescribe where benefit unclear. Antipsychotics for behaviour: only after non-drug approaches; NICE NG97; regular review.\n2. Current medication list in care home; DNAR/ACP documented. Anticoagulation: ensure consistent supply and monitoring. NICE NG67, NG114, NG97, CKS." }
         ]
       }]
     },
@@ -2256,7 +2257,7 @@
         "question": "Complementary therapy",
         "type": "dropdown",
         "options": [
-          { "label": "Advice", "guidance": "MANAGEMENT PLAN:\n1. Do not recommend as substitute for evidence-based treatment. If patient uses: check interactions (e.g. St John's wort); safety in pregnancy.\n2. Document; do not discourage if harmless. NICE CKS." }
+          { "label": "Advice", "guidance": "MANAGEMENT PLAN:\n1. Do not recommend as substitute for evidence-based care. If patient uses: check interactions (St John's wort: many drug interactions); caution in pregnancy/breastfeeding.\n2. Document use; do not discourage if harmless and no conflict with prescribed treatment. NICE CKS." }
         ]
       }]
     },
@@ -2267,7 +2268,7 @@
         "question": "Therapeutic use exemption (TUE)",
         "type": "dropdown",
         "options": [
-          { "label": "TUE", "guidance": "MANAGEMENT PLAN:\n1. If athlete needs prohibited substance for medical reason: apply to relevant body (UKAD for UK) for Therapeutic Use Exemption. Document necessity.\n2. GMC, UKAD, WADA." }
+          { "label": "TUE", "guidance": "MANAGEMENT PLAN:\n1. If athlete needs prohibited substance for medical reason: apply to relevant body (UKAD in UK) for Therapeutic Use Exemption before use. Document clinical necessity.\n2. Athlete must not compete on prohibited substance until TUE granted. GMC, UKAD, WADA." }
         ]
       }]
     },
@@ -2278,7 +2279,7 @@
         "question": "Concussion",
         "type": "dropdown",
         "options": [
-          { "label": "Management", "guidance": "MANAGEMENT PLAN:\n1. Rest (physical & cognitive) until symptom-free; gradual return to activity. No return to sport same day. Avoid alcohol; screen for red flags (deterioration, seizure).\n2. Refer if prolonged symptoms, repeated concussion, or concern. NICE NG232, Berlin consensus." }
+          { "label": "Management", "guidance": "MANAGEMENT PLAN:\n1. Rest (physical and cognitive) until symptom-free; then gradual return. No return to sport within 24 hours; no competition before 21 days (grassroots). Avoid alcohol.\n2. Red flags (999): LOC >5 min, seizure, focal deficit, repeated vomiting, skull fracture, drowsiness, worsening. Refer if symptoms >28 days or repeated concussion. NICE NG232, UK concussion guidance." }
         ]
       }]
     },
@@ -2289,7 +2290,7 @@
         "question": "Occupational health",
         "type": "dropdown",
         "options": [
-          { "label": "Fit note & referral", "guidance": "MANAGEMENT PLAN:\n1. Fit note: duration, phased return, restrictions. Do not disclose diagnosis without consent. OH referral for workplace assessment, ill-health retirement, or employer request.\n2. GMC, GOV.UK fit note guidance." }
+          { "label": "Fit note & referral", "guidance": "MANAGEMENT PLAN:\n1. Fit note: duration; 'may be fit for work' with adjustments if appropriate. Employer needs functional impact, not diagnosis; do not disclose without consent.\n2. OH referral (with consent): workplace assessment, ill-health retirement, employer request. GMC, GOV.UK fit note guidance." }
         ]
       }]
     },
@@ -2300,7 +2301,7 @@
         "question": "Prison healthcare",
         "type": "dropdown",
         "options": [
-          { "label": "Equivalence", "guidance": "MANAGEMENT PLAN:\n1. Same standard of care as community (equivalence). Consent, confidentiality; record-keeping. Screen for BBV, mental health, substance use on entry.\n2. Refer to prison healthcare/outside services as per protocol. NICE, PHE." }
+          { "label": "Equivalence", "guidance": "MANAGEMENT PLAN:\n1. Same standard of care as community (equivalence). Consent and confidentiality apply; record-keeping. Screening on entry: BBV, mental health, substance use per protocol.\n2. Refer to prison healthcare or external services as indicated. NICE, UKHSA." }
         ]
       }]
     },
@@ -2311,7 +2312,7 @@
         "question": "Medicolegal report",
         "type": "dropdown",
         "options": [
-          { "label": "Conduct", "guidance": "MANAGEMENT PLAN:\n1. Consent; declare conflict. Stick to facts and expertise; distinguish opinion. Use claimant's consent for access to records.\n2. GMC Good practice in providing medical reports." }
+          { "label": "Conduct", "guidance": "MANAGEMENT PLAN:\n1. Written consent; declare conflicts; agree fee and timescales. Report only on verified facts within your expertise; distinguish fact from opinion. Access to records with patient consent.\n2. GMC: Good practice in providing medical reports." }
         ]
       }]
     },
@@ -2322,7 +2323,7 @@
         "question": "Lasting power of attorney",
         "type": "dropdown",
         "options": [
-          { "label": "Advice", "guidance": "MANAGEMENT PLAN:\n1. LPA (health/welfare; property): allows someone to decide when donor lacks capacity. Advise to register with OPG; give copy to GP.\n2. Do not assume LPA applies until verified. MCA 2005, OPG." }
+          { "label": "Advice", "guidance": "MANAGEMENT PLAN:\n1. LPA (health/welfare; property/financial): attorney can act when donor lacks capacity (health LPA) or as specified (property). Verify via OPG register; advise donor to give GP a copy.\n2. Do not assume LPA is valid or applicable until verified. Health LPA only used when donor lacks capacity for that decision. MCA 2005, OPG." }
         ]
       }]
     },
@@ -2333,7 +2334,7 @@
         "question": "Multimorbidity",
         "type": "dropdown",
         "options": [
-          { "label": "Approach", "guidance": "MANAGEMENT PLAN:\n1. Prioritise by patient goals; address polypharmacy; avoid single-disease targets where burden outweighs benefit.\n2. Structured review; care planning; consider deprescribing. NICE NG56, CKS." }
+          { "label": "Approach", "guidance": "MANAGEMENT PLAN:\n1. Prioritise by what matters to the patient; avoid treatment burden. Single-disease targets may be inappropriate; consider quality of life over disease-specific outcomes.\n2. Structured review; care planning; deprescribe where benefit unclear. NICE NG56, CKS." }
         ]
       }]
     },
@@ -2344,7 +2345,7 @@
         "question": "Vulnerable adult – safeguarding",
         "type": "dropdown",
         "options": [
-          { "label": "Safeguarding", "guidance": "MANAGEMENT PLAN:\n1. Document concerns; refer to adult social care/safeguarding team per local policy. Do not investigate alone. Consider capacity.\n2. If urgent risk, contact police/social care. NICE NG76, CKS." }
+          { "label": "Safeguarding", "guidance": "MANAGEMENT PLAN:\n1. Document concerns in safeguarding terms; refer to adult social care/safeguarding per local policy. Do not investigate alone. Consider capacity; IMCA if unrepresented.\n2. Do not promise confidentiality if risk to others. Urgent risk: contact police/social care. NICE NG76, CKS." }
         ]
       }]
     },
@@ -2355,7 +2356,7 @@
         "question": "Jet lag",
         "type": "dropdown",
         "options": [
-          { "label": "Advice", "guidance": "MANAGEMENT PLAN:\n1. Light exposure and sleep timing to shift circadian rhythm. Short-term melatonin (0.5–5 mg) at destination bedtime may help. Avoid alcohol; hydrate.\n2. CKS Travel." }
+          { "label": "Advice", "guidance": "MANAGEMENT PLAN:\n1. Light: morning light eastward travel, evening light westward. Sleep timing aligned to destination. Short-term melatonin (0.5–5 mg at destination bedtime) may help; avoid alcohol; hydrate.\n2. CKS Travel." }
         ]
       }]
     },
@@ -2366,7 +2367,7 @@
         "question": "Insurance medical report",
         "type": "dropdown",
         "options": [
-          { "label": "Conduct", "guidance": "MANAGEMENT PLAN:\n1. Patient consent; charge appropriate fee. Report only on what you have verified; do not speculate. Declare conflicts.\n2. GMC guidance on writing reports." }
+          { "label": "Conduct", "guidance": "MANAGEMENT PLAN:\n1. Patient consent; agree fee. Report only on verified facts; do not speculate. Declare conflicts. Patient may have right to see report—document accordingly.\n2. GMC guidance on writing reports." }
         ]
       }]
     },
@@ -2377,7 +2378,7 @@
         "question": "Diet – healthy eating",
         "type": "dropdown",
         "options": [
-          { "label": "Advice", "guidance": "MANAGEMENT PLAN:\n1. Eatwell Guide: fruit/veg, wholegrains, protein, limit saturated fat/sugar/salt. Consider referral to dietitian if medical need (e.g. diabetes, coeliac).\n2. NICE PH24, NHS Eatwell." }
+          { "label": "Advice", "guidance": "MANAGEMENT PLAN:\n1. Eatwell Guide: fruit/veg, wholegrains, protein; limit saturated fat, sugar, salt. If overweight: calorie reduction per NICE CG189. Refer dietitian if medical need (diabetes, coeliac, dysphagia).\n2. NICE PH24, CG189, NHS Eatwell." }
         ]
       }]
     },
@@ -2388,7 +2389,7 @@
         "question": "Gabapentin / pregabalin",
         "type": "dropdown",
         "options": [
-          { "label": "Review & taper", "guidance": "MANAGEMENT PLAN:\n1. Indication (neuropathic pain, epilepsy); avoid for anxiety off-label where possible. Taper slowly when stopping (dependence risk).\n2. Monitor renal function; reduce dose if eGFR low. Controlled drug (Schedule 3). NICE NG215, CKS." }
+          { "label": "Review & taper", "guidance": "MANAGEMENT PLAN:\n1. Indication (neuropathic pain, epilepsy). Avoid off-label for anxiety without specialist input. Dependence/withdrawal: taper slowly when stopping; do not stop abruptly.\n2. Gabapentin: reduce dose if low eGFR. Both Schedule 3; avoid in drug-seeking. NICE NG215, CKS." }
         ]
       }]
     },
@@ -2399,7 +2400,7 @@
         "question": "GSF / capacity",
         "type": "dropdown",
         "options": [
-          { "label": "GSF / ACP", "guidance": "MANAGEMENT PLAN:\n1. Gold Standard Framework: identify last year of life; ACP; coordinate care. Capacity: assess per MCA; best interests; involve family/IMCA.\n2. NICE NG108, GSF, CKS." }
+          { "label": "GSF / ACP", "guidance": "MANAGEMENT PLAN:\n1. GSF: identify last year of life; advance care planning; coordinate care. ReSPECT/DNAR as appropriate. Capacity: assess per MCA (understand, retain, weigh, communicate); best interests; involve family/IMCA.\n2. NICE NG108, GSF, CKS." }
         ]
       }]
     },
