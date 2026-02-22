@@ -280,7 +280,6 @@
     {"systemId": "paediatrics", "title": "Scoliosis"},
     {"systemId": "paediatrics", "title": "Congenital heart – murmur"},
     {"systemId": "paediatrics", "title": "Asthma – preschool wheeze"},
-    {"systemId": "paediatrics", "title": "Croup – severe"},
     {"systemId": "paediatrics", "title": "Epiglottitis"},
     {"systemId": "paediatrics", "title": "Whooping cough"},
     {"systemId": "paediatrics", "title": "Measles"},

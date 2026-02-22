@@ -1,6 +1,8 @@
 let testData = [];
 let learningData = null;
 let decisionToolsData = null;
+let triageSymptoms = null;
+let currentClinicalRole = 'doctor';
 
 // Load data and initialize selects
 async function init() {
@@ -8,9 +10,45 @@ async function init() {
         const response = await fetch('./data/blood_tests_protocol.json');
         testData = await response.json();
 
+        try {
+            const triageRes = await fetch('./data/triage_symptoms.json');
+            triageSymptoms = await triageRes.json();
+            console.log("[Triage] Symptom map loaded");
+        } catch (e) {
+            console.warn("[Triage] Symptom map not found, using fallback search");
+        }
 
+        // Initialize Role Selector
+        const roleSelector = document.getElementById('role-selector');
+        if (roleSelector) {
+            roleSelector.addEventListener('change', (e) => {
+                currentClinicalRole = e.target.value;
+                console.log("[Role] Changed to:", currentClinicalRole);
 
-        const categorySelect = document.getElementById('select-test');
+                // Visual feedback
+                const avatar = document.getElementById('user-avatar');
+                if (avatar) {
+                    if (currentClinicalRole === 'paramedic') {
+                        avatar.style.background = '#e67e22';
+                        avatar.textContent = 'PM';
+                    } else if (currentClinicalRole === 'nurse') {
+                        avatar.style.background = '#27ae60';
+                        avatar.textContent = 'PN';
+                    } else {
+                        avatar.style.background = 'var(--primary)';
+                        avatar.textContent = 'DR';
+                    }
+                }
+
+                // Re-render if tool is open
+                const activeToolVal = document.getElementById('decision-tool')?.value;
+                if (activeToolVal && !document.getElementById('decision-tool-panel').classList.contains('hidden')) {
+                    const sysIdx = document.getElementById('decision-system').value;
+                    const tool = decisionToolsData.systems[sysIdx].tools[activeToolVal];
+                    if (window.renderToolUI) window.renderToolUI(tool);
+                }
+            });
+        } const categorySelect = document.getElementById('select-test');
         testData.forEach((cat, index) => {
             const opt = document.createElement('option');
             opt.value = index;
@@ -486,20 +524,50 @@ async function renderDecisionTools() {
             searchResultsEl.innerHTML = '';
             if (q.length < 2) return;
             const hits = [];
+
+            // Triage specific symptom matching
+            let triageMatches = [];
+            if (triageSymptoms) {
+                Object.keys(triageSymptoms).forEach(symptom => {
+                    if (q.includes(symptom) || symptom.includes(q)) {
+                        triageSymptoms[symptom].forEach(toolId => {
+                            triageMatches.push(toolId);
+                        });
+                    }
+                });
+            }
+
             systems.forEach((sys, sysIdx) => {
                 (sys.tools || []).forEach((tool, toolIdx) => {
                     const title = (tool.title || '').toLowerCase();
                     const sysName = (sys.name || '').toLowerCase();
-                    if (title.includes(q) || sysName.includes(q)) hits.push({ sysIdx, toolIdx, sysName: sys.name, title: tool.title, tool });
+                    const isTriageMatch = triageMatches.includes(tool.id);
+
+                    if (title.includes(q) || sysName.includes(q) || isTriageMatch) {
+                        hits.push({
+                            sysIdx,
+                            toolIdx,
+                            sysName: sys.name,
+                            title: tool.title,
+                            tool,
+                            isTriageMatch
+                        });
+                    }
                 });
             });
 
-            // Task 3: Prioritize Specific Pathways over Generic Pathways
+            // Sorting logic
             hits.sort((a, b) => {
+                // 1. Prioritize Triage matches
+                if (a.isTriageMatch && !b.isTriageMatch) return -1;
+                if (!a.isTriageMatch && b.isTriageMatch) return 1;
+
+                // 2. Prioritize Specific Path over generic
                 const aIsGeneric = a.tool.steps && a.tool.steps[0] && a.tool.steps[0].id === 'guidance';
                 const bIsGeneric = b.tool.steps && b.tool.steps[0] && b.tool.steps[0].id === 'guidance';
                 if (aIsGeneric && !bIsGeneric) return 1;
                 if (!aIsGeneric && bIsGeneric) return -1;
+
                 return (a.title || '').localeCompare(b.title || '', 'en', { sensitivity: 'base' });
             });
 
@@ -512,7 +580,10 @@ async function renderDecisionTools() {
                 // Visual indicator for specific pathway in search hits
                 const toolHit = hits.find(h => h.title === title && h.sysName === sysName).tool;
                 const isGeneric = toolHit.steps && toolHit.steps[0] && toolHit.steps[0].id === 'guidance';
-                const badge = isGeneric ? '<span style="color: #f39c12; font-size: 10px;">[Generic]</span>' : '<span style="color: #27ae60; font-size: 10px;">[Specific]</span>';
+                const isTriage = hits.find(h => h.title === title && h.sysName === sysName).isTriageMatch;
+
+                let badge = isGeneric ? '<span style="color: #f39c12; font-size: 10px;">[Generic]</span>' : '<span style="color: #27ae60; font-size: 10px;">[Specific]</span>';
+                if (isTriage) badge = '<span style="background: #e67e22; color: white; padding: 1px 4px; border-radius: 3px; font-size: 10px; font-weight: bold; margin-right: 5px;">TRIAGE MATCH</span>';
 
                 div.innerHTML = badge + ' <span>' + escapeHtml(title) + '</span> <span class="system-name">(' + escapeHtml(sysName) + ')</span>';
                 div.addEventListener('mousedown', function (e) {
@@ -610,7 +681,12 @@ async function renderDecisionTools() {
                 const o = document.createElement('option');
                 o.value = oIdx;
                 o.textContent = opt.label;
-                o.dataset.guidance = (opt.guidance || '').replace(/"/g, '&quot;');
+
+                // Store scoped guidance for role-swapping
+                o.dataset.guidanceDoctor = (opt.guidance || '').replace(/"/g, '&quot;');
+                o.dataset.guidanceParamedic = (opt.guidance_paramedic || opt.guidance || '').replace(/"/g, '&quot;');
+                o.dataset.guidanceNurse = (opt.guidance_nurse || opt.guidance || '').replace(/"/g, '&quot;');
+
                 select.appendChild(o);
             });
             select.addEventListener('change', function () {
@@ -619,8 +695,18 @@ async function renderDecisionTools() {
                     guidanceBox.classList.add('hidden');
                     return;
                 }
-                const g = (chosen.dataset.guidance || '').replace(/&quot;/g, '"');
-                guidanceText.textContent = g;
+
+                const roleKey = 'guidance' + currentClinicalRole.charAt(0).toUpperCase() + currentClinicalRole.slice(1);
+                const g = (chosen.dataset[roleKey] || chosen.dataset.guidanceDoctor || '').replace(/&quot;/g, '"');
+
+                // Visual Indicator for specific role guidance
+                if (chosen.dataset[roleKey] && chosen.dataset[roleKey] !== chosen.dataset.guidanceDoctor) {
+                    guidanceBox.innerHTML = `<div style="background: #fff3cd; color: #856404; padding: 4px 10px; font-size: 10px; font-weight: bold; margin-bottom: 8px; border-radius: 4px; display: inline-block;">${currentClinicalRole.toUpperCase()} SPECIFIC VIEW</div>` +
+                        `<div id="decision-guidance-text" style="white-space: pre-wrap;">${escapeHtml(g)}</div>`;
+                } else {
+                    guidanceBox.innerHTML = `<div id="decision-guidance-text" style="white-space: pre-wrap;">${escapeHtml(g)}</div>`;
+                }
+
                 guidanceBox.classList.remove('hidden');
 
                 // Visual feedback for generic vs specific
@@ -637,7 +723,8 @@ async function renderDecisionTools() {
             stepsContainer.appendChild(div);
         });
         panel.classList.remove('hidden');
-    }
+    };
+    window.renderToolUI = renderToolUI;
 }
 
 function escapeHtml(s) {

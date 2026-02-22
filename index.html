@@ -39,10 +39,15 @@
                 <span>Dark Mode</span>
             </div>
             <div class="user-profile">
-                <div class="avatar">DR</div>
+                <div class="avatar" id="user-avatar">DR</div>
                 <div class="info">
-                    <p class="name">Registrar / JDO</p>
-                    <p class="role">Clinical Support Mode</p>
+                    <p class="name" id="user-name-display">Registrar / JDO</p>
+                    <select id="role-selector"
+                        style="background: none; border: none; font-size: 11px; color: var(--text-muted); padding: 0; cursor: pointer; display: block; width: 100%;">
+                        <option value="doctor">Role: GP / Registrar</option>
+                        <option value="paramedic">Role: Paramedic / Triage</option>
+                        <option value="nurse">Role: Practice Nurse</option>
+                    </select>
                 </div>
             </div>
         </aside>
@@ -303,61 +308,12 @@
                             <p id="curb-risk" style="margin: 0; font-size: 12px;"></p>
                         </div>
                     </div>
-
-                    <!-- CHA2DS2-VASc Score (New) -->
-                    <div class="card" id="cha2ds2-calculator-standalone">
-                        <h3>CHA2DS2-VASc Score</h3>
-                        <p class="small-text">Stroke Risk in Atrial Fibrillation</p>
-                        <div id="cha2ds2-inputs" style="margin-top: 10px;"></div>
-                        <div style="margin-top: 1rem; padding: 10px; background: #f0f7ff; border-radius: 8px;">
-                            <p style="font-size: 14px; font-weight: 600;">Score: <span id="cha2ds2-score">0</span></p>
-                            <p id="cha2ds2-risk" style="margin: 0; font-size: 12px;"></p>
-                        </div>
-                    </div>
-
-                    <!-- GFR Calculator (New) -->
-                    <div class="card" id="gfr-calculator-standalone">
-                        <h3>eGFR (MDRD)</h3>
-                        <p class="small-text">Renal Function Estimation</p>
-                        <div class="calculator-grid"
-                            style="display: grid; grid-template-columns: 1fr; gap: 10px; margin-top: 10px;">
-                            <div class="field-group">
-                                <label>Serum Creatinine (µmol/L)</label>
-                                <input type="number" id="gfr-creatinine" placeholder="e.g. 100">
-                            </div>
-                            <div class="field-group">
-                                <label>Age</label>
-                                <input type="number" id="gfr-age" value="65">
-                            </div>
-                            <div class="field-group">
-                                <label>Sex</label>
-                                <select id="gfr-sex">
-                                    <option value="male">Male</option>
-                                    <option value="female">Female</option>
-                                </select>
-                            </div>
-                            <div class="field-group">
-                                <label>Ethnicity (Black?)</label>
-                                <select id="gfr-ethnicity">
-                                    <option value="1">No</option>
-                                    <option value="1.212">Yes</option>
-                                </select>
-                            </div>
-                        </div>
-                        <div
-                            style="margin-top: 1rem; padding: 15px; background: #f9f9f9; border-radius: 8px; text-align: center;">
-                            <p style="font-size: 12px; color: var(--text-muted); margin-bottom: 5px;">Estimated GFR</p>
-                            <span id="gfr-score"
-                                style="font-size: 24px; font-weight: 800; color: var(--primary);">--</span>
-                            <span style="font-size: 14px; color: var(--text-muted);"> mL/min/1.73m²</span>
-                        </div>
-                    </div>
                 </div>
             </section>
 
-            <section id="decision-tools-view" class="view hidden">
+            <section id="decision-tools-view" class="view hidden" aria-label="Decision tools">
                 <h2>Decision tools by system</h2>
-                <p class="welcome-section" style="margin-bottom: 1rem;">~900 tools with NICE-based management (drug
+                <p class="welcome-section" style="margin-bottom: 1rem;">NICE-based management (drug
                     choices, targets, referral). Search all systems or choose a system and topic, then use the dropdowns
                     for guideline-backed decisions.</p>
                 <div class="decision-grid">
@@ -366,10 +322,9 @@
                             <div class="field-group" style="margin-bottom: 1rem; position: relative;">
                                 <label for="decision-search-all">Search all systems</label>
                                 <input type="text" id="decision-search-all"
-                                    placeholder="e.g. sore throat, hypertension, restless legs..."
-                                    style="max-width: 400px;" autocomplete="off">
-                                <div id="decision-search-results" class="decision-search-results hidden" role="listbox">
-                                </div>
+                                    placeholder="e.g. sore throat, hypertension, restless legs..." style="max-width: 400px;"
+                                    autocomplete="off">
+                                <div id="decision-search-results" class="decision-search-results hidden" role="listbox"></div>
                             </div>
                             <div class="field-group" style="margin-bottom: 1rem;">
                                 <label for="decision-system">System / specialty</label>
@@ -413,9 +368,7 @@
                         </div>
                     </div>
                 </div>
-
-    </div>
-    </section>
+            </section>
 
     <!-- Medical Education Sandbox View -->
     <section id="sandbox-view" class="view hidden">
@@ -425,21 +378,17 @@
                 against NICE guidelines.</p>
         </div>
 
-        <!-- Scenario Selection Screen -->
         <div id="sandbox-scenario-selection" class="grid-container" style="grid-template-columns: 1fr;">
             <div class="card" style="border-top: 4px solid var(--accent);">
                 <h3>Select a Clinical Case</h3>
                 <div id="sandbox-scenario-list">
-                    <!-- Javascript populates this list -->
                     <p class="small-text">Loading scenarios...</p>
                 </div>
             </div>
         </div>
 
-        <!-- Active Simulation Screen -->
         <div id="sandbox-active-simulation" class="grid-container hidden"
             style="grid-template-columns: 1fr 300px; gap: 24px;">
-            <!-- Left: Case Details -->
             <div class="card" style="border: 2px solid var(--primary); background: #f8fbfe;">
                 <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 16px;">
                     <h3 id="sandbox-vignette-title" style="margin: 0; color: var(--primary-dark);"></h3>
@@ -448,34 +397,25 @@
                         ⏱️ <span id="sandbox-timer">00:00</span>
                     </div>
                 </div>
-
                 <p id="sandbox-vignette-text" style="line-height: 1.6; font-size: 15px;"></p>
-
                 <hr style="border: 0; border-top: 1px solid #ddd; margin: 20px 0;">
-
                 <h4>Instructions:</h4>
                 <p class="small-text">Use the side navigation to open relevant Calculators or Decision Tools. Your
                     actions are tracked. When you have formulated a management plan, end the simulation to receive your
                     grade.</p>
-
+                <button class="primary-btn" id="sandbox-open-decision-tools-btn" style="background: #3498db; margin-top: 12px; display: none;">📋 Open in Decision tools</button>
                 <button class="primary-btn" style="background: var(--accent); margin-top: 20px;"
                     onclick="endSandboxScenario()">🏁 End Simulation & Grade</button>
-                <button class="secondary-btn" style="margin-top: 10px;" onclick="returnToSandboxMenu()">Cancel
-                    Case</button>
+                <button class="secondary-btn" style="margin-top: 10px;" onclick="returnToSandboxMenu()">Cancel Case</button>
             </div>
-
-            <!-- Right: Action Tracker Panel -->
             <div class="card" style="background: #fafafa;">
-                <h4 style="margin-bottom: 12px; font-size: 14px; text-transform: uppercase; color: #666;">Actions Logged
-                </h4>
+                <h4 style="margin-bottom: 12px; font-size: 14px; text-transform: uppercase; color: #666;">Actions Logged</h4>
                 <ul id="sandbox-live-log"
                     style="list-style: none; padding: 0; margin: 0; min-height: 150px; background: white; border: 1px solid #eee; border-radius: 8px; padding: 12px;">
-                    <!-- Javascript adds logs here -->
                 </ul>
             </div>
         </div>
 
-        <!-- Results Review Screen -->
         <div id="sandbox-results-panel" class="grid-container hidden"
             style="grid-template-columns: 1fr; margin-top: 24px;">
             <div class="card" style="border-top: 4px solid var(--success);">
@@ -490,12 +430,10 @@
                     <div style="flex: 1;">
                         <h4 style="margin-bottom: 8px;">Action Feedback:</h4>
                         <ul id="sandbox-feedback-list" style="padding-left: 20px; color: #333;"></ul>
-
                         <h4 style="margin-top: 20px; margin-bottom: 8px;">NICE Rationale:</h4>
                         <p id="sandbox-rationale"
                             style="font-size: 14px; line-height: 1.6; padding: 16px; background: #e3f2fd; border-radius: 8px; border-left: 4px solid #2196F3;">
                         </p>
-
                         <button class="secondary-btn" style="width: auto; margin-top: 20px;"
                             onclick="returnToSandboxMenu()">Return to Menu</button>
                     </div>
@@ -504,13 +442,12 @@
         </div>
     </section>
 
-
-
     </main>
     </div>
 
-    <script src="script.js"></script>
-    <script src="sandbox.js"></script>
+    <script type="application/json" id="sandbox-scenarios-json">[{"id":"scenario-001","title":"Suspected Deep Vein Thrombosis (DVT)","vignette":"A 45-year-old female presents to the urgent care clinic with left calf swelling and pain that started 2 days ago. She recently returned from a long-haul flight. She has no active cancer, no previous DVT, and her vital signs are normal, apart from localized tenderness along the deep venous system. Her left calf is 4cm larger than her right, measured 10cm below the tibial tuberosity.","correctPathways":["nav-calculators","nav-decision-tools"],"correctActions":["Calculate Wells","Order D-Dimer"],"suggestedToolQuery":"DVT","educationalRationale":"According to NICE (NG158), the first step in suspected DVT is a 2-level Wells score. Her score would be 2 (calf swelling >3cm = 1, tenderness = 1). Since Wells is 'Likely' (≥ 2), the correct immediate action is to arrange a proximal leg vein ultrasound, and offer interim therapeutic anticoagulation if the scan cannot be done within 4 hours.","idealScore":100},{"id":"scenario-002","title":"New-onset Atrial Fibrillation","vignette":"A 72-year-old male with a history of hypertension and Type 2 Diabetes is found to have an irregular pulse during a routine review. An ECG confirms Atrial Fibrillation. He has no history of stroke or TIA and his recent blood pressure is 135/85 mmHg.","correctPathways":["nav-calculators","nav-decision-tools"],"correctActions":["Calculate CHA2DS2","Assess bleeding risk"],"suggestedToolQuery":"atrial fibrillation","educationalRationale":"NICE NG196 recommends assessing stroke risk using CHA2DS2-VASc for all patients with AF. This patient scores at least 3 (Age 65-74 = 1, Hypertension = 1, Diabetes = 1). Since the score is ≥2, anticoagulation with a DOAC should be offered.","idealScore":100},{"id":"scenario-003","title":"Community-Acquired Pneumonia","vignette":"A 68-year-old male presents with a 4-day history of productive cough, fever (38.5°C), and shortness of breath. His respiratory rate is 26 breaths/min, oxygen saturation is 96% on air, and blood pressure is 110/65 mmHg. He is alert and oriented. He has a history of mild asthma.","correctPathways":["nav-calculators","nav-decision-tools"],"correctActions":["Calculate CURB"],"suggestedToolQuery":"pneumonia","educationalRationale":"NICE CG191 recommends using the CRB-65 or CURB-65 score in primary care to assess pneumonia severity. This patient scores 1 (Age ≥ 65 = 1, no confusion, RR < 30, BP normal). Score = 1 indicates low/intermediate risk, usually suitable for home-based antibiotic therapy (e.g., Amoxicillin 500mg TDS).","idealScore":100},{"id":"scenario-004","title":"Type 2 Diabetes - Annual Review","vignette":"A 58-year-old with Type 2 diabetes attends for their annual review. HbA1c is 62 mmol/mol (target < 48). They are on metformin 1g BD. They have no known cardiovascular disease. Blood pressure today is 142/88 mmHg. eGFR is 72.","correctPathways":["nav-decision-tools"],"correctActions":["Review diabetes pathway","Check foot care","Cardiovascular risk"],"suggestedToolQuery":"type 2 diabetes","educationalRationale":"NICE NG28 recommends structured annual review including HbA1c, cardiovascular risk, foot check, and kidney function. HbA1c above target warrants intensification discussion (e.g. add SGLT2i or GLP-1 if indicated).","idealScore":100},{"id":"scenario-005","title":"Heart Failure - New Diagnosis","vignette":"A 70-year-old with breathlessness on exertion and ankle swelling has an echocardiogram showing reduced left ventricular ejection fraction (LVEF 32%). NT-proBNP was elevated. No recent MI.","correctPathways":["nav-decision-tools"],"correctActions":["Heart failure pathway","Start ACE-i / ARNI","Beta-blocker"],"suggestedToolQuery":"heart failure","educationalRationale":"NICE NG106 recommends ACE inhibitor (or ARNI) and beta-blocker licensed for heart failure for all with HFrEF. Titrate to target doses. Consider SGLT2i (e.g. dapagliflozin) and MRA as per guidelines.","idealScore":100}]</script>
+    <script src="main.js?v=2"></script>
+    <script src="sandbox-main.js?v=2"></script>
 </body>
 
 </html>

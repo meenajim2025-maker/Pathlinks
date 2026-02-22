@@ -86,6 +86,20 @@ function startSandboxScenario(scenario) {
     document.getElementById('sandbox-vignette-text').textContent = scenario.vignette;
     document.getElementById('sandbox-results-panel').classList.add('hidden');
 
+    const openToolsBtn = document.getElementById('sandbox-open-decision-tools-btn');
+    if (openToolsBtn) {
+        if (scenario.suggestedToolQuery) {
+            openToolsBtn.style.display = 'inline-block';
+            openToolsBtn.onclick = () => {
+                window.__pendingDecisionToolsQuery = scenario.suggestedToolQuery;
+                const nav = document.getElementById('nav-decision-tools');
+                if (nav) nav.click();
+            };
+        } else {
+            openToolsBtn.style.display = 'none';
+        }
+    }
+
     // Start timer display
     updateSandboxTimer();
     window.sandboxTimerInterval = setInterval(updateSandboxTimer, 1000);

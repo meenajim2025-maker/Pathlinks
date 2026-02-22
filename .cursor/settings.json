@@ -2,6 +2,18 @@
   "plugins": {
     "vercel": {
       "enabled": true
+    },
+    "figma": {
+      "enabled": true
+    },
+    "cloudflare": {
+      "enabled": true
+    },
+    "parallel": {
+      "enabled": true
+    },
+    "compound-engineering": {
+      "enabled": true
     }
   }
 }

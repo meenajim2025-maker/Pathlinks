@@ -24,7 +24,9 @@ A comprehensive clinical decision support tool for UK General Practice, designed
 - `/emis_templates`: EMIS Web compatible XML protocols.
 - `/docs`: EMIS setup guide, clinical protocol, **Knowledge extraction**, and **FORENSIC_AUDIT.md** (repo/deploy audit).
 
-**Deploy:** Vercel serves from the **repo root** (root `index.html` and `data/`). Run `scripts/anonymize_transcripts.py` before deploying so the live site uses anonymized transcripts. See `docs/FORENSIC_AUDIT.md` for a full deploy checklist.
+**Deploy:** Vercel serves from the **repo root** (root `index.html` is a copy of `app/index.html`; app scripts are `app/main.js` and `app/sandbox-main.js`). Run `scripts/anonymize_transcripts.py` before deploying so the live site uses anonymized transcripts. See `docs/FORENSIC_AUDIT.md` for a full deploy checklist.
+
+**Handover / Education Sandbox:** If you are picking up work on the **Education Sandbox** or deployment issues, see **`HANDOVER.md`** in the project root for context, what was tried, and suggested next steps.
 
 ## 🛠️ How to Use
 

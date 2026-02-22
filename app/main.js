@@ -4,86 +4,112 @@ let decisionToolsData = null;
 
 // Load data and initialize selects
 async function init() {
+    // Set up navigation first so all tabs (including Sandbox) work even if dashboard data fails
+    const navItems = document.querySelectorAll('.nav-item');
+    const views = document.querySelectorAll('.view');
+
+    navItems.forEach(item => {
+        item.addEventListener('click', () => {
+            const viewId = item.id.replace('nav-', '') + '-view';
+            // #region agent log
+            var viewFound = false;
+            views.forEach(function(v) { if (v.id === viewId) viewFound = true; });
+            var payload1 = {sessionId:'81698c',location:'main.js:nav-click',message:'Nav item clicked',data:{itemId:item.id,viewId:viewId,viewFound:viewFound,initSandboxType:typeof initSandbox},timestamp:Date.now(),hypothesisId:'H1'};
+            var payload2 = {sessionId:'81698c',location:'main.js:nav-click',message:'Sandbox branch',data:{isNavSandbox:item.id==='nav-sandbox',willCallInitSandbox:item.id==='nav-sandbox'&&typeof initSandbox==='function'},timestamp:Date.now(),hypothesisId:'H2'};
+            if (typeof window !== 'undefined') { window.__debugLog = window.__debugLog || []; window.__debugLog.push(payload1); window.__debugLog.push(payload2); console.log('[DEBUG-SANDBOX]', JSON.stringify(payload1)); console.log('[DEBUG-SANDBOX]', JSON.stringify(payload2)); }
+            fetch('http://127.0.0.1:7623/ingest/dee73cc8-fd3a-417d-b2b7-28f9d03ea65a',{method:'POST',headers:{'Content-Type':'application/json','X-Debug-Session-Id':'81698c'},body:JSON.stringify(payload1)}).catch(function(){});
+            fetch('http://127.0.0.1:7623/ingest/dee73cc8-fd3a-417d-b2b7-28f9d03ea65a',{method:'POST',headers:{'Content-Type':'application/json','X-Debug-Session-Id':'81698c'},body:JSON.stringify(payload2)}).catch(function(){});
+            // #endregion
+            navItems.forEach(n => n.classList.remove('active'));
+            item.classList.add('active');
+
+            views.forEach(v => {
+                if (v.id === viewId) v.classList.remove('hidden');
+                else v.classList.add('hidden');
+            });
+
+            if (item.id === 'nav-decision-tools') renderDecisionTools();
+            if (item.id === 'nav-calculators') {
+                initQRISK();
+                initNEWS2();
+                initWells();
+                initCURB();
+            }
+            if (item.id === 'nav-sandbox' && typeof initSandbox === 'function') initSandbox();
+        });
+    });
+
+    // Deep link: open Decision tools view on load if URL asks for it
+    const urlParams = new URLSearchParams(location.search);
+    const hash = (location.hash || '').replace(/^#/, '');
+    if (urlParams.get('view') === 'decision-tools' || hash === 'decision-tools') {
+        const navDecisionTools = document.getElementById('nav-decision-tools');
+        if (navDecisionTools) navDecisionTools.click();
+    }
+
+    // Initialize Calculators (needed for Calculators tab)
+    initQRISK();
+    initNEWS2();
+    initWells();
+    initCURB();
+
     try {
         const response = await fetch('./data/blood_tests_protocol.json');
         testData = await response.json();
 
-
-
         const categorySelect = document.getElementById('select-test');
-        testData.forEach((cat, index) => {
-            const opt = document.createElement('option');
-            opt.value = index;
-            opt.textContent = cat.category;
-            categorySelect.appendChild(opt);
-        });
+        if (categorySelect) {
+            categorySelect.innerHTML = '';
+            testData.forEach((cat, index) => {
+                const opt = document.createElement('option');
+                opt.value = index;
+                opt.textContent = cat.category;
+                categorySelect.appendChild(opt);
+            });
+            categorySelect.addEventListener('change', updateParameters);
+        }
+        const analyseBtn = document.getElementById('analyse-btn');
+        if (analyseBtn) analyseBtn.addEventListener('click', analyseResult);
 
-        categorySelect.addEventListener('change', updateParameters);
-        document.getElementById('analyse-btn').addEventListener('click', analyseResult);
-
-        // Initialize Calculators
-        initQRISK();
-        initNEWS2();
-        initWells();
-        initCURB();
-
-        // Navigation logic
-        const navItems = document.querySelectorAll('.nav-item');
-        const views = document.querySelectorAll('.view');
-
-        navItems.forEach(item => {
-            item.addEventListener('click', () => {
-                navItems.forEach(n => n.classList.remove('active'));
-                item.classList.add('active');
-
-                const viewId = item.id.replace('nav-', '') + '-view';
-                views.forEach(v => {
-                    if (v.id === viewId) v.classList.remove('hidden');
-                    else v.classList.add('hidden');
-                });
-
-
-                if (item.id === 'nav-decision-tools') renderDecisionTools();
-                if (item.id === 'nav-calculators') {
-                    initQRISK();
-                    initNEWS2();
-                    initWells();
-                    initCURB();
+        const testSearch = document.getElementById('test-search');
+        if (testSearch) {
+            testSearch.addEventListener('input', (e) => {
+                const term = e.target.value.toLowerCase();
+                if (term.length > 1 && testData.length) {
+                    testData.forEach((cat, cIdx) => {
+                        cat.tests.forEach((t, tIdx) => {
+                            if (t.name.toLowerCase().includes(term)) {
+                                const sel = document.getElementById('select-test');
+                                if (sel) sel.value = cIdx;
+                                updateParameters();
+                                const paramSelect = document.getElementById('select-param');
+                                if (paramSelect) paramSelect.value = tIdx;
+                            }
+                        });
+                    });
                 }
             });
-        });
-
-        // Search logic
-        document.getElementById('test-search').addEventListener('input', (e) => {
-            const term = e.target.value.toLowerCase();
-
-            // Special cases for calculators
-            const calcTerms = ['qrisk', 'news', 'sepsis', 'wells', 'curb', 'dvt', 'pneumonia'];
-            if (calcTerms.some(kw => term.includes(kw))) {
-                // Show a hint or just navigate?
-                // For now, let's just make the calculators tab flash or be the first hit
-                // But this search doesn't have a results dropdown, it just updates the dropdowns.
-                // Instead, let's add a small 'Search for calculators' helper
-            }
-
-            if (term.length > 1) {
-                testData.forEach((cat, cIdx) => {
-                    cat.tests.forEach((t, tIdx) => {
-                        if (t.name.toLowerCase().includes(term)) {
-                            document.getElementById('select-test').value = cIdx;
-                            updateParameters();
-                            document.getElementById('select-param').value = tIdx;
-                        }
-                    });
-                });
-            }
-        });
-
+        }
     } catch (e) {
         console.error("Error loading test data:", e);
-        document.getElementById('select-test').innerHTML = '<option value="">Failed to load protocols</option>';
+        const categorySelect = document.getElementById('select-test');
+        if (categorySelect) categorySelect.innerHTML = '<option value="">Failed to load protocols</option>';
         const out = document.getElementById('guidance-output');
         if (out) out.innerHTML = '<div class="placeholder-text"><p>Could not load blood test data. Check the console or try refreshing.</p></div>';
+    }
+
+    // Dark mode toggle (optional UI from backup)
+    const darkToggle = document.getElementById('dark-mode-toggle');
+    if (darkToggle) {
+        const stored = localStorage.getItem('pathlinks-dark-mode');
+        if (stored === '1') {
+            document.body.classList.add('dark-mode');
+            darkToggle.checked = true;
+        }
+        darkToggle.addEventListener('change', function () {
+            document.body.classList.toggle('dark-mode', this.checked);
+            localStorage.setItem('pathlinks-dark-mode', this.checked ? '1' : '0');
+        });
     }
 }
 
@@ -382,25 +408,44 @@ async function renderDecisionTools() {
     const titleEl = document.getElementById('decision-tool-title');
     const niceEl = document.getElementById('decision-tool-nice');
     const evidenceEl = document.getElementById('decision-tool-evidence');
+    const redFlagsBox = document.getElementById('decision-red-flags-box');
+    const redFlagsList = document.getElementById('decision-red-flags-list');
+    const redFlagsToggle = document.getElementById('decision-red-flags-toggle');
+    const redFlagsBody = document.getElementById('decision-red-flags-body');
+    const redFlagsChevron = document.getElementById('decision-red-flags-chevron');
+    if (redFlagsToggle && redFlagsBody && redFlagsChevron) {
+        redFlagsToggle.addEventListener('click', function () {
+            const open = redFlagsBody.style.display !== 'none';
+            redFlagsBody.style.display = open ? 'none' : '';
+            redFlagsChevron.textContent = open ? '▶' : '▼';
+            redFlagsToggle.setAttribute('aria-expanded', open ? 'false' : 'true');
+        });
+    }
     const stepsContainer = document.getElementById('decision-steps-container');
     const guidanceBox = document.getElementById('decision-guidance-box');
     const guidanceText = document.getElementById('decision-guidance-text');
+    const copyGuidanceBtn = document.getElementById('decision-copy-guidance-btn');
+    const clearFiltersBtn = document.getElementById('decision-clear-filters-btn');
     if (!systemSelect || !toolSelect || !panel) return;
 
     if (systemSelect.dataset.loading === 'true') return;
     if (systemSelect.dataset.initialized) return;
 
+    const loadingEl = document.getElementById('decision-tools-loading');
     if (!decisionToolsData) {
         systemSelect.dataset.loading = 'true';
+        if (loadingEl) loadingEl.classList.remove('hidden');
         try {
-            const res = await fetch('./data/decision_tools_protocol.json?v=' + (window.DECISION_TOOLS_CACHE_BUST || '5'));
+            const res = await fetch('./data/decision_tools_protocol.json?v=' + (window.DECISION_TOOLS_CACHE_BUST || '10'));
             if (!res.ok) throw new Error('Not found');
             decisionToolsData = await res.json();
             systemSelect.dataset.loading = 'false';
             systemSelect.dataset.initialized = 'true';
+            if (loadingEl) loadingEl.classList.add('hidden');
         } catch (e) {
             console.error("[DecisionTools] Load failed:", e);
             systemSelect.dataset.loading = 'false';
+            if (loadingEl) loadingEl.classList.add('hidden');
             panel.classList.add('hidden');
             stepsContainer.innerHTML = '<p class="placeholder-text">Decision tools data not found. Run <code>node scripts/build-decision-tools.js</code> to generate or check network connectivity.</p>';
             return;
@@ -410,6 +455,16 @@ async function renderDecisionTools() {
     }
 
     const systems = decisionToolsData.systems || [];
+    const totalToolsCount = systems.reduce((acc, sys) => acc + (sys.tools || []).length, 0);
+    const totalCountEl = document.getElementById('decision-tools-total-count');
+    const versionEl = document.getElementById('decision-tools-version');
+    const emptyHintEl = document.getElementById('decision-tools-empty-hint');
+    if (totalCountEl) totalCountEl.textContent = '(' + totalToolsCount + ' tools)';
+    if (versionEl) {
+        const v = decisionToolsData.protocolVersion;
+        const built = decisionToolsData.builtAt ? new Date(decisionToolsData.builtAt).toLocaleDateString('en-GB', { day: 'numeric', month: 'short', year: 'numeric' }) : '';
+        versionEl.textContent = (v != null ? ' · Protocol v' + v : '') + (built ? ' · built ' + built : '');
+    }
     systemSelect.innerHTML = '<option value="">-- Choose system --</option>';
     systems.forEach((sys, idx) => {
         const opt = document.createElement('option');
@@ -424,21 +479,93 @@ async function renderDecisionTools() {
 
     const filterInput = document.getElementById('decision-tool-filter');
     const countEl = document.getElementById('decision-tool-count');
+    const niceFilterSelect = document.getElementById('decision-nice-filter');
 
-    function populateTopicDropdown(sys, filterStr) {
-        const tools = sys.tools || [];
+    // Build unique NICE refs list from all tools
+    const allNiceRefs = new Set();
+    systems.forEach(sys => {
+        (sys.tools || []).forEach(tool => {
+            (tool.niceRefs || []).forEach(ref => { if (ref && String(ref).trim()) allNiceRefs.add(String(ref).trim()); });
+        });
+    });
+    const sortedNiceRefs = Array.from(allNiceRefs).sort((a, b) => a.localeCompare(b, 'en', { sensitivity: 'base' }));
+    if (niceFilterSelect) {
+        sortedNiceRefs.forEach(ref => {
+            const opt = document.createElement('option');
+            opt.value = ref;
+            opt.textContent = ref;
+            niceFilterSelect.appendChild(opt);
+        });
+    }
+
+    function populateTopicDropdown(sys, filterStr, niceRef) {
+        let tools = sys.tools || [];
+        if (niceRef) tools = tools.filter(t => (t.niceRefs || []).indexOf(niceRef) !== -1);
         const q = (filterStr || '').trim().toLowerCase();
         const filtered = q ? tools.filter(t => (t.title || '').toLowerCase().includes(q)) : tools;
         toolSelect.innerHTML = '<option value="">-- Choose topic --</option>';
         filtered.forEach(tool => {
-            const tIdx = tools.indexOf(tool);
+            const tIdx = (sys.tools || []).indexOf(tool);
             const opt = document.createElement('option');
             opt.value = tIdx;
             opt.textContent = tool.title;
             toolSelect.appendChild(opt);
         });
-        if (countEl) countEl.textContent = filtered.length === tools.length ? tools.length + ' topics' : 'Showing ' + filtered.length + ' of ' + tools.length + ' topics';
+        const total = (sys.tools || []).length;
+        if (countEl) countEl.textContent = filtered.length === total && !niceRef ? total + ' topics' : 'Showing ' + filtered.length + (niceRef || q ? ' of ' + total : '') + ' topics';
     }
+
+    function getSelectedNiceRef() {
+        return niceFilterSelect && niceFilterSelect.value ? niceFilterSelect.value : '';
+    }
+
+    const RECENT_STORAGE_KEY = 'pathlinks-recent-tools';
+    const MAX_RECENT = 5;
+    function addToRecent(sysIdx, toolIdx, title) {
+        if (!sysIdx || !title) return;
+        let arr = JSON.parse(localStorage.getItem(RECENT_STORAGE_KEY) || '[]');
+        arr = arr.filter(r => !(String(r.sysIdx) === String(sysIdx) && r.title === title));
+        arr.unshift({ sysIdx: String(sysIdx), toolIdx: String(toolIdx), title: title });
+        arr = arr.slice(0, MAX_RECENT);
+        localStorage.setItem(RECENT_STORAGE_KEY, JSON.stringify(arr));
+        updateRecentUI();
+    }
+    function updateRecentUI() {
+        const container = document.getElementById('decision-recent-links');
+        const parent = document.getElementById('decision-recent-tools');
+        if (!container || !parent) return;
+        const arr = JSON.parse(localStorage.getItem(RECENT_STORAGE_KEY) || '[]');
+        if (arr.length === 0) { parent.style.display = 'none'; return; }
+        parent.style.display = 'block';
+        container.innerHTML = arr.map((r, i) => {
+            const short = (r.title || '').length > 32 ? (r.title || '').slice(0, 29) + '…' : (r.title || '');
+            return '<a href="#" data-recent-i="' + i + '" style="margin-left:6px;color:var(--primary);">' + escapeHtml(short) + '</a>';
+        }).join('');
+        container.querySelectorAll('a').forEach(a => {
+            a.addEventListener('click', function (e) {
+                e.preventDefault();
+                const i = parseInt(this.getAttribute('data-recent-i'), 10);
+                const list = JSON.parse(localStorage.getItem(RECENT_STORAGE_KEY) || '[]');
+                const r = list[i];
+                if (!r || r.sysIdx == null) return;
+                const sysIdx = String(r.sysIdx);
+                const title = r.title;
+                if (!title) return;
+                const sys = systems[parseInt(sysIdx, 10)];
+                if (!sys || !sys.tools) return;
+                const tool = sys.tools.find(t => t.title === title);
+                if (!tool) return;
+                const toolIdx = sys.tools.indexOf(tool);
+                systemSelect.value = sysIdx;
+                toolSelect.disabled = false;
+                populateTopicDropdown(sys, '', '');
+                toolSelect.value = String(toolIdx);
+                renderToolUI(tool);
+                panel.classList.remove('hidden');
+            });
+        });
+    }
+    updateRecentUI();
 
     systemSelect.onchange = function () {
         const sysIdx = this.value;
@@ -448,28 +575,67 @@ async function renderDecisionTools() {
             if (countEl) countEl.textContent = '';
             if (filterInput) filterInput.value = '';
             panel.classList.add('hidden');
+            if (emptyHintEl) emptyHintEl.style.display = '';
             return;
         }
         const sys = systems[parseInt(sysIdx, 10)];
         const filterStr = filterInput ? filterInput.value : '';
-        populateTopicDropdown(sys, filterStr);
+        populateTopicDropdown(sys, filterStr, getSelectedNiceRef());
     };
+
+    if (niceFilterSelect) {
+        niceFilterSelect.addEventListener('change', function () {
+            const sysIdx = systemSelect.value;
+            if (sysIdx === '') return;
+            const sys = systems[parseInt(sysIdx, 10)];
+            populateTopicDropdown(sys, filterInput ? filterInput.value : '', getSelectedNiceRef());
+        });
+    }
 
     if (filterInput) {
         filterInput.addEventListener('input', function () {
             const sysIdx = systemSelect.value;
             if (sysIdx === '') return;
             const sys = systems[parseInt(sysIdx, 10)];
-            populateTopicDropdown(sys, this.value);
+            populateTopicDropdown(sys, this.value, getSelectedNiceRef());
         });
     }
+    if (clearFiltersBtn) {
+        clearFiltersBtn.addEventListener('click', function () {
+            if (niceFilterSelect) niceFilterSelect.value = '';
+            if (filterInput) filterInput.value = '';
+            const sysIdx = systemSelect.value;
+            if (sysIdx !== '') {
+                const sys = systems[parseInt(sysIdx, 10)];
+                populateTopicDropdown(sys, '', '');
+            }
+        });
+    }
+    function copyGuidanceToClipboard() {
+        const text = guidanceText && guidanceText.textContent ? guidanceText.textContent.trim() : '';
+        if (!text) return;
+        navigator.clipboard.writeText(text).then(() => {
+            const prev = copyGuidanceBtn.textContent;
+            copyGuidanceBtn.textContent = 'Copied';
+            setTimeout(() => { copyGuidanceBtn.textContent = prev; }, 1500);
+        }).catch(() => {});
+    }
+    if (copyGuidanceBtn) copyGuidanceBtn.addEventListener('click', copyGuidanceToClipboard);
+    document.addEventListener('keydown', function (e) {
+        if (e.key !== 'Enter' || (!e.ctrlKey && !e.metaKey)) return;
+        const viewEl = document.getElementById('decision-tools-view');
+        if (!viewEl || viewEl.classList.contains('hidden')) return;
+        if (panel.classList.contains('hidden')) return;
+        copyGuidanceToClipboard();
+    });
 
     const searchAllInput = document.getElementById('decision-search-all');
     const searchResultsEl = document.getElementById('decision-search-results');
     if (searchAllInput && searchResultsEl) {
         const maxSearchHits = 25;
-        searchAllInput.addEventListener('input', function () {
-            const q = (this.value || '').trim().toLowerCase();
+        let searchDebounceTimer = null;
+        function runSearch() {
+            const q = (searchAllInput.value || '').trim().toLowerCase();
             searchResultsEl.classList.add('hidden');
             searchResultsEl.innerHTML = '';
             if (q.length < 2) return;
@@ -478,7 +644,8 @@ async function renderDecisionTools() {
                 (sys.tools || []).forEach((tool, toolIdx) => {
                     const title = (tool.title || '').toLowerCase();
                     const sysName = (sys.name || '').toLowerCase();
-                    if (title.includes(q) || sysName.includes(q)) hits.push({ sysIdx, toolIdx, sysName: sys.name, title: tool.title, tool });
+                    const niceRefsStr = (tool.niceRefs || []).join(' ').toLowerCase();
+                    if (title.includes(q) || sysName.includes(q) || niceRefsStr.includes(q)) hits.push({ sysIdx, toolIdx, sysName: sys.name, title: tool.title, tool });
                 });
             });
 
@@ -492,6 +659,18 @@ async function renderDecisionTools() {
             });
 
             const show = hits.slice(0, maxSearchHits);
+            searchResultsEl.dataset.firstHit = show.length ? JSON.stringify({ sysIdx: show[0].sysIdx, toolIdx: show[0].toolIdx, title: show[0].title, sysName: show[0].sysName }) : '';
+            if (show.length === 0) {
+                searchResultsEl.innerHTML = '<div class="search-no-results" style="padding:12px;color:var(--text-muted);font-size:13px;">No matches. Try broader terms or clear filters.</div>';
+                searchResultsEl.classList.remove('hidden');
+                searchResultsEl.setAttribute('aria-label', 'No search results');
+                return;
+            }
+            searchResultsEl.setAttribute('aria-label', (hits.length > maxSearchHits ? 'Showing ' + maxSearchHits + ' of ' + hits.length : hits.length) + ' results');
+            const totalHits = hits.length;
+            const countTip = totalHits > maxSearchHits
+                ? '<div class="search-results-count" style="padding:6px 12px;font-size:11px;color:var(--text-muted);border-bottom:1px solid #eee;">Showing ' + maxSearchHits + ' of ' + totalHits + ' matches</div>'
+                : '';
             show.forEach(({ sysIdx, toolIdx, sysName, title }) => {
                 const div = document.createElement('div');
                 div.className = 'search-hit';
@@ -516,7 +695,7 @@ async function renderDecisionTools() {
                     toolSelect.disabled = false;
 
                     // Step 2: Populate Tool Dropdown for this system
-                    populateTopicDropdown(systems[sysIdx], '');
+                    populateTopicDropdown(systems[sysIdx], '', getSelectedNiceRef());
 
                     // Step 3: Explicitly set the value and ensure it's selected in the DOM
                     toolSelect.value = String(toolIdx);
@@ -544,7 +723,34 @@ async function renderDecisionTools() {
                 });
                 searchResultsEl.appendChild(div);
             });
-            if (show.length) searchResultsEl.classList.remove('hidden');
+            if (show.length) {
+                if (countTip) searchResultsEl.insertAdjacentHTML('afterbegin', countTip);
+                searchResultsEl.classList.remove('hidden');
+            }
+        }
+        searchAllInput.addEventListener('input', function () {
+            clearTimeout(searchDebounceTimer);
+            searchDebounceTimer = setTimeout(runSearch, 250);
+        });
+        searchAllInput.addEventListener('keydown', function (e) {
+            const hits = searchResultsEl.querySelectorAll('.search-hit');
+            if (e.key === 'Enter') {
+                e.preventDefault();
+                const focused = searchResultsEl.querySelector('.search-hit.focused');
+                if (focused) focused.click();
+                else if (hits.length) hits[0].click();
+                else runSearch();
+                return;
+            }
+            if (e.key !== 'ArrowDown' && e.key !== 'ArrowUp') return;
+            if (!hits.length) return;
+            e.preventDefault();
+            const current = searchResultsEl.querySelector('.search-hit.focused');
+            let idx = current ? Array.prototype.indexOf.call(hits, current) : -1;
+            if (e.key === 'ArrowDown') idx = Math.min(idx + 1, hits.length - 1);
+            else idx = Math.max(idx - 1, 0);
+            hits.forEach((el, i) => el.classList.toggle('focused', i === idx));
+            if (hits[idx]) hits[idx].scrollIntoView({ block: 'nearest', behavior: 'smooth' });
         });
         searchAllInput.addEventListener('blur', function () {
             setTimeout(() => { searchResultsEl.classList.add('hidden'); }, 150);
@@ -554,7 +760,27 @@ async function renderDecisionTools() {
                 searchAllInput.blur();
                 searchResultsEl.classList.add('hidden');
             }
+            if (e.key === '/' && !e.ctrlKey && !e.metaKey && !e.altKey) {
+                const active = document.activeElement;
+                if (active && (active.tagName === 'INPUT' || active.tagName === 'TEXTAREA' || active.tagName === 'SELECT')) return;
+                const view = document.getElementById('decision-tools-view');
+                if (view && !view.classList.contains('hidden')) {
+                    searchAllInput.focus();
+                    e.preventDefault();
+                }
+            }
         });
+        // Sandbox deep-link: prefill search and open first result if any
+        if (window.__pendingDecisionToolsQuery) {
+            const q = window.__pendingDecisionToolsQuery;
+            window.__pendingDecisionToolsQuery = null;
+            searchAllInput.value = q;
+            searchAllInput.dispatchEvent(new Event('input', { bubbles: true }));
+            setTimeout(() => {
+                const first = searchResultsEl.querySelector('.search-hit');
+                if (first) first.click();
+            }, 350);
+        }
     }
 
     toolSelect.onchange = function () {
@@ -562,14 +788,182 @@ async function renderDecisionTools() {
         const toolIdx = this.value;
         if (sysIdx === '' || toolIdx === '') {
             panel.classList.add('hidden');
+            if (emptyHintEl) emptyHintEl.style.display = '';
             return;
         }
         const sys = systems[parseInt(sysIdx, 10)];
         const tool = (sys.tools || [])[parseInt(toolIdx, 10)];
         if (tool) renderToolUI(tool);
     };
+    const backToListBtn = document.getElementById('decision-back-to-list-btn');
+    if (backToListBtn) {
+        backToListBtn.onclick = function () {
+            panel.classList.add('hidden');
+            if (emptyHintEl) emptyHintEl.style.display = '';
+            const viewEl = document.getElementById('decision-tools-view');
+            if (viewEl) viewEl.scrollIntoView({ behavior: 'smooth', block: 'start' });
+            systemSelect.focus();
+        };
+    }
+
+    const exportVisibleBtn = document.getElementById('decision-export-visible-btn');
+    const exportSectionBtn = document.getElementById('decision-export-section-btn');
+    const exportAllBtn = document.getElementById('decision-export-all-btn');
+    function downloadJson(data, filename) {
+        const blob = new Blob([JSON.stringify(data, null, 2)], { type: 'application/json' });
+        const a = document.createElement('a');
+        a.href = URL.createObjectURL(blob);
+        a.download = filename;
+        a.click();
+        URL.revokeObjectURL(a.href);
+    }
+    function getVisibleTools() {
+        const sysIdx = systemSelect.value;
+        if (sysIdx === '') return null;
+        const sys = systems[parseInt(sysIdx, 10)];
+        const niceRef = getSelectedNiceRef();
+        const filterStr = (filterInput && filterInput.value || '').trim().toLowerCase();
+        let list = sys.tools || [];
+        if (niceRef) list = list.filter(t => (t.niceRefs || []).indexOf(niceRef) !== -1);
+        if (filterStr) list = list.filter(t => (t.title || '').toLowerCase().includes(filterStr));
+        return { system: sys.name, id: sys.id, tools: list };
+    }
+    if (exportVisibleBtn) {
+        exportVisibleBtn.onclick = function () {
+            const visible = getVisibleTools();
+            if (!visible || visible.tools.length === 0) {
+                alert('Choose a system and ensure at least one topic is visible (check NICE/topic filter).');
+                return;
+            }
+            const date = new Date().toISOString().slice(0, 10);
+            const payload = { ...visible, exportedAt: new Date().toISOString() };
+            downloadJson(payload, 'decision-tools-visible-' + (visible.id || '') + '_' + date + '.json');
+        };
+    }
+    if (exportSectionBtn) {
+        exportSectionBtn.onclick = function () {
+            const sysIdx = systemSelect.value;
+            if (sysIdx === '') {
+                alert('Choose a system first.');
+                return;
+            }
+            const sys = systems[parseInt(sysIdx, 10)];
+            const payload = { system: sys.name, id: sys.id, tools: sys.tools || [], exportedAt: new Date().toISOString() };
+            const date = new Date().toISOString().slice(0, 10);
+            downloadJson(payload, 'decision-tools-' + (sys.id || sysIdx) + '_' + date + '.json');
+        };
+    }
+    if (exportAllBtn) {
+        exportAllBtn.onclick = function () {
+            const date = new Date().toISOString().slice(0, 10);
+            downloadJson(decisionToolsData, 'decision_tools_protocol_' + date + '.json');
+        };
+    }
+
+    function openRandomTool() {
+        const sysList = systems.filter(s => (s.tools || []).length > 0);
+        if (!sysList.length) return;
+        const sys = sysList[Math.floor(Math.random() * sysList.length)];
+        const tools = sys.tools || [];
+        if (!tools.length) return;
+        const tool = tools[Math.floor(Math.random() * tools.length)];
+        const sysIdx = systems.indexOf(sys);
+        const toolIdx = tools.indexOf(tool);
+        systemSelect.value = String(sysIdx);
+        toolSelect.disabled = false;
+        populateTopicDropdown(sys, '', '');
+        toolSelect.value = String(toolIdx);
+        renderToolUI(tool);
+        panel.classList.remove('hidden');
+        panel.scrollIntoView({ behavior: 'smooth', block: 'start' });
+    }
+    const randomToolTopBtn = document.getElementById('decision-random-tool-top-btn');
+    const randomToolPanelBtn = document.getElementById('decision-random-tool-btn');
+    const printToolBtn = document.getElementById('decision-print-tool-btn');
+    if (randomToolTopBtn) randomToolTopBtn.onclick = openRandomTool;
+    if (randomToolPanelBtn) randomToolPanelBtn.onclick = openRandomTool;
+    const prevToolBtn = document.getElementById('decision-prev-tool-btn');
+    const nextToolBtn = document.getElementById('decision-next-tool-btn');
+    if (prevToolBtn) {
+        prevToolBtn.onclick = function () {
+            if (toolSelect.selectedIndex <= 1) return;
+            toolSelect.selectedIndex--;
+            toolSelect.dispatchEvent(new Event('change', { bubbles: true }));
+        };
+    }
+    if (nextToolBtn) {
+        nextToolBtn.onclick = function () {
+            if (toolSelect.selectedIndex < 0 || toolSelect.selectedIndex >= toolSelect.options.length - 1) return;
+            toolSelect.selectedIndex++;
+            toolSelect.dispatchEvent(new Event('change', { bubbles: true }));
+        };
+    }
+    function openToolPrintView(andPrint) {
+        const sysIdx = systemSelect.value;
+        const toolIdx = toolSelect.value;
+        if (sysIdx === '' || toolIdx === '') return;
+        const sys = systems[parseInt(sysIdx, 10)];
+        const tool = (sys.tools || [])[parseInt(toolIdx, 10)];
+        if (!tool) return;
+        const redFlagsList = [];
+        (tool.steps || []).forEach(step => {
+            (step.options || []).forEach(opt => {
+                const g = (opt.guidance || '').trim();
+                if (/refer|urgent|2WW|red flag|emergency|same-day|immediate/i.test(g) || /refer|urgent|2WW|red flag|emergency/i.test(opt.label || '')) {
+                    redFlagsList.push((opt.label || '') + (g ? ': ' + g.split(/\n/)[0].replace(/^MANAGEMENT PLAN:\s*/i, '').trim().slice(0, 100) : ''));
+                }
+            });
+        });
+        let stepsHtml = '';
+        (tool.steps || []).forEach(step => {
+            if (step.type !== 'dropdown' || !step.options) return;
+            stepsHtml += '<h4 style="margin:12px 0 4px 0;">' + escapeHtml(step.question) + '</h4><ul style="margin:0 0 12px 0; padding-left:20px;">';
+            (step.options || []).forEach(opt => {
+                stepsHtml += '<li><strong>' + escapeHtml(opt.label || '') + '</strong><br><span style="white-space:pre-line;font-size:12px;">' + escapeHtml(opt.guidance || '') + '</span></li>';
+            });
+            stepsHtml += '</ul>';
+        });
+        const win = window.open('', '_blank', 'width=700,height=800');
+        win.document.write('<!DOCTYPE html><html><head><title>' + escapeHtml(tool.title) + '</title><meta charset="utf-8"></head><body style="font-family:Inter,sans-serif;padding:24px;max-width:700px;">' +
+            '<h1 style="margin:0 0 8px 0;">' + escapeHtml(tool.title) + '</h1>' +
+            '<p class="small-text"><strong>NICE / evidence:</strong> ' + escapeHtml((tool.niceRefs || []).join(', ') || 'NICE CKS') + '</p>' +
+            '<p style="line-height:1.5;">' + escapeHtml(tool.evidence || '') + '</p>' +
+            (redFlagsList.length ? '<h3 style="margin-top:16px;color:#c0392b;">Red flags / When to refer</h3><ul style="padding-left:20px;">' + redFlagsList.map(r => '<li>' + escapeHtml(r) + '</li>').join('') + '</ul>' : '') +
+            '<h3 style="margin-top:16px;">Steps</h3>' + stepsHtml +
+            '<p style="margin-top:24px;font-size:11px;color:#666;">PathLinks Decision Tools · ' + new Date().toLocaleDateString() + '</p>' +
+            '</body></html>');
+        win.document.close();
+        win.focus();
+        if (andPrint !== false) setTimeout(function () { win.print(); }, 300);
+    }
+    if (printToolBtn) printToolBtn.onclick = function () { openToolPrintView(true); };
+    const exportPdfBtn = document.getElementById('decision-export-pdf-btn');
+    if (exportPdfBtn) exportPdfBtn.onclick = function () { openToolPrintView(true); };
+
+    // Deep link: ?view=decision-tools&system=0&tool=5 or #decision-tools
+    const params = new URLSearchParams(location.search);
+    const systemParam = params.get('system');
+    const toolParam = params.get('tool');
+    if (systemParam != null && systemParam !== '' && toolParam != null && toolParam !== '') {
+        const sysIdx = parseInt(systemParam, 10);
+        const toolIdx = parseInt(toolParam, 10);
+        if (!isNaN(sysIdx) && !isNaN(toolIdx) && systems[sysIdx]) {
+            const sys = systems[sysIdx];
+            const tools = sys.tools || [];
+            if (tools[toolIdx]) {
+                systemSelect.value = String(sysIdx);
+                toolSelect.disabled = false;
+                populateTopicDropdown(sys, filterInput ? filterInput.value : '', getSelectedNiceRef());
+                toolSelect.value = String(toolIdx);
+                renderToolUI(tools[toolIdx]);
+            }
+        }
+    }
 
     function renderToolUI(tool) {
+        const sysIdx = systemSelect.value;
+        const toolIdx = toolSelect.value;
+        if (sysIdx && toolIdx && tool && tool.title) addToRecent(sysIdx, toolIdx, tool.title);
         // UI elements from parent scope
         titleEl.innerHTML = escapeHtml(tool.title);
 
@@ -583,6 +977,43 @@ async function renderDecisionTools() {
         evidenceEl.textContent = tool.evidence || 'See NICE CKS and local policy.';
         guidanceBox.classList.add('hidden');
         stepsContainer.innerHTML = '';
+
+        // Red flags / When to refer: collect from step options
+        const refRegex = /refer|urgent|2WW|red flag|emergency|same-day|immediate/i;
+        const points = [];
+        (tool.steps || []).forEach(step => {
+            (step.options || []).forEach(opt => {
+                const label = (opt.label || '').trim();
+                const guidance = (opt.guidance || '').trim();
+                if (!label && !guidance) return;
+                const isRef = refRegex.test(label) || refRegex.test(guidance);
+                if (isRef) {
+                    const short = guidance.split(/\n/)[0].replace(/^MANAGEMENT PLAN:\s*/i, '').trim();
+                    points.push(short ? label + ': ' + (short.length > 120 ? short.slice(0, 117) + '…' : short) : label);
+                }
+            });
+        });
+        if (redFlagsBox && redFlagsList) {
+            redFlagsList.innerHTML = '';
+            if (points.length) {
+                points.forEach(p => {
+                    const li = document.createElement('li');
+                    li.textContent = p;
+                    redFlagsList.appendChild(li);
+                });
+                redFlagsBox.classList.remove('hidden');
+                const body = document.getElementById('decision-red-flags-body');
+                const toggle = document.getElementById('decision-red-flags-toggle');
+                const chevron = document.getElementById('decision-red-flags-chevron');
+                if (body && toggle && chevron) {
+                    toggle.setAttribute('aria-expanded', 'true');
+                    body.style.display = '';
+                    chevron.textContent = '▼';
+                }
+            } else {
+                redFlagsBox.classList.add('hidden');
+            }
+        }
 
         (tool.steps || []).forEach((step, stepIdx) => {
             if (step.type !== 'dropdown' || !step.options || !step.options.length) return;
@@ -610,7 +1041,6 @@ async function renderDecisionTools() {
                 const g = (chosen.dataset.guidance || '').replace(/&quot;/g, '"');
                 guidanceText.textContent = g;
                 guidanceBox.classList.remove('hidden');
-
                 // Visual feedback for generic vs specific
                 if (isGeneric) {
                     guidanceBox.style.borderLeft = '4px solid #f39c12';
@@ -624,6 +1054,7 @@ async function renderDecisionTools() {
             div.appendChild(select);
             stepsContainer.appendChild(div);
         });
+        if (emptyHintEl) emptyHintEl.style.display = 'none';
         panel.classList.remove('hidden');
     }
 }
