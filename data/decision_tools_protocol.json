@@ -1,8 +1,8 @@
 {
   "source": "Learning library + NICE CKS/NG; management steps from guidelines",
   "protocolVersion": 2,
-  "builtAt": "2026-02-22T20:44:15.417Z",
-  "generated": "2026-02-22T20:44:15.417Z",
+  "builtAt": "2026-02-22T20:49:06.388Z",
+  "generated": "2026-02-22T20:49:06.388Z",
   "totalTools": 1510,
   "systems": [
     {
@@ -7006,21 +7006,21 @@
           "evidence": "Now today I'm [Name]. I'm [Name] I'm [Name].",
           "steps": [
             {
-              "id": "fever-child",
-              "question": "Fever in under-5s (Traffic Light)",
+              "id": "guidance-mental-health",
+              "question": "Mental Health (Consultant Standard)",
               "type": "dropdown",
               "options": [
                 {
-                  "label": "Green (Low Risk)",
-                  "guidance": "MANAGEMENT PLAN:\n1. Management: Paracetamol/Ibuprofen for distress (not for fever alone).\n2. Hydration: Encourage fluids. Check for rash.\n3. Safety-net: Advise on amber/red signs. NICE NG143."
+                  "label": "1. Assessment & red flags",
+                  "guidance": "ASSESSMENT:\n• Risk: Suicide, self-harm, harm to others; access to means; recent change. PHQ-9, GAD-7 where appropriate.\n• Diagnosis: Depression, anxiety, psychosis, bipolar, eating disorder – duration, severity, functional impact.\n• Red flags: Acute risk to life; psychosis; severe self-neglect; safeguarding. Crisis numbers: 111, Samaritans 116 123. NICE NG222, NG226."
                 },
                 {
-                  "label": "Amber (Intermediate Risk)",
-                  "guidance": "MANAGEMENT PLAN:\n1. Assessment: Check for focus (ears, urine, chest). Consider urine dip.\n2. Disposition: Refer if no focus or clinical concern. NICE NG143."
+                  "label": "2. Management",
+                  "guidance": "MANAGEMENT:\n• Depression: SSRI first-line (sertraline 50 mg); review at 2 weeks; CBT/IAPT for mild–moderate. Continue 6 months after remission. NICE NG222.\n• Anxiety: CBT first-line; SSRI if preferred or moderate–severe. Benzodiazepines short-term only. NICE NG226.\n• Do not leave at risk without safety plan and follow-up. NICE NG222."
                 },
                 {
-                  "label": "Red (High Risk / Sepsis)",
-                  "guidance": "MANAGEMENT PLAN:\n1. Indication: Non-blanching rash, bulging fontanelle, status epilepticus, or RR > 60.\n2. Action: Emergency 999 Admission. NICE NG143."
+                  "label": "3. Referral",
+                  "guidance": "REFERRAL:\n• Urgent: Acute risk, psychosis, catatonia – crisis team or A&E.\n• IAPT: Mild–moderate depression/anxiety. CMHT: Severe, treatment-resistant, psychosis, bipolar, eating disorder, personality disorder (DBT). NICE NG12, NG222."
                 }
               ]
             }
@@ -22026,21 +22026,21 @@
           "evidence": "Management per NICE CKS and Local formulary.",
           "steps": [
             {
-              "id": "fever-child",
-              "question": "Fever in under-5s (Traffic Light)",
+              "id": "guidance-paediatrics",
+              "question": "Paediatrics (Consultant Standard)",
               "type": "dropdown",
               "options": [
                 {
-                  "label": "Green (Low Risk)",
-                  "guidance": "MANAGEMENT PLAN:\n1. Management: Paracetamol/Ibuprofen for distress (not for fever alone).\n2. Hydration: Encourage fluids. Check for rash.\n3. Safety-net: Advise on amber/red signs. NICE NG143."
+                  "label": "1. Assessment & red flags",
+                  "guidance": "ASSESSMENT:\n• Traffic light (NG143) for fever/ill child: green/amber/red. Hydration, activity, urine output. Birth and developmental history if relevant.\n• Red flags: Non-blanching rash, meningism, bulging fontanelle, severe breathing difficulty, shock – emergency. Sepsis, dehydration – urgent. NICE NG51, NG143."
                 },
                 {
-                  "label": "Amber (Intermediate Risk)",
-                  "guidance": "MANAGEMENT PLAN:\n1. Assessment: Check for focus (ears, urine, chest). Consider urine dip.\n2. Disposition: Refer if no focus or clinical concern. NICE NG143."
+                  "label": "2. Management",
+                  "guidance": "MANAGEMENT:\n• Fever: paracetamol/ibuprofen; safety-net. AOM: safety-net; amoxicillin if <2y bilateral or systemically unwell. UTI: MSU; trimethoprim/cephalexin. Croup: dexamethasone. NICE NG91, NG93, NG109, NG143.\n• Growth: plot centiles; refer if faltering. Development: refer if delay. NICE NG11, NG75."
                 },
                 {
-                  "label": "Red (High Risk / Sepsis)",
-                  "guidance": "MANAGEMENT PLAN:\n1. Indication: Non-blanching rash, bulging fontanelle, status epilepticus, or RR > 60.\n2. Action: Emergency 999 Admission. NICE NG143."
+                  "label": "3. Referral",
+                  "guidance": "REFERRAL:\n• Emergency: Non-blanching rash, meningism, sepsis, severe croup, severe dehydration. NICE NG51.\n• 2WW: Safeguarding concern, developmental delay, suspected malignancy.\n• Routine: Recurrent UTI, faltering growth, behavioural/developmental. NICE NG11."
                 }
               ]
             }
@@ -23298,21 +23298,21 @@
           "evidence": "Management per NICE CKS and Local formulary.",
           "steps": [
             {
-              "id": "fever-child",
-              "question": "Fever in under-5s (Traffic Light)",
+              "id": "guidance-paediatrics",
+              "question": "Paediatrics (Consultant Standard)",
               "type": "dropdown",
               "options": [
                 {
-                  "label": "Green (Low Risk)",
-                  "guidance": "MANAGEMENT PLAN:\n1. Management: Paracetamol/Ibuprofen for distress (not for fever alone).\n2. Hydration: Encourage fluids. Check for rash.\n3. Safety-net: Advise on amber/red signs. NICE NG143."
+                  "label": "1. Assessment & red flags",
+                  "guidance": "ASSESSMENT:\n• Traffic light (NG143) for fever/ill child: green/amber/red. Hydration, activity, urine output. Birth and developmental history if relevant.\n• Red flags: Non-blanching rash, meningism, bulging fontanelle, severe breathing difficulty, shock – emergency. Sepsis, dehydration – urgent. NICE NG51, NG143."
                 },
                 {
-                  "label": "Amber (Intermediate Risk)",
-                  "guidance": "MANAGEMENT PLAN:\n1. Assessment: Check for focus (ears, urine, chest). Consider urine dip.\n2. Disposition: Refer if no focus or clinical concern. NICE NG143."
+                  "label": "2. Management",
+                  "guidance": "MANAGEMENT:\n• Fever: paracetamol/ibuprofen; safety-net. AOM: safety-net; amoxicillin if <2y bilateral or systemically unwell. UTI: MSU; trimethoprim/cephalexin. Croup: dexamethasone. NICE NG91, NG93, NG109, NG143.\n• Growth: plot centiles; refer if faltering. Development: refer if delay. NICE NG11, NG75."
                 },
                 {
-                  "label": "Red (High Risk / Sepsis)",
-                  "guidance": "MANAGEMENT PLAN:\n1. Indication: Non-blanching rash, bulging fontanelle, status epilepticus, or RR > 60.\n2. Action: Emergency 999 Admission. NICE NG143."
+                  "label": "3. Referral",
+                  "guidance": "REFERRAL:\n• Emergency: Non-blanching rash, meningism, sepsis, severe croup, severe dehydration. NICE NG51.\n• 2WW: Safeguarding concern, developmental delay, suspected malignancy.\n• Routine: Recurrent UTI, faltering growth, behavioural/developmental. NICE NG11."
                 }
               ]
             }
@@ -23747,21 +23747,21 @@
           "evidence": "Management per NICE CKS and Local formulary.",
           "steps": [
             {
-              "id": "fever-child",
-              "question": "Fever in under-5s (Traffic Light)",
+              "id": "guidance-paediatrics",
+              "question": "Paediatrics (Consultant Standard)",
               "type": "dropdown",
               "options": [
                 {
-                  "label": "Green (Low Risk)",
-                  "guidance": "MANAGEMENT PLAN:\n1. Management: Paracetamol/Ibuprofen for distress (not for fever alone).\n2. Hydration: Encourage fluids. Check for rash.\n3. Safety-net: Advise on amber/red signs. NICE NG143."
+                  "label": "1. Assessment & red flags",
+                  "guidance": "ASSESSMENT:\n• Traffic light (NG143) for fever/ill child: green/amber/red. Hydration, activity, urine output. Birth and developmental history if relevant.\n• Red flags: Non-blanching rash, meningism, bulging fontanelle, severe breathing difficulty, shock – emergency. Sepsis, dehydration – urgent. NICE NG51, NG143."
                 },
                 {
-                  "label": "Amber (Intermediate Risk)",
-                  "guidance": "MANAGEMENT PLAN:\n1. Assessment: Check for focus (ears, urine, chest). Consider urine dip.\n2. Disposition: Refer if no focus or clinical concern. NICE NG143."
+                  "label": "2. Management",
+                  "guidance": "MANAGEMENT:\n• Fever: paracetamol/ibuprofen; safety-net. AOM: safety-net; amoxicillin if <2y bilateral or systemically unwell. UTI: MSU; trimethoprim/cephalexin. Croup: dexamethasone. NICE NG91, NG93, NG109, NG143.\n• Growth: plot centiles; refer if faltering. Development: refer if delay. NICE NG11, NG75."
                 },
                 {
-                  "label": "Red (High Risk / Sepsis)",
-                  "guidance": "MANAGEMENT PLAN:\n1. Indication: Non-blanching rash, bulging fontanelle, status epilepticus, or RR > 60.\n2. Action: Emergency 999 Admission. NICE NG143."
+                  "label": "3. Referral",
+                  "guidance": "REFERRAL:\n• Emergency: Non-blanching rash, meningism, sepsis, severe croup, severe dehydration. NICE NG51.\n• 2WW: Safeguarding concern, developmental delay, suspected malignancy.\n• Routine: Recurrent UTI, faltering growth, behavioural/developmental. NICE NG11."
                 }
               ]
             }
@@ -23865,21 +23865,21 @@
           "evidence": "Management per NICE CKS and Local formulary.",
           "steps": [
             {
-              "id": "fever-child",
-              "question": "Fever in under-5s (Traffic Light)",
+              "id": "guidance-paediatrics",
+              "question": "Paediatrics (Consultant Standard)",
               "type": "dropdown",
               "options": [
                 {
-                  "label": "Green (Low Risk)",
-                  "guidance": "MANAGEMENT PLAN:\n1. Management: Paracetamol/Ibuprofen for distress (not for fever alone).\n2. Hydration: Encourage fluids. Check for rash.\n3. Safety-net: Advise on amber/red signs. NICE NG143."
+                  "label": "1. Assessment & red flags",
+                  "guidance": "ASSESSMENT:\n• Traffic light (NG143) for fever/ill child: green/amber/red. Hydration, activity, urine output. Birth and developmental history if relevant.\n• Red flags: Non-blanching rash, meningism, bulging fontanelle, severe breathing difficulty, shock – emergency. Sepsis, dehydration – urgent. NICE NG51, NG143."
                 },
                 {
-                  "label": "Amber (Intermediate Risk)",
-                  "guidance": "MANAGEMENT PLAN:\n1. Assessment: Check for focus (ears, urine, chest). Consider urine dip.\n2. Disposition: Refer if no focus or clinical concern. NICE NG143."
+                  "label": "2. Management",
+                  "guidance": "MANAGEMENT:\n• Fever: paracetamol/ibuprofen; safety-net. AOM: safety-net; amoxicillin if <2y bilateral or systemically unwell. UTI: MSU; trimethoprim/cephalexin. Croup: dexamethasone. NICE NG91, NG93, NG109, NG143.\n• Growth: plot centiles; refer if faltering. Development: refer if delay. NICE NG11, NG75."
                 },
                 {
-                  "label": "Red (High Risk / Sepsis)",
-                  "guidance": "MANAGEMENT PLAN:\n1. Indication: Non-blanching rash, bulging fontanelle, status epilepticus, or RR > 60.\n2. Action: Emergency 999 Admission. NICE NG143."
+                  "label": "3. Referral",
+                  "guidance": "REFERRAL:\n• Emergency: Non-blanching rash, meningism, sepsis, severe croup, severe dehydration. NICE NG51.\n• 2WW: Safeguarding concern, developmental delay, suspected malignancy.\n• Routine: Recurrent UTI, faltering growth, behavioural/developmental. NICE NG11."
                 }
               ]
             }
@@ -24190,21 +24190,17 @@
           "evidence": "Management per NICE CKS and Local formulary.",
           "steps": [
             {
-              "id": "fever-child",
-              "question": "Fever in under-5s (Traffic Light)",
+              "id": "obesity-mgmt",
+              "question": "1. Management Hierarchy",
               "type": "dropdown",
               "options": [
                 {
-                  "label": "Green (Low Risk)",
-                  "guidance": "MANAGEMENT PLAN:\n1. Management: Paracetamol/Ibuprofen for distress (not for fever alone).\n2. Hydration: Encourage fluids. Check for rash.\n3. Safety-net: Advise on amber/red signs. NICE NG143."
+                  "label": "Tier 3 Specialist Service Referral",
+                  "guidance": "MANAGEMENT PLAN:\n1. Criteria: BMI ≥ 35 with comorbidities (T2DM, OSA, HTN) or BMI ≥ 40.\n2. Multidisciplinary: Physician, Dietitian, Psychologist, and Physiotherapist led.\n3. Pharmacotherapy: Initiate GLP-1 (e.g. Wegovy/Semaglutide) as per NICE TA875 criteria (BMI ≥ 35 + at least one comorbidity)."
                 },
                 {
-                  "label": "Amber (Intermediate Risk)",
-                  "guidance": "MANAGEMENT PLAN:\n1. Assessment: Check for focus (ears, urine, chest). Consider urine dip.\n2. Disposition: Refer if no focus or clinical concern. NICE NG143."
-                },
-                {
-                  "label": "Red (High Risk / Sepsis)",
-                  "guidance": "MANAGEMENT PLAN:\n1. Indication: Non-blanching rash, bulging fontanelle, status epilepticus, or RR > 60.\n2. Action: Emergency 999 Admission. NICE NG143."
+                  "label": "Tier 4 (Bariatric Surgery)",
+                  "guidance": "MANAGEMENT PLAN:\n1. Procedures: Roux-en-Y Gastric Bypass (RYGB) or Sleeve Gastrectomy.\n2. Criteria: BMI ≥ 40 or ≥ 35 with significant comorbidities; failure of Tier 3 intervention for ≥ 6 months.\n3. Pre-op: Smoking cessation and psychiatric clearance mandatory. NICE CG189."
                 }
               ]
             }
@@ -24632,21 +24628,21 @@
           "evidence": "Management per NICE CKS and Local formulary.",
           "steps": [
             {
-              "id": "fever-child",
-              "question": "Fever in under-5s (Traffic Light)",
+              "id": "guidance-paediatrics",
+              "question": "Paediatrics (Consultant Standard)",
               "type": "dropdown",
               "options": [
                 {
-                  "label": "Green (Low Risk)",
-                  "guidance": "MANAGEMENT PLAN:\n1. Management: Paracetamol/Ibuprofen for distress (not for fever alone).\n2. Hydration: Encourage fluids. Check for rash.\n3. Safety-net: Advise on amber/red signs. NICE NG143."
+                  "label": "1. Assessment & red flags",
+                  "guidance": "ASSESSMENT:\n• Traffic light (NG143) for fever/ill child: green/amber/red. Hydration, activity, urine output. Birth and developmental history if relevant.\n• Red flags: Non-blanching rash, meningism, bulging fontanelle, severe breathing difficulty, shock – emergency. Sepsis, dehydration – urgent. NICE NG51, NG143."
                 },
                 {
-                  "label": "Amber (Intermediate Risk)",
-                  "guidance": "MANAGEMENT PLAN:\n1. Assessment: Check for focus (ears, urine, chest). Consider urine dip.\n2. Disposition: Refer if no focus or clinical concern. NICE NG143."
+                  "label": "2. Management",
+                  "guidance": "MANAGEMENT:\n• Fever: paracetamol/ibuprofen; safety-net. AOM: safety-net; amoxicillin if <2y bilateral or systemically unwell. UTI: MSU; trimethoprim/cephalexin. Croup: dexamethasone. NICE NG91, NG93, NG109, NG143.\n• Growth: plot centiles; refer if faltering. Development: refer if delay. NICE NG11, NG75."
                 },
                 {
-                  "label": "Red (High Risk / Sepsis)",
-                  "guidance": "MANAGEMENT PLAN:\n1. Indication: Non-blanching rash, bulging fontanelle, status epilepticus, or RR > 60.\n2. Action: Emergency 999 Admission. NICE NG143."
+                  "label": "3. Referral",
+                  "guidance": "REFERRAL:\n• Emergency: Non-blanching rash, meningism, sepsis, severe croup, severe dehydration. NICE NG51.\n• 2WW: Safeguarding concern, developmental delay, suspected malignancy.\n• Routine: Recurrent UTI, faltering growth, behavioural/developmental. NICE NG11."
                 }
               ]
             }
@@ -24943,21 +24939,21 @@
           "evidence": "Management per NICE CKS and Local formulary.",
           "steps": [
             {
-              "id": "fever-child",
-              "question": "Fever in under-5s (Traffic Light)",
+              "id": "guidance-paediatrics",
+              "question": "Paediatrics (Consultant Standard)",
               "type": "dropdown",
               "options": [
                 {
-                  "label": "Green (Low Risk)",
-                  "guidance": "MANAGEMENT PLAN:\n1. Management: Paracetamol/Ibuprofen for distress (not for fever alone).\n2. Hydration: Encourage fluids. Check for rash.\n3. Safety-net: Advise on amber/red signs. NICE NG143."
+                  "label": "1. Assessment & red flags",
+                  "guidance": "ASSESSMENT:\n• Traffic light (NG143) for fever/ill child: green/amber/red. Hydration, activity, urine output. Birth and developmental history if relevant.\n• Red flags: Non-blanching rash, meningism, bulging fontanelle, severe breathing difficulty, shock – emergency. Sepsis, dehydration – urgent. NICE NG51, NG143."
                 },
                 {
-                  "label": "Amber (Intermediate Risk)",
-                  "guidance": "MANAGEMENT PLAN:\n1. Assessment: Check for focus (ears, urine, chest). Consider urine dip.\n2. Disposition: Refer if no focus or clinical concern. NICE NG143."
+                  "label": "2. Management",
+                  "guidance": "MANAGEMENT:\n• Fever: paracetamol/ibuprofen; safety-net. AOM: safety-net; amoxicillin if <2y bilateral or systemically unwell. UTI: MSU; trimethoprim/cephalexin. Croup: dexamethasone. NICE NG91, NG93, NG109, NG143.\n• Growth: plot centiles; refer if faltering. Development: refer if delay. NICE NG11, NG75."
                 },
                 {
-                  "label": "Red (High Risk / Sepsis)",
-                  "guidance": "MANAGEMENT PLAN:\n1. Indication: Non-blanching rash, bulging fontanelle, status epilepticus, or RR > 60.\n2. Action: Emergency 999 Admission. NICE NG143."
+                  "label": "3. Referral",
+                  "guidance": "REFERRAL:\n• Emergency: Non-blanching rash, meningism, sepsis, severe croup, severe dehydration. NICE NG51.\n• 2WW: Safeguarding concern, developmental delay, suspected malignancy.\n• Routine: Recurrent UTI, faltering growth, behavioural/developmental. NICE NG11."
                 }
               ]
             }
@@ -31181,21 +31177,21 @@
           "evidence": "Management per NICE CKS and Local formulary.",
           "steps": [
             {
-              "id": "fever-child",
-              "question": "Fever in under-5s (Traffic Light)",
+              "id": "guidance-infectious",
+              "question": "Infectious Disease (Consultant Standard)",
               "type": "dropdown",
               "options": [
                 {
-                  "label": "Green (Low Risk)",
-                  "guidance": "MANAGEMENT PLAN:\n1. Management: Paracetamol/Ibuprofen for distress (not for fever alone).\n2. Hydration: Encourage fluids. Check for rash.\n3. Safety-net: Advise on amber/red signs. NICE NG143."
+                  "label": "1. Assessment & red flags",
+                  "guidance": "ASSESSMENT:\n• History: travel, contacts, animals, bites, immunosuppression, recent antibiotics. Severity and focus of infection.\n• Examination: focus (skin, chest, abdomen); sepsis screening (NEWS2, qSOFA).\n• Red flags: Sepsis, meningitis, non-blanching rash – emergency. HIV/TB risk – test and refer. NICE NG51, NG33."
                 },
                 {
-                  "label": "Amber (Intermediate Risk)",
-                  "guidance": "MANAGEMENT PLAN:\n1. Assessment: Check for focus (ears, urine, chest). Consider urine dip.\n2. Disposition: Refer if no focus or clinical concern. NICE NG143."
+                  "label": "2. Management",
+                  "guidance": "MANAGEMENT:\n• Use local resistance data. Cellulitis: flucloxacillin. CAP: amoxicillin 500 mg tds 5 days. UTI: nitrofurantoin/trimethoprim. Sore throat: penicillin V if FeverPAIN 2–3+. NICE NG138, NG84, NG109.\n• Viral: no antibiotic for cold, sinusitis <10 days, acute bronchitis. Influenza: oseltamivir if at-risk and <48 h. C. difficile: stop precipitant antibiotic; treat per guidance. NICE NG120."
                 },
                 {
-                  "label": "Red (High Risk / Sepsis)",
-                  "guidance": "MANAGEMENT PLAN:\n1. Indication: Non-blanching rash, bulging fontanelle, status epilepticus, or RR > 60.\n2. Action: Emergency 999 Admission. NICE NG143."
+                  "label": "3. Referral",
+                  "guidance": "REFERRAL:\n• Emergency: Sepsis, meningitis, severe infection. NICE NG51.\n• 2WW: HIV positive, TB suspected.\n• Routine: Recurrent infection, HIV management, travel medicine, complex infection. NICE NG33."
                 }
               ]
             }
@@ -31211,21 +31207,21 @@
           "evidence": "Management per NICE CKS and Local formulary.",
           "steps": [
             {
-              "id": "fever-child",
-              "question": "Fever in under-5s (Traffic Light)",
+              "id": "guidance-infectious",
+              "question": "Infectious Disease (Consultant Standard)",
               "type": "dropdown",
               "options": [
                 {
-                  "label": "Green (Low Risk)",
-                  "guidance": "MANAGEMENT PLAN:\n1. Management: Paracetamol/Ibuprofen for distress (not for fever alone).\n2. Hydration: Encourage fluids. Check for rash.\n3. Safety-net: Advise on amber/red signs. NICE NG143."
+                  "label": "1. Assessment & red flags",
+                  "guidance": "ASSESSMENT:\n• History: travel, contacts, animals, bites, immunosuppression, recent antibiotics. Severity and focus of infection.\n• Examination: focus (skin, chest, abdomen); sepsis screening (NEWS2, qSOFA).\n• Red flags: Sepsis, meningitis, non-blanching rash – emergency. HIV/TB risk – test and refer. NICE NG51, NG33."
                 },
                 {
-                  "label": "Amber (Intermediate Risk)",
-                  "guidance": "MANAGEMENT PLAN:\n1. Assessment: Check for focus (ears, urine, chest). Consider urine dip.\n2. Disposition: Refer if no focus or clinical concern. NICE NG143."
+                  "label": "2. Management",
+                  "guidance": "MANAGEMENT:\n• Use local resistance data. Cellulitis: flucloxacillin. CAP: amoxicillin 500 mg tds 5 days. UTI: nitrofurantoin/trimethoprim. Sore throat: penicillin V if FeverPAIN 2–3+. NICE NG138, NG84, NG109.\n• Viral: no antibiotic for cold, sinusitis <10 days, acute bronchitis. Influenza: oseltamivir if at-risk and <48 h. C. difficile: stop precipitant antibiotic; treat per guidance. NICE NG120."
                 },
                 {
-                  "label": "Red (High Risk / Sepsis)",
-                  "guidance": "MANAGEMENT PLAN:\n1. Indication: Non-blanching rash, bulging fontanelle, status epilepticus, or RR > 60.\n2. Action: Emergency 999 Admission. NICE NG143."
+                  "label": "3. Referral",
+                  "guidance": "REFERRAL:\n• Emergency: Sepsis, meningitis, severe infection. NICE NG51.\n• 2WW: HIV positive, TB suspected.\n• Routine: Recurrent infection, HIV management, travel medicine, complex infection. NICE NG33."
                 }
               ]
             }
@@ -32279,21 +32275,21 @@
           "evidence": "Management per NICE CKS and Local formulary.",
           "steps": [
             {
-              "id": "fever-child",
-              "question": "Fever in under-5s (Traffic Light)",
+              "id": "guidance-infectious",
+              "question": "Infectious Disease (Consultant Standard)",
               "type": "dropdown",
               "options": [
                 {
-                  "label": "Green (Low Risk)",
-                  "guidance": "MANAGEMENT PLAN:\n1. Management: Paracetamol/Ibuprofen for distress (not for fever alone).\n2. Hydration: Encourage fluids. Check for rash.\n3. Safety-net: Advise on amber/red signs. NICE NG143."
+                  "label": "1. Assessment & red flags",
+                  "guidance": "ASSESSMENT:\n• History: travel, contacts, animals, bites, immunosuppression, recent antibiotics. Severity and focus of infection.\n• Examination: focus (skin, chest, abdomen); sepsis screening (NEWS2, qSOFA).\n• Red flags: Sepsis, meningitis, non-blanching rash – emergency. HIV/TB risk – test and refer. NICE NG51, NG33."
                 },
                 {
-                  "label": "Amber (Intermediate Risk)",
-                  "guidance": "MANAGEMENT PLAN:\n1. Assessment: Check for focus (ears, urine, chest). Consider urine dip.\n2. Disposition: Refer if no focus or clinical concern. NICE NG143."
+                  "label": "2. Management",
+                  "guidance": "MANAGEMENT:\n• Use local resistance data. Cellulitis: flucloxacillin. CAP: amoxicillin 500 mg tds 5 days. UTI: nitrofurantoin/trimethoprim. Sore throat: penicillin V if FeverPAIN 2–3+. NICE NG138, NG84, NG109.\n• Viral: no antibiotic for cold, sinusitis <10 days, acute bronchitis. Influenza: oseltamivir if at-risk and <48 h. C. difficile: stop precipitant antibiotic; treat per guidance. NICE NG120."
                 },
                 {
-                  "label": "Red (High Risk / Sepsis)",
-                  "guidance": "MANAGEMENT PLAN:\n1. Indication: Non-blanching rash, bulging fontanelle, status epilepticus, or RR > 60.\n2. Action: Emergency 999 Admission. NICE NG143."
+                  "label": "3. Referral",
+                  "guidance": "REFERRAL:\n• Emergency: Sepsis, meningitis, severe infection. NICE NG51.\n• 2WW: HIV positive, TB suspected.\n• Routine: Recurrent infection, HIV management, travel medicine, complex infection. NICE NG33."
                 }
               ]
             }
@@ -32864,21 +32860,21 @@
           "evidence": "Management per NICE CKS and Local formulary.",
           "steps": [
             {
-              "id": "fever-child",
-              "question": "Fever in under-5s (Traffic Light)",
+              "id": "guidance-infectious",
+              "question": "Infectious Disease (Consultant Standard)",
               "type": "dropdown",
               "options": [
                 {
-                  "label": "Green (Low Risk)",
-                  "guidance": "MANAGEMENT PLAN:\n1. Management: Paracetamol/Ibuprofen for distress (not for fever alone).\n2. Hydration: Encourage fluids. Check for rash.\n3. Safety-net: Advise on amber/red signs. NICE NG143."
+                  "label": "1. Assessment & red flags",
+                  "guidance": "ASSESSMENT:\n• History: travel, contacts, animals, bites, immunosuppression, recent antibiotics. Severity and focus of infection.\n• Examination: focus (skin, chest, abdomen); sepsis screening (NEWS2, qSOFA).\n• Red flags: Sepsis, meningitis, non-blanching rash – emergency. HIV/TB risk – test and refer. NICE NG51, NG33."
                 },
                 {
-                  "label": "Amber (Intermediate Risk)",
-                  "guidance": "MANAGEMENT PLAN:\n1. Assessment: Check for focus (ears, urine, chest). Consider urine dip.\n2. Disposition: Refer if no focus or clinical concern. NICE NG143."
+                  "label": "2. Management",
+                  "guidance": "MANAGEMENT:\n• Use local resistance data. Cellulitis: flucloxacillin. CAP: amoxicillin 500 mg tds 5 days. UTI: nitrofurantoin/trimethoprim. Sore throat: penicillin V if FeverPAIN 2–3+. NICE NG138, NG84, NG109.\n• Viral: no antibiotic for cold, sinusitis <10 days, acute bronchitis. Influenza: oseltamivir if at-risk and <48 h. C. difficile: stop precipitant antibiotic; treat per guidance. NICE NG120."
                 },
                 {
-                  "label": "Red (High Risk / Sepsis)",
-                  "guidance": "MANAGEMENT PLAN:\n1. Indication: Non-blanching rash, bulging fontanelle, status epilepticus, or RR > 60.\n2. Action: Emergency 999 Admission. NICE NG143."
+                  "label": "3. Referral",
+                  "guidance": "REFERRAL:\n• Emergency: Sepsis, meningitis, severe infection. NICE NG51.\n• 2WW: HIV positive, TB suspected.\n• Routine: Recurrent infection, HIV management, travel medicine, complex infection. NICE NG33."
                 }
               ]
             }
@@ -32990,21 +32986,21 @@
           "evidence": "Management per NICE CKS and Local formulary.",
           "steps": [
             {
-              "id": "fever-child",
-              "question": "Fever in under-5s (Traffic Light)",
+              "id": "guidance-infectious",
+              "question": "Infectious Disease (Consultant Standard)",
               "type": "dropdown",
               "options": [
                 {
-                  "label": "Green (Low Risk)",
-                  "guidance": "MANAGEMENT PLAN:\n1. Management: Paracetamol/Ibuprofen for distress (not for fever alone).\n2. Hydration: Encourage fluids. Check for rash.\n3. Safety-net: Advise on amber/red signs. NICE NG143."
+                  "label": "1. Assessment & red flags",
+                  "guidance": "ASSESSMENT:\n• History: travel, contacts, animals, bites, immunosuppression, recent antibiotics. Severity and focus of infection.\n• Examination: focus (skin, chest, abdomen); sepsis screening (NEWS2, qSOFA).\n• Red flags: Sepsis, meningitis, non-blanching rash – emergency. HIV/TB risk – test and refer. NICE NG51, NG33."
                 },
                 {
-                  "label": "Amber (Intermediate Risk)",
-                  "guidance": "MANAGEMENT PLAN:\n1. Assessment: Check for focus (ears, urine, chest). Consider urine dip.\n2. Disposition: Refer if no focus or clinical concern. NICE NG143."
+                  "label": "2. Management",
+                  "guidance": "MANAGEMENT:\n• Use local resistance data. Cellulitis: flucloxacillin. CAP: amoxicillin 500 mg tds 5 days. UTI: nitrofurantoin/trimethoprim. Sore throat: penicillin V if FeverPAIN 2–3+. NICE NG138, NG84, NG109.\n• Viral: no antibiotic for cold, sinusitis <10 days, acute bronchitis. Influenza: oseltamivir if at-risk and <48 h. C. difficile: stop precipitant antibiotic; treat per guidance. NICE NG120."
                 },
                 {
-                  "label": "Red (High Risk / Sepsis)",
-                  "guidance": "MANAGEMENT PLAN:\n1. Indication: Non-blanching rash, bulging fontanelle, status epilepticus, or RR > 60.\n2. Action: Emergency 999 Admission. NICE NG143."
+                  "label": "3. Referral",
+                  "guidance": "REFERRAL:\n• Emergency: Sepsis, meningitis, severe infection. NICE NG51.\n• 2WW: HIV positive, TB suspected.\n• Routine: Recurrent infection, HIV management, travel medicine, complex infection. NICE NG33."
                 }
               ]
             }
@@ -41505,21 +41501,21 @@
           "evidence": "Management per NICE CKS and Local formulary.",
           "steps": [
             {
-              "id": "fever-child",
-              "question": "Fever in under-5s (Traffic Light)",
+              "id": "guidance-procedures",
+              "question": "Procedures & General (Consultant Standard)",
               "type": "dropdown",
               "options": [
                 {
-                  "label": "Green (Low Risk)",
-                  "guidance": "MANAGEMENT PLAN:\n1. Management: Paracetamol/Ibuprofen for distress (not for fever alone).\n2. Hydration: Encourage fluids. Check for rash.\n3. Safety-net: Advise on amber/red signs. NICE NG143."
+                  "label": "1. Assessment & safety",
+                  "guidance": "ASSESSMENT:\n• Safeguarding: concerns for child or vulnerable adult; document; follow local policy. NICE NG76.\n• Capacity: assess per MCA; best interests if lacking capacity; DoLS/LPS if deprivation of liberty. NICE NG108.\n• Consent: capacity, information given, voluntary. Fit note: duration, phased return, restrictions. NICE NG12."
                 },
                 {
-                  "label": "Amber (Intermediate Risk)",
-                  "guidance": "MANAGEMENT PLAN:\n1. Assessment: Check for focus (ears, urine, chest). Consider urine dip.\n2. Disposition: Refer if no focus or clinical concern. NICE NG143."
+                  "label": "2. Management",
+                  "guidance": "MANAGEMENT:\n• Safeguarding: refer to social care/police as per policy; do not leave at risk. Capacity: support decision-making; involve family/IMCA if appropriate.\n• Procedures: aseptic technique; consent; document. Bloods/cannulation: follow local policy. Catheter: indication; trial without catheter if appropriate. NICE NG108."
                 },
                 {
-                  "label": "Red (High Risk / Sepsis)",
-                  "guidance": "MANAGEMENT PLAN:\n1. Indication: Non-blanching rash, bulging fontanelle, status epilepticus, or RR > 60.\n2. Action: Emergency 999 Admission. NICE NG143."
+                  "label": "3. Referral",
+                  "guidance": "REFERRAL:\n• Safeguarding: social care, police, named GP. Capacity: Court of Protection if complex or dispute.\n• Clinical: refer as per indication (e.g. smear to colposcopy if abnormal). NICE NG108."
                 }
               ]
             }
@@ -42048,21 +42044,13 @@
           "evidence": "Management per NICE CKS and Local formulary.",
           "steps": [
             {
-              "id": "fever-child",
-              "question": "Fever in under-5s (Traffic Light)",
+              "id": "child-abuse-mgt",
+              "question": "Child abuse – recognition & safeguarding",
               "type": "dropdown",
               "options": [
                 {
-                  "label": "Green (Low Risk)",
-                  "guidance": "MANAGEMENT PLAN:\n1. Management: Paracetamol/Ibuprofen for distress (not for fever alone).\n2. Hydration: Encourage fluids. Check for rash.\n3. Safety-net: Advise on amber/red signs. NICE NG143."
-                },
-                {
-                  "label": "Amber (Intermediate Risk)",
-                  "guidance": "MANAGEMENT PLAN:\n1. Assessment: Check for focus (ears, urine, chest). Consider urine dip.\n2. Disposition: Refer if no focus or clinical concern. NICE NG143."
-                },
-                {
-                  "label": "Red (High Risk / Sepsis)",
-                  "guidance": "MANAGEMENT PLAN:\n1. Indication: Non-blanching rash, bulging fontanelle, status epilepticus, or RR > 60.\n2. Action: Emergency 999 Admission. NICE NG143."
+                  "label": "Recognition & referral",
+                  "guidance": "MANAGEMENT PLAN:\n1. Recognise: unexplained/inconsistent injury, developmental concern, parent behaviour, disclosure. Do not investigate alone; document factually.\n2. Immediate risk to child: contact police/social care urgently. Otherwise refer to children's social care per local pathway. Discuss with named/designated professional if unsure.\n3. NICE NG76, CKS Child abuse, Working Together."
                 }
               ]
             }
@@ -44160,21 +44148,13 @@
           "evidence": "Management per NICE CKS and Local formulary.",
           "steps": [
             {
-              "id": "fever-child",
-              "question": "Fever in under-5s (Traffic Light)",
+              "id": "child-abuse-mgt",
+              "question": "Child abuse – recognition & safeguarding",
               "type": "dropdown",
               "options": [
                 {
-                  "label": "Green (Low Risk)",
-                  "guidance": "MANAGEMENT PLAN:\n1. Management: Paracetamol/Ibuprofen for distress (not for fever alone).\n2. Hydration: Encourage fluids. Check for rash.\n3. Safety-net: Advise on amber/red signs. NICE NG143."
-                },
-                {
-                  "label": "Amber (Intermediate Risk)",
-                  "guidance": "MANAGEMENT PLAN:\n1. Assessment: Check for focus (ears, urine, chest). Consider urine dip.\n2. Disposition: Refer if no focus or clinical concern. NICE NG143."
-                },
-                {
-                  "label": "Red (High Risk / Sepsis)",
-                  "guidance": "MANAGEMENT PLAN:\n1. Indication: Non-blanching rash, bulging fontanelle, status epilepticus, or RR > 60.\n2. Action: Emergency 999 Admission. NICE NG143."
+                  "label": "Recognition & referral",
+                  "guidance": "MANAGEMENT PLAN:\n1. Recognise: unexplained/inconsistent injury, developmental concern, parent behaviour, disclosure. Do not investigate alone; document factually.\n2. Immediate risk to child: contact police/social care urgently. Otherwise refer to children's social care per local pathway. Discuss with named/designated professional if unsure.\n3. NICE NG76, CKS Child abuse, Working Together."
                 }
               ]
             }

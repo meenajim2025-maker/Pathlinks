@@ -2107,6 +2107,17 @@
       }]
     },
     {
+      "keywords": ["child abuse", "child protection", "safeguarding – child", "non-accidental injury", "nai – child", "child – safeguarding"],
+      "steps": [{
+        "id": "child-abuse-mgt",
+        "question": "Child abuse – recognition & safeguarding",
+        "type": "dropdown",
+        "options": [
+          { "label": "Recognition & referral", "guidance": "MANAGEMENT PLAN:\n1. Recognise: unexplained/inconsistent injury, developmental concern, parent behaviour, disclosure. Do not investigate alone; document factually.\n2. Immediate risk to child: contact police/social care urgently. Otherwise refer to children's social care per local pathway. Discuss with named/designated professional if unsure.\n3. NICE NG76, CKS Child abuse, Working Together." }
+        ]
+      }]
+    },
+    {
       "keywords": ["domestic violence", "domestic abuse", "honour-based violence", "elder abuse", "female genital mutilation", "fgm"],
       "steps": [{
         "id": "domestic-violence-mgt",
@@ -5582,9 +5593,10 @@
     },
     {
       "keywords": [
-        "fever",
-        "child",
-        "under 5"
+        "fever in under-5s",
+        "fever – under 5",
+        "fever – traffic light",
+        "fever – neonatal"
       ],
       "steps": [
         {
