@@ -1232,6 +1232,11 @@
           "transcript": "Today in the [Organisation] studio I am [Name]. Will Hinchliffe, a consultant in Reno and General Medicine working in the North East and North Cumbria. Hi Hannah, it's fantastic to be able to join you again. It's great to have you here Will. In this podcast we're going to discuss the management of hyper-culemia in primary care and at the end we'll have a quick quiz for you all. Let's start with the basics. Hyper-culemia is when the level of potassium in your blood is too high, typically above 5.5 millimoles per liter and it's clinically important because hyper-tastic"
         }
       ]
+    },
+    {
+      "id": "triage",
+      "name": "GP Triage",
+      "topics": []
     }
   ]
 }

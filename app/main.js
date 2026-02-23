@@ -1,6 +1,16 @@
 let testData = [];
 let learningData = null;
 let decisionToolsData = null;
+let drugInteractionsData = null;
+
+// Class aliases for drug-interaction matching (e.g. "ramipril" → "ace inhibitor")
+const DRUG_CLASS_ALIASES = {
+    'ace inhibitor': ['ramipril', 'lisinopril', 'enalapril', 'perindopril', 'captopril', 'quinapril', 'fosinopril', 'trandolapril'],
+    'nsaid': ['ibuprofen', 'naproxen', 'diclofenac', 'mefenamic acid', 'piroxicam', 'meloxicam', 'celecoxib', 'etoricoxib'],
+    'ssri': ['sertraline', 'fluoxetine', 'citalopram', 'escitalopram', 'paroxetine', 'fluvoxamine'],
+    'maoi': ['phenelzine', 'isocarboxazid', 'tranylcypromine', 'moclobemide'],
+    'statin': ['simvastatin', 'atorvastatin', 'rosuvastatin', 'pravastatin', 'fluvastatin', 'cerivastatin']
+};
 
 // Load data and initialize selects
 async function init() {
@@ -98,6 +108,17 @@ async function init() {
         if (out) out.innerHTML = '<div class="placeholder-text"><p>Could not load blood test data. Check the console or try refreshing.</p></div>';
     }
 
+    // Drug interactions: load data and wire Check button
+    try {
+        const diRes = await fetch('./data/drug_interactions.json');
+        drugInteractionsData = await diRes.json();
+        const checkBtn = document.getElementById('drug-interactions-check-btn');
+        if (checkBtn) checkBtn.addEventListener('click', runDrugInteractionsCheck);
+    } catch (e) {
+        console.error("Error loading drug interactions data:", e);
+        drugInteractionsData = { interactions: [] };
+    }
+
     // Dark mode toggle (optional UI from backup)
     const darkToggle = document.getElementById('dark-mode-toggle');
     if (darkToggle) {
@@ -111,6 +132,126 @@ async function init() {
             localStorage.setItem('pathlinks-dark-mode', this.checked ? '1' : '0');
         });
     }
+}
+
+function normalizeDrugName(s) {
+    if (!s || typeof s !== 'string') return '';
+    return s
+        .toLowerCase()
+        .replace(/\d+\s*(mg|mcg|microgram|ml|units?)\b/gi, '')
+        .replace(/\s*\d+\s*$/g, '')
+        .replace(/\s+/g, ' ')
+        .trim();
+}
+
+function parseDrugList(text) {
+    if (!text || typeof text !== 'string') return [];
+    const raw = text.split(/[\n,;]+/).map(s => s.trim()).filter(Boolean);
+    const normalized = raw.map(normalizeDrugName).filter(Boolean);
+    const seen = new Set();
+    return normalized.filter(n => {
+        if (seen.has(n)) return false;
+        seen.add(n);
+        return true;
+    });
+}
+
+function expandedDrugSet(normalizedList) {
+    const set = new Set(normalizedList);
+    for (const [className, members] of Object.entries(DRUG_CLASS_ALIASES)) {
+        for (const drug of normalizedList) {
+            if (members.some(m => drug.includes(m) || m.includes(drug))) {
+                set.add(className);
+                break;
+            }
+        }
+    }
+    return set;
+}
+
+function matchesDrug(expandedSet, drugName) {
+    if (!drugName) return false;
+    const d = drugName.toLowerCase().trim();
+    if (expandedSet.has(d)) return true;
+    for (const term of expandedSet) {
+        if (term.includes(d) || d.includes(term)) return true;
+    }
+    return false;
+}
+
+function runDrugInteractionsCheck() {
+    const inputEl = document.getElementById('drug-list-input');
+    const resultsEl = document.getElementById('drug-interactions-results');
+    const sourcesEl = document.getElementById('drug-interactions-sources');
+    if (!inputEl || !resultsEl) return;
+    const text = inputEl.value || '';
+    const normalizedList = parseDrugList(text);
+    const expandedSet = expandedDrugSet(normalizedList);
+
+    if (!drugInteractionsData || !Array.isArray(drugInteractionsData.interactions)) {
+        resultsEl.innerHTML = '<p class="placeholder-text">Drug interaction data could not be loaded. Please refresh the page.</p>';
+        if (sourcesEl) sourcesEl.textContent = '';
+        return;
+    }
+
+    const matched = drugInteractionsData.interactions.filter(int => {
+        const a = matchesDrug(expandedSet, int.drugA);
+        const b = matchesDrug(expandedSet, int.drugB);
+        const bAlt = int.drugBAlt ? matchesDrug(expandedSet, int.drugBAlt) : false;
+        return (a && (b || bAlt));
+    });
+
+    const order = { contraindicated: 0, major: 1, moderate: 2, minor: 3 };
+    matched.sort((x, y) => (order[x.severity] ?? 4) - (order[y.severity] ?? 4));
+
+    if (sourcesEl) {
+        const refs = drugInteractionsData.formularyRefs;
+        sourcesEl.innerHTML = refs && refs.length
+            ? '<strong>Sources:</strong> ' + escapeHtml(refs.join(', ')) + '. Always verify in current BNF/BNFc.'
+            : '';
+        sourcesEl.style.display = refs && refs.length ? 'block' : 'none';
+    }
+
+    if (matched.length === 0) {
+        resultsEl.innerHTML = '<p class="placeholder-text">No interactions identified from the drug list.</p><p class="drug-interactions-disclaimer"><strong>This does not rule out all possible interactions.</strong> Always check the current BNF, BNFc, or Stockley\'s before clinical decisions. Use clinical judgement and local formulary.</p>';
+        return;
+    }
+
+    const bySeverity = { contraindicated: [], major: [], moderate: [], minor: [] };
+    matched.forEach(int => {
+        const s = (int.severity || '').toLowerCase().replace(/\s+/g, '');
+        if (bySeverity[s]) bySeverity[s].push(int);
+        else bySeverity.moderate.push(int);
+    });
+
+    const severityLabels = {
+        contraindicated: 'Contraindicated / Do not combine',
+        major: 'Major – avoid or use with caution and monitoring',
+        moderate: 'Moderate – consider alternatives or monitor',
+        minor: 'Minor – be aware'
+    };
+
+    let html = '<p class="drug-interactions-disclaimer"><strong>Verify in current BNF/BNFc</strong> before acting. This is a screening aid only.</p>';
+    ['contraindicated', 'major', 'moderate', 'minor'].forEach(sev => {
+        const list = bySeverity[sev];
+        if (!list || list.length === 0) return;
+        html += '<h4 class="drug-interactions-severity-head">' + escapeHtml(severityLabels[sev]) + '</h4><ul class="drug-interactions-list">';
+        list.forEach(int => {
+            const severityClass = (int.severity || '').toLowerCase().replace(/\s+/, '-');
+            const label = (int.drugBAlt && int.drugB) ? `${int.drugA} + ${int.drugB} / ${int.drugBAlt}` : `${int.drugA} + ${int.drugB}`;
+            const sourceHint = int.source ? ' <span class="drug-interaction-source">(' + escapeHtml(int.source) + ')</span>' : '';
+            html += '<li class="drug-interaction severity-' + severityClass + '"><strong>' + escapeHtml(label) + '</strong>' + sourceHint + ' <span class="severity-badge">' + escapeHtml(int.severity) + '</span><br><span class="description">' + escapeHtml(int.description) + '</span></li>';
+        });
+        html += '</ul>';
+    });
+    resultsEl.innerHTML = html;
+}
+
+function escapeHtml(s) {
+    if (!s) return '';
+    const div = document.createElement('div');
+    div.textContent = s;
+    return div.innerHTML;
 }
 
 function updateParameters() {
@@ -357,7 +498,7 @@ function analyseResult() {
     `;
 
     if (guidanceKey && test.guidance && test.guidance[guidanceKey]) {
-        // NHS Pathways Triage Layer
+        // GP Triage Layer
         if (test.guidance[guidanceKey].triage) {
             html += `
                 <div class="triage-box" style="margin-bottom: 24px; padding: 16px; background: #fff5f5; border: 2px solid #e53935; border-radius: 12px; box-shadow: 0 4px 6px rgba(0,0,0,0.05);">

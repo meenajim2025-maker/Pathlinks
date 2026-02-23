@@ -26,6 +26,7 @@
                 <div class="nav-item active" id="nav-dashboard">Clinical decision tool</div>
                 <div class="nav-item" id="nav-decision-tools">Decision tools</div>
                 <div class="nav-item" id="nav-calculators">Calculators</div>
+                <div class="nav-item" id="nav-drug-interactions">Drug interactions</div>
                 <div class="nav-item" id="nav-sandbox"
                     style="background: rgba(231, 76, 60, 0.1); color: var(--accent); margin-top: 10px; border: 1px dashed var(--accent);">
                     🎓 Education Sandbox</div>
@@ -306,6 +307,31 @@
                         <div style="margin-top: 1rem; padding: 10px; background: #f9f9f9; border-radius: 8px;">
                             <p style="font-size: 14px; font-weight: 600;">Score: <span id="curb-score">0</span></p>
                             <p id="curb-risk" style="margin: 0; font-size: 12px;"></p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section id="drug-interactions-view" class="view hidden" aria-label="Drug interactions">
+                <div class="welcome-section">
+                    <h2>Drug interactions</h2>
+                    <p>Based on <strong>BNF</strong>, <strong>BNF for Children (BNFc)</strong>, <strong>Stockley&apos;s Drug Interactions</strong>, and other reputable formularies. Paste or type the patient’s drug list below (one per line or comma-separated). The tool checks for known interactions and shows severity and advice.</p>
+                    <p class="drug-interactions-disclaimer"><strong>Always verify in the current BNF/BNFc</strong> before making clinical decisions. This tool is a screening aid only and does not replace formulary or specialist advice.</p>
+                </div>
+                <div class="grid-container">
+                    <div class="card" style="max-width: 640px;">
+                        <h3>Current medication list</h3>
+                        <div class="field-group">
+                            <label for="drug-list-input">Paste or type drug names</label>
+                            <textarea id="drug-list-input" rows="12" placeholder="e.g.&#10;Warfarin 3mg&#10;Ibuprofen 400mg&#10;Ramipril 5mg&#10;Amlodipine 5mg" style="width: 100%; resize: vertical; font-family: inherit; padding: 10px;"></textarea>
+                        </div>
+                        <button id="drug-interactions-check-btn" class="primary-btn">Check interactions</button>
+                    </div>
+                    <div class="card guidance-card" id="drug-interactions-output" style="max-width: 640px;">
+                        <h3>Interaction results</h3>
+                        <div id="drug-interactions-sources" class="drug-interactions-sources small-text"></div>
+                        <div id="drug-interactions-results">
+                            <p class="placeholder-text">Enter drugs and click “Check interactions” to see results.</p>
                         </div>
                     </div>
                 </div>

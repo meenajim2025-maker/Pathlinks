@@ -381,7 +381,7 @@ function analyseResult() {
     `;
 
     if (guidanceKey && test.guidance && test.guidance[guidanceKey]) {
-        // NHS Pathways Triage Layer
+        // GP Triage Layer
         if (test.guidance[guidanceKey].triage) {
             html += `
                 <div class="triage-box" style="margin-bottom: 24px; padding: 16px; background: #fff5f5; border: 2px solid #e53935; border-radius: 12px; box-shadow: 0 4px 6px rgba(0,0,0,0.05);">

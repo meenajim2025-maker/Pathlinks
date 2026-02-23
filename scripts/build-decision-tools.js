@@ -46,17 +46,18 @@ function evidenceFromTranscript(transcript) {
   return t.length <= 280 ? t : t.slice(0, 280) + '…';
 }
 
-/** Find first management template whose keywords match title (lowercase) using whole-word boundary. */
+/** Find first management template whose keywords match title (lowercase) using whole-word boundary. If matchAll, all keywords must match. */
 function getManagementSteps(title, managementContent) {
   const t = (title || '').toLowerCase();
   const templates = managementContent.templates || [];
   for (const tmpl of templates) {
     const keywords = tmpl.keywords || [];
-    if (keywords.some(kw => {
+    const match = (kw) => {
       const escaped = kw.replace(/[-\/\\^$*+?.()|[\]{}]/g, '\\$&');
-      const regex = new RegExp(`\\b${escaped}\\b`, 'i');
-      return regex.test(t);
-    })) return tmpl.steps;
+      return new RegExp(`\\b${escaped}\\b`, 'i').test(t);
+    };
+    const matched = tmpl.matchAll ? keywords.every(match) : keywords.some(match);
+    if (matched) return tmpl.steps;
   }
   return null;
 }
@@ -67,11 +68,12 @@ function getManagementEvidence(title, managementContent) {
   const templates = managementContent.templates || [];
   for (const tmpl of templates) {
     const keywords = tmpl.keywords || [];
-    if (keywords.some(kw => {
+    const match = (kw) => {
       const escaped = kw.replace(/[-\/\\^$*+?.()|[\]{}]/g, '\\$&');
-      const regex = new RegExp(`\\b${escaped}\\b`, 'i');
-      return regex.test(t);
-    })) return (tmpl.evidence && String(tmpl.evidence).trim()) || null;
+      return new RegExp(`\\b${escaped}\\b`, 'i').test(t);
+    };
+    const matched = tmpl.matchAll ? keywords.every(match) : keywords.some(match);
+    if (matched) return (tmpl.evidence && String(tmpl.evidence).trim()) || null;
   }
   return null;
 }
@@ -231,6 +233,34 @@ const SYSTEM_GUIDANCE = (function () {
         { label: '2. Management', guidance: 'MANAGEMENT:\n• Evidence-based treatment per NICE/BNF. Lifestyle and patient education. Shared decision-making.\n• Address polypharmacy and deprescribing if relevant. Consider social prescribing and community support.\n• Follow-up to assess response; review interval appropriate to condition. NICE CKS.' },
         { label: '3. Referral', guidance: 'REFERRAL:\n• 2WW if cancer suspected. Urgent if rapidly progressive or high risk. Routine for elective conditions.\n• Ensure appropriate primary care work-up before referral to avoid rejection. Document referral reason and safety-net. NICE NG12.' }
       ]
+    },
+    triage: {
+      id: 'guidance-triage',
+      question: 'GP Triage – disposition (work through in order; stop at first Yes)',
+      options: [
+        { label: 'Emergency (999)', guidance: 'DISPOSITION: Emergency ambulance. Life-threatening or time-critical: collapse, unconscious, severe breathlessness, chest pain (possible MI), stroke, anaphylaxis, severe bleeding, choking, fitting, overdose, severe head injury. Do not delay.' },
+        { label: 'Same day / Urgent', guidance: 'DISPOSITION: Same-day GP, UTC or A&E depending on clinical need. Cannot wait 24–48 h: worsening symptoms, high fever, severe pain, dehydration, mental health crisis (risk). Direct booking per local policy.' },
+        { label: '24–48 h / Routine', guidance: 'DISPOSITION: GP or nurse appointment within 24–48 h. Stable but needs assessment: persistent symptoms, no red flags, or follow-up after recent illness. Safety-net: reattend or 999 if worse.' },
+        { label: 'Self-care + safety-net', guidance: 'DISPOSITION: Self-care. Advice on symptom management, when to reattend (amber/red flags). Provide written or verbal safety-net. Follow up with GP if no improvement in defined period.' }
+      ],
+      steps: [
+        { id: 'triage-999', question: '1. Emergency (999)? Life-threatening or time-critical?', type: 'dropdown', options: [
+          { label: 'Yes', guidance: 'DISPOSITION: Emergency ambulance. Life-threatening or time-critical: collapse, unconscious, severe breathlessness, chest pain (possible MI), stroke, anaphylaxis, severe bleeding, choking, fitting, overdose, severe head injury. Do not delay.' },
+          { label: 'No', guidance: 'No – proceed to next question below.' }
+        ]},
+        { id: 'triage-same-day', question: '2. Same day / Urgent? Cannot wait 24–48 h?', type: 'dropdown', options: [
+          { label: 'Yes', guidance: 'DISPOSITION: Same-day GP, UTC or A&E depending on clinical need. Cannot wait 24–48 h: worsening symptoms, high fever, severe pain, dehydration, mental health crisis (risk). Direct booking per local policy.' },
+          { label: 'No', guidance: 'No – proceed to next question below.' }
+        ]},
+        { id: 'triage-routine', question: '3. 24–48 h / Routine? Stable but needs assessment?', type: 'dropdown', options: [
+          { label: 'Yes', guidance: 'DISPOSITION: GP or nurse appointment within 24–48 h. Stable but needs assessment: persistent symptoms, no red flags, or follow-up after recent illness. Safety-net: reattend or 999 if worse.' },
+          { label: 'No', guidance: 'No – proceed to next question below.' }
+        ]},
+        { id: 'triage-self-care', question: '4. Self-care + safety-net appropriate?', type: 'dropdown', options: [
+          { label: 'Yes', guidance: 'DISPOSITION: Self-care. Advice on symptom management, when to reattend (amber/red flags). Provide written or verbal safety-net. Follow up with GP if no improvement in defined period.' },
+          { label: 'No', guidance: 'Reassess using questions above or arrange same-day/urgent review.' }
+        ]}
+      ]
     }
   };
   return g;
@@ -306,7 +336,7 @@ function getSystemFallbackSteps(systemId, title) {
         type: 'dropdown',
         options: [{
           label: 'Immediate Support & Signposting',
-          guidance: 'MANAGEMENT PLAN:\n1. Crisis: Provide emergency contact numbers (NHS 111, Samaritans 116 123, or local crisis team).\n2. Self-help: Recommend digital CBT resources or self-help books.\n3. Social: Encourage engagement with family/friends and maintaining routine.\n4. Review: Arrange follow-up (usually 1-2 weeks) to monitor risk and symptom progression.\n5. Safety-net: Advise patient to contact GP or A&E if suicidal ideation increases.'
+          guidance: 'MANAGEMENT PLAN:\n1. Crisis: Provide emergency contact numbers (111, Samaritans 116 123, or local crisis team).\n2. Self-help: Recommend digital CBT resources or self-help books.\n3. Social: Encourage engagement with family/friends and maintaining routine.\n4. Review: Arrange follow-up (usually 1-2 weeks) to monitor risk and symptom progression.\n5. Safety-net: Advise patient to contact GP or A&E if suicidal ideation increases.'
         }]
       }];
     }
@@ -342,7 +372,7 @@ function getSystemFallbackSteps(systemId, title) {
         type: 'dropdown',
         options: [{
           label: 'Traffic Light Safety-Netting',
-          guidance: 'MANAGEMENT PLAN:\n1. Hydration: Ensure adequate fluid intake (check wet nappies/urine output).\n2. Vitals: Monitor temperature and work of breathing.\n3. Red Flags: Advise immediate review (A&E) for non-blanching rash, seizures, bulging fontanelle, or severe lethargy.\n4. Triage: Use NICE NG143 Traffic Light system for assessment.'
+          guidance: 'MANAGEMENT PLAN:\n1. Hydration: Ensure adequate fluid intake (check wet nappies/urine output).\n2. Vitals: Monitor temperature and work of breathing.\n3. Red Flags: Advise immediate review (A&E) for non-blanching rash, seizures, bulging fontanelle, or severe lethargy.\n4. Use NICE NG143 Traffic Light system for assessment.'
         }]
       }];
     }
@@ -461,6 +491,11 @@ function getSystemFallbackSteps(systemId, title) {
   }
 
   // Final catch-all: system 3-part guidance (Assessment | Management | Referral)
+  // Triage: use multi-step yes/no disposition flow if available
+  if (systemId === 'triage') {
+    const triageGuidance = SYSTEM_GUIDANCE.triage;
+    if (triageGuidance && triageGuidance.steps && triageGuidance.steps.length) return triageGuidance.steps;
+  }
   return stepsFromGuidance(SYSTEM_GUIDANCE[systemId] || SYSTEM_GUIDANCE.other);
 }
 

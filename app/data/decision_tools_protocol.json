@@ -1,9 +1,9 @@
 {
   "source": "Learning library + NICE CKS/NG; management steps from guidelines",
   "protocolVersion": 2,
-  "builtAt": "2026-02-22T20:49:06.388Z",
-  "generated": "2026-02-22T20:49:06.388Z",
-  "totalTools": 1510,
+  "builtAt": "2026-02-23T06:34:38.840Z",
+  "generated": "2026-02-23T06:34:38.840Z",
+  "totalTools": 1564,
   "systems": [
     {
       "id": "cardiovascular",
@@ -27,7 +27,7 @@
               "options": [
                 {
                   "label": "Assessment",
-                  "guidance": "MANAGEMENT PLAN:\n1. Screening: NHS AAA screening men 65+. Palpation unreliable for detection.\n2. If suspected: USS aorta. Risk factors: smoking, hypertension, family history. NICE NG156, CKS."
+                  "guidance": "MANAGEMENT PLAN:\n1. Screening: National AAA screening men 65+. Palpation unreliable for detection.\n2. If suspected: USS aorta. Risk factors: smoking, hypertension, family history. NICE NG156, CKS."
                 },
                 {
                   "label": "Management",
@@ -1185,7 +1185,9 @@
           "title": "Endocarditis – prophylaxis",
           "niceRefs": [
             "NICE CKS",
-            "Local formulary"
+            "Local formulary",
+            "NG64",
+            "CKS Endocarditis"
           ],
           "evidence": "Management per NICE CKS and Local formulary.",
           "steps": [
@@ -2205,6 +2207,54 @@
                 {
                   "label": "Follow-up",
                   "guidance": "MANAGEMENT PLAN:\n1. Usually led by cardiology/device clinic. Primary care: monitor for infection, ensure anticoagulation/rate control as indicated.\n2. Driving: DVLA rules apply (group 1/2). NICE NG106, CKS."
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "infective-endocarditis-diagnosis",
+          "title": "Infective endocarditis – diagnosis",
+          "niceRefs": [
+            "NICE CKS",
+            "Local formulary",
+            "NG64",
+            "CKS Endocarditis"
+          ],
+          "evidence": "Management per NICE CKS and Local formulary.",
+          "steps": [
+            {
+              "id": "endocarditis-mgt",
+              "question": "Endocarditis prophylaxis",
+              "type": "dropdown",
+              "options": [
+                {
+                  "label": "NICE NG64",
+                  "guidance": "MANAGEMENT PLAN:\n1. Antibiotic prophylaxis NOT routinely recommended for dental or GI/GU procedures.\n2. Only consider for highest-risk patients (prosthetic valve, previous endocarditis, cyanotic congenital heart disease) having dental at site of infection. NICE NG64."
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "infective-endocarditis-management",
+          "title": "Infective endocarditis – management",
+          "niceRefs": [
+            "NICE CKS",
+            "Local formulary",
+            "NG64",
+            "CKS Endocarditis"
+          ],
+          "evidence": "Management per NICE CKS and Local formulary.",
+          "steps": [
+            {
+              "id": "endocarditis-mgt",
+              "question": "Endocarditis prophylaxis",
+              "type": "dropdown",
+              "options": [
+                {
+                  "label": "NICE NG64",
+                  "guidance": "MANAGEMENT PLAN:\n1. Antibiotic prophylaxis NOT routinely recommended for dental or GI/GU procedures.\n2. Only consider for highest-risk patients (prosthetic valve, previous endocarditis, cyanotic congenital heart disease) having dental at site of infection. NICE NG64."
                 }
               ]
             }
@@ -3868,6 +3918,29 @@
           ]
         },
         {
+          "id": "chilblains",
+          "title": "Chilblains",
+          "niceRefs": [
+            "NICE CKS",
+            "Local formulary",
+            "CKS Chilblains"
+          ],
+          "evidence": "Management per NICE CKS and Local formulary.",
+          "steps": [
+            {
+              "id": "chilblains-mgt",
+              "question": "Chilblains",
+              "type": "dropdown",
+              "options": [
+                {
+                  "label": "Management",
+                  "guidance": "MANAGEMENT PLAN:\n1. Avoid cold; warm clothing; keep core warm. Topical corticosteroid for itch; nifedipine if severe/recurrent. Exclude Raynaud's, vasculitis if atypical.\n2. CKS Chilblains."
+                }
+              ]
+            }
+          ]
+        },
+        {
           "id": "chronic-spontaneous-urticaria-management",
           "title": "Chronic spontaneous urticaria – Management",
           "niceRefs": [
@@ -5344,6 +5417,29 @@
           "niceRefs": [
             "NICE CKS",
             "Local formulary"
+          ],
+          "evidence": "Management per NICE CKS and Local formulary.",
+          "steps": [
+            {
+              "id": "pruritus-mgt",
+              "question": "Pruritus",
+              "type": "dropdown",
+              "options": [
+                {
+                  "label": "Generalised (exclude cause)",
+                  "guidance": "MANAGEMENT PLAN:\n1. Check FBC, U&E, LFT, TFT, ferritin, glucose. Emollients; sedating antihistamine at night if sleep disturbed.\n2. Treat cause if found. Refer if unexplained or refractory. NICE CKS."
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "pruritus-ani",
+          "title": "Pruritus ani",
+          "niceRefs": [
+            "NICE CKS",
+            "Local formulary",
+            "CKS Pruritus ani"
           ],
           "evidence": "Management per NICE CKS and Local formulary.",
           "steps": [
@@ -8606,7 +8702,7 @@
               "options": [
                 {
                   "label": "Management",
-                  "guidance": "MANAGEMENT PLAN:\n1. Assess impact; offer self-exclusion (GamStop). Signpost to BeGambleAware, NHS support.\n2. Comorbid depression/anxiety: treat per NICE. NICE NG226, CKS."
+                  "guidance": "MANAGEMENT PLAN:\n1. Assess impact; offer self-exclusion (GamStop). Signpost to BeGambleAware, support services.\n2. Comorbid depression/anxiety: treat per NICE. NICE NG226, CKS."
                 }
               ]
             }
@@ -9661,6 +9757,62 @@
             }
           ],
           "episode": 183
+        },
+        {
+          "id": "psychosis-first-episode",
+          "title": "Psychosis – first episode",
+          "niceRefs": [
+            "NICE CKS",
+            "Local formulary"
+          ],
+          "evidence": "Management per NICE CKS and Local formulary.",
+          "steps": [
+            {
+              "id": "psych-overview",
+              "question": "1. Management Overview (Crisis & Stability)",
+              "type": "dropdown",
+              "options": [
+                {
+                  "label": "Philosophy of Care",
+                  "guidance": "MANAGEMENT PLAN OVERVIEW:\n1. **Safety First**: Immediate risk assessment for Bipolar/Psychosis. Intent to self-harm or harm others (delusional pull).\n2. **Biological Core**: Mood stabilizers (Lithium) and Antipsychotics are non-negotiable for stability. High emphasis on medication adherence.\n3. **Social/Rehab**: Early Intervention Services (EIP) focus on maintaining social roles (work/education) during the 'critical period' of the first 3 years.\n4. **Long-term**: Prophylaxis to prevent 'kindling' (where each subsequent episode is easier to trigger and harder to treat). NICE CG185, CG178."
+                }
+              ]
+            },
+            {
+              "id": "bipolar-phase",
+              "question": "2. Bipolar Disorder (Type I vs II)",
+              "type": "dropdown",
+              "options": [
+                {
+                  "label": "Acute Mania / Hypomania",
+                  "guidance": "MANAGEMENT PLAN (NICE CG185):\n1. Stop: Antidepressants immediately.\n2. 1st-line: Antipsychotic (Haloperidol, Olanzapine, Quetiapine, or Risperidone).\n3. Failure: Trial 2nd antipsychotic. Lithium as 3rd-line in acute phase.\n4. Type distinction: Bipolar I (Full mania, often requires admission); Bipolar II (Hypomania + Severe Depression)."
+                },
+                {
+                  "label": "Bipolar Depression",
+                  "guidance": "MANAGEMENT PLAN:\n1. Choices: Quetiapine (monotherapy), Olanzapine + Fluoxetine, or Lamotrigine (titrate slowly to prevent SJS).\n2. Avoid: Antidepressant monotherapy (risk of switch to mania). NICE CG185."
+                },
+                {
+                  "label": "Maintenance (Lithium)",
+                  "guidance": "MANAGEMENT PLAN:\n1. Target Level: 0.6-1.0 mmol/L.\n2. Monitoring: Levels q3m (initially q1w). TFT/U&E/Calcium q6m.\n3. Toxicity: Coarse tremor, ataxia, vomiting, confusion. Emergency A&E. NICE CG185."
+                }
+              ]
+            },
+            {
+              "id": "schizophrenia-tx",
+              "question": "2. Schizophrenia & Psychosis",
+              "type": "dropdown",
+              "options": [
+                {
+                  "label": "Early Intervention (EIP)",
+                  "guidance": "MANAGEMENT PLAN:\n1. Referral: Mandatory within 24h of suspected First Episode Psychosis (FEP).\n2. Pharmacology: Oral atypical antipsychotic (Aripiprazole or Risperidone low-dose). NICE CG178."
+                },
+                {
+                  "label": "Treatment Resistant Schizophrenia (TRS)",
+                  "guidance": "MANAGEMENT PLAN:\n1. Definition: Failure of 2x antipsychotics (at least one 2nd-gen) for ≥6 weeks at optimal dose.\n2. Clozapine: **The only evidence-based treatment for TRS**. Mandatory FBC monitoring (risk of agranulocytosis). Specialist initiation only. NICE CG178."
+                }
+              ]
+            }
+          ]
         },
         {
           "id": "psychosis-referral",
@@ -11416,7 +11568,7 @@
               "options": [
                 {
                   "label": "Assessment",
-                  "guidance": "MANAGEMENT PLAN:\n1. Role of multi-cancer detection tests (e.g. Galleri) is evolving. NICE and NHS are evaluating; not yet routine in UK.\n2. Use existing NICE NG12 symptom-based pathways for suspected cancer. NICE CKS."
+                  "guidance": "MANAGEMENT PLAN:\n1. Role of multi-cancer detection tests (e.g. Galleri) is evolving. NICE and national bodies are evaluating; not yet routine in UK.\n2. Use existing NICE NG12 symptom-based guidance for suspected cancer. NICE CKS."
                 },
                 {
                   "label": "When to refer",
@@ -11703,6 +11855,29 @@
                 {
                   "label": "Liver / rare",
                   "guidance": "MANAGEMENT PLAN:\n1. Autoimmune hepatitis/PBC/PSC: refer hepatology. Haemochromatosis: venesection. Wilson's: refer. Gastroparesis: diet, prokinetic; refer. NICE CKS."
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "giardiasis",
+          "title": "Giardiasis",
+          "niceRefs": [
+            "NICE CKS",
+            "Local formulary",
+            "CKS Giardiasis"
+          ],
+          "evidence": "Management per NICE CKS and Local formulary.",
+          "steps": [
+            {
+              "id": "giardiasis-mgt",
+              "question": "Giardiasis",
+              "type": "dropdown",
+              "options": [
+                {
+                  "label": "Management",
+                  "guidance": "MANAGEMENT PLAN:\n1. Stool PCR/microscopy for cysts/trophozoites. First-line: metronidazole. Tinidazole if failure. Rehydrate. Screen household if recurrent.\n2. CKS Giardiasis."
                 }
               ]
             }
@@ -13001,7 +13176,8 @@
           "title": "Pruritus ani",
           "niceRefs": [
             "NICE CKS",
-            "Local formulary"
+            "Local formulary",
+            "CKS Pruritus ani"
           ],
           "evidence": "Management per NICE CKS and Local formulary.",
           "steps": [
@@ -13639,6 +13815,62 @@
         {
           "id": "diabetes-mody",
           "title": "Diabetes – MODY",
+          "niceRefs": [
+            "NICE CKS",
+            "Local formulary",
+            "NG28",
+            "NG17",
+            "CKS Diabetes"
+          ],
+          "evidence": "NICE NG28: HbA1c targets by context (48–53 mmol/mol). SGLT2i for CVD/HF/CKD; GLP-1 for obesity where indicated. Annual review: foot check, kidney, cardiovascular risk.",
+          "steps": [
+            {
+              "id": "diabetes-stage",
+              "question": "1. HbA1c Target",
+              "type": "dropdown",
+              "options": [
+                {
+                  "label": "Lifestyle or Single Drug (Mono)",
+                  "guidance": "MANAGEMENT PLAN:\n1. Target: 48 mmol/mol (6.5%).\n2. Review: Every 3-6 months until stable. NICE NG28."
+                },
+                {
+                  "label": "Dual / Triple Therapy",
+                  "guidance": "MANAGEMENT PLAN:\n1. Target: 53 mmol/mol (7.0%).\n2. Adjust: Intensify if HbA1c rises to 58 mmol/mol. NICE NG28."
+                },
+                {
+                  "label": "Frailty / Comorbidities",
+                  "guidance": "MANAGEMENT PLAN:\n1. Individualise: Consider less stringent target (e.g. 58-64) to avoid hypoglycaemia. NICE NG28."
+                }
+              ]
+            },
+            {
+              "id": "diabetes-drug",
+              "question": "2. Drug Choice (NICE 2024)",
+              "type": "dropdown",
+              "options": [
+                {
+                  "label": "Step 1: Metformin First-line",
+                  "guidance": "MANAGEMENT PLAN:\n1. Dose: Start 500mg daily, increase slowly to 1g-2g total daily to avoid GI upset.\n2. SGLT2i: Add if CVD, HF, or high risk of CVD (QRISK ≥10%) regardless of HbA1c control. NICE NG28."
+                },
+                {
+                  "label": "CVD / Heart Failure / High Risk",
+                  "guidance": "MANAGEMENT PLAN:\n1. SGLT2 inhibitor (e.g. Dapagliflozin/Empagliflozin) should be added to Metformin as soon as CVD/HF is confirmed. NICE NG28."
+                },
+                {
+                  "label": "CKD + Albuminuria (ACR ≥3)",
+                  "guidance": "MANAGEMENT PLAN:\n1. SGLT2 inhibitor is indicated. Monitor eGFR; check local SPC for withdrawal thresholds. NICE NG28."
+                },
+                {
+                  "label": "Obesity (BMI ≥ 35)",
+                  "guidance": "MANAGEMENT PLAN:\n1. GLP-1 mimetics (e.g. Semaglutide) if BMI ≥35 AND triple therapy not at target (or BMI <35 if insulin would have occupational implications). NICE NG28."
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "diabetes-sick-day-rules",
+          "title": "Diabetes – sick day rules",
           "niceRefs": [
             "NICE CKS",
             "Local formulary",
@@ -15648,6 +15880,63 @@
           ]
         },
         {
+          "id": "type-1-diabetes-adults",
+          "title": "Type 1 diabetes – adults",
+          "niceRefs": [
+            "NICE CKS",
+            "Local formulary",
+            "NG28",
+            "NG17",
+            "CKS Diabetes",
+            "CKS Diabetes type 1"
+          ],
+          "evidence": "NICE NG28: HbA1c targets by context (48–53 mmol/mol). SGLT2i for CVD/HF/CKD; GLP-1 for obesity where indicated. Annual review: foot check, kidney, cardiovascular risk.",
+          "steps": [
+            {
+              "id": "diabetes-stage",
+              "question": "1. HbA1c Target",
+              "type": "dropdown",
+              "options": [
+                {
+                  "label": "Lifestyle or Single Drug (Mono)",
+                  "guidance": "MANAGEMENT PLAN:\n1. Target: 48 mmol/mol (6.5%).\n2. Review: Every 3-6 months until stable. NICE NG28."
+                },
+                {
+                  "label": "Dual / Triple Therapy",
+                  "guidance": "MANAGEMENT PLAN:\n1. Target: 53 mmol/mol (7.0%).\n2. Adjust: Intensify if HbA1c rises to 58 mmol/mol. NICE NG28."
+                },
+                {
+                  "label": "Frailty / Comorbidities",
+                  "guidance": "MANAGEMENT PLAN:\n1. Individualise: Consider less stringent target (e.g. 58-64) to avoid hypoglycaemia. NICE NG28."
+                }
+              ]
+            },
+            {
+              "id": "diabetes-drug",
+              "question": "2. Drug Choice (NICE 2024)",
+              "type": "dropdown",
+              "options": [
+                {
+                  "label": "Step 1: Metformin First-line",
+                  "guidance": "MANAGEMENT PLAN:\n1. Dose: Start 500mg daily, increase slowly to 1g-2g total daily to avoid GI upset.\n2. SGLT2i: Add if CVD, HF, or high risk of CVD (QRISK ≥10%) regardless of HbA1c control. NICE NG28."
+                },
+                {
+                  "label": "CVD / Heart Failure / High Risk",
+                  "guidance": "MANAGEMENT PLAN:\n1. SGLT2 inhibitor (e.g. Dapagliflozin/Empagliflozin) should be added to Metformin as soon as CVD/HF is confirmed. NICE NG28."
+                },
+                {
+                  "label": "CKD + Albuminuria (ACR ≥3)",
+                  "guidance": "MANAGEMENT PLAN:\n1. SGLT2 inhibitor is indicated. Monitor eGFR; check local SPC for withdrawal thresholds. NICE NG28."
+                },
+                {
+                  "label": "Obesity (BMI ≥ 35)",
+                  "guidance": "MANAGEMENT PLAN:\n1. GLP-1 mimetics (e.g. Semaglutide) if BMI ≥35 AND triple therapy not at target (or BMI <35 if insulin would have occupational implications). NICE NG28."
+                }
+              ]
+            }
+          ]
+        },
+        {
           "id": "type-1-diabetes-dka",
           "title": "Type 1 diabetes – DKA",
           "niceRefs": [
@@ -15655,7 +15944,8 @@
             "Local formulary",
             "NG28",
             "NG17",
-            "CKS Diabetes"
+            "CKS Diabetes",
+            "CKS Diabetes type 1"
           ],
           "evidence": "Management per NICE CKS and Local formulary.",
           "steps": [
@@ -15684,7 +15974,8 @@
             "Local formulary",
             "NG28",
             "NG17",
-            "CKS Diabetes"
+            "CKS Diabetes",
+            "CKS Diabetes type 1"
           ],
           "evidence": "NICE NG28: HbA1c targets by context (48–53 mmol/mol). SGLT2i for CVD/HF/CKD; GLP-1 for obesity where indicated. Annual review: foot check, kidney, cardiovascular risk.",
           "steps": [
@@ -16580,7 +16871,7 @@
               "options": [
                 {
                   "label": "Benign Lumps (Indications for GP Surgery)",
-                  "guidance": "MANAGEMENT PLAN:\n1. Criteria: Symptomatic (pain, inflammation, interference with function). \n2. Lipomas: Usually only if >5cm or rapidly growing (refer for US first to exclude sarcoma).\n3. Sebaceous Cysts: Excise if recurrently infected (wait for infection to settle first).\n4. Exclusions: Cosmetic removal is generally not NHS-funded."
+                  "guidance": "MANAGEMENT PLAN:\n1. Criteria: Symptomatic (pain, inflammation, interference with function). \n2. Lipomas: Usually only if >5cm or rapidly growing (refer for US first to exclude sarcoma).\n3. Sebaceous Cysts: Excise if recurrently infected (wait for infection to settle first).\n4. Exclusions: Cosmetic removal is generally not routinely publicly funded."
                 },
                 {
                   "label": "Red Flags (Refer to 2WW / Plastic Surgery)",
@@ -17691,7 +17982,7 @@
               "options": [
                 {
                   "label": "Benign Lumps (Indications for GP Surgery)",
-                  "guidance": "MANAGEMENT PLAN:\n1. Criteria: Symptomatic (pain, inflammation, interference with function). \n2. Lipomas: Usually only if >5cm or rapidly growing (refer for US first to exclude sarcoma).\n3. Sebaceous Cysts: Excise if recurrently infected (wait for infection to settle first).\n4. Exclusions: Cosmetic removal is generally not NHS-funded."
+                  "guidance": "MANAGEMENT PLAN:\n1. Criteria: Symptomatic (pain, inflammation, interference with function). \n2. Lipomas: Usually only if >5cm or rapidly growing (refer for US first to exclude sarcoma).\n3. Sebaceous Cysts: Excise if recurrently infected (wait for infection to settle first).\n4. Exclusions: Cosmetic removal is generally not routinely publicly funded."
                 },
                 {
                   "label": "Red Flags (Refer to 2WW / Plastic Surgery)",
@@ -17800,6 +18091,29 @@
                 {
                   "label": "Joint / arthritis / red flags",
                   "guidance": "MANAGEMENT PLAN:\n1. GCA: urgent high-dose steroid; refer. Polymyalgia: steroid; monitor. Pseudogout: NSAID. Septic arthritis: emergency referral. NICE NG210, NG100."
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "knee-prepatellar-bursitis",
+          "title": "Knee – prepatellar bursitis",
+          "niceRefs": [
+            "NICE CKS",
+            "Local formulary",
+            "CKS Knee pain"
+          ],
+          "evidence": "Management per NICE CKS and Local formulary.",
+          "steps": [
+            {
+              "id": "prepatellar-mgt",
+              "question": "Prepatellar bursitis",
+              "type": "dropdown",
+              "options": [
+                {
+                  "label": "Management",
+                  "guidance": "MANAGEMENT PLAN:\n1. Rest; ice; avoid kneeling. Aspiration if swollen; exclude infection (aspirate for culture if hot/red). Avoid steroid if septic. Refer if septic or recurrent.\n2. CKS Knee pain."
                 }
               ]
             }
@@ -21870,6 +22184,30 @@
               ]
             }
           ]
+        },
+        {
+          "id": "whooping-cough-pertussis",
+          "title": "Whooping cough – pertussis",
+          "niceRefs": [
+            "NICE CKS",
+            "Local formulary",
+            "NG121",
+            "CKS Whooping cough"
+          ],
+          "evidence": "Management per NICE CKS and Local formulary.",
+          "steps": [
+            {
+              "id": "pertussis-mgt",
+              "question": "Whooping cough",
+              "type": "dropdown",
+              "options": [
+                {
+                  "label": "Management & referral",
+                  "guidance": "MANAGEMENT PLAN:\n1. Notify public health. Macrolide (e.g. azithromycin) if <21 days of cough to reduce spread; may not change course. Supportive for paroxysms.\n2. Refer if infant <6 months, severe paroxysms, or complications. NICE CKS."
+                }
+              ]
+            }
+          ]
         }
       ]
     },
@@ -23057,6 +23395,29 @@
           ]
         },
         {
+          "id": "excessive-crying-infant",
+          "title": "Excessive crying – infant",
+          "niceRefs": [
+            "NICE CKS",
+            "Local formulary",
+            "CKS Infantile colic"
+          ],
+          "evidence": "Management per NICE CKS and Local formulary.",
+          "steps": [
+            {
+              "id": "infant-colic-mgt",
+              "question": "Infantile colic / excessive crying",
+              "type": "dropdown",
+              "options": [
+                {
+                  "label": "Management",
+                  "guidance": "MANAGEMENT PLAN:\n1. Reassurance; rule out illness (red flags). Support parents; responsive feeding. Trial of reduced-allergen formula or maternal diet exclusion only if cow's milk allergy suspected. Do not recommend simethicone or herbal remedies as evidence poor.\n2. CKS Infantile colic."
+                }
+              ]
+            }
+          ]
+        },
+        {
           "id": "failure-to-thrive",
           "title": "Failure to thrive",
           "niceRefs": [
@@ -23736,6 +24097,29 @@
             }
           ],
           "episode": 121
+        },
+        {
+          "id": "infantile-colic",
+          "title": "Infantile colic",
+          "niceRefs": [
+            "NICE CKS",
+            "Local formulary",
+            "CKS Infantile colic"
+          ],
+          "evidence": "Management per NICE CKS and Local formulary.",
+          "steps": [
+            {
+              "id": "infant-colic-mgt",
+              "question": "Infantile colic / excessive crying",
+              "type": "dropdown",
+              "options": [
+                {
+                  "label": "Management",
+                  "guidance": "MANAGEMENT PLAN:\n1. Reassurance; rule out illness (red flags). Support parents; responsive feeding. Trial of reduced-allergen formula or maternal diet exclusion only if cow's milk allergy suspected. Do not recommend simethicone or herbal remedies as evidence poor.\n2. CKS Infantile colic."
+                }
+              ]
+            }
+          ]
         },
         {
           "id": "inguinal-hernia-child",
@@ -24844,6 +25228,29 @@
           ]
         },
         {
+          "id": "teething",
+          "title": "Teething",
+          "niceRefs": [
+            "NICE CKS",
+            "Local formulary",
+            "CKS Teething"
+          ],
+          "evidence": "Management per NICE CKS and Local formulary.",
+          "steps": [
+            {
+              "id": "teething-mgt",
+              "question": "Teething",
+              "type": "dropdown",
+              "options": [
+                {
+                  "label": "Advice",
+                  "guidance": "MANAGEMENT PLAN:\n1. Reassurance; teething rings; paracetamol/ibuprofen for distress. Do not attribute fever, diarrhoea or rash to teething alone – assess for other cause.\n2. CKS Teething."
+                }
+              ]
+            }
+          ]
+        },
+        {
           "id": "the-6-week-baby-check-management",
           "title": "The 6-week baby check – Management",
           "niceRefs": [
@@ -25208,7 +25615,9 @@
           "title": "Whooping cough",
           "niceRefs": [
             "NICE CKS",
-            "Local formulary"
+            "Local formulary",
+            "NG121",
+            "CKS Whooping cough"
           ],
           "evidence": "Management per NICE CKS and Local formulary.",
           "steps": [
@@ -25378,6 +25787,30 @@
                 {
                   "label": "Management & referral",
                   "guidance": "MANAGEMENT PLAN:\n1. Visible haematuria (any age): 2WW urology. Non-visible: exclude UTI; if persistent and ≥45y or other risk factors, refer 2WW. Dipstick in pregnancy: exclude UTI/pre-eclampsia.\n2. NICE NG12, CKS."
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "bladder-pain-syndrome",
+          "title": "Bladder pain syndrome",
+          "niceRefs": [
+            "NICE CKS",
+            "Local formulary",
+            "NG123",
+            "CKS Bladder pain syndrome"
+          ],
+          "evidence": "Management per NICE CKS and Local formulary.",
+          "steps": [
+            {
+              "id": "bladder-pain-mgt",
+              "question": "Bladder pain syndrome",
+              "type": "dropdown",
+              "options": [
+                {
+                  "label": "Management",
+                  "guidance": "MANAGEMENT PLAN:\n1. Exclude UTI, pathology. Multimodal: analgesia, bladder training, stress management. Amitriptyline or cimetidine may help. Refer urology for cystoscopy/Hunner's if refractory.\n2. NICE NG123, CKS Bladder pain syndrome."
                 }
               ]
             }
@@ -26316,7 +26749,7 @@
               "options": [
                 {
                   "label": "Benign Lumps (Indications for GP Surgery)",
-                  "guidance": "MANAGEMENT PLAN:\n1. Criteria: Symptomatic (pain, inflammation, interference with function). \n2. Lipomas: Usually only if >5cm or rapidly growing (refer for US first to exclude sarcoma).\n3. Sebaceous Cysts: Excise if recurrently infected (wait for infection to settle first).\n4. Exclusions: Cosmetic removal is generally not NHS-funded."
+                  "guidance": "MANAGEMENT PLAN:\n1. Criteria: Symptomatic (pain, inflammation, interference with function). \n2. Lipomas: Usually only if >5cm or rapidly growing (refer for US first to exclude sarcoma).\n3. Sebaceous Cysts: Excise if recurrently infected (wait for infection to settle first).\n4. Exclusions: Cosmetic removal is generally not routinely publicly funded."
                 },
                 {
                   "label": "Red Flags (Refer to 2WW / Plastic Surgery)",
@@ -27948,7 +28381,7 @@
               "options": [
                 {
                   "label": "Routine & follow-up",
-                  "guidance": "MANAGEMENT PLAN:\n1. Invite per NHS programme (25–64). If abnormal: refer colposcopy per pathway (HPV triage).\n2. Manage anxiety; ensure result and follow-up communicated. NICE NG12, NHS CSP."
+                  "guidance": "MANAGEMENT PLAN:\n1. Invite per national screening programme (25–64). If abnormal: refer colposcopy per HPV triage.\n2. Manage anxiety; ensure result and follow-up communicated. NICE NG12, CSP."
                 }
               ]
             }
@@ -29476,7 +29909,7 @@
               "options": [
                 {
                   "label": "Benign Lumps (Indications for GP Surgery)",
-                  "guidance": "MANAGEMENT PLAN:\n1. Criteria: Symptomatic (pain, inflammation, interference with function). \n2. Lipomas: Usually only if >5cm or rapidly growing (refer for US first to exclude sarcoma).\n3. Sebaceous Cysts: Excise if recurrently infected (wait for infection to settle first).\n4. Exclusions: Cosmetic removal is generally not NHS-funded."
+                  "guidance": "MANAGEMENT PLAN:\n1. Criteria: Symptomatic (pain, inflammation, interference with function). \n2. Lipomas: Usually only if >5cm or rapidly growing (refer for US first to exclude sarcoma).\n3. Sebaceous Cysts: Excise if recurrently infected (wait for infection to settle first).\n4. Exclusions: Cosmetic removal is generally not routinely publicly funded."
                 },
                 {
                   "label": "Red Flags (Refer to 2WW / Plastic Surgery)",
@@ -30330,6 +30763,29 @@
           ]
         },
         {
+          "id": "trichomoniasis",
+          "title": "Trichomoniasis",
+          "niceRefs": [
+            "NICE CKS",
+            "Local formulary",
+            "CKS Trichomoniasis"
+          ],
+          "evidence": "Management per NICE CKS and Local formulary.",
+          "steps": [
+            {
+              "id": "trichomoniasis-mgt",
+              "question": "Trichomoniasis",
+              "type": "dropdown",
+              "options": [
+                {
+                  "label": "Management",
+                  "guidance": "MANAGEMENT PLAN:\n1. NAAT on vaginal swab. Treat: metronidazole (oral); treat partner; avoid alcohol during and 48h after. Screen for other STIs.\n2. CKS Trichomoniasis."
+                }
+              ]
+            }
+          ]
+        },
+        {
           "id": "vaginal-discharge",
           "title": "Vaginal discharge",
           "niceRefs": [
@@ -30583,7 +31039,7 @@
               "options": [
                 {
                   "label": "Support",
-                  "guidance": "MANAGEMENT PLAN:\n1. Listen; address concerns with evidence. Offer reliable resources (NHS, PHE). No coercion.\n2. Document; offer catch-up. NICE CKS, PHE Green Book."
+                  "guidance": "MANAGEMENT PLAN:\n1. Listen; address concerns with evidence. Offer reliable resources (PHE, national). No coercion.\n2. Document; offer catch-up. NICE CKS, PHE Green Book."
                 }
               ]
             }
@@ -31202,7 +31658,8 @@
           "title": "Glandular fever – complications",
           "niceRefs": [
             "NICE CKS",
-            "Local formulary"
+            "Local formulary",
+            "CKS Infectious mononucleosis"
           ],
           "evidence": "Management per NICE CKS and Local formulary.",
           "steps": [
@@ -31579,11 +32036,44 @@
           ]
         },
         {
+          "id": "infectious-mononucleosis",
+          "title": "Infectious mononucleosis",
+          "niceRefs": [
+            "NICE CKS",
+            "Local formulary",
+            "CKS Infectious mononucleosis"
+          ],
+          "evidence": "Management per NICE CKS and Local formulary.",
+          "steps": [
+            {
+              "id": "guidance-infectious",
+              "question": "Infectious Disease (Consultant Standard)",
+              "type": "dropdown",
+              "options": [
+                {
+                  "label": "1. Assessment & red flags",
+                  "guidance": "ASSESSMENT:\n• History: travel, contacts, animals, bites, immunosuppression, recent antibiotics. Severity and focus of infection.\n• Examination: focus (skin, chest, abdomen); sepsis screening (NEWS2, qSOFA).\n• Red flags: Sepsis, meningitis, non-blanching rash – emergency. HIV/TB risk – test and refer. NICE NG51, NG33."
+                },
+                {
+                  "label": "2. Management",
+                  "guidance": "MANAGEMENT:\n• Use local resistance data. Cellulitis: flucloxacillin. CAP: amoxicillin 500 mg tds 5 days. UTI: nitrofurantoin/trimethoprim. Sore throat: penicillin V if FeverPAIN 2–3+. NICE NG138, NG84, NG109.\n• Viral: no antibiotic for cold, sinusitis <10 days, acute bronchitis. Influenza: oseltamivir if at-risk and <48 h. C. difficile: stop precipitant antibiotic; treat per guidance. NICE NG120."
+                },
+                {
+                  "label": "3. Referral",
+                  "guidance": "REFERRAL:\n• Emergency: Sepsis, meningitis, severe infection. NICE NG51.\n• 2WW: HIV positive, TB suspected.\n• Routine: Recurrent infection, HIV management, travel medicine, complex infection. NICE NG33."
+                }
+              ]
+            }
+          ]
+        },
+        {
           "id": "infective-endocarditis",
           "title": "Infective endocarditis",
           "niceRefs": [
             "NICE CKS",
-            "Local formulary"
+            "Local formulary",
+            "NG64",
+            "CKS Endocarditis"
           ],
           "evidence": "Management per NICE CKS and Local formulary.",
           "steps": [
@@ -32219,7 +32709,9 @@
           "title": "Pertussis – prophylaxis",
           "niceRefs": [
             "NICE CKS",
-            "Local formulary"
+            "Local formulary",
+            "NG121",
+            "CKS Whooping cough"
           ],
           "evidence": "Management per NICE CKS and Local formulary.",
           "steps": [
@@ -32981,7 +33473,8 @@
           "title": "Viral – glandular fever",
           "niceRefs": [
             "NICE CKS",
-            "Local formulary"
+            "Local formulary",
+            "CKS Infectious mononucleosis"
           ],
           "evidence": "Management per NICE CKS and Local formulary.",
           "steps": [
@@ -33980,6 +34473,29 @@
                 {
                   "label": "Generalized Seizures",
                   "guidance": "MANAGEMENT PLAN:\n1. 1st-line: Sodium Valproate (Epilim) - **Strict warning: Not for use in women/girls of childbearing potential unless Pregnancy Prevention Programme in place.**\n2. Alternative: Levetiracetam or Lamotrigine."
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "functional-neurological-disorder",
+          "title": "Functional neurological disorder",
+          "niceRefs": [
+            "NICE CKS",
+            "Local formulary",
+            "CKS Functional neurological disorder"
+          ],
+          "evidence": "Management per NICE CKS and Local formulary.",
+          "steps": [
+            {
+              "id": "fnd-mgt",
+              "question": "Functional neurological disorder",
+              "type": "dropdown",
+              "options": [
+                {
+                  "label": "Approach",
+                  "guidance": "MANAGEMENT PLAN:\n1. Positive diagnosis; explain in understandable terms (e.g. software vs hardware). Avoid unnecessary tests. Physiotherapy and psychology (CBT) as first-line. Refer neurology if diagnostic uncertainty.\n2. NICE CKS Functional neurological disorder."
                 }
               ]
             }
@@ -38204,7 +38720,33 @@
           "title": "Dysphonia",
           "niceRefs": [
             "NICE CKS",
-            "Local formulary"
+            "Local formulary",
+            "NG12",
+            "CKS Hoarseness"
+          ],
+          "evidence": "Management per NICE CKS and Local formulary.",
+          "steps": [
+            {
+              "id": "hoarseness-mgt",
+              "question": "Hoarseness",
+              "type": "dropdown",
+              "options": [
+                {
+                  "label": "Persistent >3 weeks",
+                  "guidance": "MANAGEMENT PLAN:\n1. 2WW ENT referral for laryngoscopy to exclude laryngeal cancer. Do not delay if red flags (dysphagia, neck lump, stridor). NICE NG12."
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "dysphonia-persistent",
+          "title": "Dysphonia – persistent",
+          "niceRefs": [
+            "NICE CKS",
+            "Local formulary",
+            "NG12",
+            "CKS Hoarseness"
           ],
           "evidence": "Management per NICE CKS and Local formulary.",
           "steps": [
@@ -39441,7 +39983,8 @@
             "NICE CKS",
             "Local formulary",
             "NG84",
-            "CKS Sore throat"
+            "CKS Sore throat",
+            "CKS Infectious mononucleosis"
           ],
           "evidence": "Management per NICE CKS and Local formulary.",
           "steps": [
@@ -40204,7 +40747,7 @@
               "options": [
                 {
                   "label": "Routine & follow-up",
-                  "guidance": "MANAGEMENT PLAN:\n1. Invite per NHS programme (25–64). If abnormal: refer colposcopy per pathway (HPV triage).\n2. Manage anxiety; ensure result and follow-up communicated. NICE NG12, NHS CSP."
+                  "guidance": "MANAGEMENT PLAN:\n1. Invite per national screening programme (25–64). If abnormal: refer colposcopy per HPV triage.\n2. Manage anxiety; ensure result and follow-up communicated. NICE NG12, CSP."
                 }
               ]
             }
@@ -40317,7 +40860,7 @@
               "options": [
                 {
                   "label": "Guidance",
-                  "guidance": "MANAGEMENT PLAN:\n1. CQC: register regulated activities per guidance. Fast track CHC: complete DS1500 for rapidly deteriorating; support application.\n2. Follow NHS CHC framework. NICE CKS, gov.uk."
+                  "guidance": "MANAGEMENT PLAN:\n1. CQC: register regulated activities per guidance. Fast track CHC: complete DS1500 for rapidly deteriorating; support application.\n2. Follow CHC framework. NICE CKS, gov.uk."
                 }
               ]
             }
@@ -40583,7 +41126,7 @@
               "options": [
                 {
                   "label": "Guidance",
-                  "guidance": "MANAGEMENT PLAN:\n1. CQC: register regulated activities per guidance. Fast track CHC: complete DS1500 for rapidly deteriorating; support application.\n2. Follow NHS CHC framework. NICE CKS, gov.uk."
+                  "guidance": "MANAGEMENT PLAN:\n1. CQC: register regulated activities per guidance. Fast track CHC: complete DS1500 for rapidly deteriorating; support application.\n2. Follow CHC framework. NICE CKS, gov.uk."
                 }
               ]
             }
@@ -40906,6 +41449,42 @@
                 {
                   "label": "Assessment",
                   "guidance": "MANAGEMENT PLAN:\n1. Assess capacity per MCA: understand, retain, weigh, communicate. Decision-specific. Best interests if lacking capacity; involve family/IMCA.\n2. DoLS/LPS if deprivation of liberty in care. NICE NG108, CKS."
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "needlestick-sharps-injury",
+          "title": "Needlestick – sharps injury",
+          "niceRefs": [
+            "NICE CKS",
+            "Local formulary",
+            "NG33",
+            "CKS HIV"
+          ],
+          "evidence": "Management per NICE CKS and Local formulary.",
+          "steps": [
+            {
+              "id": "infectious-misc-mgt",
+              "question": "Infectious disease",
+              "type": "dropdown",
+              "options": [
+                {
+                  "label": "HIV / TB / viral",
+                  "guidance": "MANAGEMENT PLAN:\n1. HIV: test; PrEP/PEP per NICE. TB: refer TB service; RIPE. COVID antiviral: per eligibility. Shingles: aciclovir if <72 h; 2WW if ophthalmic. NICE NG33, NG122, CKS."
+                },
+                {
+                  "label": "Bites / travel / other",
+                  "guidance": "MANAGEMENT PLAN:\n1. Bite: clean; antibiotic if high risk; rabies/tetanus. Needlestick: risk assess; PEP if source high risk. Travel: advise vaccines; malaria prophylaxis. NICE CKS."
+                },
+                {
+                  "label": "Tick bite / Lyme",
+                  "guidance": "MANAGEMENT PLAN:\n1. Remove tick with fine-tipped tweezers. Prophylaxis: doxycycline 200 mg single dose if attached ≥36 h and endemic area. Erythema migrans: doxycycline 100 mg bd 21 days. Refer if neurological/joint. NICE NG95, CKS."
+                },
+                {
+                  "label": "Needlestick / sharps",
+                  "guidance": "MANAGEMENT PLAN:\n1. Wash; encourage bleeding. Risk assess: source HIV/HBV/HCV status. HBV: check immunity; offer vaccine/immunoglobulin. HIV: PEP within 72 h per local protocol. Baseline bloods; follow-up. NICE NG33, CKS."
                 }
               ]
             }
@@ -41461,7 +42040,7 @@
               "options": [
                 {
                   "label": "Practice",
-                  "guidance": "MANAGEMENT PLAN:\n1. Greener practice: inhalers, prescribing, travel, waste. Align with NHS net zero. NICE CKS, local policy."
+                  "guidance": "MANAGEMENT PLAN:\n1. Greener practice: inhalers, prescribing, travel, waste. Align with national net zero. NICE CKS, local policy."
                 }
               ]
             }
@@ -43239,7 +43818,7 @@
               "options": [
                 {
                   "label": "Advice",
-                  "guidance": "MANAGEMENT PLAN:\n1. Eatwell Guide: fruit/veg, wholegrains, protein; limit saturated fat, sugar, salt. If overweight: calorie reduction per NICE CG189. Refer dietitian if medical need (diabetes, coeliac, dysphagia).\n2. NICE PH24, CG189, NHS Eatwell."
+                  "guidance": "MANAGEMENT PLAN:\n1. Eatwell Guide: fruit/veg, wholegrains, protein; limit saturated fat, sugar, salt. If overweight: calorie reduction per NICE CG189. Refer dietitian if medical need (diabetes, coeliac, dysphagia).\n2. NICE PH24, CG189, Eatwell Guide."
                 }
               ]
             }
@@ -45135,6 +45714,1842 @@
       ]
     },
     {
+      "id": "triage",
+      "name": "GP Triage",
+      "tools": [
+        {
+          "id": "triage-abdominal-pain",
+          "title": "Triage – abdominal pain",
+          "niceRefs": [
+            "NICE CKS",
+            "Local formulary",
+            "NICE NG51",
+            "Urgent care"
+          ],
+          "evidence": "Management per NICE CKS and Local formulary.",
+          "steps": [
+            {
+              "id": "triage-999",
+              "question": "1. Emergency (999)? Life-threatening or time-critical?",
+              "type": "dropdown",
+              "options": [
+                {
+                  "label": "Yes",
+                  "guidance": "DISPOSITION: Emergency ambulance. Life-threatening or time-critical: collapse, unconscious, severe breathlessness, chest pain (possible MI), stroke, anaphylaxis, severe bleeding, choking, fitting, overdose, severe head injury. Do not delay."
+                },
+                {
+                  "label": "No",
+                  "guidance": "No – proceed to next question below."
+                }
+              ]
+            },
+            {
+              "id": "triage-same-day",
+              "question": "2. Same day / Urgent? Cannot wait 24–48 h?",
+              "type": "dropdown",
+              "options": [
+                {
+                  "label": "Yes",
+                  "guidance": "DISPOSITION: Same-day GP, UTC or A&E depending on clinical need. Cannot wait 24–48 h: worsening symptoms, high fever, severe pain, dehydration, mental health crisis (risk). Direct booking per local policy."
+                },
+                {
+                  "label": "No",
+                  "guidance": "No – proceed to next question below."
+                }
+              ]
+            },
+            {
+              "id": "triage-routine",
+              "question": "3. 24–48 h / Routine? Stable but needs assessment?",
+              "type": "dropdown",
+              "options": [
+                {
+                  "label": "Yes",
+                  "guidance": "DISPOSITION: GP or nurse appointment within 24–48 h. Stable but needs assessment: persistent symptoms, no red flags, or follow-up after recent illness. Safety-net: reattend or 999 if worse."
+                },
+                {
+                  "label": "No",
+                  "guidance": "No – proceed to next question below."
+                }
+              ]
+            },
+            {
+              "id": "triage-self-care",
+              "question": "4. Self-care + safety-net appropriate?",
+              "type": "dropdown",
+              "options": [
+                {
+                  "label": "Yes",
+                  "guidance": "DISPOSITION: Self-care. Advice on symptom management, when to reattend (amber/red flags). Provide written or verbal safety-net. Follow up with GP if no improvement in defined period."
+                },
+                {
+                  "label": "No",
+                  "guidance": "Reassess using questions above or arrange same-day/urgent review."
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "triage-allergic-reaction-mild",
+          "title": "Triage – allergic reaction – mild",
+          "niceRefs": [
+            "NICE CKS",
+            "Local formulary",
+            "NICE NG51",
+            "Urgent care"
+          ],
+          "evidence": "Management per NICE CKS and Local formulary.",
+          "steps": [
+            {
+              "id": "triage-999",
+              "question": "1. Emergency (999)? Life-threatening or time-critical?",
+              "type": "dropdown",
+              "options": [
+                {
+                  "label": "Yes",
+                  "guidance": "DISPOSITION: Emergency ambulance. Life-threatening or time-critical: collapse, unconscious, severe breathlessness, chest pain (possible MI), stroke, anaphylaxis, severe bleeding, choking, fitting, overdose, severe head injury. Do not delay."
+                },
+                {
+                  "label": "No",
+                  "guidance": "No – proceed to next question below."
+                }
+              ]
+            },
+            {
+              "id": "triage-same-day",
+              "question": "2. Same day / Urgent? Cannot wait 24–48 h?",
+              "type": "dropdown",
+              "options": [
+                {
+                  "label": "Yes",
+                  "guidance": "DISPOSITION: Same-day GP, UTC or A&E depending on clinical need. Cannot wait 24–48 h: worsening symptoms, high fever, severe pain, dehydration, mental health crisis (risk). Direct booking per local policy."
+                },
+                {
+                  "label": "No",
+                  "guidance": "No – proceed to next question below."
+                }
+              ]
+            },
+            {
+              "id": "triage-routine",
+              "question": "3. 24–48 h / Routine? Stable but needs assessment?",
+              "type": "dropdown",
+              "options": [
+                {
+                  "label": "Yes",
+                  "guidance": "DISPOSITION: GP or nurse appointment within 24–48 h. Stable but needs assessment: persistent symptoms, no red flags, or follow-up after recent illness. Safety-net: reattend or 999 if worse."
+                },
+                {
+                  "label": "No",
+                  "guidance": "No – proceed to next question below."
+                }
+              ]
+            },
+            {
+              "id": "triage-self-care",
+              "question": "4. Self-care + safety-net appropriate?",
+              "type": "dropdown",
+              "options": [
+                {
+                  "label": "Yes",
+                  "guidance": "DISPOSITION: Self-care. Advice on symptom management, when to reattend (amber/red flags). Provide written or verbal safety-net. Follow up with GP if no improvement in defined period."
+                },
+                {
+                  "label": "No",
+                  "guidance": "Reassess using questions above or arrange same-day/urgent review."
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "triage-allergic-reaction-anaphylaxis",
+          "title": "Triage – allergic reaction / anaphylaxis",
+          "niceRefs": [
+            "NICE CKS",
+            "Local formulary",
+            "NICE NG51",
+            "Urgent care"
+          ],
+          "evidence": "Management per NICE CKS and Local formulary.",
+          "steps": [
+            {
+              "id": "anaphylaxis-action",
+              "question": "Emergency Action",
+              "type": "dropdown",
+              "options": [
+                {
+                  "value": "im-adrenaline",
+                  "label": "IM Adrenaline (999)",
+                  "guidance": "MANAGEMENT PLAN:\nAdrenaline 1:1000 IM (anterolateral mid-thigh). Adult: 500mcg (0.5ml). Child 6-12: 300mcg. Child <6: 150mcg. Repeat every 5 mins if no improvement. High-flow O2. NICE NG193."
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "triage-assault-trauma",
+          "title": "Triage – assault / trauma",
+          "niceRefs": [
+            "NICE CKS",
+            "Local formulary",
+            "NICE NG51",
+            "Urgent care"
+          ],
+          "evidence": "Management per NICE CKS and Local formulary.",
+          "steps": [
+            {
+              "id": "ptsd-ocd-overview",
+              "question": "1. Management Overview (Specialized Anxiety)",
+              "type": "dropdown",
+              "options": [
+                {
+                  "label": "Consultant Strategic Approach",
+                  "guidance": "MANAGEMENT PLAN OVERVIEW:\n1. **PTSD Philosophy**: Focus on 're-processing' traumatic memories rather than avoidance. \n2. **OCD Philosophy**: Focus on 'Exposure & Response Prevention' (ERP). Breaking the link between obsession and neutralizing compulsion.\n3. **Meds**: SSRIs/SNRIs used primarily to 'quieten' the cognitive noise, facilitating engagement in intensive therapy. NICE NG116, CG31."
+                }
+              ]
+            },
+            {
+              "id": "ptsd-mgmt",
+              "question": "2. PTSD Management (NICE NG116)",
+              "type": "dropdown",
+              "options": [
+                {
+                  "label": "PTSD Evidence-Based Care",
+                  "guidance": "MANAGEMENT PLAN:\n1. Diagnosis: Re-experiencing (flashbacks), avoidance, and hyperarousal >1 month post-trauma.\n2. 1st-line: **Trauma-focused CBT (TF-CBT)** or **EMDR** (Eye Movement Desensitization and Reprocessing).\n3. Meds: Venlafaxine or SSRI (Sertraline) only if patient prefers or therapy failed. Do NOT use Benzos. NICE NG116."
+                },
+                {
+                  "label": "Complex PTSD (C-PTSD)",
+                  "guidance": "MANAGEMENT PLAN:\n1. Features: Core PTSD + disturbances in self-organization (affect dysregulation, negative self-concept, relational diffs).\n2. Management: Requires longer-term stabilization phase followed by trauma-focused work. NICE NG116."
+                }
+              ]
+            },
+            {
+              "id": "ocd-mgmt",
+              "question": "3. OCD Management (NICE CG31)",
+              "type": "dropdown",
+              "options": [
+                {
+                  "label": "OCD Stepwise Care",
+                  "guidance": "MANAGEMENT PLAN:\n1. 1st-line: **ERP** (Exposure & Response Prevention) +/- SSRI.\n2. Meds: Often require higher doses (e.g., Fluoxetine 60-80mg, Sertraline 200mg). Trial for ≥12 weeks.\n3. Resistance: Consider adding Clomipramine (TCA) or an atypical antipsychotic adjunct. NICE CG31."
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "triage-back-pain-acute",
+          "title": "Triage – back pain – acute",
+          "niceRefs": [
+            "NICE CKS",
+            "Local formulary",
+            "NG59",
+            "CKS Low back pain",
+            "NICE NG51",
+            "Urgent care"
+          ],
+          "evidence": "NICE NG59: non-specific low back pain – stay active, analgesia, no routine imaging. Red flags: cauda equina (emergency), fracture, infection.",
+          "steps": [
+            {
+              "id": "back-red",
+              "question": "Assessment",
+              "type": "dropdown",
+              "options": [
+                {
+                  "value": "no-red",
+                  "label": "No red flags",
+                  "guidance": "MANAGEMENT PLAN:\nAdvise stay active; paracetamol + NSAID short-term. Consider manual therapy. Do not offer imaging. Review at 6 weeks. NICE NG59."
+                },
+                {
+                  "value": "red",
+                  "label": "Red flags (cauda equina, fracture, infection)",
+                  "guidance": "MANAGEMENT PLAN:\nCauda equina: emergency referral. Consider fracture if trauma/steroids; infection if fever. MRI if nerve root compression suspected for surgical option. NICE NG59."
+                },
+                {
+                  "value": "sciatica",
+                  "label": "Sciatica / nerve root",
+                  "guidance": "MANAGEMENT PLAN:\n1. Advise stay active; analgesia. Consider pregabalin/gabapentin for neuropathic pain if significant.\n2. Refer if severe or progressive; consider MRI for surgical option if not improving after 6 weeks. NICE NG59."
+                },
+                {
+                  "value": "safety",
+                  "label": "Safety net",
+                  "guidance": "SAFETY: Reattend if new leg weakness, saddle numbness, urinary retention, or fever with back pain. Cauda equina: emergency. NICE NG59."
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "triage-breathlessness",
+          "title": "Triage – breathlessness",
+          "niceRefs": [
+            "NICE CKS",
+            "Local formulary",
+            "NICE NG51",
+            "Urgent care"
+          ],
+          "evidence": "Management per NICE CKS and Local formulary.",
+          "steps": [
+            {
+              "id": "triage-999",
+              "question": "1. Emergency (999)? Life-threatening or time-critical?",
+              "type": "dropdown",
+              "options": [
+                {
+                  "label": "Yes",
+                  "guidance": "DISPOSITION: Emergency ambulance. Life-threatening or time-critical: collapse, unconscious, severe breathlessness, chest pain (possible MI), stroke, anaphylaxis, severe bleeding, choking, fitting, overdose, severe head injury. Do not delay."
+                },
+                {
+                  "label": "No",
+                  "guidance": "No – proceed to next question below."
+                }
+              ]
+            },
+            {
+              "id": "triage-same-day",
+              "question": "2. Same day / Urgent? Cannot wait 24–48 h?",
+              "type": "dropdown",
+              "options": [
+                {
+                  "label": "Yes",
+                  "guidance": "DISPOSITION: Same-day GP, UTC or A&E depending on clinical need. Cannot wait 24–48 h: worsening symptoms, high fever, severe pain, dehydration, mental health crisis (risk). Direct booking per local policy."
+                },
+                {
+                  "label": "No",
+                  "guidance": "No – proceed to next question below."
+                }
+              ]
+            },
+            {
+              "id": "triage-routine",
+              "question": "3. 24–48 h / Routine? Stable but needs assessment?",
+              "type": "dropdown",
+              "options": [
+                {
+                  "label": "Yes",
+                  "guidance": "DISPOSITION: GP or nurse appointment within 24–48 h. Stable but needs assessment: persistent symptoms, no red flags, or follow-up after recent illness. Safety-net: reattend or 999 if worse."
+                },
+                {
+                  "label": "No",
+                  "guidance": "No – proceed to next question below."
+                }
+              ]
+            },
+            {
+              "id": "triage-self-care",
+              "question": "4. Self-care + safety-net appropriate?",
+              "type": "dropdown",
+              "options": [
+                {
+                  "label": "Yes",
+                  "guidance": "DISPOSITION: Self-care. Advice on symptom management, when to reattend (amber/red flags). Provide written or verbal safety-net. Follow up with GP if no improvement in defined period."
+                },
+                {
+                  "label": "No",
+                  "guidance": "Reassess using questions above or arrange same-day/urgent review."
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "triage-burns",
+          "title": "Triage – burns",
+          "niceRefs": [
+            "NICE CKS",
+            "Local formulary",
+            "NICE NG51",
+            "Urgent care"
+          ],
+          "evidence": "Management per NICE CKS and Local formulary.",
+          "steps": [
+            {
+              "id": "triage-999",
+              "question": "1. Emergency (999)? Life-threatening or time-critical?",
+              "type": "dropdown",
+              "options": [
+                {
+                  "label": "Yes",
+                  "guidance": "DISPOSITION: Emergency ambulance. Life-threatening or time-critical: collapse, unconscious, severe breathlessness, chest pain (possible MI), stroke, anaphylaxis, severe bleeding, choking, fitting, overdose, severe head injury. Do not delay."
+                },
+                {
+                  "label": "No",
+                  "guidance": "No – proceed to next question below."
+                }
+              ]
+            },
+            {
+              "id": "triage-same-day",
+              "question": "2. Same day / Urgent? Cannot wait 24–48 h?",
+              "type": "dropdown",
+              "options": [
+                {
+                  "label": "Yes",
+                  "guidance": "DISPOSITION: Same-day GP, UTC or A&E depending on clinical need. Cannot wait 24–48 h: worsening symptoms, high fever, severe pain, dehydration, mental health crisis (risk). Direct booking per local policy."
+                },
+                {
+                  "label": "No",
+                  "guidance": "No – proceed to next question below."
+                }
+              ]
+            },
+            {
+              "id": "triage-routine",
+              "question": "3. 24–48 h / Routine? Stable but needs assessment?",
+              "type": "dropdown",
+              "options": [
+                {
+                  "label": "Yes",
+                  "guidance": "DISPOSITION: GP or nurse appointment within 24–48 h. Stable but needs assessment: persistent symptoms, no red flags, or follow-up after recent illness. Safety-net: reattend or 999 if worse."
+                },
+                {
+                  "label": "No",
+                  "guidance": "No – proceed to next question below."
+                }
+              ]
+            },
+            {
+              "id": "triage-self-care",
+              "question": "4. Self-care + safety-net appropriate?",
+              "type": "dropdown",
+              "options": [
+                {
+                  "label": "Yes",
+                  "guidance": "DISPOSITION: Self-care. Advice on symptom management, when to reattend (amber/red flags). Provide written or verbal safety-net. Follow up with GP if no improvement in defined period."
+                },
+                {
+                  "label": "No",
+                  "guidance": "Reassess using questions above or arrange same-day/urgent review."
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "triage-chest-pain",
+          "title": "Triage – chest pain",
+          "niceRefs": [
+            "NICE CKS",
+            "Local formulary",
+            "NICE NG51",
+            "Urgent care"
+          ],
+          "evidence": "NICE NG72 (stable angina, CTCA), NG185 (acute coronary syndrome). Exclude ACS before attributing to musculoskeletal or GORD.",
+          "steps": [
+            {
+              "id": "chest-pain-mgt",
+              "question": "Chest pain type",
+              "type": "dropdown",
+              "options": [
+                {
+                  "label": "Stable / likely angina",
+                  "guidance": "MANAGEMENT PLAN:\n1. GTN prn; beta-blocker or CCB. Secondary prevention: aspirin, statin, ACEi if indicated.\n2. Refer: Rapid Access Chest Pain Clinic for CTCA. NICE NG72."
+                },
+                {
+                  "label": "Acute / possible ACS",
+                  "guidance": "MANAGEMENT PLAN:\n1. Emergency: 999; aspirin 300 mg if no contraindication.\n2. Do not delay for troponin in primary care if typical presentation. NICE NG185."
+                },
+                {
+                  "label": "Non-cardiac / musculoskeletal",
+                  "guidance": "MANAGEMENT PLAN:\n1. Exclude cardiac cause (ECG, troponin if indicated). Consider costochondritis, muscle strain, Tietze's; NSAID/analgesia; reassurance.\n2. If GORD/reflux: trial PPI. If anxiety: support and exclude organic cause first. NICE NG72, CKS."
+                },
+                {
+                  "label": "Safety net",
+                  "guidance": "SAFETY: Reattend if central/crushing pain, breathlessness, collapse, or pain at rest. If suspected ACS call 999. NICE NG72, NG185."
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "triage-child-fever",
+          "title": "Triage – child – fever",
+          "niceRefs": [
+            "NICE CKS",
+            "Local formulary",
+            "NICE NG51",
+            "Urgent care"
+          ],
+          "evidence": "Management per NICE CKS and Local formulary.",
+          "steps": [
+            {
+              "id": "triage-999",
+              "question": "1. Emergency (999)? Life-threatening or time-critical?",
+              "type": "dropdown",
+              "options": [
+                {
+                  "label": "Yes",
+                  "guidance": "DISPOSITION: Emergency ambulance. Life-threatening or time-critical: collapse, unconscious, severe breathlessness, chest pain (possible MI), stroke, anaphylaxis, severe bleeding, choking, fitting, overdose, severe head injury. Do not delay."
+                },
+                {
+                  "label": "No",
+                  "guidance": "No – proceed to next question below."
+                }
+              ]
+            },
+            {
+              "id": "triage-same-day",
+              "question": "2. Same day / Urgent? Cannot wait 24–48 h?",
+              "type": "dropdown",
+              "options": [
+                {
+                  "label": "Yes",
+                  "guidance": "DISPOSITION: Same-day GP, UTC or A&E depending on clinical need. Cannot wait 24–48 h: worsening symptoms, high fever, severe pain, dehydration, mental health crisis (risk). Direct booking per local policy."
+                },
+                {
+                  "label": "No",
+                  "guidance": "No – proceed to next question below."
+                }
+              ]
+            },
+            {
+              "id": "triage-routine",
+              "question": "3. 24–48 h / Routine? Stable but needs assessment?",
+              "type": "dropdown",
+              "options": [
+                {
+                  "label": "Yes",
+                  "guidance": "DISPOSITION: GP or nurse appointment within 24–48 h. Stable but needs assessment: persistent symptoms, no red flags, or follow-up after recent illness. Safety-net: reattend or 999 if worse."
+                },
+                {
+                  "label": "No",
+                  "guidance": "No – proceed to next question below."
+                }
+              ]
+            },
+            {
+              "id": "triage-self-care",
+              "question": "4. Self-care + safety-net appropriate?",
+              "type": "dropdown",
+              "options": [
+                {
+                  "label": "Yes",
+                  "guidance": "DISPOSITION: Self-care. Advice on symptom management, when to reattend (amber/red flags). Provide written or verbal safety-net. Follow up with GP if no improvement in defined period."
+                },
+                {
+                  "label": "No",
+                  "guidance": "Reassess using questions above or arrange same-day/urgent review."
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "triage-choking",
+          "title": "Triage – choking",
+          "niceRefs": [
+            "NICE CKS",
+            "Local formulary",
+            "NICE NG51",
+            "Urgent care"
+          ],
+          "evidence": "Management per NICE CKS and Local formulary.",
+          "steps": [
+            {
+              "id": "triage-999",
+              "question": "1. Emergency (999)? Life-threatening or time-critical?",
+              "type": "dropdown",
+              "options": [
+                {
+                  "label": "Yes",
+                  "guidance": "DISPOSITION: Emergency ambulance. Life-threatening or time-critical: collapse, unconscious, severe breathlessness, chest pain (possible MI), stroke, anaphylaxis, severe bleeding, choking, fitting, overdose, severe head injury. Do not delay."
+                },
+                {
+                  "label": "No",
+                  "guidance": "No – proceed to next question below."
+                }
+              ]
+            },
+            {
+              "id": "triage-same-day",
+              "question": "2. Same day / Urgent? Cannot wait 24–48 h?",
+              "type": "dropdown",
+              "options": [
+                {
+                  "label": "Yes",
+                  "guidance": "DISPOSITION: Same-day GP, UTC or A&E depending on clinical need. Cannot wait 24–48 h: worsening symptoms, high fever, severe pain, dehydration, mental health crisis (risk). Direct booking per local policy."
+                },
+                {
+                  "label": "No",
+                  "guidance": "No – proceed to next question below."
+                }
+              ]
+            },
+            {
+              "id": "triage-routine",
+              "question": "3. 24–48 h / Routine? Stable but needs assessment?",
+              "type": "dropdown",
+              "options": [
+                {
+                  "label": "Yes",
+                  "guidance": "DISPOSITION: GP or nurse appointment within 24–48 h. Stable but needs assessment: persistent symptoms, no red flags, or follow-up after recent illness. Safety-net: reattend or 999 if worse."
+                },
+                {
+                  "label": "No",
+                  "guidance": "No – proceed to next question below."
+                }
+              ]
+            },
+            {
+              "id": "triage-self-care",
+              "question": "4. Self-care + safety-net appropriate?",
+              "type": "dropdown",
+              "options": [
+                {
+                  "label": "Yes",
+                  "guidance": "DISPOSITION: Self-care. Advice on symptom management, when to reattend (amber/red flags). Provide written or verbal safety-net. Follow up with GP if no improvement in defined period."
+                },
+                {
+                  "label": "No",
+                  "guidance": "Reassess using questions above or arrange same-day/urgent review."
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "triage-collapse-unconscious",
+          "title": "Triage – collapse / unconscious",
+          "niceRefs": [
+            "NICE CKS",
+            "Local formulary",
+            "NICE NG51",
+            "Urgent care"
+          ],
+          "evidence": "NICE CKS Collapse, Syncope, NICE NG51 (sepsis if suspected), Local formulary, Urgent care.",
+          "steps": [
+            {
+              "id": "collapse-triage-1",
+              "question": "1. EMERGENCY (999)? Time-critical – see synopsis below.",
+              "type": "dropdown",
+              "options": [
+                {
+                  "label": "Yes",
+                  "guidance": "DISPOSITION: Emergency (999). Collapse/unconsciousness is time-critical. Call 999 for: unwitnessed collapse; not fully alert (GCS <15); chest pain or severe breathlessness before/during collapse; known cardiac or seizure disorder with prolonged recovery or first fit; head injury with collapse; suspected overdose/poisoning; hypoglycaemia not responding to oral glucose; stroke signs (FAST); anaphylaxis; any doubt. Do not delay. NICE CKS, NG51."
+                },
+                {
+                  "label": "No",
+                  "guidance": "No – proceed to next question below."
+                }
+              ]
+            },
+            {
+              "id": "collapse-triage-2",
+              "question": "2. SAME DAY / URGENT? Cannot wait 24–48 h – see synopsis.",
+              "type": "dropdown",
+              "options": [
+                {
+                  "label": "Yes",
+                  "guidance": "DISPOSITION: Same-day GP, UTC or A&E. Use when: witnessed collapse but recurrent or in concerning context (e.g. during exertion, with palpitations); possible arrhythmia; diabetic with hypoglycaemic collapse needing review; first seizure (unless 999 criteria); collapse in elderly or with comorbidities needing same-day assessment. Direct booking per local policy. NICE CKS, Local formulary."
+                },
+                {
+                  "label": "No",
+                  "guidance": "No – proceed to next question below."
+                }
+              ]
+            },
+            {
+              "id": "collapse-triage-3",
+              "question": "3. 24–48 H / ROUTINE? Stable but needs assessment.",
+              "type": "dropdown",
+              "options": [
+                {
+                  "label": "Yes",
+                  "guidance": "DISPOSITION: GP or nurse appointment within 24–48 h. Fully recovered, no red flags, but needs ECG or follow-up (e.g. first simple vasovagal in young adult; medication review). Safety-net: reattend or 999 if recurrence or worsening. NICE CKS."
+                },
+                {
+                  "label": "No",
+                  "guidance": "No – proceed to next question below."
+                }
+              ]
+            },
+            {
+              "id": "collapse-triage-4",
+              "question": "4. SELF-CARE + SAFETY-NET appropriate?",
+              "type": "dropdown",
+              "options": [
+                {
+                  "label": "Yes",
+                  "guidance": "DISPOSITION: Self-care. Single witnessed vasovagal (e.g. pain, emotion, prolonged standing), fully recovered, no red flags. Advice: hydration, avoid triggers, sit/lie if premonitory symptoms. When to reattend: recurrence, chest pain, breathlessness, collapse without clear trigger. Provide written or verbal safety-net. Follow up with GP if no improvement or further episodes. NICE CKS, Urgent care."
+                },
+                {
+                  "label": "No",
+                  "guidance": "Reassess using questions above or arrange same-day/urgent review. NICE CKS."
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "triage-dental-emergency",
+          "title": "Triage – dental – emergency",
+          "niceRefs": [
+            "NICE CKS",
+            "Local formulary",
+            "NICE NG51",
+            "Urgent care"
+          ],
+          "evidence": "Management per NICE CKS and Local formulary.",
+          "steps": [
+            {
+              "id": "triage-999",
+              "question": "1. Emergency (999)? Life-threatening or time-critical?",
+              "type": "dropdown",
+              "options": [
+                {
+                  "label": "Yes",
+                  "guidance": "DISPOSITION: Emergency ambulance. Life-threatening or time-critical: collapse, unconscious, severe breathlessness, chest pain (possible MI), stroke, anaphylaxis, severe bleeding, choking, fitting, overdose, severe head injury. Do not delay."
+                },
+                {
+                  "label": "No",
+                  "guidance": "No – proceed to next question below."
+                }
+              ]
+            },
+            {
+              "id": "triage-same-day",
+              "question": "2. Same day / Urgent? Cannot wait 24–48 h?",
+              "type": "dropdown",
+              "options": [
+                {
+                  "label": "Yes",
+                  "guidance": "DISPOSITION: Same-day GP, UTC or A&E depending on clinical need. Cannot wait 24–48 h: worsening symptoms, high fever, severe pain, dehydration, mental health crisis (risk). Direct booking per local policy."
+                },
+                {
+                  "label": "No",
+                  "guidance": "No – proceed to next question below."
+                }
+              ]
+            },
+            {
+              "id": "triage-routine",
+              "question": "3. 24–48 h / Routine? Stable but needs assessment?",
+              "type": "dropdown",
+              "options": [
+                {
+                  "label": "Yes",
+                  "guidance": "DISPOSITION: GP or nurse appointment within 24–48 h. Stable but needs assessment: persistent symptoms, no red flags, or follow-up after recent illness. Safety-net: reattend or 999 if worse."
+                },
+                {
+                  "label": "No",
+                  "guidance": "No – proceed to next question below."
+                }
+              ]
+            },
+            {
+              "id": "triage-self-care",
+              "question": "4. Self-care + safety-net appropriate?",
+              "type": "dropdown",
+              "options": [
+                {
+                  "label": "Yes",
+                  "guidance": "DISPOSITION: Self-care. Advice on symptom management, when to reattend (amber/red flags). Provide written or verbal safety-net. Follow up with GP if no improvement in defined period."
+                },
+                {
+                  "label": "No",
+                  "guidance": "Reassess using questions above or arrange same-day/urgent review."
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "triage-diabetic-hypo-unwell",
+          "title": "Triage – diabetic – hypo / unwell",
+          "niceRefs": [
+            "NICE CKS",
+            "Local formulary",
+            "NICE NG51",
+            "Urgent care"
+          ],
+          "evidence": "Management per NICE CKS and Local formulary.",
+          "steps": [
+            {
+              "id": "triage-999",
+              "question": "1. Emergency (999)? Life-threatening or time-critical?",
+              "type": "dropdown",
+              "options": [
+                {
+                  "label": "Yes",
+                  "guidance": "DISPOSITION: Emergency ambulance. Life-threatening or time-critical: collapse, unconscious, severe breathlessness, chest pain (possible MI), stroke, anaphylaxis, severe bleeding, choking, fitting, overdose, severe head injury. Do not delay."
+                },
+                {
+                  "label": "No",
+                  "guidance": "No – proceed to next question below."
+                }
+              ]
+            },
+            {
+              "id": "triage-same-day",
+              "question": "2. Same day / Urgent? Cannot wait 24–48 h?",
+              "type": "dropdown",
+              "options": [
+                {
+                  "label": "Yes",
+                  "guidance": "DISPOSITION: Same-day GP, UTC or A&E depending on clinical need. Cannot wait 24–48 h: worsening symptoms, high fever, severe pain, dehydration, mental health crisis (risk). Direct booking per local policy."
+                },
+                {
+                  "label": "No",
+                  "guidance": "No – proceed to next question below."
+                }
+              ]
+            },
+            {
+              "id": "triage-routine",
+              "question": "3. 24–48 h / Routine? Stable but needs assessment?",
+              "type": "dropdown",
+              "options": [
+                {
+                  "label": "Yes",
+                  "guidance": "DISPOSITION: GP or nurse appointment within 24–48 h. Stable but needs assessment: persistent symptoms, no red flags, or follow-up after recent illness. Safety-net: reattend or 999 if worse."
+                },
+                {
+                  "label": "No",
+                  "guidance": "No – proceed to next question below."
+                }
+              ]
+            },
+            {
+              "id": "triage-self-care",
+              "question": "4. Self-care + safety-net appropriate?",
+              "type": "dropdown",
+              "options": [
+                {
+                  "label": "Yes",
+                  "guidance": "DISPOSITION: Self-care. Advice on symptom management, when to reattend (amber/red flags). Provide written or verbal safety-net. Follow up with GP if no improvement in defined period."
+                },
+                {
+                  "label": "No",
+                  "guidance": "Reassess using questions above or arrange same-day/urgent review."
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "triage-ear-severe-pain",
+          "title": "Triage – ear – severe pain",
+          "niceRefs": [
+            "NICE CKS",
+            "Local formulary",
+            "NICE NG51",
+            "Urgent care"
+          ],
+          "evidence": "Management per NICE CKS and Local formulary.",
+          "steps": [
+            {
+              "id": "triage-999",
+              "question": "1. Emergency (999)? Life-threatening or time-critical?",
+              "type": "dropdown",
+              "options": [
+                {
+                  "label": "Yes",
+                  "guidance": "DISPOSITION: Emergency ambulance. Life-threatening or time-critical: collapse, unconscious, severe breathlessness, chest pain (possible MI), stroke, anaphylaxis, severe bleeding, choking, fitting, overdose, severe head injury. Do not delay."
+                },
+                {
+                  "label": "No",
+                  "guidance": "No – proceed to next question below."
+                }
+              ]
+            },
+            {
+              "id": "triage-same-day",
+              "question": "2. Same day / Urgent? Cannot wait 24–48 h?",
+              "type": "dropdown",
+              "options": [
+                {
+                  "label": "Yes",
+                  "guidance": "DISPOSITION: Same-day GP, UTC or A&E depending on clinical need. Cannot wait 24–48 h: worsening symptoms, high fever, severe pain, dehydration, mental health crisis (risk). Direct booking per local policy."
+                },
+                {
+                  "label": "No",
+                  "guidance": "No – proceed to next question below."
+                }
+              ]
+            },
+            {
+              "id": "triage-routine",
+              "question": "3. 24–48 h / Routine? Stable but needs assessment?",
+              "type": "dropdown",
+              "options": [
+                {
+                  "label": "Yes",
+                  "guidance": "DISPOSITION: GP or nurse appointment within 24–48 h. Stable but needs assessment: persistent symptoms, no red flags, or follow-up after recent illness. Safety-net: reattend or 999 if worse."
+                },
+                {
+                  "label": "No",
+                  "guidance": "No – proceed to next question below."
+                }
+              ]
+            },
+            {
+              "id": "triage-self-care",
+              "question": "4. Self-care + safety-net appropriate?",
+              "type": "dropdown",
+              "options": [
+                {
+                  "label": "Yes",
+                  "guidance": "DISPOSITION: Self-care. Advice on symptom management, when to reattend (amber/red flags). Provide written or verbal safety-net. Follow up with GP if no improvement in defined period."
+                },
+                {
+                  "label": "No",
+                  "guidance": "Reassess using questions above or arrange same-day/urgent review."
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "triage-eye-red-painful",
+          "title": "Triage – eye – red / painful",
+          "niceRefs": [
+            "NICE CKS",
+            "Local formulary",
+            "NICE NG51",
+            "Urgent care"
+          ],
+          "evidence": "Management per NICE CKS and Local formulary.",
+          "steps": [
+            {
+              "id": "eye-mgmt",
+              "question": "Ophthalmology Management",
+              "type": "dropdown",
+              "options": [
+                {
+                  "value": "dry-eyes",
+                  "label": "Dry Eyes / Blepharitis",
+                  "guidance": "MANAGEMENT PLAN:\nLid hygiene (warm compresses, massage). Preservative-free artificial tears (e.g. Hypromellose, Carmellose). Review work environment / screen use. NICE CKS."
+                },
+                {
+                  "value": "conjunctivitis",
+                  "label": "Conjunctivitis",
+                  "guidance": "MANAGEMENT PLAN:\nViral/Allergic: cool compresses, lubricants. Bacterial: Topical antibiotic (Chloramphenicol 0.5%) if severe/persistent. Safety-net for 'red eye' warning signs. NICE CKS."
+                },
+                {
+                  "value": "glaucoma",
+                  "label": "Glaucoma (Chronic)",
+                  "guidance": "MANAGEMENT PLAN:\nProstaglandin analogues (e.g. Latanoprost) first-line. Monitor IOP and visual fields annually. Urgent referral if Acute Angle Closure suspected. NICE NG81."
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "triage-fitting-seizure",
+          "title": "Triage – fitting / seizure",
+          "niceRefs": [
+            "NICE CKS",
+            "Local formulary",
+            "NICE NG51",
+            "Urgent care"
+          ],
+          "evidence": "Management per NICE CKS and Local formulary.",
+          "steps": [
+            {
+              "id": "epilepsy-diagnosis",
+              "question": "1. Diagnosis & Triage",
+              "type": "dropdown",
+              "options": [
+                {
+                  "label": "First Seizure",
+                  "guidance": "MANAGEMENT PLAN (Consultant Plan):\n1. Urgency: Refer to 'First Seizure Clinic' (within 2 weeks). NICE NG217.\n2. Investigation: EEG + MRI Brain (Standard protocol including coronal T2/FLAIR sessions). \n3. Safety: High-risk activities (driving, swimming, working at heights) must stop until specialist review."
+                }
+              ]
+            },
+            {
+              "id": "epilepsy-meds",
+              "question": "2. Medication Selection",
+              "type": "dropdown",
+              "options": [
+                {
+                  "label": "Focal Seizures",
+                  "guidance": "MANAGEMENT PLAN:\n1. 1st-line: Lamotrigine or Levetiracetam (Keppra). NICE NG217."
+                },
+                {
+                  "label": "Generalized Seizures",
+                  "guidance": "MANAGEMENT PLAN:\n1. 1st-line: Sodium Valproate (Epilim) - **Strict warning: Not for use in women/girls of childbearing potential unless Pregnancy Prevention Programme in place.**\n2. Alternative: Levetiracetam or Lamotrigine."
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "triage-head-injury",
+          "title": "Triage – head injury",
+          "niceRefs": [
+            "NICE CKS",
+            "Local formulary",
+            "NICE NG51",
+            "Urgent care"
+          ],
+          "evidence": "NICE CG176 Head injury, NICE CKS, Urgent care.",
+          "steps": [
+            {
+              "id": "head-triage-1",
+              "question": "1. GCS < 15, or any dangerous mechanism / high-energy injury?",
+              "type": "dropdown",
+              "options": [
+                {
+                  "label": "Yes",
+                  "guidance": "DISPOSITION: Emergency (999). Do not delay. NICE CG176."
+                },
+                {
+                  "label": "No",
+                  "guidance": "No – proceed to next question below."
+                }
+              ]
+            },
+            {
+              "id": "head-triage-2",
+              "question": "2. Current or recent seizure, or suspected open/depressed skull fracture, or basal skull fracture signs?",
+              "type": "dropdown",
+              "options": [
+                {
+                  "label": "Yes",
+                  "guidance": "DISPOSITION: Emergency (999). NICE CG176."
+                },
+                {
+                  "label": "No",
+                  "guidance": "No – proceed to next question below."
+                }
+              ]
+            },
+            {
+              "id": "head-triage-3",
+              "question": "3. Age ≥ 65, or coagulopathy, or vomiting ≥ 2 episodes, or amnesia, or loss of consciousness?",
+              "type": "dropdown",
+              "options": [
+                {
+                  "label": "Yes",
+                  "guidance": "DISPOSITION: Same-day / urgent imaging (CT head) per NICE CG176. A&E or UTC with CT. Safety-net: 999 if worsening."
+                },
+                {
+                  "label": "No",
+                  "guidance": "No – proceed to next question below."
+                }
+              ]
+            },
+            {
+              "id": "head-triage-4",
+              "question": "4. Minor head injury with no high-risk features?",
+              "type": "dropdown",
+              "options": [
+                {
+                  "label": "Yes",
+                  "guidance": "DISPOSITION: Self-care + safety-net. Advice on rest, observation, when to reattend (vomiting, drowsiness, worsening headache, visual/speech/balance problems). Provide written safety-net. NICE CG176, CKS."
+                },
+                {
+                  "label": "No",
+                  "guidance": "Reassess or arrange same-day review. NICE CG176."
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "triage-headache-sudden-severe",
+          "title": "Triage – headache – sudden severe",
+          "niceRefs": [
+            "NICE CKS",
+            "Local formulary",
+            "NG150",
+            "CKS Headache",
+            "NICE NG51",
+            "Urgent care"
+          ],
+          "evidence": "Management per NICE CKS and Local formulary.",
+          "steps": [
+            {
+              "id": "migraine-acute",
+              "question": "1. Acute Treatment",
+              "type": "dropdown",
+              "options": [
+                {
+                  "label": "First-line: Stratified Care",
+                  "guidance": "MANAGEMENT PLAN (BASH Guidelines):\n1. Combined Approach: Soluble Aspirin (900mg) or Naproxen (500mg) + Triptan (e.g. Sumatriptan 50-100mg) + Prokinetic Anti-emetic (Metoclopramide 10mg).\n2. Note: Treat early at onset of headache, not aura. Avoid opioids (risk of Medication Overuse Headache). NICE NG150."
+                },
+                {
+                  "label": "Triptan Failure",
+                  "guidance": "MANAGEMENT PLAN:\n1. Switch: Trial different triptan or different formulation (e.g. Sumatriptan Nasal Spray or SC).\n2. MOH: Review for Medication Overuse Headache if using triptans ≥ 10 days/month. NICE NG150."
+                }
+              ]
+            },
+            {
+              "id": "migraine-prophylaxis",
+              "question": "2. Prophylaxis (Preventative)",
+              "type": "dropdown",
+              "options": [
+                {
+                  "label": "Initial Choice (Indicated if ≥2 attacks/month)",
+                  "guidance": "MANAGEMENT PLAN (BASH/RCP):\n1. First-line choices: Propranolol (80-160mg), Amitriptyline (10-50mg nocte), or Topiramate (titrate to 50mg-100mg - warn about teratogenicity/birth control).\n2. Second-line: Candesartan (8-16mg) - widely used by neurologists off-label but supported by evidence. NICE NG150."
+                },
+                {
+                  "label": "Specialist Interventions (Consultant Care)",
+                  "guidance": "MANAGEMENT PLAN:\n1. CGRP Monoclonals (e.g. Erenumab, Fremanezumab): Indicated if ≥4 migraine days/month and failure of 3 oral preventatives. NICE TA.\n2. Botox: Protocolized 31-site injection (PREEMPT) if chronic migraine (≥15 headache days/month, 8 being migraine). NICE NG150."
+                }
+              ]
+            },
+            {
+              "id": "tension",
+              "question": "3. Other Headaches",
+              "type": "dropdown",
+              "options": [
+                {
+                  "value": "tension",
+                  "label": "Tension-type",
+                  "guidance": "MANAGEMENT PLAN:\nParacetamol or NSAID. Address stress, posture. Avoid frequent analgesia (medication-overuse). NICE NG150."
+                },
+                {
+                  "value": "red-flags",
+                  "label": "Red flags / when to refer",
+                  "guidance": "MANAGEMENT PLAN:\n1. Emergency: Thunderclap (SAH), new sudden severe, fever + neck stiffness (meningitis), papilloedema.\n2. Refer: New headache ≥50y, progressive, positional, or focal neurology. NICE NG150, NG51."
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "triage-limb-injury",
+          "title": "Triage – limb injury",
+          "niceRefs": [
+            "NICE CKS",
+            "Local formulary",
+            "NICE NG51",
+            "Urgent care"
+          ],
+          "evidence": "Management per NICE CKS and Local formulary.",
+          "steps": [
+            {
+              "id": "triage-999",
+              "question": "1. Emergency (999)? Life-threatening or time-critical?",
+              "type": "dropdown",
+              "options": [
+                {
+                  "label": "Yes",
+                  "guidance": "DISPOSITION: Emergency ambulance. Life-threatening or time-critical: collapse, unconscious, severe breathlessness, chest pain (possible MI), stroke, anaphylaxis, severe bleeding, choking, fitting, overdose, severe head injury. Do not delay."
+                },
+                {
+                  "label": "No",
+                  "guidance": "No – proceed to next question below."
+                }
+              ]
+            },
+            {
+              "id": "triage-same-day",
+              "question": "2. Same day / Urgent? Cannot wait 24–48 h?",
+              "type": "dropdown",
+              "options": [
+                {
+                  "label": "Yes",
+                  "guidance": "DISPOSITION: Same-day GP, UTC or A&E depending on clinical need. Cannot wait 24–48 h: worsening symptoms, high fever, severe pain, dehydration, mental health crisis (risk). Direct booking per local policy."
+                },
+                {
+                  "label": "No",
+                  "guidance": "No – proceed to next question below."
+                }
+              ]
+            },
+            {
+              "id": "triage-routine",
+              "question": "3. 24–48 h / Routine? Stable but needs assessment?",
+              "type": "dropdown",
+              "options": [
+                {
+                  "label": "Yes",
+                  "guidance": "DISPOSITION: GP or nurse appointment within 24–48 h. Stable but needs assessment: persistent symptoms, no red flags, or follow-up after recent illness. Safety-net: reattend or 999 if worse."
+                },
+                {
+                  "label": "No",
+                  "guidance": "No – proceed to next question below."
+                }
+              ]
+            },
+            {
+              "id": "triage-self-care",
+              "question": "4. Self-care + safety-net appropriate?",
+              "type": "dropdown",
+              "options": [
+                {
+                  "label": "Yes",
+                  "guidance": "DISPOSITION: Self-care. Advice on symptom management, when to reattend (amber/red flags). Provide written or verbal safety-net. Follow up with GP if no improvement in defined period."
+                },
+                {
+                  "label": "No",
+                  "guidance": "Reassess using questions above or arrange same-day/urgent review."
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "triage-mental-health-crisis",
+          "title": "Triage – mental health – crisis",
+          "niceRefs": [
+            "NICE CKS",
+            "Local formulary",
+            "CKS Mental health",
+            "NG10",
+            "NICE NG51",
+            "Urgent care"
+          ],
+          "evidence": "NICE CKS Mental health, Local formulary, NICE NG10 (self-harm), NICE NG51 (sepsis if physical emergency), Urgent care.",
+          "steps": [
+            {
+              "id": "mhc-triage-1",
+              "question": "1. EMERGENCY (999)? Immediate risk to life or others – see synopsis.",
+              "type": "dropdown",
+              "options": [
+                {
+                  "label": "Yes",
+                  "guidance": "DISPOSITION: Emergency (999). Call 999 for mental health crisis when: immediate risk to life (suicide intent with plan/means, or serious attempt); significant self-harm (e.g. ligature, major bleed); overdose or poisoning; risk to others (homicidal intent, severe agitation with violence); psychosis with danger to self/others; catatonia; severe self-neglect with physical risk; child/vulnerable adult safeguarding emergency. Do not leave at risk; do not delay. NICE NG10, CKS Mental health. Crisis: 111 option 2, Samaritans 116 123."
+                },
+                {
+                  "label": "No",
+                  "guidance": "No – proceed to next question below."
+                }
+              ]
+            },
+            {
+              "id": "mhc-triage-2",
+              "question": "2. SAME DAY / URGENT? Cannot wait 24–48 h – crisis assessment needed.",
+              "type": "dropdown",
+              "options": [
+                {
+                  "label": "Yes",
+                  "guidance": "DISPOSITION: Same-day mental health assessment. Refer to crisis team (or equivalent per local policy); or same-day GP/UTC if crisis team not available and risk manageable short-term. Use when: suicidal ideation without immediate plan/means but needs risk assessment; self-harm needing assessment; deterioration in psychosis or mood; safeguarding concern; need for crisis medication review or admission decision. Do not leave without safety plan and crisis contact (111, crisis number). NICE NG10, CKS Mental health, Urgent care."
+                },
+                {
+                  "label": "No",
+                  "guidance": "No – proceed to next question below."
+                }
+              ]
+            },
+            {
+              "id": "mhc-triage-3",
+              "question": "3. 24–48 H / ROUTINE? Stable but needs follow-up.",
+              "type": "dropdown",
+              "options": [
+                {
+                  "label": "Yes",
+                  "guidance": "DISPOSITION: GP or mental health follow-up within 24–48 h. Use when: recent crisis now stabilised with safety plan; medication review; non-urgent referral to CMHT or IAPT. Safety-net: advise crisis numbers (111 option 2, Samaritans 116 123); reattend or 999 if risk escalates. NICE CKS Mental health."
+                },
+                {
+                  "label": "No",
+                  "guidance": "No – proceed to next question below."
+                }
+              ]
+            },
+            {
+              "id": "mhc-triage-4",
+              "question": "4. SELF-CARE + SAFETY-NET appropriate?",
+              "type": "dropdown",
+              "options": [
+                {
+                  "label": "Yes",
+                  "guidance": "DISPOSITION: Only if not in crisis – low-risk presentation with support in place. Advice: crisis numbers (111 option 2, Samaritans 116 123); when to reattend (worsening mood, suicidal thoughts, self-harm). Provide written safety-net. Follow up with GP if no improvement. For true crisis, same-day assessment is usually required. NICE CKS Mental health."
+                },
+                {
+                  "label": "No",
+                  "guidance": "Reassess using questions above. If in crisis, arrange same-day/urgent mental health assessment. NICE NG10, CKS Mental health."
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "triage-neck-pain-acute",
+          "title": "Triage – neck pain – acute",
+          "niceRefs": [
+            "NICE CKS",
+            "Local formulary",
+            "NICE NG51",
+            "Urgent care"
+          ],
+          "evidence": "Management per NICE CKS and Local formulary.",
+          "steps": [
+            {
+              "id": "spine-mgmt",
+              "question": "Severity and Red Flags",
+              "type": "dropdown",
+              "options": [
+                {
+                  "value": "red-flags",
+                  "label": "Red Flags (Cauda Equina / Malignancy)",
+                  "guidance": "MANAGEMENT PLAN:\nSaddle anaesthesia, bladder/bowel dysfunction, bilateral sciatica, night pain, weight loss, history of cancer. Urgent same-day referral/A&E. NICE NG59."
+                },
+                {
+                  "value": "conservative",
+                  "label": "Stable / Spondylosis",
+                  "guidance": "MANAGEMENT PLAN:\nKeep active. NSAIDs (regular) for flare. Physiotherapy referral. Avoid imaging in non-specific low back pain. Reassure if no neurology. NICE NG59."
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "triage-overdose-poisoning",
+          "title": "Triage – overdose / poisoning",
+          "niceRefs": [
+            "NICE CKS",
+            "Local formulary",
+            "NICE NG51",
+            "Urgent care"
+          ],
+          "evidence": "Management per NICE CKS and Local formulary.",
+          "steps": [
+            {
+              "id": "triage-999",
+              "question": "1. Emergency (999)? Life-threatening or time-critical?",
+              "type": "dropdown",
+              "options": [
+                {
+                  "label": "Yes",
+                  "guidance": "DISPOSITION: Emergency ambulance. Life-threatening or time-critical: collapse, unconscious, severe breathlessness, chest pain (possible MI), stroke, anaphylaxis, severe bleeding, choking, fitting, overdose, severe head injury. Do not delay."
+                },
+                {
+                  "label": "No",
+                  "guidance": "No – proceed to next question below."
+                }
+              ]
+            },
+            {
+              "id": "triage-same-day",
+              "question": "2. Same day / Urgent? Cannot wait 24–48 h?",
+              "type": "dropdown",
+              "options": [
+                {
+                  "label": "Yes",
+                  "guidance": "DISPOSITION: Same-day GP, UTC or A&E depending on clinical need. Cannot wait 24–48 h: worsening symptoms, high fever, severe pain, dehydration, mental health crisis (risk). Direct booking per local policy."
+                },
+                {
+                  "label": "No",
+                  "guidance": "No – proceed to next question below."
+                }
+              ]
+            },
+            {
+              "id": "triage-routine",
+              "question": "3. 24–48 h / Routine? Stable but needs assessment?",
+              "type": "dropdown",
+              "options": [
+                {
+                  "label": "Yes",
+                  "guidance": "DISPOSITION: GP or nurse appointment within 24–48 h. Stable but needs assessment: persistent symptoms, no red flags, or follow-up after recent illness. Safety-net: reattend or 999 if worse."
+                },
+                {
+                  "label": "No",
+                  "guidance": "No – proceed to next question below."
+                }
+              ]
+            },
+            {
+              "id": "triage-self-care",
+              "question": "4. Self-care + safety-net appropriate?",
+              "type": "dropdown",
+              "options": [
+                {
+                  "label": "Yes",
+                  "guidance": "DISPOSITION: Self-care. Advice on symptom management, when to reattend (amber/red flags). Provide written or verbal safety-net. Follow up with GP if no improvement in defined period."
+                },
+                {
+                  "label": "No",
+                  "guidance": "Reassess using questions above or arrange same-day/urgent review."
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "triage-pregnancy-bleeding",
+          "title": "Triage – pregnancy – bleeding",
+          "niceRefs": [
+            "NICE CKS",
+            "Local formulary",
+            "NG201",
+            "CKS Pregnancy",
+            "NICE NG51",
+            "Urgent care"
+          ],
+          "evidence": "Management per NICE CKS and Local formulary.",
+          "steps": [
+            {
+              "id": "preg-care",
+              "question": "1. Antenatal / Early Pregnancy",
+              "type": "dropdown",
+              "options": [
+                {
+                  "label": "Early Pregnancy Complications (<13w)",
+                  "guidance": "MANAGEMENT PLAN (RCOG Greentop):\n1. Presentation: Pain and/or bleeding. Referral: EPAU (Early Pregnancy Assessment Unit).\n2. Ectopic Risk: If pain/bleeding + tenderness/adnexal mass → Immediate hospital referral.\n3. Recurrent Miscarriage (≥3 consecutive): Refer for specialist workup (Antiphospholipid, genetics). RCOG GTG 17."
+                },
+                {
+                  "label": "Routine Antenatal Care",
+                  "guidance": "MANAGEMENT PLAN:\n1. Supplements: Folic Acid 400mcg (5mg if high risk/BMI>30) + Vit D 10mcg.\n2. Screening: Book by 10w. Offer 12w (dating/NT) and 20w (anomaly) scans.\n3. Aspirin: 75-150mg OD from 12w if ≥1 high risk (HTN, CKD, SLE) or ≥2 moderate risks (BMI, Multi-preg, Age>40). NICE NG201."
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "triage-rash-child-non-blanching",
+          "title": "Triage – rash – child – non-blanching",
+          "niceRefs": [
+            "NICE CKS",
+            "Local formulary",
+            "NG51",
+            "CKS Meningitis",
+            "CKS Skin rashes",
+            "NICE NG51",
+            "Urgent care"
+          ],
+          "evidence": "Management per NICE CKS and Local formulary.",
+          "steps": [
+            {
+              "id": "rash-child",
+              "question": "Non-blanching rash in child",
+              "type": "dropdown",
+              "options": [
+                {
+                  "value": "fever",
+                  "label": "Fever + non-blanching rash",
+                  "guidance": "MANAGEMENT PLAN:\nTreat as meningococcal disease until proved otherwise. Immediate parenteral antibiotic (ceftriaxone or benzylpenicillin). Emergency admission. NICE NG51."
+                },
+                {
+                  "value": "no-fever",
+                  "label": "No fever, well child",
+                  "guidance": "MANAGEMENT PLAN:\nConsider ITP, HSP. FBC, clotting. Refer paediatrics if unwell or platelets <20. NICE CKS."
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "triage-self-harm",
+          "title": "Triage – self-harm",
+          "niceRefs": [
+            "NICE CKS",
+            "Local formulary",
+            "NICE NG51",
+            "Urgent care"
+          ],
+          "evidence": "Management per NICE CKS and Local formulary.",
+          "steps": [
+            {
+              "id": "self-harm-mgt",
+              "question": "1. Acute Risk & Safety Planning",
+              "type": "dropdown",
+              "options": [
+                {
+                  "label": "Risk Assessment (RCPsych)",
+                  "guidance": "MANAGEMENT PLAN:\n1. Immediate: Assess method, intent, and access to means. \n2. Safety Planning: Identify warning signs, coping strategies (e.g., grounding), and 'Safe People'. Provide 24/7 Crisis numbers (988 / 111 / Local Crisis Team).\n3. Referral: Emergency department if lethal act or active intent. Community Mental Health Team (CMHT) for persistent self-harm. NICE NG225."
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "triage-severe-bleeding",
+          "title": "Triage – severe bleeding",
+          "niceRefs": [
+            "NICE CKS",
+            "Local formulary",
+            "NICE NG51",
+            "Urgent care"
+          ],
+          "evidence": "Management per NICE CKS and Local formulary.",
+          "steps": [
+            {
+              "id": "triage-999",
+              "question": "1. Emergency (999)? Life-threatening or time-critical?",
+              "type": "dropdown",
+              "options": [
+                {
+                  "label": "Yes",
+                  "guidance": "DISPOSITION: Emergency ambulance. Life-threatening or time-critical: collapse, unconscious, severe breathlessness, chest pain (possible MI), stroke, anaphylaxis, severe bleeding, choking, fitting, overdose, severe head injury. Do not delay."
+                },
+                {
+                  "label": "No",
+                  "guidance": "No – proceed to next question below."
+                }
+              ]
+            },
+            {
+              "id": "triage-same-day",
+              "question": "2. Same day / Urgent? Cannot wait 24–48 h?",
+              "type": "dropdown",
+              "options": [
+                {
+                  "label": "Yes",
+                  "guidance": "DISPOSITION: Same-day GP, UTC or A&E depending on clinical need. Cannot wait 24–48 h: worsening symptoms, high fever, severe pain, dehydration, mental health crisis (risk). Direct booking per local policy."
+                },
+                {
+                  "label": "No",
+                  "guidance": "No – proceed to next question below."
+                }
+              ]
+            },
+            {
+              "id": "triage-routine",
+              "question": "3. 24–48 h / Routine? Stable but needs assessment?",
+              "type": "dropdown",
+              "options": [
+                {
+                  "label": "Yes",
+                  "guidance": "DISPOSITION: GP or nurse appointment within 24–48 h. Stable but needs assessment: persistent symptoms, no red flags, or follow-up after recent illness. Safety-net: reattend or 999 if worse."
+                },
+                {
+                  "label": "No",
+                  "guidance": "No – proceed to next question below."
+                }
+              ]
+            },
+            {
+              "id": "triage-self-care",
+              "question": "4. Self-care + safety-net appropriate?",
+              "type": "dropdown",
+              "options": [
+                {
+                  "label": "Yes",
+                  "guidance": "DISPOSITION: Self-care. Advice on symptom management, when to reattend (amber/red flags). Provide written or verbal safety-net. Follow up with GP if no improvement in defined period."
+                },
+                {
+                  "label": "No",
+                  "guidance": "Reassess using questions above or arrange same-day/urgent review."
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "triage-stroke-suspected",
+          "title": "Triage – stroke – suspected",
+          "niceRefs": [
+            "NICE CKS",
+            "Local formulary",
+            "NG128",
+            "CKS Stroke and TIA",
+            "NICE NG51",
+            "Urgent care"
+          ],
+          "evidence": "Management per NICE CKS and Local formulary.",
+          "steps": [
+            {
+              "id": "tia-triage",
+              "question": "1. Immediate Action & Triage",
+              "type": "dropdown",
+              "options": [
+                {
+                  "label": "Suspected TIA (<24h resolution)",
+                  "guidance": "MANAGEMENT PLAN (Consultant Plan):\n1. Antiplatelet: Aspirin 300mg stat (unless bleeding suspected).\n2. Triage: Urgent referral to TIA clinic (assessment within 24h).\n3. Driving: Mandatory 1-month ban from driving (inform DVLA). RCP/NICE."
+                },
+                {
+                  "label": "Acute Stroke (Persistent)",
+                  "guidance": "MANAGEMENT PLAN:\n1. Emergency: 999 for Hyperacute Stroke Unit (HASU).\n2. Action: Nil-by-mouth (swallow screen). No Aspirin until CT brain excludes haemorrhage."
+                }
+              ]
+            },
+            {
+              "id": "tia-secondary",
+              "question": "2. Secondary Prevention",
+              "type": "dropdown",
+              "options": [
+                {
+                  "label": "Antiplatelet & Statins",
+                  "guidance": "MANAGEMENT PLAN:\n1. 1st-line: Clopidogrel 75mg OD gold standard.\n2. Statin: Atorvastatin 80mg (Target LDL < 1.8).\n3. AF: Anticoagulate (DOAC) if AF confirmed. RCP Stroke Guidelines."
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "triage-swallowed-object",
+          "title": "Triage – swallowed object",
+          "niceRefs": [
+            "NICE CKS",
+            "Local formulary",
+            "NICE NG51",
+            "Urgent care"
+          ],
+          "evidence": "Management per NICE CKS and Local formulary.",
+          "steps": [
+            {
+              "id": "triage-999",
+              "question": "1. Emergency (999)? Life-threatening or time-critical?",
+              "type": "dropdown",
+              "options": [
+                {
+                  "label": "Yes",
+                  "guidance": "DISPOSITION: Emergency ambulance. Life-threatening or time-critical: collapse, unconscious, severe breathlessness, chest pain (possible MI), stroke, anaphylaxis, severe bleeding, choking, fitting, overdose, severe head injury. Do not delay."
+                },
+                {
+                  "label": "No",
+                  "guidance": "No – proceed to next question below."
+                }
+              ]
+            },
+            {
+              "id": "triage-same-day",
+              "question": "2. Same day / Urgent? Cannot wait 24–48 h?",
+              "type": "dropdown",
+              "options": [
+                {
+                  "label": "Yes",
+                  "guidance": "DISPOSITION: Same-day GP, UTC or A&E depending on clinical need. Cannot wait 24–48 h: worsening symptoms, high fever, severe pain, dehydration, mental health crisis (risk). Direct booking per local policy."
+                },
+                {
+                  "label": "No",
+                  "guidance": "No – proceed to next question below."
+                }
+              ]
+            },
+            {
+              "id": "triage-routine",
+              "question": "3. 24–48 h / Routine? Stable but needs assessment?",
+              "type": "dropdown",
+              "options": [
+                {
+                  "label": "Yes",
+                  "guidance": "DISPOSITION: GP or nurse appointment within 24–48 h. Stable but needs assessment: persistent symptoms, no red flags, or follow-up after recent illness. Safety-net: reattend or 999 if worse."
+                },
+                {
+                  "label": "No",
+                  "guidance": "No – proceed to next question below."
+                }
+              ]
+            },
+            {
+              "id": "triage-self-care",
+              "question": "4. Self-care + safety-net appropriate?",
+              "type": "dropdown",
+              "options": [
+                {
+                  "label": "Yes",
+                  "guidance": "DISPOSITION: Self-care. Advice on symptom management, when to reattend (amber/red flags). Provide written or verbal safety-net. Follow up with GP if no improvement in defined period."
+                },
+                {
+                  "label": "No",
+                  "guidance": "Reassess using questions above or arrange same-day/urgent review."
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "triage-testicular-pain",
+          "title": "Triage – testicular pain",
+          "niceRefs": [
+            "NICE CKS",
+            "Local formulary",
+            "NICE NG51",
+            "Urgent care"
+          ],
+          "evidence": "Management per NICE CKS and Local formulary.",
+          "steps": [
+            {
+              "id": "scrotal-mgt",
+              "question": "Scrotal swelling / pain",
+              "type": "dropdown",
+              "options": [
+                {
+                  "label": "Management & referral",
+                  "guidance": "MANAGEMENT PLAN:\n1. Exclude torsion (urgent surgical referral). USS if mass or uncertainty. Hydrocele: refer if symptomatic or diagnostic uncertainty. Varicocele: refer if symptomatic or size concern.\n2. 2WW: testicular mass. NICE NG12, CKS."
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "triage-vaginal-bleeding-heavy",
+          "title": "Triage – vaginal bleeding – heavy",
+          "niceRefs": [
+            "NICE CKS",
+            "Local formulary",
+            "NICE NG51",
+            "Urgent care"
+          ],
+          "evidence": "Management per NICE CKS and Local formulary.",
+          "steps": [
+            {
+              "id": "triage-999",
+              "question": "1. Emergency (999)? Life-threatening or time-critical?",
+              "type": "dropdown",
+              "options": [
+                {
+                  "label": "Yes",
+                  "guidance": "DISPOSITION: Emergency ambulance. Life-threatening or time-critical: collapse, unconscious, severe breathlessness, chest pain (possible MI), stroke, anaphylaxis, severe bleeding, choking, fitting, overdose, severe head injury. Do not delay."
+                },
+                {
+                  "label": "No",
+                  "guidance": "No – proceed to next question below."
+                }
+              ]
+            },
+            {
+              "id": "triage-same-day",
+              "question": "2. Same day / Urgent? Cannot wait 24–48 h?",
+              "type": "dropdown",
+              "options": [
+                {
+                  "label": "Yes",
+                  "guidance": "DISPOSITION: Same-day GP, UTC or A&E depending on clinical need. Cannot wait 24–48 h: worsening symptoms, high fever, severe pain, dehydration, mental health crisis (risk). Direct booking per local policy."
+                },
+                {
+                  "label": "No",
+                  "guidance": "No – proceed to next question below."
+                }
+              ]
+            },
+            {
+              "id": "triage-routine",
+              "question": "3. 24–48 h / Routine? Stable but needs assessment?",
+              "type": "dropdown",
+              "options": [
+                {
+                  "label": "Yes",
+                  "guidance": "DISPOSITION: GP or nurse appointment within 24–48 h. Stable but needs assessment: persistent symptoms, no red flags, or follow-up after recent illness. Safety-net: reattend or 999 if worse."
+                },
+                {
+                  "label": "No",
+                  "guidance": "No – proceed to next question below."
+                }
+              ]
+            },
+            {
+              "id": "triage-self-care",
+              "question": "4. Self-care + safety-net appropriate?",
+              "type": "dropdown",
+              "options": [
+                {
+                  "label": "Yes",
+                  "guidance": "DISPOSITION: Self-care. Advice on symptom management, when to reattend (amber/red flags). Provide written or verbal safety-net. Follow up with GP if no improvement in defined period."
+                },
+                {
+                  "label": "No",
+                  "guidance": "Reassess using questions above or arrange same-day/urgent review."
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "triage-vomiting-persistent",
+          "title": "Triage – vomiting – persistent",
+          "niceRefs": [
+            "NICE CKS",
+            "Local formulary",
+            "NICE NG51",
+            "Urgent care"
+          ],
+          "evidence": "Management per NICE CKS and Local formulary.",
+          "steps": [
+            {
+              "id": "nausea-mgt",
+              "question": "Nausea / vomiting",
+              "type": "dropdown",
+              "options": [
+                {
+                  "label": "Symptomatic relief",
+                  "guidance": "MANAGEMENT PLAN:\n1. Identify cause (GI, drugs, vestibular, metabolic, CNS). Cyclizine 50 mg tds or prochlorperazine 5 mg tds; metoclopramide 10 mg tds (avoid if young or parkinsonism).\n2. Red flags: Headache, abdominal pain, dehydration – assess and refer as needed. NICE CKS."
+                },
+                {
+                  "label": "When to refer / red flags",
+                  "guidance": "MANAGEMENT PLAN:\n1. Admit: Severe dehydration, suspected bowel obstruction, head injury, raised ICP. 2WW: Unexplained persistent nausea/vomiting with weight loss.\n2. Pregnancy: Exclude hyperemesis; treat and refer if severe. NICE NG12, CKS."
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "triage-wound-severe",
+          "title": "Triage – wound – severe",
+          "niceRefs": [
+            "NICE CKS",
+            "Local formulary",
+            "NICE NG51",
+            "Urgent care"
+          ],
+          "evidence": "NICE CKS Wound management, Local formulary, NICE NG51 (sepsis if suspected), Urgent care.",
+          "steps": [
+            {
+              "id": "wound-triage-1",
+              "question": "1. Life-threatening haemorrhage or shock?",
+              "type": "dropdown",
+              "options": [
+                {
+                  "label": "Yes",
+                  "guidance": "DISPOSITION: Emergency (999). Apply direct pressure; manage ABC. Do not delay. NICE CKS, Urgent care."
+                },
+                {
+                  "label": "No",
+                  "guidance": "No – proceed to next question below."
+                }
+              ]
+            },
+            {
+              "id": "wound-triage-2",
+              "question": "2. Uncontrolled bleeding, arterial spurting, or major vessel injury?",
+              "type": "dropdown",
+              "options": [
+                {
+                  "label": "Yes",
+                  "guidance": "DISPOSITION: Same-day urgent / 999 depending on control. Direct pressure; consider tourniquet if limb and life-threatening. Urgent care / A&E. NICE CKS."
+                },
+                {
+                  "label": "No",
+                  "guidance": "No – proceed to next question below."
+                }
+              ]
+            },
+            {
+              "id": "wound-triage-3",
+              "question": "3. Human or animal bite?",
+              "type": "dropdown",
+              "options": [
+                {
+                  "label": "Yes",
+                  "guidance": "DISPOSITION: Same-day / urgent assessment. Wound swab; consider prophylaxis (co-amoxiclav or doxycycline + metronidazole). Rabies risk if abroad. NICE CKS, Local formulary."
+                },
+                {
+                  "label": "No",
+                  "guidance": "No – proceed to next question below."
+                }
+              ]
+            },
+            {
+              "id": "wound-triage-4",
+              "question": "4. High-risk wound (deep, tendon/nerve/vessel/joint concern, face/hand, infected, immunosuppressed, or contaminated)?",
+              "type": "dropdown",
+              "options": [
+                {
+                  "label": "Yes",
+                  "guidance": "DISPOSITION: Same-day or 24–48 h GP/UTC. Assess for infection (NG51 if sepsis suspected); consider imaging or referral. NICE CKS, NICE NG51, Local formulary."
+                },
+                {
+                  "label": "No",
+                  "guidance": "No – proceed to next question below."
+                }
+              ]
+            },
+            {
+              "id": "wound-triage-5",
+              "question": "5. Clean, minor wound suitable for self-care?",
+              "type": "dropdown",
+              "options": [
+                {
+                  "label": "Yes",
+                  "guidance": "DISPOSITION: Self-care. Advice on wound care, tetanus status, when to reattend (spreading redness, fever, pus, worsening pain). Provide written or verbal safety-net. Follow up with GP if no improvement in defined period. NICE CKS, Local formulary."
+                },
+                {
+                  "label": "No",
+                  "guidance": "Reassess using questions above or arrange same-day/24–48 h review. NICE CKS, Urgent care."
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
       "id": "ophthalmology",
       "name": "ophthalmology",
       "tools": [
@@ -45161,6 +47576,29 @@
                   "value": "severe",
                   "label": "Severe or refractory",
                   "guidance": "MANAGEMENT PLAN:\nRefer to Ophthalmology. Consider punctal plugs or ciclosporin drops. Exclude Sjogren's syndrome (check ANA, Ro/La)."
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "chalazion",
+          "title": "Chalazion",
+          "niceRefs": [
+            "NICE CKS",
+            "Local formulary",
+            "CKS Blepharitis and chalazion"
+          ],
+          "evidence": "Management per NICE CKS and Local formulary.",
+          "steps": [
+            {
+              "id": "chalazion-mgt",
+              "question": "Chalazion",
+              "type": "dropdown",
+              "options": [
+                {
+                  "label": "Management",
+                  "guidance": "MANAGEMENT PLAN:\n1. Warm compress; lid massage. Most resolve in weeks. Refer if large, persistent, or diagnostic uncertainty (exclude sebaceous gland carcinoma).\n2. CKS Blepharitis and chalazion."
                 }
               ]
             }
@@ -45381,6 +47819,52 @@
                   "value": "refer",
                   "label": "When to refer / red eye warning",
                   "guidance": "MANAGEMENT PLAN:\n1. Same-day: Pain, photophobia, reduced vision, contact lens wear, trauma, chemical injury.\n2. Urgent: Viral keratitis (dendritic), scleritis, acute glaucoma. Avoid steroids until cause known. NICE CKS."
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "stye-hordeolum",
+          "title": "Stye – hordeolum",
+          "niceRefs": [
+            "NICE CKS",
+            "Local formulary",
+            "CKS Hordeola and styes"
+          ],
+          "evidence": "Management per NICE CKS and Local formulary.",
+          "steps": [
+            {
+              "id": "stye-mgt",
+              "question": "Stye / hordeolum",
+              "type": "dropdown",
+              "options": [
+                {
+                  "label": "Management",
+                  "guidance": "MANAGEMENT PLAN:\n1. Warm compress; lid hygiene. Most resolve. Incision if pointing abscess. Topical antibiotic if associated blepharitis. Refer if orbital spread or recurrence.\n2. CKS Hordeola and styes."
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "subconjunctival-haemorrhage",
+          "title": "Subconjunctival haemorrhage",
+          "niceRefs": [
+            "NICE CKS",
+            "Local formulary",
+            "CKS Red eye"
+          ],
+          "evidence": "Management per NICE CKS and Local formulary.",
+          "steps": [
+            {
+              "id": "subconjunctival-mgt",
+              "question": "Subconjunctival haemorrhage",
+              "type": "dropdown",
+              "options": [
+                {
+                  "label": "Management",
+                  "guidance": "MANAGEMENT PLAN:\n1. Reassurance; no treatment needed. Check BP if hypertensive. If recurrent or bleeding disorder, consider workup. Red flags: trauma, anticoagulation, painful or visual change – assess fully.\n2. CKS Red eye."
                 }
               ]
             }

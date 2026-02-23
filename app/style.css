@@ -301,7 +301,56 @@ header {
     white-space: pre-line;
 }
 
-
+.drug-interactions-list {
+    list-style: none;
+    padding: 0;
+    margin: 0.5em 0 0;
+}
+.drug-interactions-disclaimer {
+    margin: 0 0 0.75em 0;
+    padding: 8px 10px;
+    background: #fef3c7;
+    border-left: 4px solid #d97706;
+    border-radius: var(--border-radius);
+    font-size: 0.9em;
+}
+.drug-interactions-sources {
+    margin-bottom: 8px;
+    color: #4b5563;
+}
+.drug-interactions-severity-head {
+    font-size: 0.95rem;
+    margin: 1em 0 0.35em 0;
+    color: #374151;
+}
+.drug-interaction-source {
+    font-size: 0.8em;
+    color: #6b7280;
+    font-weight: normal;
+}
+.drug-interaction {
+    padding: 10px 12px;
+    margin-bottom: 8px;
+    border-radius: var(--border-radius);
+    border-left: 4px solid #6b7280;
+    background: #f1f5f9;
+}
+.drug-interaction.severity-contraindicated { border-left-color: #b91c1c; background: #fef2f2; }
+.drug-interaction.severity-major       { border-left-color: #c2410c; background: #fff7ed; }
+.drug-interaction.severity-moderate   { border-left-color: #b45309; background: #fffbeb; }
+.drug-interaction.severity-minor      { border-left-color: #0d9488; background: #f0fdfa; }
+.drug-interaction .severity-badge {
+    font-size: 0.75rem;
+    text-transform: uppercase;
+    margin-left: 6px;
+    opacity: 0.9;
+}
+.drug-interaction .description {
+    display: block;
+    margin-top: 4px;
+    font-size: 0.9em;
+    color: #374151;
+}
 
 .decision-search-results {
     position: absolute;
@@ -755,6 +804,13 @@ body.dark-mode .sidebar {
 body.dark-mode .card {
     background-color: var(--card-bg);
     border-color: #3c4043;
+}
+
+body.dark-mode .drug-interaction {
+    background: #2d3139;
+}
+body.dark-mode .drug-interaction .description {
+    color: #b0b8c0;
 }
 
 body.dark-mode .nav-item:hover {

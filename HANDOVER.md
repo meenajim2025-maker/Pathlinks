@@ -1,7 +1,9 @@
 # Handover summary for next agent
 
 **Date:** February 2026  
-**Last updated:** After Child abuse/fever fix, senior-doctor audit of other clinical topics, save and handover doc.
+**Last updated:** 22 Feb 2026 – Drug interactions section, triage-specific pathways (wound, head injury, collapse, mental health crisis), BNF-style interactions, push to Vercel.
+
+**Latest (22 Feb 2026):** New **Drug interactions** section (paste drug list → check vs BNF-style data in `app/data/drug_interactions.json`). **Triage-specific pathways** for wound – severe, head injury, collapse/unconscious, mental health – crisis with yes/no steps and short synopses (what counts as 999, same-day, etc.). Generic triage is 4-step yes/no. Management templates support **matchAll** so only the right title gets each pathway. See **`docs/HANDOVER_2026-02-22.md`** for details.
 
 **Context:** User reported Education Sandbox (Clinical Sandbox) as non-functional across multiple browsers. Multiple fix attempts were made. Later: UI was reverted to a simpler layout; then a full audit of Decision Tools was done to fix wrong management options and duplication. Latest: alcohol pathways split, prophylaxis/domestic violence/falls fixed; “other clinical topics” replaced with specific evidence-based plans; senior-doctor critical pass (safeguarding, refeeding, concussion, deprescribing, LPA, etc.); **Child abuse – recognition** bug fixed (was showing fever traffic light—fever template had keyword “child”; now dedicated child-abuse template, fever keywords narrowed to phrases).
 
@@ -129,7 +131,7 @@ So `main.js` runs first and sets up nav (including Sandbox click); then `sandbox
 
 ## Save state / Handover checklist
 
-- **Project is saved in local git.** All edits committed. Latest commits: Decision Tools specific templates + other-misc shrink; senior-doctor audit of other clinical topics; **Child abuse – recognition** fix (child-abuse template, fever keywords narrowed). **No git remote**—deploy with `npx vercel --prod` from project root. Live: https://pathlinks-clinical.vercel.app
+- **Project is saved in local git.** All edits committed. Latest: Drug interactions section, triage-specific pathways (wound, head injury, collapse, mental health crisis), BNF-style drug interactions, matchAll for triage. See **`docs/HANDOVER_2026-02-22.md`**. **No git remote**—deploy with `npx vercel --prod` from project root. Live: https://pathlinks-clinical.vercel.app
 - **Decision Tools:** Rebuilt; 1510 tools; wrong matches fixed; alcohol/prophylaxis/domestic violence/falls/other-clinical specific templates; senior-doctor revisions; child-abuse template; fever template no longer matches “child” alone; `other-misc-mgt` keywords empty; audit doc at `docs/DECISION_TOOLS_ACCURACY_AUDIT.md`.
 - **Root vs app:** Keep `index.html` in sync with `app/index.html` after any UI change.
 - **Next agent:** For Sandbox issues, follow "Suggested next steps" above. For Decision Tools, see `docs/DECISION_TOOLS_ACCURACY_AUDIT.md` and `scripts/management-content.json`; rebuild with `node scripts/build-decision-tools.js` after template/source changes and bump protocol `?v=` in `app/main.js` if needed. **Avoid broad single-word keywords** (e.g. “child” alone caused Child abuse to match fever template); use phrases or more specific terms.
