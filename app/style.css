@@ -348,8 +348,12 @@ header {
 .drug-interaction .description {
     display: block;
     margin-top: 4px;
+}
+.drug-interaction-action {
+    display: block;
+    margin-top: 6px;
     font-size: 0.9em;
-    color: #374151;
+    color: var(--text-secondary, #374151);
 }
 
 .decision-search-results {
@@ -811,6 +815,9 @@ body.dark-mode .drug-interaction {
 }
 body.dark-mode .drug-interaction .description {
     color: #b0b8c0;
+}
+body.dark-mode .drug-interaction-action {
+    color: #9ca3af;
 }
 
 body.dark-mode .nav-item:hover {

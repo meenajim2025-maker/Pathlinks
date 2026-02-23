@@ -1234,6 +1234,11 @@
       ]
     },
     {
+      "id": "pain-management",
+      "name": "Pain Management",
+      "topics": []
+    },
+    {
       "id": "triage",
       "name": "GP Triage",
       "topics": []

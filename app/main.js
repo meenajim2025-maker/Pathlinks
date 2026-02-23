@@ -9,7 +9,12 @@ const DRUG_CLASS_ALIASES = {
     'nsaid': ['ibuprofen', 'naproxen', 'diclofenac', 'mefenamic acid', 'piroxicam', 'meloxicam', 'celecoxib', 'etoricoxib'],
     'ssri': ['sertraline', 'fluoxetine', 'citalopram', 'escitalopram', 'paroxetine', 'fluvoxamine'],
     'maoi': ['phenelzine', 'isocarboxazid', 'tranylcypromine', 'moclobemide'],
-    'statin': ['simvastatin', 'atorvastatin', 'rosuvastatin', 'pravastatin', 'fluvastatin', 'cerivastatin']
+    'statin': ['simvastatin', 'atorvastatin', 'rosuvastatin', 'pravastatin', 'fluvastatin', 'cerivastatin'],
+    'doac': ['apixaban', 'rivaroxaban', 'edoxaban', 'dabigatran'],
+    'oral contraceptive': ['microgynon', 'rigevidon', 'marvelon', 'yasmin', 'cilest', 'nuvaring', 'norethisterone', 'desogestrel', 'levonorgestrel', 'combined pill', 'progestogen only pill'],
+    'antacid': ['gaviscon', 'rennie', 'tums', 'calcium carbonate', 'magnesium trisilicate', 'aluminium hydroxide'],
+    'thiazide': ['bendroflumethiazide', 'indapamide', 'hydrochlorothiazide', 'chlortalidone'],
+    'st johns wort': ['st john\'s wort', 'st johns wort', 'hypericum']
 };
 
 // Load data and initialize selects
@@ -240,7 +245,8 @@ function runDrugInteractionsCheck() {
             const severityClass = (int.severity || '').toLowerCase().replace(/\s+/, '-');
             const label = (int.drugBAlt && int.drugB) ? `${int.drugA} + ${int.drugB} / ${int.drugBAlt}` : `${int.drugA} + ${int.drugB}`;
             const sourceHint = int.source ? ' <span class="drug-interaction-source">(' + escapeHtml(int.source) + ')</span>' : '';
-            html += '<li class="drug-interaction severity-' + severityClass + '"><strong>' + escapeHtml(label) + '</strong>' + sourceHint + ' <span class="severity-badge">' + escapeHtml(int.severity) + '</span><br><span class="description">' + escapeHtml(int.description) + '</span></li>';
+            const actionBlock = int.action ? '<br><span class="drug-interaction-action"><strong>Safer action:</strong> ' + escapeHtml(int.action) + '</span>' : '';
+            html += '<li class="drug-interaction severity-' + severityClass + '"><strong>' + escapeHtml(label) + '</strong>' + sourceHint + ' <span class="severity-badge">' + escapeHtml(int.severity) + '</span><br><span class="description">' + escapeHtml(int.description) + '</span>' + actionBlock + '</li>';
         });
         html += '</ul>';
     });

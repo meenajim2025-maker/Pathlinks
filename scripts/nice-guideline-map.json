@@ -32,6 +32,7 @@
     "ibs": ["NG61", "CKS IBS"],
     "diverticular": ["NG147", "CKS Diverticular disease"],
     "gord": ["NG1", "CKS GORD"],
+    "glaucoma": ["NG81", "CKS Glaucoma"],
     "dysphagia": ["CKS Dysphagia"],
     "peptic ulcer": ["CKS Peptic ulcer"],
     "barrett": ["NG231", "CKS Barrett's oesophagus"],
@@ -44,6 +45,8 @@
     "steroid": ["NG65", "CKS Corticosteroids"],
     "adrenal": ["CKS Adrenal insufficiency"],
     "rheumatoid": ["NG100", "CKS Rheumatoid arthritis"],
+    "red eye": ["CKS Red eye", "NG81"],
+    "ophthalmology": ["NG81", "CKS Red eye", "RCOphth"],
     "osteoarthritis": ["NG226", "CKS Osteoarthritis"],
     "back pain": ["NG59", "CKS Low back pain"],
     "gout": ["NG219", "CKS Gout"],
@@ -126,7 +129,7 @@
     "bladder pain syndrome": ["NG123", "CKS Bladder pain syndrome"],
     "type 1 diabetes": ["NG17", "CKS Diabetes type 1"],
     "dysphonia": ["NG12", "CKS Hoarseness"],
-    "triage": ["NICE NG51", "Urgent care"]
+    "triage": ["NG51", "NG253", "NG254", "NG255", "CG176", "NG143", "NG10", "NHS 111", "CKS Urgent care"]
   },
   "defaultRefs": ["NICE CKS", "Local formulary"]
 }

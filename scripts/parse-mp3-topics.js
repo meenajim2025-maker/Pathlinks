@@ -74,6 +74,11 @@ const SECTION_KEYWORDS = [
     keywords: ['headache', 'cluster', 'migraine', 'vertigo', 'tinnitus', 'trigeminal', 'neuralgia', 'cauda equina', 'post-herpetic', 'tremor', 'paraesthesia', 'loss of consciousness']
   },
   {
+    id: 'pain-management',
+    name: 'Pain Management',
+    keywords: ['chronic pain', 'neuropathic pain', 'opioid', 'palliative pain', 'fibromyalgia', 'pain management', 'analgesia', 'opioid stewardship']
+  },
+  {
     id: 'haematology',
     name: 'Haematology & Anaemia',
     keywords: ['anaemia', 'b12', 'pernicious', 'platelet', 'sickle cell', 'ferritin', 'iron']
