@@ -1,66 +1,69 @@
 # Handover to next agent
 
-**Date:** 2025-02-21  
-**Read this first** when resuming work on PathLinks. For full context, read `docs/AGENT_CONTEXT_RESUME.md`.
+**Date:** 2026-02-23  
+**Read this first** when resuming work on PathLinks. Full context: `HANDOVER.md` at repo root.
 
 ---
 
 ## What is PathLinks?
 
-UK GP clinical decision support web app: blood test actioning, **1920 Decision tools** by system with NICE-based management, Protocols, Learning library, EMIS Integration, Device authorisation (Vercel-style code + URL).
+UK GP clinical decision support web app: blood test actioning, **Decision tools** by system with NICE/Royal College–based management, Drug interactions, Education Sandbox, Protocols. Deployed on Vercel.
 
 **Live:** https://pathlinks-clinical.vercel.app  
-**Deploy:** `npx vercel --prod --yes` from repo root.
+**Deploy:** `npx vercel --prod --yes` from repo root (no git remote; deploy via Vercel CLI).
 
-**Important:** After any change that affects the app (data, templates, UI), **commit then deploy to Vercel** so the user can see updates. They do not use localhost.
-
----
-
-## Current state (shutdown handover)
-
-- **Decision tools:** **1920 tools**, **all** have a **topic-specific** template. **0** use the system fallback. Audit: `node scripts/audit-all-sections-fallback.js` (expect 0 on fallback).
-- **Templates:** `scripts/management-content.json` – first keyword match wins. **DKA** and **Verification of death** have correct emergency/procedure content; **Type 1 diabetes – DKA** shows DKA management (admit, fluids, insulin, K+), not HbA1c/drug choice.
-- **Protocol cache:** App fetches `decision_tools_protocol.json?v=5`; bump version in `app/script.js` when protocol changes.
-- **Vercel:** All changes deployed; live at https://pathlinks-clinical.vercel.app.
+**Important:** After any change that affects the app (data, templates, UI), **commit to local git then run `npx vercel --prod --yes`** so the user sees updates.
 
 ---
 
-## Key files (do not lose)
+## Current state (23 Feb 2026)
+
+- **Decision tools:** **1574 tools**. Built by `node scripts/build-decision-tools.js`. Sources: `data/knowledge_base.json`, `scripts/management-content.json`, `scripts/nice-guideline-map.json`, `scripts/extra-tools-bulk.json`, `scripts/extra-tools-bulk-1000.json`. Output: `data/decision_tools_protocol.json` and `data/tools-index.json` (copied to `app/data/`).
+- **Sections** include: cardiovascular, dermatology, mental-health, gastroenterology, endocrinology, musculoskeletal, respiratory, paediatrics, renal-urology, women-health, infectious, neurology, haematology, ent, procedures-general, other, pain-management, **triage**, **ophthalmology** (from extra-tools-bulk).
+- **System guidance & fallbacks:** In `scripts/build-decision-tools.js`: `SYSTEM_GUIDANCE` (consultant-standard options per system) and `getSystemFallbackSteps(systemId, title)` (used when no template matches). **Other clinical topics** and **GP Triage** and **Ophthalmology** have dedicated guidance and fallback options (RCOphth for eye; NICE/NHS 111/WHO IITT/RCGP/RACGP for triage).
+- **Templates:** `scripts/management-content.json` – **first keyword match** on tool title wins; put **specific** templates before **broad** ones. Use phrases, not single broad words (e.g. avoid bare "child").
+- **Protocol cache:** App loads `decision_tools_protocol.json?v=...` in `app/main.js`. Bump `?v=` after rebuilding the protocol so clients get the new file.
+
+---
+
+## Key files
 
 | File | Role |
 |------|------|
-| `scripts/management-content.json` | Topic-specific templates (DKA, Verification of death, endocrine, procedures, derm, gastro, etc.). First keyword match wins. |
-| `scripts/build-decision-tools.js` | Builds `data/decision_tools_protocol.json`; contains system-specific fallbacks (used only when no template matches). |
-| `data/decision_tools_protocol.json` | Built output; **copy to `app/data/`** after build. |
+| `scripts/management-content.json` | Topic-specific templates; first keyword match; order matters. |
+| `scripts/build-decision-tools.js` | Builds protocol; contains SYSTEM_GUIDANCE and getSystemFallbackSteps. |
+| `data/decision_tools_protocol.json` | Built output; also copied to `app/data/`. |
 | `app/data/decision_tools_protocol.json` | What the live app loads. |
-| `app/script.js` | Loads protocol with `?v=5`; Decision tools UI. |
-| `docs/FORENSIC_AUDIT_ALL_SECTIONS.md` | Full audit: all sections, 0 on fallback. |
-| `scripts/audit-all-sections-fallback.js` | Lists tools on fallback; run after build. |
-| `docs/AGENT_CONTEXT_RESUME.md` | Full project context and layout. |
-| `oauth/device.html` | Device authorisation page. |
+| `app/main.js` | Loads protocol with `?v=...`; Decision tools UI; nav. |
+| `app/index.html` | Main UI; keep root `index.html` in sync for Vercel `/`. |
+| `vercel.json` | Rewrites `/` → `/app/index.html`; cache headers. |
+| `HANDOVER.md` | Full handover, structure, Sandbox notes, deploy. |
+| `docs/DECISION_TOOLS_ACCURACY_AUDIT.md` | Template audit and keyword rules. |
 
 ---
 
 ## Commands
 
-- **Rebuild Decision tools:** `node scripts/build-decision-tools.js` then `cp data/decision_tools_protocol.json app/data/`
-- **Audit (check fallback count):** `node scripts/audit-all-sections-fallback.js`
+- **Rebuild Decision tools:** `node scripts/build-decision-tools.js` (writes to `data/` and copies to `app/data/`)
+- **Bump protocol cache:** In `app/main.js`, change the `?v=N` query on the protocol URL
 - **Deploy:** `npx vercel --prod --yes`
 
 ---
 
 ## Repo state at handover
 
-- **Committed:** All session work (DKA template, Verification of death, full forensic audit, all 1920 topic-specific, cache v5). See recent commits.
+- **Committed:** All session work (Other clinical topics, GP triage international refs, ophthalmology RCOphth, HANDOVER updates). Latest commit includes handover doc updates.
 - **Untracked:** `.cursor/` (local IDE – do not commit).
+- **No git remote.** Deploy only via `npx vercel --prod --yes`.
 
 ---
 
 ## Suggested next steps (optional)
 
-- Add or refine topic-specific templates in `scripts/management-content.json` if any new tool titles are added; rebuild, copy to `app/data/`, bump cache version, deploy.
-- If user reports wrong content for a tool: add a **more specific** template (with keywords that match that title) **before** any broader template that might match it (e.g. DKA before generic diabetes).
+- Add or refine templates in `scripts/management-content.json` for new tool titles; rebuild; bump protocol version; deploy.
+- If a tool shows wrong content: add a **more specific** template (matching that title) **before** any broader template that might match.
+- Keep root `index.html` in sync with `app/index.html` after UI changes.
 
 ---
 
-*End of handover. Use `docs/AGENT_CONTEXT_RESUME.md` for detailed paths and history.*
+*End of handover. See `HANDOVER.md` for project structure, Sandbox, and detailed Decision Tools audit.*

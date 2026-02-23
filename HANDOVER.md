@@ -1,9 +1,9 @@
 # Handover summary for next agent
 
 **Date:** February 2026  
-**Last updated:** 22 Feb 2026 – Drug interactions section, triage-specific pathways (wound, head injury, collapse, mental health crisis), BNF-style interactions, push to Vercel.
+**Last updated:** 23 Feb 2026 – Other clinical topics, GP triage (international refs), ophthalmology (RCOphth), Vercel deploy. **Next agent: read `docs/HANDOVER_NEXT_AGENT.md` first.**
 
-**Latest (22 Feb 2026):** New **Drug interactions** section (paste drug list → check vs BNF-style data in `app/data/drug_interactions.json`). **Triage-specific pathways** for wound – severe, head injury, collapse/unconscious, mental health – crisis with yes/no steps and short synopses (what counts as 999, same-day, etc.). Generic triage is 4-step yes/no. Management templates support **matchAll** so only the right title gets each pathway. See **`docs/HANDOVER_2026-02-22.md`** for details.
+**Latest (23 Feb 2026):** **Other clinical topics** – SYSTEM_GUIDANCE.other + fallback (deprescribing, frailty, capacity/LPA, travel/medicolegal). **GP Triage** – SYSTEM_GUIDANCE.triage + steps with NICE NG51/253–255, CG176, NG143, NG10, NHS 111, WHO IITT, RCGP, RACGP; topic triage evidence updated. **Ophthalmology** – New SYSTEM_GUIDANCE.ophthalmology + fallback (RCOphth Emergency Eye Care); red eye/conjunctivitis/emergencies/general eye templates; nice-guideline-map. **Deploy:** `npx vercel --prod --yes`; live https://pathlinks-clinical.vercel.app. Earlier: New **Drug interactions** section (paste drug list → check vs BNF-style data in `app/data/drug_interactions.json`). **Triage-specific pathways** for wound – severe, head injury, collapse/unconscious, mental health – crisis with yes/no steps and short synopses (what counts as 999, same-day, etc.). Generic triage is 4-step yes/no. Management templates support **matchAll** so only the right title gets each pathway. See **`docs/HANDOVER_2026-02-22.md`** for details.
 
 **Context:** User reported Education Sandbox (Clinical Sandbox) as non-functional across multiple browsers. Multiple fix attempts were made. Later: UI was reverted to a simpler layout; then a full audit of Decision Tools was done to fix wrong management options and duplication. Latest: alcohol pathways split, prophylaxis/domestic violence/falls fixed; “other clinical topics” replaced with specific evidence-based plans; senior-doctor critical pass (safeguarding, refeeding, concussion, deprescribing, LPA, etc.); **Child abuse – recognition** bug fixed (was showing fever traffic light—fever template had keyword “child”; now dedicated child-abuse template, fever keywords narrowed to phrases).
 
@@ -21,7 +21,7 @@
   - `app/sandbox-main.js` – Sandbox logic (renamed from `sandbox.js`). Reads scenarios from embedded `#sandbox-scenarios-json` first, then falls back to `fetch('./data/sandbox_scenarios.json')`. Calls `initSandbox()` on load (if DOM ready) and is also invoked when user clicks Sandbox nav.
   - `app/data/sandbox_scenarios.json` – Scenario data (also embedded in HTML for reliability).
 - **`app/data/`** – Runtime data for the app:
-  - `decision_tools_protocol.json` – **Built** from scripts (see below). ~1510 tools; protocol loaded by `main.js` with cache-bust query (e.g. `?v=10`).
+  - `decision_tools_protocol.json` – **Built** from scripts (see below). ~**1574 tools**; ophthalmology section; Other clinical topics and GP triage use improved system guidance and fallbacks. Protocol: bump `?v=` in `app/main.js` after protocol changes. Audit: `docs/DECISION_TOOLS_ACCURACY_AUDIT.md`. Formerly: 1510 tools; protocol loaded by `main.js` with cache-bust query (e.g. `?v=10`).
   - `tools-index.json` – Built with protocol; used for search/index.
   - `sandbox_scenarios.json` – Sandbox scenario definitions (also embedded in HTML).
 - **Root** – Used by Vercel for `/`:
@@ -131,10 +131,10 @@ So `main.js` runs first and sets up nav (including Sandbox click); then `sandbox
 
 ## Save state / Handover checklist
 
-- **Project is saved in local git.** All edits committed. Latest: Drug interactions section, triage-specific pathways (wound, head injury, collapse, mental health crisis), BNF-style drug interactions, matchAll for triage. See **`docs/HANDOVER_2026-02-22.md`**. **No git remote**—deploy with `npx vercel --prod` from project root. Live: https://pathlinks-clinical.vercel.app
-- **Decision Tools:** Rebuilt; 1510 tools; wrong matches fixed; alcohol/prophylaxis/domestic violence/falls/other-clinical specific templates; senior-doctor revisions; child-abuse template; fever template no longer matches “child” alone; `other-misc-mgt` keywords empty; audit doc at `docs/DECISION_TOOLS_ACCURACY_AUDIT.md`.
+- **Project is saved in local git.** All edits committed. Latest: Other clinical topics, GP triage, ophthalmology RCOphth, Vercel deploy. **No git remote**—deploy with `npx vercel --prod --yes` from project root. Live: https://pathlinks-clinical.vercel.app
+- **Decision Tools:** Rebuilt; **1574 tools**; ophthalmology section; Other clinical topics and GP triage use improved system guidance and fallbacks. Protocol: bump `?v=` in `app/main.js` after protocol changes. Audit: `docs/DECISION_TOOLS_ACCURACY_AUDIT.md`.
 - **Root vs app:** Keep `index.html` in sync with `app/index.html` after any UI change.
-- **Next agent:** For Sandbox issues, follow "Suggested next steps" above. For Decision Tools, see `docs/DECISION_TOOLS_ACCURACY_AUDIT.md` and `scripts/management-content.json`; rebuild with `node scripts/build-decision-tools.js` after template/source changes and bump protocol `?v=` in `app/main.js` if needed. **Avoid broad single-word keywords** (e.g. “child” alone caused Child abuse to match fever template); use phrases or more specific terms.
+- **Next agent:** Read **`docs/HANDOVER_NEXT_AGENT.md`** first. For Decision Tools: `scripts/management-content.json` (first keyword match; specific before broad); `scripts/build-decision-tools.js`; rebuild `node scripts/build-decision-tools.js`; bump protocol `?v=` in `app/main.js` if needed. Avoid broad single-word keywords; use phrases or specific terms.
 
 ---
 
