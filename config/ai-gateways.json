@@ -1,0 +1,104 @@
+{
+  "comment": "LLM and Speech API gateways. API key from env PATHREADY_API_KEY only — never store keys in this file.",
+  "authHeader": "Authorization",
+  "authScheme": "Bearer",
+  "gateways": {
+    "pathready": {
+      "baseUrl": "https://api1.pathready.uk",
+      "description": "Gemma 4 MoE, Ollama small models, Speech AI (ASR/TTS)"
+    },
+    "siby": {
+      "baseUrl": "https://api1.siby.top",
+      "description": "Dual LLM workstation (Qwen & Mistral) via vLLM"
+    }
+  },
+  "llm": [
+    {
+      "id": "gemma-4-moe",
+      "name": "Gemma 4 MoE",
+      "parameters": "26B",
+      "model": "cyankiwi/gemma-4-26B-A4B-it-AWQ-4bit",
+      "contextLimit": 49152,
+      "gateway": "pathready",
+      "format": "openai",
+      "endpoint": "https://api1.pathready.uk/v1/vllm-aipcduo/chat/completions"
+    },
+    {
+      "id": "mistral-small-24b",
+      "name": "Mistral Small 24B",
+      "parameters": "24B",
+      "model": "casperhansen/mistral-small-24b-instruct-2501-awq",
+      "contextLimit": 32768,
+      "gateway": "siby",
+      "format": "openai",
+      "endpoint": "https://api1.siby.top/v1/vllm-aipc1-mistral/chat/completions"
+    },
+    {
+      "id": "qwen-2.5-14b",
+      "name": "Qwen 2.5",
+      "parameters": "14B",
+      "model": "Qwen/Qwen2.5-14B-Instruct-AWQ",
+      "contextLimit": 32768,
+      "gateway": "siby",
+      "format": "openai",
+      "endpoint": "https://api1.siby.top/v1/vllm-aipc1-qwen/chat/completions"
+    },
+    {
+      "id": "gemma-3-4b",
+      "name": "Gemma 3",
+      "parameters": "4B",
+      "model": "gemma3:4b",
+      "contextLimit": 4096,
+      "gateway": "pathready",
+      "format": "ollama",
+      "endpoint": "https://api1.pathready.uk/v1/ollama-aipcduo/api/chat"
+    },
+    {
+      "id": "qwen-2.5-3b",
+      "name": "Qwen 2.5",
+      "parameters": "3B",
+      "model": "qwen2.5:3b",
+      "contextLimit": 4096,
+      "gateway": "pathready",
+      "format": "ollama",
+      "endpoint": "https://api1.pathready.uk/v1/ollama-aipcduo/api/chat"
+    },
+    {
+      "id": "deepseek-r1-1.5b",
+      "name": "DeepSeek R1 (CoT)",
+      "parameters": "1.5B",
+      "model": "deepseek-r1:1.5b",
+      "contextLimit": 8192,
+      "gateway": "pathready",
+      "format": "ollama",
+      "endpoint": "https://api1.pathready.uk/v1/ollama-aipcduo/api/chat"
+    }
+  ],
+  "speech": {
+    "stt": {
+      "name": "Speech-to-Text (ASR)",
+      "model": "Qwen/Qwen3-ASR-1.7B",
+      "endpoint": "https://api1.pathready.uk/v1/trio-asr/v1/audio/transcriptions",
+      "contentType": "multipart/form-data"
+    },
+    "tts": {
+      "model": "Qwen/Qwen3-TTS-12Hz-1.7B-Base",
+      "defaultVoice": "serena",
+      "defaultChunkSize": 4,
+      "endpoints": {
+        "pcmStream": {
+          "url": "https://api1.pathready.uk/v1/trio-tts/v1/audio/speech/pcm-stream",
+          "description": "Ultra-low latency 24 kHz mono int16 PCM (~130–210 ms)"
+        },
+        "stream": {
+          "url": "https://api1.pathready.uk/v1/trio-tts/v1/audio/speech/stream",
+          "description": "Sentence-chunked stream with length prefixes"
+        },
+        "singleShot": {
+          "url": "https://api1.pathready.uk/v1/trio-tts/v1/audio/speech",
+          "description": "Non-streaming fallback (~1.1–2.8 s)"
+        }
+      }
+    }
+  }
+}
