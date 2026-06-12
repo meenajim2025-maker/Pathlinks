@@ -57,9 +57,23 @@ const ollama = await chatOllama('qwen-2.5-3b', [
 ], { stream: false });
 ```
 
+## Voice triage (web app)
+
+The **Voice triage** tab uses serverless routes (no key in the browser):
+
+| Route | Purpose |
+|-------|---------|
+| `POST /api/voice-triage/transcribe` | STT — JSON `{ audioBase64, mimeType }` |
+| `POST /api/voice-triage/assess` | LLM disposition — JSON `{ transcript }` |
+| `POST /api/voice-triage/speak` | TTS — JSON `{ text, voice? }` |
+
+**Vercel:** Add `PATHREADY_API_KEY` in Project → Settings → Environment Variables (Production, Preview, Development), then redeploy.
+
+**Local:** `vercel dev` from repo root (reads `.env`).
+
 ## Browser / static app
 
-Do **not** embed `PATHREADY_API_KEY` in client-side JavaScript. For the web app, use a serverless proxy (e.g. Vercel Function) that reads `process.env.PATHREADY_API_KEY` and forwards requests to the gateways.
+Do **not** embed `PATHREADY_API_KEY` in client-side JavaScript. Voice triage uses the serverless proxy above.
 
 ## Speech
 

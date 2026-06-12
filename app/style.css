@@ -301,6 +301,90 @@ header {
     white-space: pre-line;
 }
 
+/* Voice triage */
+.voice-triage-grid {
+    grid-template-columns: 1fr 1fr;
+    gap: 24px;
+    align-items: start;
+}
+@media (max-width: 900px) {
+    .voice-triage-grid { grid-template-columns: 1fr; }
+}
+.voice-triage-card { max-width: 100%; }
+.voice-triage-disclaimer {
+    color: var(--text-muted);
+    border-left: 3px solid var(--accent);
+    padding-left: 10px;
+}
+.voice-triage-mic-btn {
+    width: 100%;
+    padding: 16px 20px;
+    font-size: 16px;
+    font-weight: 600;
+    border: 2px dashed var(--primary);
+    border-radius: var(--border-radius);
+    background: rgba(0, 102, 204, 0.06);
+    color: var(--primary-dark);
+    cursor: pointer;
+    transition: background 0.15s, border-color 0.15s;
+}
+.voice-triage-mic-btn:hover { background: rgba(0, 102, 204, 0.12); }
+.voice-triage-mic-btn.recording {
+    background: #ffebee;
+    border-color: var(--accent);
+    color: var(--accent);
+    animation: voice-pulse 1s ease-in-out infinite;
+}
+@keyframes voice-pulse {
+    0%, 100% { box-shadow: 0 0 0 0 rgba(231, 76, 60, 0.4); }
+    50% { box-shadow: 0 0 0 8px rgba(231, 76, 60, 0); }
+}
+.voice-triage-status {
+    margin-top: 10px;
+    font-size: 13px;
+    color: var(--text-muted);
+    min-height: 1.2em;
+}
+.voice-triage-status-error { color: var(--accent); font-weight: 500; }
+.voice-triage-disposition {
+    padding: 16px;
+    border-radius: var(--border-radius);
+    border-left: 5px solid;
+    margin-bottom: 16px;
+}
+.voice-triage-disposition-label {
+    display: block;
+    font-weight: 700;
+    font-size: 18px;
+    margin-bottom: 8px;
+}
+.voice-triage-summary { margin: 0; line-height: 1.5; }
+.voice-triage-detail h4 {
+    margin: 12px 0 6px 0;
+    font-size: 13px;
+    text-transform: uppercase;
+    letter-spacing: 0.04em;
+    color: var(--text-muted);
+}
+.voice-triage-list { margin: 0; padding-left: 20px; }
+.voice-triage-tool-row {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+    margin-top: 8px;
+}
+.voice-triage-tool-btn {
+    padding: 8px 12px;
+    font-size: 13px;
+    border: 1px solid var(--primary);
+    border-radius: 8px;
+    background: #fff;
+    color: var(--primary-dark);
+    cursor: pointer;
+}
+.voice-triage-tool-btn:hover { background: rgba(0, 102, 204, 0.08); }
+.voice-triage-actions { margin-top: 16px; }
+
 .drug-interactions-list {
     list-style: none;
     padding: 0;

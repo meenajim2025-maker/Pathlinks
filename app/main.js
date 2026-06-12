@@ -50,6 +50,7 @@ async function init() {
                 initWells();
                 initCURB();
             }
+            if (item.id === 'nav-voice-triage' && typeof initVoiceTriage === 'function') initVoiceTriage();
             if (item.id === 'nav-sandbox' && typeof initSandbox === 'function') initSandbox();
         });
     });
@@ -922,6 +923,17 @@ async function renderDecisionTools() {
             const q = window.__pendingDecisionToolsQuery;
             window.__pendingDecisionToolsQuery = null;
             searchAllInput.value = q;
+            searchAllInput.dispatchEvent(new Event('input', { bubbles: true }));
+            setTimeout(() => {
+                const first = searchResultsEl.querySelector('.search-hit');
+                if (first) first.click();
+            }, 350);
+        }
+        // Voice triage: open matching decision tool
+        const voiceQ = sessionStorage.getItem('voiceTriageSearch');
+        if (voiceQ) {
+            sessionStorage.removeItem('voiceTriageSearch');
+            searchAllInput.value = voiceQ;
             searchAllInput.dispatchEvent(new Event('input', { bubbles: true }));
             setTimeout(() => {
                 const first = searchResultsEl.querySelector('.search-hit');

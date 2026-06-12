@@ -5,7 +5,7 @@
   "trailingSlash": false,
   "rewrites": [
     { "source": "/", "destination": "/app/index.html" },
-    { "source": "/(.*)", "destination": "/app/$1" }
+    { "source": "/((?!api/).*)", "destination": "/app/$1" }
   ],
   "headers": [
     { "source": "/", "headers": [{ "key": "Cache-Control", "value": "no-cache, no-store, must-revalidate" }] },
