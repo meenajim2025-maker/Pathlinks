@@ -1,9 +1,11 @@
 # Handover summary for next agent
 
 **Date:** February 2026  
-**Last updated:** 23 Feb 2026 – Other clinical topics, GP triage (international refs), ophthalmology (RCOphth), Vercel deploy. **Next agent: read `docs/HANDOVER_NEXT_AGENT.md` first.**
+**Last updated:** 12 Jun 2026 – Voice triage deployed to Vercel; handover for shutdown. **Next agent: read `docs/HANDOVER_NEXT_AGENT.md` first.**
 
-**Latest (23 Feb 2026):** **Other clinical topics** – SYSTEM_GUIDANCE.other + fallback (deprescribing, frailty, capacity/LPA, travel/medicolegal). **GP Triage** – SYSTEM_GUIDANCE.triage + steps with NICE NG51/253–255, CG176, NG143, NG10, NHS 111, WHO IITT, RCGP, RACGP; topic triage evidence updated. **Ophthalmology** – New SYSTEM_GUIDANCE.ophthalmology + fallback (RCOphth Emergency Eye Care); red eye/conjunctivitis/emergencies/general eye templates; nice-guideline-map. **Deploy:** `npx vercel --prod --yes`; live https://pathlinks-clinical.vercel.app. Earlier: New **Drug interactions** section (paste drug list → check vs BNF-style data in `app/data/drug_interactions.json`). **Triage-specific pathways** for wound – severe, head injury, collapse/unconscious, mental health – crisis with yes/no steps and short synopses (what counts as 999, same-day, etc.). Generic triage is 4-step yes/no. Management templates support **matchAll** so only the right title gets each pathway. See **`docs/HANDOVER_2026-02-22.md`** for details.
+**Latest (12 Jun 2026):** **Voice triage** live at https://pathlinks-clinical.vercel.app — STT, LLM disposition (999 / same-day / 24–48h / self-care), TTS; serverless API at `/api/voice-triage/*`; `PATHREADY_API_KEY` on Vercel Production. Deploy via prebuilt + `vercel@43.3.0` (see `docs/DEPLOY_VERCEL.md`). Session snapshot: `docs/HANDOVER_2026-06-12.md`.
+
+**Earlier (23 Feb 2026):** **Other clinical topics** – SYSTEM_GUIDANCE.other + fallback (deprescribing, frailty, capacity/LPA, travel/medicolegal). **GP Triage** – SYSTEM_GUIDANCE.triage + steps with NICE NG51/253–255, CG176, NG143, NG10, NHS 111, WHO IITT, RCGP, RACGP; topic triage evidence updated. **Ophthalmology** – New SYSTEM_GUIDANCE.ophthalmology + fallback (RCOphth Emergency Eye Care); red eye/conjunctivitis/emergencies/general eye templates; nice-guideline-map. **Deploy:** `npx vercel --prod --yes`; live https://pathlinks-clinical.vercel.app. Earlier: New **Drug interactions** section (paste drug list → check vs BNF-style data in `app/data/drug_interactions.json`). **Triage-specific pathways** for wound – severe, head injury, collapse/unconscious, mental health – crisis with yes/no steps and short synopses (what counts as 999, same-day, etc.). Generic triage is 4-step yes/no. Management templates support **matchAll** so only the right title gets each pathway. See **`docs/HANDOVER_2026-02-22.md`** for details.
 
 **Context:** User reported Education Sandbox (Clinical Sandbox) as non-functional across multiple browsers. Multiple fix attempts were made. Later: UI was reverted to a simpler layout; then a full audit of Decision Tools was done to fix wrong management options and duplication. Latest: alcohol pathways split, prophylaxis/domestic violence/falls fixed; “other clinical topics” replaced with specific evidence-based plans; senior-doctor critical pass (safeguarding, refeeding, concussion, deprescribing, LPA, etc.); **Child abuse – recognition** bug fixed (was showing fever traffic light—fever template had keyword “child”; now dedicated child-abuse template, fever keywords narrowed to phrases).
 
@@ -73,9 +75,10 @@
 ## Deployment (Vercel)
 
 - **Project:** pathlinks-clinical (see `.vercel/project.json`).
-- **Deploy:** `npx vercel --prod` or `npm run deploy`.
+- **Account:** meenajim2025@gmail.com
+- **Deploy:** See `docs/DEPLOY_VERCEL.md`. Recommended: `npx vercel build --prod --yes` then `npx vercel@43.3.0 deploy --prebuilt --prod --yes`.
 - **Live URL:** https://pathlinks-clinical.vercel.app
-- **`vercel.json`:** Rewrites `/` → `/app/index.html`, `/(.*)` → `/app/$1`; cache headers for `/data/` and `/app/data/`.
+- **`vercel.json`:** Rewrites `/` → `/app/index.html`; `/api/*` excluded from app rewrite; cache headers for `/data/` and `/app/data/`.
 
 **Important:** Root `index.html` is what gets served for `/`. Keep it in sync with `app/index.html` after any app UI changes (e.g. copy `app/index.html` to `index.html`).
 
@@ -131,7 +134,7 @@ So `main.js` runs first and sets up nav (including Sandbox click); then `sandbox
 
 ## Save state / Handover checklist
 
-- **Project is saved in local git.** All edits committed. Latest: Other clinical topics, GP triage, ophthalmology RCOphth, Vercel deploy. **No git remote**—deploy with `npx vercel --prod --yes` from project root. Live: https://pathlinks-clinical.vercel.app
+- **Project is saved in local git.** Latest feature: Voice triage (`d512708`). Handover docs updated 12 Jun 2026. **No git remote**—deploy per `docs/DEPLOY_VERCEL.md`. Live: https://pathlinks-clinical.vercel.app
 - **Decision Tools:** Rebuilt; **1574 tools**; ophthalmology section; Other clinical topics and GP triage use improved system guidance and fallbacks. Protocol: bump `?v=` in `app/main.js` after protocol changes. Audit: `docs/DECISION_TOOLS_ACCURACY_AUDIT.md`.
 - **Root vs app:** Keep `index.html` in sync with `app/index.html` after any UI change.
 - **Next agent:** Read **`docs/HANDOVER_NEXT_AGENT.md`** first. For Decision Tools: `scripts/management-content.json` (first keyword match; specific before broad); `scripts/build-decision-tools.js`; rebuild `node scripts/build-decision-tools.js`; bump protocol `?v=` in `app/main.js` if needed. Avoid broad single-word keywords; use phrases or specific terms.

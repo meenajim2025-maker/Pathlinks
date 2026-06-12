@@ -1,4 +1,5 @@
 .vercel
+.cursor/
 .env
 .env.local
 .venv
