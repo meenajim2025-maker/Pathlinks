@@ -41,7 +41,21 @@ module.exports = async function handler(req, res) {
 
     const text = await upstream.text();
     if (!upstream.ok) {
-      return res.status(upstream.status).json({ error: 'Transcription failed', detail: text });
+      // Surface a clearer reason so the client can show something actionable
+      // (e.g. 401/403 = key problem, 415/422 = audio format the ASR can't decode).
+      const hint =
+        upstream.status === 401 || upstream.status === 403
+          ? 'ASR auth rejected — check PATHREADY_API_KEY in Vercel env.'
+          : upstream.status === 413
+          ? 'Recording too large — keep it under ~25 s.'
+          : upstream.status === 415 || upstream.status === 422
+          ? `ASR could not decode this audio (${mimeType}).`
+          : `ASR upstream error ${upstream.status}.`;
+      return res.status(upstream.status).json({
+        error: 'Transcription failed',
+        upstreamStatus: upstream.status,
+        detail: hint + ' ' + String(text || '').slice(0, 300),
+      });
     }
 
     let data;

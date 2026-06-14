@@ -92,8 +92,14 @@
     });
     const data = await res.json().catch(() => ({}));
     if (!res.ok) {
-      const msg = data.error || data.detail || res.statusText;
-      throw new Error(typeof msg === 'string' ? msg : JSON.stringify(msg));
+      const base = data.error || res.statusText || ('HTTP ' + res.status);
+      let detail = data.detail;
+      if (detail && typeof detail !== 'string') detail = JSON.stringify(detail);
+      if (detail) detail = String(detail).replace(/\s+/g, ' ').slice(0, 200);
+      const msg = detail ? `${base} — ${detail}` : base;
+      const err = new Error(typeof msg === 'string' ? msg : JSON.stringify(msg));
+      err.status = res.status;
+      throw err;
     }
     return data;
   }
