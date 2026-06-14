@@ -19,10 +19,24 @@ Respond with ONLY valid JSON (no markdown):
 }`;
 
 function parseJsonFromLlm(content) {
-  const raw = (content || '').trim();
-  const fenced = raw.match(/```(?:json)?\s*([\s\S]*?)```/);
-  const candidate = fenced ? fenced[1].trim() : raw;
-  return JSON.parse(candidate);
+  let raw = (content || '').trim();
+  // Strip chain-of-thought blocks some models emit (e.g. Qwen <think>...</think>).
+  raw = raw.replace(/<think>[\s\S]*?<\/think>/gi, '').trim();
+  // Prefer a fenced ```json block if present.
+  const fenced = raw.match(/```(?:json)?\s*([\s\S]*?)```/i);
+  let candidate = (fenced ? fenced[1] : raw).trim();
+  // If wrapped in prose, slice from the first { to the last } (the JSON object).
+  if (candidate.charAt(0) !== '{') {
+    const start = candidate.indexOf('{');
+    const end = candidate.lastIndexOf('}');
+    if (start !== -1 && end > start) candidate = candidate.slice(start, end + 1);
+  }
+  try {
+    return JSON.parse(candidate);
+  } catch (e) {
+    // Lenient retry: remove trailing commas before } or ].
+    return JSON.parse(candidate.replace(/,\s*([}\]])/g, '$1'));
+  }
 }
 
 module.exports = async function handler(req, res) {
@@ -70,6 +84,7 @@ module.exports = async function handler(req, res) {
     } catch {
       return res.status(502).json({
         error: 'Could not parse triage response',
+        detail: String(content || '').replace(/\s+/g, ' ').slice(0, 300),
         raw: content,
       });
     }
