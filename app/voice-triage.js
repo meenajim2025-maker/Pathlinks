@@ -20,6 +20,39 @@
   let audioChunks = [];
   let triageSymptoms = null;
   let lastAssessment = null;
+  let activeStream = null;
+
+  // Feature detection — works on Chrome, Edge, Firefox, Safari 14.1+ (desktop & iOS/iPadOS).
+  function recordingSupported() {
+    return !!(navigator.mediaDevices &&
+      typeof navigator.mediaDevices.getUserMedia === 'function' &&
+      typeof window.MediaRecorder === 'function');
+  }
+
+  // Pick the first MediaRecorder container the browser can actually produce.
+  // Chrome/Firefox → webm/opus; Safari → mp4/aac; older → leave default.
+  function pickMimeType() {
+    const prefs = [
+      'audio/webm;codecs=opus',
+      'audio/webm',
+      'audio/ogg;codecs=opus',
+      'audio/mp4',
+      'audio/mp4;codecs=mp4a.40.2',
+      'audio/aac',
+    ];
+    if (typeof MediaRecorder === 'undefined' || !MediaRecorder.isTypeSupported) return '';
+    for (const t of prefs) {
+      try { if (MediaRecorder.isTypeSupported(t)) return t; } catch (e) { /* ignore */ }
+    }
+    return '';
+  }
+
+  function stopStreamTracks() {
+    if (activeStream) {
+      activeStream.getTracks().forEach((tr) => { try { tr.stop(); } catch (e) {} });
+      activeStream = null;
+    }
+  }
 
   async function loadSymptomMap() {
     if (triageSymptoms) return triageSymptoms;
@@ -76,10 +109,18 @@
     return data.assessment;
   }
 
-  async function speakText(text) {
+  // Pass a pre-created (gesture-primed) audio element so iOS Safari allows playback
+  // after the async fetch — otherwise play() is outside the user-gesture window.
+  async function speakText(text, audioEl) {
     const data = await apiPost(API.speak, { text });
-    const audio = new Audio(`data:${data.mimeType || 'audio/wav'};base64,${data.audioBase64}`);
-    await audio.play();
+    const audio = audioEl || new Audio();
+    audio.src = `data:${data.mimeType || 'audio/wav'};base64,${data.audioBase64}`;
+    try {
+      await audio.play();
+    } catch (e) {
+      // Autoplay blocked: surface a clear, non-fatal message.
+      throw new Error('Tap “Read aloud” again to play audio (browser blocked autoplay).');
+    }
     return audio;
   }
 
@@ -145,10 +186,13 @@
           assessment.summary,
           'Safety-net: ' + (assessment.safetyNet || ''),
         ].filter(Boolean).join('. ');
+        // Prime an audio element inside the gesture so iOS Safari permits playback later.
+        const primed = new Audio();
+        try { primed.play().catch(() => {}); primed.pause(); } catch (e) {}
         try {
           speakBtn.disabled = true;
           setStatus('Playing audio…');
-          await speakText(script);
+          await speakText(script, primed);
           setStatus('');
         } catch (e) {
           setStatus(e.message, true);
@@ -212,9 +256,10 @@
         const blob = new Blob(audioChunks, { type: mimeType });
         audioChunks = [];
         mediaRecorder = null;
+        stopStreamTracks();
         if (micBtn) {
           micBtn.classList.remove('recording');
-          micBtn.textContent = '🎤 Hold to describe presentation';
+          micBtn.textContent = '🎤 Hold or tap to describe presentation';
         }
 
         if (blob.size < 500) {
@@ -240,47 +285,95 @@
   }
 
   async function startRecording() {
+    if (!recordingSupported()) {
+      setStatus('Voice recording is not supported in this browser. Please type the presentation below, then press Assess.', true);
+      return;
+    }
     try {
       const stream = await navigator.mediaDevices.getUserMedia({ audio: true });
+      activeStream = stream;
       audioChunks = [];
-      const options = MediaRecorder.isTypeSupported('audio/webm') ? { mimeType: 'audio/webm' } : {};
-      mediaRecorder = new MediaRecorder(stream, options);
+      const mimeType = pickMimeType();
+      const options = mimeType ? { mimeType } : {};
+      try {
+        mediaRecorder = new MediaRecorder(stream, options);
+      } catch (e) {
+        // Some browsers reject explicit options — retry with defaults.
+        mediaRecorder = new MediaRecorder(stream);
+      }
       mediaRecorder.ondataavailable = (e) => {
-        if (e.data.size > 0) audioChunks.push(e.data);
+        if (e.data && e.data.size > 0) audioChunks.push(e.data);
       };
       mediaRecorder.start();
       const micBtn = document.getElementById('voice-triage-mic-btn');
       if (micBtn) {
         micBtn.classList.add('recording');
-        micBtn.textContent = '⏹ Release to stop';
+        micBtn.textContent = '⏹ Release / tap to stop';
       }
       setStatus('Recording… describe symptoms and red flags.');
     } catch (e) {
-      setStatus('Microphone access denied or unavailable.', true);
+      stopStreamTracks();
+      const denied = e && (e.name === 'NotAllowedError' || e.name === 'SecurityError');
+      setStatus(denied
+        ? 'Microphone permission was denied. Allow mic access (site must be HTTPS), or type the presentation below.'
+        : 'Microphone unavailable. You can type the presentation below instead.', true);
     }
   }
 
   function wireMicButton() {
     const micBtn = document.getElementById('voice-triage-mic-btn');
-    if (!micBtn) return;
+    if (!micBtn || micBtn.dataset.wired) return;
+    micBtn.dataset.wired = '1';
 
-    const start = (e) => {
-      e.preventDefault();
+    if (!recordingSupported()) {
+      // Keep the typed-presentation path fully usable everywhere.
+      micBtn.textContent = '⌨️ Type presentation below (voice not supported here)';
+      micBtn.disabled = true;
+      micBtn.title = 'Voice recording needs a modern browser with microphone support over HTTPS.';
+      return;
+    }
+
+    micBtn.textContent = '🎤 Hold or tap to describe presentation';
+    let holdTimer = null;
+    let usedHold = false;
+
+    const beginHold = (e) => {
+      if (e.cancelable) e.preventDefault();
       if (mediaRecorder && mediaRecorder.state === 'recording') return;
+      usedHold = false;
+      // If the pointer is held >300ms, treat as push-to-talk; a quick tap toggles.
+      holdTimer = setTimeout(() => { usedHold = true; }, 300);
       startRecording();
+      try { if (e.pointerId != null && micBtn.setPointerCapture) micBtn.setPointerCapture(e.pointerId); } catch (err) {}
     };
-    const stop = (e) => {
-      e.preventDefault();
-      stopRecording();
+    const endHold = (e) => {
+      if (e && e.cancelable) e.preventDefault();
+      if (holdTimer) { clearTimeout(holdTimer); holdTimer = null; }
+      const recording = mediaRecorder && mediaRecorder.state === 'recording';
+      // Push-to-talk: stop on release. Quick tap: leave running so a second tap stops it.
+      if (recording && usedHold) stopRecording();
+    };
+    const tapToggle = () => {
+      if (mediaRecorder && mediaRecorder.state === 'recording' && !usedHold) stopRecording();
     };
 
-    micBtn.addEventListener('mousedown', start);
-    micBtn.addEventListener('mouseup', stop);
-    micBtn.addEventListener('mouseleave', () => {
-      if (mediaRecorder && mediaRecorder.state === 'recording') stopRecording();
-    });
-    micBtn.addEventListener('touchstart', start, { passive: false });
-    micBtn.addEventListener('touchend', stop, { passive: false });
+    if (window.PointerEvent) {
+      micBtn.addEventListener('pointerdown', beginHold);
+      micBtn.addEventListener('pointerup', (e) => { endHold(e); });
+      micBtn.addEventListener('pointercancel', endHold);
+      micBtn.addEventListener('pointerleave', (e) => {
+        if (mediaRecorder && mediaRecorder.state === 'recording' && usedHold) stopRecording();
+      });
+      // Quick-tap toggle (pointerup with no meaningful hold)
+      micBtn.addEventListener('click', tapToggle);
+    } else {
+      // Legacy fallback (very old browsers)
+      micBtn.addEventListener('mousedown', beginHold);
+      micBtn.addEventListener('mouseup', endHold);
+      micBtn.addEventListener('mouseleave', endHold);
+      micBtn.addEventListener('touchstart', beginHold, { passive: false });
+      micBtn.addEventListener('touchend', endHold, { passive: false });
+    }
   }
 
   function initVoiceTriage() {

@@ -17,8 +17,20 @@ module.exports = async function handler(req, res) {
     const cfg = loadConfig();
     const stt = cfg.speech.stt;
 
+    // Name the upload to match the actual container so the ASR model decodes it
+    // correctly across browsers (Chrome/Firefox send webm/ogg, Safari sends mp4/m4a).
+    const ext = (() => {
+      const m = String(mimeType || '').toLowerCase();
+      if (m.includes('mp4')) return 'mp4';
+      if (m.includes('m4a') || m.includes('x-m4a') || m.includes('aac')) return 'm4a';
+      if (m.includes('ogg')) return 'ogg';
+      if (m.includes('wav')) return 'wav';
+      if (m.includes('mpeg') || m.includes('mp3')) return 'mp3';
+      return 'webm';
+    })();
+
     const form = new FormData();
-    form.append('file', new Blob([buffer], { type: mimeType }), 'recording.webm');
+    form.append('file', new Blob([buffer], { type: mimeType }), `recording.${ext}`);
     form.append('model', stt.model);
 
     const upstream = await fetch(stt.endpoint, {
