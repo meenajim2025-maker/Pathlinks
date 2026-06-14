@@ -1,0 +1,64 @@
+{
+ "_comment": "Clinical data provenance & review manifest. Update reviewer + dates each governance cycle.",
+ "generated": "2026-06-14",
+ "reviewCycleMonths": 6,
+ "files": {
+  "blood_tests_protocol.json": {
+   "maintainer": "PathLinks Clinical Governance",
+   "lastReviewed": "2026-06-14",
+   "reviewDue": "2026-12-14",
+   "reviewedBy": "TODO – clinical reviewer to sign off",
+   "disclaimer": "Decision-support aid for UK healthcare professionals only. Not a registered medical device. Always verify against current NICE CKS, BNF/BNFc and local policy.",
+   "sources": [
+    "NICE CKS",
+    "NICE NG/CG",
+    "local lab ranges"
+   ]
+  },
+  "decision_tools_protocol.json": {
+   "maintainer": "PathLinks Clinical Governance",
+   "lastReviewed": "2026-06-14",
+   "reviewDue": "2026-12-14",
+   "reviewedBy": "TODO – clinical reviewer to sign off",
+   "disclaimer": "Decision-support aid for UK healthcare professionals only. Not a registered medical device. Always verify against current NICE CKS, BNF/BNFc and local policy.",
+   "sources": [
+    "NICE CKS",
+    "NICE NG/CG"
+   ]
+  },
+  "drug_interactions.json": {
+   "maintainer": "PathLinks Clinical Governance",
+   "lastReviewed": "2026-06-14",
+   "reviewDue": "2026-12-14",
+   "reviewedBy": "TODO – clinical reviewer to sign off",
+   "disclaimer": "Decision-support aid for UK healthcare professionals only. Not a registered medical device. Always verify against current NICE CKS, BNF/BNFc and local policy.",
+   "sources": [
+    "BNF",
+    "BNFc",
+    "Stockley's",
+    "SPS",
+    "NICE CKS"
+   ]
+  },
+  "knowledge_base.json": {
+   "maintainer": "PathLinks Clinical Governance",
+   "lastReviewed": "2026-06-14",
+   "reviewDue": "2026-12-14",
+   "reviewedBy": "TODO – clinical reviewer to sign off",
+   "disclaimer": "Decision-support aid for UK healthcare professionals only. Not a registered medical device. Always verify against current NICE CKS, BNF/BNFc and local policy.",
+   "sources": [
+    "Summarised educational transcripts (review licensing)"
+   ]
+  },
+  "sandbox_scenarios.json": {
+   "maintainer": "PathLinks Clinical Governance",
+   "lastReviewed": "2026-06-14",
+   "reviewDue": "2026-12-14",
+   "reviewedBy": "TODO – clinical reviewer to sign off",
+   "disclaimer": "Decision-support aid for UK healthcare professionals only. Not a registered medical device. Always verify against current NICE CKS, BNF/BNFc and local policy.",
+   "sources": [
+    "NICE-referenced teaching vignettes"
+   ]
+  }
+ }
+}

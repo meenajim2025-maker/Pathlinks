@@ -1085,8 +1085,8 @@ async function renderDecisionTools() {
         const win = window.open('', '_blank', 'width=700,height=800');
         win.document.write('<!DOCTYPE html><html><head><title>' + escapeHtml(tool.title) + '</title><meta charset="utf-8"></head><body style="font-family:Inter,sans-serif;padding:24px;max-width:700px;">' +
             '<h1 style="margin:0 0 8px 0;">' + escapeHtml(tool.title) + '</h1>' +
-            '<p class="small-text"><strong>NICE / evidence:</strong> ' + escapeHtml((tool.niceRefs || []).join(', ') || 'NICE CKS') + '</p>' +
-            '<p style="line-height:1.5;">' + escapeHtml(tool.evidence || '') + '</p>' +
+            '<p class="small-text"><strong>Aligned to:</strong> ' + escapeHtml((tool.niceRefs || []).join(', ') || 'NICE CKS') + '</p>' +
+            '<p style="line-height:1.5;">Management aligned to ' + escapeHtml((tool.niceRefs || []).slice(0, 3).join(', ') || 'NICE CKS') + '. Follow the steps below and local policy.</p>' +
             (redFlagsList.length ? '<h3 style="margin-top:16px;color:#c0392b;">Red flags / When to refer</h3><ul style="padding-left:20px;">' + redFlagsList.map(r => '<li>' + escapeHtml(r) + '</li>').join('') + '</ul>' : '') +
             '<h3 style="margin-top:16px;">Steps</h3>' + stepsHtml +
             '<p style="margin-top:24px;font-size:11px;color:#666;">PathLinks Decision Tools · ' + new Date().toLocaleDateString() + '</p>' +
@@ -1133,7 +1133,7 @@ async function renderDecisionTools() {
         titleEl.innerHTML += ` <span class="badge ${badgeClass}" style="font-size: 11px; vertical-align: middle; margin-left: 8px;">${badgeText}</span>`;
 
         niceEl.textContent = (tool.niceRefs || []).join(', ') || 'NICE CKS';
-        evidenceEl.textContent = tool.evidence || 'See NICE CKS and local policy.';
+        evidenceEl.textContent = 'Management aligned to ' + ((tool.niceRefs || []).slice(0, 3).join(', ') || 'NICE CKS') + '. See guideline and local policy.';
         guidanceBox.classList.add('hidden');
         stepsContainer.innerHTML = '';
 

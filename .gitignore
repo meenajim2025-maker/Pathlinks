@@ -8,3 +8,6 @@ __pycache__
 data/transcripts/
 data/*.bak
 node_modules/
+
+# Analysis report (deliverable, not source)
+PathLinks_Project_Analysis.docx

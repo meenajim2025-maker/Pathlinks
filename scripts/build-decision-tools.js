@@ -40,10 +40,9 @@ function findNiceRefs(title, map) {
 }
 
 function evidenceFromTranscript(transcript) {
-  if (!transcript || typeof transcript !== 'string') return null;
-  const t = transcript.replace(/\s+/g, ' ').trim();
-  if (t.length < 40) return null;
-  return t.length <= 280 ? t : t.slice(0, 280) + '…';
+  // Transcript-derived evidence removed 2026-06-14 (IP/quality). Tools now ship
+  // curated NICE-aligned management steps only; no verbatim transcript text.
+  return null;
 }
 
 /** Find first management template whose keywords match title (lowercase) using whole-word boundary. If matchAll, all keywords must match. */
@@ -598,11 +597,11 @@ function getSystemFallbackSteps(systemId, title) {
 function buildTool(opts) {
   const { title, niceRefs, evidence, steps, episode } = opts;
   const id = slug(title).slice(0, 60);
+  // NOTE: 'evidence' field intentionally not emitted (transcript text removed 2026-06-14).
   return {
     id,
     title,
     niceRefs: niceRefs || [],
-    evidence: evidence || `Management per ${(niceRefs || []).slice(0, 2).join(' and ') || 'NICE CKS'}.`,
     steps: steps || [],
     episode
   };

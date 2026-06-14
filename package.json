@@ -1,13 +1,15 @@
 {
   "name": "emis-pathlinks-project",
   "version": "1.0.0",
-  "description": "A comprehensive clinical decision support tool for UK General Practice, designed to streamline blood test actioning and integrated with EMIS Web.",
-  "main": "script.js",
+  "description": "Clinical decision-support aid for UK General Practice (blood-test actioning, NICE-aligned decision tools, calculators). Partial EMIS Web export (in development).",
+  "main": "app/main.js",
   "directories": {
     "doc": "docs"
   },
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
+    "test": "node scripts/validate-data.js",
+    "validate": "node scripts/validate-data.js",
+    "build": "node scripts/build-decision-tools.js",
     "deploy": "vercel --prod",
     "deploy:preview": "vercel"
   },

@@ -16,6 +16,29 @@
 </head>
 
 <body>
+    <!-- Healthcare-professional access gate (added 2026-06-14) -->
+    <div id="hcp-gate" role="dialog" aria-modal="true" aria-labelledby="hcp-gate-title" style="position:fixed;inset:0;z-index:9999;background:rgba(15,23,42,0.92);display:flex;align-items:center;justify-content:center;padding:24px;">
+        <div style="max-width:560px;background:#fff;border-radius:14px;padding:28px 30px;box-shadow:0 20px 60px rgba(0,0,0,0.35);font-family:Inter,system-ui,sans-serif;color:#1e293b;">
+            <h2 id="hcp-gate-title" style="margin:0 0 12px;font-size:22px;">PathLinks — for healthcare professionals</h2>
+            <p style="line-height:1.55;margin:0 0 12px;">PathLinks is a <strong>clinical decision-support aid for registered UK healthcare professionals</strong>. It is <strong>not a registered medical device</strong>, is not a substitute for clinical judgement, and is not intended for use by patients or members of the public.</p>
+            <p style="line-height:1.55;margin:0 0 12px;">Guidance is aligned to NICE CKS/NG and BNF but may not reflect the latest updates. <strong>Always verify against the current NICE CKS, BNF/BNFc and your local formulary and policy before acting.</strong> In an emergency, follow local escalation pathways or call 999.</p>
+            <p style="line-height:1.55;margin:0 0 18px;font-size:13px;color:#64748b;">No patient-identifiable data should be entered. By continuing you confirm you are a healthcare professional and accept these terms.</p>
+            <button id="hcp-gate-accept" style="width:100%;padding:13px 16px;font-size:15px;font-weight:600;color:#fff;background:#1f6feb;border:none;border-radius:9px;cursor:pointer;">I am a healthcare professional — continue</button>
+        </div>
+    </div>
+    <script>
+        (function () {
+            var gate = document.getElementById('hcp-gate');
+            try {
+                if (sessionStorage.getItem('pathlinks-hcp-ack') === '1') { gate.style.display = 'none'; }
+            } catch (e) { /* sessionStorage may be unavailable */ }
+            var btn = document.getElementById('hcp-gate-accept');
+            if (btn) btn.addEventListener('click', function () {
+                try { sessionStorage.setItem('pathlinks-hcp-ack', '1'); } catch (e) {}
+                gate.style.display = 'none';
+            });
+        })();
+    </script>
     <div class="app-container">
         <aside class="sidebar">
             <div class="logo">
@@ -498,6 +521,10 @@
         </div>
     </section>
 
+    <footer style="margin-top:32px;padding:16px 24px;border-top:1px solid #e2e8f0;font-size:12px;line-height:1.5;color:#64748b;">
+        <strong>Clinical decision-support aid for UK healthcare professionals — not a registered medical device.</strong>
+        Not a substitute for clinical judgement. Always verify against current NICE CKS, BNF/BNFc and local policy. Do not enter patient-identifiable data. In an emergency call 999.
+    </footer>
     </main>
     </div>
 
