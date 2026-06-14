@@ -84,6 +84,87 @@
     });
   }
 
+  // The ASR backend decodes audio with libsndfile, which cannot read compressed
+  // WebM/Opus (Chrome/Firefox) or MP4/AAC (Safari). Convert the recording to
+  // 16 kHz mono 16-bit PCM WAV in-browser using the browser's own codecs, which
+  // works consistently across Chrome, Edge, Firefox and Safari/iOS.
+  function resampleMono(input, srcRate, dstRate) {
+    if (srcRate === dstRate) return input;
+    const ratio = srcRate / dstRate;
+    const outLen = Math.max(1, Math.round(input.length / ratio));
+    const out = new Float32Array(outLen);
+    for (let i = 0; i < outLen; i++) {
+      const idx = i * ratio;
+      const i0 = Math.floor(idx);
+      const i1 = Math.min(i0 + 1, input.length - 1);
+      const frac = idx - i0;
+      out[i] = input[i0] * (1 - frac) + input[i1] * frac;
+    }
+    return out;
+  }
+
+  function encodeWav(samples, sampleRate) {
+    const buffer = new ArrayBuffer(44 + samples.length * 2);
+    const view = new DataView(buffer);
+    const writeStr = (off, s) => { for (let i = 0; i < s.length; i++) view.setUint8(off + i, s.charCodeAt(i)); };
+    writeStr(0, 'RIFF');
+    view.setUint32(4, 36 + samples.length * 2, true);
+    writeStr(8, 'WAVE');
+    writeStr(12, 'fmt ');
+    view.setUint32(16, 16, true);
+    view.setUint16(20, 1, true);            // PCM
+    view.setUint16(22, 1, true);            // mono
+    view.setUint32(24, sampleRate, true);
+    view.setUint32(28, sampleRate * 2, true); // byte rate
+    view.setUint16(32, 2, true);            // block align
+    view.setUint16(34, 16, true);           // bits per sample
+    writeStr(36, 'data');
+    view.setUint32(40, samples.length * 2, true);
+    let off = 44;
+    for (let i = 0; i < samples.length; i++) {
+      let s = Math.max(-1, Math.min(1, samples[i]));
+      view.setInt16(off, s < 0 ? s * 0x8000 : s * 0x7FFF, true);
+      off += 2;
+    }
+    return buffer;
+  }
+
+  function arrayBufferToBase64(buf) {
+    let binary = '';
+    const bytes = new Uint8Array(buf);
+    const chunk = 0x8000;
+    for (let i = 0; i < bytes.length; i += chunk) {
+      binary += String.fromCharCode.apply(null, bytes.subarray(i, i + chunk));
+    }
+    return btoa(binary);
+  }
+
+  async function blobToWavBase64(blob) {
+    const arrayBuffer = await blob.arrayBuffer();
+    const AC = window.AudioContext || window.webkitAudioContext;
+    if (!AC) throw new Error('No AudioContext');
+    const ctx = new AC();
+    let audioBuffer;
+    try {
+      // Safari historically only supports the callback form of decodeAudioData.
+      audioBuffer = await new Promise((resolve, reject) => {
+        const p = ctx.decodeAudioData(arrayBuffer, resolve, reject);
+        if (p && typeof p.then === 'function') p.then(resolve, reject);
+      });
+    } finally {
+      if (ctx.close) { try { ctx.close(); } catch (e) {} }
+    }
+    const numCh = audioBuffer.numberOfChannels || 1;
+    const len = audioBuffer.length;
+    const mono = new Float32Array(len);
+    for (let c = 0; c < numCh; c++) {
+      const data = audioBuffer.getChannelData(c);
+      for (let i = 0; i < len; i++) mono[i] += data[i] / numCh;
+    }
+    const wav = encodeWav(resampleMono(mono, audioBuffer.sampleRate, 16000), 16000);
+    return arrayBufferToBase64(wav);
+  }
+
   async function apiPost(url, payload) {
     const res = await fetch(url, {
       method: 'POST',
@@ -105,8 +186,17 @@
   }
 
   async function transcribeBlob(blob, mimeType) {
-    const audioBase64 = await blobToBase64(blob);
-    const data = await apiPost(API.transcribe, { audioBase64, mimeType });
+    let audioBase64, sendMime;
+    try {
+      // Convert to WAV PCM so the libsndfile-based ASR can decode it.
+      audioBase64 = await blobToWavBase64(blob);
+      sendMime = 'audio/wav';
+    } catch (e) {
+      // Fallback: send the original container (older browsers without AudioContext decode).
+      audioBase64 = await blobToBase64(blob);
+      sendMime = mimeType;
+    }
+    const data = await apiPost(API.transcribe, { audioBase64, mimeType: sendMime });
     return data.transcript || '';
   }
 

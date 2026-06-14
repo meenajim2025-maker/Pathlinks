@@ -26,15 +26,6 @@ async function init() {
     navItems.forEach(item => {
         item.addEventListener('click', () => {
             const viewId = item.id.replace('nav-', '') + '-view';
-            // #region agent log
-            var viewFound = false;
-            views.forEach(function(v) { if (v.id === viewId) viewFound = true; });
-            var payload1 = {sessionId:'81698c',location:'main.js:nav-click',message:'Nav item clicked',data:{itemId:item.id,viewId:viewId,viewFound:viewFound,initSandboxType:typeof initSandbox},timestamp:Date.now(),hypothesisId:'H1'};
-            var payload2 = {sessionId:'81698c',location:'main.js:nav-click',message:'Sandbox branch',data:{isNavSandbox:item.id==='nav-sandbox',willCallInitSandbox:item.id==='nav-sandbox'&&typeof initSandbox==='function'},timestamp:Date.now(),hypothesisId:'H2'};
-            if (typeof window !== 'undefined') { window.__debugLog = window.__debugLog || []; window.__debugLog.push(payload1); window.__debugLog.push(payload2); console.log('[DEBUG-SANDBOX]', JSON.stringify(payload1)); console.log('[DEBUG-SANDBOX]', JSON.stringify(payload2)); }
-            fetch('http://127.0.0.1:7623/ingest/dee73cc8-fd3a-417d-b2b7-28f9d03ea65a',{method:'POST',headers:{'Content-Type':'application/json','X-Debug-Session-Id':'81698c'},body:JSON.stringify(payload1)}).catch(function(){});
-            fetch('http://127.0.0.1:7623/ingest/dee73cc8-fd3a-417d-b2b7-28f9d03ea65a',{method:'POST',headers:{'Content-Type':'application/json','X-Debug-Session-Id':'81698c'},body:JSON.stringify(payload2)}).catch(function(){});
-            // #endregion
             navItems.forEach(n => n.classList.remove('active'));
             item.classList.add('active');
 

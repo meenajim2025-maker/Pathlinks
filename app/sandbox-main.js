@@ -8,11 +8,6 @@ let sandboxSession = {
 
 async function initSandbox() {
     var listEl = document.getElementById('sandbox-scenario-list');
-    // #region agent log
-    var pl = {sessionId:'81698c',location:'sandbox-main.js:initSandbox-entry',message:'initSandbox called',data:{listElPresent:!!listEl},timestamp:Date.now(),hypothesisId:'H3'};
-    if (typeof window !== 'undefined') { window.__debugLog = window.__debugLog || []; window.__debugLog.push(pl); console.log('[DEBUG-SANDBOX]', JSON.stringify(pl)); }
-    fetch('http://127.0.0.1:7623/ingest/dee73cc8-fd3a-417d-b2b7-28f9d03ea65a',{method:'POST',headers:{'Content-Type':'application/json','X-Debug-Session-Id':'81698c'},body:JSON.stringify(pl)}).catch(function(){});
-    // #endregion
     if (!listEl) return;
     listEl.innerHTML = '<p class="small-text">Loading scenarios...</p>';
 
@@ -32,11 +27,6 @@ async function initSandbox() {
             if (!response.ok) throw new Error('HTTP ' + response.status);
             sandboxScenarios = await response.json();
         }
-        // #region agent log
-        var pl4 = {sessionId:'81698c',location:'sandbox-main.js:after-data',message:'Scenario data loaded',data:{loaded:loaded,scenarioCount:sandboxScenarios?sandboxScenarios.length:0},timestamp:Date.now(),hypothesisId:'H4'};
-        if (typeof window !== 'undefined') { window.__debugLog = window.__debugLog || []; window.__debugLog.push(pl4); console.log('[DEBUG-SANDBOX]', JSON.stringify(pl4)); }
-        fetch('http://127.0.0.1:7623/ingest/dee73cc8-fd3a-417d-b2b7-28f9d03ea65a',{method:'POST',headers:{'Content-Type':'application/json','X-Debug-Session-Id':'81698c'},body:JSON.stringify(pl4)}).catch(function(){});
-        // #endregion
         if (!Array.isArray(sandboxScenarios) || sandboxScenarios.length === 0) throw new Error('No scenarios');
         renderSandboxScenarios();
 
@@ -61,11 +51,6 @@ async function initSandbox() {
         }
 
     } catch (e) {
-        // #region agent log
-        var plC = {sessionId:'81698c',location:'sandbox-main.js:initSandbox-catch',message:'initSandbox error',data:{error:String(e&&e.message||e)},timestamp:Date.now(),hypothesisId:'H4'};
-        if (typeof window !== 'undefined') { window.__debugLog = window.__debugLog || []; window.__debugLog.push(plC); console.log('[DEBUG-SANDBOX]', JSON.stringify(plC)); }
-        fetch('http://127.0.0.1:7623/ingest/dee73cc8-fd3a-417d-b2b7-28f9d03ea65a',{method:'POST',headers:{'Content-Type':'application/json','X-Debug-Session-Id':'81698c'},body:JSON.stringify(plC)}).catch(function(){});
-        // #endregion
         console.error("Error loading sandbox scenarios:", e);
         if (listEl) listEl.innerHTML = '<p class="small-text" style="color:#c0392b;">Could not load scenarios. Check console.</p>';
     }
@@ -73,11 +58,6 @@ async function initSandbox() {
 
 function renderSandboxScenarios() {
     const listEl = document.getElementById('sandbox-scenario-list');
-    // #region agent log
-    var pl5 = {sessionId:'81698c',location:'sandbox-main.js:renderSandboxScenarios',message:'Rendering scenarios',data:{listElPresent:!!listEl,scenarioCount:sandboxScenarios?sandboxScenarios.length:0},timestamp:Date.now(),hypothesisId:'H5'};
-    if (typeof window !== 'undefined') { window.__debugLog = window.__debugLog || []; window.__debugLog.push(pl5); console.log('[DEBUG-SANDBOX]', JSON.stringify(pl5)); }
-    fetch('http://127.0.0.1:7623/ingest/dee73cc8-fd3a-417d-b2b7-28f9d03ea65a',{method:'POST',headers:{'Content-Type':'application/json','X-Debug-Session-Id':'81698c'},body:JSON.stringify(pl5)}).catch(function(){});
-    // #endregion
     if (!listEl) return;
 
     listEl.innerHTML = '';
