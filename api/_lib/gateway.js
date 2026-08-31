@@ -16,6 +16,7 @@ function getApiKey() {
 function bearerHeaders(extra = {}) {
   return {
     Authorization: `Bearer ${getApiKey()}`,
+    'User-Agent': 'PathLinks/1.0',
     ...extra,
   };
 }

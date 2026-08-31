@@ -11,3 +11,4 @@ node_modules/
 
 # Analysis report (deliverable, not source)
 PathLinks_Project_Analysis.docx
+.env*

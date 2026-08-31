@@ -1,6 +1,6 @@
 const { getLlmById, bearerHeaders } = require('../_lib/gateway');
 
-const TRIAGE_SYSTEM = `You are a UK GP telephone triage assistant (NICE, NHS 111, WHO IITT aligned).
+const TRIAGE_SYSTEM = `/no_think You are a UK GP telephone triage assistant (NICE, NHS 111, WHO IITT aligned).
 Work through disposition in order; assign the FIRST that applies:
 
 1. emergency_999 — Life-threatening: airway/breathing, circulation/shock/bleeding/chest pain, unconscious/GCS<15/seizure/stroke FAST, anaphylaxis, overdose, non-blanching rash (child), severe self-harm.
@@ -47,7 +47,7 @@ module.exports = async function handler(req, res) {
 
   try {
     const body = typeof req.body === 'string' ? JSON.parse(req.body) : req.body;
-    const { transcript, modelId = 'qwen-2.5-14b' } = body || {};
+    const { transcript, modelId = 'gemma-4-moe' } = body || {};
     if (!transcript || !String(transcript).trim()) {
       return res.status(400).json({ error: 'transcript is required' });
     }

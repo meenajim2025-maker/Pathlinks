@@ -2,6 +2,8 @@
   "version": 2,
   "public": true,
   "buildCommand": "echo 'Static site — data is pre-generated and committed; no build step.'",
+  "installCommand": "echo skip",
+  "framework": null,
   "outputDirectory": "app",
   "cleanUrls": true,
   "trailingSlash": false,

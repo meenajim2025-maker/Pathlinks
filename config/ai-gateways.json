@@ -21,7 +21,27 @@
       "contextLimit": 49152,
       "gateway": "pathready",
       "format": "openai",
-      "endpoint": "https://api1.pathready.uk/v1/vllm-aipcduo/chat/completions"
+      "endpoint": "https://api1.pathready.uk/v1/gemma/chat/completions"
+    },
+    {
+      "id": "qwen3.8-27b",
+      "name": "Qwen 3.8 27B",
+      "parameters": "27B",
+      "model": "qwen3.8-27b",
+      "contextLimit": 16384,
+      "gateway": "pathready",
+      "format": "openai",
+      "endpoint": "https://api1.pathready.uk/v1/qwen38/chat/completions"
+    },
+    {
+      "id": "qwen-2.5-7b",
+      "name": "Qwen 2.5 7B",
+      "parameters": "7B",
+      "model": "qwen2.5-7b",
+      "contextLimit": 32768,
+      "gateway": "pathready",
+      "format": "openai",
+      "endpoint": "https://api1.pathready.uk/v1/qwen7/chat/completions"
     },
     {
       "id": "mistral-small-24b",
@@ -51,7 +71,7 @@
       "contextLimit": 4096,
       "gateway": "pathready",
       "format": "ollama",
-      "endpoint": "https://api1.pathready.uk/v1/ollama-aipcduo/api/chat"
+      "endpoint": "https://api1.pathready.uk/v1/ollama/api/chat"
     },
     {
       "id": "qwen-2.5-3b",
@@ -61,7 +81,7 @@
       "contextLimit": 4096,
       "gateway": "pathready",
       "format": "ollama",
-      "endpoint": "https://api1.pathready.uk/v1/ollama-aipcduo/api/chat"
+      "endpoint": "https://api1.pathready.uk/v1/ollama/api/chat"
     },
     {
       "id": "deepseek-r1-1.5b",
@@ -71,14 +91,14 @@
       "contextLimit": 8192,
       "gateway": "pathready",
       "format": "ollama",
-      "endpoint": "https://api1.pathready.uk/v1/ollama-aipcduo/api/chat"
+      "endpoint": "https://api1.pathready.uk/v1/ollama/api/chat"
     }
   ],
   "speech": {
     "stt": {
       "name": "Speech-to-Text (ASR)",
       "model": "Qwen/Qwen3-ASR-1.7B",
-      "endpoint": "https://api1.pathready.uk/v1/trio-asr/v1/audio/transcriptions",
+      "endpoint": "https://api1.pathready.uk/v1/asr/v1/audio/transcriptions",
       "contentType": "multipart/form-data"
     },
     "tts": {
@@ -87,15 +107,15 @@
       "defaultChunkSize": 4,
       "endpoints": {
         "pcmStream": {
-          "url": "https://api1.pathready.uk/v1/trio-tts/v1/audio/speech/pcm-stream",
+          "url": "https://api1.pathready.uk/v1/tts/v1/audio/speech/pcm-stream",
           "description": "Ultra-low latency 24 kHz mono int16 PCM (~130–210 ms)"
         },
         "stream": {
-          "url": "https://api1.pathready.uk/v1/trio-tts/v1/audio/speech/stream",
+          "url": "https://api1.pathready.uk/v1/tts/v1/audio/speech/stream",
           "description": "Sentence-chunked stream with length prefixes"
         },
         "singleShot": {
-          "url": "https://api1.pathready.uk/v1/trio-tts/v1/audio/speech",
+          "url": "https://api1.pathready.uk/v1/tts/v1/audio/speech",
           "description": "Non-streaming fallback (~1.1–2.8 s)"
         }
       }
