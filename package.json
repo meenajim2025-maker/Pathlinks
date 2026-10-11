@@ -1,17 +1,18 @@
 {
   "name": "emis-pathlinks-project",
   "version": "1.0.0",
-  "description": "Clinical decision-support aid for UK General Practice (blood-test actioning, NICE-aligned decision tools, calculators). Partial EMIS Web export (in development).",
+  "description": "Clinical decision-support and teaching aid for UK General Practice (GP Triage): blood-test actioning, NICE-aligned decision tools, calculators, education sandbox, voice triage.",
   "main": "app/main.js",
   "directories": {
     "doc": "docs"
   },
   "scripts": {
-    "test": "node scripts/validate-data.js",
+    "test": "node scripts/validate-data.js && node scripts/census-specificity.js",
     "validate": "node scripts/validate-data.js",
     "build": "node scripts/build-decision-tools.js",
     "deploy": "vercel --prod",
-    "deploy:preview": "vercel"
+    "deploy:preview": "vercel",
+    "census": "node scripts/census-specificity.js"
   },
   "keywords": [],
   "author": "",

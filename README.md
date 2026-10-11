@@ -16,15 +16,15 @@ A clinical decision-support **aid for UK healthcare professionals**, designed to
 - **Tumour Markers**: Age-specific PSA thresholds and NICE 2WW referral prompts for CA125, CA19-9, etc.
 - **EMIS export (partial / in development)**: Downloadable XML protocol scaffold. **Only a handful of blood tests currently carry EMIS read codes** — the remaining 91 are flagged as TODO in `blood_tests_protocol.json`. Full result-filing automation is not yet delivered.
 - **Learning Topics**: Searchable clinical learning summaries (derived from educational transcripts; source licensing to be confirmed before public/commercial redistribution).
-- **Decision Tools**: **~1,574** clinical decision tools by system with **NICE-based management** (drug choices, targets, referral criteria); dropdowns give concrete guidance from guidelines, not generic “see NICE”.
+- **Decision Tools**: **894** clinical decision tools by system (down from 1,574 on 2026-10-11 — tools whose plan text was identical to five or more others were merged into one representative; the retired titles still work in search). **40 tools carry fully specific, per-tool management plans** (drugs, doses, referral thresholds, named NICE CKS/BNF sources); 41 representatives are honestly labelled *Shared plan … (needs specific content)* and are the current backlog. Live numbers: `docs/CENSUS.md`.
 - **Clinical Calculators**: Dedicated section for **QRISK3**, **NEWS2**, **Wells Score (DVT)**, and **CURB-65**, with contextual links from the clinical dashboard.
 - **Dermatology Refinement**: Highly specific management plans for **Psoriasis**, **Scalp conditions**, **Acne**, **Fungal infections**, and **Actinic Keratosis**, aligned with NICE CKS and PCDS.
 
 ## 📁 Project Structure
 
 - `/app`: **The canonical web application** — `index.html`, `style.css`, `main.js`, `sandbox-main.js`, `voice-triage.js`, and `app/data/` (runtime clinical data). This is what Vercel serves.
-- `/data`: Build-side mirror of the clinical data (`blood_tests_protocol.json`, `decision_tools_protocol.json` (~1,574 tools), `drug_interactions.json`, `knowledge_base.json`, `_provenance.json`). Kept in sync with `app/data/` by `build-decision-tools.js`.
-- `/scripts`: `build-decision-tools.js` (NICE → decision_tools_protocol.json), `validate-data.js` (`npm test`), `apply-improvements.py` (one-off remediation pass), plus transcription helpers.
+- `/app/data` is the **only** data directory (the `/data` mirror was removed 2026-10-11 after it drifted). `merged_tools.json` records every merged tool and what it merged into; `tools-index.json` carries aliases for search.
+- `/scripts`: `build-decision-tools.js` (sources + `tool-overrides.json` → `app/data/decision_tools_protocol.json`; merges template-shared plans), `tool-overrides.json` (**per-tool curated plans — the place to add real content**), `census-specificity.js` (`npm run census`; `npm test` fails if generic content rises or curated content falls — `census-ceiling.json`), `validate-data.js`, plus transcription helpers.
 - `/emis_templates`: EMIS Web XML. `PathLinks_Complete_Protocol.xml` is the real protocol; `PathLinks_V23.xml` is an empty stub.
 - `/docs`: **`STATE.md` (canonical status)**, EMIS setup guide, clinical protocol, audits; dated handovers in `docs/archive/`.
 
@@ -52,6 +52,8 @@ With the USB drive connected (e.g. at `/Volumes/NO NAME`):
    Use `--limit 5` to test; omit for full run. See **docs/KNOWLEDGE_EXTRACTION.md** for details.
 
 ## 📋 Version History
+
+- **V2.3 (2026-10-11)**: Quality over count. Merged 662 template-shared tools into 76 representatives (1,574 → 887); added per-tool override layer and 114 curated plans across all 19 systems (every shared-plan placeholder replaced) (NICE CKS/BNF, awaiting clinician sign-off); census gate in `npm test`; single data directory; Foreman working method (`CLAUDE.md`, `docs/WORKING_RULES.md`, `docs/OWNER_RULINGS.md`).
 
 - **V2.2 (2026-06-14)**: Remediation pass — removed transcript-derived evidence text and `[Name]` tokens; added data provenance/review metadata; expanded drug interactions to 82 pairs; added a healthcare-professional access gate and stronger disclaimers; scaffolded EMIS code fields; added `npm test` data validation; removed dead duplicate root files; consolidated docs (`docs/STATE.md`).
 - **V2.1**: Learning topics from USB MP3s—parse filenames, transcribe with Whisper, search and read transcripts in-app; protocol View Guidance modal.

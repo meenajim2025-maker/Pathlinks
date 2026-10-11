@@ -1,0 +1,1219 @@
+{
+ "generated": "2026-10-11T17:10:43.152Z",
+ "rule": "plan text (options >=80 chars) identical within a system for >=5 tools",
+ "groups": 33,
+ "retired": {
+  "af-anticoagulation-choice": {
+   "title": "AF – anticoagulation choice",
+   "system": "cardiovascular",
+   "mergedInto": "af",
+   "reason": "plan text identical to 5 other tools"
+  },
+  "af-rate-control": {
+   "title": "AF – rate control",
+   "system": "cardiovascular",
+   "mergedInto": "af",
+   "reason": "plan text identical to 5 other tools"
+  },
+  "af-rhythm-control": {
+   "title": "AF – rhythm control",
+   "system": "cardiovascular",
+   "mergedInto": "af",
+   "reason": "plan text identical to 5 other tools"
+  },
+  "anticoagulation-in-af-doac-choice": {
+   "title": "Anticoagulation in AF: DOAC choice",
+   "system": "cardiovascular",
+   "mergedInto": "af",
+   "reason": "plan text identical to 5 other tools"
+  },
+  "atrial-fibrillation-rate-vs-rhythm-control": {
+   "title": "Atrial fibrillation: rate vs rhythm control",
+   "system": "cardiovascular",
+   "mergedInto": "af",
+   "reason": "plan text identical to 5 other tools"
+  },
+  "cardiomyopathy-referral": {
+   "title": "Cardiomyopathy – referral",
+   "system": "cardiovascular",
+   "mergedInto": "heart-failure",
+   "reason": "plan text identical to 7 other tools"
+  },
+  "heart-failure-device-therapy": {
+   "title": "Heart failure – device therapy",
+   "system": "cardiovascular",
+   "mergedInto": "heart-failure",
+   "reason": "plan text identical to 7 other tools"
+  },
+  "heart-failure-diuretic-dose": {
+   "title": "Heart failure – diuretic dose",
+   "system": "cardiovascular",
+   "mergedInto": "heart-failure",
+   "reason": "plan text identical to 7 other tools"
+  },
+  "heart-failure-fluid-overload": {
+   "title": "Heart failure – fluid overload",
+   "system": "cardiovascular",
+   "mergedInto": "heart-failure",
+   "reason": "plan text identical to 7 other tools"
+  },
+  "heart-failure-hfref-drug-titration": {
+   "title": "Heart failure – HFrEF drug titration",
+   "system": "cardiovascular",
+   "mergedInto": "heart-failure",
+   "reason": "plan text identical to 7 other tools"
+  },
+  "heart-failure-potassium": {
+   "title": "Heart failure – potassium",
+   "system": "cardiovascular",
+   "mergedInto": "heart-failure",
+   "reason": "plan text identical to 7 other tools"
+  },
+  "hypertrophic-cardiomyopathy": {
+   "title": "Hypertrophic cardiomyopathy",
+   "system": "cardiovascular",
+   "mergedInto": "heart-failure",
+   "reason": "plan text identical to 7 other tools"
+  },
+  "dvt-anticoagulation-duration": {
+   "title": "DVT – anticoagulation duration",
+   "system": "cardiovascular",
+   "mergedInto": "dvt",
+   "reason": "plan text identical to 4 other tools"
+  },
+  "dvt-diagnosis-wells": {
+   "title": "DVT – diagnosis Wells",
+   "system": "cardiovascular",
+   "mergedInto": "dvt",
+   "reason": "plan text identical to 4 other tools"
+  },
+  "pe-thrombolysis": {
+   "title": "PE – thrombolysis",
+   "system": "cardiovascular",
+   "mergedInto": "dvt",
+   "reason": "plan text identical to 4 other tools"
+  },
+  "pe-wells-and-treatment": {
+   "title": "PE – Wells and treatment",
+   "system": "cardiovascular",
+   "mergedInto": "dvt",
+   "reason": "plan text identical to 4 other tools"
+  },
+  "hypertension-first-line-drug-choice": {
+   "title": "Hypertension – first-line drug choice",
+   "system": "cardiovascular",
+   "mergedInto": "hypertension",
+   "reason": "plan text identical to 5 other tools"
+  },
+  "hypertension-pregnancy": {
+   "title": "Hypertension – pregnancy",
+   "system": "cardiovascular",
+   "mergedInto": "hypertension",
+   "reason": "plan text identical to 5 other tools"
+  },
+  "hypertension-resistant": {
+   "title": "Hypertension – resistant",
+   "system": "cardiovascular",
+   "mergedInto": "hypertension",
+   "reason": "plan text identical to 5 other tools"
+  },
+  "hypertension-white-coat": {
+   "title": "Hypertension – white coat",
+   "system": "cardiovascular",
+   "mergedInto": "hypertension",
+   "reason": "plan text identical to 5 other tools"
+  },
+  "hypertension-management-management": {
+   "title": "Hypertension management – Management",
+   "system": "cardiovascular",
+   "mergedInto": "hypertension",
+   "reason": "plan text identical to 5 other tools"
+  },
+  "acne-isotretinoin-referral": {
+   "title": "Acne – isotretinoin referral",
+   "system": "dermatology",
+   "mergedInto": "acne",
+   "reason": "plan text identical to 5 other tools"
+  },
+  "acne-oral-antibiotic": {
+   "title": "Acne – oral antibiotic",
+   "system": "dermatology",
+   "mergedInto": "acne",
+   "reason": "plan text identical to 5 other tools"
+  },
+  "acne-scarring": {
+   "title": "Acne – scarring",
+   "system": "dermatology",
+   "mergedInto": "acne",
+   "reason": "plan text identical to 5 other tools"
+  },
+  "acne-topical": {
+   "title": "Acne – topical",
+   "system": "dermatology",
+   "mergedInto": "acne",
+   "reason": "plan text identical to 5 other tools"
+  },
+  "acne-vulgaris-management": {
+   "title": "Acne vulgaris management",
+   "system": "dermatology",
+   "mergedInto": "acne",
+   "reason": "plan text identical to 5 other tools"
+  },
+  "cellulitis-diabetic-foot": {
+   "title": "Cellulitis – diabetic foot",
+   "system": "dermatology",
+   "mergedInto": "cellulitis",
+   "reason": "plan text identical to 4 other tools"
+  },
+  "cellulitis-iv-referral": {
+   "title": "Cellulitis – IV referral",
+   "system": "dermatology",
+   "mergedInto": "cellulitis",
+   "reason": "plan text identical to 4 other tools"
+  },
+  "cellulitis-oral-antibiotic": {
+   "title": "Cellulitis – oral antibiotic",
+   "system": "dermatology",
+   "mergedInto": "cellulitis",
+   "reason": "plan text identical to 4 other tools"
+  },
+  "cellulitis-oral-vs-iv": {
+   "title": "Cellulitis: oral vs IV",
+   "system": "dermatology",
+   "mergedInto": "cellulitis",
+   "reason": "plan text identical to 4 other tools"
+  },
+  "eczema-emollients": {
+   "title": "Eczema – emollients",
+   "system": "dermatology",
+   "mergedInto": "eczema",
+   "reason": "plan text identical to 4 other tools"
+  },
+  "eczema-face": {
+   "title": "Eczema – face",
+   "system": "dermatology",
+   "mergedInto": "eczema",
+   "reason": "plan text identical to 4 other tools"
+  },
+  "eczema-infected": {
+   "title": "Eczema – infected",
+   "system": "dermatology",
+   "mergedInto": "eczema",
+   "reason": "plan text identical to 4 other tools"
+  },
+  "eczema-stepped-care": {
+   "title": "Eczema: stepped care",
+   "system": "dermatology",
+   "mergedInto": "eczema",
+   "reason": "plan text identical to 4 other tools"
+  },
+  "psoriasis-arthritis": {
+   "title": "Psoriasis – arthritis",
+   "system": "dermatology",
+   "mergedInto": "psoriasis",
+   "reason": "plan text identical to 5 other tools"
+  },
+  "psoriasis-nails": {
+   "title": "Psoriasis – nails",
+   "system": "dermatology",
+   "mergedInto": "psoriasis",
+   "reason": "plan text identical to 5 other tools"
+  },
+  "psoriasis-systemic-referral": {
+   "title": "Psoriasis – systemic referral",
+   "system": "dermatology",
+   "mergedInto": "psoriasis",
+   "reason": "plan text identical to 5 other tools"
+  },
+  "psoriasis-topical": {
+   "title": "Psoriasis – topical",
+   "system": "dermatology",
+   "mergedInto": "psoriasis",
+   "reason": "plan text identical to 5 other tools"
+  },
+  "psoriasis-topical-vs-systemic": {
+   "title": "Psoriasis: topical vs systemic",
+   "system": "dermatology",
+   "mergedInto": "psoriasis",
+   "reason": "plan text identical to 5 other tools"
+  },
+  "depression-elderly": {
+   "title": "Depression – elderly",
+   "system": "mental-health",
+   "mergedInto": "depression",
+   "reason": "plan text identical to 11 other tools"
+  },
+  "depression-mild": {
+   "title": "Depression – mild",
+   "system": "mental-health",
+   "mergedInto": "depression",
+   "reason": "plan text identical to 11 other tools"
+  },
+  "depression-moderate": {
+   "title": "Depression – moderate",
+   "system": "mental-health",
+   "mergedInto": "depression",
+   "reason": "plan text identical to 11 other tools"
+  },
+  "depression-physical-illness": {
+   "title": "Depression – physical illness",
+   "system": "mental-health",
+   "mergedInto": "depression",
+   "reason": "plan text identical to 11 other tools"
+  },
+  "depression-postnatal": {
+   "title": "Depression – postnatal",
+   "system": "mental-health",
+   "mergedInto": "depression",
+   "reason": "plan text identical to 11 other tools"
+  },
+  "depression-severe": {
+   "title": "Depression – severe",
+   "system": "mental-health",
+   "mergedInto": "depression",
+   "reason": "plan text identical to 11 other tools"
+  },
+  "depression-stopping-antidepressant": {
+   "title": "Depression – stopping antidepressant",
+   "system": "mental-health",
+   "mergedInto": "depression",
+   "reason": "plan text identical to 11 other tools"
+  },
+  "depression-treatment-resistant": {
+   "title": "Depression – treatment-resistant",
+   "system": "mental-health",
+   "mergedInto": "depression",
+   "reason": "plan text identical to 11 other tools"
+  },
+  "depression-in-adults-management": {
+   "title": "Depression in adults – Management",
+   "system": "mental-health",
+   "mergedInto": "depression",
+   "reason": "plan text identical to 11 other tools"
+  },
+  "depression-severity-and-treatment": {
+   "title": "Depression: severity and treatment",
+   "system": "mental-health",
+   "mergedInto": "depression",
+   "reason": "plan text identical to 11 other tools"
+  },
+  "mixed-anxiety-and-depression": {
+   "title": "Mixed anxiety and depression",
+   "system": "mental-health",
+   "mergedInto": "depression",
+   "reason": "plan text identical to 11 other tools"
+  },
+  "dementia-antipsychotic": {
+   "title": "Dementia – antipsychotic",
+   "system": "mental-health",
+   "mergedInto": "dementia",
+   "reason": "plan text identical to 6 other tools"
+  },
+  "dementia-diagnosis": {
+   "title": "Dementia – diagnosis",
+   "system": "mental-health",
+   "mergedInto": "dementia",
+   "reason": "plan text identical to 6 other tools"
+  },
+  "dementia-frontotemporal": {
+   "title": "Dementia – frontotemporal",
+   "system": "mental-health",
+   "mergedInto": "dementia",
+   "reason": "plan text identical to 6 other tools"
+  },
+  "dementia-lewy-body": {
+   "title": "Dementia – Lewy body",
+   "system": "mental-health",
+   "mergedInto": "dementia",
+   "reason": "plan text identical to 6 other tools"
+  },
+  "dementia-medication": {
+   "title": "Dementia – medication",
+   "system": "mental-health",
+   "mergedInto": "dementia",
+   "reason": "plan text identical to 6 other tools"
+  },
+  "dementia-young-onset": {
+   "title": "Dementia – young onset",
+   "system": "mental-health",
+   "mergedInto": "dementia",
+   "reason": "plan text identical to 6 other tools"
+  },
+  "acute-diarrhoea": {
+   "title": "Acute diarrhoea",
+   "system": "gastroenterology",
+   "mergedInto": "diarrhoea",
+   "reason": "plan text identical to 4 other tools"
+  },
+  "diarrhoea-c-difficile": {
+   "title": "Diarrhoea – C. difficile",
+   "system": "gastroenterology",
+   "mergedInto": "diarrhoea",
+   "reason": "plan text identical to 4 other tools"
+  },
+  "diarrhoea-chronic": {
+   "title": "Diarrhoea – chronic",
+   "system": "gastroenterology",
+   "mergedInto": "diarrhoea",
+   "reason": "plan text identical to 4 other tools"
+  },
+  "diarrhoea-traveller-s": {
+   "title": "Diarrhoea – traveller's",
+   "system": "gastroenterology",
+   "mergedInto": "diarrhoea",
+   "reason": "plan text identical to 4 other tools"
+  },
+  "constipation-opioid-induced": {
+   "title": "Constipation – opioid-induced",
+   "system": "gastroenterology",
+   "mergedInto": "constipation",
+   "reason": "plan text identical to 4 other tools"
+  },
+  "constipation-osmotic": {
+   "title": "Constipation – osmotic",
+   "system": "gastroenterology",
+   "mergedInto": "constipation",
+   "reason": "plan text identical to 4 other tools"
+  },
+  "constipation-stimulant": {
+   "title": "Constipation – stimulant",
+   "system": "gastroenterology",
+   "mergedInto": "constipation",
+   "reason": "plan text identical to 4 other tools"
+  },
+  "constipation-in-adults": {
+   "title": "Constipation in adults",
+   "system": "gastroenterology",
+   "mergedInto": "constipation",
+   "reason": "plan text identical to 4 other tools"
+  },
+  "ibs-bloating": {
+   "title": "IBS – bloating",
+   "system": "gastroenterology",
+   "mergedInto": "ibs",
+   "reason": "plan text identical to 4 other tools"
+  },
+  "ibs-first-line": {
+   "title": "IBS – first-line",
+   "system": "gastroenterology",
+   "mergedInto": "ibs",
+   "reason": "plan text identical to 4 other tools"
+  },
+  "ibs-refractory": {
+   "title": "IBS – refractory",
+   "system": "gastroenterology",
+   "mergedInto": "ibs",
+   "reason": "plan text identical to 4 other tools"
+  },
+  "irritable-bowel-syndrome-management": {
+   "title": "Irritable bowel syndrome – Management",
+   "system": "gastroenterology",
+   "mergedInto": "ibs",
+   "reason": "plan text identical to 4 other tools"
+  },
+  "obesity-assessment": {
+   "title": "Obesity – assessment",
+   "system": "endocrinology",
+   "mergedInto": "obesity",
+   "reason": "plan text identical to 5 other tools"
+  },
+  "obesity-bmi-30-40": {
+   "title": "Obesity – BMI 30–40",
+   "system": "endocrinology",
+   "mergedInto": "obesity",
+   "reason": "plan text identical to 5 other tools"
+  },
+  "obesity-drug-treatment": {
+   "title": "Obesity – drug treatment",
+   "system": "endocrinology",
+   "mergedInto": "obesity",
+   "reason": "plan text identical to 5 other tools"
+  },
+  "obesity-tier-3-referral": {
+   "title": "Obesity – tier 3 referral",
+   "system": "endocrinology",
+   "mergedInto": "obesity",
+   "reason": "plan text identical to 5 other tools"
+  },
+  "obesity-assessment-and-referral": {
+   "title": "Obesity: assessment and referral",
+   "system": "endocrinology",
+   "mergedInto": "obesity",
+   "reason": "plan text identical to 5 other tools"
+  },
+  "osteoporosis-bisphosphonate": {
+   "title": "Osteoporosis – bisphosphonate",
+   "system": "endocrinology",
+   "mergedInto": "osteoporosis",
+   "reason": "plan text identical to 7 other tools"
+  },
+  "osteoporosis-denosumab": {
+   "title": "Osteoporosis – denosumab",
+   "system": "endocrinology",
+   "mergedInto": "osteoporosis",
+   "reason": "plan text identical to 7 other tools"
+  },
+  "osteoporosis-dexa": {
+   "title": "Osteoporosis – DEXA",
+   "system": "endocrinology",
+   "mergedInto": "osteoporosis",
+   "reason": "plan text identical to 7 other tools"
+  },
+  "osteoporosis-fracture": {
+   "title": "Osteoporosis – fracture",
+   "system": "endocrinology",
+   "mergedInto": "osteoporosis",
+   "reason": "plan text identical to 7 other tools"
+  },
+  "osteoporosis-teriparatide": {
+   "title": "Osteoporosis – teriparatide",
+   "system": "endocrinology",
+   "mergedInto": "osteoporosis",
+   "reason": "plan text identical to 7 other tools"
+  },
+  "osteoporosis-risk-and-dexa": {
+   "title": "Osteoporosis: risk and DEXA",
+   "system": "endocrinology",
+   "mergedInto": "osteoporosis",
+   "reason": "plan text identical to 7 other tools"
+  },
+  "paget-s-disease": {
+   "title": "Paget's disease",
+   "system": "endocrinology",
+   "mergedInto": "osteoporosis",
+   "reason": "plan text identical to 7 other tools"
+  },
+  "rheumatoid-biologics": {
+   "title": "Rheumatoid – biologics",
+   "system": "musculoskeletal",
+   "mergedInto": "rheumatoid",
+   "reason": "plan text identical to 4 other tools"
+  },
+  "rheumatoid-dmard-monitoring": {
+   "title": "Rheumatoid – DMARD monitoring",
+   "system": "musculoskeletal",
+   "mergedInto": "rheumatoid",
+   "reason": "plan text identical to 4 other tools"
+  },
+  "rheumatoid-new": {
+   "title": "Rheumatoid – new",
+   "system": "musculoskeletal",
+   "mergedInto": "rheumatoid",
+   "reason": "plan text identical to 4 other tools"
+  },
+  "rheumatoid-arthritis-management": {
+   "title": "Rheumatoid arthritis – Management",
+   "system": "musculoskeletal",
+   "mergedInto": "rheumatoid",
+   "reason": "plan text identical to 4 other tools"
+  },
+  "asthma-acute": {
+   "title": "Asthma – acute",
+   "system": "respiratory",
+   "mergedInto": "asthma",
+   "reason": "plan text identical to 12 other tools"
+  },
+  "asthma-biologics": {
+   "title": "Asthma – biologics",
+   "system": "respiratory",
+   "mergedInto": "asthma",
+   "reason": "plan text identical to 12 other tools"
+  },
+  "asthma-brittle": {
+   "title": "Asthma – brittle",
+   "system": "respiratory",
+   "mergedInto": "asthma",
+   "reason": "plan text identical to 12 other tools"
+  },
+  "asthma-child-step-down": {
+   "title": "Asthma – child step-down",
+   "system": "respiratory",
+   "mergedInto": "asthma",
+   "reason": "plan text identical to 12 other tools"
+  },
+  "asthma-mart": {
+   "title": "Asthma – MART",
+   "system": "respiratory",
+   "mergedInto": "asthma",
+   "reason": "plan text identical to 12 other tools"
+  },
+  "asthma-occupational": {
+   "title": "Asthma – occupational",
+   "system": "respiratory",
+   "mergedInto": "asthma",
+   "reason": "plan text identical to 12 other tools"
+  },
+  "asthma-severe": {
+   "title": "Asthma – severe",
+   "system": "respiratory",
+   "mergedInto": "asthma",
+   "reason": "plan text identical to 12 other tools"
+  },
+  "asthma-step-1-2": {
+   "title": "Asthma – step 1–2",
+   "system": "respiratory",
+   "mergedInto": "asthma",
+   "reason": "plan text identical to 12 other tools"
+  },
+  "asthma-step-3-4": {
+   "title": "Asthma – step 3–4",
+   "system": "respiratory",
+   "mergedInto": "asthma",
+   "reason": "plan text identical to 12 other tools"
+  },
+  "asthma-diagnosis-and-treatment-what-s-changed-in-the-2024-bt": {
+   "title": "Asthma diagnosis and treatment  what's changed in the 2024 BTS, NICE and SIGN guideline – Management",
+   "system": "respiratory",
+   "mergedInto": "asthma",
+   "reason": "plan text identical to 12 other tools"
+  },
+  "asthma-treatment-monitoring-and-self-management-what-s-chang": {
+   "title": "Asthma treatment, monitoring and self-management  what's changed in the 2024 BTS, NICE a – Management",
+   "system": "respiratory",
+   "mergedInto": "asthma",
+   "reason": "plan text identical to 12 other tools"
+  },
+  "asthma-control-and-step-up": {
+   "title": "Asthma: control and step-up",
+   "system": "respiratory",
+   "mergedInto": "asthma",
+   "reason": "plan text identical to 12 other tools"
+  },
+  "copd-alpha-1-antitrypsin": {
+   "title": "COPD – alpha-1 antitrypsin",
+   "system": "respiratory",
+   "mergedInto": "copd",
+   "reason": "plan text identical to 9 other tools"
+  },
+  "copd-diagnosis": {
+   "title": "COPD – diagnosis",
+   "system": "respiratory",
+   "mergedInto": "copd",
+   "reason": "plan text identical to 9 other tools"
+  },
+  "copd-exacerbation": {
+   "title": "COPD – exacerbation",
+   "system": "respiratory",
+   "mergedInto": "copd",
+   "reason": "plan text identical to 9 other tools"
+  },
+  "copd-long-term-oxygen": {
+   "title": "COPD – long-term oxygen",
+   "system": "respiratory",
+   "mergedInto": "copd",
+   "reason": "plan text identical to 9 other tools"
+  },
+  "copd-oxygen": {
+   "title": "COPD – oxygen",
+   "system": "respiratory",
+   "mergedInto": "copd",
+   "reason": "plan text identical to 9 other tools"
+  },
+  "copd-pulmonary-rehab": {
+   "title": "COPD – pulmonary rehab",
+   "system": "respiratory",
+   "mergedInto": "copd",
+   "reason": "plan text identical to 9 other tools"
+  },
+  "copd-roflumilast": {
+   "title": "COPD – roflumilast",
+   "system": "respiratory",
+   "mergedInto": "copd",
+   "reason": "plan text identical to 9 other tools"
+  },
+  "copd-stable-step-up": {
+   "title": "COPD – stable step-up",
+   "system": "respiratory",
+   "mergedInto": "copd",
+   "reason": "plan text identical to 9 other tools"
+  },
+  "copd-surgical-referral": {
+   "title": "COPD – surgical referral",
+   "system": "respiratory",
+   "mergedInto": "copd",
+   "reason": "plan text identical to 9 other tools"
+  },
+  "lung-cancer-management": {
+   "title": "Lung cancer – Management",
+   "system": "respiratory",
+   "mergedInto": "lung-cancer",
+   "reason": "plan text identical to 4 other tools"
+  },
+  "lung-cancer-nsclc": {
+   "title": "Lung cancer – NSCLC",
+   "system": "respiratory",
+   "mergedInto": "lung-cancer",
+   "reason": "plan text identical to 4 other tools"
+  },
+  "lung-cancer-sclc": {
+   "title": "Lung cancer – SCLC",
+   "system": "respiratory",
+   "mergedInto": "lung-cancer",
+   "reason": "plan text identical to 4 other tools"
+  },
+  "suspected-lung-cancer-referral": {
+   "title": "Suspected lung cancer: referral",
+   "system": "respiratory",
+   "mergedInto": "lung-cancer",
+   "reason": "plan text identical to 4 other tools"
+  },
+  "pneumonia-antibiotic": {
+   "title": "Pneumonia – antibiotic",
+   "system": "respiratory",
+   "mergedInto": "pneumonia",
+   "reason": "plan text identical to 4 other tools"
+  },
+  "pneumonia-aspiration": {
+   "title": "Pneumonia – aspiration",
+   "system": "respiratory",
+   "mergedInto": "pneumonia",
+   "reason": "plan text identical to 4 other tools"
+  },
+  "pneumonia-nosocomial": {
+   "title": "Pneumonia – nosocomial",
+   "system": "respiratory",
+   "mergedInto": "pneumonia",
+   "reason": "plan text identical to 4 other tools"
+  },
+  "pneumonia-curb65-and-treatment": {
+   "title": "Pneumonia: CURB65 and treatment",
+   "system": "respiratory",
+   "mergedInto": "pneumonia",
+   "reason": "plan text identical to 4 other tools"
+  },
+  "chronic-kidney-disease-among-adults-in-primary-care-manageme": {
+   "title": "Chronic kidney disease among adults in primary care  management – Management",
+   "system": "renal-urology",
+   "mergedInto": "ckd",
+   "reason": "plan text identical to 13 other tools"
+  },
+  "chronic-kidney-disease-among-adults-in-primary-care-testing-": {
+   "title": "Chronic kidney disease among adults in primary care  testing, diagnosis and referral – Management",
+   "system": "renal-urology",
+   "mergedInto": "ckd",
+   "reason": "plan text identical to 13 other tools"
+  },
+  "ckd-bone": {
+   "title": "CKD – bone",
+   "system": "renal-urology",
+   "mergedInto": "ckd",
+   "reason": "plan text identical to 13 other tools"
+  },
+  "ckd-dialysis-referral": {
+   "title": "CKD – dialysis referral",
+   "system": "renal-urology",
+   "mergedInto": "ckd",
+   "reason": "plan text identical to 13 other tools"
+  },
+  "ckd-hyperkalaemia": {
+   "title": "CKD – hyperkalaemia",
+   "system": "renal-urology",
+   "mergedInto": "ckd",
+   "reason": "plan text identical to 13 other tools"
+  },
+  "ckd-hypertension": {
+   "title": "CKD – hypertension",
+   "system": "renal-urology",
+   "mergedInto": "ckd",
+   "reason": "plan text identical to 13 other tools"
+  },
+  "ckd-metabolic-bone": {
+   "title": "CKD – metabolic bone",
+   "system": "renal-urology",
+   "mergedInto": "ckd",
+   "reason": "plan text identical to 13 other tools"
+  },
+  "ckd-stage-3": {
+   "title": "CKD – stage 3",
+   "system": "renal-urology",
+   "mergedInto": "ckd",
+   "reason": "plan text identical to 13 other tools"
+  },
+  "ckd-stage-4": {
+   "title": "CKD – stage 4",
+   "system": "renal-urology",
+   "mergedInto": "ckd",
+   "reason": "plan text identical to 13 other tools"
+  },
+  "ckd-transplant": {
+   "title": "CKD – transplant",
+   "system": "renal-urology",
+   "mergedInto": "ckd",
+   "reason": "plan text identical to 13 other tools"
+  },
+  "ckd-staging-and-referral": {
+   "title": "CKD: staging and referral",
+   "system": "renal-urology",
+   "mergedInto": "ckd",
+   "reason": "plan text identical to 13 other tools"
+  },
+  "investigations-for-chronic-kidney-disease-in-primary-care-ma": {
+   "title": "Investigations for chronic kidney disease in primary care – Management",
+   "system": "renal-urology",
+   "mergedInto": "ckd",
+   "reason": "plan text identical to 13 other tools"
+  },
+  "latest-thinking-and-evidence-on-chronic-kidney-disease-manag": {
+   "title": "Latest thinking and evidence on chronic kidney disease – Management",
+   "system": "renal-urology",
+   "mergedInto": "ckd",
+   "reason": "plan text identical to 13 other tools"
+  },
+  "coil-iud": {
+   "title": "Coil – IUD",
+   "system": "women-health",
+   "mergedInto": "contraception",
+   "reason": "plan text identical to 14 other tools"
+  },
+  "coil-ius": {
+   "title": "Coil – IUS",
+   "system": "women-health",
+   "mergedInto": "contraception",
+   "reason": "plan text identical to 14 other tools"
+  },
+  "combined-pill-choice": {
+   "title": "Combined pill – choice",
+   "system": "women-health",
+   "mergedInto": "contraception",
+   "reason": "plan text identical to 14 other tools"
+  },
+  "contraception-breastfeeding": {
+   "title": "Contraception – breastfeeding",
+   "system": "women-health",
+   "mergedInto": "contraception",
+   "reason": "plan text identical to 14 other tools"
+  },
+  "contraception-combined": {
+   "title": "Contraception – combined",
+   "system": "women-health",
+   "mergedInto": "contraception",
+   "reason": "plan text identical to 14 other tools"
+  },
+  "contraception-emergency": {
+   "title": "Contraception – emergency",
+   "system": "women-health",
+   "mergedInto": "contraception",
+   "reason": "plan text identical to 14 other tools"
+  },
+  "contraception-larc": {
+   "title": "Contraception – LARC",
+   "system": "women-health",
+   "mergedInto": "contraception",
+   "reason": "plan text identical to 14 other tools"
+  },
+  "contraception-perimenopause": {
+   "title": "Contraception – perimenopause",
+   "system": "women-health",
+   "mergedInto": "contraception",
+   "reason": "plan text identical to 14 other tools"
+  },
+  "contraception-progesterone": {
+   "title": "Contraception – progesterone",
+   "system": "women-health",
+   "mergedInto": "contraception",
+   "reason": "plan text identical to 14 other tools"
+  },
+  "contraception-vte": {
+   "title": "Contraception – VTE",
+   "system": "women-health",
+   "mergedInto": "contraception",
+   "reason": "plan text identical to 14 other tools"
+  },
+  "contraception-vte-risk": {
+   "title": "Contraception – VTE risk",
+   "system": "women-health",
+   "mergedInto": "contraception",
+   "reason": "plan text identical to 14 other tools"
+  },
+  "effective-contraception-provision-during-the-covid-19-pandem": {
+   "title": "Effective contraception provision during the COVID-19 pandemic – Management",
+   "system": "women-health",
+   "mergedInto": "contraception",
+   "reason": "plan text identical to 14 other tools"
+  },
+  "implant": {
+   "title": "Implant",
+   "system": "women-health",
+   "mergedInto": "contraception",
+   "reason": "plan text identical to 14 other tools"
+  },
+  "progestogen-only-pill": {
+   "title": "Progestogen-only pill",
+   "system": "women-health",
+   "mergedInto": "contraception",
+   "reason": "plan text identical to 14 other tools"
+  },
+  "endometriosis": {
+   "title": "Endometriosis",
+   "system": "women-health",
+   "mergedInto": "hmb",
+   "reason": "plan text identical to 4 other tools"
+  },
+  "heavy-menstrual-bleeding": {
+   "title": "Heavy menstrual bleeding",
+   "system": "women-health",
+   "mergedInto": "hmb",
+   "reason": "plan text identical to 4 other tools"
+  },
+  "hmb-medical": {
+   "title": "HMB – medical",
+   "system": "women-health",
+   "mergedInto": "hmb",
+   "reason": "plan text identical to 4 other tools"
+  },
+  "hmb-referral": {
+   "title": "HMB – referral",
+   "system": "women-health",
+   "mergedInto": "hmb",
+   "reason": "plan text identical to 4 other tools"
+  },
+  "hiv-drug-interactions": {
+   "title": "HIV – drug interactions",
+   "system": "infectious",
+   "mergedInto": "hiv",
+   "reason": "plan text identical to 12 other tools"
+  },
+  "hiv-drug-resistance": {
+   "title": "HIV – drug resistance",
+   "system": "infectious",
+   "mergedInto": "hiv",
+   "reason": "plan text identical to 12 other tools"
+  },
+  "hiv-monitoring": {
+   "title": "HIV – monitoring",
+   "system": "infectious",
+   "mergedInto": "hiv",
+   "reason": "plan text identical to 12 other tools"
+  },
+  "hiv-pep": {
+   "title": "HIV – PEP",
+   "system": "infectious",
+   "mergedInto": "hiv",
+   "reason": "plan text identical to 12 other tools"
+  },
+  "hiv-post-exposure": {
+   "title": "HIV – post-exposure",
+   "system": "infectious",
+   "mergedInto": "hiv",
+   "reason": "plan text identical to 12 other tools"
+  },
+  "hiv-prep": {
+   "title": "HIV – PrEP",
+   "system": "infectious",
+   "mergedInto": "hiv",
+   "reason": "plan text identical to 12 other tools"
+  },
+  "hiv-testing": {
+   "title": "HIV – testing",
+   "system": "infectious",
+   "mergedInto": "hiv",
+   "reason": "plan text identical to 12 other tools"
+  },
+  "hiv-testing-and-prep": {
+   "title": "HIV testing and PrEP",
+   "system": "infectious",
+   "mergedInto": "hiv",
+   "reason": "plan text identical to 12 other tools"
+  },
+  "rethinking-hiv-dealing-with-a-positive-test-result-managemen": {
+   "title": "Rethinking HIV  dealing with a positive test result – Management",
+   "system": "infectious",
+   "mergedInto": "hiv",
+   "reason": "plan text identical to 12 other tools"
+  },
+  "rethinking-hiv-from-testing-to-transformation-management": {
+   "title": "Rethinking HIV  from testing to transformation – Management",
+   "system": "infectious",
+   "mergedInto": "hiv",
+   "reason": "plan text identical to 12 other tools"
+  },
+  "rethinking-hiv-prevention-and-pre-exposure-prophylaxis-manag": {
+   "title": "Rethinking HIV  prevention and pre-exposure prophylaxis – Management",
+   "system": "infectious",
+   "mergedInto": "hiv",
+   "reason": "plan text identical to 12 other tools"
+  },
+  "rethinking-hiv-reducing-hiv-related-stigma-management": {
+   "title": "Rethinking HIV  reducing HIV-related stigma – Management",
+   "system": "infectious",
+   "mergedInto": "hiv",
+   "reason": "plan text identical to 12 other tools"
+  },
+  "epilepsy-driving": {
+   "title": "Epilepsy – driving",
+   "system": "neurology",
+   "mergedInto": "epilepsy",
+   "reason": "plan text identical to 7 other tools"
+  },
+  "epilepsy-drug-choice": {
+   "title": "Epilepsy – drug choice",
+   "system": "neurology",
+   "mergedInto": "epilepsy",
+   "reason": "plan text identical to 7 other tools"
+  },
+  "epilepsy-new": {
+   "title": "Epilepsy – new",
+   "system": "neurology",
+   "mergedInto": "epilepsy",
+   "reason": "plan text identical to 7 other tools"
+  },
+  "epilepsy-non-epileptic": {
+   "title": "Epilepsy – non-epileptic",
+   "system": "neurology",
+   "mergedInto": "epilepsy",
+   "reason": "plan text identical to 7 other tools"
+  },
+  "epilepsy-status": {
+   "title": "Epilepsy – status",
+   "system": "neurology",
+   "mergedInto": "epilepsy",
+   "reason": "plan text identical to 7 other tools"
+  },
+  "epilepsy-sudep": {
+   "title": "Epilepsy – SUDEP",
+   "system": "neurology",
+   "mergedInto": "epilepsy",
+   "reason": "plan text identical to 7 other tools"
+  },
+  "first-fit": {
+   "title": "First fit",
+   "system": "neurology",
+   "mergedInto": "epilepsy",
+   "reason": "plan text identical to 7 other tools"
+  },
+  "ms-bladder": {
+   "title": "MS – bladder",
+   "system": "neurology",
+   "mergedInto": "ms",
+   "reason": "plan text identical to 5 other tools"
+  },
+  "ms-disease-modifying": {
+   "title": "MS – disease-modifying",
+   "system": "neurology",
+   "mergedInto": "ms",
+   "reason": "plan text identical to 5 other tools"
+  },
+  "ms-referral": {
+   "title": "MS – referral",
+   "system": "neurology",
+   "mergedInto": "ms",
+   "reason": "plan text identical to 5 other tools"
+  },
+  "ms-relapse": {
+   "title": "MS – relapse",
+   "system": "neurology",
+   "mergedInto": "ms",
+   "reason": "plan text identical to 5 other tools"
+  },
+  "multiple-sclerosis-referral": {
+   "title": "Multiple sclerosis: referral",
+   "system": "neurology",
+   "mergedInto": "ms",
+   "reason": "plan text identical to 5 other tools"
+  },
+  "stroke-haemorrhagic": {
+   "title": "Stroke – haemorrhagic",
+   "system": "neurology",
+   "mergedInto": "stroke",
+   "reason": "plan text identical to 7 other tools"
+  },
+  "stroke-rehabilitation": {
+   "title": "Stroke – rehabilitation",
+   "system": "neurology",
+   "mergedInto": "stroke",
+   "reason": "plan text identical to 7 other tools"
+  },
+  "stroke-thrombectomy": {
+   "title": "Stroke – thrombectomy",
+   "system": "neurology",
+   "mergedInto": "stroke",
+   "reason": "plan text identical to 7 other tools"
+  },
+  "stroke-thrombolysis": {
+   "title": "Stroke – thrombolysis",
+   "system": "neurology",
+   "mergedInto": "stroke",
+   "reason": "plan text identical to 7 other tools"
+  },
+  "tia-abcd2": {
+   "title": "TIA – ABCD2",
+   "system": "neurology",
+   "mergedInto": "stroke",
+   "reason": "plan text identical to 7 other tools"
+  },
+  "tia-driving": {
+   "title": "TIA – driving",
+   "system": "neurology",
+   "mergedInto": "stroke",
+   "reason": "plan text identical to 7 other tools"
+  },
+  "tia-abcd2-and-referral": {
+   "title": "TIA: ABCD2 and referral",
+   "system": "neurology",
+   "mergedInto": "stroke",
+   "reason": "plan text identical to 7 other tools"
+  },
+  "anticipatory-prescribing": {
+   "title": "Anticipatory prescribing",
+   "system": "procedures-general",
+   "mergedInto": "palliative",
+   "reason": "plan text identical to 5 other tools"
+  },
+  "palliative-bowel-obstruction": {
+   "title": "Palliative – bowel obstruction",
+   "system": "procedures-general",
+   "mergedInto": "palliative",
+   "reason": "plan text identical to 5 other tools"
+  },
+  "palliative-breathlessness": {
+   "title": "Palliative – breathlessness",
+   "system": "procedures-general",
+   "mergedInto": "palliative",
+   "reason": "plan text identical to 5 other tools"
+  },
+  "palliative-secretions": {
+   "title": "Palliative – secretions",
+   "system": "procedures-general",
+   "mergedInto": "palliative",
+   "reason": "plan text identical to 5 other tools"
+  },
+  "palliative-terminal-agitation": {
+   "title": "Palliative – terminal agitation",
+   "system": "procedures-general",
+   "mergedInto": "palliative",
+   "reason": "plan text identical to 5 other tools"
+  },
+  "deprescribing-antihypertensive": {
+   "title": "Deprescribing – antihypertensive",
+   "system": "other",
+   "mergedInto": "deprescribing",
+   "reason": "plan text identical to 5 other tools"
+  },
+  "deprescribing-antipsychotic": {
+   "title": "Deprescribing – antipsychotic",
+   "system": "other",
+   "mergedInto": "deprescribing",
+   "reason": "plan text identical to 5 other tools"
+  },
+  "deprescribing-benzodiazepine": {
+   "title": "Deprescribing – benzodiazepine",
+   "system": "other",
+   "mergedInto": "deprescribing",
+   "reason": "plan text identical to 5 other tools"
+  },
+  "deprescribing-ppi": {
+   "title": "Deprescribing – PPI",
+   "system": "other",
+   "mergedInto": "deprescribing",
+   "reason": "plan text identical to 5 other tools"
+  },
+  "deprescribing-statin": {
+   "title": "Deprescribing – statin",
+   "system": "other",
+   "mergedInto": "deprescribing",
+   "reason": "plan text identical to 5 other tools"
+  },
+  "falls-bone-health": {
+   "title": "Falls – bone health",
+   "system": "other",
+   "mergedInto": "falls",
+   "reason": "plan text identical to 4 other tools"
+  },
+  "falls-intervention": {
+   "title": "Falls – intervention",
+   "system": "other",
+   "mergedInto": "falls",
+   "reason": "plan text identical to 4 other tools"
+  },
+  "falls-multifactorial": {
+   "title": "Falls – multifactorial",
+   "system": "other",
+   "mergedInto": "falls",
+   "reason": "plan text identical to 4 other tools"
+  },
+  "falls-orthostatic": {
+   "title": "Falls – orthostatic",
+   "system": "other",
+   "mergedInto": "falls",
+   "reason": "plan text identical to 4 other tools"
+  },
+  "medicines-reconciliation": {
+   "title": "Medicines reconciliation",
+   "system": "other",
+   "mergedInto": "polypharmacy",
+   "reason": "plan text identical to 4 other tools"
+  },
+  "medicines-review": {
+   "title": "Medicines review",
+   "system": "other",
+   "mergedInto": "polypharmacy",
+   "reason": "plan text identical to 4 other tools"
+  },
+  "polypharmacy-elderly": {
+   "title": "Polypharmacy – elderly",
+   "system": "other",
+   "mergedInto": "polypharmacy",
+   "reason": "plan text identical to 4 other tools"
+  },
+  "polypharmacy-review": {
+   "title": "Polypharmacy – review",
+   "system": "other",
+   "mergedInto": "polypharmacy",
+   "reason": "plan text identical to 4 other tools"
+  },
+  "smoking-cardiovascular": {
+   "title": "Smoking – cardiovascular",
+   "system": "other",
+   "mergedInto": "smoking",
+   "reason": "plan text identical to 5 other tools"
+  },
+  "smoking-nrt": {
+   "title": "Smoking – NRT",
+   "system": "other",
+   "mergedInto": "smoking",
+   "reason": "plan text identical to 5 other tools"
+  },
+  "smoking-relapse": {
+   "title": "Smoking – relapse",
+   "system": "other",
+   "mergedInto": "smoking",
+   "reason": "plan text identical to 5 other tools"
+  },
+  "smoking-varenicline": {
+   "title": "Smoking – varenicline",
+   "system": "other",
+   "mergedInto": "smoking",
+   "reason": "plan text identical to 5 other tools"
+  },
+  "smoking-cessation": {
+   "title": "Smoking cessation",
+   "system": "other",
+   "mergedInto": "smoking",
+   "reason": "plan text identical to 5 other tools"
+  },
+  "travel-altitude": {
+   "title": "Travel – altitude",
+   "system": "other",
+   "mergedInto": "travel",
+   "reason": "plan text identical to 4 other tools"
+  },
+  "travel-diarrhoea": {
+   "title": "Travel – diarrhoea",
+   "system": "other",
+   "mergedInto": "travel",
+   "reason": "plan text identical to 4 other tools"
+  },
+  "travel-diving": {
+   "title": "Travel – diving",
+   "system": "other",
+   "mergedInto": "travel",
+   "reason": "plan text identical to 4 other tools"
+  },
+  "travel-vaccination": {
+   "title": "Travel – vaccination",
+   "system": "other",
+   "mergedInto": "travel",
+   "reason": "plan text identical to 4 other tools"
+  }
+ }
+}

@@ -575,7 +575,7 @@ async function renderDecisionTools() {
         systemSelect.dataset.loading = 'true';
         if (loadingEl) loadingEl.classList.remove('hidden');
         try {
-            const res = await fetch('./data/decision_tools_protocol.json?v=' + (window.DECISION_TOOLS_CACHE_BUST || '10'));
+            const res = await fetch('./data/decision_tools_protocol.json?v=' + (window.DECISION_TOOLS_CACHE_BUST || '11'));
             if (!res.ok) throw new Error('Not found');
             decisionToolsData = await res.json();
             systemSelect.dataset.loading = 'false';
@@ -641,7 +641,7 @@ async function renderDecisionTools() {
         let tools = sys.tools || [];
         if (niceRef) tools = tools.filter(t => (t.niceRefs || []).indexOf(niceRef) !== -1);
         const q = (filterStr || '').trim().toLowerCase();
-        const filtered = q ? tools.filter(t => (t.title || '').toLowerCase().includes(q)) : tools;
+        const filtered = q ? tools.filter(t => ((t.title || '') + ' ' + (t.aliases || []).join(' ')).toLowerCase().includes(q)) : tools;
         toolSelect.innerHTML = '<option value="">-- Choose topic --</option>';
         filtered.forEach(tool => {
             const tIdx = (sys.tools || []).indexOf(tool);
@@ -784,7 +784,8 @@ async function renderDecisionTools() {
                     const title = (tool.title || '').toLowerCase();
                     const sysName = (sys.name || '').toLowerCase();
                     const niceRefsStr = (tool.niceRefs || []).join(' ').toLowerCase();
-                    if (title.includes(q) || sysName.includes(q) || niceRefsStr.includes(q)) hits.push({ sysIdx, toolIdx, sysName: sys.name, title: tool.title, tool });
+                    const aliasStr = (tool.aliases || []).join(' ').toLowerCase();
+                    if (title.includes(q) || sysName.includes(q) || niceRefsStr.includes(q) || aliasStr.includes(q)) hits.push({ sysIdx, toolIdx, sysName: sys.name, title: tool.title, tool });
                 });
             });
 

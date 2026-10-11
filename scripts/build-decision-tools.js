@@ -13,13 +13,16 @@ const fs = require('fs');
 const path = require('path');
 
 const PROJECT_ROOT = path.resolve(__dirname, '..');
-const KB_PATH = path.join(PROJECT_ROOT, 'data', 'knowledge_base.json');
+const DATA_DIR = path.join(PROJECT_ROOT, 'app', 'data'); // single data directory (2026-10-11)
+const KB_PATH = path.join(DATA_DIR, 'knowledge_base.json');
+const OVERRIDES_PATH = path.join(__dirname, 'tool-overrides.json');
+const MERGE_MIN_GROUP = 5; // plans shared verbatim by >= this many tools in a system are merged (RULING Q1, 2026-10-11)
 const NICE_MAP_PATH = path.join(__dirname, 'nice-guideline-map.json');
 const MANAGEMENT_PATH = path.join(__dirname, 'management-content.json');
 const EXTRA_TOOLS_PATH = path.join(__dirname, 'extra-nice-tools.json');
 const BULK_PATH = path.join(__dirname, 'extra-tools-bulk.json');
 const BULK_1000_PATH = path.join(__dirname, 'extra-tools-bulk-1000.json');
-const OUT_PATH = path.join(PROJECT_ROOT, 'data', 'decision_tools_protocol.json');
+const OUT_PATH = path.join(DATA_DIR, 'decision_tools_protocol.json');
 
 function slug(s) {
   return (s || '')
@@ -595,7 +598,7 @@ function getSystemFallbackSteps(systemId, title) {
 }
 
 function buildTool(opts) {
-  const { title, niceRefs, evidence, steps, episode } = opts;
+  const { title, niceRefs, evidence, steps, episode, planSource } = opts;
   const id = slug(title).slice(0, 60);
   // NOTE: 'evidence' field intentionally not emitted (transcript text removed 2026-06-14).
   return {
@@ -603,7 +606,8 @@ function buildTool(opts) {
     title,
     niceRefs: niceRefs || [],
     steps: steps || [],
-    episode
+    episode,
+    planSource: planSource || 'template'
   };
 }
 
@@ -614,7 +618,7 @@ function buildToolFromTopic(section, topic, niceMap, managementContent, subtitle
   const evidence = evidenceFromTranscript(topic.transcript) || getManagementEvidence(baseTitle, managementContent);
   const templateSteps = getManagementSteps(baseTitle, managementContent);
   const steps = templateSteps || getSystemFallbackSteps(section.id, title);
-  return buildTool({ title, niceRefs, evidence, steps, episode: topic.episode });
+  return buildTool({ title, niceRefs, evidence, steps, episode: topic.episode, planSource: templateSteps ? 'template' : 'fallback' });
 }
 
 function buildToolFromExtra(extra, niceMap, managementContent) {
@@ -624,7 +628,7 @@ function buildToolFromExtra(extra, niceMap, managementContent) {
   const templateSteps = getManagementSteps(title, managementContent);
   const steps = templateSteps || getSystemFallbackSteps(systemId, title);
   const evidence = getManagementEvidence(title, managementContent) || `Management per ${niceRefs.slice(0, 2).join(' and ')}.`;
-  return buildTool({ title, niceRefs, evidence, steps });
+  return buildTool({ title, niceRefs, evidence, steps, planSource: templateSteps ? 'template' : 'fallback' });
 }
 
 function buildToolFromBulkTitle(systemId, title, niceMap, managementContent) {
@@ -632,7 +636,76 @@ function buildToolFromBulkTitle(systemId, title, niceMap, managementContent) {
   const templateSteps = getManagementSteps(title, managementContent);
   const steps = templateSteps || getSystemFallbackSteps(systemId, title);
   const evidence = getManagementEvidence(title, managementContent) || `Management per ${niceRefs.slice(0, 2).join(' and ') || 'NICE CKS'}.`;
-  return buildTool({ title, niceRefs, evidence, steps });
+  return buildTool({ title, niceRefs, evidence, steps, planSource: templateSteps ? 'template' : 'fallback' });
+}
+
+/** Per-tool curated content (scripts/tool-overrides.json), keyed by tool id. The cause-fix for template fan-out:
+ *  an override replaces niceRefs/steps for that id and may absorb other ids via `merges` (their titles become aliases). */
+function applyOverrides(systems) {
+  if (!fs.existsSync(OVERRIDES_PATH)) return;
+  const overrides = JSON.parse(fs.readFileSync(OVERRIDES_PATH, 'utf8'));
+  const byId = new Map();
+  systems.forEach(s => (s.tools || []).forEach(t => byId.set(s.id + '|' + t.id, { s, t })));
+  for (const [id, ov] of Object.entries(overrides)) {
+    if (id.startsWith('_')) continue;
+    const hit = [...byId.values()].find(x => x.t.id === id);
+    if (!hit) { console.warn(`WARN override ${id}: no such tool`); continue; }
+    const t = hit.t;
+    // Absorb duplicate tools that slug to the same id (e.g. "Ankle sprain" / "Ankle – sprain").
+    for (const dup of [...byId.values()].filter(x => x.t.id === id && x.t !== t)) {
+      t.aliases = [...(t.aliases || []), dup.t.title];
+      dup.s.tools = dup.s.tools.filter(x => x !== dup.t); byId.delete(dup.s.id + '|' + dup.t.id);
+    }
+    if (ov.title) t.title = ov.title;
+    if (ov.niceRefs) t.niceRefs = ov.niceRefs;
+    if (ov.steps) t.steps = ov.steps;
+    t.planSource = 'curated';
+    t.curated = { by: ov.curatedBy || 'draft', date: ov.date || null, reviewedBy: ov.reviewedBy || 'TODO' };
+    t.aliases = Array.from(new Set([...(t.aliases || []), ...(ov.aliases || [])]));
+    for (const mid of ov.merges || []) {
+      const m = [...byId.values()].find(x => x.t.id === mid && x.t !== t);
+      if (!m) continue;
+      t.aliases.push(m.t.title);
+      m.s.tools = m.s.tools.filter(x => x !== m.t);
+      byId.delete(m.s.id + '|' + m.t.id);
+    }
+  }
+}
+
+/** Merge tools whose substantive plan text is identical within a system (RULING 2026-10-11: quality over count).
+ *  Keeps one representative per group; retired titles become searchable aliases. Reversible: see app/data/merged_tools.json. */
+function mergeSharedPlans(systems) {
+  const retired = {}; let groups = 0;
+  const sig = t => JSON.stringify((t.steps || []).flatMap(st => (st.options || []).map(o => o.guidance || '')).filter(g => g.length >= 80));
+  const base = title => (title || '').split(/\s[–:-]\s/)[0].trim();
+  systems.forEach(s => {
+    const byKey = new Map();
+    (s.tools || []).forEach(t => { if (t.planSource === 'curated') return; const k = sig(t); if (k === '[]') return; if (!byKey.has(k)) byKey.set(k, []); byKey.get(k).push(t); });
+    for (const group of byKey.values()) {
+      if (group.length < MERGE_MIN_GROUP) continue;
+      groups++;
+      // Representative title: most common base title if it recurs; else a frank system-level name for fallback plans; else shortest title.
+      const bases = {}; group.forEach(t => { const b = base(t.title); bases[b] = (bases[b] || 0) + 1; });
+      const [topBase, topN] = Object.entries(bases).sort((a, b) => b[1] - a[1])[0];
+      let rep = group.slice().sort((a, b) => (b.niceRefs || []).length - (a.niceRefs || []).length || a.title.length - b.title.length)[0];
+      const allFallback = group.every(t => t.planSource === 'fallback');
+      let newTitle = rep.title;
+      if (topN >= 2 && topN / group.length >= 0.6) newTitle = topBase;
+      else {
+        const names = group.map(t => base(t.title)).filter((v, i, a) => a.indexOf(v) === i);
+        const head = names.slice(0, 3).join(', ') + (names.length > 3 ? ` +${names.length - 3} more` : '');
+        newTitle = `Shared plan: ${head} (needs specific content)`; rep.planSource = 'merged-generic';
+      }
+      if (allFallback) rep.planSource = 'merged-generic';
+      rep.aliases = Array.from(new Set([...(rep.aliases || []), ...group.filter(t => t !== rep).map(t => t.title), rep.title].filter(a => a !== newTitle)));
+      rep.title = newTitle; rep.id = slug(newTitle).slice(0, 60);
+      rep.mergedCount = group.length;
+      group.forEach(t => { if (t !== rep) { retired[t.id] = { title: t.title, system: s.id, mergedInto: rep.id, reason: 'plan text identical to ' + (group.length - 1) + ' other tools' }; } });
+      s.tools = s.tools.filter(t => t === rep || !group.includes(t));
+    }
+    s.tools.sort((a, b) => (a.title || '').localeCompare(b.title || '', 'en', { sensitivity: 'base' }));
+  });
+  return { generated: new Date().toISOString(), rule: `plan text (options >=80 chars) identical within a system for >=${MERGE_MIN_GROUP} tools`, groups, retired };
 }
 
 function main() {
@@ -711,14 +784,20 @@ function main() {
   });
   // Deduplicate: same system + same title => keep first only (avoids multiple "Croup", "Bronchiolitis", etc.)
   systems.forEach(s => {
-    const seen = new Set();
+    const seen = new Set(); const byIdFirst = new Map();
     s.tools = (s.tools || []).filter(t => {
       const key = (t.title || '').trim().toLowerCase();
       if (seen.has(key)) return false;
       seen.add(key);
+      if (byIdFirst.has(t.id)) { const f = byIdFirst.get(t.id); f.aliases = [...(f.aliases || []), t.title]; return false; } // same id, different punctuation
+      byIdFirst.set(t.id, t);
       return true;
     });
   });
+  applyOverrides(systems);
+  const merged = mergeSharedPlans(systems);
+  fs.writeFileSync(path.join(DATA_DIR, 'merged_tools.json'), JSON.stringify(merged, null, 1), 'utf8');
+  console.log(`Merged ${Object.keys(merged.retired).length} template-shared tools into ${merged.groups} representatives`);
   let totalTools = 0;
   systems.forEach(s => { totalTools += s.tools.length; });
 
@@ -730,6 +809,15 @@ function main() {
     builtAt,
     generated: builtAt,
     totalTools,
+    provenance: {
+      maintainer: 'PathLinks Clinical Governance',
+      lastReviewed: '2026-10-11',
+      reviewDue: '2027-04-11',
+      reviewedBy: 'TODO – clinical reviewer to sign off',
+      disclaimer: 'Decision-support aid for UK healthcare professionals only. Not a registered medical device. Always verify against current NICE CKS, BNF/BNFc and local policy.',
+      mergePolicy: `Tools whose plan text was identical to >=${MERGE_MIN_GROUP - 1} others in a system were merged into one representative on 2026-10-11 (quality over count); retired titles remain searchable as aliases. See app/data/merged_tools.json.`
+    },
+    evidencePolicy: "Transcript-derived 'evidence' text removed 2026-06-14 for IP/quality. Guidance is curated NICE-aligned management steps only; tools with planSource 'curated' carry per-tool sources and a reviewer field.",
     systems: systems.map(s => ({ id: s.id, name: s.name, tools: s.tools }))
   };
 
@@ -747,26 +835,15 @@ function main() {
         title: t.title,
         system: s.id,
         systemName: s.name,
-        niceRefs: t.niceRefs || []
+        niceRefs: t.niceRefs || [],
+        aliases: t.aliases || [],
+        planSource: t.planSource
       });
     });
   });
-  const indexPath = path.join(PROJECT_ROOT, 'data', 'tools-index.json');
+  const indexPath = path.join(DATA_DIR, 'tools-index.json');
   fs.writeFileSync(indexPath, JSON.stringify(index, null, 0), 'utf8');
   console.log(`Wrote tools index to ${indexPath}`);
-  const appDataPath = path.join(PROJECT_ROOT, 'app', 'data');
-  try {
-    fs.mkdirSync(appDataPath, { recursive: true });
-    fs.copyFileSync(OUT_PATH, path.join(appDataPath, 'decision_tools_protocol.json'));
-    fs.copyFileSync(indexPath, path.join(appDataPath, 'tools-index.json'));
-    const sandboxPath = path.join(PROJECT_ROOT, 'data', 'sandbox_scenarios.json');
-    if (fs.existsSync(sandboxPath)) {
-      fs.copyFileSync(sandboxPath, path.join(appDataPath, 'sandbox_scenarios.json'));
-    }
-    console.log('Copied protocol and index to app/data/');
-  } catch (e) {
-    console.warn('Could not copy to app/data:', e.message);
-  }
 }
 
 main();
